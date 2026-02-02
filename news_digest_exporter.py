@@ -549,7 +549,7 @@ def split_summary_to_3lines(summary: str) -> list[str]:
         return []
 
     # 문장 단위 분리(영문/국문 공통) → 최대 3개
-    parts = [p.strip() for p in re.split(r'(?<=[\.\!\?。]|다\.)\s+', s) if p.strip()]
+    parts = [p.strip() for p in re.split(r'(?<=[\.\!\?。])\s+|(?<=다\.)\s+', s) if p.strip()]
     if len(parts) >= 3:
         return parts[:3]
 

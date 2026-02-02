@@ -110,6 +110,11 @@ def _strip_source_from_text(text: str, source_name: str) -> str:
     cleaned = re.sub(rf"\s+{src}\s*\.{{0,3}}\s*$", "", cleaned, flags=re.IGNORECASE)
     return cleaned.strip()
 
+def _pick_analysis_text(full_text: str, summary_clean: str) -> str:
+    if full_text:
+        return full_text
+    return summary_clean or ""
+
 def get_dedupe_key(title: str, summary: str) -> str:
     # 1) 토큰화 및 노이즈 제거
     tokens = _tokenize_for_dedupe(f"{title} {summary}")
@@ -308,8 +313,10 @@ def _cosine_similarity(a: list[float], b: list[float]) -> float:
 
 def _dedupe_text(item: dict) -> str:
     title = item.get("title") or ""
+    full_text = item.get("fullText") or ""
     summary_raw = item.get("summaryRaw") or item.get("summary") or ""
-    return clean_text(f"{title} {summary_raw}")
+    base = full_text if full_text else summary_raw
+    return clean_text(f"{title} {base}")
 
 
 def _apply_semantic_dedupe(items: list[dict]) -> None:
@@ -410,7 +417,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             summary_clean = clean_text(summary_raw)
             summary_clean = _strip_source_from_text(summary_clean, source_name)
             title_clean = trim_title_noise(clean_text(title), source_name)
-            summary = (summary_clean[:200] + "...") if summary_clean else "내용을 확인하려면 클릭하세요."
+            summary = summary_clean if summary_clean else "내용을 확인하려면 클릭하세요."
             full_text = ""
             content_list = getattr(entry, "content", None)
             if isinstance(content_list, list) and content_list:
@@ -425,13 +432,12 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
                         parts.append(value)
                 if parts:
                     full_text = clean_text(" ".join(parts))
-            if not full_text:
-                full_text = summary_clean
+            analysis_text = _pick_analysis_text(full_text, summary_clean)
 
             tokens = normalize_title_for_dedupe(title_clean, STOPWORDS)
-            text_all = (title_clean + " " + summary_clean).lower()
+            text_all = (title_clean + " " + analysis_text).lower()
             impact_signals = get_impact_signals(text_all)
-            dedupe_key = get_dedupe_key(title_clean, summary_clean)
+            dedupe_key = get_dedupe_key(title_clean, analysis_text)
             matched_to = yesterday_dedupe_map.get(dedupe_key)
 
             kept_item = next((p_item for p_tok, p_item in seen_title_tokens if jaccard(tokens, p_tok) >= 0.6), None)
@@ -463,7 +469,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             if not _passes_emotional_filter(category, text_all, impact_signals):
                 continue
 
-            read_time_sec = estimate_read_time_seconds(summary_clean)
+            read_time_sec = estimate_read_time_seconds(analysis_text)
             score = score_entry(impact_signals, read_time_sec)
             if score < MIN_SCORE:
                 continue

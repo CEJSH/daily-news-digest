@@ -119,6 +119,33 @@ def split_summary_to_3lines(summary: str) -> list[str]:
 
     return parts
 
+def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
+    """요약 라인이 3줄이 되도록 보정한다."""
+    cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
+    if len(cleaned) >= 3:
+        return cleaned[:3]
+
+    fallback = clean_text(fallback_text or "")
+    if fallback:
+        parts = split_summary_to_3lines(fallback)
+        if not (len(parts) == 1 and not cleaned):
+            for line in parts:
+                if line and line not in cleaned:
+                    cleaned.append(line)
+                if len(cleaned) >= 3:
+                    return cleaned[:3]
+
+        if len(cleaned) < 3:
+            step = max(20, (len(fallback) + 2) // 3)
+            chunks = [fallback[i:i + step].strip() for i in range(0, len(fallback), step)]
+            for c in chunks:
+                if c and c not in cleaned:
+                    cleaned.append(c)
+                if len(cleaned) >= 3:
+                    return cleaned[:3]
+
+    return cleaned[:3]
+
 def estimate_read_time_seconds(text: str) -> int:
     """한국어 평균 읽기 속도 ~500자/분 가정. 10초 단위 반올림, 10~40초로 클램프."""
     n = len((text or "").strip())

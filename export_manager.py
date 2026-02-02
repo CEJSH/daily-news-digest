@@ -2,11 +2,23 @@ import datetime
 import json
 import os
 from ai_enricher import enrich_item_with_ai
-from utils import split_summary_to_3lines, estimate_read_time_seconds
+from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
 
 _LONG_IMPACT = {"policy", "sanctions"}
 _MED_IMPACT = {"capex", "infra", "security"}
 _LOW_IMPACT = {"earnings", "market-demand"}
+
+def _pick_summary_source(title: str, summary: str, summary_raw: str, full_text: str) -> str:
+    title_clean = clean_text(title)
+    candidates = [
+        clean_text(full_text),
+        clean_text(summary_raw),
+        clean_text(summary),
+    ]
+    filtered = [c for c in candidates if c and c.lower() != title_clean.lower()]
+    if filtered:
+        return max(filtered, key=len)
+    return clean_text(summary_raw or summary or full_text or title_clean)
 
 def _load_existing_digest(path: str) -> dict | None:
     if not os.path.exists(path):
@@ -55,12 +67,15 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
         summary = (item.get("summary") or "").strip()
+        summary_raw = (item.get("summaryRaw") or "").strip()
+        full_text = (item.get("fullText") or "").strip()
         topic = (item.get("topic") or "").strip()
         source_name = (item.get("source") or "").strip()
         published = item.get("published")
 
         ai_result = item.get("ai") or enrich_item_with_ai(item)
-        summary_lines = ai_result.get("summary_lines") or split_summary_to_3lines(summary)
+        summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
+        summary_lines = ensure_three_lines(ai_result.get("summary_lines") or [], summary_source)
         why_important = ai_result.get("why_important") or ""
         dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
         impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])

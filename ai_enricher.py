@@ -3,7 +3,7 @@ import os
 import re
 from typing import Any
 
-from utils import clean_text, split_summary_to_3lines
+from utils import clean_text, ensure_three_lines, split_summary_to_3lines
 
 try:
     from openai import OpenAI
@@ -11,23 +11,68 @@ except Exception:  # pragma: no cover - runtime dependency
     OpenAI = None
 
 _CLIENT = None
+_AI_UNAVAILABLE_LOGGED: set[str] = set()
 
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
 DEFAULT_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 
-SYSTEM_PROMPT = (
-    "You are a meticulous news editor for a daily digest. "
-    "Use ONLY the provided title and summary. Do not add new facts. "
-    "Respond as JSON with keys: summary_lines (array of 3 short sentences), "
-    "why_important (one sentence), dedupe_key (4-8 keywords, hyphen-separated, lowercase), "
-    "importance_score (integer 1-5), impact_signals (array), category_label (one of IT, 경제, 글로벌). "
-    "quality_label (ok or low_quality), quality_reason (short phrase), quality_tags (array). "
-    "Valid impact_signals labels: policy, budget, sanctions, capex, earnings, market-demand, security, infra. "
-    "Valid quality_tags: clickbait, promo, opinion, event, report, entertainment, crime, local, emotion. "
-    "Mark low_quality for PR/promotions, opinion/editorial, event/webinar/whitepaper, "
-    "entertainment/crime/local human-interest, or emotionally manipulative headlines. "
-    "No source names, no dates, no clickbait."
-)
+SYSTEM_PROMPT = """You are a meticulous news editor for a daily digest.
+Use ONLY the provided title and article text (use full_text if available, otherwise summary).  
+Do not add any facts, context, or knowledge beyond the provided text.
+ImpactSignals are hints only; verify and adjust strictly based on the article text.
+If the article is in English, translate and write all outputs in Korean.  
+Translate faithfully without adding interpretation or extra context.
+
+Respond ONLY in valid JSON.  
+Do not include any markdown, explanations, or extra text.  
+All fields are required.
+
+Output schema:
+
+{
+  "summary_lines": [string, string, string],
+  "why_important": string,
+  "dedupe_key": string,
+  "importance_score": integer,
+  "impact_signals": [string],
+  "category_label": string,
+  "quality_label": string,
+  "quality_reason": string,
+  "quality_tags": [string]
+}
+
+Field rules:
+
+- summary_lines: exactly 3 short, clear Korean sentences capturing the core facts.
+- why_important: one concise Korean sentence explaining long-term significance.
+- dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no numbers, no stopwords, no source names.
+- importance_score must follow these rules:
+  5 = major structural impact (policy, regulation, major earnings, supply chain shifts)
+  4 = significant industry-level impact
+  3 = meaningful but limited scope
+  2 = minor update
+  1 = low relevance or routine news
+- impact_signals: choose only from the allowed list below; include only signals explicitly supported by the text; return an empty array if none apply.
+- category_label rules:
+  IT = technology, AI, semiconductors, cloud, security, digital infrastructure
+  경제 = macroeconomy, markets, finance, energy transition, corporate earnings
+  글로벌 = geopolitics, trade, sanctions, international relations
+
+Allowed values:
+
+Valid impact_signals: policy, budget, sanctions, capex, earnings, market-demand, security, infra.
+Valid quality_tags: clickbait, promo, opinion, event, report, entertainment, crime, local, emotion.
+Low quality criteria:
+Mark quality_label as "low_quality" for any of the following:
+- PR or promotional content
+- opinion/editorial/column
+- event, webinar, conference, or whitepaper announcements
+- entertainment, crime, or local human-interest stories
+- emotionally manipulative or clickbait headlines
+
+If any low_quality condition applies, quality_label must be "low_quality" regardless of importance.
+No source names, no dates, no clickbait language.
+"""
 
 
 def _get_client() -> Any:
@@ -37,6 +82,13 @@ def _get_client() -> Any:
     if _CLIENT is None:
         _CLIENT = OpenAI()
     return _CLIENT
+
+
+def _log_ai_unavailable(reason: str) -> None:
+    if reason in _AI_UNAVAILABLE_LOGGED:
+        return
+    print(f"⚠️ AI 요약 비활성: {reason}")
+    _AI_UNAVAILABLE_LOGGED.add(reason)
 
 
 def _extract_output_text(response: Any) -> str:
@@ -99,33 +151,6 @@ def _normalize_dedupe_key(raw: str) -> str:
         if len(cleaned) >= 8:
             break
     return "-".join(cleaned) or t
-
-
-def _ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
-    cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
-    if len(cleaned) >= 3:
-        return cleaned[:3]
-
-    fallback = split_summary_to_3lines(fallback_text)
-    for line in fallback:
-        line = clean_text(line)
-        if line and line not in cleaned:
-            cleaned.append(line)
-        if len(cleaned) >= 3:
-            break
-
-    if len(cleaned) < 3 and fallback_text:
-        s = clean_text(fallback_text)
-        if s:
-            step = max(40, len(s) // 3)
-            chunks = [s[i:i + step].strip() for i in range(0, len(s), step)]
-            for c in chunks:
-                if c and c not in cleaned:
-                    cleaned.append(c)
-                if len(cleaned) >= 3:
-                    break
-
-    return cleaned[:3]
 
 
 def _fallback_why_important(impact_signals: list[str]) -> str:
@@ -241,9 +266,11 @@ def _normalize_category_label(value: Any) -> str:
 def enrich_item_with_ai(item: dict) -> dict:
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
+        _log_ai_unavailable("OPENAI_API_KEY 미설정")
         return {}
     client = _get_client()
     if client is None:
+        _log_ai_unavailable("openai 패키지 미설치 또는 초기화 실패")
         return {}
 
     title = clean_text(item.get("title") or "")
@@ -257,8 +284,6 @@ def enrich_item_with_ai(item: dict) -> dict:
 
     user_prompt = (
         f"Title: {title}\n"
-        f"Source: {source}\n"
-        f"Published: {published}\n"
         f"ImpactSignals: {', '.join(impact_signals)}\n"
         f"Article: {full_text or summary_raw}\n"
         "Return only JSON."
@@ -282,7 +307,7 @@ def enrich_item_with_ai(item: dict) -> dict:
     if not isinstance(payload, dict):
         return {}
 
-    summary_lines = _ensure_three_lines(payload.get("summary_lines") or [], summary_raw)
+    summary_lines = ensure_three_lines(payload.get("summary_lines") or [], full_text or summary_raw)
     why_important = clean_text(payload.get("why_important") or "")
     if not why_important:
         why_important = _fallback_why_important(impact_signals)

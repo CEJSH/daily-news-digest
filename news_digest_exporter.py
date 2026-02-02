@@ -3,13 +3,29 @@ import datetime
 import webbrowser
 import os
 import re
+import html
 import json
 from urllib.parse import urlparse
 from jinja2 import Template
 
 
+_WS_RE = re.compile(r"\s+")
 
+def clean_text(s: str) -> str:
+    if not s:
+        return ""
+    # 1) &nbsp; 같은 HTML 엔티티를 문자로 변환
+    s = html.unescape(s)
 
+    # 2) NBSP(유니코드) -> 일반 스페이스로
+    s = s.replace("\u00a0", " ")
+
+    # 3) 혹시 섞여 들어온 HTML 태그 제거
+    s = re.sub(r"<[^>]+>", "", s)
+
+    # 4) 공백 정리
+    s = _WS_RE.sub(" ", s).strip()
+    return s
 
 # ==========================================
 # 사용자 설정
@@ -244,54 +260,31 @@ TOP_LIMIT = 5  # 전체 TOP N (MVP: 5개 고정)
 # 큐레이션 기준 (여기 위주로 튜닝)
 # ==========================================
 
-TRUSTED_SOURCES_BY_NAME = {
-    # 한국 경제/IT/정치
-    "연합뉴스": 2.3,
-    "한국경제": 2.3,
-    "매일경제": 2.3,
-    "서울경제": 2.3,
-    "머니투데이": 2.3,
-    "뉴스1": 2,
-    "조선비즈": 2,
-    "조선일보": 2,
-    "중앙일보": 2,
-    "동아일보": 2,
-    "한겨레": 2,
-    "경향신문": 2,
-    "JTBC": 2.3,
-    "MBC": 2.3,
-    "YTN": 2.3,
-    "뉴스타파": 2,
-    "시사IN": 2,
-    "전자신문": 2,
-    "ZDNet Korea": 2,
-    "디지털데일리": 2,
-    "블로터": 2,
 
-    # 글로벌
-    "Reuters": 2,
-    "Bloomberg": 2,
-    "Financial Times": 2,
-    "The Economist": 2,
-    "The New York Times": 2,
-    "The Wall Street Journal": 2,
-    "MIT Technology Review": 2,
-    "TechCrunch": 2,
-    "The Verge": 2,
-}
 
 QUALITY_KEYWORDS = [
-    "분석", "해설", "전망", "리포트", "심층", "진단",
-    "전략", "미래", "임팩트", "인사이트", "패권", "패러다임",
-    "변곡점", "구조", "재편", "지형", "전망", "좌담",
+    "분석", "해설", "전망", "심층", "진단",
+    "전략", "패권", "패러다임", "변곡점", "구조", "재편", "지형",
     "모멘텀", "구조적", "생태계", "시나리오",
-    "데이터", "메커니즘", "초격차", "재구성", "쟁점", "인터뷰",
-    "analysis", "commentary", "outlook", "report", "in-depth", "diagnosis",
-    "strategy", "future", "impact", "insight", "hegemony", "paradigm",
-    "inflection point", "structure", "reorganization", "landscape", "prospect", "roundtable",
-    "momentum", "structural", "ecosystem", "scenario",
-    "data", "mechanism", "technological gap", "reframing", "issues", "interview",
+    "data", "in-depth", "diagnosis", "strategy", "paradigm",
+    "inflection point", "structure", "reorganization", "ecosystem", "scenario",
 ]
+
+
+HARD_EXCLUDE_KEYWORDS = [
+    # 리포트/기관/홍보/행사/모집
+    "동향", "동향리포트", "리포트", "브리프", "백서", "자료집", "보고서", "연구보고서",
+    "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수",
+    "보도자료", "홍보", "프로모션", "할인", "출시기념",
+    # 영문
+    "whitepaper", "report", "brief", "webinar", "conference", "forum",
+    "press release", "promotion", "apply now",
+]
+
+HARD_EXCLUDE_URL_HINTS = [
+    "/report", "/whitepaper", "/webinar", "/seminar", "/conference", "/event", "/download"
+]
+
 
 EXCLUDE_KEYWORDS = [
     # 연예/가십
@@ -349,7 +342,11 @@ EXCLUDE_KEYWORDS = [
     "공모 사업", 
 ]
 
-MIN_SCORE = 1.0
+SOURCE_TIER_A = {"Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "연합뉴스", "한국경제", "매일경제", "서울경제"}
+SOURCE_TIER_B = {"중앙일보", "동아일보", "한겨레", "경향신문", "머니투데이", "전자신문", "ZDNet Korea", "TechCrunch", "The Verge"}
+
+
+MIN_SCORE = 2.0
 MAX_ENTRIES_PER_FEED = 100
 
 # HTML 태그 제거용 정규식
@@ -359,13 +356,39 @@ TAG_RE = re.compile(r"<[^>]+>")
 # ==========================================
 # 유틸리티 함수
 # ==========================================
+def pick_top_with_mix(all_items, top_limit=5):
+    buckets = {"IT": [], "경제": [], "글로벌": []}
+    for it in all_items:
+        cat = map_topic_to_category(it.get("topic", ""))
+        buckets[cat].append(it)
 
-def clean_html(text: str) -> str:
-    """RSS summary에 포함된 단순 HTML 태그 제거."""
-    if not text:
-        return ""
-    return TAG_RE.sub("", text)
+    for cat in buckets:
+        buckets[cat].sort(key=lambda x: x["score"], reverse=True)
 
+    target = {"IT": 2, "경제": 2, "글로벌": 1}
+    picked = []
+    for cat, n in target.items():
+        picked += buckets[cat][:n]
+
+    # 부족하면 전체에서 추가
+    if len(picked) < top_limit:
+        remain = [x for x in sorted(all_items, key=lambda x: x["score"], reverse=True) if x not in picked]
+        picked += remain[: top_limit - len(picked)]
+
+    return picked[:top_limit]
+
+
+def source_weight(source_name: str) -> float:
+    if source_name in SOURCE_TIER_A:
+        return 3.0
+    if source_name in SOURCE_TIER_B:
+        return 1.5
+    return 0.3
+
+
+def trim_title_noise(title: str) -> str:
+    # 너무 공격적이면 위험하니, 우선 ' | ' 한 번만 컷
+    return title.split(" | ")[0].strip()
 
 def get_source_name(entry) -> str:
     """Google News RSS에서 언론사 이름(source.title)을 가져옴."""
@@ -386,30 +409,50 @@ def score_entry(entry) -> float:
     - 최신성
     - 요약 길이
     """
-    title = getattr(entry, "title", "") or ""
+    score = 0.0
+
+    
+
+
+    title_raw = getattr(entry, "title", "") or ""
     summary_raw = getattr(entry, "summary", "") or ""
-    summary = clean_html(summary_raw)
+
+    if "|" in title_raw or ">" in title_raw or "…" in title_raw or "..." in title_raw:
+        score -= 1.0
+
+    title = trim_title_noise(clean_text(title_raw))
+    summary = clean_text(summary_raw)
     source_name = get_source_name(entry)
 
+    link = getattr(entry, "link", "") or ""
     text_all = (title + " " + summary).lower()
+
+    for bad in HARD_EXCLUDE_KEYWORDS:
+        if bad.lower() in text_all:
+            return -999.0
+
+    low_link = link.lower()
+    for hint in HARD_EXCLUDE_URL_HINTS:
+        if hint in low_link:
+            return -999.0
 
     # 0) 연예/가십/사건사고 등은 아예 제외 (하드 필터)
     for bad in EXCLUDE_KEYWORDS:
         if bad.lower() in text_all:
             return -999.0  # MIN_SCORE보다 훨씬 작게 → 무조건 버림
-
-    score = 0.0
+    
 
     # 1) 언론사 신뢰도
-    for trusted_name, weight in TRUSTED_SOURCES_BY_NAME.items():
-        if trusted_name in source_name:
-            score += weight
-            break
+    score += source_weight(source_name)
 
     # 2) 인사이트/분석 키워드 가점
+    quality_hits = 0
     for kw in QUALITY_KEYWORDS:
-        if kw in title or kw in summary:
-            score += 1.5
+        if kw.lower() in text_all:
+            quality_hits += 1
+
+    score += min(quality_hits, 2) * 1.0   # 최대 2개까지만, 가중치도 낮춤
+
 
     # 3) 제목이 너무 짧으면 감점
     if len(title) < 10:
@@ -474,7 +517,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             title = getattr(entry, "title", "").strip()
             link = getattr(entry, "link", "").strip()
             summary_raw = getattr(entry, "summary", "") if hasattr(entry, "summary") else ""
-            summary_clean = clean_html(summary_raw)
+            summary_clean = clean_text(summary_raw)
             summary = (summary_clean[:200] + "...") if summary_clean else "내용을 확인하려면 클릭하세요."
 
             if not title:
@@ -517,9 +560,8 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
         limit_for_topic = topic_limits.get(topic, TOP_LIMIT)
         grouped_items[topic] = items[:limit_for_topic]
 
-    # 전체에서 TOP N 추출
-    all_items_sorted = sorted(all_items, key=lambda x: x["score"], reverse=True)
-    top_items = all_items_sorted[:top_limit]
+
+    top_items = pick_top_with_mix(all_items, top_limit)
 
     return grouped_items, top_items
 

@@ -1,0 +1,101 @@
+import datetime
+import json
+import os
+from utils import split_summary_to_3lines, estimate_read_time_seconds
+
+def _load_existing_digest(path: str) -> dict | None:
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+def _is_valid_digest(digest: dict) -> bool:
+    """MVP 안전장치: 5개 고정 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
+    if not isinstance(digest, dict):
+        return False
+    items = digest.get("items")
+    if not isinstance(items, list) or len(items) != 5:
+        return False
+
+    required_item_keys = {"id", "date", "category", "title", "summary", "sourceName", "sourceUrl", "status", "importance"}
+    for it in items:
+        if not isinstance(it, dict):
+            return False
+        if not required_item_keys.issubset(it.keys()):
+            return False
+        if not it.get("title") or not it.get("sourceUrl"):
+            return False
+        summary = it.get("summary")
+        if not isinstance(summary, list) or len(summary) == 0:
+            return False
+    return True
+
+def _atomic_write_json(path: str, payload: dict) -> None:
+    tmp_path = f"{path}.tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, path)
+
+def export_daily_digest_json(top_items: list[dict], output_path: str, config: dict) -> dict:
+    """MVP 스키마로 변환해 JSON으로 저장."""
+    now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+    date_str = now_kst.strftime("%Y-%m-%d")
+    last_updated_at = now_kst.isoformat()
+
+    items_out: list[dict] = []
+    for i, item in enumerate(top_items[:5], start=1):
+        title = (item.get("title") or "").strip()
+        link = (item.get("link") or "").strip()
+        summary = (item.get("summary") or "").strip()
+        topic = (item.get("topic") or "").strip()
+        source_name = (item.get("source") or "").strip()
+        published = item.get("published")
+
+        summary_lines = split_summary_to_3lines(summary)
+        read_time_sec = item.get("readTimeSec")
+        if not read_time_sec:
+            read_time_sec = estimate_read_time_seconds(" ".join(summary_lines) if summary_lines else summary)
+
+        from news_digest_exporter import map_topic_to_category
+        out_item = {
+            "id": f"{date_str}_{i}",
+            "date": date_str,
+            "category": map_topic_to_category(topic),
+            "title": title,
+            "summary": summary_lines if summary_lines else [summary],
+            "whyImportant": "",
+            "impactSignals": item.get("impactSignals", []),
+            "dedupeKey": item.get("dedupeKey", ""),
+            "matchedTo": item.get("matchedTo"),
+            "sourceName": source_name,
+            "sourceUrl": link,
+            "publishedAt": published,
+            "readTimeSec": read_time_sec,
+            "status": "kept",
+            "importance": 1,
+        }
+        if item.get("dropReason"):
+            out_item["dropReason"] = item.get("dropReason")
+        items_out.append(out_item)
+
+    digest = {
+        "date": date_str,
+        "selectionCriteria": config["selection_criteria"],
+        "editorNote": config["editor_note"],
+        "question": config["question"],
+        "lastUpdatedAt": last_updated_at,
+        "items": items_out,
+    }
+
+    if not _is_valid_digest(digest):
+        existing = _load_existing_digest(output_path)
+        if existing and _is_valid_digest(existing):
+            print("⚠️ 오늘 digest 생성이 불완전하여 기존 daily_digest.json을 유지합니다.")
+            return existing
+        raise RuntimeError("digest 생성 실패: 유효한 5개 뉴스가 생성되지 않았고 기존 파일도 없습니다.")
+
+    _atomic_write_json(output_path, digest)
+    return digest

@@ -3,88 +3,115 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T00:58:17.033809+09:00",
+  "lastUpdatedAt": "2026-02-03T01:33:24.976634+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "Inside Huawei Cloud's Bold 2026 Partner Strategy: How Data Centers Become the Cornerstone of AI Infrastructure Expansion - WebProNews",
+      "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
       "summary": [
-        "Inside Huawei Cloud's Bold 2026 Partner Stra",
-        "tegy: How Data Centers Become the Cornerston",
-        "e of AI Infrastructure Expansion WebProNews."
+        "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증 브랜드경제신문..."
       ],
       "whyImportant": "",
-      "sourceName": "WebProNews",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTmM0M2pRU1ZmOVZHSUJ1cXpXa2ZUT2R1MmFlWFlhN1BRVUhhY3Y3cEU0ZU1EakZ1d1ZqYy1Cc3k5TFlYVEVQS3FJU19oZDl6dS12LWgxbW02V1YtcjIxMXNYb2lEeDRDNkRKc1kySVhhUUo3MHNfN2xZZ2Iwc1BVdHEtdHJ0QUpQTDNPdDQ0Y1NXclEwSTducXV4VTRpNGxmeUNlVWVGelJuX3pqanRidS1RMnlQUkU4M2VfcXBEUk5BRzlkZWVITGdicnZsbTk3OHRtdWs2TEJXbWlENHlF?oc=5",
-      "publishedAt": "Sat, 31 Jan 2026 14:51:25 GMT",
-      "readTimeSec": 20,
-      "status": "published",
+      "impactSignals": [
+        "policy",
+        "market-demand"
+      ],
+      "dedupeKey": "2026년-1월-29일-규제-본격-시행-반도체-브랜드경제신문",
+      "matchedTo": null,
+      "sourceName": "브랜드경제신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10NEVveXFPT0MtRmFUcnJ1cFBfS05DTGduSDRseDVLV0ZvM2s0R1BvNVJwY09jYlZnaVJILUtZSUFkY3hGR09UZ1F2MnU?oc=5",
+      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
       "importance": 1
     },
     {
       "id": "2026-02-03_2",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "Budget 2026-27 lays strong foundation for AI Data Centres and Semiconductor Ecosystem - PIB",
+      "title": "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도",
       "summary": [
-        "Budget 2026-27 lays strong foundation for AI Data Centres and Semiconductor Ecosystem PIB..."
+        "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도 블로터..."
       ],
       "whyImportant": "",
-      "sourceName": "PIB",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mSGZiVU5DdHJqUkhsSjhUeXU3dXRfTHY4enBLWG1zQzJuUm16Umd3WUtRM1k4Z0FjUFJ5MUtheEdsUWVwaFkwbUdqVlBXNndYWlA1N1JLWGxzS3l2TFk3RjhtdDRlcHU5?oc=5",
-      "publishedAt": "Sun, 01 Feb 2026 15:36:00 GMT",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "시대-화두-보안-개인정보위-규제-혁신-갈림길-블로터",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3M0RRc3Iwa3hkSk1oY3NvRk9zVkJyMlhEOVU2akdjclZKN251MWFxRDFYcWNDSlBFUWQ2bHlFakduQlQ5TTBwbmt4bUhPMGhMc1FVQ203SEtQTTlLcnBwMTNzY3VUQ0Ru0gFsQVVfeXFMTl9MX2laQ3hkbUhuemFidVZUVDRPOVNWZUxULU9JdnU0RXpSMjEyTEV0VkM3M0ZlVFA5a3d5ZV9kcUhQb09VY3VUYXRzSDRFUmZIRkVEMzRqT0sxUGh4bEVvWGw0Q2hPcmllVExD?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 09:04:35 GMT",
       "readTimeSec": 10,
-      "status": "published",
+      "status": "kept",
       "importance": 1
     },
     {
       "id": "2026-02-03_3",
       "date": "2026-02-03",
       "category": "경제",
-      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부] - 매일경제",
+      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부]",
       "summary": [
         "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부] 매일경제..."
       ],
       "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "미국-정부-메디케어-쇼크에-보험주-p500은-신고가-월가월부",
+      "matchedTo": null,
       "sourceName": "매일경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jcmQxVEJrMTN1bXpLYnItMXdoeW5zZUFla3NITTRiNnpIQnE3S1dmMXhOMkRWd3lhWjcteDRTeDNVZWg5Z3lncjJDQm5kazJjbXc?oc=5",
       "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
       "readTimeSec": 10,
-      "status": "published",
+      "status": "kept",
       "importance": 1
     },
     {
       "id": "2026-02-03_4",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "'중국판 엔비디아' 美제재 속 작년 첫 연간흑자 전망 - 연합뉴스 한민족센터",
+      "title": "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미-국제ㅣ한국일보",
       "summary": [
-        "'중국판 엔비디아' 美제재 속 작년 첫 연간흑자 전망 연합뉴스 한민족센터..."
+        "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미-국제ㅣ한국일보 한국일보..."
       ],
       "whyImportant": "",
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10RU9VZVloTkVVcmJGc21VRW5jV1NFbk1YRXJtMkwyNkJIaWwtVFBxZFRhSzBKUTlJTmNRSlV3QjlKSldlaUx5aGdackpteFBBOERXdTFqR0xkVHBkckEtcVFNeFVOZEF3NURTMjRGUTRid3pO?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 12:28:30 GMT",
+      "impactSignals": [
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "끝없는-관세-협상-투자-속도-시비에-통상-한국일보",
+      "matchedTo": null,
+      "sourceName": "한국일보",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU0djNmNfTWY4WHB4eVotSllPRWhQMjR2R0ZwWkV4aEstQ0s2dC1YcFg4cFVEWnlHUzlaZFpWak5RUzYybVVDT3FCSXdaNUs0M29kY1FtQXg2OWxSY202aTA5Z2RTMHpvRmdHck9B?oc=5",
+      "publishedAt": "Fri, 30 Jan 2026 08:52:22 GMT",
       "readTimeSec": 10,
-      "status": "published",
+      "status": "kept",
       "importance": 1
     },
     {
       "id": "2026-02-03_5",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "Tesla registrations in Europe show little recovery in January - Reuters",
+      "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
       "summary": [
-        "Tesla registrations in Europe show little recovery in January Reuters..."
+        "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\" 마켓인..."
       ],
       "whyImportant": "",
-      "sourceName": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd0Z0OUc3N0ZVd0JRTGJIUmxqZjRUbkhMdkkydWt0V2xIcnd5X3BvR1ptTlN1UHp3OEJPOTFKVHpzNjUzUzFSTE0yQ2ZFdGFXX1VnVjNyeHVibjB4c1N3MEg0amVuMmJNb1QxelZVeWtncnh0R2lZUVFid0ttMnYxR0tNdzlwenhTTEFWcVY1ZGxBa19PVlI5UnlOZE9QSllMV1lIQ0dxMVVlcmR2MUFSUHIwUVhGR3VObWg1Y0s3blhtczVScDVlZ1lFdlJMMURNYVE?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 11:42:48 GMT",
+      "impactSignals": [
+        "policy",
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "트럼프-관세정책-자화자찬-우리-조선업에-217조-투자-마켓인",
+      "matchedTo": null,
+      "sourceName": "마켓인",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
+      "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
       "readTimeSec": 10,
-      "status": "published",
+      "status": "kept",
       "importance": 1
     }
   ]

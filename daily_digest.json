@@ -3,20 +3,20 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-02T21:37:08.110921+09:00",
+  "lastUpdatedAt": "2026-02-02T22:16:07.801358+09:00",
   "items": [
     {
       "id": "2026-02-02_1",
       "date": "2026-02-02",
-      "category": "글로벌",
-      "title": "[동향리포트]글로벌 바이오 헬스 산업의 구조적 전환과 미래 전략: 기술·시장·정책 동향 분석 | Bio리포트 > 동향 - BRIC",
+      "category": "IT",
+      "title": "Oracle Plans to Raise Up to $50 Billion for AI Infrastructure Buildout - The Wall Street Journal",
       "summary": [
-        "[동향리포트]글로벌 바이오 헬스 산업의 구조적 전환과 미래 전략: 기술·시장·정책 동향 분석 | Bio리포트 > 동향&nbsp;&nbsp;BRIC..."
+        "Oracle Plans to Raise Up to $50 Billion for AI Infrastructure Buildout The Wall Street Journal..."
       ],
       "whyImportant": "",
-      "sourceName": "BRIC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5oeEdiLUVJSG9FZWxQcm91T3M0bGlTUzRpLWstQS1hVU00WGpzNGZ1d2dEWUlLcHVmZEUwa193UmFfUThMOG5NVzROUUVwQQ?oc=5",
-      "publishedAt": "Fri, 23 Jan 2026 08:00:00 GMT",
+      "sourceName": "The Wall Street Journal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMizANBVV95cUxQZDZKUk9ucHNKdUo2RWcwMElULWlmbnJIa1ZiOExteHVZVXE1dkRjRGYxRWVzUEE3ZXdjekhOQV9ISkJlN3hfVzNNM2ZhNFY3Q1NZcXBZWHQydVQwNW5ybkluNFAtLUJ0QTh6Z0JLWHM1UHo5Q1FucS1FQTUzX3I5Qkc5ZE9YLXJtcWxxQlhrREJCNE1lWWFoTTluWHVRd0t5aW5kaXJSLXRreXduQzlZWGN0Z25DaGFHMUVnU2wzbVliMDh2cXRRNjdGWVJ1YmNVb2RpRUZWcDEzSlUtX0tMLUszLUpaZmVJX09MRWU3RDhLUmhkRm5XLVc5S0lra093RUZMOUs5SkpLZXF3bEZ1RlcxWjhBd3lFZ2ZKaHFJUkpWSzk2SWRORnI0aVFwZTdLRVhqcnZ2TWV4T2pScWx6Q0QwcDBJTUpEWUJJZjZiazhiTjduYWRKdXA5N3N1WmVUT01NZUhfaUhuejNQekVHaUsxaFA4bzJQRnpfaE1NTjR4dXgzSWRrSFFhN2x0bVFwakxWUDJLSHdicXo5dTRPYTZaWXBzenpfUEY2SS00T0lzX00xLWh3T2tXb2h3NHVNWWNRZnlQNldNNmZH?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 13:01:00 GMT",
       "readTimeSec": 10,
       "status": "published",
       "importance": 1
@@ -25,14 +25,16 @@
       "id": "2026-02-02_2",
       "date": "2026-02-02",
       "category": "IT",
-      "title": "모나크리빙-KAIST, AI 기반 주거 데이터 분석 연구 협약 - 중앙일보",
+      "title": "Oracle Shares Fall Premarket on Plans to Raise Up to $50 Billion for AI Infrastructure Buildout - The Wall Street Journal",
       "summary": [
-        "모나크리빙-KAIST, AI 기반 주거 데이터 분석 연구 협약&nbsp;&nbsp;중앙일보..."
+        "Oracle Shares Fall Premarket on Plans to",
+        "Raise Up to $50 Billion for AI Infrastr",
+        "ucture Buildout The Wall Street Journal."
       ],
       "whyImportant": "",
-      "sourceName": "중앙일보",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9lS1NYYjhUbEZhSmR6bWNtT0NidnRFb0JRSUtlZDdnRlRwNTh3QUw4WFFFNXNUMEtONVpPT3RWVWU2cVp0RFI0UXpRSndqb1JjSjVvbGFn?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 06:00:00 GMT",
+      "sourceName": "The Wall Street Journal",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxQSlRDNXVIM2FUdENTNXd5clc3eFkxOU5mZkswaGdUdGxJYWVWRS04TFk4VXlLX2M0T1Fqenp0SGNENDNDNkRfYlhKdEdxMDRRS0tLWFo3c1BEdnlvRWFNVm1qTVdsMkRXNFBLclBYVXplazdBbHZ2aV9QcjM4UF9yMng5eWhiRV9HVms1a1lGVlNxc3dIZFBBc3ZET1Y4dHZ0SUd2ZGNNOGx6cjVsZDJCQnZJeVQ2UnRUS3VOWXVyeGpVYzBQSU5wem84MEZ6SlloQ3NRNHZEamI2ZXJFbURaeXFhUlVUdVFHc19IWVJyMDZWbjZRdFVBTExaUlBoMmI1SlFISGtHS000S2VORnZJVG1lcmhmZU9ORk9LSHJ2ak0taWNsUDhFTVFGVTdaY2ZvdllqcGFwQkNVX0pZREd3Q0t4c2c4OERyTDlBTE5kd0dQbzVrVjkzaEV3RkRyNU5ITk1YVWx5UHFkWjZiRjc1NVhYdS02c0M3eGRNYnBFd2FhREtZWExiWVZ2R2EtSmtOSGhxUWF4d09rYWlKcEtJYXdBYmo1LTV3dWxOYUUwa21sZ2NXbFQ5bWZyNzd6WkZnWGFQY2NIa2dQb3lKdE85VjVaczA2X1VoN2lDTWln?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 12:07:00 GMT",
       "readTimeSec": 10,
       "status": "published",
       "importance": 1
@@ -40,15 +42,15 @@
     {
       "id": "2026-02-02_3",
       "date": "2026-02-02",
-      "category": "글로벌",
-      "title": "[뉴욕증시 주간전망(2~6일)] 고용보고서·알파벳·아마존 등 실적 주목 - 미주조선일보",
+      "category": "경제",
+      "title": "\"셀만 팔아선 답 없다\"…잉곳부터 모듈까지 'K태양광 생태계' 구축 - 한국경제",
       "summary": [
-        "[뉴욕증시 주간전망(2~6일)] 고용보고서·알파벳·아마존 등 실적 주목&nbsp;&nbsp;미주조선일보..."
+        "\"셀만 팔아선 답 없다\"…잉곳부터 모듈까지 'K태양광 생태계' 구축 한국경제..."
       ],
       "whyImportant": "",
-      "sourceName": "미주조선일보",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDeEdTZUdUWXJOcGxHYXNJMFVOZmcxRnRQajFZbmE2a1ZLLU42QTRZZWxKeXY4UVVueWZuSlF4TlZWSDJjWG1MOFVvNVBDMWE1NlZvZlBuUkVIVHlGTmZpMWxzS3hkbHVZT3FQRmJ5Y2dXSElNTEE?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 00:34:43 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95Ykt0YWpDWTRYTnc2QjZZZ3hic3FyXzhWSWgyc0Q0UUxkam1TbFl5WGViMnRpc01KTVZBVW9UakZzQnl5RzNZZDY2YTlad20xRXFZZU96ZGxLZ9IBVEFVX3lxTFB0SmxKMnFnLXVnMzN5ZzFiWk5yMVE4ZWJMTGJfdUtNdFdrS0RoU3hoQVpEaEZxTjJTWG1rR2FndDh4RFVRYk1Hb05jZkZMTHg1MmUtTA?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 08:26:34 GMT",
       "readTimeSec": 10,
       "status": "published",
       "importance": 1
@@ -57,14 +59,14 @@
       "id": "2026-02-02_4",
       "date": "2026-02-02",
       "category": "경제",
-      "title": "[명승엽PD의 이슈리포트] 원자재 리스크에 재편되는 기술 전략 로드맵… 태양광, 기술 선택의 시대로 - 인더스트리뉴스",
+      "title": "햇빛으로 지역을 따뜻하게 - 서울경제",
       "summary": [
-        "[명승엽PD의 이슈리포트] 원자재 리스크에 재편되는 기술 전략 로드맵… 태양광, 기술 선택의 시대로&nbsp;&nbsp;인더스트리뉴스..."
+        "햇빛으로 지역을 따뜻하게 서울경제..."
       ],
       "whyImportant": "",
-      "sourceName": "인더스트리뉴스",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFA0b05JZk1SSUREZTRPZHhoRFlYa2ZSUlhDTlBjRE5ZckNmMGJsbnIzdUo2NTI0V2NVcG5LOUczdEF0M0YyakZncjloOHBHT0QxMWZZSEEwY3lMYkdBOG9SYWpxaWFqX0ZXMThDbVBZNW1EUQ?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 06:32:52 GMT",
+      "sourceName": "서울경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE04eHdhVTFnWl9WbHU5SzQzVm5BTmtoZ1VuRlM2R0Z6ZG1sRmN1ZFJrN3hWdGlMYkRiZ3pYc3d3SDhaaTBvVnhEZDJNbE80S1NzNWc?oc=5",
+      "publishedAt": "Sun, 01 Feb 2026 22:00:00 GMT",
       "readTimeSec": 10,
       "status": "published",
       "importance": 1
@@ -72,16 +74,15 @@
     {
       "id": "2026-02-02_5",
       "date": "2026-02-02",
-      "category": "IT",
-      "title": "\"눈? 나한테 맡겨\"...자동 제설 로봇에 눈길 [앵커리포트] - YTN",
+      "category": "글로벌",
+      "title": "The EU’s capital market strategy must support innovation - Financial Times",
       "summary": [
-        "\"눈?",
-        "나한테 맡겨\"...자동 제설 로봇에 눈길 [앵커리포트]&nbsp;&nbsp;YTN..."
+        "The EU’s capital market strategy must support innovation Financial Times..."
       ],
       "whyImportant": "",
-      "sourceName": "YTN",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5LVlJBTHI1amYxY0l5YU5uTEtzVThIUC0weWRvaUM5cktxa09MLW5QSWI1Q2phVldNM3d0ZWVLZlZyN2hnUXFkcDVYd0M1ZWpvSGFOUEw0TkdaYURDb0HSAYMBQVVfeXFMTUViT2t4b095NUtGLWtsRk5ueDRIbjhhTjNrODh5VFpHUzhHQk5mampLaTRxZUVubVpGVHpqZXBhWlBJa2hMNzdHM1lWYVMxVXNYQlFlOGU4a2lHd0pvdk1Ic01vLUdydXpPUEZscEwwSnpxcVIyZHgtUnUySjUwcm9OOWM?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 05:59:00 GMT",
+      "sourceName": "Financial Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBqREQ1OExZal9hblNKMWhSRmdCTndmbmpIZ1YtOUZnekYxMTFHeWNaUUlCTFZaOGRrMmMtTnVTcXdwWDI2c2NfazQ3aEFmN0FQWGpsQUwyQjljbXJzbGlGZEdXT29vLXZSaU9yMnhCaDM?oc=5",
+      "publishedAt": "Tue, 27 Jan 2026 05:00:38 GMT",
       "readTimeSec": 10,
       "status": "published",
       "importance": 1

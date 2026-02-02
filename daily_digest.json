@@ -3,7 +3,7 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T01:42:07.012386+09:00",
+  "lastUpdatedAt": "2026-02-03T02:28:25.699195+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
@@ -25,7 +25,7 @@
       "publishedAt": "Wed, 28 Jan 2026 14:58:36 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 1
+      "importance": 4
     },
     {
       "id": "2026-02-03_2",
@@ -47,7 +47,7 @@
       "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 1
+      "importance": 4
     },
     {
       "id": "2026-02-03_3",
@@ -68,7 +68,7 @@
       "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 1
+      "importance": 4
     },
     {
       "id": "2026-02-03_4",
@@ -90,7 +90,7 @@
       "publishedAt": "Fri, 30 Jan 2026 08:52:22 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 1
+      "importance": 4
     },
     {
       "id": "2026-02-03_5",
@@ -113,7 +113,7 @@
       "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 1
+      "importance": 4
     }
   ]
 }

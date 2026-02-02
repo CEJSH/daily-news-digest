@@ -33,130 +33,64 @@ def clean_text(s: str) -> str:
 
 RSS_SOURCES = [
     # ==========================
-    # 로봇 (KR + Global)
+    # IT (KR/EN) — 인프라/칩/보안/규제 중심
     # ==========================
-    {
-        "topic": "로봇",
-        "url": "https://news.google.com/rss/search?q=로봇&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "로봇",
-        "url": "https://news.google.com/rss/search?q=robotics+OR+robot&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
+     {
+    "topic": "IT",
+    "url": "https://news.google.com/rss/search?q=AI+반도체+OR+데이터센터+OR+클라우드+OR+보안+취약점+OR+AI+규제+-리포트+-세미나+-웨비나+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
+    "limit": 15,
+  },
+  {
+    "topic": "IT",
+    "url": "https://news.google.com/rss/search?q=AI+chips+OR+data+center+OR+cloud+infrastructure+OR+cybersecurity+vulnerability+OR+AI+regulation+-opinion+-column+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en",
+    "limit": 15,
+  },
 
     # ==========================
-    # AGI / 고급 AI (KR + Global)
+    # 경제 (KR/EN) — 금리/환율/물가/고용/정책 + (바이오/에너지 “가끔”)
     # ==========================
-    {
-        "topic": "AGI / 고급 AI",
-        "url": "https://news.google.com/rss/search?q=AGI&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "AGI / 고급 AI",
-        "url": "https://news.google.com/rss/search?q=AGI&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
+      {
+    "topic": "경제",
+    "url": "https://news.google.com/rss/search?q=금리+OR+환율+OR+물가+OR+고용+OR+실적+OR+경기+전망+OR+정부+정책+OR+에너지전환+OR+태양광+OR+바이오+헬스케어+-리포트+-세미나+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
+    "limit": 15,
+  },
+  {
+    "topic": "경제",
+    "url": "https://news.google.com/rss/search?q=interest+rate+OR+inflation+OR+fx+OR+jobs+report+OR+earnings+OR+economic+policy+OR+energy+transition+OR+biotech+OR+healthcare+-opinion+-column+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en",
+    "limit": 15,
+  },
+
 
     # ==========================
-    # AI / 인공지능 (KR + Global)
+    # 글로벌-정세 (KR/EN) — 무역/제재/관세/공급망/외교
     # ==========================
-    {
-        "topic": "AI / 인공지능",
-        "url": "https://news.google.com/rss/search?q=AI&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "AI / 인공지능",
-        "url": "https://news.google.com/rss/search?q=AI&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
+   {
+    "topic": "글로벌_정세",
+    "url": "https://news.google.com/rss/search?q=관세+OR+제재+OR+무역+OR+공급망+OR+외교+OR+국제+협상+-사망+-살인+-폭행+-연예+-스포츠+-리포트+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
+    "limit": 15,
+  },
+  {
+    "topic": "글로벌_정세",
+    "url": "https://news.google.com/rss/search?q=tariff+OR+sanctions+OR+trade+OR+supply+chain+OR+diplomacy+OR+geopolitics+-opinion+-column+-sports+-celebrity+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en",
+    "limit": 15,
+  },
+
 
     # ==========================
-    # 반도체 (KR + Global)
+    # 글로벌-빅테크 (EN 중심 + KR 선택)
     # ==========================
-    {
-        "topic": "반도체",
-        "url": "https://news.google.com/rss/search?q=반도체&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "반도체",
-        "url": "https://news.google.com/rss/search?q=semiconductor&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
+     {
+    "topic": "글로벌_빅테크",
+    "url": "https://news.google.com/rss/search?q=Apple+OR+Microsoft+OR+Google+OR+OpenAI+OR+NVIDIA+OR+Amazon+OR+Meta+OR+Tesla+OR+TSMC+-opinion+-column+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en",
+    "limit": 15,
+  },
+  # (선택) 한국어 빅테크/해외테크
+  {
+    "topic": "글로벌_빅테크",
+    "url": "https://news.google.com/rss/search?q=애플+OR+마이크로소프트+OR+구글+OR+오픈AI+OR+엔비디아+OR+아마존+OR+메타+OR+TSMC+-리포트+-세미나+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
+    "limit": 10,
+  },
 
-    # ==========================
-    # 태양광 / 에너지 전환 (KR + Global)
-    # ==========================
-    {
-        "topic": "태양광 / 에너지 전환",
-        "url": "https://news.google.com/rss/search?q=태양광&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "태양광 / 에너지 전환",
-        "url": "https://news.google.com/rss/search?q=solar+energy+OR+renewable+energy&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
-
-    # ==========================
-    # 바이오 / 헬스케어 (KR + Global)
-    # ==========================
-    {
-        "topic": "바이오 / 헬스케어",
-        "url": "https://news.google.com/rss/search?q=바이오+헬스케어&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "바이오 / 헬스케어",
-        "url": "https://news.google.com/rss/search?q=bio+healthcare+biotech&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
-
-    # ==========================
-    # 규제 / 법·정책 (현재는 한국 위주)
-    # ==========================
-    {
-        "topic": "규제 / 법·정책",
-        "url": "https://news.google.com/rss/search?q=규제&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-
-    # ==========================
-    # 청년 (한국 이슈 위주)
-    # ==========================
-    {
-        "topic": "서울",
-        "url": "https://news.google.com/rss/search?q=서울&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-
-        # ==========================
-    # 청년 (한국 이슈 위주)
-    # ==========================
-    {
-        "topic": "고용",
-        "url": "https://news.google.com/rss/search?q=고용&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-
-    # ==========================
-    # 금융 / 자본시장 (KR + Global 예시)
-
-    # ==========================
-    {
-        "topic": "금융 / 자본시장",
-        "url": "https://news.google.com/rss/search?q=금융+자본시장&hl=ko&gl=KR&ceid=KR:ko",
-        "limit": 3,
-    },
-    {
-        "topic": "금융 / 자본시장",
-        "url": "https://news.google.com/rss/search?q=finance+capital+market&hl=en&gl=US&ceid=US:en",
-        "limit": 3,
-    },
 ]
 
 USE_AI_SUMMARY = False  # 나중에 True로 바꿔서 활성화
@@ -275,10 +209,12 @@ HARD_EXCLUDE_KEYWORDS = [
     # 리포트/기관/홍보/행사/모집
     "동향", "동향리포트", "리포트", "브리프", "백서", "자료집", "보고서", "연구보고서",
     "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수",
-    "보도자료", "홍보", "프로모션", "할인", "출시기념",
+    "보도자료", "홍보", "프로모션", "할인", "출시기념", "사설","칼럼","기고","기자수첩"
     # 영문
     "whitepaper", "report", "brief", "webinar", "conference", "forum",
     "press release", "promotion", "apply now",
+    "opinion","editorial","column","commentary","view","must","should",
+
 ]
 
 HARD_EXCLUDE_URL_HINTS = [
@@ -344,7 +280,7 @@ EXCLUDE_KEYWORDS = [
 
 SOURCE_TIER_A = {"Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "연합뉴스", "한국경제", "매일경제", "서울경제"}
 SOURCE_TIER_B = {"중앙일보", "동아일보", "한겨레", "경향신문", "머니투데이", "전자신문", "ZDNet Korea", "TechCrunch", "The Verge"}
-
+STOPWORDS = {"the","a","an","to","for","of","and","or","in","on","with","is","are","must","should"}
 
 MIN_SCORE = 2.0
 MAX_ENTRIES_PER_FEED = 100
@@ -356,6 +292,19 @@ TAG_RE = re.compile(r"<[^>]+>")
 # ==========================================
 # 유틸리티 함수
 # ==========================================
+
+
+def normalize_title_for_dedupe(title: str) -> set[str]:
+    t = trim_title_noise(clean_text(title)).lower()
+    t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
+    toks = [x for x in t.split() if x and x not in STOPWORDS]
+    return set(toks)
+
+def jaccard(a: set[str], b: set[str]) -> float:
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
 def pick_top_with_mix(all_items, top_limit=5):
     buckets = {"IT": [], "경제": [], "글로벌": []}
     for it in all_items:
@@ -379,12 +328,12 @@ def pick_top_with_mix(all_items, top_limit=5):
 
 
 def source_weight(source_name: str) -> float:
-    if source_name in SOURCE_TIER_A:
+    s = (source_name or "").strip()
+    if any(a in s for a in SOURCE_TIER_A):
         return 3.0
-    if source_name in SOURCE_TIER_B:
+    if any(b in s for b in SOURCE_TIER_B):
         return 1.5
     return 0.3
-
 
 def trim_title_noise(title: str) -> str:
     # 너무 공격적이면 위험하니, 우선 ' | ' 한 번만 컷
@@ -469,14 +418,15 @@ def score_entry(entry) -> float:
         now = datetime.datetime.now()
         delta = now - published_dt
 
+        if delta.days > 5:
+            return -999.0
         if delta.days < 1:
-            score += 1.3  # 24시간 이내
+            score += 1.3
         elif delta.days < 3:
-            score += 1.0  # 3일 이내
-        elif delta.days < 7:
-            score += 0.7  # 7일 이내
-        elif delta.days > 21:
-            score -= 1.0  # 3주 이상 지난 글은 감점
+            score += 1.0
+        else:
+            score += 0.7
+        
 
     return score
 
@@ -495,8 +445,12 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
     """
     print("🔍 뉴스를 수집하고 큐레이팅하는 중입니다...")
 
+
+
+
     grouped_items = {}       # topic -> [item, item, ...]
     seen_titles = set()      # 전체 중복 제거
+    seen_title_tokens: list[set[str]] = []
     all_items = []           # 전체 기사 모음
     topic_limits = {}        # topic별 limit 설정 (같은 topic의 여러 소스 중 최대값 사용)
 
@@ -518,10 +472,15 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             link = getattr(entry, "link", "").strip()
             summary_raw = getattr(entry, "summary", "") if hasattr(entry, "summary") else ""
             summary_clean = clean_text(summary_raw)
+            title_clean = trim_title_noise(clean_text(title))
             summary = (summary_clean[:200] + "...") if summary_clean else "내용을 확인하려면 클릭하세요."
 
-            if not title:
+            # entry loop 안에서:
+            tokens = normalize_title_for_dedupe(title)
+            if any(jaccard(tokens, prev) >= 0.6 for prev in seen_title_tokens):
                 continue
+
+            seen_title_tokens.append(tokens)
 
             # 제목 기준 전역 중복 제거
             if title in seen_titles:
@@ -538,7 +497,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             source_name = get_source_name(entry)
 
             item = {
-                "title": title,
+                "title": title_clean,
                 "link": link,
                 "summary": summary,
                 "published": published,
@@ -572,15 +531,13 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
 # ==========================================
 
 def map_topic_to_category(topic: str) -> str:
-    """현재 RSS topic을 MVP 3카테고리(IT/경제/글로벌)로 매핑."""
     t = (topic or "").lower()
-    it_keywords = ["ai", "agi", "로봇", "robot", "반도체", "semiconductor", "인공지능"]
-    econ_keywords = ["경제", "finance", "금리", "환율", "주가", "증시", "투자", "에너지", "태양광", "energy"]
-
-    if any(k in t for k in it_keywords):
+    if t.startswith("it"):
         return "IT"
-    if any(k in t for k in econ_keywords):
+    if "경제" in t:
         return "경제"
+    if "글로벌" in t:
+        return "글로벌"
     return "글로벌"
 
 

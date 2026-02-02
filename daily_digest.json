@@ -3,28 +3,28 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T04:06:33.245258+09:00",
+  "lastUpdatedAt": "2026-02-03T08:08:56.316464+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
+      "title": "Oracle's $50 Billion AI Infrastructure Gambit Signals Seismic Shift in Enterprise Cloud Computing",
       "summary": [
-        "2026년 1월 29일부터 AI 규제가 본격적으로 시행될 예정이다.",
-        "규제 시행과 함께 반도체 및 산업 AI 수요가 급증할 것으로 예상된다.",
-        "AI 기술 발전과 산업 변화에 대한 기대감이 높아지고 있다."
+        "Oracle's $50 Billion AI Infrastru",
+        "cture Gambit Signals Seismic Shif",
+        "t in Enterprise Cloud Computing"
       ],
-      "whyImportant": "AI 규제 시행은 관련 산업 발전 방향에 중요한 영향을 미칠 수 있다.",
+      "whyImportant": "",
       "impactSignals": [
         "policy",
-        "market-demand"
+        "capex"
       ],
-      "dedupeKey": "규제-반도체-산업ai-수요",
+      "dedupeKey": "oracle-billion-infrastructure-gambit-signals-seismic-enterprise-computing",
       "matchedTo": null,
-      "sourceName": "유스연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54YVhnYXVWRWkwUjFrUGE2NHdaMVVhNF9UQ2dQUUJTdml6aFFtc09CTDVlYXhhblhwX2J1TmRsYlpmdnpKNWJfbjl1ZlVMQ1RCY1E?oc=5",
-      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
+      "sourceName": "WebProNews",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRnpjZVRoMnhpUXl4SWtnMno4d1FYeHhWcjdyenZ3SFM1T1VVdHJiemFNYnpneF9EeG41Z0JjSktfX2hlQU5hVHA1UTJuUlhyTmVRZ2lESGR0V3gxalFtb3B1bGl4ODVZcmlJelpJLV8xdGxWMmN0VTVJek52aGVJOHVIWDM4OUVWa2d2MG9KcklmRzZNNU9MSGhMR0JhMDR2dnNmOTM5VGRSWWlXR1Y1eGI5ajFRTFJIM2RHV1BxanE?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 19:58:37 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4
@@ -35,40 +35,272 @@
       "category": "IT",
       "title": "The Next Phase of AI: Technology, Infrastructure, and Policy in 2025–2026",
       "summary": [
-        "인공지능 기술, 인프라, 정책의 다음 단계가 2025-2026년에 전개될 예정이다.",
-        "인공지능의 미래 발전을 위한 기술, 인프라, 정책 간의 상호작용이 중요하다.",
-        "향후 인공지능 발전을 위한 투자 및 정책 방향 설정이 필요하다."
+        "The Next Phase of AI: Tec",
+        "hnology, Infrastructure,",
+        "and Policy in 2025–2026"
       ],
-      "whyImportant": "인공지능 기술 발전은 사회 전반에 걸쳐 혁신을 가속화하고 새로운 경제적 가치를 창출할 수 있다.",
+      "whyImportant": "",
       "impactSignals": [
         "policy",
         "capex"
       ],
-      "dedupeKey": "인공지능-기술-인프라-정책",
+      "dedupeKey": "next-phase-technology-infrastructure-policy",
       "matchedTo": null,
       "sourceName": "The American Action Forum",
       "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVpCcXk1ODZ2dXdnNjl4RmZkRzc3cERmdXRWTlpjN3QxNndNMmFBQUlKY09ZWHN2eFdJZGZmbWNZVEJQbXJxU1dOT0IwUXJPQUg1Z3pGYUhXLW1IZHlCODdCNUxYTlVfTnhKMlpoTzFZT0ZpeXdRUDBza1R6WjRKbkVqbEU0N0xvY3U0NG1aQXF3LTJ3MDRCblhJX2lJQ0Rud1NGMlkzNFlIckwzTGxyVHpTMHo4UQ?oc=5",
       "publishedAt": "Wed, 28 Jan 2026 14:58:36 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 4
     },
     {
       "id": "2026-02-03_3",
       "date": "2026-02-03",
-      "category": "경제",
-      "title": "트럼프發 2차 관세협상 국면…대미투자특별법 급물살",
+      "category": "IT",
+      "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
       "summary": [
-        "트럼프 정부의 2차 관세 협상 국면이 시작되었다.",
-        "이에 따라 대미 투자를 촉진하기 위한 특별법 제정이 빠르게 진행될 것으로 예상된다.",
-        "해당 특별법은 미국 투자를 장려하기 위한 다양한 지원책을 포함할 것으로 보인다."
+        "2026년 1월 29일 AI 규제 본",
+        "격 시행 속 반도체·산업 AI 수요",
+        "급증"
       ],
-      "whyImportant": "미국과의 무역 관계 변화에 대응하고 국내 기업의 경쟁력을 강화하는 데 중요한 역할을 할 수 있다.",
+      "whyImportant": "",
+      "impactSignals": [
+        "policy",
+        "market-demand"
+      ],
+      "dedupeKey": "규제-본격-시행-반도체-산업-수요-급증",
+      "matchedTo": null,
+      "sourceName": "유스연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54YVhnYXVWRWkwUjFrUGE2NHdaMVVhNF9UQ2dQUUJTdml6aFFtc09CTDVlYXhhblhwX2J1TmRsYlpmdnpKNWJfbjl1ZlVMQ1RCY1E?oc=5",
+      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_4",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도",
+      "summary": [
+        "AI 시대 화두 '보안'…개인정보위,",
+        "규제·혁신 갈림길 속 대응 속도"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "시대-화두-보안-개인정보위-규제-혁신-갈림길-대응",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3M0RRc3Iwa3hkSk1oY3NvRk9zVkJyMlhEOVU2akdjclZKN251MWFxRDFYcWNDSlBFUWQ2bHlFakduQlQ5TTBwbmt4bUhPMGhMc1FVQ203SEtQTTlLcnBwMTNzY3VUQ0Ru0gFsQVVfeXFMTl9MX2laQ3hkbUhuemFidVZUVDRPOVNWZUxULU9JdnU0RXpSMjEyTEV0VkM3M0ZlVFA5a3d5ZV9kcUhQb09VY3VUYXRzSDRFUmZIRkVEMzRqT0sxUGh4bEVvWGw0Q2hPcmllVExD?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 09:04:35 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_5",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 주권의 시대.. 지정학·규제·보안 압력으로 2년내 전세계 35% 전환 전망",
+      "summary": [
+        "AI 주권의 시대..",
+        "지정학·규제·보안 압력으로 2년내 전세계 35% 전환 전망",
+        "AI 주권의 시대.. 지정학·규제·보"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "주권의-시대-지정학-규제-보안-압력으로-2년내-전세계",
+      "matchedTo": null,
+      "sourceName": "열린정책뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GWHEzejhuR0tRUlAtY0llWE5lVXNPOFQ5TlM0RDUzWFVqcUJnUmpvam9hbVZzNWRkYkZha1h3MENfN3hGQnVOMXJJeTN3ZWJZa1hVRFF5NWxvazdZcWZNLWthVFdNc0RaZHlN?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 11:45:23 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_6",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 주도권 경쟁 본격화…한국·미국·EU, 규제와 산업 전략 ‘삼각 구도’ 형성",
+      "summary": [
+        "AI 주도권 경쟁 본격화…한국·미국·",
+        "EU, 규제와 산업 전략 ‘삼각 구도",
+        "’ 형성"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "주도권-경쟁-본격화-한국-미국-규제와-산업-전략",
+      "matchedTo": null,
+      "sourceName": "브랜드경제신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBwWUs1cFNDaG9YTFIxRjVSN3FXelN6QTNYSmluNm1sZ2ZZRVZNRHFvcEtQb19XcjhwNTNKclF4Tk1vaE41LVMxaWxQQVU?oc=5",
+      "publishedAt": "Sat, 31 Jan 2026 02:38:04 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_7",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "트럼프, 바이든표 AI 반도체 수출통제 철회... \"단순 규제로 대체\"",
+      "summary": [
+        "트럼프, 바이든표 AI 반도체 수출통제 철회...",
+        "\"단순 규제로 대체\"-국제ㅣ한국일보",
+        "트럼프, 바이든표 AI 반도체 수출통"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy",
+        "sanctions"
+      ],
+      "dedupeKey": "트럼프-바이든표-반도체-수출통제-철회-단순-규제로-대체",
+      "matchedTo": null,
+      "sourceName": "한국일보",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBfbWVVcjZRNGFEM3JrZjhpREJac1dZWGZkTGFXX2M5UHo1TWQwWkMyUm1RM214b3hjYjQyUnVnbXl4QnNRQ2VNU0lRNlRzd1JrWHlCVDFDYUxaNzhvcU9nME00V3R3QWVmbWdnc1NR?oc=5",
+      "publishedAt": "Wed, 28 Jan 2026 09:53:34 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_8",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "광역 규제특구내 '주 52시간 완화' 논의…AI 특별연장근로도 확대",
+      "summary": [
+        "광역 규제특구내 '주 52시간 완화'",
+        "논의…AI 특별연장근로도 확대"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "광역-규제특구내-52시간-완화-논의-특별연장근로도-확대",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hZnpNV2w1cmgzNkZYenRVellRNi1BWi02WHJJMjRGZzQyb2hVa0M4dk5ScVFxb1QxbkQtZE0wVlRuU2FTUldlMzhJLWxXMlJFV0hzbW1ONGVQd9IBVEFVX3lxTE45NVJKOUFkMVAyRGl2Rjl2VTBXZlRFLXBPMHNFb01Mc2hhekRtb0FJZU9PMFk4VFRaS3hhT3d3TlAtQjhqV0x3MWIycmRMcVVsVHQ0eg?oc=5",
+      "publishedAt": "Thu, 29 Jan 2026 09:13:34 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_9",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가",
+      "summary": [
+        "미국 정부發 메디케어 쇼크에 보험주",
+        "급락...S&P500은 신고가 [월가",
+        "월부]"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "미국-정부-메디케어-쇼크에-보험주-p500은-신고가-월가월부",
+      "matchedTo": null,
+      "sourceName": "매일경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jcmQxVEJrMTN1bXpLYnItMXdoeW5zZUFla3NITTRiNnpIQnE3S1dmMXhOMkRWd3lhWjcteDRTeDNVZWg5Z3lncjJDQm5kazJjbXc?oc=5",
+      "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_10",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "트럼프, 한국 관세 인상...대미투자특별법은 미뤄지고 있나? 다른 나라 상황은 어떨까?",
+      "summary": [
+        "트럼프, 한국 관세 인상...대미투자특별법은 미뤄지고 있나?",
+        "다른 나라 상황은 어떨까?",
+        "트럼프, 한국 관세 인상...대미투자"
+      ],
+      "whyImportant": "",
       "impactSignals": [
         "sanctions",
         "capex"
       ],
-      "dedupeKey": "트럼프-관세협상-대미투자-특별법",
+      "dedupeKey": "트럼프-한국-관세-인상-대미투자특별법은-미뤄지고-상황은-어떨까",
+      "matchedTo": null,
+      "sourceName": "BBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2ZENlZkJIMGVjWFVTOHFrTFJZcUQ1QjFOcDRSai1tbHZRRkZZWkg3UENMaXhEOFRMdXB1cVo4ak11NTZfcnJEbkhDQVJZeFpnVml2UFF4d0JIVFpH0gFiQVVfeXFMTlp1RHR3SXBON1pDcWxIVG1Sc2ZhRWJ0ZWktNWJaNXpxQ25HSEQ5Z2hmaHBJWHd2eTI3dF95Y1NJU0hid0ZUZi1lOGlIRjJLZU5KVERDbXlVLTE5QnBLSTRiRmc?oc=5",
+      "publishedAt": "Tue, 27 Jan 2026 12:08:31 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_11",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미",
+      "summary": [
+        "끝없는 관세 협상… 투자 속도 시비에",
+        "'통상 투톱' 급거 방미-국제ㅣ한국",
+        "일보"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "끝없는-관세-협상-투자-속도-시비에-통상-투톱",
+      "matchedTo": null,
+      "sourceName": "한국일보",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU0djNmNfTWY4WHB4eVotSllPRWhQMjR2R0ZwWkV4aEstQ0s2dC1YcFg4cFVEWnlHUzlaZFpWak5RUzYybVVDT3FCSXdaNUs0M29kY1FtQXg2OWxSY202aTA5Z2RTMHpvRmdHck9B?oc=5",
+      "publishedAt": "Fri, 30 Jan 2026 08:52:22 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_12",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
+      "summary": [
+        "트럼프, 관세정책 '자화자찬'…\"韓,",
+        "우리 조선업에 217조 투자\""
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy",
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "트럼프-관세정책-자화자찬-우리-조선업에-217조-투자",
+      "matchedTo": null,
+      "sourceName": "마켓인",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
+      "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_13",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "트럼프發 2차 관세협상 국면…대미투자특별법 급물살",
+      "summary": [
+        "트럼프發 2차 관세협상 국면…대미투자",
+        "특별법 급물살"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "트럼프-2차-관세협상-국면-대미투자특별법-급물살",
       "matchedTo": null,
       "sourceName": "매일일보",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZY1NCMjdqWTFXcGxPcmV5dnRTQ3FRcXMyaXRIXzZoUjZUaTZPWnAtZXlMR1l6S1Q1OGRrSXE1MFBvbXBOZVoxV2szdGU3WmVNU3BhSFZCbzVaMmV5Tkd0UDRNTQ?oc=5",
@@ -78,50 +310,162 @@
       "importance": 4
     },
     {
-      "id": "2026-02-03_4",
+      "id": "2026-02-03_14",
       "date": "2026-02-03",
-      "category": "경제",
-      "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
+      "category": "글로벌",
+      "title": "한미 관세 협상 아직도 오리무중, ‘입법전 투자’ 제안했으나 결론 못 내",
       "summary": [
-        "트럼프 전 대통령이 자신의 관세 정책을 옹호하며 한국이 미국 조선업에 217조 원을 투자했다고 주장했습니다.",
-        "그는 과거 무역 정책이 미국에 불리했으며, 관세가 미국 제조업을 부활시켰다고 강조했습니다.",
-        "트럼프 전 대통령은 앞으로도 관세가 미국의 협상력을 높이는 데 도움이 될 것이라고 덧붙였습니다."
+        "한미 관세 협상 아직도 오리무중, ‘",
+        "입법전 투자’ 제안했으나 결론 못 내"
       ],
-      "whyImportant": "트럼프 전 대통령의 주장은 향후 미국의 무역 정책 방향에 대한 시사점을 던져줄 수 있습니다.",
+      "whyImportant": "",
       "impactSignals": [
-        "policy",
+        "sanctions",
         "capex"
       ],
-      "dedupeKey": "트럼프-관세정책-한국-조선업투자",
+      "dedupeKey": "한미-관세-협상-아직도-오리무중-입법전-투자-제안했으나",
       "matchedTo": null,
-      "sourceName": "마켓인",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
-      "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
+      "sourceName": "전한길뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyUHFvaG9rYU1qNFpFSWRDRFJLVEdTVVJPb3BWUHgzZlZBb3lxdzE5My1iNjE3YlktSDgzVmZQbUVacUZZZkFxQlBMbUJiUDV4WGt0Y0tla3NrRVdXaU1jMkhYalBQdThB?oc=5",
+      "publishedAt": "Sun, 01 Feb 2026 04:41:40 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 4
     },
     {
-      "id": "2026-02-03_5",
+      "id": "2026-02-03_15",
       "date": "2026-02-03",
       "category": "글로벌",
       "title": "트럼프 “한미관세협상 파기”…‘초비상’ 정부·여당 “2월 대미투자법 처리” 대응",
       "summary": [
-        "트럼프 전 대통령이 한미 관세 협상 파기를 언급하며 정부와 여당에 비상이 걸렸다.",
-        "이에 정부와 여당은 2월 중 대미 투자 관련 법안을 처리하여 대응할 방침이다.",
-        "이번 결정은 향후 한미 경제 관계에 중대한 영향을 미칠 수 있다는 분석이 나온다."
+        "트럼프 “한미관세협상 파기”…‘초비상",
+        "’ 정부·여당 “2월 대미투자법 처리",
+        "” 대응"
       ],
-      "whyImportant": "한미 관세 협상 파기 가능성은 양국 경제 관계의 불확실성을 증대시키고, 글로벌 무역 질서에 파장을 일으킬 수 있다.",
+      "whyImportant": "",
       "impactSignals": [
         "policy",
         "sanctions",
         "capex"
       ],
-      "dedupeKey": "트럼프-한미관세-투자법",
+      "dedupeKey": "트럼프-한미관세협상-파기-초비상-정부-여당-대미투자법-처리",
       "matchedTo": null,
       "sourceName": "에너지경제신문 모바일",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMHU0OHB5T2dvR3hFX1liZHJQek1jNVhWbnBGOU5Ta3VGSW9TdmYxZU5BUzQ5U3JEeG9pRkpwNGJwejNlZnQxamlyUUpQdXN4eGxFcGJ0Rzl2d2M?oc=5",
       "publishedAt": "Tue, 27 Jan 2026 05:48:17 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_16",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "'중국판 엔비디아' 美제재 속 작년 첫 연간흑자 전망",
+      "summary": [
+        "'중국판 엔비디아' 美제재 속 작년",
+        "첫 연간흑자 전망"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "sanctions",
+        "earnings"
+      ],
+      "dedupeKey": "중국판-엔비디아-제재-작년-연간흑자-전망",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10RU9VZVloTkVVcmJGc21VRW5jV1NFbk1YRXJtMkwyNkJIaWwtVFBxZFRhSzBKUTlJTmNRSlV3QjlKSldlaUx5aGdackpteFBBOERXdTFqR0xkVHBkckEtcVFNeFVOZEF3NURTMjRGUTRid3pO?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 12:28:30 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_17",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "‘중국판 엔비디아’ 캠브리콘… 美 제재에 첫 연간흑자 전망",
+      "summary": [
+        "‘중국판 엔비디아’ 캠브리콘… 美 제",
+        "재에 첫 연간흑자 전망 - 조선비즈"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "sanctions",
+        "earnings"
+      ],
+      "dedupeKey": "중국판-엔비디아-캠브리콘-제재에-연간흑자-전망-조선비즈",
+      "matchedTo": null,
+      "sourceName": "Chosunbiz",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcjFNYlJiSldhX1Q3RkhIOFVJWWVTd202ZDB6am1FV0JnbmpLQXN5Z0pROXlER3d3ZkU0TGNKaGVVbU41cTM0QndjdHp3TUFoZGxJTDM3bG4xZ0JNN19uNDJkTUFmZk9nS2t1RWhJaXJJYi1rMFZ3OTM2bDRQdWFEZ3ZZSXcxN3hQMGFKNUo0OXhWaUJ0R2UyOW5raGdPZ9IBsgFBVV95cUxNQUZWLTEzaDU1SjVTdWhkRlp1Tmg5bnJGTUk3LU1DMVNZNjd4UjNJLWpTYzJ3dTFpaENqS2Y1QWtQWjdHem55NzlvWV9IcGlGa3d1UmFQeHZjZ0hES2dYOFhzVkJIeXI0eFBqLW1HRGxjblpOMlR3Q1FhUnRCNkRwZ1pVSFAxb2J5SzJTM1pIcGdNOXlhaEZkUzJVaWhCX1lDMnMycjhtazd1YWdWOUtkaG53?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 12:49:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_18",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 정책 ‘안전 VS 발전’…글로벌 흐름 속 한국 판단은?",
+      "summary": [
+        "AI 정책 ‘안전 VS 발전’…글로벌",
+        "흐름 속 한국 판단은?"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "정책-안전-발전-글로벌-흐름-한국-판단은",
+      "matchedTo": null,
+      "sourceName": "테크월드뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9lUF9VcEUxZ2wzcmlwMWRiVllZQVFja3NQdVV3a1V0VlRaX1RldkhzN1ltbzhHX0ZTdzNwSTFRd2lUVl92dGVZbm1vQWJSaV9Qd2JEaXI1TW1YNXhQUF9ybHhIUXBfMjhs?oc=5",
+      "publishedAt": "Fri, 30 Jan 2026 07:46:30 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_19",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "Budget 2026-27 lays strong foundation for AI Data Centres and Semiconductor Ecosystem",
+      "summary": [
+        "Budget 2026-27 lays strong fo",
+        "undation for AI Data Centres",
+        "and Semiconductor Ecosystem"
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "budget"
+      ],
+      "dedupeKey": "budget-lays-strong-foundation-data-centres-semiconductor-ecosystem",
+      "matchedTo": null,
+      "sourceName": "PIB",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5mSGZiVU5DdHJqUkhsSjhUeXU3dXRfTHY4enBLWG1zQzJuUm16Umd3WUtRM1k4Z0FjUFJ5MUtheEdsUWVwaFkwbUdqVlBXNndYWlA1N1JLWGxzS3l2TFk3RjhtdDRlcHU5?oc=5",
+      "publishedAt": "Sun, 01 Feb 2026 15:36:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 1
+    },
+    {
+      "id": "2026-02-03_20",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "마침표 못 찍고 끝난 한미 관세 협상…\"추가 논의 필요\"",
+      "summary": [
+        "마침표 못 찍고 끝난 한미 관세 협상",
+        "…\"추가 논의 필요\""
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "sanctions"
+      ],
+      "dedupeKey": "마침표-찍고-끝난-한미-관세-협상-추가-논의",
+      "matchedTo": null,
+      "sourceName": "연합인포맥스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jbENHTlpsZjBuT2tBT2hlUnFCM2oyZEIyd2tMLUFmbl9TMnJHMWZxLVhrRTFkWmUyamU3SmlzazZtSXltS3VqUTNOVE5PNDhzOWNQR0RGWGFvaG82RG9uaXBmaUpXQy1yQmpHRUs4RjI?oc=5",
+      "publishedAt": "Sat, 31 Jan 2026 00:44:00 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4

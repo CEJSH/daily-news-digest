@@ -3,25 +3,30 @@ import os
 import re
 from typing import Any
 
+import requests
+
 from utils import clean_text, ensure_three_lines, split_summary_to_3lines
 
 try:
-    from openai import OpenAI
-except Exception:  # pragma: no cover - runtime dependency
-    OpenAI = None
+    from dotenv import load_dotenv
+except Exception:  # pragma: no cover - optional dependency
+    load_dotenv = None
 
-_CLIENT = None
 _AI_UNAVAILABLE_LOGGED: set[str] = set()
 
-DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
-DEFAULT_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
+if load_dotenv:
+    load_dotenv()
 
+GEMINI_API_BASE = os.getenv("GEMINI_API_BASE", "https://generativelanguage.googleapis.com/v1beta")
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-001")
 SYSTEM_PROMPT = """You are a meticulous news editor for a daily digest.
 Use ONLY the provided title and article text (use full_text if available, otherwise summary).  
 Do not add any facts, context, or knowledge beyond the provided text.
 ImpactSignals are hints only; verify and adjust strictly based on the article text.
 If the article is in English, translate and write all outputs in Korean.  
 Translate faithfully without adding interpretation or extra context.
+Write all Korean sentences in polite "~입니다/~합니다" style.
 
 Respond ONLY in valid JSON.  
 Do not include any markdown, explanations, or extra text.  
@@ -75,50 +80,41 @@ No source names, no dates, no clickbait language.
 """
 
 
-def _get_client() -> Any:
-    global _CLIENT
-    if OpenAI is None:
-        return None
-    if _CLIENT is None:
-        _CLIENT = OpenAI()
-    return _CLIENT
-
-
 def _log_ai_unavailable(reason: str) -> None:
+    # AI 비활성 사유를 중복 없이 로그 출력
     if reason in _AI_UNAVAILABLE_LOGGED:
         return
     print(f"⚠️ AI 요약 비활성: {reason}")
     _AI_UNAVAILABLE_LOGGED.add(reason)
 
+def _extract_gemini_text(payload: dict) -> str:
+    # Gemini REST 응답에서 텍스트만 추출
+    try:
+        return payload["candidates"][0]["content"]["parts"][0]["text"].strip()
+    except Exception:
+        return ""
 
-def _extract_output_text(response: Any) -> str:
-    output_text = getattr(response, "output_text", None)
-    if isinstance(output_text, str) and output_text.strip():
-        return output_text.strip()
-
-    output = getattr(response, "output", None) or []
-    texts: list[str] = []
-    for item in output:
-        item_type = getattr(item, "type", None) or (item.get("type") if isinstance(item, dict) else None)
-        if item_type != "message":
-            continue
-        content = getattr(item, "content", None) or (item.get("content") if isinstance(item, dict) else None) or []
-        for part in content:
-            part_type = getattr(part, "type", None) or (part.get("type") if isinstance(part, dict) else None)
-            if part_type == "output_text":
-                text = getattr(part, "text", None) or (part.get("text") if isinstance(part, dict) else "")
-                if text:
-                    texts.append(text)
-    return "\n".join(texts).strip()
+def _extract_gemini_embedding(payload: dict) -> list[float] | None:
+    # Gemini embedContent 응답에서 임베딩 벡터만 추출
+    try:
+        embedding = payload.get("embedding") or {}
+        values = embedding.get("values") or embedding.get("value")
+        if isinstance(values, list):
+            return values
+    except Exception:
+        return None
+    return None
 
 
 def _parse_json(text: str) -> dict[str, Any] | None:
+    # 문자열에서 JSON 객체를 파싱(직접 파싱 실패 시 중괄호 블록 탐색)
     if not text:
         return None
     try:
         return json.loads(text)
     except Exception:
         pass
+    # 모델이 여분 텍스트를 섞을 때 대비한 백업 파서
     match = re.search(r"\{.*\}", text, flags=re.DOTALL)
     if not match:
         return None
@@ -129,6 +125,7 @@ def _parse_json(text: str) -> dict[str, Any] | None:
 
 
 def _normalize_dedupe_key(raw: str) -> str:
+    # dedupe 키를 토큰 규칙에 맞게 정규화
     if not raw:
         return ""
     t = clean_text(raw).lower()
@@ -138,6 +135,7 @@ def _normalize_dedupe_key(raw: str) -> str:
     cleaned: list[str] = []
     seen = set()
     for p in parts:
+        # 중복/너무 짧은 토큰 제거
         if p in seen:
             continue
         if re.search(r"[가-힣]", p):
@@ -154,6 +152,7 @@ def _normalize_dedupe_key(raw: str) -> str:
 
 
 def _fallback_why_important(impact_signals: list[str]) -> str:
+    # AI가 비워둔 이유 문장을 임팩트 시그널로 보정
     if not impact_signals:
         return ""
     if "policy" in impact_signals or "sanctions" in impact_signals:
@@ -170,6 +169,7 @@ def _fallback_why_important(impact_signals: list[str]) -> str:
 
 
 def _fallback_importance_score(impact_signals: list[str]) -> int:
+    # AI가 비워둔 중요도를 임팩트 시그널로 추정
     if not impact_signals:
         return 2
     if "policy" in impact_signals or "sanctions" in impact_signals:
@@ -182,6 +182,7 @@ def _fallback_importance_score(impact_signals: list[str]) -> int:
 
 
 def _normalize_importance_score(value: Any, impact_signals: list[str]) -> int:
+    # 중요도 점수를 1~5로 보정하고 실패 시 fallback 사용
     try:
         score = int(value)
     except Exception:
@@ -190,6 +191,7 @@ def _normalize_importance_score(value: Any, impact_signals: list[str]) -> int:
 
 
 def _normalize_impact_signals(value: Any) -> list[str]:
+    # 임팩트 시그널 값을 허용 목록 기준으로 정리
     allowed = {"policy", "budget", "sanctions", "capex", "earnings", "market-demand", "security", "infra"}
     if not value:
         return []
@@ -203,6 +205,7 @@ def _normalize_impact_signals(value: Any) -> list[str]:
     cleaned: list[str] = []
     seen = set()
     for v in raw_list:
+        # 허용 라벨 외 값은 제거
         token = clean_text(str(v)).lower()
         if not token or token not in allowed or token in seen:
             continue
@@ -212,6 +215,7 @@ def _normalize_impact_signals(value: Any) -> list[str]:
 
 
 def _normalize_quality_label(value: Any) -> str:
+    # 품질 라벨을 ok/low_quality로 정규화
     if not value:
         return "ok"
     label = clean_text(str(value)).lower()
@@ -223,6 +227,7 @@ def _normalize_quality_label(value: Any) -> str:
 
 
 def _normalize_quality_tags(value: Any) -> list[str]:
+    # 품질 태그를 허용 목록 기준으로 정리
     allowed = {"clickbait", "promo", "opinion", "event", "report", "entertainment", "crime", "local", "emotion"}
     if not value:
         return []
@@ -236,6 +241,7 @@ def _normalize_quality_tags(value: Any) -> list[str]:
     cleaned: list[str] = []
     seen = set()
     for v in raw_list:
+        # 허용 태그만 유지
         token = clean_text(str(v)).lower()
         if not token or token not in allowed or token in seen:
             continue
@@ -245,6 +251,7 @@ def _normalize_quality_tags(value: Any) -> list[str]:
 
 
 def _normalize_category_label(value: Any) -> str:
+    # 카테고리 라벨을 IT/경제/글로벌로 정규화
     if not value:
         return ""
     raw = clean_text(str(value)).lower()
@@ -262,17 +269,59 @@ def _normalize_category_label(value: Any) -> str:
         return "IT"
     return ""
 
+def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any] | None:
+    # Gemini REST API로 JSON 응답을 요청
+    api_key = os.getenv("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        _log_ai_unavailable("GEMINI_API_KEY 미설정")
+        return None
+    url = f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent"
+    payload = {
+        "contents": [
+            {
+                "role": "user",
+                "parts": [{"text": user_prompt}],
+            }
+        ],
+        "systemInstruction": {
+            "parts": [{"text": system_prompt}],
+        },
+        "generationConfig": {
+            "temperature": 0.2,
+            "maxOutputTokens": 350,
+            "responseMimeType": "application/json",
+        },
+    }
+    try:
+        resp = requests.post(
+            url,
+            headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
+            json=payload,
+            timeout=30,
+        )
+    except Exception as e:
+        _log_ai_unavailable(f"Gemini 호출 실패: {e}")
+        return None
+    if not resp.ok:
+        _log_ai_unavailable(f"Gemini 호출 실패: {resp.status_code} {resp.text}")
+        return None
+    try:
+        data = resp.json()
+    except Exception:
+        _log_ai_unavailable("Gemini 응답 JSON 파싱 실패")
+        return None
+    text = _extract_gemini_text(data)
+    if not text:
+        _log_ai_unavailable("Gemini 응답 텍스트 비어있음")
+        return None
+    payload = _parse_json(text)
+    if not isinstance(payload, dict):
+        _log_ai_unavailable("Gemini 응답 JSON 형식 아님")
+        return None
+    return payload
 
 def enrich_item_with_ai(item: dict) -> dict:
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not api_key:
-        _log_ai_unavailable("OPENAI_API_KEY 미설정")
-        return {}
-    client = _get_client()
-    if client is None:
-        _log_ai_unavailable("openai 패키지 미설치 또는 초기화 실패")
-        return {}
-
+    # 기사 아이템을 AI로 요약/분류/중요도 평가
     title = clean_text(item.get("title") or "")
     summary_raw = clean_text(item.get("summaryRaw") or item.get("summary") or "")
     full_text = clean_text(item.get("fullText") or "")
@@ -282,6 +331,7 @@ def enrich_item_with_ai(item: dict) -> dict:
     published = clean_text(item.get("published") or "")
     impact_signals = item.get("impactSignals") or []
 
+    # 모델 입력 구성
     user_prompt = (
         f"Title: {title}\n"
         f"ImpactSignals: {', '.join(impact_signals)}\n"
@@ -289,24 +339,12 @@ def enrich_item_with_ai(item: dict) -> dict:
         "Return only JSON."
     )
 
-    try:
-        response = client.responses.create(
-            model=DEFAULT_MODEL,
-            input=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            text={"format": {"type": "json_object"}},
-            temperature=0.2,
-            max_output_tokens=350,
-        )
-    except Exception:
-        return {}
-
-    payload = _parse_json(_extract_output_text(response))
+    # Gemini만 사용 (OpenAI 폴백 없음)
+    payload = _gemini_generate_json(SYSTEM_PROMPT, user_prompt)
     if not isinstance(payload, dict):
         return {}
 
+    # 요약/중요도/라벨 결과를 정규화
     summary_lines = ensure_three_lines(payload.get("summary_lines") or [], full_text or summary_raw)
     why_important = clean_text(payload.get("why_important") or "")
     if not why_important:
@@ -340,11 +378,10 @@ def enrich_item_with_ai(item: dict) -> dict:
 
 
 def get_embedding(text: str) -> list[float] | None:
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    # 텍스트 임베딩 생성 (중복 제거용, Gemini)
+    api_key = os.getenv("GEMINI_API_KEY", "").strip()
     if not api_key:
-        return None
-    client = _get_client()
-    if client is None:
+        _log_ai_unavailable("GEMINI_API_KEY 미설정")
         return None
     cleaned = clean_text(text or "")
     if not cleaned:
@@ -352,17 +389,28 @@ def get_embedding(text: str) -> list[float] | None:
     if len(cleaned) > 2000:
         cleaned = cleaned[:2000]
     try:
-        response = client.embeddings.create(
-            model=DEFAULT_EMBEDDING_MODEL,
-            input=cleaned,
+        resp = requests.post(
+            f"{GEMINI_API_BASE}/models/{GEMINI_EMBEDDING_MODEL}:embedContent",
+            headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
+            json={
+                "model": f"models/{GEMINI_EMBEDDING_MODEL}",
+                "content": {"parts": [{"text": cleaned}]},
+            },
+            timeout=30,
         )
+    except Exception as e:
+        _log_ai_unavailable(f"Gemini 임베딩 호출 실패: {e}")
+        return None
+    if not resp.ok:
+        _log_ai_unavailable(f"Gemini 임베딩 호출 실패: {resp.status_code} {resp.text}")
+        return None
+    try:
+        data = resp.json()
     except Exception:
+        _log_ai_unavailable("Gemini 임베딩 응답 JSON 파싱 실패")
         return None
-    data = getattr(response, "data", None) or []
-    if not data:
-        return None
-    first = data[0]
-    embedding = getattr(first, "embedding", None) or (first.get("embedding") if isinstance(first, dict) else None)
-    if not isinstance(embedding, list):
+    embedding = _extract_gemini_embedding(data)
+    if not embedding:
+        _log_ai_unavailable("Gemini 임베딩 응답 값 없음")
         return None
     return embedding

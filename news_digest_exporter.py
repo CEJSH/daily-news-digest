@@ -243,9 +243,6 @@ def _apply_ai_importance(items: list[dict]) -> None:
         return
     if enrich_item_with_ai is None:
         return
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not api_key:
-        return
 
     candidates = sorted(items, key=lambda x: x["score"], reverse=True)[:AI_IMPORTANCE_MAX_ITEMS]
     _log(f"AI 중요도 평가 시작: {len(candidates)}개")
@@ -323,9 +320,6 @@ def _apply_semantic_dedupe(items: list[dict]) -> None:
     if not AI_SEMANTIC_DEDUPE_ENABLED:
         return
     if get_embedding is None:
-        return
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not api_key:
         return
 
     candidates = sorted(items, key=lambda x: x["score"], reverse=True)[:AI_SEMANTIC_DEDUPE_MAX_ITEMS]

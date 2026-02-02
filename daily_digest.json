@@ -3,22 +3,44 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T01:33:24.976634+09:00",
+  "lastUpdatedAt": "2026-02-03T01:42:07.012386+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
       "date": "2026-02-03",
       "category": "IT",
+      "title": "The Next Phase of AI: Technology, Infrastructure, and Policy in 2025–2026",
+      "summary": [
+        "The Next Phase of AI: Technology, Infrastructure, and Policy in 2025–2026..."
+      ],
+      "whyImportant": "",
+      "impactSignals": [
+        "policy",
+        "capex"
+      ],
+      "dedupeKey": "next-phase-technology-infrastructure-policy",
+      "matchedTo": null,
+      "sourceName": "The American Action Forum",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVpCcXk1ODZ2dXdnNjl4RmZkRzc3cERmdXRWTlpjN3QxNndNMmFBQUlKY09ZWHN2eFdJZGZmbWNZVEJQbXJxU1dOT0IwUXJPQUg1Z3pGYUhXLW1IZHlCODdCNUxYTlVfTnhKMlpoTzFZT0ZpeXdRUDBza1R6WjRKbkVqbEU0N0xvY3U0NG1aQXF3LTJ3MDRCblhJX2lJQ0Rud1NGMlkzNFlIckwzTGxyVHpTMHo4UQ?oc=5",
+      "publishedAt": "Wed, 28 Jan 2026 14:58:36 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 1
+    },
+    {
+      "id": "2026-02-03_2",
+      "date": "2026-02-03",
+      "category": "IT",
       "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
       "summary": [
-        "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증 브랜드경제신문..."
+        "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증..."
       ],
       "whyImportant": "",
       "impactSignals": [
         "policy",
         "market-demand"
       ],
-      "dedupeKey": "2026년-1월-29일-규제-본격-시행-반도체-브랜드경제신문",
+      "dedupeKey": "규제-본격-시행-반도체-산업-수요-급증",
       "matchedTo": null,
       "sourceName": "브랜드경제신문",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE10NEVveXFPT0MtRmFUcnJ1cFBfS05DTGduSDRseDVLV0ZvM2s0R1BvNVJwY09jYlZnaVJILUtZSUFkY3hGR09UZ1F2MnU?oc=5",
@@ -28,33 +50,12 @@
       "importance": 1
     },
     {
-      "id": "2026-02-03_2",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도",
-      "summary": [
-        "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도 블로터..."
-      ],
-      "whyImportant": "",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "시대-화두-보안-개인정보위-규제-혁신-갈림길-블로터",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3M0RRc3Iwa3hkSk1oY3NvRk9zVkJyMlhEOVU2akdjclZKN251MWFxRDFYcWNDSlBFUWQ2bHlFakduQlQ5TTBwbmt4bUhPMGhMc1FVQ203SEtQTTlLcnBwMTNzY3VUQ0Ru0gFsQVVfeXFMTl9MX2laQ3hkbUhuemFidVZUVDRPOVNWZUxULU9JdnU0RXpSMjEyTEV0VkM3M0ZlVFA5a3d5ZV9kcUhQb09VY3VUYXRzSDRFUmZIRkVEMzRqT0sxUGh4bEVvWGw0Q2hPcmllVExD?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 09:04:35 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 1
-    },
-    {
       "id": "2026-02-03_3",
       "date": "2026-02-03",
       "category": "경제",
-      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부]",
+      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가",
       "summary": [
-        "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부] 매일경제..."
+        "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가 [월가월부]..."
       ],
       "whyImportant": "",
       "impactSignals": [
@@ -73,16 +74,16 @@
       "id": "2026-02-03_4",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미-국제ㅣ한국일보",
+      "title": "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미",
       "summary": [
-        "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미-국제ㅣ한국일보 한국일보..."
+        "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미-국제ㅣ한국일보..."
       ],
       "whyImportant": "",
       "impactSignals": [
         "sanctions",
         "capex"
       ],
-      "dedupeKey": "끝없는-관세-협상-투자-속도-시비에-통상-한국일보",
+      "dedupeKey": "끝없는-관세-협상-투자-속도-시비에-통상-투톱",
       "matchedTo": null,
       "sourceName": "한국일보",
       "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU0djNmNfTWY4WHB4eVotSllPRWhQMjR2R0ZwWkV4aEstQ0s2dC1YcFg4cFVEWnlHUzlaZFpWak5RUzYybVVDT3FCSXdaNUs0M29kY1FtQXg2OWxSY202aTA5Z2RTMHpvRmdHck9B?oc=5",
@@ -97,7 +98,7 @@
       "category": "글로벌",
       "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
       "summary": [
-        "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\" 마켓인..."
+        "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"..."
       ],
       "whyImportant": "",
       "impactSignals": [
@@ -105,7 +106,7 @@
         "sanctions",
         "capex"
       ],
-      "dedupeKey": "트럼프-관세정책-자화자찬-우리-조선업에-217조-투자-마켓인",
+      "dedupeKey": "트럼프-관세정책-자화자찬-우리-조선업에-217조-투자",
       "matchedTo": null,
       "sourceName": "마켓인",
       "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",

@@ -3,12 +3,29 @@ import datetime
 import os
 import json
 import re
+import math
+try:
+    from dotenv import load_dotenv
+except Exception:  # pragma: no cover - optional dependency
+    load_dotenv = None
 from utils import (
     clean_text, trim_title_noise, get_source_name,
     normalize_title_for_dedupe, jaccard, estimate_read_time_seconds
 )
+try:
+    from ai_enricher import enrich_item_with_ai, get_embedding
+except Exception:  # pragma: no cover - optional dependency
+    enrich_item_with_ai = None
+    get_embedding = None
+try:
+    from article_fetcher import fetch_article_text
+except Exception:  # pragma: no cover - optional dependency
+    fetch_article_text = None
 from export_manager import export_daily_digest_json
 from html_generator import generate_html
+
+if load_dotenv:
+    load_dotenv()
 
 # ==========================================
 # 사용자 설정 및 상수
@@ -80,6 +97,18 @@ QUESTION_OF_THE_DAY = "정보를 덜 보는 것이 오히려 더 똑똑한 소�
 TOP_LIMIT = 5
 MIN_SCORE = 0.0
 MAX_ENTRIES_PER_FEED = 100
+
+AI_IMPORTANCE_ENABLED = os.getenv("AI_IMPORTANCE_ENABLED", "1") == "1"
+AI_IMPORTANCE_MAX_ITEMS = int(os.getenv("AI_IMPORTANCE_MAX_ITEMS", "30"))
+AI_IMPORTANCE_WEIGHT = float(os.getenv("AI_IMPORTANCE_WEIGHT", "1.0"))
+AI_QUALITY_ENABLED = os.getenv("AI_QUALITY_ENABLED", "1") == "1"
+AI_SEMANTIC_DEDUPE_ENABLED = os.getenv("AI_SEMANTIC_DEDUPE_ENABLED", "1") == "1"
+AI_SEMANTIC_DEDUPE_MAX_ITEMS = int(os.getenv("AI_SEMANTIC_DEDUPE_MAX_ITEMS", "50"))
+AI_SEMANTIC_DEDUPE_THRESHOLD = float(os.getenv("AI_SEMANTIC_DEDUPE_THRESHOLD", "0.88"))
+ARTICLE_FETCH_ENABLED = os.getenv("ARTICLE_FETCH_ENABLED", "1") == "1"
+ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "20"))
+ARTICLE_FETCH_MIN_CHARS = int(os.getenv("ARTICLE_FETCH_MIN_CHARS", "400"))
+ARTICLE_FETCH_TIMEOUT_SEC = int(os.getenv("ARTICLE_FETCH_TIMEOUT_SEC", "6"))
 
 # ==========================================
 # 핵심 로직 함수
@@ -175,6 +204,9 @@ def map_topic_to_category(topic: str) -> str:
     if "경제" in t: return "경제"
     return "글로벌"
 
+def _get_item_category(item: dict) -> str:
+    return item.get("aiCategory") or map_topic_to_category(item.get("topic", ""))
+
 def source_weight(source_name: str) -> float:
     s = (source_name or "").strip()
     if any(a in s for a in SOURCE_TIER_A): return 3.0
@@ -220,10 +252,16 @@ def score_entry(impact_signals: list[str], read_time_sec: int) -> float:
         score += 0.5
     return score
 
+def _is_eligible(item: dict) -> bool:
+    return not item.get("dropReason")
+
+
 def pick_top_with_mix(all_items, top_limit=5):
     buckets = {"IT": [], "경제": [], "글로벌": []}
     for it in all_items:
-        buckets[map_topic_to_category(it.get("topic", ""))].append(it)
+        if not _is_eligible(it):
+            continue
+        buckets[_get_item_category(it)].append(it)
 
     for cat in buckets:
         buckets[cat].sort(key=lambda x: x["score"], reverse=True)
@@ -234,10 +272,122 @@ def pick_top_with_mix(all_items, top_limit=5):
         picked += buckets[cat][:n]
 
     if len(picked) < top_limit:
-        remain = [x for x in sorted(all_items, key=lambda x: x["score"], reverse=True) if x not in picked]
+        remain = [
+            x for x in sorted(all_items, key=lambda x: x["score"], reverse=True)
+            if x not in picked and _is_eligible(x)
+        ]
         picked += remain[: top_limit - len(picked)]
 
     return picked[:top_limit]
+
+def _apply_ai_importance(items: list[dict]) -> None:
+    if not AI_IMPORTANCE_ENABLED:
+        return
+    if enrich_item_with_ai is None:
+        return
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return
+
+    candidates = sorted(items, key=lambda x: x["score"], reverse=True)[:AI_IMPORTANCE_MAX_ITEMS]
+    fetch_budget = ARTICLE_FETCH_MAX_ITEMS
+    for item in candidates:
+        if ARTICLE_FETCH_ENABLED and fetch_article_text and fetch_budget > 0:
+            full_text = item.get("fullText") or ""
+            if len(full_text) < ARTICLE_FETCH_MIN_CHARS:
+                text, resolved_url = fetch_article_text(
+                    item.get("link") or "",
+                    timeout_sec=ARTICLE_FETCH_TIMEOUT_SEC,
+                )
+                if text:
+                    item["fullText"] = text
+                if resolved_url:
+                    item["resolvedUrl"] = resolved_url
+                fetch_budget -= 1
+        ai_result = enrich_item_with_ai(item)
+        if not ai_result:
+            continue
+        item["ai"] = ai_result
+        if AI_QUALITY_ENABLED:
+            quality_label = ai_result.get("quality_label")
+            if quality_label:
+                item["aiQuality"] = quality_label
+            if quality_label == "low_quality":
+                reason = ai_result.get("quality_reason") or "ai_low_quality"
+                item["dropReason"] = f"ai_low_quality:{reason}"
+                item["aiQualityTags"] = ai_result.get("quality_tags") or []
+                continue
+        ai_category = ai_result.get("category_label")
+        if ai_category:
+            item["aiCategory"] = ai_category
+        impact_signals_ai = ai_result.get("impact_signals") or []
+        if impact_signals_ai:
+            merged = sorted(set((item.get("impactSignals") or []) + impact_signals_ai))
+            item["impactSignals"] = merged
+            read_time_sec = item.get("readTimeSec")
+            if not read_time_sec:
+                summary_raw = item.get("summaryRaw") or item.get("summary") or ""
+                read_time_sec = estimate_read_time_seconds(summary_raw)
+                item["readTimeSec"] = read_time_sec
+            item["score"] = score_entry(merged, read_time_sec)
+        importance = ai_result.get("importance_score")
+        if not importance:
+            continue
+        item["aiImportance"] = importance
+        item["score"] = max(0.0, item["score"] + (importance - 3) * AI_IMPORTANCE_WEIGHT)
+
+
+def _cosine_similarity(a: list[float], b: list[float]) -> float:
+    if not a or not b:
+        return 0.0
+    dot = sum(x * y for x, y in zip(a, b))
+    norm_a = math.sqrt(sum(x * x for x in a))
+    norm_b = math.sqrt(sum(y * y for y in b))
+    if norm_a == 0.0 or norm_b == 0.0:
+        return 0.0
+    return dot / (norm_a * norm_b)
+
+
+def _dedupe_text(item: dict) -> str:
+    title = item.get("title") or ""
+    summary_raw = item.get("summaryRaw") or item.get("summary") or ""
+    return clean_text(f"{title} {summary_raw}")
+
+
+def _apply_semantic_dedupe(items: list[dict]) -> None:
+    if not AI_SEMANTIC_DEDUPE_ENABLED:
+        return
+    if get_embedding is None:
+        return
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return
+
+    candidates = sorted(items, key=lambda x: x["score"], reverse=True)[:AI_SEMANTIC_DEDUPE_MAX_ITEMS]
+    kept: list[dict] = []
+    for item in candidates:
+        if not _is_eligible(item):
+            continue
+        text = _dedupe_text(item)
+        if not text:
+            continue
+        embedding = get_embedding(text)
+        if not embedding:
+            continue
+        item["embedding"] = embedding
+        is_dup = False
+        for ref in kept:
+            ref_emb = ref.get("embedding")
+            if not ref_emb:
+                continue
+            sim = _cosine_similarity(embedding, ref_emb)
+            if sim >= AI_SEMANTIC_DEDUPE_THRESHOLD:
+                item["dropReason"] = f"semantic_duplicate:{ref.get('title','')[:60]}"
+                item["matchedTo"] = ref.get("id") or ref.get("dedupeKey") or ref.get("title")
+                is_dup = True
+                break
+        if not is_dup:
+            kept.append(item)
 
 def _load_yesterday_dedupe_map(path: str) -> dict[str, str]:
     if not os.path.exists(path):
@@ -264,6 +414,13 @@ def _load_yesterday_dedupe_map(path: str) -> dict[str, str]:
         item_id = it.get("id")
         if key and item_id:
             dedupe_map[key] = item_id
+        if item_id:
+            title = it.get("title") or ""
+            summary = it.get("summary") or []
+            summary_text = " ".join(summary) if isinstance(summary, list) else str(summary)
+            alt_key = get_dedupe_key(title, summary_text)
+            if alt_key:
+                dedupe_map[alt_key] = item_id
     return dedupe_map
 
 def fetch_news_grouped_and_top(sources, top_limit=3):
@@ -286,6 +443,22 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             summary_clean = _strip_source_from_text(summary_clean, source_name)
             title_clean = trim_title_noise(clean_text(title), source_name)
             summary = (summary_clean[:200] + "...") if summary_clean else "내용을 확인하려면 클릭하세요."
+            full_text = ""
+            content_list = getattr(entry, "content", None)
+            if isinstance(content_list, list) and content_list:
+                parts = []
+                for c in content_list:
+                    value = ""
+                    if isinstance(c, dict):
+                        value = c.get("value", "") or ""
+                    else:
+                        value = getattr(c, "value", "") or ""
+                    if value:
+                        parts.append(value)
+                if parts:
+                    full_text = clean_text(" ".join(parts))
+            if not full_text:
+                full_text = summary_clean
 
             tokens = normalize_title_for_dedupe(title_clean, STOPWORDS)
             text_all = (title_clean + " " + summary_clean).lower()
@@ -330,6 +503,8 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             seen_titles.add(title)
             item = {
                 "title": title_clean, "link": entry.link, "summary": summary,
+                "summaryRaw": summary_clean,
+                "fullText": full_text,
                 "published": getattr(entry, "published", None), "score": score,
                 "topic": topic, "source": source_name,
                 "impactSignals": impact_signals, "dedupeKey": dedupe_key, "matchedTo": matched_to,
@@ -340,9 +515,13 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             grouped_items.setdefault(topic, []).append(item)
             all_items.append(item)
 
+    _apply_ai_importance(all_items)
+    _apply_semantic_dedupe(all_items)
+
     for topic, items in grouped_items.items():
-        items.sort(key=lambda x: x["score"], reverse=True)
-        grouped_items[topic] = items[:topic_limits.get(topic, TOP_LIMIT)]
+        filtered = [x for x in items if _is_eligible(x)]
+        filtered.sort(key=lambda x: x["score"], reverse=True)
+        grouped_items[topic] = filtered[:topic_limits.get(topic, TOP_LIMIT)]
 
     return grouped_items, pick_top_with_mix(all_items, top_limit)
 

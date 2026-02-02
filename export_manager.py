@@ -1,7 +1,12 @@
 import datetime
 import json
 import os
+from ai_enricher import enrich_item_with_ai
 from utils import split_summary_to_3lines, estimate_read_time_seconds
+
+_LONG_IMPACT = {"policy", "sanctions"}
+_MED_IMPACT = {"capex", "infra", "security"}
+_LOW_IMPACT = {"earnings", "market-demand"}
 
 def _load_existing_digest(path: str) -> dict | None:
     if not os.path.exists(path):
@@ -54,28 +59,44 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         source_name = (item.get("source") or "").strip()
         published = item.get("published")
 
-        summary_lines = split_summary_to_3lines(summary)
+        ai_result = item.get("ai") or enrich_item_with_ai(item)
+        summary_lines = ai_result.get("summary_lines") or split_summary_to_3lines(summary)
+        why_important = ai_result.get("why_important") or ""
+        dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
+        impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
+        importance = ai_result.get("importance_score")
+        if not importance:
+            signals = set(item.get("impactSignals") or [])
+            if signals & _LONG_IMPACT:
+                importance = 4
+            elif signals & _MED_IMPACT:
+                importance = 3
+            elif signals & _LOW_IMPACT:
+                importance = 2
+            else:
+                importance = 1
         read_time_sec = item.get("readTimeSec")
         if not read_time_sec:
             read_time_sec = estimate_read_time_seconds(" ".join(summary_lines) if summary_lines else summary)
 
         from news_digest_exporter import map_topic_to_category
+        category = item.get("aiCategory") or map_topic_to_category(topic)
         out_item = {
             "id": f"{date_str}_{i}",
             "date": date_str,
-            "category": map_topic_to_category(topic),
+            "category": category,
             "title": title,
             "summary": summary_lines if summary_lines else [summary],
-            "whyImportant": "",
-            "impactSignals": item.get("impactSignals", []),
-            "dedupeKey": item.get("dedupeKey", ""),
+            "whyImportant": why_important,
+            "impactSignals": impact_signals,
+            "dedupeKey": dedupe_key,
             "matchedTo": item.get("matchedTo"),
             "sourceName": source_name,
             "sourceUrl": link,
             "publishedAt": published,
             "readTimeSec": read_time_sec,
             "status": "kept",
-            "importance": 1,
+            "importance": importance,
         }
         if item.get("dropReason"):
             out_item["dropReason"] = item.get("dropReason")

@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 from ai_enricher import enrich_item_with_ai
+from config import TOP_LIMIT
 from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
 
 _LONG_IMPACT = {"policy", "sanctions"}
@@ -30,11 +31,11 @@ def _load_existing_digest(path: str) -> dict | None:
         return None
 
 def _is_valid_digest(digest: dict) -> bool:
-    """MVP 안전장치: 5개 고정 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
+    """MVP 안전장치: TOP_LIMIT 고정 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
     if not isinstance(digest, dict):
         return False
     items = digest.get("items")
-    if not isinstance(items, list) or len(items) != 5:
+    if not isinstance(items, list) or len(items) != TOP_LIMIT:
         return False
 
     required_item_keys = {"id", "date", "category", "title", "summary", "sourceName", "sourceUrl", "status", "importance"}
@@ -63,7 +64,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
     last_updated_at = now_kst.isoformat()
 
     items_out: list[dict] = []
-    for i, item in enumerate(top_items[:5], start=1):
+    for i, item in enumerate(top_items[:TOP_LIMIT], start=1):
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
         summary = (item.get("summary") or "").strip()
@@ -131,7 +132,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if existing and _is_valid_digest(existing):
             print("⚠️ 오늘 digest 생성이 불완전하여 기존 daily_digest.json을 유지합니다.")
             return existing
-        raise RuntimeError("digest 생성 실패: 유효한 5개 뉴스가 생성되지 않았고 기존 파일도 없습니다.")
+        raise RuntimeError(f"digest 생성 실패: 유효한 {TOP_LIMIT}개 뉴스가 생성되지 않았고 기존 파일도 없습니다.")
 
     _atomic_write_json(output_path, digest)
     return digest

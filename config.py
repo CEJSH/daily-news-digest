@@ -32,7 +32,7 @@ SELECTION_CRITERIA = "① 내일도 영향이 남는 이슈 ② 과도한 감정
 EDITOR_NOTE = "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다."
 QUESTION_OF_THE_DAY = "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?"
 
-TOP_LIMIT = 5
+TOP_LIMIT = 20
 MIN_SCORE = 0.0
 MAX_ENTRIES_PER_FEED = 100
 

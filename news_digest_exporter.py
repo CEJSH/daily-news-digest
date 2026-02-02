@@ -224,7 +224,7 @@ def pick_top_with_mix(all_items, top_limit=5):
     for cat in buckets:
         buckets[cat].sort(key=lambda x: x["score"], reverse=True)
 
-    target = {"IT": 2, "경제": 2, "글로벌": 1}
+    target = {"IT": 8, "경제": 8, "글로벌": 4}
     picked = []
     for cat, n in target.items():
         picked += buckets[cat][:n]

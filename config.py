@@ -132,6 +132,22 @@ def _auto_tuned_limit(default_limit: int, multiplier: float, min_floor: int) -> 
     tuned = min(max_cap, tuned)
     return tuned
 
+
+def _resolve_limit(
+    env_name: str,
+    default_limit: int,
+    *,
+    multiplier: float,
+    min_floor: int,
+    auto_tune: bool,
+) -> int:
+    explicit = _env_int(env_name)
+    if explicit is not None:
+        return explicit
+    if auto_tune:
+        return _auto_tuned_limit(default_limit, multiplier, min_floor)
+    return default_limit
+
 # ==========================================
 # 환경변수 기반 설정
 # ==========================================
@@ -140,31 +156,23 @@ AI_IMPORTANCE_ENABLED = os.getenv("AI_IMPORTANCE_ENABLED", "1") == "1"
 AI_AUTO_TUNE = os.getenv("AI_AUTO_TUNE", "1") == "1"
 _DEFAULT_AI_IMPORTANCE_MAX = 30
 _DEFAULT_AI_SEMANTIC_MAX = 50
-_IMPORTANCE_EXPLICIT = _env_int("AI_IMPORTANCE_MAX_ITEMS")
-if _IMPORTANCE_EXPLICIT is not None:
-    AI_IMPORTANCE_MAX_ITEMS = _IMPORTANCE_EXPLICIT
-elif AI_AUTO_TUNE:
-    AI_IMPORTANCE_MAX_ITEMS = _auto_tuned_limit(
-        _DEFAULT_AI_IMPORTANCE_MAX,
-        multiplier=1.2,
-        min_floor=max(10, TOP_LIMIT),
-    )
-else:
-    AI_IMPORTANCE_MAX_ITEMS = _DEFAULT_AI_IMPORTANCE_MAX
+AI_IMPORTANCE_MAX_ITEMS = _resolve_limit(
+    "AI_IMPORTANCE_MAX_ITEMS",
+    _DEFAULT_AI_IMPORTANCE_MAX,
+    multiplier=1.2,
+    min_floor=max(10, TOP_LIMIT),
+    auto_tune=AI_AUTO_TUNE,
+)
 AI_IMPORTANCE_WEIGHT = float(os.getenv("AI_IMPORTANCE_WEIGHT", "1.0"))
 AI_QUALITY_ENABLED = os.getenv("AI_QUALITY_ENABLED", "1") == "1"
 AI_SEMANTIC_DEDUPE_ENABLED = os.getenv("AI_SEMANTIC_DEDUPE_ENABLED", "1") == "1"
-_SEMANTIC_EXPLICIT = _env_int("AI_SEMANTIC_DEDUPE_MAX_ITEMS")
-if _SEMANTIC_EXPLICIT is not None:
-    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _SEMANTIC_EXPLICIT
-elif AI_AUTO_TUNE:
-    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _auto_tuned_limit(
-        _DEFAULT_AI_SEMANTIC_MAX,
-        multiplier=1.6,
-        min_floor=max(12, TOP_LIMIT),
-    )
-else:
-    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _DEFAULT_AI_SEMANTIC_MAX
+AI_SEMANTIC_DEDUPE_MAX_ITEMS = _resolve_limit(
+    "AI_SEMANTIC_DEDUPE_MAX_ITEMS",
+    _DEFAULT_AI_SEMANTIC_MAX,
+    multiplier=1.6,
+    min_floor=max(12, TOP_LIMIT),
+    auto_tune=AI_AUTO_TUNE,
+)
 AI_SEMANTIC_DEDUPE_THRESHOLD = float(os.getenv("AI_SEMANTIC_DEDUPE_THRESHOLD", "0.88"))
 ARTICLE_FETCH_ENABLED = os.getenv("ARTICLE_FETCH_ENABLED", "1") == "1"
 ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "20"))

@@ -1,7 +1,12 @@
 import datetime
+from typing import Any
 from jinja2 import Template
 
-def generate_html(grouped_items, top_items, config):
+def generate_html(
+    grouped_items: dict[str, list[dict[str, Any]]],
+    top_items: list[dict[str, Any]],
+    config: dict[str, Any],
+) -> str:
     print("📝 HTML 뉴스레터를 생성하는 중입니다...")
 
     html_template = """

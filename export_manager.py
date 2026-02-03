@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+from typing import Any
 from ai_enricher import enrich_item_with_ai
 from config import TOP_LIMIT, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS
 from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
@@ -8,6 +9,27 @@ from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
 _LONG_IMPACT = {"policy", "sanctions"}
 _MED_IMPACT = {"capex", "infra", "security"}
 _LOW_IMPACT = {"earnings", "market-demand"}
+
+
+def _safe_read_json(path: str, default: Any) -> Any:
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return default
+
+
+def _infer_importance_from_signals(signals: set[str]) -> int:
+    if signals & _LONG_IMPACT:
+        return 4
+    if signals & _MED_IMPACT:
+        return 3
+    if signals & _LOW_IMPACT:
+        return 2
+    return 1
+
 
 def _pick_summary_source(title: str, summary: str, summary_raw: str, full_text: str) -> str:
     title_clean = clean_text(title)
@@ -22,13 +44,7 @@ def _pick_summary_source(title: str, summary: str, summary_raw: str, full_text: 
     return clean_text(summary_raw or summary or full_text or title_clean)
 
 def _load_existing_digest(path: str) -> dict | None:
-    if not os.path.exists(path):
-        return None
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
+    return _safe_read_json(path, None)
 
 def _is_valid_digest(digest: dict) -> bool:
     """MVP 안전장치: TOP_LIMIT 고정 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
@@ -58,13 +74,7 @@ def _atomic_write_json(path: str, payload: dict) -> None:
     os.replace(tmp_path, path)
 
 def _load_dedupe_history(path: str) -> dict:
-    if not os.path.exists(path):
-        return {"version": 1, "by_date": {}}
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-    except Exception:
-        return {"version": 1, "by_date": {}}
+    data = _safe_read_json(path, {"version": 1, "by_date": {}})
     if not isinstance(data, dict):
         return {"version": 1, "by_date": {}}
     by_date = data.get("by_date")
@@ -116,7 +126,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
     date_str = now_kst.strftime("%Y-%m-%d")
     last_updated_at = now_kst.isoformat()
 
-    items_out: list[dict] = []
+    items_out: list[dict[str, Any]] = []
     for i, item in enumerate(top_items[:TOP_LIMIT], start=1):
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
@@ -141,14 +151,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         importance = ai_result.get("importance_score")
         if not importance:
             signals = set(item.get("impactSignals") or [])
-            if signals & _LONG_IMPACT:
-                importance = 4
-            elif signals & _MED_IMPACT:
-                importance = 3
-            elif signals & _LOW_IMPACT:
-                importance = 2
-            else:
-                importance = 1
+            importance = _infer_importance_from_signals(signals)
         read_time_sec = item.get("readTimeSec")
         if not read_time_sec:
             read_time_sec = estimate_read_time_seconds(" ".join(summary_lines) if summary_lines else summary)

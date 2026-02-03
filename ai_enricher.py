@@ -23,6 +23,28 @@ GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-0
 AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "1800"))
 AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
+
+_ALLOWED_IMPACT_SIGNALS = {
+    "policy",
+    "budget",
+    "sanctions",
+    "capex",
+    "earnings",
+    "market-demand",
+    "security",
+    "infra",
+}
+_ALLOWED_QUALITY_TAGS = {
+    "clickbait",
+    "promo",
+    "opinion",
+    "event",
+    "report",
+    "entertainment",
+    "crime",
+    "local",
+    "emotion",
+}
 SYSTEM_PROMPT = """You are a meticulous news editor for a daily digest.
 
 Use ONLY the provided title and article text (use full_text if available, otherwise summary).  
@@ -127,14 +149,14 @@ def _log_ai_unavailable(reason: str) -> None:
     print(f"⚠️ AI 요약 비활성: {reason}")
     _AI_UNAVAILABLE_LOGGED.add(reason)
 
-def _extract_gemini_text(payload: dict) -> str:
+def _extract_gemini_text(payload: dict[str, Any]) -> str:
     # Gemini REST 응답에서 텍스트만 추출
     try:
         return payload["candidates"][0]["content"]["parts"][0]["text"].strip()
     except Exception:
         return ""
 
-def _extract_gemini_embedding(payload: dict) -> list[float] | None:
+def _extract_gemini_embedding(payload: dict[str, Any]) -> list[float] | None:
     # Gemini embedContent 응답에서 임베딩 벡터만 추출
     try:
         embedding = payload.get("embedding") or {}
@@ -238,12 +260,9 @@ def _pick_ai_input_text(summary_raw: str, full_text: str) -> str:
     return text
 
 
-def _normalize_impact_signals(value: Any) -> list[str]:
-    # 임팩트 시그널 값을 허용 목록 기준으로 정리
-    allowed = {"policy", "budget", "sanctions", "capex", "earnings", "market-demand", "security", "infra"}
+def _normalize_label_list(value: Any, allowed: set[str]) -> list[str]:
     if not value:
         return []
-    raw_list = []
     if isinstance(value, list):
         raw_list = value
     elif isinstance(value, str):
@@ -253,13 +272,17 @@ def _normalize_impact_signals(value: Any) -> list[str]:
     cleaned: list[str] = []
     seen = set()
     for v in raw_list:
-        # 허용 라벨 외 값은 제거
         token = clean_text(str(v)).lower()
         if not token or token not in allowed or token in seen:
             continue
         cleaned.append(token)
         seen.add(token)
     return cleaned
+
+
+def _normalize_impact_signals(value: Any) -> list[str]:
+    # 임팩트 시그널 값을 허용 목록 기준으로 정리
+    return _normalize_label_list(value, _ALLOWED_IMPACT_SIGNALS)
 
 
 def _normalize_quality_label(value: Any) -> str:
@@ -276,26 +299,7 @@ def _normalize_quality_label(value: Any) -> str:
 
 def _normalize_quality_tags(value: Any) -> list[str]:
     # 품질 태그를 허용 목록 기준으로 정리
-    allowed = {"clickbait", "promo", "opinion", "event", "report", "entertainment", "crime", "local", "emotion"}
-    if not value:
-        return []
-    raw_list = []
-    if isinstance(value, list):
-        raw_list = value
-    elif isinstance(value, str):
-        raw_list = re.split(r"[,\s]+", value)
-    else:
-        return []
-    cleaned: list[str] = []
-    seen = set()
-    for v in raw_list:
-        # 허용 태그만 유지
-        token = clean_text(str(v)).lower()
-        if not token or token not in allowed or token in seen:
-            continue
-        cleaned.append(token)
-        seen.add(token)
-    return cleaned
+    return _normalize_label_list(value, _ALLOWED_QUALITY_TAGS)
 
 
 def _normalize_category_label(value: Any) -> str:
@@ -324,7 +328,7 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
         _log_ai_unavailable("GEMINI_API_KEY 미설정")
         return None
     url = f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent"
-    payload = {
+    request_payload = {
         "contents": [
             {
                 "role": "user",
@@ -344,7 +348,7 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
         resp = requests.post(
             url,
             headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
-            json=payload,
+            json=request_payload,
             timeout=30,
         )
     except Exception as e:
@@ -362,11 +366,11 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
     if not text:
         _log_ai_unavailable("Gemini 응답 텍스트 비어있음")
         return None
-    payload = _parse_json(text)
-    if not isinstance(payload, dict):
+    parsed = _parse_json(text)
+    if not isinstance(parsed, dict):
         _log_ai_unavailable("Gemini 응답 JSON 형식 아님")
         return None
-    return payload
+    return parsed
 
 def enrich_item_with_ai(item: dict) -> dict:
     # 기사 아이템을 AI로 요약/분류/중요도 평가

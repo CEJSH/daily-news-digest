@@ -1,5 +1,4 @@
 import re
-from typing import Tuple
 
 from bs4 import BeautifulSoup
 import requests
@@ -34,7 +33,7 @@ def _extract_main_text(html: str) -> str:
     for tag in soup.find_all(["header", "nav", "footer", "aside"]):
         tag.decompose()
 
-    candidates = []
+    candidates: list[tuple[int, str]] = []
     for tag_name in ["article", "main", "section", "div"]:
         for tag in soup.find_all(tag_name):
             text = _clean_text(tag.get_text(" "))
@@ -66,7 +65,7 @@ def fetch_article_text(
     url: str,
     timeout_sec: int = 6,
     max_chars: int = 12000,
-) -> Tuple[str, str]:
+) -> tuple[str, str]:
     # 주어진 URL에서 기사 HTML을 받아 본문 텍스트와 최종 URL을 반환한다.
     # - 요청 실패 시 빈 문자열 2개 반환
     # - Google News 링크인 경우 canonical/og:url로 원문 재요청

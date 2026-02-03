@@ -1,10 +1,6 @@
-import feedparser
-import datetime
-import re
 import html
-import json
-import os
-from jinja2 import Template
+import re
+from typing import Any
 
 _WS_RE = re.compile(r"\s+")
 _TRAILING_TAG_RE = re.compile(r"\s*[\[\(][^\]\)]+[\]\)]\s*$")
@@ -100,7 +96,7 @@ def trim_title_noise(title: str, source_name: str | None = None) -> str:
 
     return title.strip()
 
-def get_source_name(entry) -> str:
+def get_source_name(entry: Any) -> str:
     """Google News RSS에서 언론사 이름(source.title)을 가져옴."""
     try:
         if hasattr(entry, "source") and hasattr(entry.source, "title"):
@@ -109,7 +105,7 @@ def get_source_name(entry) -> str:
         pass
     return ""
 
-def normalize_token_for_dedupe(token: str, stopwords: set) -> str:
+def normalize_token_for_dedupe(token: str, stopwords: set[str]) -> str:
     tok = (token or "").strip().lower()
     if not tok:
         return ""
@@ -139,7 +135,11 @@ def split_summary_to_3lines(summary: str) -> list[str]:
         return []
 
     # 문장 단위 분리(영문/국문 공통) → 최대 3개
-    parts = [p.strip() for p in re.split(r'(?<=[\.\!\?。])\s+|(?<=다\.)\s+', s) if p.strip()]
+    parts = [
+        p.strip()
+        for p in re.split(r"(?<=[\.\!\?。])\s+|(?<=다\.)\s+", s)
+        if p.strip()
+    ]
     if len(parts) >= 3:
         return parts[:3]
 
@@ -188,11 +188,11 @@ def estimate_read_time_seconds(text: str) -> int:
     rounded = int(round(seconds / 10) * 10)
     return max(10, min(40, rounded))
 
-def normalize_title_for_dedupe(title: str, stopwords: set) -> set[str]:
+def normalize_title_for_dedupe(title: str, stopwords: set[str]) -> set[str]:
     t = trim_title_noise(clean_text(title)).lower()
     t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
     toks = [normalize_token_for_dedupe(x, stopwords) for x in t.split()]
-    return set([x for x in toks if x])
+    return {x for x in toks if x}
 
 def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:

@@ -151,6 +151,20 @@ def split_summary_to_3lines(summary: str) -> list[str]:
 
     return parts
 
+def split_summary_to_lines(summary: str, max_lines: int = 3) -> list[str]:
+    """문장 경계 기준으로만 분리 (강제 분할 없음)."""
+    s = (summary or "").strip()
+    if not s:
+        return []
+    parts = [
+        p.strip()
+        for p in re.split(r"(?<=[\.\!\?。])\s+|(?<=다\.)\s+", s)
+        if p.strip()
+    ]
+    if parts:
+        return parts[:max_lines]
+    return [s]
+
 def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
     """요약 라인이 3줄이 되도록 보정한다."""
     cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
@@ -177,6 +191,18 @@ def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
                     return cleaned[:3]
 
     return cleaned[:3]
+
+def ensure_lines_1_to_3(lines: list[str], fallback_text: str) -> list[str]:
+    """요약 라인을 1~3줄로 보정한다. (강제 분할 없음)"""
+    cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
+    if cleaned:
+        return cleaned[:3]
+
+    fallback = clean_text(fallback_text or "")
+    if not fallback:
+        return []
+    fallback_lines = split_summary_to_lines(fallback, max_lines=3)
+    return fallback_lines[:3] if fallback_lines else [fallback]
 
 def estimate_read_time_seconds(text: str) -> int:
     """한국어 평균 읽기 속도 ~500자/분 가정. 10초 단위 반올림, 10~40초로 클램프."""

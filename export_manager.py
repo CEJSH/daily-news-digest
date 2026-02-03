@@ -3,8 +3,8 @@ import json
 import os
 from typing import Any
 from ai_enricher import enrich_item_with_ai
-from config import TOP_LIMIT, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS
-from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
+from config import TOP_LIMIT, MIN_TOP_ITEMS, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS
+from utils import clean_text, ensure_lines_1_to_3, estimate_read_time_seconds
 
 _LONG_IMPACT = {"policy", "sanctions"}
 _MED_IMPACT = {"capex", "infra", "security"}
@@ -47,11 +47,11 @@ def _load_existing_digest(path: str) -> dict | None:
     return _safe_read_json(path, None)
 
 def _is_valid_digest(digest: dict) -> bool:
-    """MVP 안전장치: TOP_LIMIT 고정 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
+    """MVP 안전장치: 최소 개수 + 핵심 필드 존재 여부만 검사 (엄격하게)."""
     if not isinstance(digest, dict):
         return False
     items = digest.get("items")
-    if not isinstance(items, list) or len(items) != TOP_LIMIT:
+    if not isinstance(items, list) or len(items) < MIN_TOP_ITEMS or len(items) > TOP_LIMIT:
         return False
 
     required_item_keys = {"id", "date", "category", "title", "summary", "sourceName", "sourceUrl", "status", "importance"}
@@ -144,8 +144,9 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if title_ko:
             title = title_ko
         summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
-        summary_lines = ensure_three_lines(ai_result.get("summary_lines") or [], summary_source)
+        summary_lines = ensure_lines_1_to_3(ai_result.get("summary_lines") or [], summary_source)
         why_important = ai_result.get("why_important") or ""
+        importance_rationale = ai_result.get("importance_rationale") or ""
         dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
         impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
         importance = ai_result.get("importance_score")
@@ -165,6 +166,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "title": title,
             "summary": summary_lines if summary_lines else [summary],
             "whyImportant": why_important,
+            "importanceRationale": importance_rationale,
             "impactSignals": impact_signals,
             "dedupeKey": dedupe_key,
             "matchedTo": item.get("matchedTo"),
@@ -193,7 +195,9 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if existing and _is_valid_digest(existing):
             print("⚠️ 오늘 digest 생성이 불완전하여 기존 daily_digest.json을 유지합니다.")
             return existing
-        raise RuntimeError(f"digest 생성 실패: 유효한 {TOP_LIMIT}개 뉴스가 생성되지 않았고 기존 파일도 없습니다.")
+        raise RuntimeError(
+            f"digest 생성 실패: 유효한 {MIN_TOP_ITEMS}~{TOP_LIMIT}개 뉴스가 생성되지 않았고 기존 파일도 없습니다."
+        )
 
     _atomic_write_json(output_path, digest)
     try:

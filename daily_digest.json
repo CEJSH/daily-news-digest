@@ -3,148 +3,140 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T14:40:36.089907+09:00",
+  "lastUpdatedAt": "2026-02-03T19:28:36.701457+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "오라클, 500억 달러 AI 인프라 투자로 엔터프라이즈 클라우드 컴퓨팅에 지각 변동 예고",
+      "title": "정부, 고정밀지도 반출 판단 앞두고 미국 구글·애플 본사 방문",
       "summary": [
-        "오라클이 AI 인프라에 500억 달러를 투자합니다.",
-        "이는 엔터프라이즈 클라우드 컴퓨팅 시장에 큰 변화를 가져올 것으로 예상됩니다.",
-        "이번 투자는 오라클의 AI 역량 강화에 기여할 것입니다."
+        "정부가 고정밀지도 반출에 대한 판단을 앞두고 미국 구글과 애플 본사를 방문했습니다.",
+        "[단독] 정부, 고정밀지도 반출 판단 앞두고 美 구글·애플 본사까지 찾았다"
       ],
-      "whyImportant": "오라클의 대규모 투자는 클라우드 시장 경쟁 심화 및 AI 인프라 발전에 중요한 영향을 미칠 것입니다.",
+      "whyImportant": "고정밀지도 데이터의 국외 반출 결정은 국내 지도 관련 산업과 안보에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 정부의 결정에 따라 국내 지도 관련 산업과 안보에 미치는 영향이 클 수 있기 때문입니다.",
       "impactSignals": [
-        "policy",
-        "capex"
+        "policy"
       ],
-      "dedupeKey": "오라클-ai인프라-투자-클라우드컴퓨팅",
+      "dedupeKey": "정부-고정밀지도-반출-구글-애플",
       "matchedTo": null,
-      "sourceName": "WebProNews",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRnpjZVRoMnhpUXl4SWtnMno4d1FYeHhWcjdyenZ3SFM1T1VVdHJiemFNYnpneF9EeG41Z0JjSktfX2hlQU5hVHA1UTJuUlhyTmVRZ2lESGR0V3gxalFtb3B1bGl4ODVZcmlJelpJLV8xdGxWMmN0VTVJek52aGVJOHVIWDM4OUVWa2d2MG9KcklmRzZNNU9MSGhMR0JhMDR2dnNmOTM5VGRSWWlXR1Y1eGI5ajFRTFJIM2RHV1BxanE?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 19:58:37 GMT",
+      "sourceName": "전자신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xYVpwMFR5azNlZ0xBZl9CSlBsQXMyeWM4YXh1bnE3VE9Xdmd3MFR2ZGtURVlrcTAwemdvMms5ZlpOSkpkN21aeW9MdjhsZw?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 06:20:00 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_2",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "정부, 2차 정보보호 대책 발표…소비자 구제 및 취약점 점검 강화",
+      "title": "카카오 LLM 오케스트레이션 평가 지표 논문, 세계 AI 학회 채택",
       "summary": [
-        "정부가 2차 정보보호 대책을 발표했습니다.",
-        "이번 대책은 소비자 구제 강화에 초점을 맞추고 있습니다.",
-        "취약점 점검 또한 강화될 예정입니다."
+        "카카오가 개발한 'LLM 오케스트레이션 평가 지표' 논문이 세계적인 AI 학회에서 채택되었습니다."
       ],
-      "whyImportant": "이번 정보보호 대책은 장기적으로 국내 정보보안 환경 개선에 기여할 수 있습니다.",
+      "whyImportant": "AI 모델의 성능 평가 기준을 제시하여 기술 발전에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 카카오의 LLM 오케스트레이션 평가 지표 논문이 세계 AI 학회에서 채택된 사실은 해당 기술의 중요성을 시사합니다.",
       "impactSignals": [
-        "policy",
-        "security"
+        "stats"
       ],
-      "dedupeKey": "정보보호-대책-소비자구제-취약점점검",
+      "dedupeKey": "카카오-llm-오케스트레이션-평가-지표",
       "matchedTo": null,
-      "sourceName": "아이티데일리",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5U1pPS3psVVh2T2Mwcl8xbkppTlJ5eE9VT2FOVDNySm1SQkJFODlqeEhMSS1ZQ010Q2l2eXB0Y0lCSUN5TEFodXBPWFpwQ3NTaWctVVlwWWhlTmhkY1N3VFBEd0lLdTQ?oc=5",
-      "publishedAt": "Wed, 28 Jan 2026 08:28:33 GMT",
+      "sourceName": "전자신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vTTV0UWNtSDVrUFcybGFQc1g1X284OXdBX0l0UnZmbEU2YTVoRFkyNEE1Y3A3Nm5CZVhXXzRCektUU09mYmpCUHBscWpLQQ?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 00:58:53 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_3",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "웨이모, 160억 달러 투자 유치로 글로벌 성장 가속화",
+      "title": "금·은 가격 하락에 골드·실버뱅킹 잔액 급감",
       "summary": [
-        "웨이모가 160억 달러의 투자금을 유치했습니다.",
-        "이번 투자를 통해 웨이모는 글로벌 성장을 가속화할 계획입니다.",
-        "자율주행 기술 개발 및 상용화에 박차를 가할 것으로 예상됩니다."
+        "금과 은 가격의 폭락으로 인해 골드뱅킹 및 실버뱅킹 잔액이 급격히 감소했습니다.",
+        "투자자들에게 신중한 투자가 권고되고 있습니다."
       ],
-      "whyImportant": "자율주행 기술 경쟁 심화 및 시장 확대에 영향을 미칠 수 있는 투자입니다.",
+      "whyImportant": "귀금속 시장의 변동성은 투자 전략에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금과 은 가격 하락으로 골드뱅킹 및 실버뱅킹 잔액이 급감했다는 점에서 시장 변동성이 투자에 미치는 영향을 보여줍니다.",
       "impactSignals": [
-        "policy",
         "capex"
       ],
-      "dedupeKey": "웨이모-자율주행-투자-글로벌성장",
+      "dedupeKey": "가격-폭락-골드뱅킹-실버뱅킹",
       "matchedTo": null,
-      "sourceName": "Waymo",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0telJ5bEkyU0NNN2VRM0tSZ0lBNjRoMXZfbklnR3hZYXA2RE92NjNkMzVNUHJ1aEZiUkE1NHNybVk4ZmZCZkNWb211OU9oR2s2d3VoOVhqZDRibWdSelA3LUlOeVZBUUdRQWplWTh4a0lGaE91TGFaUlN1c2VkYUk?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 22:20:56 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JbDNzRjdsWWZVY1B3aUVoTjZvbFBoVi0ycGE3dlFTTG1jSnVVVERDeUlnSHZQd1FfeDhvSzA2LU1sYWxMRjAtWUZpTGNXOUpNMU83bWRSeTVQbWdGTDd0S1FKWFBwWHczMV80Vmw4S296VTJY?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 02:07:01 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_4",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "웨이모, 160억 달러 투자 유치 및 20개 이상 도시로 확장 계획",
+      "title": "유럽 내 테슬라 등록, 1월에 회복 조짐 보임",
       "summary": [
-        "웨이모가 1,260억 달러의 기업 가치로 160억 달러의 대규모 투자를 유치했습니다.",
-        "이번 투자 유치를 통해 웨이모는 자율 주행 기술 개발 및 상용화에 박차를 가할 예정입니다.",
-        "웨이모는 향후 20개 이상의 도시로 서비스 지역을 확장할 계획입니다."
+        "유럽 내 테슬라 차량 등록 대수가 1월에 회복 조짐을 보이고 있습니다."
       ],
-      "whyImportant": "웨이모의 대규모 투자 유치 및 서비스 확장은 자율 주행 기술 경쟁 심화 및 시장 성장을 가속화할 수 있습니다.",
+      "whyImportant": "테슬라의 유럽 시장에서의 회복은 전기차 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 유럽 내 테슬라 차량 등록 대수 회복은 시장 수요 변화를 나타내는 지표가 될 수 있습니다.",
       "impactSignals": [
-        "policy",
-        "capex"
+        "market-demand"
       ],
-      "dedupeKey": "웨이모-투자유치-자율주행-도시확장",
+      "dedupeKey": "유럽-테슬라-등록-회복",
       "matchedTo": null,
-      "sourceName": "Electrek",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeVZlLV9QaWZRV0FsNl9HVENwNUEwaW1PMHV4RVR3X2JPMVRxbTViQmlOYmlzQUtmVm1NOXhqd3Y0TG9xNERYaFlPdVUxUG5GTVZtRFEwb1dmZWxHSEZpM3A0emh4eHpUZW04eFVWYVUyd0JTZzdONjNCeldoeUpsMjBxajVndXh3NDI2RmdNRWc5NF9VXzUtOUU2TEZPOFM5Q2hJag?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 23:18:00 GMT",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd0Z0OUc3N0ZVd0JRTGJIUmxqZjRUbkhMdkkydWt0V2xIcnd5X3BvR1ptTlN1UHp3OEJPOTFKVHpzNjUzUzFSTE0yQ2ZFdGFXX1VnVjNyeHVibjB4c1N3MEg0amVuMmJNb1QxelZVeWtncnh0R2lZUVFid0ttMnYxR0tNdzlwenhTTEFWcVY1ZGxBa19PVlI5UnlOZE9QSllMV1lIQ0dxMVVlcmR2MUFSUHIwUVhGR3VObWg1Y0s3blhtczVScDVlZ1lFdlJMMURNYVE?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 11:42:48 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_5",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "AI 규제 시행 속 반도체·산업 AI 수요 급증",
+      "title": "김정호 KAIST 교수, 2038년 HBF가 HBM 수요 초과 전망",
       "summary": [
-        "2026년 1월 29일부터 AI 규제가 본격적으로 시행됩니다.",
-        "규제 시행과 함께 반도체 및 산업 AI 수요가 급증하고 있습니다.",
-        "자세한 내용은 아직 알려지지 않았습니다."
+        "김정호 KAIST 교수는 HBF(High Bandwidth Fabric)가 2038년에 HBM(High Bandwidth Memory) 수요를 넘어설 것이라고 예측했습니다.",
+        "HBF는 고대역폭을 요구하는 데이터 처리에서 HBM의 대안으로 부상할 수 있습니다."
       ],
-      "whyImportant": "AI 규제는 산업 전반에 걸쳐 장기적인 영향을 미칠 수 있는 중요한 정책 변화입니다.",
+      "whyImportant": "HBF 기술 발전은 미래 고성능 컴퓨팅 환경에서 메모리 솔루션의 다양성을 확보하는 데 기여할 수 있습니다.",
+      "importanceRationale": "근거: 2038년 HBF 수요가 HBM을 넘어설 것이라는 예측은 장기적인 기술 발전 추세를 보여줍니다.",
       "impactSignals": [
-        "policy",
         "market-demand"
       ],
-      "dedupeKey": "규제-반도체-산업ai-수요",
+      "dedupeKey": "kaist-김정호-교수-hbf-hbm-수요",
       "matchedTo": null,
-      "sourceName": "유스연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54YVhnYXVWRWkwUjFrUGE2NHdaMVVhNF9UQ2dQUUJTdml6aFFtc09CTDVlYXhhblhwX2J1TmRsYlpmdnpKNWJfbjl1ZlVMQ1RCY1E?oc=5",
-      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNVGEyQ1JFSG1tckc0R3Z6Tk5uRUVLTlBHTV9RVkZyeWhldEdTNlVEZjU1bGR1Qmt4VXNvTUpYTEoyU0E3cVJmYUlfbklLeDFPbnc3cHJ3dllld9IBVEFVX3lxTFBBcnVfczh4eGt5VGIwa1lSV3I5NjNZMEdobUtTS1l6S1p4N04wVGUtNWVKeHA1VVdmTjFXTzg5a2VhRkhQVTVnWjFDVnZmQWRUX2x5dA?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 07:07:43 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_6",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "AI의 다음 단계: 2025~2026년의 기술, 인프라 및 정책",
+      "title": "팀벨, AI 회의록 솔루션 '팀블로' 저작권 등록…공공 보안 시장 공략",
       "summary": [
-        "인공지능의 미래 단계를 기술, 인프라, 정책 측면에서 조망합니다.",
-        "2025년에서 2026년 사이의 AI 발전 방향을 예측합니다.",
-        "자세한 내용은 제공된 텍스트에 담겨 있습니다."
+        "팀벨은 AI 회의록 솔루션 '팀블로'의 저작권을 등록했습니다.",
+        "이를 통해 공공 보안 시장을 공략할 계획입니다."
       ],
-      "whyImportant": "AI 기술 발전과 관련된 정책 결정에 영향을 미칠 수 있는 정보입니다.",
+      "whyImportant": "AI 회의록 솔루션의 저작권 등록은 기술적 경쟁력 확보 및 시장 확장에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 팀벨이 AI 회의록 솔루션 '팀블로'의 저작권을 등록하고 공공 보안 시장을 공략한다는 내용으로, 단일 기업의 움직임입니다.",
       "impactSignals": [
-        "policy",
-        "capex"
+        "market-demand"
       ],
-      "dedupeKey": "기술-인프라-정책-2025-2026",
+      "dedupeKey": "팀벨-ai회의록-솔루션-저작권-등록",
       "matchedTo": null,
-      "sourceName": "The American Action Forum",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVpCcXk1ODZ2dXdnNjl4RmZkRzc3cERmdXRWTlpjN3QxNndNMmFBQUlKY09ZWHN2eFdJZGZmbWNZVEJQbXJxU1dOT0IwUXJPQUg1Z3pGYUhXLW1IZHlCODdCNUxYTlVfTnhKMlpoTzFZT0ZpeXdRUDBza1R6WjRKbkVqbEU0N0xvY3U0NG1aQXF3LTJ3MDRCblhJX2lJQ0Rud1NGMlkzNFlIckwzTGxyVHpTMHo4UQ?oc=5",
-      "publishedAt": "Wed, 28 Jan 2026 14:58:36 GMT",
+      "sourceName": "서울경제TV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0SF9JNkRqZUJXOURqVUlVY1F0ZFdodnpWMXppQzZJVzhrbXg0bVUtUVZNbWpOd1o3dHUwRHQzR214OGpyaEdkTy1mQW53RF9CXy1tSWdJWENOOG1pdDRjZ0U1M1c?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 04:54:33 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3
@@ -152,108 +144,14 @@
     {
       "id": "2026-02-03_7",
       "date": "2026-02-03",
-      "category": "IT",
-      "title": "규제특구 내 주 52시간 근무제 완화 논의 및 AI 특별연장근로 확대",
-      "summary": [
-        "규제특구 내에서 주 52시간 근무제 완화가 논의되고 있습니다.",
-        "AI 분야의 특별연장근로도 확대될 예정입니다.",
-        "이는 규제 완화를 통해 AI 산업을 육성하기 위한 조치로 보입니다."
-      ],
-      "whyImportant": "규제 완화는 기업의 운영 방식과 노동 시장에 장기적인 영향을 미칠 수 있는 중요한 정책 결정입니다.",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "규제특구-주52시간-완화-특별연장근로",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9hZnpNV2w1cmgzNkZYenRVellRNi1BWi02WHJJMjRGZzQyb2hVa0M4dk5ScVFxb1QxbkQtZE0wVlRuU2FTUldlMzhJLWxXMlJFV0hzbW1ONGVQd9IBVEFVX3lxTE45NVJKOUFkMVAyRGl2Rjl2VTBXZlRFLXBPMHNFb01Mc2hhekRtb0FJZU9PMFk4VFRaS3hhT3d3TlAtQjhqV0x3MWIycmRMcVVsVHQ0eg?oc=5",
-      "publishedAt": "Thu, 29 Jan 2026 09:13:34 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4
-    },
-    {
-      "id": "2026-02-03_8",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "한화비전 AI 시스템 국제표준 인증 획득",
-      "summary": [
-        "한화비전이 AI 시스템에 대한 국제표준 인증을 획득했습니다.",
-        "이는 글로벌 규제에 선제적으로 대응하기 위한 것입니다.",
-        "자세한 내용은 아직 알려지지 않았습니다."
-      ],
-      "whyImportant": "AI 시스템의 국제 표준 인증은 향후 관련 기술 개발 및 시장 경쟁에 중요한 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "한화비전-시스템-국제표준-인증",
-      "matchedTo": null,
-      "sourceName": "중소기업신문",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EUkJLY3E5OXV4eUlLaVAxdGVLUkk3M0x0b3VtdGtEbVJmQm1mOTl0TFBELXdvRlJDTUJOQUdGUTVTMjhjMGI1NjF2LTlRVDJZTUs3b2JVcGd3eE9Pdmg3NGw4bUI3N2x1T3pwQg?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 23:36:13 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_9",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "엔비디아 주가 하락: 1,380억 달러 규모의 OpenAI 투자는 왜 문제인가",
-      "summary": [
-        "엔비디아의 주가가 하락했습니다.",
-        "1,000억 달러 규모의 OpenAI 투자가 문제시되고 있습니다.",
-        "자세한 이유는 기사에서 확인할 수 있습니다."
-      ],
-      "whyImportant": "엔비디아의 대규모 투자는 AI 산업 전반에 걸쳐 중요한 영향을 미칠 수 있기 때문입니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
-      "dedupeKey": "엔비디아-openai-투자-주가",
-      "matchedTo": null,
-      "sourceName": "Barron's",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiigNBVV95cUxON1U1R1p6eVd4ZDQyeVRkMFNQdnB4a0dXNDZPV0VmTVdrWXlPT3VyTk80Nkx5ME9VWHVYeHFMR2lBQ2d4U05DS1RtYWFfX0VqUnAtTWpQNUdkYW9LRUliQVdDNWNRN1RCTDJRTnVQM2t4dzJkd3N1dHp3Z0VQNEF3ZW4zNzFBOTMwZk9GMTliM3lOMFBEcHpsVFF2QVUzNjI0NFJISVBSN2NlUTF0N0RqX1V3enZwYzdyWHhWMGlHMmtkWkpoX0p6NEk2TmlreV9nQktVcGkxUUJsend3RkZlc0pwZG1lSk9rT1d5ZmxLTkVfU3ZNaDBTa01GaVBHX0xzLVhUYXhVX2RNQk00UG4xX0pOa3JPellyaHA5RGFWSjhLZ2V4dlZhWjc4NFBIamEtOWpRM1VIRExWUnVIZktCaHlMSWRxRUFFYk9vY1YzYkdZbHFSSTV0a1dIWDAtcmdyRjRPbFd4VFRSNTZoOTdCNExQVERRZmpucnFkS0UxTWZ2YWVGbFpHenVB?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 21:38:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_10",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "미국 제재 속 '중국판 엔비디아' 첫 연간 흑자 전망",
-      "summary": [
-        "미국의 제재 속에서 '중국판 엔비디아'가 작년에 첫 연간 흑자를 기록할 것으로 전망됩니다.",
-        "자세한 내용은 제공된 텍스트에 포함되어 있지 않습니다.",
-        "추가 정보는 기사를 통해 확인해야 합니다."
-      ],
-      "whyImportant": "미국 제재 하의 중국 반도체 산업의 생존 능력과 발전 가능성을 보여주는 지표가 될 수 있습니다.",
-      "impactSignals": [
-        "sanctions",
-        "earnings"
-      ],
-      "dedupeKey": "중국판-엔비디아-제재-흑자",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10RU9VZVloTkVVcmJGc21VRW5jV1NFbk1YRXJtMkwyNkJIaWwtVFBxZFRhSzBKUTlJTmNRSlV3QjlKSldlaUx5aGdackpteFBBOERXdTFqR0xkVHBkckEtcVFNeFVOZEF3NURTMjRGUTRid3pO?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 12:28:30 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_11",
-      "date": "2026-02-03",
       "category": "경제",
       "title": "미국 정부의 메디케어 정책 발표에 보험주 급락",
       "summary": [
         "미국 정부의 메디케어 정책 발표로 인해 보험주가 급락했습니다.",
-        "이러한 정책 변화는 보험 시장에 큰 영향을 미칠 것으로 예상됩니다.",
-        "S&P500 지수는 신고가를 경신했습니다."
+        "S&P500 지수는 신고가를 기록했습니다."
       ],
-      "whyImportant": "정부 정책 변화는 보험 산업의 수익성에 장기적인 영향을 미칠 수 있습니다.",
+      "whyImportant": "정부 정책 변화는 보험 산업에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 정부의 메디케어 정책이 보험주에 직접적인 영향을 미치고 S&P500 지수에도 영향을 줄 수 있기 때문입니다.",
       "impactSignals": [
         "policy"
       ],
@@ -264,27 +162,114 @@
       "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_8",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "조현 외교부 1차관 방미, 국회 절차 설명 및 양해 구할 예정",
+      "summary": [
+        "조현 외교부 1차관이 미국을 방문하여 우리 국회의 관련 절차를 설명하고 양해를 구할 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "이번 방미는 외교적 사안에 대한 국회와의 소통 및 협력을 강화하는 데 중요합니다.",
+      "importanceRationale": "근거: 조현 외교부 1차관의 방미 목적이 국회 절차에 대한 설명과 양해를 구하는 것이므로 정책 결정 과정에 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "조현-방미-국회절차-외교부",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFeU9haUZTR1NoUzA1dEFWYWNYcjFRd21TWmZoQXptUjBMNHdzZUU4aE5GWHVXTk1STC1TOUo4bmpqWEJHUVhrd3VqemlTMWtlQ1NRR0t3UkNIZkRzRTlPdUZRZDEzRFI3c1JBcFgxTGNCVmRU?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 09:22:41 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_9",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "자사주 의무 소각법 국회 법사위 상정",
+      "summary": [
+        "자사주 의무 소각법이 국회 법제사법위원회 소위원회에 상정되었습니다."
+      ],
+      "whyImportant": "자사주 소각 의무화는 기업의 자본 정책 및 주주 가치에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 법안이 국회 법사위에 상정된 것은 정책 결정 과정에서 중요한 단계이므로 중요도 점수를 3으로 설정합니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "자사주-의무소각법-국회",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CSWl1ME9sR3pVX0tDQWx6ekpRYmM1VWtrYXNMSFlwLVNPcWU5SU9lQTFYMWkxY1d4OWtZazdSVF9PSVBHbFk5ZnFpZUExa0VLSnF5bUxrTjU2Z9IBVEFVX3lxTE96S05DUXo1SEl1ai1MS2ZmcFY1cG1CbXVGRmx0TlBHcnRRbExvTXVxM3l5SldJeVNWM1dNTFp1OHNLdWtrZGVpcGcyeFQ1TVM2Q05SSA?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 08:27:25 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_10",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "경찰, 쿠팡 박대준 전 대표 소환…'국회 위증' 혐의",
+      "summary": [
+        "경찰이 쿠팡의 박대준 전 대표를 국회 위증 혐의로 소환 조사했습니다."
+      ],
+      "whyImportant": "국회 위증 혐의 조사는 기업 경영진의 책임과 관련된 중요한 사안입니다.",
+      "importanceRationale": "근거: 박대준 전 대표의 국회 위증 혐의에 대한 경찰 소환 조사는 정책 결정 과정에서의 진실성 문제를 제기합니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "경찰-쿠팡-박대준-국회-위증",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFB1OFgxTmd0QkZXOHdFdmFMYnJxU0o3eFVaQUhoLVpZT0R2c3BrczNUN3dKSnc4NDRGc1JEYldrRTRpaTFZVUtsd0xMV3lWbHlvZkxJZUFzcUQzYkpmWVdJcDYxQTlqazlFTlNNR2tUc3o1QQ?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 05:17:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_11",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "중국 태양광 발전 설비 규모, 올해 석탄 추월 전망",
+      "summary": [
+        "중국의 태양광 발전 설비 규모가 올해 석탄 발전 설비 규모를 넘어설 것으로 예상됩니다."
+      ],
+      "whyImportant": "중국의 에너지원 전환 방향을 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 중국의 태양광 발전 설비 규모가 석탄 발전 설비 규모를 추월할 것이라는 전망은 에너지 시장의 변화를 시사합니다.",
+      "impactSignals": [
+        "capex"
+      ],
+      "dedupeKey": "중국-태양광-발전설비-석탄",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5JQXo2Q3VTS1BhYXpYSnpMNWRKQTd4ckVnb29WWU5rMzJDVkdEZnFtZU05VUVEcFRmd3VIR2o0THB2LUNZUEdaeDlsazBXM0kxajBUMXRZMUk3SzdkOEhrTzY1U2xHMFNGdncycWR0Z1QyeVhL?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 07:02:23 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
     },
     {
       "id": "2026-02-03_12",
       "date": "2026-02-03",
       "category": "경제",
-      "title": "RBA 금리 결정: 정책 분석 및 영향",
+      "title": "보난자랩, 프리A 투자 유치…법인 가상자산 데이터 인프라 확장 가속화",
       "summary": [
-        "RBA(호주중앙은행)의 금리 결정에 대한 정책 분석 및 영향에 대한 기사입니다.",
-        "자세한 내용은 기사를 통해 확인할 수 있습니다.",
-        "정책 결정의 분석과 영향에 초점을 맞추고 있습니다."
+        "보난자랩이 프리A 투자를 유치하여 법인 가상자산 데이터 인프라 확장을 가속화할 예정입니다."
       ],
-      "whyImportant": "금리 정책 결정은 경제 전반에 걸쳐 장기적인 영향을 미치므로 중요합니다.",
+      "whyImportant": "이번 투자는 법인 가상자산 데이터 인프라 시장의 성장에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 프리A 투자 유치를 통해 인프라 확장을 가속화한다는 내용이 있습니다.",
       "impactSignals": [
-        "policy"
+        "capex"
       ],
-      "dedupeKey": "rba-금리-정책-영향",
+      "dedupeKey": "보난자랩-가상자산-데이터인프라-투자",
       "matchedTo": null,
-      "sourceName": "Discovery Alert",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNc3ZVWUQzLVJZMEFYSEhNdDBtRWxJUThzU2lxM3VNQjJZS2YxcXVtQ0tYLWx3Qm15YXVZd0N6XzlYTHBXN0lyTFJjbUpTWjRDMmttamlJRmNlaGpod2h0YXJTbVRiOFpwQWEtM2drT0pFUm42R1lkM1FiMVpOSkhOZmRkQzZuSGpXWTFIWC1RZmx5N2xYRmdDQw?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 04:43:07 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aNExoS3U0M29lZkRSV2RTTl9PSDRQOEU5ZHdSRWp1Mk9kWnAwR1M2cDV1M0ItSExoVkZZNklMSS1HeGstdUdXMi1nUGRReGtybzU5T01xOW15d9IBVEFVX3lxTE9JeHYwbl96TkdkdXZXWkFEZTZnM2NXVU9jazNJUnJQV3RhSGlQMGtkNzhCWTVNbG5uSVZkazRuNnVKREZkeWFMbjB0WGxBTnl1UFZfMQ?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 01:00:08 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3
@@ -292,47 +277,44 @@
     {
       "id": "2026-02-03_13",
       "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "트럼프, 한국 관세 인상 가능성 및 대미 투자 특별법 지연",
+      "category": "경제",
+      "title": "하나투어, 작년 영업이익 '최대' 기록",
       "summary": [
-        "트럼프 전 대통령이 한국에 대한 관세 인상을 고려하고 있다는 내용이 보도되었습니다.",
-        "대미 투자 특별법은 현재 지연되고 있는 상황입니다.",
-        "다른 국가들의 상황에 대한 추가적인 정보는 제공되지 않았습니다."
+        "하나투어가 작년 영업이익 576억 원으로 최대 실적을 기록했습니다."
       ],
-      "whyImportant": "미국 관세 정책 변화는 한국 경제 및 대미 투자 전략에 중대한 영향을 미칠 수 있습니다.",
+      "whyImportant": "하나투어의 실적은 여행 산업의 회복세를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 하나투어의 영업이익이 576억 원으로 최대 실적을 기록했다는 점에서 중요도 3으로 판단됩니다.",
       "impactSignals": [
-        "sanctions",
-        "capex"
+        "earnings"
       ],
-      "dedupeKey": "트럼프-관세인상-대미투자-특별법",
+      "dedupeKey": "하나투어-영업이익-최대실적",
       "matchedTo": null,
-      "sourceName": "BBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2ZENlZkJIMGVjWFVTOHFrTFJZcUQ1QjFOcDRSai1tbHZRRkZZWkg3UENMaXhEOFRMdXB1cVo4ak11NTZfcnJEbkhDQVJZeFpnVml2UFF4d0JIVFpH0gFiQVVfeXFMTlp1RHR3SXBON1pDcWxIVG1Sc2ZhRWJ0ZWktNWJaNXpxQ25HSEQ5Z2hmaHBJWHd2eTI3dF95Y1NJU0hid0ZUZi1lOGlIRjJLZU5KVERDbXlVLTE5QnBLSTRiRmc?oc=5",
-      "publishedAt": "Tue, 27 Jan 2026 12:08:31 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBITm5KVktoM3QtSTdsU0ZyWWQ0akVtN3EzUV8yZWkzT1hUYnR5NkZjSm1BejhiMjRHRmZaS2FlQmVJU2tsWFdqVkQ5SUczYnpURFpZTTl6LW1Nenh2dmtYQ2MzSUpVcWZXTV9BUHJnMWpVOG5S?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 07:14:26 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4
+      "importance": 3
     },
     {
       "id": "2026-02-03_14",
       "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "관세 협상 및 투자 속도 논의를 위한 통상 담당 고위 관계자 미국 방문",
+      "category": "경제",
+      "title": "롯데에너지머티리얼즈, AI 소재로 실적 개선 추진",
       "summary": [
-        "관세 협상과 투자 속도 관련 문제로 인해 한국의 통상 담당 고위 관계자들이 급히 미국을 방문할 예정입니다.",
-        "이번 방문은 양국 간의 무역 및 투자 관련 현안을 논의하기 위해 이루어집니다.",
-        "구체적인 협상 내용과 결과에 따라 국내 경제에 미치는 영향이 주목됩니다."
+        "롯데에너지머티리얼즈가 AI 소재를 통해 실적 턴어라운드를 시동합니다.",
+        "이는 질적 성장을 목표로 합니다."
       ],
-      "whyImportant": "미국과의 통상 협상 및 투자 관련 논의는 국내 산업과 경제 정책 방향에 중요한 영향을 미칠 수 있습니다.",
+      "whyImportant": "AI 소재 개발 및 적용은 기업의 장기적인 성장 동력을 확보하는 데 중요합니다.",
+      "importanceRationale": "근거: 롯데에너지머티리얼즈의 AI 소재 개발은 기업의 실적 개선을 목표로 하고 있어 중요도 3으로 판단됩니다.",
       "impactSignals": [
-        "sanctions",
-        "capex"
+        "earnings"
       ],
-      "dedupeKey": "관세-협상-투자-속도-통상",
+      "dedupeKey": "롯데에너지머티리얼즈-ai소재-실적개선",
       "matchedTo": null,
-      "sourceName": "한국일보",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU0djNmNfTWY4WHB4eVotSllPRWhQMjR2R0ZwWkV4aEstQ0s2dC1YcFg4cFVEWnlHUzlaZFpWak5RUzYybVVDT3FCSXdaNUs0M29kY1FtQXg2OWxSY202aTA5Z2RTMHpvRmdHck9B?oc=5",
-      "publishedAt": "Fri, 30 Jan 2026 08:52:22 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE13bjhaNllVM2FRY0l6M3dRaVFIUU5tUDNDb1llSWlYMFY4aWZacnE3SkctU1RjQkNWd2toMnVCOHZlc1RpQ29rLWtjVVU1WC10M2FqdE9XOURoLVh0dEM0LUlSamxERktMZDlDTGd1MlMxUjdR?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 07:25:34 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3
@@ -341,141 +323,65 @@
       "id": "2026-02-03_15",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "트럼프, 관세 정책 자화자찬",
+      "title": "한미 통상장관, 관세 문제 결론 미도출",
       "summary": [
-        "트럼프 전 대통령이 관세 정책을 자화자찬했습니다.",
-        "그는 한국이 미국의 조선업에 217조 원을 투자했다고 주장했습니다.",
-        "자세한 내용은 아직 알려지지 않았습니다."
+        "한미 통상장관 회담에서 관세 문제에 대한 결론이 도출되지 않았습니다.",
+        "양측은 추가 회담을 가질 예정입니다."
       ],
-      "whyImportant": "미국의 무역 정책 변화 가능성과 그에 따른 경제적 영향을 예측하는 데 중요합니다.",
+      "whyImportant": "미국과의 무역 관계 및 통상 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 관세 문제는 여러 산업에 걸쳐 영향을 미치므로, 협상 결과에 따라 경제적 파급력이 있을 수 있습니다. 하지만 구체적인 내용이 없어 중요도 점수를 낮게 평가합니다.",
       "impactSignals": [
-        "policy",
-        "capex"
+        "sanctions"
       ],
-      "dedupeKey": "트럼프-관세정책-조선업-투자",
+      "dedupeKey": "한미-통상장관-관세",
       "matchedTo": null,
-      "sourceName": "마켓인",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
-      "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xZ2JKbEtmNy1nTkMtZ0RjT0s5bHZtQ0xIWFR5Q3NLelM4OUFZLUhubEkzTXJ4ejNMTnJWTzVPM3ZmeWtqc212Zms4aVhqWklUTzhPcE0wemV1ZWVFclJJMjJWOEM4aWlCbzEzY0ZsZE90eWxZ?oc=5",
+      "publishedAt": "Fri, 30 Jan 2026 11:45:48 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 2
     },
     {
       "id": "2026-02-03_16",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "지자체 통합법 및 대미 투자 특별법, 2월 임시국회에서 여야 충돌 전망",
+      "title": "트럼프, 한국과의 해결책 마련 언급",
       "summary": [
-        "지자체 통합법과 대미 투자 특별법이 2월 임시국회에서 여야 간 충돌을 예고하고 있습니다.",
-        "여야는 해당 법안들을 두고 첨예한 입장 차이를 보이고 있습니다.",
-        "2월 임시국회에서 법안 통과를 위한 논의가 진행될 예정입니다."
+        "트럼프 대통령이 한국과의 해결책 마련을 언급하며 관세 협상 재개 가능성을 시사했습니다."
       ],
-      "whyImportant": "지자체 통합 및 대미 투자 관련 정책 방향에 영향을 미칠 수 있는 중요한 법안 논의입니다.",
+      "whyImportant": "미국과 한국 간의 무역 관계 변화 가능성을 보여주는 발언입니다.",
+      "importanceRationale": "근거: 트럼프 대통령의 발언은 향후 양국 간 무역 협상에 영향을 미칠 수 있습니다.",
       "impactSignals": [
-        "policy"
+        "sanctions"
       ],
-      "dedupeKey": "지자체통합법-대미투자-특별법-국회",
+      "dedupeKey": "트럼프-한국-무역협상",
       "matchedTo": null,
-      "sourceName": "농민신문",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGTVNEb2dZdWFGbG9nbm1IU3pJd1FLX1NGNnM2eVF2QzVyQjVUWTVXcGlPVzd0a1ZlSTBOLVk5YlozMkl0MWRCbXRZbW8ta2lRTG1oQXFvd3BUdw?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 10:02:00 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50bTBKakpYbExISDVRLVQ4b1lqZHZ2YmxvTjdUTEFmNmNGcGFpYnZsZVNQbnZnMldVVUN5MkZqT2dfdG1JNUFsb3drQl8zb0U2ZGU0TEc2ckFhZ9IBVEFVX3lxTE1sVW8zbkc5dzV6MWpaX0JmUC13V0Yyd3c2SFNiU01TRmo2Zm53T1FqXzd5b2pPOU9SWDR3WjFoWVFwdEwxYzNoekt1NlNNTF9nMEpGbw?oc=5",
+      "publishedAt": "Wed, 28 Jan 2026 01:25:18 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 2
     },
     {
       "id": "2026-02-03_17",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "팔란티어, 정부 및 민간 수요 급증으로 4분기 깜짝 실적 기록",
+      "title": "미국, 관세 인상 절차 돌입",
       "summary": [
-        "팔란티어가 정부와 민간 부문의 수요 증가에 힘입어 4분기에 예상치 못한 실적을 달성했습니다.",
-        "이러한 실적 호조에 힘입어 시간 외 거래에서 주가가 9% 급등했습니다.",
-        "정부와 민간 양쪽에서의 수요 증가는 팔란티어의 성장세를 견인하는 주요 요인으로 분석됩니다."
+        "김정관 무역협회 부회장이 미국의 관세 인상 관련 오해를 풀었다고 밝혔으나, 미국은 관세 인상 절차에 돌입했습니다."
       ],
-      "whyImportant": "정부 및 민간 수요 증가는 팔란티어의 지속적인 성장 가능성을 시사하며, 향후 실적에 중요한 영향을 미칠 수 있습니다.",
+      "whyImportant": "미국의 관세 인상 절차는 무역 환경에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국의 관세 인상 절차는 여러 기업과 산업 전반에 영향을 미칠 수 있습니다.",
       "impactSignals": [
-        "policy",
-        "earnings",
-        "market-demand"
+        "sanctions"
       ],
-      "dedupeKey": "팔란티어-실적-정부수요-민간수요",
+      "dedupeKey": "미국-관세-인상-절차",
       "matchedTo": null,
-      "sourceName": "마켓인",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BSVN2bl9HT3hqY3YxMVZLYVZtMmpPVUYtTnJGdVY5eURBdGhWSU5xaDNXSEw5U3FOSTJoLXA3UnFZanpUT0xDMEdscHpVVkRMamJyTXBKYUQxUjllM3dsVmg5Ymh5enV2cUYyZTNFeGlocFE?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 21:22:53 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4
-    },
-    {
-      "id": "2026-02-03_18",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "정부 지원 지역 특산품 TV 홈쇼핑 매진",
-      "summary": [
-        "정부의 지원을 받은 지역 특산품 TV 홈쇼핑이 매진되었다.",
-        "이번 홈쇼핑을 통해 8억 원의 매출을 달성했다.",
-        "정부 지원 정책이 지역 경제 활성화에 기여한 사례이다."
-      ],
-      "whyImportant": "정부의 지역 특산품 지원 정책이 성공적인 매출을 기록하며 지역 경제 활성화에 기여할 수 있음을 시사합니다.",
-      "impactSignals": [
-        "policy",
-        "earnings"
-      ],
-      "dedupeKey": "정부-지원-지역특산품-홈쇼핑-매진",
-      "matchedTo": null,
-      "sourceName": "KBS 뉴스",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBiaFN2OXNoam41Q0ZSdW9adTBWNF82bk1Tb2JYLWJka09MRW1BVi10aHBFaUZGdS03MnFOeUd1VWhXVEhLY08yeFkyS010LURXcXh5bmY2UVI2dkk?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 05:05:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_19",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "디즈니, 분기 콘텐츠 수익 22% 증가한 19억 달러 기록",
-      "summary": [
-        "디즈니의 분기 콘텐츠 수익이 22% 증가하여 19억 달러를 기록했습니다.",
-        "이는 디즈니의 콘텐츠 사업이 성장하고 있음을 나타냅니다.",
-        "자세한 내용은 기사에서 확인할 수 있습니다."
-      ],
-      "whyImportant": "디즈니의 콘텐츠 수익 증가는 미디어 산업의 경쟁 환경과 전략 변화에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "earnings"
-      ],
-      "dedupeKey": "디즈니-콘텐츠수익-증가",
-      "matchedTo": null,
-      "sourceName": "Media Play News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSHRWTGVmSGJOZkgweWpSOWlPb3NZSm8ySWRGekpUZXFzZGZSN0lUX0JRYjlqZEJ3VWFrWjl6c3N2X240VXk5bDBiLV8zT3hCb0MtMFVtUk9xVmJoZE1mb3NvNHVOVmJaVlpkeEYxYTlkZF9iNXljZ3lQaC1tZExPR2VweTA?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 19:16:42 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_20",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "SoFi, 매출 10억 달러 돌파: 기록적인 대출 규모와 AI 혁신으로 2026년 실적 급증",
-      "summary": [
-        "SoFi가 기록적인 대출 규모와 AI 혁신에 힘입어 매출 10억 달러를 돌파했습니다.",
-        "2026년에는 실적이 급증할 것으로 예상됩니다.",
-        "자세한 내용은 기사를 통해 확인할 수 있습니다."
-      ],
-      "whyImportant": "SoFi의 매출 증가는 금융 기술 기업의 성장 가능성을 보여주는 중요한 지표가 될 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "earnings"
-      ],
-      "dedupeKey": "sofi-매출-대출-혁신",
-      "matchedTo": null,
-      "sourceName": "FinancialContent",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOQnNDaGFPcHlOd3ptMGY4VVllTDlmSW5LbDdna2xKM092d3pQRnZNUlE1TUdWN1ZGSGFYNlQwNS1JQXhLcXlBSktyYi1LdTIxUGZPOGxfdXBOZS01dXZac3dHNnVNVnlBWV84YXRlLUgzelpMLWhub3FQSXFTWnRBOUhDN091YWEwX3Y1V01faWx2c3JTZ1RYR2ZPc29TTk5ucEtUc01SemZUTkJhVkdLSC1PTnl5Y2E2dkpkOWxjNDBBSTF5MlViNkJkdGlyUVJKV2stWFlCd2hCallNMEhBS19GQ0VaaWs5SHZ5LTlzZ2NwS0xndHBNLUpjWVV1RDJ0YkIwYU1WdnpWT0szVmY0?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 22:12:00 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zT2V1OGZFRk0wbFZSVUFYOVItN1hOUjFHSkUwOXhZOUpxbHEyWlU4RzBNVy1xVU5SVzNfVTBnT09ySUVmXzl1NnVmbExtRFBFalJaMFJCS3hhUdIBVEFVX3lxTE1nNGlPQVVQSUlsVXBKQnJUMjl0TC1hOGtEbmpFLXlsWjlTWFBHRGN4bVo4UGlJQ3BJcHFVb0JuOFY1dGxsMmtKSk1NMnF5QmtaYVBYQw?oc=5",
+      "publishedAt": "Sun, 01 Feb 2026 08:55:38 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3

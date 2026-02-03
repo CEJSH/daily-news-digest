@@ -5,6 +5,8 @@ try:
 except Exception:  # pragma: no cover - optional dependency
     load_dotenv = None
 
+from constants import SOURCE_TIER_A, SOURCE_TIER_B
+
 if load_dotenv:
     load_dotenv()
 
@@ -110,11 +112,18 @@ EDITOR_NOTE = "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 
 QUESTION_OF_THE_DAY = "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?"
 
 TOP_LIMIT = 20
+MIN_TOP_ITEMS = int(os.getenv("MIN_TOP_ITEMS", "5"))
 MIN_SCORE = 0.0
 MAX_ENTRIES_PER_FEED = 100
 TITLE_DEDUPE_JACCARD = float(os.getenv("TITLE_DEDUPE_JACCARD", "0.55"))
 DEDUPKEY_NGRAM_N = int(os.getenv("DEDUPKEY_NGRAM_N", "2"))
 DEDUPKEY_NGRAM_SIM = float(os.getenv("DEDUPKEY_NGRAM_SIM", "0.35"))
+
+def _parse_csv_env(name: str) -> list[str]:
+    raw = os.getenv(name, "").strip()
+    if not raw:
+        return []
+    return [x.strip() for x in raw.split(",") if x.strip()]
 
 def _env_int(name: str) -> int | None:
     raw = os.getenv(name, "").strip()
@@ -178,3 +187,18 @@ ARTICLE_FETCH_ENABLED = os.getenv("ARTICLE_FETCH_ENABLED", "1") == "1"
 ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "20"))
 ARTICLE_FETCH_MIN_CHARS = int(os.getenv("ARTICLE_FETCH_MIN_CHARS", "400"))
 ARTICLE_FETCH_TIMEOUT_SEC = int(os.getenv("ARTICLE_FETCH_TIMEOUT_SEC", "6"))
+
+# ==========================================
+# TOP 20 품질 강화 옵션
+# ==========================================
+
+TOP_SOURCE_ALLOWLIST_ENABLED = os.getenv("TOP_SOURCE_ALLOWLIST_ENABLED", "1") == "1"
+TOP_SOURCE_ALLOWLIST_STRICT = os.getenv("TOP_SOURCE_ALLOWLIST_STRICT", "1") == "1"
+_allowlist_env = set(_parse_csv_env("TOP_SOURCE_ALLOWLIST"))
+TOP_SOURCE_ALLOWLIST = _allowlist_env if _allowlist_env else (set(SOURCE_TIER_A) | set(SOURCE_TIER_B))
+
+TOP_FRESH_MAX_HOURS = int(os.getenv("TOP_FRESH_MAX_HOURS", "72"))
+_fresh_except_env = set(_parse_csv_env("TOP_FRESH_EXCEPT_SIGNALS"))
+TOP_FRESH_EXCEPT_SIGNALS = _fresh_except_env if _fresh_except_env else {"policy", "sanctions", "earnings", "stats"}
+TOP_FRESH_EXCEPT_MAX_HOURS = int(os.getenv("TOP_FRESH_EXCEPT_MAX_HOURS", "168"))
+TOP_REQUIRE_PUBLISHED = os.getenv("TOP_REQUIRE_PUBLISHED", "1") == "1"

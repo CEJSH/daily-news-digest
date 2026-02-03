@@ -27,17 +27,27 @@ from config import (
     MIN_SCORE,
     OUTPUT_JSON,
     TOP_LIMIT,
+    TOP_SOURCE_ALLOWLIST,
+    TOP_SOURCE_ALLOWLIST_ENABLED,
+    TOP_SOURCE_ALLOWLIST_STRICT,
+    TOP_FRESH_MAX_HOURS,
+    TOP_FRESH_EXCEPT_SIGNALS,
+    TOP_FRESH_EXCEPT_MAX_HOURS,
+    TOP_REQUIRE_PUBLISHED,
     SOURCE_WEIGHT_ENABLED,
     SOURCE_WEIGHT_FACTOR,
     TITLE_DEDUPE_JACCARD,
 )
 from constants import (
     DEDUPE_NOISE_WORDS,
+    DEDUPE_EVENT_TOKENS,
+    DEDUPE_EVENT_GROUPS,
     DROP_CATEGORIES,
     EMOTIONAL_DROP_KEYWORDS,
     EXCLUDE_KEYWORDS,
     HARD_EXCLUDE_KEYWORDS,
     HARD_EXCLUDE_URL_HINTS,
+    LOCAL_PROMO_KEYWORDS,
     IMPACT_SIGNALS_MAP,
     LONG_IMPACT_SIGNALS,
     MEDIA_SUFFIXES,
@@ -151,6 +161,12 @@ class ItemFilterScorer:
         source_tier_b: set[str],
         source_weight_enabled: bool,
         source_weight_factor: float,
+        top_source_allowlist: set[str],
+        top_source_allowlist_enabled: bool,
+        top_fresh_max_hours: int,
+        top_fresh_except_signals: set[str],
+        top_fresh_except_max_hours: int,
+        top_require_published: bool,
         now_provider: Callable[[], datetime.datetime] | None = None,
     ) -> None:
         self._impact_signals_map = impact_signals_map
@@ -161,6 +177,12 @@ class ItemFilterScorer:
         self._source_tier_b = source_tier_b
         self._source_weight_enabled = source_weight_enabled
         self._source_weight_factor = source_weight_factor
+        self._top_source_allowlist = {s for s in top_source_allowlist if s}
+        self._top_source_allowlist_enabled = top_source_allowlist_enabled
+        self._top_fresh_max_hours = top_fresh_max_hours
+        self._top_fresh_except_signals = set(top_fresh_except_signals)
+        self._top_fresh_except_max_hours = top_fresh_except_max_hours
+        self._top_require_published = top_require_published
         self._now_provider = now_provider or (
             lambda: datetime.datetime.now(datetime.timezone.utc)
         )
@@ -175,14 +197,44 @@ class ItemFilterScorer:
 
     def map_topic_to_category(self, topic: str) -> str:
         t = (topic or "").lower()
-        if t.startswith("it"):
+        if not t:
+            return "글로벌"
+
+        if "글로벌_빅테크" in t or "빅테크" in t:
             return "IT"
+        if t.startswith("it") or "it" in t or "tech" in t:
+            return "IT"
+        if "ai" in t or "반도체" in t or "보안" in t or "저작권" in t or "데이터" in t:
+            return "IT"
+
+        if "글로벌_정세" in t or "정세" in t or "외교" in t:
+            return "글로벌"
+
+        if "국내" in t:
+            return "경제"
+        if "정책" in t or "규제" in t:
+            return "경제"
+        if "실적" in t or "가이던스" in t:
+            return "경제"
+        if "투자" in t or "ipo" in t or "m&a" in t or "ma" in t:
+            return "경제"
+        if "전력" in t or "인프라" in t or "에너지" in t:
+            return "경제"
         if "경제" in t:
             return "경제"
+
+        if "글로벌" in t or "global" in t:
+            return "글로벌"
         return "글로벌"
 
     def get_item_category(self, item: Item) -> str:
-        return item.get("aiCategory") or self.map_topic_to_category(item.get("topic", ""))
+        ai_category = item.get("aiCategory") or ""
+        topic = item.get("topic", "")
+        if ai_category == "글로벌" and "국내" in (topic or ""):
+            return "경제"
+        if ai_category in {"IT", "경제", "글로벌"}:
+            return ai_category
+        return self.map_topic_to_category(topic)
 
     def source_weight(self, source_name: str) -> float:
         s = (source_name or "").strip()
@@ -219,6 +271,31 @@ class ItemFilterScorer:
         if age_hours > 72 and not any(s in self._long_impact_signals for s in impact_signals):
             return False
         return True
+
+    def passes_top_freshness(self, age_hours: float | None, impact_signals: list[str]) -> bool:
+        if age_hours is None:
+            return not self._top_require_published
+        if age_hours <= self._top_fresh_max_hours:
+            return True
+        if any(s in self._top_fresh_except_signals for s in impact_signals):
+            return age_hours <= self._top_fresh_except_max_hours
+        return False
+
+    def is_top_source_allowed(self, source_name: str | None) -> bool:
+        if not self._top_source_allowlist_enabled:
+            return True
+        if not source_name:
+            return False
+        s = source_name.strip().lower()
+        for allowed in self._top_source_allowlist:
+            token = allowed.strip()
+            if not token:
+                continue
+            if len(token) < 3:
+                continue
+            if token.lower() in s:
+                return True
+        return False
 
     def passes_emotional_filter(
         self,
@@ -267,10 +344,13 @@ class ItemFilterScorer:
         hard_exclude_keywords: list[str],
         hard_exclude_url_hints: list[str],
         exclude_keywords: list[str],
+        local_promo_keywords: list[str],
     ) -> bool:
         if any(bad in text_all for bad in hard_exclude_keywords):
             return True
         if any(hint in link_lower for hint in hard_exclude_url_hints):
+            return True
+        if any(bad in text_all for bad in local_promo_keywords):
             return True
         if any(bad in text_all for bad in exclude_keywords):
             return True
@@ -296,6 +376,8 @@ class DedupeEngine:
         title_dedupe_jaccard: float,
         dedupe_ngram_n: int,
         dedupe_ngram_sim: float,
+        dedupe_event_tokens: set[str],
+        dedupe_event_groups: dict[str, set[str]],
         normalize_title_for_dedupe_func: Callable[[str, set[str]], set[str]],
         normalize_token_for_dedupe_func: Callable[[str, set[str]], str],
         clean_text_func: Callable[[str], str],
@@ -309,6 +391,18 @@ class DedupeEngine:
         self._title_dedupe_jaccard = title_dedupe_jaccard
         self._dedupe_ngram_n = dedupe_ngram_n
         self._dedupe_ngram_sim = dedupe_ngram_sim
+        self._dedupe_event_tokens = {t.lower() for t in dedupe_event_tokens}
+        self._dedupe_event_groups = {
+            key: {t.lower() for t in tokens}
+            for key, tokens in (dedupe_event_groups or {}).items()
+        }
+        for key in self._dedupe_event_groups.keys():
+            self._dedupe_event_tokens.add(key.lower())
+            self._dedupe_event_groups[key].add(key.lower())
+        self._event_token_to_group: dict[str, str] = {}
+        for group, vocab in self._dedupe_event_groups.items():
+            for token in vocab:
+                self._event_token_to_group[token] = group
         self._normalize_title_for_dedupe = normalize_title_for_dedupe_func
         self._normalize_token_for_dedupe = normalize_token_for_dedupe_func
         self._clean_text = clean_text_func
@@ -356,6 +450,24 @@ class DedupeEngine:
             return set()
         return {t[i : i + n_value] for i in range(len(t) - n_value + 1)}
 
+    def _dedupe_key_tokens(self, key: str) -> list[str]:
+        if not key:
+            return []
+        t = self._clean_text(key).lower()
+        return [p for p in t.split("-") if p]
+
+    def _dedupe_core_tokens(self, key: str) -> list[str]:
+        return [t for t in self._dedupe_key_tokens(key) if not re.search(r"\d", t)]
+
+    def _event_group_ids(self, tokens: set[str]) -> set[str]:
+        if not tokens:
+            return set()
+        groups: set[str] = set()
+        for group, vocab in self._dedupe_event_groups.items():
+            if tokens & vocab:
+                groups.add(group)
+        return groups
+
     def build_dedupe_key(self, title: str, summary: str) -> str:
         tokens = self.tokenize_for_dedupe(f"{title} {summary}")
 
@@ -365,6 +477,9 @@ class DedupeEngine:
             tok = self._normalize_token_for_dedupe(tok, self._stopwords)
             if not tok:
                 continue
+            group = self._event_token_to_group.get(tok)
+            if group:
+                tok = group
             if tok in seen:
                 continue
             if self.is_noise_token(tok):
@@ -460,11 +575,26 @@ class DedupeEngine:
         if self._dedupe_ngram_sim <= 0:
             return
         candidates = sorted(items, key=lambda x: x["score"], reverse=True)
+        seen_keys: dict[str, Item] = {}
         kept: list[tuple[set[str], Item]] = []
         for item in candidates:
             if not self._is_eligible(item):
                 continue
             key = item.get("dedupeKey") or ""
+            if key:
+                key_norm = self._clean_text(key).lower()
+                key_tokens = [p for p in key_norm.split("-") if p]
+                if len(key_tokens) >= 2:
+                    matched_key = seen_keys.get(key_norm)
+                    if matched_key:
+                        item["dropReason"] = f"dedupe_key_exact:{matched_key.get('title','')[:60]}"
+                        item["matchedTo"] = (
+                            matched_key.get("id")
+                            or matched_key.get("dedupeKey")
+                            or matched_key.get("title")
+                        )
+                        continue
+                    seen_keys[key_norm] = item
             ngrams = self.dedupe_key_ngrams(key, self._dedupe_ngram_n)
             if not ngrams:
                 continue
@@ -481,6 +611,38 @@ class DedupeEngine:
                 item["matchedTo"] = matched.get("id") or matched.get("dedupeKey") or matched.get("title")
                 continue
             kept.append((ngrams, item))
+
+    def apply_entity_event_dedupe(self, items: list[Item]) -> None:
+        if not self._dedupe_event_tokens:
+            return
+        candidates = sorted(items, key=lambda x: x["score"], reverse=True)
+        kept: list[tuple[set[str], set[str], Item]] = []
+        for item in candidates:
+            if not self._is_eligible(item):
+                continue
+            key = item.get("dedupeKey") or ""
+            tokens = set(self._dedupe_core_tokens(key))
+            if not tokens:
+                continue
+            event_groups = self._event_group_ids(tokens)
+            if not event_groups:
+                continue
+            entity_tokens = {t for t in tokens if t not in self._dedupe_event_tokens}
+            if not entity_tokens:
+                continue
+            matched = next(
+                (
+                    ref
+                    for ref_groups, ref_entities, ref in kept
+                    if (event_groups & ref_groups) and (entity_tokens & ref_entities)
+                ),
+                None,
+            )
+            if matched:
+                item["dropReason"] = f"entity_event_duplicate:{matched.get('title','')[:60]}"
+                item["matchedTo"] = matched.get("id") or matched.get("dedupeKey") or matched.get("title")
+                continue
+            kept.append((event_groups, entity_tokens, item))
 
     def load_recent_dedupe_map(self, digest_path: str, history_path: str, days: int) -> dict[str, str]:
         if days <= 0:
@@ -736,27 +898,57 @@ class DigestPipeline:
         self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
 
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
-        buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "글로벌": []}
-        for item in all_items:
-            if not self._filter_scorer.is_eligible(item):
-                continue
-            buckets[self._filter_scorer.get_item_category(item)].append(item)
+        def _pick_from_candidates(candidates: list[Item]) -> list[Item]:
+            buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "글로벌": []}
+            for item in candidates:
+                buckets[self._filter_scorer.get_item_category(item)].append(item)
 
-        for category in buckets:
-            buckets[category].sort(key=lambda x: x["score"], reverse=True)
+            for category in buckets:
+                buckets[category].sort(key=lambda x: x["score"], reverse=True)
 
-        picked: list[Item] = []
-        for category, limit in self._top_mix_target.items():
-            picked += buckets[category][:limit]
+            picked_local: list[Item] = []
+            for category, limit in self._top_mix_target.items():
+                picked_local += buckets[category][:limit]
 
-        if len(picked) < top_limit:
-            remain = [
-                x for x in sorted(all_items, key=lambda x: x["score"], reverse=True)
-                if x not in picked and self._filter_scorer.is_eligible(x)
-            ]
-            picked += remain[: top_limit - len(picked)]
+            if len(picked_local) < top_limit:
+                remain = [
+                    x for x in sorted(candidates, key=lambda x: x["score"], reverse=True)
+                    if x not in picked_local
+                ]
+                picked_local += remain[: top_limit - len(picked_local)]
 
-        return picked[:top_limit]
+            return picked_local[:top_limit]
+
+        fresh_candidates = [
+            item
+            for item in all_items
+            if self._filter_scorer.is_eligible(item)
+            and self._filter_scorer.passes_top_freshness(
+                item.get("ageHours"),
+                item.get("impactSignals") or [],
+            )
+        ]
+        allowlist_candidates = [
+            item
+            for item in fresh_candidates
+            if self._filter_scorer.is_top_source_allowed(item.get("source"))
+        ]
+
+        if TOP_SOURCE_ALLOWLIST_ENABLED:
+            if TOP_SOURCE_ALLOWLIST_STRICT:
+                if len(allowlist_candidates) < top_limit:
+                    self._log(f"⚠️ TOP allowlist 부족: {len(allowlist_candidates)}/{top_limit}")
+                return _pick_from_candidates(allowlist_candidates)
+            picked = _pick_from_candidates(allowlist_candidates)
+            if len(picked) < top_limit:
+                remain = [
+                    x for x in sorted(fresh_candidates, key=lambda x: x["score"], reverse=True)
+                    if x not in picked
+                ]
+                picked += remain[: top_limit - len(picked)]
+            return picked[:top_limit]
+
+        return _pick_from_candidates(fresh_candidates)
 
     def fetch_grouped_and_top(
         self,
@@ -776,6 +968,7 @@ class DigestPipeline:
         hard_exclude_keywords = [bad.lower() for bad in HARD_EXCLUDE_KEYWORDS]
         hard_exclude_url_hints = [hint.lower() for hint in HARD_EXCLUDE_URL_HINTS]
         exclude_keywords = [bad.lower() for bad in EXCLUDE_KEYWORDS if bad not in EMOTIONAL_DROP_KEYWORDS]
+        local_promo_keywords = [bad.lower() for bad in LOCAL_PROMO_KEYWORDS]
 
         for source_idx, source in enumerate(sources, start=1):
             topic, url, feed_limit = source["topic"], source["url"], source.get("limit", 3)
@@ -833,6 +1026,7 @@ class DigestPipeline:
                     hard_exclude_keywords=hard_exclude_keywords,
                     hard_exclude_url_hints=hard_exclude_url_hints,
                     exclude_keywords=exclude_keywords,
+                    local_promo_keywords=local_promo_keywords,
                 ):
                     continue
 
@@ -855,6 +1049,7 @@ class DigestPipeline:
                     "dedupeKey": dedupe_key,
                     "matchedTo": matched_to,
                     "readTimeSec": read_time_sec,
+                    "ageHours": age_hours,
                 }
                 self._dedupe_engine.record_item(
                     title_raw=title,
@@ -868,6 +1063,7 @@ class DigestPipeline:
             self._log(f"피드 완료: {topic}, 누적 수집 {len(all_items)}개")
 
         self._ai_service.apply_ai_importance(all_items)
+        self._dedupe_engine.apply_entity_event_dedupe(all_items)
         self._ai_service.apply_semantic_dedupe(all_items)
         self._dedupe_engine.apply_dedupe_key_similarity(all_items)
 
@@ -896,6 +1092,12 @@ def build_default_filter_scorer() -> ItemFilterScorer:
         source_tier_b=SOURCE_TIER_B,
         source_weight_enabled=SOURCE_WEIGHT_ENABLED,
         source_weight_factor=SOURCE_WEIGHT_FACTOR,
+        top_source_allowlist=TOP_SOURCE_ALLOWLIST,
+        top_source_allowlist_enabled=TOP_SOURCE_ALLOWLIST_ENABLED,
+        top_fresh_max_hours=TOP_FRESH_MAX_HOURS,
+        top_fresh_except_signals=TOP_FRESH_EXCEPT_SIGNALS,
+        top_fresh_except_max_hours=TOP_FRESH_EXCEPT_MAX_HOURS,
+        top_require_published=TOP_REQUIRE_PUBLISHED,
     )
 
 
@@ -911,6 +1113,8 @@ def build_default_dedupe_engine(
         title_dedupe_jaccard=TITLE_DEDUPE_JACCARD,
         dedupe_ngram_n=DEDUPKEY_NGRAM_N,
         dedupe_ngram_sim=DEDUPKEY_NGRAM_SIM,
+        dedupe_event_tokens=DEDUPE_EVENT_TOKENS,
+        dedupe_event_groups=DEDUPE_EVENT_GROUPS,
         normalize_title_for_dedupe_func=normalize_title_for_dedupe,
         normalize_token_for_dedupe_func=normalize_token_for_dedupe,
         clean_text_func=clean_text,

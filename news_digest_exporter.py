@@ -184,6 +184,7 @@ def _should_skip_entry(
     hard_exclude_keywords: list[str],
     hard_exclude_url_hints: list[str],
     exclude_keywords: list[str],
+    local_promo_keywords: list[str],
 ) -> bool:
     return _new_filter_scorer().should_skip_entry(
         text_all=text_all,
@@ -195,6 +196,7 @@ def _should_skip_entry(
         hard_exclude_keywords=hard_exclude_keywords,
         hard_exclude_url_hints=hard_exclude_url_hints,
         exclude_keywords=exclude_keywords,
+        local_promo_keywords=local_promo_keywords,
     )
 
 

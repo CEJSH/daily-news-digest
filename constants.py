@@ -42,13 +42,72 @@ EXCLUDE_KEYWORDS = [
 ]
 
 SOURCE_TIER_A = {
-    "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal",
+    "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "WSJ",
     "연합뉴스", "한국경제", "매일경제", "서울경제"
 }
 
 SOURCE_TIER_B = {
     "중앙일보", "동아일보", "한겨레", "경향신문", "머니투데이",
     "전자신문", "ZDNet Korea", "TechCrunch", "The Verge"
+}
+
+LOCAL_PROMO_KEYWORDS = [
+    "지역 특산품", "특산품", "홈쇼핑", "완판", "매진", "품절",
+    "지역 축제", "지역 행사", "마을 축제", "농촌 체험", "어촌 체험", "체험 행사",
+    "지역 소식", "지역 주민", "주민", "마을 주민", "읍사무소", "면사무소", "마을회관",
+    "전통시장", "지역 상권", "지역경제 활성화", "관광객", "관광지", "맛집", "카페",
+    "local festival", "local community", "town festival", "county fair", "home shopping",
+    "sold out", "local residents", "community event"
+]
+
+DEDUPE_EVENT_TOKENS = {
+    "funding", "financing", "investment", "invests", "invest", "round", "series", "raise", "raised",
+    "valuation", "capital", "funds",
+    "acquisition", "acquire", "acquires", "merger", "m&a", "deal", "buyout", "stake", "takeover",
+    "ipo", "listing", "listed", "offering",
+    "earnings", "results", "guidance", "revenue", "profit", "loss",
+    "sanction", "sanctions", "tariff", "tariffs", "export", "control",
+    "policy", "regulation", "bill", "law", "guideline", "rule",
+    "capex", "expansion", "build",
+    "trade", "tariff", "tariffs", "negotiation", "negotiations", "talk", "talks", "summit", "meeting", "dialogue", "agreement",
+    "투자", "투자유치", "자금조달", "펀딩", "라운드", "시리즈", "자금",
+    "인수", "합병", "인수합병", "매각", "지분",
+    "상장", "공모", "실적", "가이던스", "매출", "영업이익", "순이익", "실적발표",
+    "제재", "관세", "수출통제", "규제", "법안", "정책", "가이드라인", "시행령",
+    "증설", "설비", "투자계획",
+    "무역", "협상", "회담", "정상회담", "협의", "대화", "합의", "협정",
+}
+
+DEDUPE_EVENT_GROUPS = {
+    "funding": {
+        "funding", "financing", "investment", "invests", "invest", "raise", "raised",
+        "round", "series", "valuation", "capital", "funds",
+        "투자", "투자유치", "자금조달", "펀딩", "라운드", "시리즈", "자금",
+    },
+    "mna": {
+        "acquisition", "acquire", "acquires", "merger", "m&a", "deal", "buyout", "stake", "takeover",
+        "인수", "합병", "인수합병", "매각", "지분",
+    },
+    "ipo": {
+        "ipo", "listing", "listed", "offering", "상장", "공모",
+    },
+    "earnings": {
+        "earnings", "results", "guidance", "revenue", "profit", "loss",
+        "실적", "가이던스", "매출", "영업이익", "순이익", "실적발표",
+    },
+    "sanctions": {
+        "sanction", "sanctions", "export", "control", "제재", "수출통제",
+    },
+    "policy": {
+        "policy", "regulation", "bill", "law", "guideline", "rule", "규제", "법안", "정책", "가이드라인", "시행령",
+    },
+    "capex": {
+        "capex", "expansion", "build", "증설", "설비", "투자계획",
+    },
+    "trade_talks": {
+        "trade", "tariff", "tariffs", "negotiation", "negotiations", "talk", "talks", "summit", "meeting", "dialogue",
+        "agreement", "무역", "관세", "협상", "회담", "정상회담", "협의", "대화", "합의", "협정",
+    },
 }
 
 STOPWORDS = {
@@ -62,6 +121,12 @@ IMPACT_SIGNALS_MAP = {
     "sanctions": ["sanction", "export control", "entity list", "tariff", "제재", "수출통제", "블랙리스트", "관세"],
     "capex": ["data center", "datacentre", "capex", "investment", "build", "expansion", "infrastructure", "facility", "데이터센터", "증설", "투자", "설비"],
     "earnings": ["earnings", "guidance", "profit", "loss", "revenue", "흑자", "적자", "실적", "가이던스", "매출", "영업이익"],
+    "stats": [
+        "cpi", "ppi", "inflation", "gdp", "pmi", "unemployment", "jobs report", "payrolls",
+        "retail sales", "industrial production", "trade balance", "macro data", "economic data",
+        "통계", "지표", "물가", "소비자물가", "생산자물가", "gdp", "pmi", "실업률", "고용지표",
+        "고용", "수출입", "무역수지", "소매판매", "산업생산", "경제지표",
+    ],
     "market-demand": ["registrations", "registration", "deliveries", "delivery", "sales", "demand", "shipments", "등록", "판매", "수요"],
     "security": ["breach", "exploit", "ransomware", "cve", "vulnerability", "침해", "해킹", "랜섬웨어", "취약점"],
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"]
@@ -85,5 +150,5 @@ MONTH_TOKENS = {
     "november", "dec", "december"
 }
 
-LONG_IMPACT_SIGNALS = {"policy", "budget", "sanctions"}
+LONG_IMPACT_SIGNALS = {"policy", "budget", "sanctions", "stats"}
 MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "tv", "TV")

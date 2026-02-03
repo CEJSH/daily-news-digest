@@ -74,7 +74,9 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         source_name = (item.get("source") or "").strip()
         published = item.get("published")
 
-        ai_result = item.get("ai") or enrich_item_with_ai(item)
+        ai_result = item.get("ai")
+        if not isinstance(ai_result, dict) or not ai_result:
+            ai_result = enrich_item_with_ai(item) or {}
         summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
         summary_lines = ensure_three_lines(ai_result.get("summary_lines") or [], summary_source)
         why_important = ai_result.get("why_important") or ""

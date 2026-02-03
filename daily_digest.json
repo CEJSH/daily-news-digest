@@ -3,28 +3,28 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T04:06:33.245258+09:00",
+  "lastUpdatedAt": "2026-02-03T12:54:14.885969+09:00",
   "items": [
     {
       "id": "2026-02-03_1",
       "date": "2026-02-03",
       "category": "IT",
-      "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
+      "title": "Oracle's $50 Billion AI Infrastructure Gambit Signals Seismic Shift in Enterprise Cloud Computing",
       "summary": [
-        "2026년 1월 29일부터 AI 규제가 본격적으로 시행될 예정이다.",
-        "규제 시행과 함께 반도체 및 산업 AI 수요가 급증할 것으로 예상된다.",
-        "AI 기술 발전과 산업 변화에 대한 기대감이 높아지고 있다."
+        "오라클이 500억 달러 규모의 AI 인프라 투자를 발표했습니다.",
+        "이는 엔터프라이즈 클라우드 컴퓨팅 시장에 큰 변화를 예고합니다.",
+        "오라클의 이번 투자는 AI 인프라 경쟁을 심화시킬 것으로 예상됩니다."
       ],
-      "whyImportant": "AI 규제 시행은 관련 산업 발전 방향에 중요한 영향을 미칠 수 있다.",
+      "whyImportant": "오라클의 대규모 투자는 AI 인프라 시장의 경쟁 심화와 기술 발전을 가속화할 수 있습니다.",
       "impactSignals": [
         "policy",
-        "market-demand"
+        "capex"
       ],
-      "dedupeKey": "규제-반도체-산업ai-수요",
+      "dedupeKey": "오라클-ai인프라-클라우드컴퓨팅-투자",
       "matchedTo": null,
-      "sourceName": "유스연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54YVhnYXVWRWkwUjFrUGE2NHdaMVVhNF9UQ2dQUUJTdml6aFFtc09CTDVlYXhhblhwX2J1TmRsYlpmdnpKNWJfbjl1ZlVMQ1RCY1E?oc=5",
-      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
+      "sourceName": "WebProNews",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRnpjZVRoMnhpUXl4SWtnMno4d1FYeHhWcjdyenZ3SFM1T1VVdHJiemFNYnpneF9EeG41Z0JjSktfX2hlQU5hVHA1UTJuUlhyTmVRZ2lESGR0V3gxalFtb3B1bGl4ODVZcmlJelpJLV8xdGxWMmN0VTVJek52aGVJOHVIWDM4OUVWa2d2MG9KcklmRzZNNU9MSGhMR0JhMDR2dnNmOTM5VGRSWWlXR1Y1eGI5ajFRTFJIM2RHV1BxanE?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 19:58:37 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4
@@ -33,13 +33,85 @@
       "id": "2026-02-03_2",
       "date": "2026-02-03",
       "category": "IT",
+      "title": "정부, 2차 정보보호 대책 발표…소비자 구제·취약점 점검 강화",
+      "summary": [
+        "정부가 2차 정보보호 대책을 발표했습니다.",
+        "이번 대책은 소비자 구제 및 취약점 점검 강화를 목표로 합니다.",
+        "정보보호 관련 정책이 강화될 예정입니다."
+      ],
+      "whyImportant": "정보보호 강화는 장기적으로 디지털 경제의 신뢰성을 높이는 데 중요합니다.",
+      "impactSignals": [
+        "policy",
+        "security"
+      ],
+      "dedupeKey": "정보보호-대책-소비자구제-취약점점검",
+      "matchedTo": null,
+      "sourceName": "아이티데일리",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5U1pPS3psVVh2T2Mwcl8xbkppTlJ5eE9VT2FOVDNySm1SQkJFODlqeEhMSS1ZQ010Q2l2eXB0Y0lCSUN5TEFodXBPWFpwQ3NTaWctVVlwWWhlTmhkY1N3VFBEd0lLdTQ?oc=5",
+      "publishedAt": "Wed, 28 Jan 2026 08:28:33 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_3",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "Accelerating our global growth: Waymo raises $16 billion investment round",
+      "summary": [
+        "Waymo가 160억 달러의 투자 유치에 성공했습니다.",
+        "이번 투자는 Waymo의 글로벌 성장을 가속화할 것으로 예상됩니다.",
+        "자율주행 기술 개발 및 상용화에 박차를 가할 계획입니다."
+      ],
+      "whyImportant": "자율주행 기술 경쟁 심화 및 시장 확대에 중요한 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        "policy",
+        "capex"
+      ],
+      "dedupeKey": "waymo-투자-자율주행-기술",
+      "matchedTo": null,
+      "sourceName": "Waymo",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0telJ5bEkyU0NNN2VRM0tSZ0lBNjRoMXZfbklnR3hZYXA2RE92NjNkMzVNUHJ1aEZiUkE1NHNybVk4ZmZCZkNWb211OU9oR2s2d3VoOVhqZDRibWdSelA3LUlOeVZBUUdRQWplWTh4a0lGaE91TGFaUlN1c2VkYUk?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 22:20:56 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_4",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "Waymo raises massive $16 billion round at $126 billion valuation, plans expansion to 20+ cities",
+      "summary": [
+        "웨이모가 160억 달러의 대규모 투자를 유치했습니다.",
+        "기업 가치는 1,260억 달러로 평가받았습니다.",
+        "20개 이상의 도시로 사업 확장을 계획하고 있습니다."
+      ],
+      "whyImportant": "자율주행 기술 개발 및 상용화에 중요한 투자 결정입니다.",
+      "impactSignals": [
+        "policy",
+        "capex"
+      ],
+      "dedupeKey": "웨이모-투자유치-자율주행-도시확장",
+      "matchedTo": null,
+      "sourceName": "Electrek",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeVZlLV9QaWZRV0FsNl9HVENwNUEwaW1PMHV4RVR3X2JPMVRxbTViQmlOYmlzQUtmVm1NOXhqd3Y0TG9xNERYaFlPdVUxUG5GTVZtRFEwb1dmZWxHSEZpM3A0emh4eHpUZW04eFVWYVUyd0JTZzdONjNCeldoeUpsMjBxajVndXh3NDI2RmdNRWc5NF9VXzUtOUU2TEZPOFM5Q2hJag?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 23:18:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_5",
+      "date": "2026-02-03",
+      "category": "IT",
       "title": "The Next Phase of AI: Technology, Infrastructure, and Policy in 2025–2026",
       "summary": [
-        "인공지능 기술, 인프라, 정책의 다음 단계가 2025-2026년에 전개될 예정이다.",
-        "인공지능의 미래 발전을 위한 기술, 인프라, 정책 간의 상호작용이 중요하다.",
-        "향후 인공지능 발전을 위한 투자 및 정책 방향 설정이 필요하다."
+        "인공지능의 다음 단계는 2025년에서 2026년 사이에 기술, 인프라, 정책에 초점을 맞출 것입니다.",
+        "해당 기사는 인공지능의 미래 단계를 다룹니다.",
+        "자세한 내용은 기사를 참조하십시오."
       ],
-      "whyImportant": "인공지능 기술 발전은 사회 전반에 걸쳐 혁신을 가속화하고 새로운 경제적 가치를 창출할 수 있다.",
+      "whyImportant": "인공지능 기술 발전과 관련된 정책 및 인프라 투자는 장기적인 경제 및 사회 구조에 영향을 미칩니다.",
       "impactSignals": [
         "policy",
         "capex"
@@ -54,45 +126,186 @@
       "importance": 3
     },
     {
-      "id": "2026-02-03_3",
+      "id": "2026-02-03_6",
       "date": "2026-02-03",
-      "category": "경제",
-      "title": "트럼프發 2차 관세협상 국면…대미투자특별법 급물살",
+      "category": "IT",
+      "title": "2026년 1월 29일 AI 규제 본격 시행 속 반도체·산업 AI 수요 급증",
       "summary": [
-        "트럼프 정부의 2차 관세 협상 국면이 시작되었다.",
-        "이에 따라 대미 투자를 촉진하기 위한 특별법 제정이 빠르게 진행될 것으로 예상된다.",
-        "해당 특별법은 미국 투자를 장려하기 위한 다양한 지원책을 포함할 것으로 보인다."
+        "2026년 1월 29일부터 AI 규제가 본격적으로 시행될 예정입니다.",
+        "이와 함께 반도체 및 산업 AI에 대한 수요가 급증하고 있습니다.",
+        "규제 시행과 수요 증가는 관련 산업에 큰 영향을 미칠 것으로 예상됩니다."
       ],
-      "whyImportant": "미국과의 무역 관계 변화에 대응하고 국내 기업의 경쟁력을 강화하는 데 중요한 역할을 할 수 있다.",
+      "whyImportant": "AI 규제 시행은 장기적으로 반도체 및 AI 산업의 발전 방향에 중요한 영향을 미칠 수 있습니다.",
       "impactSignals": [
-        "sanctions",
-        "capex"
+        "policy",
+        "market-demand"
       ],
-      "dedupeKey": "트럼프-관세협상-대미투자-특별법",
+      "dedupeKey": "규제-반도체-산업ai-수요",
       "matchedTo": null,
-      "sourceName": "매일일보",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBZY1NCMjdqWTFXcGxPcmV5dnRTQ3FRcXMyaXRIXzZoUjZUaTZPWnAtZXlMR1l6S1Q1OGRrSXE1MFBvbXBOZVoxV2szdGU3WmVNU3BhSFZCbzVaMmV5Tkd0UDRNTQ?oc=5",
-      "publishedAt": "Wed, 28 Jan 2026 06:55:54 GMT",
+      "sourceName": "유스연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54YVhnYXVWRWkwUjFrUGE2NHdaMVVhNF9UQ2dQUUJTdml6aFFtc09CTDVlYXhhblhwX2J1TmRsYlpmdnpKNWJfbjl1ZlVMQ1RCY1E?oc=5",
+      "publishedAt": "Thu, 29 Jan 2026 08:46:47 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4
     },
     {
-      "id": "2026-02-03_4",
+      "id": "2026-02-03_7",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "한화비전 AI 시스템 국제표준 인증 획득…글로벌 규제 선제 대응",
+      "summary": [
+        "한화비전이 AI 시스템에 대한 국제표준 인증을 획득했습니다.",
+        "이는 글로벌 규제에 선제적으로 대응하기 위한 것입니다.",
+        "이번 인증 획득으로 한화비전의 AI 시스템 신뢰도가 향상될 것으로 기대됩니다."
+      ],
+      "whyImportant": "AI 시스템의 국제표준 인증은 향후 관련 시장 경쟁력 확보에 중요한 역할을 할 수 있습니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "한화비전-ai시스템-국제표준-인증",
+      "matchedTo": null,
+      "sourceName": "중소기업신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EUkJLY3E5OXV4eUlLaVAxdGVLUkk3M0x0b3VtdGtEbVJmQm1mOTl0TFBELXdvRlJDTUJOQUdGUTVTMjhjMGI1NjF2LTlRVDJZTUs3b2JVcGd3eE9Pdmg3NGw4bUI3N2x1T3pwQg?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 23:36:13 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_8",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 시대 화두 '보안'…개인정보위, 규제·혁신 갈림길 속 대응 속도",
+      "summary": [
+        "AI 시대의 주요 화두는 보안입니다.",
+        "개인정보보호위원회가 규제와 혁신 사이에서 대응 속도를 내고 있습니다.",
+        "AI 관련 개인 정보 보호 및 활용 방안에 대한 논의가 필요합니다."
+      ],
+      "whyImportant": "AI 기술 발전과 함께 개인 정보 보호 및 데이터 활용에 대한 정책적 결정이 중요해지고 있습니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "보안-개인정보위-규제-혁신",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3M0RRc3Iwa3hkSk1oY3NvRk9zVkJyMlhEOVU2akdjclZKN251MWFxRDFYcWNDSlBFUWQ2bHlFakduQlQ5TTBwbmt4bUhPMGhMc1FVQ203SEtQTTlLcnBwMTNzY3VUQ0Ru0gFsQVVfeXFMTl9MX2laQ3hkbUhuemFidVZUVDRPOVNWZUxULU9JdnU0RXpSMjEyTEV0VkM3M0ZlVFA5a3d5ZV9kcUhQb09VY3VUYXRzSDRFUmZIRkVEMzRqT0sxUGh4bEVvWGw0Q2hPcmllVExD?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 09:04:35 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_9",
       "date": "2026-02-03",
       "category": "경제",
-      "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
+      "title": "Nvidia Stock Drops. Why Its $100 Billion OpenAI Investment Is in Question.",
       "summary": [
-        "트럼프 전 대통령이 자신의 관세 정책을 옹호하며 한국이 미국 조선업에 217조 원을 투자했다고 주장했습니다.",
-        "그는 과거 무역 정책이 미국에 불리했으며, 관세가 미국 제조업을 부활시켰다고 강조했습니다.",
-        "트럼프 전 대통령은 앞으로도 관세가 미국의 협상력을 높이는 데 도움이 될 것이라고 덧붙였습니다."
+        "엔비디아 주가가 하락했습니다.",
+        "1,000억 달러 규모의 OpenAI 투자가 불확실해진 이유에 대한 의문이 제기되고 있습니다.",
+        "자세한 내용은 기사를 통해 확인할 수 있습니다."
       ],
-      "whyImportant": "트럼프 전 대통령의 주장은 향후 미국의 무역 정책 방향에 대한 시사점을 던져줄 수 있습니다.",
+      "whyImportant": "엔비디아의 대규모 투자는 AI 산업 전반에 걸쳐 중요한 영향을 미칠 수 있기 때문입니다.",
       "impactSignals": [
         "policy",
         "capex"
       ],
-      "dedupeKey": "트럼프-관세정책-한국-조선업투자",
+      "dedupeKey": "엔비디아-openai-투자-불확실성",
+      "matchedTo": null,
+      "sourceName": "Barron's",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiigNBVV95cUxNdFNiNklRYkF3ZE9zVzJFUXZUZ3hzQ1MzS3paUUliOU5Xek90VDgzbzRfejhKMEE5YURoUEttZmVWQU0zeUhnRWRYV1FWWENTVlRtdnl0Vkw0enNSbkQwUHJ2M3FERlVPU3VJUFpTZEs4WTlRQjQ3MTlOV2RuSVp0QXY5dnl0VGk0Y21QbUdxQlhzaGx5R2thWlFaNDVWMUJjSHMtLU5yOXhpZWFNeThwLVhFTDBUTGJud3VMRHJqWHdBY3ZZaV9OcjJlc0RWUDdjTDRDdmhEZm45MFV6LXMtdUJGNTV0d2JXQjB1a3NnTjVlOEQ5dzRTVFVPNEFHRHlyZkQ4QlhURDlTZXB5RHU5SDNocW1VQUxHYWF0SXdPVWY0TEVUU1hRbk9ROGNKMXE4NzRyVHRpcWZuYXItdkhOQ1M4cWN4aGhJdjdLLVprMmFmcHYxTllvVUp6aWZZcXdQQlRRSHRiZUdDVTkxd1JVLUZ3T3VhYUpJZi15NTJqQjVtbDNzeWZEUzV3?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 21:38:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_10",
+      "date": "2026-02-03",
+      "category": "경제",
+      "title": "미국 정부發 메디케어 쇼크에 보험주 급락...S&P500은 신고가",
+      "summary": [
+        "미국 정부의 메디케어 정책 변화로 인해 보험주가 급락했습니다.",
+        "이러한 하락에도 불구하고 S&P500 지수는 신고가를 경신했습니다.",
+        "이번 정책 변화가 보험 업계에 미치는 영향이 주목됩니다."
+      ],
+      "whyImportant": "미국 정부의 정책 변화는 보험 업계의 수익성에 장기적인 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "미국-정부-메디케어-보험주-sp500",
+      "matchedTo": null,
+      "sourceName": "매일경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jcmQxVEJrMTN1bXpLYnItMXdoeW5zZUFla3NITTRiNnpIQnE3S1dmMXhOMkRWd3lhWjcteDRTeDNVZWg5Z3lncjJDQm5kazJjbXc?oc=5",
+      "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_11",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "트럼프, 한국 관세 인상...대미투자특별법은 미뤄지고 있나? 다른 나라 상황은 어떨까?",
+      "summary": [
+        "트럼프 전 대통령이 한국 관세 인상을 고려하고 있다는 내용이 보도되었습니다.",
+        "대미 투자 특별법은 현재 지연되고 있는 상황입니다.",
+        "다른 나라들의 상황은 어떠한지 추가적인 조사가 필요합니다."
+      ],
+      "whyImportant": "미국 관세 정책 변화는 한국 경제 및 대미 투자 전략에 중대한 영향을 미칠 수 있기 때문입니다.",
+      "impactSignals": [
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "트럼프-관세-인상-대미투자",
+      "matchedTo": null,
+      "sourceName": "BBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA2ZENlZkJIMGVjWFVTOHFrTFJZcUQ1QjFOcDRSai1tbHZRRkZZWkg3UENMaXhEOFRMdXB1cVo4ak11NTZfcnJEbkhDQVJZeFpnVml2UFF4d0JIVFpH0gFiQVVfeXFMTlp1RHR3SXBON1pDcWxIVG1Sc2ZhRWJ0ZWktNWJaNXpxQ25HSEQ5Z2hmaHBJWHd2eTI3dF95Y1NJU0hid0ZUZi1lOGlIRjJLZU5KVERDbXlVLTE5QnBLSTRiRmc?oc=5",
+      "publishedAt": "Tue, 27 Jan 2026 12:08:31 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_12",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "끝없는 관세 협상… 투자 속도 시비에 '통상 투톱' 급거 방미",
+      "summary": [
+        "관세 협상이 계속되는 가운데 투자 속도에 대한 이견으로 통상 담당 고위 관계자들이 급히 미국을 방문합니다.",
+        "협상의 구체적인 내용은 공개되지 않았습니다.",
+        "이번 방문이 투자 및 관세 관련 문제 해결에 기여할지 주목됩니다."
+      ],
+      "whyImportant": "양국 간의 무역 및 투자 관련 불확실성이 지속될 경우, 관련 기업들의 장기적인 투자 결정에 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        "sanctions",
+        "capex"
+      ],
+      "dedupeKey": "관세-협상-투자-속도",
+      "matchedTo": null,
+      "sourceName": "한국일보",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU0djNmNfTWY4WHB4eVotSllPRWhQMjR2R0ZwWkV4aEstQ0s2dC1YcFg4cFVEWnlHUzlaZFpWak5RUzYybVVDT3FCSXdaNUs0M29kY1FtQXg2OWxSY202aTA5Z2RTMHpvRmdHck9B?oc=5",
+      "publishedAt": "Fri, 30 Jan 2026 08:52:22 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_13",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "트럼프, 관세정책 '자화자찬'…\"韓, 우리 조선업에 217조 투자\"",
+      "summary": [
+        "트럼프 전 대통령은 관세 정책을 자화자찬했습니다.",
+        "그는 한국이 미국의 조선업에 217조 원을 투자했다고 언급했습니다.",
+        "구체적인 투자 내용이나 배경은 제시되지 않았습니다."
+      ],
+      "whyImportant": "미국의 경제 정책 변화 가능성과 그에 따른 한국 기업의 투자 전략에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        "policy",
+        "capex"
+      ],
+      "dedupeKey": "트럼프-관세정책-한국-조선업-투자",
       "matchedTo": null,
       "sourceName": "마켓인",
       "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
@@ -102,26 +315,167 @@
       "importance": 3
     },
     {
-      "id": "2026-02-03_5",
+      "id": "2026-02-03_14",
       "date": "2026-02-03",
       "category": "글로벌",
-      "title": "트럼프 “한미관세협상 파기”…‘초비상’ 정부·여당 “2월 대미투자법 처리” 대응",
+      "title": "지자체 통합법·대미투자특별법…여야, 2월 임시국회서 충돌 전망",
       "summary": [
-        "트럼프 전 대통령이 한미 관세 협상 파기를 언급하며 정부와 여당에 비상이 걸렸다.",
-        "이에 정부와 여당은 2월 중 대미 투자 관련 법안을 처리하여 대응할 방침이다.",
-        "이번 결정은 향후 한미 경제 관계에 중대한 영향을 미칠 수 있다는 분석이 나온다."
+        "여야는 2월 임시국회에서 지방자치단체 통합법과 대미 투자 특별법을 두고 충돌할 것으로 예상됩니다.",
+        "두 법안은 정치적 쟁점을 포함하고 있어 합의에 어려움이 예상됩니다.",
+        "이번 임시국회에서 여야의 입장 차이를 좁힐 수 있을지 주목됩니다."
       ],
-      "whyImportant": "한미 관세 협상 파기 가능성은 양국 경제 관계의 불확실성을 증대시키고, 글로벌 무역 질서에 파장을 일으킬 수 있다.",
+      "whyImportant": "지자체 통합 및 대미 투자 관련 정책 방향에 영향을 미칠 수 있는 중요한 법안 논의입니다.",
       "impactSignals": [
         "policy",
-        "sanctions",
         "capex"
       ],
-      "dedupeKey": "트럼프-한미관세-투자법",
+      "dedupeKey": "지자체-통합법-대미투자-특별법-국회",
       "matchedTo": null,
-      "sourceName": "에너지경제신문 모바일",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMHU0OHB5T2dvR3hFX1liZHJQek1jNVhWbnBGOU5Ta3VGSW9TdmYxZU5BUzQ5U3JEeG9pRkpwNGJwejNlZnQxamlyUUpQdXN4eGxFcGJ0Rzl2d2M?oc=5",
-      "publishedAt": "Tue, 27 Jan 2026 05:48:17 GMT",
+      "sourceName": "농민신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBGTVNEb2dZdWFGbG9nbm1IU3pJd1FLX1NGNnM2eVF2QzVyQjVUWTVXcGlPVzd0a1ZlSTBOLVk5YlozMkl0MWRCbXRZbW8ta2lRTG1oQXFvd3BUdw?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 10:02:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_15",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "‘저작권 침해’, 징벌적 손해배상 & 형사 처벌 강화… ‘저작권법’ 개정안 국회 통과",
+      "summary": [
+        "저작권 침해에 대한 징벌적 손해배상 및 형사 처벌을 강화하는 저작권법 개정안이 국회를 통과했습니다.",
+        "이번 개정안은 저작권 침해 행위에 대한 제재를 강화하는 데 목적이 있습니다.",
+        "구체적인 내용은 아직 알려지지 않았습니다."
+      ],
+      "whyImportant": "이번 개정은 창작물에 대한 권리 보호 강화에 기여할 수 있습니다.",
+      "impactSignals": [
+        "policy",
+        "security"
+      ],
+      "dedupeKey": "저작권-침해-손해배상-형사처벌",
+      "matchedTo": null,
+      "sourceName": "IPDaily",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxNcVZZZUpLVDFJYS1HVUo4OENpMWdTaXMxTG45RmZkbWVOQUI2MFR5NGZqU0FqQlZHWDZBMm5CUEVuemphcEhJY2wwaEEtaUdULWFCc3RuNzlYS3Bkb0ItelRNWUliNl9VQ3BfZzVkZTdHMERGRmEwYndvaGpKVDVVQ3h2VTVLWmFvQXJIcEJWSHpVMWVaQk1JRUtIQ0lBSHVubXNPTUxNNnpSVk15aWdwUkY0eHZ5RC1PRVItb2FPblp3OWJVUEYxZmpwNUVJVmtSZnJGc2t2Njhsa1hPUDBXdGM2NWF1bFFHWmRQcGJ1YW5TWGxRZ0JVSEhnbk80N3ZrOEdLUGkwT2c3ZnNIQUJid0VNR3NnYjlGNG9tWi02Y2t6WVhSeVN6TFVXOVQzcDA2YXh3MWhncjI5MnFqM21mVnFQeU1ucGJGTFl0OTBDZkw3eThUNkY1Tlk5YkE?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 07:56:36 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_16",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "'중국판 엔비디아' 美제재 속 작년 첫 연간흑자 전망",
+      "summary": [
+        "미국의 제재 속에서도 '중국판 엔비디아'가 작년에 첫 연간 흑자를 기록할 것으로 전망됩니다.",
+        "이는 중국의 반도체 산업 발전에 있어 중요한 이정표가 될 수 있습니다.",
+        "자세한 실적 내용은 발표를 통해 확인될 예정입니다."
+      ],
+      "whyImportant": "미국의 제재 속 중국 반도체 기업의 흑자 달성은 향후 미중 기술 경쟁의 향방을 가늠하는 중요한 지표가 될 수 있습니다.",
+      "impactSignals": [
+        "sanctions",
+        "earnings"
+      ],
+      "dedupeKey": "중국반도체-미국제재-연간흑자",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10RU9VZVloTkVVcmJGc21VRW5jV1NFbk1YRXJtMkwyNkJIaWwtVFBxZFRhSzBKUTlJTmNRSlV3QjlKSldlaUx5aGdackpteFBBOERXdTFqR0xkVHBkckEtcVFNeFVOZEF3NURTMjRGUTRid3pO?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 12:28:30 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_17",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "팔란티어, ‘정부·민간' 수요 동반 급증에 4Q '깜짝 실적'…시간외 9% 급등",
+      "summary": [
+        "팔란티어가 정부 및 민간 부문의 수요 급증에 힘입어 4분기에 예상치 못한 실적을 달성했습니다.",
+        "이러한 실적 발표 후 시간 외 거래에서 주가가 9% 급등했습니다.",
+        "정부와 민간 양쪽에서의 수요 증가는 팔란티어의 성장세를 견인하는 주요 요인으로 분석됩니다."
+      ],
+      "whyImportant": "정부 및 민간 수요 증가는 팔란티어의 지속적인 성장 가능성을 시사합니다.",
+      "impactSignals": [
+        "policy",
+        "earnings",
+        "market-demand"
+      ],
+      "dedupeKey": "팔란티어-실적-정부수요-민간수요",
+      "matchedTo": null,
+      "sourceName": "마켓인",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5BSVN2bl9HT3hqY3YxMVZLYVZtMmpPVUYtTnJGdVY5eURBdGhWSU5xaDNXSEw5U3FOSTJoLXA3UnFZanpUT0xDMEdscHpVVkRMamJyTXBKYUQxUjllM3dsVmg5Ymh5enV2cUYyZTNFeGlocFE?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 21:22:53 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_18",
+      "date": "2026-02-03",
+      "category": "글로벌",
+      "title": "Disney Ups Quarterly Content Revenue 22% to $1.9 Billion",
+      "summary": [
+        "디즈니의 분기별 콘텐츠 수익이 22% 증가하여 19억 달러에 달했습니다.",
+        "이는 디즈니의 콘텐츠 사업 부문에서 상당한 성장을 의미합니다.",
+        "이번 수익 증가는 디즈니의 실적에 긍정적인 영향을 미칠 것으로 예상됩니다."
+      ],
+      "whyImportant": "디즈니의 콘텐츠 수익 증가는 미디어 산업의 변화와 경쟁 환경에 대한 중요한 지표가 됩니다.",
+      "impactSignals": [
+        "earnings"
+      ],
+      "dedupeKey": "디즈니-콘텐츠-수익-증가",
+      "matchedTo": null,
+      "sourceName": "Media Play News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSHRWTGVmSGJOZkgweWpSOWlPb3NZSm8ySWRGekpUZXFzZGZSN0lUX0JRYjlqZEJ3VWFrWjl6c3N2X240VXk5bDBiLV8zT3hCb0MtMFVtUk9xVmJoZE1mb3NvNHVOVmJaVlpkeEYxYTlkZF9iNXljZ3lQaC1tZExPR2VweTA?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 19:16:42 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3
+    },
+    {
+      "id": "2026-02-03_19",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 주권의 시대.. 지정학·규제·보안 압력으로 2년내 전세계 35% 전환 전망",
+      "summary": [
+        "AI 주권 시대가 도래하고 있습니다.",
+        "지정학적, 규제적, 보안 압력으로 인해 2년 안에 전 세계의 35%가 전환될 것으로 예상됩니다.",
+        "자세한 내용은 기사를 통해 확인할 수 있습니다."
+      ],
+      "whyImportant": "AI 주권 확보는 국가 경쟁력 강화와 데이터 보안에 중요한 영향을 미칩니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "주권-지정학-규제-보안",
+      "matchedTo": null,
+      "sourceName": "열린정책뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9GWHEzejhuR0tRUlAtY0llWE5lVXNPOFQ5TlM0RDUzWFVqcUJnUmpvam9hbVZzNWRkYkZha1h3MENfN3hGQnVOMXJJeTN3ZWJZa1hVRFF5NWxvazdZcWZNLWthVFdNc0RaZHlN?oc=5",
+      "publishedAt": "Mon, 02 Feb 2026 11:45:23 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4
+    },
+    {
+      "id": "2026-02-03_20",
+      "date": "2026-02-03",
+      "category": "IT",
+      "title": "AI 주도권 경쟁 본격화…한국·미국·EU, 규제와 산업 전략 ‘삼각 구도’ 형성",
+      "summary": [
+        "AI 주도권 경쟁이 본격화되고 있습니다.",
+        "한국, 미국, EU는 규제와 산업 전략을 통해 '삼각 구도'를 형성하고 있습니다.",
+        "각 국은 AI 기술 선점을 위해 경쟁하고 있습니다."
+      ],
+      "whyImportant": "AI 기술 규제 및 산업 전략은 장기적인 기술 주도권 경쟁에 중요한 영향을 미칩니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "주도권-경쟁-규제-산업전략",
+      "matchedTo": null,
+      "sourceName": "브랜드경제신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBwWUs1cFNDaG9YTFIxRjVSN3FXelN6QTNYSmluNm1sZ2ZZRVZNRHFvcEtQb19XcjhwNTNKclF4Tk1vaE41LVMxaWxQQVU?oc=5",
+      "publishedAt": "Sat, 31 Jan 2026 02:38:04 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4

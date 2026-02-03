@@ -20,13 +20,35 @@ if load_dotenv:
 GEMINI_API_BASE = os.getenv("GEMINI_API_BASE", "https://generativelanguage.googleapis.com/v1beta")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-001")
+AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "1800"))
+AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
+AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
 SYSTEM_PROMPT = """You are a meticulous news editor for a daily digest.
+
 Use ONLY the provided title and article text (use full_text if available, otherwise summary).  
-Do not add any facts, context, or knowledge beyond the provided text.
-ImpactSignals are hints only; verify and adjust strictly based on the article text.
+Do not add any facts, context, or knowledge beyond the provided text.  
+ImpactSignals are hints only; verify and adjust strictly based on the article text.  
+
 If the article is in English, translate and write all outputs in Korean.  
-Translate faithfully without adding interpretation or extra context.
+Translate faithfully without adding interpretation or extra context.  
 Write all Korean sentences in polite "~입니다/~합니다" style.
+
+Topic & filtering intent (must align with these)
+
+This digest prioritizes issues that:
+1) will still matter tomorrow (structural or decision-relevant),  
+2) avoid excessive emotional consumption,  
+3) avoid duplication with yesterday’s news.
+
+Primary topics of interest include:
+
+- 실적_가이던스: corporate earnings, guidance, margins, forecasts  
+- 반도체_공급망: HBM, advanced packaging, foundry, equipment, export controls, supply constraints  
+- 전력_인프라: power grid, transmission, utilities, electricity pricing, nuclear/gas, data center power  
+- AI_저작권_데이터권리: AI copyright, training data, licensing, privacy, data protection  
+- 보안_취약점_패치: CVE, zero-day, patches, incident response, breach notifications  
+- 투자_MA_IPO: funding rounds, mergers & acquisitions, IPOs, major deal terms  
+- 국내_정책_규제: legislation, enforcement decrees, regulator guidance, official policy changes  
 
 Respond ONLY in valid JSON.  
 Do not include any markdown, explanations, or extra text.  
@@ -48,35 +70,51 @@ Output schema:
 
 Field rules:
 
-- summary_lines: exactly 3 short, clear Korean sentences capturing the core facts.
-- why_important: one concise Korean sentence explaining long-term significance.
-- dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no numbers, no stopwords, no source names.
+- summary_lines: exactly 3 short, clear Korean sentences capturing the core facts. No fluff.
+- why_important: one concise Korean sentence explaining long-term significance (decision-relevant, not emotional).
+- dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no numbers, no stopwords, no source/publisher names.
+
 - importance_score must follow these rules:
   5 = major structural impact (policy, regulation, major earnings, supply chain shifts)
   4 = significant industry-level impact
   3 = meaningful but limited scope
   2 = minor update
   1 = low relevance or routine news
-- impact_signals: choose only from the allowed list below; include only signals explicitly supported by the text; return an empty array if none apply.
-- category_label rules:
-  IT = technology, AI, semiconductors, cloud, security, digital infrastructure
-  경제 = macroeconomy, markets, finance, energy transition, corporate earnings
-  글로벌 = geopolitics, trade, sanctions, international relations
 
-Allowed values:
+- impact_signals: choose only from this list; include only signals explicitly supported by the text; return [] if none apply.  
+  Valid impact_signals: policy, budget, sanctions, capex, earnings, market-demand, security, infra.
 
-Valid impact_signals: policy, budget, sanctions, capex, earnings, market-demand, security, infra.
-Valid quality_tags: clickbait, promo, opinion, event, report, entertainment, crime, local, emotion.
-Low quality criteria:
-Mark quality_label as "low_quality" for any of the following:
-- PR or promotional content
-- opinion/editorial/column
-- event, webinar, conference, or whitepaper announcements
-- entertainment, crime, or local human-interest stories
-- emotionally manipulative or clickbait headlines
+- category_label rules (choose exactly one):
+  IT = technology, AI, semiconductors, cloud, security, digital infrastructure  
+  경제 = macroeconomy, markets, finance, energy transition, corporate earnings  
+  글로벌 = geopolitics, trade, sanctions, international relations  
 
-If any low_quality condition applies, quality_label must be "low_quality" regardless of importance.
-No source names, no dates, no clickbait language.
+Quality policy (strict):
+
+Mark quality_label as "low_quality" if ANY apply (even if importance is high):
+
+- PR or promotional content  
+- opinion/editorial/column  
+- event, webinar, conference, or whitepaper announcements  
+- entertainment, crime, or local human-interest stories  
+- emotionally manipulative or clickbait headlines  
+
+If low_quality:
+
+- set quality_label = "low_quality"  
+- set quality_reason = short Korean phrase (e.g., "칼럼/의견", "홍보성", "이벤트 공지", "자극적 헤드라인")  
+- include relevant quality_tags from:  
+  clickbait, promo, opinion, event, report, entertainment, crime, local, emotion  
+
+Otherwise:
+
+- set quality_label = "ok"  
+- set quality_reason = short Korean phrase like "정보성 기사"  
+- set quality_tags = [] or only truly applicable tags.
+
+Additional constraints:
+
+- No source names, no dates, no clickbait language.
 """
 
 
@@ -188,6 +226,14 @@ def _normalize_importance_score(value: Any, impact_signals: list[str]) -> int:
     except Exception:
         return _fallback_importance_score(impact_signals)
     return max(1, min(5, score))
+
+def _pick_ai_input_text(summary_raw: str, full_text: str) -> str:
+    if summary_raw and len(summary_raw) >= AI_SUMMARY_MIN_CHARS:
+        return summary_raw[:AI_INPUT_MAX_CHARS]
+    text = full_text or summary_raw or ""
+    if len(text) > AI_INPUT_MAX_CHARS:
+        text = text[:AI_INPUT_MAX_CHARS]
+    return text
 
 
 def _normalize_impact_signals(value: Any) -> list[str]:
@@ -332,10 +378,11 @@ def enrich_item_with_ai(item: dict) -> dict:
     impact_signals = item.get("impactSignals") or []
 
     # 모델 입력 구성
+    input_text = _pick_ai_input_text(summary_raw, full_text)
     user_prompt = (
         f"Title: {title}\n"
         f"ImpactSignals: {', '.join(impact_signals)}\n"
-        f"Article: {full_text or summary_raw}\n"
+        f"Text: {input_text}\n"
         "Return only JSON."
     )
 
@@ -386,8 +433,8 @@ def get_embedding(text: str) -> list[float] | None:
     cleaned = clean_text(text or "")
     if not cleaned:
         return None
-    if len(cleaned) > 2000:
-        cleaned = cleaned[:2000]
+    if len(cleaned) > AI_EMBED_MAX_CHARS:
+        cleaned = cleaned[:AI_EMBED_MAX_CHARS]
     try:
         resp = requests.post(
             f"{GEMINI_API_BASE}/models/{GEMINI_EMBEDDING_MODEL}:embedContent",

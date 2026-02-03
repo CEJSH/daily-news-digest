@@ -17,6 +17,15 @@ _SECTION_TOKENS = {
 _LATIN_MEDIA_TOKENS = {
     "reuters", "bloomberg", "ft", "wsj", "journal", "times", "news", "press", "media"
 }
+_KOREAN_PARTICLE_SUFFIXES = (
+    "에게서", "에서", "에게", "까지", "부터", "으로", "로", "과", "와", "을", "를", "은", "는",
+    "이", "가", "의", "에", "도", "만"
+)
+_KOREAN_VERB_ENDINGS = (
+    "했습니다", "하였다", "했다", "한다", "합니다", "하며", "된다", "됐다", "되고", "되며",
+    "됩니다", "되는", "했다고", "한다고", "했다며", "한다며", "했다는", "한다는", "이었다",
+    "이라며", "이라고", "이다", "였다", "였던", "했던", "했고", "되었다", "되었습니다"
+)
 
 def clean_text(s: str) -> str:
     if not s:
@@ -100,6 +109,29 @@ def get_source_name(entry) -> str:
         pass
     return ""
 
+def normalize_token_for_dedupe(token: str, stopwords: set) -> str:
+    tok = (token or "").strip().lower()
+    if not tok:
+        return ""
+    if re.search(r"[가-힣]", tok):
+        for suf in _KOREAN_VERB_ENDINGS:
+            if tok.endswith(suf) and len(tok) - len(suf) >= 2:
+                tok = tok[: -len(suf)]
+                break
+        for suf in _KOREAN_PARTICLE_SUFFIXES:
+            if tok.endswith(suf) and len(tok) - len(suf) >= 2:
+                tok = tok[: -len(suf)]
+                break
+    if not tok or tok in stopwords:
+        return ""
+    if re.search(r"[가-힣]", tok):
+        if len(tok) < 2:
+            return ""
+    else:
+        if len(tok) < 3:
+            return ""
+    return tok
+
 def split_summary_to_3lines(summary: str) -> list[str]:
     """요약 문자열을 최대 3줄 배열로 변환. (MVP UI용)"""
     s = (summary or "").strip()
@@ -159,8 +191,8 @@ def estimate_read_time_seconds(text: str) -> int:
 def normalize_title_for_dedupe(title: str, stopwords: set) -> set[str]:
     t = trim_title_noise(clean_text(title)).lower()
     t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
-    toks = [x for x in t.split() if x and x not in stopwords]
-    return set(toks)
+    toks = [normalize_token_for_dedupe(x, stopwords) for x in t.split()]
+    return set([x for x in toks if x])
 
 def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:

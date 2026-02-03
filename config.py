@@ -21,6 +21,79 @@ RSS_SOURCES = [
     {"topic": "글로벌_정세", "url": "https://news.google.com/rss/search?q=tariff+OR+sanctions+OR+trade+OR+supply+chain+OR+diplomacy+OR+geopolitics+-opinion+-column+-sports+-celebrity+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en", "limit": 15},
     {"topic": "글로벌_빅테크", "url": "https://news.google.com/rss/search?q=Apple+OR+Microsoft+OR+Google+OR+OpenAI+OR+NVIDIA+OR+Amazon+OR+Meta+OR+Tesla+OR+TSMC+-opinion+-column+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en", "limit": 15},
     {"topic": "글로벌_빅테크", "url": "https://news.google.com/rss/search?q=애플+OR+마이크로소프트+OR+구글+OR+오픈AI+OR+엔비디아+OR+아마존+OR+메타+OR+TSMC+-리포트+-세미나+-칼럼&hl=ko&gl=KR&ceid=KR:ko", "limit": 10},
+     # 1) 기업 실적·가이던스 (숫자 기반 – 가장 안정적인 지속 이슈)
+    {
+        "topic": "실적_가이던스",
+        "url": "https://news.google.com/rss/search?q=실적+OR+가이던스+OR+전망+OR+매출+OR+영업이익+OR+컨센서스+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 15
+    },
+    {
+        "topic": "실적_가이던스",
+        "url": "https://news.google.com/rss/search?q=earnings+OR+guidance+OR+forecast+OR+quarterly+results+OR+revenue+OR+margin+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 15
+    },
+    # 2) 반도체 공급망 (AI칩 → 장비·HBM·패키징으로 확장)
+    {
+        "topic": "반도체_공급망",
+        "url": "https://news.google.com/rss/search?q=HBM+OR+첨단패키징+OR+파운드리+OR+EUV+OR+반도체장비+OR+수출통제+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 15
+    },
+    {
+        "topic": "반도체_공급망",
+        "url": "https://news.google.com/rss/search?q=HBM+OR+advanced+packaging+OR+foundry+OR+EUV+OR+semiconductor+equipment+OR+export+controls+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 15
+    },
+    # 3) 전력 인프라 (데이터센터 성장의 현실 제약 요인)
+    {
+        "topic": "전력_인프라",
+        "url": "https://news.google.com/rss/search?q=전력망+OR+송전+OR+변전소+OR+전기요금+OR+원전+OR+LNG+OR+전력수급+-칼럼+-리포트+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 15
+    },
+    {
+        "topic": "전력_인프라",
+        "url": "https://news.google.com/rss/search?q=power+grid+OR+electricity+prices+OR+utility+OR+nuclear+OR+natural+gas+OR+transmission+OR+substation+OR+data+center+power+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 15
+    },
+    # 4) AI 저작권·데이터 권리 (규제보다 실무 영향이 큼)
+    {
+        "topic": "AI_저작권_데이터권리",
+        "url": "https://news.google.com/rss/search?q=AI+저작권+OR+학습데이터+OR+라이선스+OR+개인정보+OR+데이터보호+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 12
+    },
+    {
+        "topic": "AI_저작권_데이터권리",
+        "url": "https://news.google.com/rss/search?q=AI+copyright+OR+training+data+OR+licensing+OR+privacy+OR+data+protection+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 12
+    },
+    # 5) 보안 취약점·패치 (감정 자극 없는 실무형 보안 뉴스)
+    {
+        "topic": "보안_취약점_패치",
+        "url": "https://news.google.com/rss/search?q=취약점+OR+CVE+OR+제로데이+OR+보안패치+OR+권고+OR+침해사고+-칼럼+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 12
+    },
+    {
+        "topic": "보안_취약점_패치",
+        "url": "https://news.google.com/rss/search?q=zero-day+OR+patch+OR+CVE+OR+ransomware+OR+breach+notification+OR+incident+response+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 12
+    },
+    # 6) 투자·M&A·IPO (감정 배제된 결정형 이벤트)
+    {
+        "topic": "투자_MA_IPO",
+        "url": "https://news.google.com/rss/search?q=IPO+OR+상장+OR+인수합병+OR+투자유치+OR+시리즈A+OR+벤처캐피탈+-칼럼+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 12
+    },
+    {
+        "topic": "투자_MA_IPO",
+        "url": "https://news.google.com/rss/search?q=IPO+OR+acquisition+OR+merger+OR+funding+round+OR+venture+capital+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
+        "limit": 12
+    },
+    # 7) 국내 정책·제도 (법/가이드라인 중심 – 지속 영향 큼)
+    {
+        "topic": "국내_정책_규제",
+        "url": "https://news.google.com/rss/search?q=국회+OR+입법+OR+시행령+OR+가이드라인+OR+금융위원회+OR+공정거래위원회+OR+개인정보보호위원회+OR+과학기술정보통신부+-연예+-스포츠+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
+        "limit": 15
+    }
+
 ]
 
 NEWSLETTER_TITLE = "🚀 DAILY WORLD – AI & Tech 일일 요약"
@@ -35,17 +108,59 @@ QUESTION_OF_THE_DAY = "정보를 덜 보는 것이 오히려 더 똑똑한 소�
 TOP_LIMIT = 20
 MIN_SCORE = 0.0
 MAX_ENTRIES_PER_FEED = 100
+TITLE_DEDUPE_JACCARD = float(os.getenv("TITLE_DEDUPE_JACCARD", "0.55"))
+DEDUPKEY_NGRAM_N = int(os.getenv("DEDUPKEY_NGRAM_N", "2"))
+DEDUPKEY_NGRAM_SIM = float(os.getenv("DEDUPKEY_NGRAM_SIM", "0.35"))
+
+def _env_int(name: str) -> int | None:
+    raw = os.getenv(name, "").strip()
+    if not raw:
+        return None
+    try:
+        return int(raw)
+    except Exception:
+        return None
+
+def _auto_tuned_limit(default_limit: int, multiplier: float, min_floor: int) -> int:
+    max_cap = max(default_limit, TOP_LIMIT)
+    tuned = int(TOP_LIMIT * multiplier)
+    tuned = max(min_floor, tuned)
+    tuned = min(max_cap, tuned)
+    return tuned
 
 # ==========================================
 # 환경변수 기반 설정
 # ==========================================
 
 AI_IMPORTANCE_ENABLED = os.getenv("AI_IMPORTANCE_ENABLED", "1") == "1"
-AI_IMPORTANCE_MAX_ITEMS = int(os.getenv("AI_IMPORTANCE_MAX_ITEMS", "30"))
+AI_AUTO_TUNE = os.getenv("AI_AUTO_TUNE", "1") == "1"
+_DEFAULT_AI_IMPORTANCE_MAX = 30
+_DEFAULT_AI_SEMANTIC_MAX = 50
+_IMPORTANCE_EXPLICIT = _env_int("AI_IMPORTANCE_MAX_ITEMS")
+if _IMPORTANCE_EXPLICIT is not None:
+    AI_IMPORTANCE_MAX_ITEMS = _IMPORTANCE_EXPLICIT
+elif AI_AUTO_TUNE:
+    AI_IMPORTANCE_MAX_ITEMS = _auto_tuned_limit(
+        _DEFAULT_AI_IMPORTANCE_MAX,
+        multiplier=1.2,
+        min_floor=max(10, TOP_LIMIT),
+    )
+else:
+    AI_IMPORTANCE_MAX_ITEMS = _DEFAULT_AI_IMPORTANCE_MAX
 AI_IMPORTANCE_WEIGHT = float(os.getenv("AI_IMPORTANCE_WEIGHT", "1.0"))
 AI_QUALITY_ENABLED = os.getenv("AI_QUALITY_ENABLED", "1") == "1"
 AI_SEMANTIC_DEDUPE_ENABLED = os.getenv("AI_SEMANTIC_DEDUPE_ENABLED", "1") == "1"
-AI_SEMANTIC_DEDUPE_MAX_ITEMS = int(os.getenv("AI_SEMANTIC_DEDUPE_MAX_ITEMS", "50"))
+_SEMANTIC_EXPLICIT = _env_int("AI_SEMANTIC_DEDUPE_MAX_ITEMS")
+if _SEMANTIC_EXPLICIT is not None:
+    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _SEMANTIC_EXPLICIT
+elif AI_AUTO_TUNE:
+    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _auto_tuned_limit(
+        _DEFAULT_AI_SEMANTIC_MAX,
+        multiplier=1.6,
+        min_floor=max(12, TOP_LIMIT),
+    )
+else:
+    AI_SEMANTIC_DEDUPE_MAX_ITEMS = _DEFAULT_AI_SEMANTIC_MAX
 AI_SEMANTIC_DEDUPE_THRESHOLD = float(os.getenv("AI_SEMANTIC_DEDUPE_THRESHOLD", "0.88"))
 ARTICLE_FETCH_ENABLED = os.getenv("ARTICLE_FETCH_ENABLED", "1") == "1"
 ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "20"))

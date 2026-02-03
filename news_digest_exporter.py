@@ -6,7 +6,7 @@ import re
 import math
 from utils import (
     clean_text, trim_title_noise, get_source_name,
-    normalize_title_for_dedupe, jaccard, estimate_read_time_seconds
+    normalize_title_for_dedupe, normalize_token_for_dedupe, jaccard, estimate_read_time_seconds
 )
 from config import (
     RSS_SOURCES,
@@ -20,6 +20,9 @@ from config import (
     TOP_LIMIT,
     MIN_SCORE,
     MAX_ENTRIES_PER_FEED,
+    TITLE_DEDUPE_JACCARD,
+    DEDUPKEY_NGRAM_N,
+    DEDUPKEY_NGRAM_SIM,
     AI_IMPORTANCE_ENABLED,
     AI_IMPORTANCE_MAX_ITEMS,
     AI_IMPORTANCE_WEIGHT,
@@ -115,6 +118,15 @@ def _pick_analysis_text(full_text: str, summary_clean: str) -> str:
         return full_text
     return summary_clean or ""
 
+def _dedupe_key_ngrams(key: str, n: int) -> set[str]:
+    if not key:
+        return set()
+    t = clean_text(key).lower()
+    t = re.sub(r"[-\s]+", "", t)
+    if len(t) < n:
+        return set()
+    return {t[i:i + n] for i in range(len(t) - n + 1)}
+
 def get_dedupe_key(title: str, summary: str) -> str:
     # 1) 토큰화 및 노이즈 제거
     tokens = _tokenize_for_dedupe(f"{title} {summary}")
@@ -123,9 +135,12 @@ def get_dedupe_key(title: str, summary: str) -> str:
     seen = set()
     filtered: list[str] = []
     for tok in tokens:
+        tok = normalize_token_for_dedupe(tok, STOPWORDS)
+        if not tok:
+            continue
         if tok in seen:
             continue
-        if _is_noise_token(tok) or not _valid_token_length(tok):
+        if _is_noise_token(tok):
             continue
         filtered.append(tok)
         seen.add(tok)
@@ -133,6 +148,9 @@ def get_dedupe_key(title: str, summary: str) -> str:
     # 3) 부족할 경우 완화된 조건으로 보완
     if len(filtered) < 4:
         for tok in tokens:
+            tok = normalize_token_for_dedupe(tok, STOPWORDS)
+            if not tok:
+                continue
             if tok in seen:
                 continue
             if tok in STOPWORDS or tok in DEDUPE_NOISE_WORDS or tok in MONTH_TOKENS:
@@ -267,6 +285,9 @@ def _apply_ai_importance(items: list[dict]) -> None:
         if not ai_result:
             continue
         item["ai"] = ai_result
+        ai_dedupe_key = ai_result.get("dedupe_key")
+        if ai_dedupe_key:
+            item["dedupeKey"] = ai_dedupe_key
         if AI_QUALITY_ENABLED:
             quality_label = ai_result.get("quality_label")
             if quality_label:
@@ -353,6 +374,25 @@ def _apply_semantic_dedupe(items: list[dict]) -> None:
             kept.append(item)
     _log("AI 중복 제거 완료")
 
+def _apply_dedupe_key_similarity(items: list[dict]) -> None:
+    if DEDUPKEY_NGRAM_SIM <= 0:
+        return
+    candidates = sorted(items, key=lambda x: x["score"], reverse=True)
+    kept: list[tuple[set[str], dict]] = []
+    for item in candidates:
+        if not _is_eligible(item):
+            continue
+        key = item.get("dedupeKey") or ""
+        ngrams = _dedupe_key_ngrams(key, DEDUPKEY_NGRAM_N)
+        if not ngrams:
+            continue
+        matched = next((ref for ref_ngrams, ref in kept if jaccard(ngrams, ref_ngrams) >= DEDUPKEY_NGRAM_SIM), None)
+        if matched:
+            item["dropReason"] = f"dedupe_key_sim:{matched.get('title','')[:60]}"
+            item["matchedTo"] = matched.get("id") or matched.get("dedupeKey") or matched.get("title")
+            continue
+        kept.append((ngrams, item))
+
 def _load_yesterday_dedupe_map(path: str) -> dict[str, str]:
     if not os.path.exists(path):
         return {}
@@ -392,6 +432,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
     grouped_items, seen_titles, all_items, topic_limits = {}, set(), [], {}
     seen_title_tokens: list[tuple[set[str], dict]] = []
     seen_items_by_dedupe_key = {}
+    seen_dedupe_ngrams: list[tuple[set[str], dict]] = []
     yesterday_dedupe_map = _load_yesterday_dedupe_map(OUTPUT_JSON)
 
     for source_idx, source in enumerate(sources, start=1):
@@ -432,11 +473,17 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             text_all = (title_clean + " " + analysis_text).lower()
             impact_signals = get_impact_signals(text_all)
             dedupe_key = get_dedupe_key(title_clean, analysis_text)
+            dedupe_ngrams = _dedupe_key_ngrams(dedupe_key, DEDUPKEY_NGRAM_N)
             matched_to = yesterday_dedupe_map.get(dedupe_key)
 
-            kept_item = next((p_item for p_tok, p_item in seen_title_tokens if jaccard(tokens, p_tok) >= 0.6), None)
+            kept_item = next((p_item for p_tok, p_item in seen_title_tokens if jaccard(tokens, p_tok) >= TITLE_DEDUPE_JACCARD), None)
             if not kept_item:
                 kept_item = seen_items_by_dedupe_key.get(dedupe_key)
+            if not kept_item and dedupe_ngrams:
+                kept_item = next(
+                    (p_item for p_ngrams, p_item in seen_dedupe_ngrams if jaccard(dedupe_ngrams, p_ngrams) >= DEDUPKEY_NGRAM_SIM),
+                    None,
+                )
 
             if kept_item:
                 kept_item.setdefault("mergedSources", []).append({"title": title_clean, "link": entry.link, "source": get_source_name(entry)})
@@ -480,12 +527,15 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
             }
             seen_title_tokens.append((tokens, item))
             seen_items_by_dedupe_key[dedupe_key] = item
+            if dedupe_ngrams:
+                seen_dedupe_ngrams.append((dedupe_ngrams, item))
             grouped_items.setdefault(topic, []).append(item)
             all_items.append(item)
         _log(f"피드 완료: {topic}, 누적 수집 {len(all_items)}개")
 
     _apply_ai_importance(all_items)
     _apply_semantic_dedupe(all_items)
+    _apply_dedupe_key_similarity(all_items)
 
     for topic, items in grouped_items.items():
         filtered = [x for x in items if _is_eligible(x)]

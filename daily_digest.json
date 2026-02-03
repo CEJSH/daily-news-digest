@@ -16,10 +16,7 @@
         "오라클의 이번 투자는 AI 인프라 경쟁을 심화시킬 것으로 예상됩니다."
       ],
       "whyImportant": "오라클의 대규모 투자는 AI 인프라 시장의 경쟁 심화와 기술 발전을 가속화할 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "오라클-ai인프라-클라우드컴퓨팅-투자",
       "matchedTo": null,
       "sourceName": "WebProNews",
@@ -40,10 +37,7 @@
         "정보보호 관련 정책이 강화될 예정입니다."
       ],
       "whyImportant": "정보보호 강화는 장기적으로 디지털 경제의 신뢰성을 높이는 데 중요합니다.",
-      "impactSignals": [
-        "policy",
-        "security"
-      ],
+      "impactSignals": ["policy", "security"],
       "dedupeKey": "정보보호-대책-소비자구제-취약점점검",
       "matchedTo": null,
       "sourceName": "아이티데일리",
@@ -64,10 +58,7 @@
         "자율주행 기술 개발 및 상용화에 박차를 가할 계획입니다."
       ],
       "whyImportant": "자율주행 기술 경쟁 심화 및 시장 확대에 중요한 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "waymo-투자-자율주행-기술",
       "matchedTo": null,
       "sourceName": "Waymo",
@@ -88,10 +79,7 @@
         "20개 이상의 도시로 사업 확장을 계획하고 있습니다."
       ],
       "whyImportant": "자율주행 기술 개발 및 상용화에 중요한 투자 결정입니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "웨이모-투자유치-자율주행-도시확장",
       "matchedTo": null,
       "sourceName": "Electrek",
@@ -112,18 +100,15 @@
         "자세한 내용은 기사를 참조하십시오."
       ],
       "whyImportant": "인공지능 기술 발전과 관련된 정책 및 인프라 투자는 장기적인 경제 및 사회 구조에 영향을 미칩니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
-      "dedupeKey": "인공지능-기술-인프라-정책",
+      "impactSignals": ["policy", "capex"],
+      "dedupeKey": "next-phase-technology-infrastructure-policy",
       "matchedTo": null,
       "sourceName": "The American Action Forum",
       "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVVpCcXk1ODZ2dXdnNjl4RmZkRzc3cERmdXRWTlpjN3QxNndNMmFBQUlKY09ZWHN2eFdJZGZmbWNZVEJQbXJxU1dOT0IwUXJPQUg1Z3pGYUhXLW1IZHlCODdCNUxYTlVfTnhKMlpoTzFZT0ZpeXdRUDBza1R6WjRKbkVqbEU0N0xvY3U0NG1aQXF3LTJ3MDRCblhJX2lJQ0Rud1NGMlkzNFlIckwzTGxyVHpTMHo4UQ?oc=5",
       "publishedAt": "Wed, 28 Jan 2026 14:58:36 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 4
     },
     {
       "id": "2026-02-03_6",
@@ -136,10 +121,7 @@
         "규제 시행과 수요 증가는 관련 산업에 큰 영향을 미칠 것으로 예상됩니다."
       ],
       "whyImportant": "AI 규제 시행은 장기적으로 반도체 및 AI 산업의 발전 방향에 중요한 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "market-demand"
-      ],
+      "impactSignals": ["policy", "market-demand"],
       "dedupeKey": "규제-반도체-산업ai-수요",
       "matchedTo": null,
       "sourceName": "유스연합",
@@ -160,9 +142,7 @@
         "이번 인증 획득으로 한화비전의 AI 시스템 신뢰도가 향상될 것으로 기대됩니다."
       ],
       "whyImportant": "AI 시스템의 국제표준 인증은 향후 관련 시장 경쟁력 확보에 중요한 역할을 할 수 있습니다.",
-      "impactSignals": [
-        "policy"
-      ],
+      "impactSignals": ["policy"],
       "dedupeKey": "한화비전-ai시스템-국제표준-인증",
       "matchedTo": null,
       "sourceName": "중소기업신문",
@@ -183,9 +163,7 @@
         "AI 관련 개인 정보 보호 및 활용 방안에 대한 논의가 필요합니다."
       ],
       "whyImportant": "AI 기술 발전과 함께 개인 정보 보호 및 데이터 활용에 대한 정책적 결정이 중요해지고 있습니다.",
-      "impactSignals": [
-        "policy"
-      ],
+      "impactSignals": ["policy"],
       "dedupeKey": "보안-개인정보위-규제-혁신",
       "matchedTo": null,
       "sourceName": "블로터",
@@ -206,10 +184,7 @@
         "자세한 내용은 기사를 통해 확인할 수 있습니다."
       ],
       "whyImportant": "엔비디아의 대규모 투자는 AI 산업 전반에 걸쳐 중요한 영향을 미칠 수 있기 때문입니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "엔비디아-openai-투자-불확실성",
       "matchedTo": null,
       "sourceName": "Barron's",
@@ -230,9 +205,7 @@
         "이번 정책 변화가 보험 업계에 미치는 영향이 주목됩니다."
       ],
       "whyImportant": "미국 정부의 정책 변화는 보험 업계의 수익성에 장기적인 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "policy"
-      ],
+      "impactSignals": ["policy"],
       "dedupeKey": "미국-정부-메디케어-보험주-sp500",
       "matchedTo": null,
       "sourceName": "매일경제",
@@ -253,10 +226,7 @@
         "다른 나라들의 상황은 어떠한지 추가적인 조사가 필요합니다."
       ],
       "whyImportant": "미국 관세 정책 변화는 한국 경제 및 대미 투자 전략에 중대한 영향을 미칠 수 있기 때문입니다.",
-      "impactSignals": [
-        "sanctions",
-        "capex"
-      ],
+      "impactSignals": ["sanctions", "capex"],
       "dedupeKey": "트럼프-관세-인상-대미투자",
       "matchedTo": null,
       "sourceName": "BBC",
@@ -277,10 +247,7 @@
         "이번 방문이 투자 및 관세 관련 문제 해결에 기여할지 주목됩니다."
       ],
       "whyImportant": "양국 간의 무역 및 투자 관련 불확실성이 지속될 경우, 관련 기업들의 장기적인 투자 결정에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "sanctions",
-        "capex"
-      ],
+      "impactSignals": ["sanctions", "capex"],
       "dedupeKey": "관세-협상-투자-속도",
       "matchedTo": null,
       "sourceName": "한국일보",
@@ -301,18 +268,15 @@
         "구체적인 투자 내용이나 배경은 제시되지 않았습니다."
       ],
       "whyImportant": "미국의 경제 정책 변화 가능성과 그에 따른 한국 기업의 투자 전략에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["sanctions", "capex"],
       "dedupeKey": "트럼프-관세정책-한국-조선업-투자",
       "matchedTo": null,
-      "sourceName": "마켓인",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3VW9KTU9TOVdRcGdya2xNQ21CZ2RDUWc0aHUySS0xLTlKejZPS201SkQzaktKaUJQa0JRRldiV0JBSU5feVZ0c25GRFAyQXRnOWo0VXNmc3pPZVdDelpfb29ONTIxa08zR2NoWUZpaS1XZE0?oc=5",
-      "publishedAt": "Sat, 31 Jan 2026 01:28:39 GMT",
+      "sourceName": "전한길뉴스",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAyUHFvaG9rYU1qNFpFSWRDRFJLVEdTVVJPb3BWUHgzZlZBb3lxdzE5My1iNjE3YlktSDgzVmZQbUVacUZZZkFxQlBMbUJiUDV4WGt0Y0tla3NrRVdXaU1jMkhYalBQdThB?oc=5",
+      "publishedAt": "Sun, 01 Feb 2026 04:41:40 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 4
     },
     {
       "id": "2026-02-03_14",
@@ -325,10 +289,7 @@
         "이번 임시국회에서 여야의 입장 차이를 좁힐 수 있을지 주목됩니다."
       ],
       "whyImportant": "지자체 통합 및 대미 투자 관련 정책 방향에 영향을 미칠 수 있는 중요한 법안 논의입니다.",
-      "impactSignals": [
-        "policy",
-        "capex"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "지자체-통합법-대미투자-특별법-국회",
       "matchedTo": null,
       "sourceName": "농민신문",
@@ -349,10 +310,7 @@
         "구체적인 내용은 아직 알려지지 않았습니다."
       ],
       "whyImportant": "이번 개정은 창작물에 대한 권리 보호 강화에 기여할 수 있습니다.",
-      "impactSignals": [
-        "policy",
-        "security"
-      ],
+      "impactSignals": ["policy", "security"],
       "dedupeKey": "저작권-침해-손해배상-형사처벌",
       "matchedTo": null,
       "sourceName": "IPDaily",
@@ -373,10 +331,7 @@
         "자세한 실적 내용은 발표를 통해 확인될 예정입니다."
       ],
       "whyImportant": "미국의 제재 속 중국 반도체 기업의 흑자 달성은 향후 미중 기술 경쟁의 향방을 가늠하는 중요한 지표가 될 수 있습니다.",
-      "impactSignals": [
-        "sanctions",
-        "earnings"
-      ],
+      "impactSignals": ["sanctions", "earnings"],
       "dedupeKey": "중국반도체-미국제재-연간흑자",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -397,11 +352,7 @@
         "정부와 민간 양쪽에서의 수요 증가는 팔란티어의 성장세를 견인하는 주요 요인으로 분석됩니다."
       ],
       "whyImportant": "정부 및 민간 수요 증가는 팔란티어의 지속적인 성장 가능성을 시사합니다.",
-      "impactSignals": [
-        "policy",
-        "earnings",
-        "market-demand"
-      ],
+      "impactSignals": ["policy", "earnings", "market-demand"],
       "dedupeKey": "팔란티어-실적-정부수요-민간수요",
       "matchedTo": null,
       "sourceName": "마켓인",
@@ -422,9 +373,7 @@
         "이번 수익 증가는 디즈니의 실적에 긍정적인 영향을 미칠 것으로 예상됩니다."
       ],
       "whyImportant": "디즈니의 콘텐츠 수익 증가는 미디어 산업의 변화와 경쟁 환경에 대한 중요한 지표가 됩니다.",
-      "impactSignals": [
-        "earnings"
-      ],
+      "impactSignals": ["earnings"],
       "dedupeKey": "디즈니-콘텐츠-수익-증가",
       "matchedTo": null,
       "sourceName": "Media Play News",
@@ -445,9 +394,7 @@
         "자세한 내용은 기사를 통해 확인할 수 있습니다."
       ],
       "whyImportant": "AI 주권 확보는 국가 경쟁력 강화와 데이터 보안에 중요한 영향을 미칩니다.",
-      "impactSignals": [
-        "policy"
-      ],
+      "impactSignals": ["policy"],
       "dedupeKey": "주권-지정학-규제-보안",
       "matchedTo": null,
       "sourceName": "열린정책뉴스",
@@ -468,9 +415,7 @@
         "각 국은 AI 기술 선점을 위해 경쟁하고 있습니다."
       ],
       "whyImportant": "AI 기술 규제 및 산업 전략은 장기적인 기술 주도권 경쟁에 중요한 영향을 미칩니다.",
-      "impactSignals": [
-        "policy"
-      ],
+      "impactSignals": ["policy"],
       "dedupeKey": "주도권-경쟁-규제-산업전략",
       "matchedTo": null,
       "sourceName": "브랜드경제신문",

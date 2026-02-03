@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 from ai_enricher import enrich_item_with_ai
-from config import TOP_LIMIT
+from config import TOP_LIMIT, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS
 from utils import clean_text, ensure_three_lines, estimate_read_time_seconds
 
 _LONG_IMPACT = {"policy", "sanctions"}
@@ -57,6 +57,59 @@ def _atomic_write_json(path: str, payload: dict) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     os.replace(tmp_path, path)
 
+def _load_dedupe_history(path: str) -> dict:
+    if not os.path.exists(path):
+        return {"version": 1, "by_date": {}}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return {"version": 1, "by_date": {}}
+    if not isinstance(data, dict):
+        return {"version": 1, "by_date": {}}
+    by_date = data.get("by_date")
+    if not isinstance(by_date, dict):
+        data["by_date"] = {}
+    if "version" not in data:
+        data["version"] = 1
+    return data
+
+def _update_dedupe_history(digest: dict, path: str, days: int) -> None:
+    date_str = digest.get("date")
+    if not date_str:
+        return
+    history = _load_dedupe_history(path)
+    by_date = history.get("by_date", {})
+    items_out: list[dict] = []
+    for it in digest.get("items", []) or []:
+        if not isinstance(it, dict):
+            continue
+        if it.get("status") not in {"published", "kept"}:
+            continue
+        summary = it.get("summary")
+        summary_text = " ".join(summary) if isinstance(summary, list) else str(summary or "")
+        items_out.append({
+            "id": it.get("id"),
+            "dedupeKey": it.get("dedupeKey"),
+            "title": it.get("title") or "",
+            "summary": summary_text,
+        })
+    by_date[date_str] = items_out
+    history["by_date"] = by_date
+
+    if days > 0:
+        try:
+            base = datetime.date.fromisoformat(date_str)
+        except Exception:
+            base = None
+        if base:
+            keep = {(base - datetime.timedelta(days=offset)).strftime("%Y-%m-%d") for offset in range(0, days + 1)}
+            for d in list(by_date.keys()):
+                if d not in keep:
+                    by_date.pop(d, None)
+
+    _atomic_write_json(path, history)
+
 def export_daily_digest_json(top_items: list[dict], output_path: str, config: dict) -> dict:
     """MVP 스키마로 변환해 JSON으로 저장."""
     now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
@@ -77,6 +130,9 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         ai_result = item.get("ai")
         if not isinstance(ai_result, dict) or not ai_result:
             ai_result = enrich_item_with_ai(item) or {}
+        title_ko = clean_text(ai_result.get("title_ko") or "")
+        if title_ko:
+            title = title_ko
         summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
         summary_lines = ensure_three_lines(ai_result.get("summary_lines") or [], summary_source)
         why_important = ai_result.get("why_important") or ""
@@ -137,4 +193,8 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         raise RuntimeError(f"digest 생성 실패: 유효한 {TOP_LIMIT}개 뉴스가 생성되지 않았고 기존 파일도 없습니다.")
 
     _atomic_write_json(output_path, digest)
+    try:
+        _update_dedupe_history(digest, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS)
+    except Exception:
+        pass
     return digest

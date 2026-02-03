@@ -14,6 +14,10 @@ from config import (
     AFFILIATE_AD_TEXT,
     AFFILIATE_LINK,
     OUTPUT_JSON,
+    DEDUPE_HISTORY_PATH,
+    DEDUPE_RECENT_DAYS,
+    SOURCE_WEIGHT_ENABLED,
+    SOURCE_WEIGHT_FACTOR,
     SELECTION_CRITERIA,
     EDITOR_NOTE,
     QUESTION_OF_THE_DAY,
@@ -189,6 +193,17 @@ def source_weight(source_name: str) -> float:
     if any(b in s for b in SOURCE_TIER_B): return 1.5
     return 0.3
 
+def _source_weight_boost(source_name: str | None) -> float:
+    if not SOURCE_WEIGHT_ENABLED:
+        return 0.0
+    if not source_name:
+        return 0.0
+    raw = source_weight(source_name)
+    # Normalize tier weight (0.3~3.0) to 0~1, then apply factor.
+    normalized = (raw - 0.3) / 2.7
+    normalized = max(0.0, min(1.0, normalized))
+    return normalized * SOURCE_WEIGHT_FACTOR
+
 def _compute_age_hours(entry) -> float | None:
     published_parsed = getattr(entry, "published_parsed", None)
     if not published_parsed:
@@ -216,7 +231,7 @@ def _passes_emotional_filter(category: str, text_all: str, impact_signals: list[
         return False
     return True
 
-def score_entry(impact_signals: list[str], read_time_sec: int) -> float:
+def score_entry(impact_signals: list[str], read_time_sec: int, source_name: str | None = None) -> float:
     score = 0.0
     if any(s in LONG_IMPACT_SIGNALS for s in impact_signals):
         score += 3.0
@@ -226,6 +241,7 @@ def score_entry(impact_signals: list[str], read_time_sec: int) -> float:
         score += 1.0
     if read_time_sec <= 20:
         score += 0.5
+    score += _source_weight_boost(source_name)
     return score
 
 def _is_eligible(item: dict) -> bool:
@@ -309,7 +325,7 @@ def _apply_ai_importance(items: list[dict]) -> None:
                 summary_raw = item.get("summaryRaw") or item.get("summary") or ""
                 read_time_sec = estimate_read_time_seconds(summary_raw)
                 item["readTimeSec"] = read_time_sec
-            item["score"] = score_entry(merged, read_time_sec)
+            item["score"] = score_entry(merged, read_time_sec, item.get("source"))
         importance = ai_result.get("importance_score")
         if not importance:
             continue
@@ -393,22 +409,49 @@ def _apply_dedupe_key_similarity(items: list[dict]) -> None:
             continue
         kept.append((ngrams, item))
 
-def _load_yesterday_dedupe_map(path: str) -> dict[str, str]:
-    if not os.path.exists(path):
+def _load_recent_dedupe_map(digest_path: str, history_path: str, days: int) -> dict[str, str]:
+    if days <= 0:
         return {}
+    now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+    target_dates = {(now_kst - datetime.timedelta(days=offset)).strftime("%Y-%m-%d") for offset in range(1, days + 1)}
+    dedupe_map: dict[str, str] = {}
+
+    if os.path.exists(history_path):
+        try:
+            with open(history_path, "r", encoding="utf-8") as f:
+                history = json.load(f)
+        except Exception:
+            history = {}
+        by_date = history.get("by_date") if isinstance(history, dict) else {}
+        if isinstance(by_date, dict):
+            for d in target_dates:
+                items = by_date.get(d) or []
+                for it in items:
+                    if not isinstance(it, dict):
+                        continue
+                    key = it.get("dedupeKey")
+                    item_id = it.get("id")
+                    if key and item_id:
+                        dedupe_map[key] = item_id
+                    if item_id:
+                        title = it.get("title") or ""
+                        summary_text = it.get("summary") or ""
+                        alt_key = get_dedupe_key(title, summary_text)
+                        if alt_key:
+                            dedupe_map[alt_key] = item_id
+            if dedupe_map:
+                return dedupe_map
+
+    if not os.path.exists(digest_path):
+        return dedupe_map
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(digest_path, "r", encoding="utf-8") as f:
             digest = json.load(f)
     except Exception:
-        return {}
-
-    now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
-    yesterday = (now_kst - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-    if digest.get("date") != yesterday:
-        return {}
-
+        return dedupe_map
+    if digest.get("date") not in target_dates:
+        return dedupe_map
     items = digest.get("items", [])
-    dedupe_map: dict[str, str] = {}
     for it in items:
         if not isinstance(it, dict):
             continue
@@ -433,7 +476,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
     seen_title_tokens: list[tuple[set[str], dict]] = []
     seen_items_by_dedupe_key = {}
     seen_dedupe_ngrams: list[tuple[set[str], dict]] = []
-    yesterday_dedupe_map = _load_yesterday_dedupe_map(OUTPUT_JSON)
+    yesterday_dedupe_map = _load_recent_dedupe_map(OUTPUT_JSON, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS)
 
     for source_idx, source in enumerate(sources, start=1):
         topic, url, feed_limit = source["topic"], source["url"], source.get("limit", 3)
@@ -511,7 +554,7 @@ def fetch_news_grouped_and_top(sources, top_limit=3):
                 continue
 
             read_time_sec = estimate_read_time_seconds(analysis_text)
-            score = score_entry(impact_signals, read_time_sec)
+            score = score_entry(impact_signals, read_time_sec, source_name)
             if score < MIN_SCORE:
                 continue
 

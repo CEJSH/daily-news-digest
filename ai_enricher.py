@@ -57,6 +57,7 @@ All fields are required.
 Output schema:
 
 {
+  "title_ko": string,
   "summary_lines": [string, string, string],
   "why_important": string,
   "dedupe_key": string,
@@ -70,6 +71,7 @@ Output schema:
 
 Field rules:
 
+- title_ko: If the title is in English, translate to natural Korean; if already Korean, keep as-is. No source/publisher names, no dates.
 - summary_lines: exactly 3 short, clear Korean sentences capturing the core facts. No fluff.
 - why_important: one concise Korean sentence explaining long-term significance (decision-relevant, not emotional).
 - dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no numbers, no stopwords, no source/publisher names.
@@ -392,6 +394,9 @@ def enrich_item_with_ai(item: dict) -> dict:
         return {}
 
     # 요약/중요도/라벨 결과를 정규화
+    title_ko = clean_text(payload.get("title_ko") or "")
+    if not title_ko:
+        title_ko = title
     summary_lines = ensure_three_lines(payload.get("summary_lines") or [], full_text or summary_raw)
     why_important = clean_text(payload.get("why_important") or "")
     if not why_important:
@@ -412,6 +417,7 @@ def enrich_item_with_ai(item: dict) -> dict:
     category_label = _normalize_category_label(payload.get("category_label") or payload.get("category"))
 
     return {
+        "title_ko": title_ko,
         "summary_lines": summary_lines,
         "why_important": why_important,
         "dedupe_key": dedupe_key,

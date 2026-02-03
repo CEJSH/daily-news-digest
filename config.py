@@ -101,6 +101,10 @@ AFFILIATE_AD_TEXT = "🔥 오늘만 50% 할인! 최고의 생산성 도구 구�
 AFFILIATE_LINK = "https://your-affiliate-link.com"
 OUTPUT_FILENAME = "daily_world_news.html"
 OUTPUT_JSON = "daily_digest.json"
+DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", "dedupe_history.json")
+DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "5"))
+SOURCE_WEIGHT_ENABLED = os.getenv("SOURCE_WEIGHT_ENABLED", "1") == "1"
+SOURCE_WEIGHT_FACTOR = float(os.getenv("SOURCE_WEIGHT_FACTOR", "0.6"))
 SELECTION_CRITERIA = "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외"
 EDITOR_NOTE = "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다."
 QUESTION_OF_THE_DAY = "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?"

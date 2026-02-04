@@ -1,0 +1,168 @@
+{
+  "date": "2026-02-04",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-02-04T18:10:12.632295+09:00",
+  "items": [
+    {
+      "id": "2026-02-04_1",
+      "date": "2026-02-04",
+      "category": "IT",
+      "title": "중국 로봇 기업들, 잇따른 투자 유치 성공…국영 펀드 대거 참여",
+      "summary": [
+        "중국 로봇 기업들이 국영 펀드와 대형 빅테크의 지원으로 수천억 원 단위의 투자를 잇달아 유치했습니다.",
+        "림엑스 다이나믹스는 2억 달러, X스퀘어로봇은 10억 위안의 투자를 받았으며, 링허우로봇과 오픈마인드인텔리전트로봇도 각각 1억 위안 이상의 투자금을 유치했습니다.",
+        "베이징 휴머노이드 로봇 혁신센터는 7억 위안 이상의 투자를 유치했으며, 빅테크와 국영 펀드들이 로봇 소프트웨어와 운영체제 투자로 관심을 돌리고 있다는 분석이 나옵니다."
+      ],
+      "whyImportant": "중국 로봇 산업의 소프트웨어 및 운영체제 분야 투자 확대는 장기적으로 기술 경쟁력 강화에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 올해 들어 로봇 산업 분야에서 총 85건, 33억 위안(약 6천911억원) 이상의 투자가 유치되었으며, 투자의 73%가 초기 단계 프로젝트에 집행되었습니다.",
+      "impactSignals": [
+        "capex"
+      ],
+      "dedupeKey": "중국-로봇-투자-국영펀드-빅테크",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mWFdMbUlFbTE5X3I5ZzlncF9PUkhCNGYwb1NBOW0wbzM5UmtRdFRzOGRaSHE4NWxqNV9jQlkzMFhXR0hncy1famxEOV9sRDNJNnlVSF9xem0tNlZYRDVaek1Kejh2Sm9rQ21faS1JZ2FZV2JK?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 01:49:27 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    },
+    {
+      "id": "2026-02-04_2",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "SK하이닉스 영업이익 전망 상향, 삼성전자 시총 1000조 돌파",
+      "summary": [
+        "SK하이닉스의 올해 영업이익이 169조 원을 넘어설 것이라는 전망이 나왔으며, 목표 주가도 125만 원으로 상향 조정되었습니다.",
+        "삼성전자는 국내 기업 최초로 시가총액 1000조 원을 돌파하며 코스피 지수 상승을 견인했습니다.",
+        "은행채 금리 상승으로 인해 주택담보대출 금리가 6%를 돌파하며 가계 부담이 증가하고 있습니다."
+      ],
+      "whyImportant": "반도체 업황 회복과 금리 변동이 기업 실적과 가계 경제에 미치는 영향을 파악하는 데 중요한 지표가 됩니다.",
+      "importanceRationale": "근거: SK하이닉스의 영업이익 전망치 169조 원과 삼성전자 시총 1000조 원 돌파는 반도체 산업의 변화를 보여주며, 주택담보대출 금리 6% 돌파는 가계 경제에 직접적인 영향을 미칩니다.",
+      "impactSignals": [
+        "earnings",
+        "market-demand"
+      ],
+      "dedupeKey": "sk하이닉스-영업이익-삼성전자-시총-금리",
+      "matchedTo": null,
+      "sourceName": "서울경제TV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GVVRFUnJtcVlpNEFsOWJzRnFMbXVjSmNUVHdDZ0tkLVhCVEVzVDlMTU5RbTlLNW9WR1NZQ2pfdVV4RWl2WElIWVdaS1Z4ZWd2TnlZOENpVG9ISzZzNG9jWU1Rb24?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 04:38:35 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    },
+    {
+      "id": "2026-02-04_3",
+      "date": "2026-02-04",
+      "category": "글로벌",
+      "title": "미국 일부 지역, 연방 요원의 민권 침해 면책 제한 입법 추진",
+      "summary": [
+        "미국에서 연방 이민단속요원의 총격으로 미국인 2명이 사망한 사건을 계기로, 연방 요원의 민권 침해 행위에 대해 민사 소송을 제기할 수 있도록 하는 입법이 일부 지역에서 추진되고 있습니다.",
+        "현재 미국 연방법은 주 정부 이하 지방 정부 소속 공무원의 시민 헌법적 권리 침해에 대해서만 민사 소송을 허용하고 있습니다.",
+        "일리노이주는 이미 관련 법률을 통과시켰으며, 콜로라도, 메릴랜드 등 여러 주에서 유사한 입법이 추진 중입니다."
+      ],
+      "whyImportant": "이번 입법 추진은 연방 공무원의 책임 범위 확대에 대한 논의를 촉발하고, 유사한 법안 도입을 위한 다른 주의 움직임에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 여러 주에서 연방 요원의 민권 침해에 대한 민사 소송을 허용하는 입법이 추진되고 있으며, 일리노이주는 이미 관련 법률을 통과시켰습니다.",
+      "impactSignals": [
+        "security",
+        "policy"
+      ],
+      "dedupeKey": "미국-연방요원-민권침해-민사소송",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mTHpQZGFkMzYySFQ4ZXZfSmtHeTE5RzRyMFU3bFNCa3R3aTZGVjRsQmNiSVFPWTMzY3RyLU5ZWEQyb19vYU5selo3dC1Ncl8zTVFJSlJmd0tadGQ2UnVvV0prT0FHS1lXd2dDcllsbmdfMjRl?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 15:18:03 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    },
+    {
+      "id": "2026-02-04_4",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "우원식 국회의장, 지방분권형 개헌 추진 의사 밝혀",
+      "summary": [
+        "우원식 국회의장은 김경수 지방시대위원장을 만나 지방분권형 개헌이 지방선거 전에 이루어지도록 노력하겠다고 밝혔습니다.",
+        "우 의장은 지역균형발전 정신을 헌법에 포함하는 것이 중요하다고 강조했습니다.",
+        "김 위원장은 국가 균형성장 정책이 차질 없이 추진되도록 국회 차원의 관심을 요청했습니다."
+      ],
+      "whyImportant": "지방분권형 개헌 논의는 향후 국가 균형 발전 정책 방향에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 우원식 국회의장이 지방분권형 개헌 추진 의사를 밝혔고, 김경수 위원장은 균형성장 정책에 대한 국회 관심을 요청하여 정책 논의의 필요성을 제기했습니다.",
+      "impactSignals": [
+        "policy"
+      ],
+      "dedupeKey": "지방분권-개헌-국회-균형성장",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4tMjBzc2ZadWY5RnhLNkF3ekVKak5wZm5sMjBoWEV4Z0ZqU1RvZGoxelA0R2xzWENvNjkwaEZBWkpZMlQ4ZlF4bjRiaTlhNmxWSjdjTExDeENJUHowQ1NPN1htLTJadEhLRHFiT3pfejBpNVlG?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 04:04:01 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    },
+    {
+      "id": "2026-02-04_5",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "GS리테일, 작년 영업이익 2,921억원으로 14% 증가",
+      "summary": [
+        "GS리테일은 연결 기준으로 작년 영업이익이 2,921억원으로 전년 대비 14.1% 증가했다고 공시했습니다.",
+        "매출은 3.3% 증가한 11조 9,574억원으로 사상 최대치를 기록했으며, 순이익은 246억원으로 151.4% 증가했습니다.",
+        "주력 사업인 편의점, 슈퍼마켓, 홈쇼핑의 고른 성장과 사업 구조 효율화가 매출 증가에 기여했습니다."
+      ],
+      "whyImportant": "GS리테일의 실적 증가는 유통업계의 사업 구조 효율화 및 주력 사업 성장이 중요하다는 것을 보여줍니다.",
+      "importanceRationale": "근거: GS리테일의 작년 영업이익이 2,921억원으로 14.1% 증가했으며, 매출은 11조 9,574억원으로 사상 최대를 기록하여 중요도 3으로 판단했습니다.",
+      "impactSignals": [
+        "earnings"
+      ],
+      "dedupeKey": "gs리테일-영업이익-매출-사업구조",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBYbXFYcjFoMEpJdkZSdjFUS3FScHlDOVJwZVNFelVHS1FEWDhpeWYwZW5MNVh1Q0E3akVPaFZfZHZGZHhTY3oyeUlUTXFXN0QtcXAxWktsS2o5V2I3cXdLdGI0R0c3ZzZkbzRoSWREbm8tOW5q?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 07:03:18 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    },
+    {
+      "id": "2026-02-04_6",
+      "date": "2026-02-04",
+      "category": "글로벌",
+      "title": "장동혁 \"대미 관세 협상 원점, 정부·여당 이제 와서 남 탓\"",
+      "summary": [
+        "국민의힘 장동혁 대표는 도널드 트럼프 미국 대통령이 한국산 제품에 대한 관세 인상을 시사한 것에 대해 정부와 여당이 입법을 미뤄놓고 남 탓을 한다고 비판했습니다.",
+        "장 대표는 관세 협상이 원점으로 돌아간 데에는 복합적인 원인이 있으며, 정부의 쿠팡, 유한킴벌리 사태 대응과 플랫폼 규제 추진 방식에 우려를 표했습니다.",
+        "또한, 대통령이 직접 나서서 이 문제를 해결해야 한다고 촉구했습니다."
+      ],
+      "whyImportant": "미국과의 관세 협상 문제는 한국 경제에 중대한 영향을 미칠 수 있는 사안입니다.",
+      "importanceRationale": "근거: 관세 협상이 원점으로 돌아갔다는 언급은 경제적 불확실성을 야기할 수 있으며, 대통령의 직접적인 해결 노력이 필요하다는 주장은 정책 결정에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        "policy",
+        "sanctions"
+      ],
+      "dedupeKey": "대미-관세-협상-원점-정부-여당",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4zdUppZG1tRjRwVnZSVmFocHNQWlZTc1YtVVVZU2FRR05lWDhQYlVnNV9leGM3czNxSkMyblRfZ1pocXVLUkNNcklfZXBtczVEbFUxLTdMeE9vMjE1NXBWYndvV2FmdVFGRmF0U29qYjFOdU9Z?oc=5",
+      "publishedAt": "Thu, 29 Jan 2026 00:36:03 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
+    }
+  ]
+}

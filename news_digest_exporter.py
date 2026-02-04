@@ -51,6 +51,7 @@ def _new_ai_service():
     return build_default_ai_service(
         logger=_log,
         score_entry_func=scorer.score_entry,
+        get_item_category_func=scorer.get_item_category,
         is_eligible_func=scorer.is_eligible,
     )
 

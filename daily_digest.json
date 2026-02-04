@@ -1,390 +1,234 @@
 {
-  "date": "2026-02-03",
+  "date": "2026-02-04",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-03T19:28:36.701457+09:00",
+  "lastUpdatedAt": "2026-02-04T12:00:50.432756+09:00",
   "items": [
     {
-      "id": "2026-02-03_1",
-      "date": "2026-02-03",
+      "id": "2026-02-04_1",
+      "date": "2026-02-04",
       "category": "IT",
-      "title": "정부, 고정밀지도 반출 판단 앞두고 미국 구글·애플 본사 방문",
+      "title": "아마존 AWS CEO, 궤도 데이터 센터는 '현실과 거리가 멀다'고 언급",
       "summary": [
-        "정부가 고정밀지도 반출에 대한 판단을 앞두고 미국 구글과 애플 본사를 방문했습니다.",
-        "[단독] 정부, 고정밀지도 반출 판단 앞두고 美 구글·애플 본사까지 찾았다"
+        "아마존 웹 서비스(AWS)의 CEO인 애덤 셀립스키는 궤도 데이터 센터에 대한 질문에 대해 현재로서는 실현 가능성이 낮다고 밝혔습니다.",
+        "그는 데이터 센터를 궤도에 배치하는 것은 '꽤 먼 미래'의 이야기라고 덧붙였습니다."
       ],
-      "whyImportant": "고정밀지도 데이터의 국외 반출 결정은 국내 지도 관련 산업과 안보에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 정부의 결정에 따라 국내 지도 관련 산업과 안보에 미치는 영향이 클 수 있기 때문입니다.",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "정부-고정밀지도-반출-구글-애플",
-      "matchedTo": null,
-      "sourceName": "전자신문",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8xYVpwMFR5azNlZ0xBZl9CSlBsQXMyeWM4YXh1bnE3VE9Xdmd3MFR2ZGtURVlrcTAwemdvMms5ZlpOSkpkN21aeW9MdjhsZw?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 06:20:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_2",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "카카오 LLM 오케스트레이션 평가 지표 논문, 세계 AI 학회 채택",
-      "summary": [
-        "카카오가 개발한 'LLM 오케스트레이션 평가 지표' 논문이 세계적인 AI 학회에서 채택되었습니다."
-      ],
-      "whyImportant": "AI 모델의 성능 평가 기준을 제시하여 기술 발전에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 카카오의 LLM 오케스트레이션 평가 지표 논문이 세계 AI 학회에서 채택된 사실은 해당 기술의 중요성을 시사합니다.",
-      "impactSignals": [
-        "stats"
-      ],
-      "dedupeKey": "카카오-llm-오케스트레이션-평가-지표",
-      "matchedTo": null,
-      "sourceName": "전자신문",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vTTV0UWNtSDVrUFcybGFQc1g1X284OXdBX0l0UnZmbEU2YTVoRFkyNEE1Y3A3Nm5CZVhXXzRCektUU09mYmpCUHBscWpLQQ?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 00:58:53 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_3",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "금·은 가격 하락에 골드·실버뱅킹 잔액 급감",
-      "summary": [
-        "금과 은 가격의 폭락으로 인해 골드뱅킹 및 실버뱅킹 잔액이 급격히 감소했습니다.",
-        "투자자들에게 신중한 투자가 권고되고 있습니다."
-      ],
-      "whyImportant": "귀금속 시장의 변동성은 투자 전략에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금과 은 가격 하락으로 골드뱅킹 및 실버뱅킹 잔액이 급감했다는 점에서 시장 변동성이 투자에 미치는 영향을 보여줍니다.",
+      "whyImportant": "궤도 데이터 센터는 막대한 투자와 기술적 난제를 수반하는 미래 기술로, AWS와 같은 주요 기업의 판단은 업계 방향성에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: AWS CEO의 발언은 궤도 데이터 센터 구축에 대한 단기적인 투자가 이루어지기 어렵다는 점을 시사합니다.",
       "impactSignals": [
         "capex"
       ],
-      "dedupeKey": "가격-폭락-골드뱅킹-실버뱅킹",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1JbDNzRjdsWWZVY1B3aUVoTjZvbFBoVi0ycGE3dlFTTG1jSnVVVERDeUlnSHZQd1FfeDhvSzA2LU1sYWxMRjAtWUZpTGNXOUpNMU83bWRSeTVQbWdGTDd0S1FKWFBwWHczMV80Vmw4S296VTJY?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 02:07:01 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_4",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "유럽 내 테슬라 등록, 1월에 회복 조짐 보임",
-      "summary": [
-        "유럽 내 테슬라 차량 등록 대수가 1월에 회복 조짐을 보이고 있습니다."
-      ],
-      "whyImportant": "테슬라의 유럽 시장에서의 회복은 전기차 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 유럽 내 테슬라 차량 등록 대수 회복은 시장 수요 변화를 나타내는 지표가 될 수 있습니다.",
-      "impactSignals": [
-        "market-demand"
-      ],
-      "dedupeKey": "유럽-테슬라-등록-회복",
+      "dedupeKey": "아마존-aws-궤도데이터센터-미래기술",
       "matchedTo": null,
       "sourceName": "Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd0Z0OUc3N0ZVd0JRTGJIUmxqZjRUbkhMdkkydWt0V2xIcnd5X3BvR1ptTlN1UHp3OEJPOTFKVHpzNjUzUzFSTE0yQ2ZFdGFXX1VnVjNyeHVibjB4c1N3MEg0amVuMmJNb1QxelZVeWtncnh0R2lZUVFid0ttMnYxR0tNdzlwenhTTEFWcVY1ZGxBa19PVlI5UnlOZE9QSllMV1lIQ0dxMVVlcmR2MUFSUHIwUVhGR3VObWg1Y0s3blhtczVScDVlZ1lFdlJMMURNYVE?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 11:42:48 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWDAtVG5LdER1Z3pDelZSQlVzTFVHS21WOTRmR0daTkQydjBETEJPMzRkTTdLMWpPbWJyR3FoUThLTWgxZzFLLVp3ZmFXMXJGajh3MW40OFlMc0NVVW5WQ0RuZUtOLVptb2J6MGNuM1hBXzNNX3BKTi0wOENMQkRhSkpDYmxGZjBxMUQyS254a3dMb2tKcXE4aTdUTDh5MjJYRk1NeHpxNG1uS1BwaDVscmlDcXhCSnVUbEp4ZGo5NjU?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 22:31:30 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
     },
     {
-      "id": "2026-02-03_5",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "김정호 KAIST 교수, 2038년 HBF가 HBM 수요 초과 전망",
+      "id": "2026-02-04_2",
+      "date": "2026-02-04",
+      "category": "글로벌",
+      "title": "연방 요원의 민권 침해 면책, 미국 일부 지역에서 입법 추진",
       "summary": [
-        "김정호 KAIST 교수는 HBF(High Bandwidth Fabric)가 2038년에 HBM(High Bandwidth Memory) 수요를 넘어설 것이라고 예측했습니다.",
-        "HBF는 고대역폭을 요구하는 데이터 처리에서 HBM의 대안으로 부상할 수 있습니다."
+        "미국 일부 지역에서 연방 요원의 민권 침해에 대한 면책을 제한하는 입법이 추진되고 있습니다.",
+        "이는 연방 요원의 책임 강화와 민권 보호를 목표로 합니다."
       ],
-      "whyImportant": "HBF 기술 발전은 미래 고성능 컴퓨팅 환경에서 메모리 솔루션의 다양성을 확보하는 데 기여할 수 있습니다.",
-      "importanceRationale": "근거: 2038년 HBF 수요가 HBM을 넘어설 것이라는 예측은 장기적인 기술 발전 추세를 보여줍니다.",
+      "whyImportant": "이번 입법 추진은 연방 요원의 책임 범위와 민권 보호 간의 균형에 대한 중요한 논의를 촉발할 수 있습니다.",
+      "importanceRationale": "근거: 미국 일부 지역에서 연방 요원의 민권 침해 면책 제한 입법이 추진됨에 따라, 향후 유사한 입법 시도가 전국적으로 확산될 가능성이 있습니다.",
       "impactSignals": [
-        "market-demand"
-      ],
-      "dedupeKey": "kaist-김정호-교수-hbf-hbm-수요",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNVGEyQ1JFSG1tckc0R3Z6Tk5uRUVLTlBHTV9RVkZyeWhldEdTNlVEZjU1bGR1Qmt4VXNvTUpYTEoyU0E3cVJmYUlfbklLeDFPbnc3cHJ3dllld9IBVEFVX3lxTFBBcnVfczh4eGt5VGIwa1lSV3I5NjNZMEdobUtTS1l6S1p4N04wVGUtNWVKeHA1VVdmTjFXTzg5a2VhRkhQVTVnWjFDVnZmQWRUX2x5dA?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 07:07:43 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_6",
-      "date": "2026-02-03",
-      "category": "IT",
-      "title": "팀벨, AI 회의록 솔루션 '팀블로' 저작권 등록…공공 보안 시장 공략",
-      "summary": [
-        "팀벨은 AI 회의록 솔루션 '팀블로'의 저작권을 등록했습니다.",
-        "이를 통해 공공 보안 시장을 공략할 계획입니다."
-      ],
-      "whyImportant": "AI 회의록 솔루션의 저작권 등록은 기술적 경쟁력 확보 및 시장 확장에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 팀벨이 AI 회의록 솔루션 '팀블로'의 저작권을 등록하고 공공 보안 시장을 공략한다는 내용으로, 단일 기업의 움직임입니다.",
-      "impactSignals": [
-        "market-demand"
-      ],
-      "dedupeKey": "팀벨-ai회의록-솔루션-저작권-등록",
-      "matchedTo": null,
-      "sourceName": "서울경제TV",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA0SF9JNkRqZUJXOURqVUlVY1F0ZFdodnpWMXppQzZJVzhrbXg0bVUtUVZNbWpOd1o3dHUwRHQzR214OGpyaEdkTy1mQW53RF9CXy1tSWdJWENOOG1pdDRjZ0U1M1c?oc=5",
-      "publishedAt": "Mon, 02 Feb 2026 04:54:33 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_7",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "미국 정부의 메디케어 정책 발표에 보험주 급락",
-      "summary": [
-        "미국 정부의 메디케어 정책 발표로 인해 보험주가 급락했습니다.",
-        "S&P500 지수는 신고가를 기록했습니다."
-      ],
-      "whyImportant": "정부 정책 변화는 보험 산업에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 정부의 메디케어 정책이 보험주에 직접적인 영향을 미치고 S&P500 지수에도 영향을 줄 수 있기 때문입니다.",
-      "impactSignals": [
+        "security",
         "policy"
       ],
-      "dedupeKey": "미국-정부-메디케어-보험주-정책",
-      "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jcmQxVEJrMTN1bXpLYnItMXdoeW5zZUFla3NITTRiNnpIQnE3S1dmMXhOMkRWd3lhWjcteDRTeDNVZWg5Z3lncjJDQm5kazJjbXc?oc=5",
-      "publishedAt": "Tue, 27 Jan 2026 22:44:58 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_8",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "조현 외교부 1차관 방미, 국회 절차 설명 및 양해 구할 예정",
-      "summary": [
-        "조현 외교부 1차관이 미국을 방문하여 우리 국회의 관련 절차를 설명하고 양해를 구할 것이라고 밝혔습니다."
-      ],
-      "whyImportant": "이번 방미는 외교적 사안에 대한 국회와의 소통 및 협력을 강화하는 데 중요합니다.",
-      "importanceRationale": "근거: 조현 외교부 1차관의 방미 목적이 국회 절차에 대한 설명과 양해를 구하는 것이므로 정책 결정 과정에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "조현-방미-국회절차-외교부",
+      "dedupeKey": "미국-연방요원-민권침해-면책",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFeU9haUZTR1NoUzA1dEFWYWNYcjFRd21TWmZoQXptUjBMNHdzZUU4aE5GWHVXTk1STC1TOUo4bmpqWEJHUVhrd3VqemlTMWtlQ1NRR0t3UkNIZkRzRTlPdUZRZDEzRFI3c1JBcFgxTGNCVmRU?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 09:22:41 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mTHpQZGFkMzYySFQ4ZXZfSmtHeTE5RzRyMFU3bFNCa3R3aTZGVjRsQmNiSVFPWTMzY3RyLU5ZWEQyb19vYU5selo3dC1Ncl8zTVFJSlJmd0tadGQ2UnVvV0prT0FHS1lXd2dDcllsbmdfMjRl?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 15:18:03 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
     },
     {
-      "id": "2026-02-03_9",
-      "date": "2026-02-03",
+      "id": "2026-02-04_3",
+      "date": "2026-02-04",
       "category": "경제",
-      "title": "자사주 의무 소각법 국회 법사위 상정",
+      "title": "기관투자가 스튜어드십코드 이행 감독 미흡: 금융위의 10년 직무유기 논란",
       "summary": [
-        "자사주 의무 소각법이 국회 법제사법위원회 소위원회에 상정되었습니다."
+        "기사에서는 기관투자가의 스튜어드십코드 이행에 대한 금융위원회의 감독 소홀 문제를 지적하고 있습니다.",
+        "금융위가 10년 동안 스튜어드십코드 이행을 제대로 감독하지 않았다는 비판이 제기되었습니다."
       ],
-      "whyImportant": "자사주 소각 의무화는 기업의 자본 정책 및 주주 가치에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 법안이 국회 법사위에 상정된 것은 정책 결정 과정에서 중요한 단계이므로 중요도 점수를 3으로 설정합니다.",
+      "whyImportant": "기관투자가의 스튜어드십코드 이행 감독 문제는 자본시장의 건전성과 투자자 보호에 중요한 영향을 미칩니다.",
+      "importanceRationale": "근거: 금융위원회의 10년 간의 감독 소홀은 기관 투자자의 책임 있는 투자 활동을 저해하고, 장기적으로 자본 시장의 신뢰도에 영향을 미칠 수 있습니다.",
       "impactSignals": [
-        "policy"
+        "capex"
       ],
-      "dedupeKey": "자사주-의무소각법-국회",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9CSWl1ME9sR3pVX0tDQWx6ekpRYmM1VWtrYXNMSFlwLVNPcWU5SU9lQTFYMWkxY1d4OWtZazdSVF9PSVBHbFk5ZnFpZUExa0VLSnF5bUxrTjU2Z9IBVEFVX3lxTE96S05DUXo1SEl1ai1MS2ZmcFY1cG1CbXVGRmx0TlBHcnRRbExvTXVxM3l5SldJeVNWM1dNTFp1OHNLdWtrZGVpcGcyeFQ1TVM2Q05SSA?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 08:27:25 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_10",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "경찰, 쿠팡 박대준 전 대표 소환…'국회 위증' 혐의",
-      "summary": [
-        "경찰이 쿠팡의 박대준 전 대표를 국회 위증 혐의로 소환 조사했습니다."
-      ],
-      "whyImportant": "국회 위증 혐의 조사는 기업 경영진의 책임과 관련된 중요한 사안입니다.",
-      "importanceRationale": "근거: 박대준 전 대표의 국회 위증 혐의에 대한 경찰 소환 조사는 정책 결정 과정에서의 진실성 문제를 제기합니다.",
-      "impactSignals": [
-        "policy"
-      ],
-      "dedupeKey": "경찰-쿠팡-박대준-국회-위증",
+      "dedupeKey": "기관투자자-스튜어드십코드-이행감독-금융위",
       "matchedTo": null,
       "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFB1OFgxTmd0QkZXOHdFdmFMYnJxU0o3eFVaQUhoLVpZT0R2c3BrczNUN3dKSnc4NDRGc1JEYldrRTRpaTFZVUtsd0xMV3lWbHlvZkxJZUFzcUQzYkpmWVdJcDYxQTlqazlFTlNNR2tUc3o1QQ?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 05:17:00 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1WQU9WUTE1MG5Db0VIWEhralV2QzBoS04tNzZYUy1LY2trWndBWXRpY0NDOEpXRXVvQkhSVjFGVjZMRjdKYm5FZ3RiX3hPX0RiMWFqTV9xNTNoc2F0NWI2ZkV2OHowdWFQa0xob1Bvc0RBdw?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 23:12:00 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
     },
     {
-      "id": "2026-02-03_11",
-      "date": "2026-02-03",
+      "id": "2026-02-04_4",
+      "date": "2026-02-04",
       "category": "경제",
-      "title": "중국 태양광 발전 설비 규모, 올해 석탄 추월 전망",
+      "title": "에이피알, 매출 1조5천억원·영업이익 3천600억원으로 '최대' 기록",
       "summary": [
-        "중국의 태양광 발전 설비 규모가 올해 석탄 발전 설비 규모를 넘어설 것으로 예상됩니다."
+        "에이피알은 매출 1조 5천억원과 영업이익 3천 600억원으로 최대 실적을 달성했습니다."
       ],
-      "whyImportant": "중국의 에너지원 전환 방향을 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 중국의 태양광 발전 설비 규모가 석탄 발전 설비 규모를 추월할 것이라는 전망은 에너지 시장의 변화를 시사합니다.",
-      "impactSignals": [
-        "capex"
-      ],
-      "dedupeKey": "중국-태양광-발전설비-석탄",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5JQXo2Q3VTS1BhYXpYSnpMNWRKQTd4ckVnb29WWU5rMzJDVkdEZnFtZU05VUVEcFRmd3VIR2o0THB2LUNZUEdaeDlsazBXM0kxajBUMXRZMUk3SzdkOEhrTzY1U2xHMFNGdncycWR0Z1QyeVhL?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 07:02:23 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_12",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "보난자랩, 프리A 투자 유치…법인 가상자산 데이터 인프라 확장 가속화",
-      "summary": [
-        "보난자랩이 프리A 투자를 유치하여 법인 가상자산 데이터 인프라 확장을 가속화할 예정입니다."
-      ],
-      "whyImportant": "이번 투자는 법인 가상자산 데이터 인프라 시장의 성장에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 프리A 투자 유치를 통해 인프라 확장을 가속화한다는 내용이 있습니다.",
-      "impactSignals": [
-        "capex"
-      ],
-      "dedupeKey": "보난자랩-가상자산-데이터인프라-투자",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aNExoS3U0M29lZkRSV2RTTl9PSDRQOEU5ZHdSRWp1Mk9kWnAwR1M2cDV1M0ItSExoVkZZNklMSS1HeGstdUdXMi1nUGRReGtybzU5T01xOW15d9IBVEFVX3lxTE9JeHYwbl96TkdkdXZXWkFEZTZnM2NXVU9jazNJUnJQV3RhSGlQMGtkNzhCWTVNbG5uSVZkazRuNnVKREZkeWFMbjB0WGxBTnl1UFZfMQ?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 01:00:08 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3
-    },
-    {
-      "id": "2026-02-03_13",
-      "date": "2026-02-03",
-      "category": "경제",
-      "title": "하나투어, 작년 영업이익 '최대' 기록",
-      "summary": [
-        "하나투어가 작년 영업이익 576억 원으로 최대 실적을 기록했습니다."
-      ],
-      "whyImportant": "하나투어의 실적은 여행 산업의 회복세를 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 하나투어의 영업이익이 576억 원으로 최대 실적을 기록했다는 점에서 중요도 3으로 판단됩니다.",
+      "whyImportant": "기업의 실적 증가는 투자 및 고용 확대로 이어져 경제에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 에이피알의 최대 매출 및 영업이익 달성은 기업 성과를 나타내는 지표이며, 향후 투자 결정에 영향을 줄 수 있습니다.",
       "impactSignals": [
         "earnings"
       ],
-      "dedupeKey": "하나투어-영업이익-최대실적",
+      "dedupeKey": "에이피알-최대-매출-영업이익",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBITm5KVktoM3QtSTdsU0ZyWWQ0akVtN3EzUV8yZWkzT1hUYnR5NkZjSm1BejhiMjRHRmZaS2FlQmVJU2tsWFdqVkQ5SUczYnpURFpZTTl6LW1Nenh2dmtYQ2MzSUpVcWZXTV9BUHJnMWpVOG5S?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 07:14:26 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90bldXUGdZRDluZUlIMUExRzNrZ3d5RU5EYTlLdm8tSFBWMVhDNVhiZWRocXMta3NwQm9senR4X3BrQzdUOUp4ZHQ2U1MybHpLWVZBX2hVbHoyajhkajlyVTBuOFQyMHBVMW9UVEJIaFdEdGtC?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 01:08:47 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 3,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족"
     },
     {
-      "id": "2026-02-03_14",
-      "date": "2026-02-03",
+      "id": "2026-02-04_5",
+      "date": "2026-02-04",
       "category": "경제",
-      "title": "롯데에너지머티리얼즈, AI 소재로 실적 개선 추진",
+      "title": "DL이앤씨, 'RBM 공법' 활용한 터널 굴착 실적 확보",
       "summary": [
-        "롯데에너지머티리얼즈가 AI 소재를 통해 실적 턴어라운드를 시동합니다.",
-        "이는 질적 성장을 목표로 합니다."
+        "DL이앤씨는 RBM(Roof-bolt Method) 공법을 활용하여 터널 굴착 실적을 확보했다고 밝혔습니다."
       ],
-      "whyImportant": "AI 소재 개발 및 적용은 기업의 장기적인 성장 동력을 확보하는 데 중요합니다.",
-      "importanceRationale": "근거: 롯데에너지머티리얼즈의 AI 소재 개발은 기업의 실적 개선을 목표로 하고 있어 중요도 3으로 판단됩니다.",
+      "whyImportant": "새로운 공법의 실적 확보는 향후 유사 프로젝트 수주에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: DL이앤씨가 새로운 RBM 공법을 활용한 터널 굴착 실적을 확보했다는 사실은 향후 프로젝트 수주에 영향을 줄 수 있습니다.",
       "impactSignals": [
         "earnings"
       ],
-      "dedupeKey": "롯데에너지머티리얼즈-ai소재-실적개선",
+      "dedupeKey": "dl이앤씨-rbm공법-터널굴착",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE13bjhaNllVM2FRY0l6M3dRaVFIUU5tUDNDb1llSWlYMFY4aWZacnE3SkctU1RjQkNWd2toMnVCOHZlc1RpQ29rLWtjVVU1WC10M2FqdE9XOURoLVh0dEM0LUlSamxERktMZDlDTGd1MlMxUjdR?oc=5",
-      "publishedAt": "Tue, 03 Feb 2026 07:25:34 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8zMHJmTmowaEd5bzJaMl9JRXkwcHhWNW9yTnFGNEllOWpQSldUTWhDcEJmSXNRd1V1WnktMzUzMHA3LXhmYW42OGk1VGZ6QldnMTFBd040RGxDY1lSNThfTDRJTDVPc3ZQdmtGZ1RzLUNNRVFp?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 01:20:53 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 3,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족"
     },
     {
-      "id": "2026-02-03_15",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "한미 통상장관, 관세 문제 결론 미도출",
+      "id": "2026-02-04_6",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "대우건설, 가덕도신공항 공사 문제없다…압도적 경험·실적 보유",
       "summary": [
-        "한미 통상장관 회담에서 관세 문제에 대한 결론이 도출되지 않았습니다.",
-        "양측은 추가 회담을 가질 예정입니다."
+        "대우건설은 가덕도신공항 공사에 대한 자신감을 표명하며, 압도적인 경험과 실적을 보유하고 있다고 밝혔습니다.",
+        "대우건설은 과거 인천국제공항, 김포국제공항, 양양국제공항 등 다수의 공항 건설에 참여한 경험이 있습니다."
       ],
-      "whyImportant": "미국과의 무역 관계 및 통상 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 관세 문제는 여러 산업에 걸쳐 영향을 미치므로, 협상 결과에 따라 경제적 파급력이 있을 수 있습니다. 하지만 구체적인 내용이 없어 중요도 점수를 낮게 평가합니다.",
+      "whyImportant": "가덕도신공항 건설은 향후 국내 건설 산업에 중요한 영향을 미칠 수 있는 대규모 프로젝트입니다.",
+      "importanceRationale": "근거: 대우건설의 공항 건설 경험 언급은 향후 유사 프로젝트 수주 경쟁에 영향을 줄 수 있어 중요도 3으로 판단됩니다.",
       "impactSignals": [
-        "sanctions"
+        "earnings"
       ],
-      "dedupeKey": "한미-통상장관-관세",
+      "dedupeKey": "대우건설-가덕도신공항-공사-경험-실적",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xZ2JKbEtmNy1nTkMtZ0RjT0s5bHZtQ0xIWFR5Q3NLelM4OUFZLUhubEkzTXJ4ejNMTnJWTzVPM3ZmeWtqc212Zms4aVhqWklUTzhPcE0wemV1ZWVFclJJMjJWOEM4aWlCbzEzY0ZsZE90eWxZ?oc=5",
-      "publishedAt": "Fri, 30 Jan 2026 11:45:48 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9BVlNDeEpoU01MdElWV2FHZFQ4YmZmeFRGSV9CZmdIUENKZGhwTHI2VEtUbThiTzJhVzhQeUF5ZHlEWHFpVHM4WXEtVHJhenpCMDRpY2stYWZ0akxVT2prMk03WW9ZUjZ6ZEpGdk9PWlFvdnla?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 00:51:52 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 2
+      "importance": 3,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족"
     },
     {
-      "id": "2026-02-03_16",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "트럼프, 한국과의 해결책 마련 언급",
+      "id": "2026-02-04_7",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "현대차·기아, 미국 판매 연초부터 호조…역대 1월 최고 실적",
       "summary": [
-        "트럼프 대통령이 한국과의 해결책 마련을 언급하며 관세 협상 재개 가능성을 시사했습니다."
+        "현대자동차와 기아가 미국 시장에서 연초부터 판매 호조를 보이며 역대 1월 최고 실적을 기록했습니다.",
+        "구체적인 판매량이나 실적 수치는 기사에 명시되지 않았습니다."
       ],
-      "whyImportant": "미국과 한국 간의 무역 관계 변화 가능성을 보여주는 발언입니다.",
-      "importanceRationale": "근거: 트럼프 대통령의 발언은 향후 양국 간 무역 협상에 영향을 미칠 수 있습니다.",
+      "whyImportant": "미국 시장에서의 판매 호조는 현대차와 기아의 글로벌 실적에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 기사에서 구체적인 판매량이나 실적 수치가 제공되지 않아 중요도 평가는 제한적입니다.",
       "impactSignals": [
-        "sanctions"
+        "earnings",
+        "market-demand"
       ],
-      "dedupeKey": "트럼프-한국-무역협상",
+      "dedupeKey": "현대차-기아-미국-판매-호조",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50bTBKakpYbExISDVRLVQ4b1lqZHZ2YmxvTjdUTEFmNmNGcGFpYnZsZVNQbnZnMldVVUN5MkZqT2dfdG1JNUFsb3drQl8zb0U2ZGU0TEc2ckFhZ9IBVEFVX3lxTE1sVW8zbkc5dzV6MWpaX0JmUC13V0Yyd3c2SFNiU01TRmo2Zm53T1FqXzd5b2pPOU9SWDR3WjFoWVFwdEwxYzNoekt1NlNNTF9nMEpGbw?oc=5",
-      "publishedAt": "Wed, 28 Jan 2026 01:25:18 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1NS3lVRFk2V3hNUFl4eGV2M1pXUE4tamxpWndvbmlYQjBHc0RoeWNJU080RDNvWFVrS1JvRXAxb0IwajdUZkJocnpGWDk1VXYwM3diVWZPVDhubklzVzdISVEwSHFMQnd6d201aUxLUTVkYmlO?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 21:18:45 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 2
+      "importance": 2,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족"
     },
     {
-      "id": "2026-02-03_17",
-      "date": "2026-02-03",
-      "category": "글로벌",
-      "title": "미국, 관세 인상 절차 돌입",
+      "id": "2026-02-04_8",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "암젠, 4분기 실적 예상치 상회, 체중 감량 옵션 필요성 강조",
       "summary": [
-        "김정관 무역협회 부회장이 미국의 관세 인상 관련 오해를 풀었다고 밝혔으나, 미국은 관세 인상 절차에 돌입했습니다."
+        "암젠은 4분기 실적이 월가 예상치를 상회했다고 발표했습니다.",
+        "암젠은 환자들이 체중 감량 옵션을 필요로 한다고 밝혔습니다."
       ],
-      "whyImportant": "미국의 관세 인상 절차는 무역 환경에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국의 관세 인상 절차는 여러 기업과 산업 전반에 영향을 미칠 수 있습니다.",
+      "whyImportant": "체중 감량 치료제 시장의 성장 가능성을 시사하며, 관련 기업들의 전략적 의사 결정에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 암젠의 실적 발표는 체중 감량 옵션에 대한 수요를 강조하며, 이는 관련 산업 전반에 걸쳐 중요한 시사점을 제공합니다.",
       "impactSignals": [
-        "sanctions"
+        "earnings"
       ],
-      "dedupeKey": "미국-관세-인상-절차",
+      "dedupeKey": "암젠-체중감량",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zT2V1OGZFRk0wbFZSVUFYOVItN1hOUjFHSkUwOXhZOUpxbHEyWlU4RzBNVy1xVU5SVzNfVTBnT09ySUVmXzl1NnVmbExtRFBFalJaMFJCS3hhUdIBVEFVX3lxTE1nNGlPQVVQSUlsVXBKQnJUMjl0TC1hOGtEbmpFLXlsWjlTWFBHRGN4bVo4UGlJQ3BJcHFVb0JuOFY1dGxsMmtKSk1NMnF5QmtaYVBYQw?oc=5",
-      "publishedAt": "Sun, 01 Feb 2026 08:55:38 GMT",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSEhLZkpIbUJyQVJwbnZ5MEVNUkF2MDNUYXgwcVpHcEFFM1N6eFJFa1Q4aFAtdGNPczNGbk82N0Q0c2xlMFhwN0ItN3pMTHBzTkJCbVJPX3F2QnIxeVRjakVQalNmNDBzTU9hN1VrSmlEamU0a1dvYkQwcXhVNmVxaDZKa3J0VjhQNHVUWno2a1k5eEVkX1ZycFZDalUwTG9hVVFsbVlITldNdjNCVFlaMk1vdTVZZGJlQ2otZ1RDdkEtdkpCSlZRY2VqQkV0VGpaYkNILXk0dWM2VUJCdnc?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 21:05:09 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3
+      "importance": 3,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족"
+    },
+    {
+      "id": "2026-02-04_9",
+      "date": "2026-02-04",
+      "category": "경제",
+      "title": "치폴레, 소비자의 재량적 지출 감소로 연간 매출 부진 및 마진 압박 전망",
+      "summary": [
+        "치폴레는 소비자들이 재량적 지출을 줄임에 따라 연간 매출이 부진하고 마진 압박이 있을 것으로 예상합니다.",
+        "이는 소비 심리 위축에 따른 외식 소비 감소를 반영하는 것으로 보입니다."
+      ],
+      "whyImportant": "소비 심리 변화가 외식 산업 전반에 미치는 영향을 파악하는 데 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 소비자의 재량적 지출 감소가 기업의 매출 및 마진에 직접적인 영향을 미치는 것을 보여주므로 중요도 3으로 판단됩니다.",
+      "impactSignals": [
+        "market-demand"
+      ],
+      "dedupeKey": "치폴레-매출-마진-소비자지출",
+      "matchedTo": null,
+      "sourceName": "Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWE9fY3RvMERaN2gyLUg2RUNXZjJ2a19INGJ6R2VrRXlWNnJLeDJPSVBrUDN1Rjl0dFlwZVBoWHV4M0I5WURjYkc0TjQ3MkM5a2o3S3FYaDdtbHZuTFZfSi1BVXhFbHNmeDQ1NUpwWFlXMEI4MHdrM3A1R25OaERfSEtzSkNPWUctM1RZQmJn?oc=5",
+      "publishedAt": "Tue, 03 Feb 2026 21:18:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사"
     }
   ]
 }

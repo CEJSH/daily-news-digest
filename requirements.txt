@@ -3,3 +3,6 @@ Jinja2
 python-dotenv
 requests
 beautifulsoup4
+newspaper3k
+lxml_html_clean
+trafilatura

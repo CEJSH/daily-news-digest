@@ -1,6 +1,8 @@
+import ast
 import json
 import os
 import re
+import time
 from typing import Any
 
 import requests
@@ -20,9 +22,28 @@ if load_dotenv:
 GEMINI_API_BASE = os.getenv("GEMINI_API_BASE", "https://generativelanguage.googleapis.com/v1beta")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
 GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-001")
+GEMINI_TIMEOUT_SEC = int(os.getenv("GEMINI_TIMEOUT_SEC", "60"))
+GEMINI_MAX_RETRIES = int(os.getenv("GEMINI_MAX_RETRIES", "2"))
+GEMINI_RETRY_BACKOFF_SEC = float(os.getenv("GEMINI_RETRY_BACKOFF_SEC", "1.5"))
 AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "4000"))
 AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
+
+_CONTROL_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+_PNG_SIGNS = ("PNG", "IHDR", "IDAT", "IEND")  # 단순 바이너리 탐지
+
+def sanitize_text(s: str) -> str:
+    """모델 입력 전에 바이너리/깨진 텍스트를 정화."""
+    if not s:
+        return ""
+    s = _CONTROL_RE.sub(" ", s)
+    if s.count("�") / max(1, len(s)) > 0.01:
+        return ""
+    upper = s.upper()
+    if any(sign in upper for sign in _PNG_SIGNS):
+        return ""
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
 _ALLOWED_IMPACT_SIGNALS = {
     "policy",
@@ -262,16 +283,64 @@ def _parse_json(text: str) -> dict[str, Any] | None:
     # 문자열에서 JSON 객체를 파싱(직접 파싱 실패 시 중괄호 블록 탐색)
     if not text:
         return None
-    try:
-        return json.loads(text)
-    except Exception:
-        pass
+    raw = text.strip()
+    raw = re.sub(r"```(?:json)?", "", raw, flags=re.IGNORECASE).replace("```", "").strip()
+
+    def _try_load_json(payload: str) -> dict[str, Any] | None:
+        try:
+            obj = json.loads(payload)
+            return obj if isinstance(obj, dict) else None
+        except Exception:
+            return None
+
+    def _strip_trailing_commas(payload: str) -> str:
+        return re.sub(r",\s*([}\]])", r"\1", payload)
+
+    def _extract_json_block(payload: str) -> str | None:
+        start = payload.find("{")
+        if start == -1:
+            return None
+        depth = 0
+        for i in range(start, len(payload)):
+            ch = payload[i]
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return payload[start : i + 1]
+        return payload[start:] if depth > 0 else None
+
+    parsed = _try_load_json(raw)
+    if parsed is not None:
+        return parsed
+
+    candidate = _extract_json_block(raw)
+    if candidate:
+        parsed = _try_load_json(candidate)
+        if parsed is not None:
+            return parsed
+        cleaned = _strip_trailing_commas(candidate)
+        parsed = _try_load_json(cleaned)
+        if parsed is not None:
+            return parsed
+        try:
+            obj = ast.literal_eval(cleaned)
+            return obj if isinstance(obj, dict) else None
+        except Exception:
+            return None
+
     # 모델이 여분 텍스트를 섞을 때 대비한 백업 파서
-    match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+    match = re.search(r"\{.*\}", raw, flags=re.DOTALL)
     if not match:
         return None
+    cleaned = _strip_trailing_commas(match.group(0))
+    parsed = _try_load_json(cleaned)
+    if parsed is not None:
+        return parsed
     try:
-        return json.loads(match.group(0))
+        obj = ast.literal_eval(cleaned)
+        return obj if isinstance(obj, dict) else None
     except Exception:
         return None
 
@@ -343,7 +412,8 @@ def _normalize_importance_score(value: Any, impact_signals: list[str]) -> int:
         return _fallback_importance_score(impact_signals)
     return max(1, min(5, score))
 
-def _pick_ai_input_text(full_text: str) -> str:
+def _pick_ai_input_text(summary_raw: str, full_text: str) -> str:
+    # 본문만 사용. 없으면 빈 문자열 반환.
     text = full_text or ""
     if len(text) > AI_INPUT_MAX_CHARS:
         text = text[:AI_INPUT_MAX_CHARS]
@@ -635,39 +705,76 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
             "responseMimeType": "application/json",
         },
     }
-    try:
-        resp = requests.post(
-            url,
-            headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
-            json=request_payload,
-            timeout=30,
-        )
-    except Exception as e:
-        _log_ai_unavailable(f"Gemini 호출 실패: {e}")
-        return None
-    if not resp.ok:
-        _log_ai_unavailable(f"Gemini 호출 실패: {resp.status_code} {resp.text}")
-        return None
-    try:
-        data = resp.json()
-    except Exception:
-        _log_ai_unavailable("Gemini 응답 JSON 파싱 실패")
-        return None
-    text = _extract_gemini_text(data)
-    if not text:
-        _log_ai_unavailable("Gemini 응답 텍스트 비어있음")
-        return None
-    parsed = _parse_json(text)
-    if not isinstance(parsed, dict):
-        _log_ai_unavailable("Gemini 응답 JSON 형식 아님")
-        return None
-    return parsed
+    max_attempts = max(1, GEMINI_MAX_RETRIES + 1)
+    last_err = ""
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = requests.post(
+                url,
+                headers={"x-goog-api-key": api_key, "Content-Type": "application/json"},
+                json=request_payload,
+                timeout=GEMINI_TIMEOUT_SEC,
+            )
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {e}"
+            if attempt < max_attempts:
+                time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
+                continue
+            _log_ai_unavailable(f"Gemini 호출 실패: {last_err}")
+            return None
+
+        if not resp.ok:
+            last_err = f"{resp.status_code} {resp.text}"
+            if resp.status_code in {429, 500, 502, 503, 504} and attempt < max_attempts:
+                time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
+                continue
+            _log_ai_unavailable(f"Gemini 호출 실패: {last_err}")
+            return None
+
+        try:
+            data = resp.json()
+        except Exception:
+            last_err = "Gemini 응답 JSON 파싱 실패"
+            if attempt < max_attempts:
+                time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
+                continue
+            _log_ai_unavailable(last_err)
+            return None
+
+        text = _extract_gemini_text(data)
+        if not text:
+            last_err = "Gemini 응답 텍스트 비어있음"
+            if attempt < max_attempts:
+                time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
+                continue
+            _log_ai_unavailable(last_err)
+            return None
+
+        parsed = _parse_json(text)
+        if not isinstance(parsed, dict):
+            last_err = "Gemini 응답 JSON 형식 아님"
+            if attempt < max_attempts:
+                time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
+                continue
+            snippet = re.sub(r"\s+", " ", text)[:160]
+            _log_ai_unavailable(f"{last_err}: {snippet}")
+            return None
+
+        return parsed
+
+    if last_err:
+        _log_ai_unavailable(f"Gemini 호출 실패: {last_err}")
+    return None
 
 def enrich_item_with_ai(item: dict) -> dict:
     # 기사 아이템을 AI로 요약/분류/중요도 평가
     title = clean_text(item.get("title") or "")
-    summary_raw = clean_text(item.get("summaryRaw") or item.get("summary") or "")
-    full_text = clean_text(item.get("fullText") or "")
+    summary_raw = clean_text(
+        sanitize_text(item.get("summaryRaw") or item.get("summary") or "")
+    )
+    full_text = clean_text(
+        sanitize_text(item.get("fullText") or "")
+    )
     if full_text and len(full_text) > 6000:
         full_text = full_text[:6000]
     source = clean_text(item.get("source") or "")
@@ -675,9 +782,9 @@ def enrich_item_with_ai(item: dict) -> dict:
     impact_signals = item.get("impactSignals") or []
 
     # 모델 입력 구성
-    input_text = _pick_ai_input_text(full_text)
+    input_text = _pick_ai_input_text(summary_raw, full_text)
     if not input_text:
-        _log_ai_unavailable("본문 없음")
+        _log_ai_unavailable(f"본문 없음: {item.get('link') or item.get('title','')[:60]}")
         return {}
     user_prompt = (
         f"Title: {title}\n"

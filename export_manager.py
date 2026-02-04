@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+import re
 from typing import Any
 from ai_enricher import enrich_item_with_ai
 from config import TOP_LIMIT, MIN_TOP_ITEMS, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS
@@ -9,6 +10,58 @@ from utils import clean_text, ensure_lines_1_to_3, estimate_read_time_seconds
 _LONG_IMPACT = {"policy", "sanctions"}
 _MED_IMPACT = {"capex", "infra", "security"}
 _LOW_IMPACT = {"earnings", "market-demand"}
+
+_CONTROL_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
+_PNG_SIGNS = ("PNG", "IHDR", "IDAT", "IEND")
+
+
+def _contains_binary(text: str) -> bool:
+    if not text:
+        return False
+    if _CONTROL_RE.search(text):
+        return True
+    if text.count("�") / max(1, len(text)) > 0.01:
+        return True
+    upper = text.upper()
+    return any(sign in upper for sign in _PNG_SIGNS)
+
+
+def _normalize_for_compare(text: str) -> str:
+    t = clean_text(text or "").lower()
+    t = re.sub(r"[^a-z0-9가-힣]+", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+
+def _jaccard(a: str, b: str) -> float:
+    toks_a = set(a.split())
+    toks_b = set(b.split())
+    if not toks_a or not toks_b:
+        return 0.0
+    return len(toks_a & toks_b) / len(toks_a | toks_b)
+
+
+def _is_title_like_summary(title: str, lines: list[str]) -> bool:
+    if not lines:
+        return True
+    norm_title = _normalize_for_compare(title)
+    if not norm_title:
+        return True
+    similar = 0
+    for line in lines:
+        norm_line = _normalize_for_compare(line)
+        if not norm_line:
+            continue
+        if norm_line == norm_title:
+            similar += 1
+            continue
+        if norm_line in norm_title or norm_title in norm_line:
+            similar += 1
+            continue
+        if _jaccard(norm_line, norm_title) >= 0.85:
+            similar += 1
+            continue
+    return similar >= max(1, len(lines))
 
 
 def _safe_read_json(path: str, default: Any) -> Any:
@@ -137,16 +190,69 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         source_name = (item.get("source") or "").strip()
         published = item.get("published")
 
+        drop_reason = item.get("dropReason") or ""
+        status_value = item.get("status") or ("dropped" if drop_reason else "kept")
+        full_text_len = len(clean_text(full_text))
+        if full_text_len < 80 and not drop_reason:
+            drop_reason = "policy:full_text_missing"
+            status_value = "dropped"
+
         ai_result = item.get("ai")
-        if not isinstance(ai_result, dict) or not ai_result:
+        should_skip_ai = bool(drop_reason or status_value == "dropped" or full_text_len < 80)
+        if not should_skip_ai and (not isinstance(ai_result, dict) or not ai_result):
             ai_result = enrich_item_with_ai(item) or {}
+        elif not isinstance(ai_result, dict):
+            ai_result = {}
         title_ko = clean_text(ai_result.get("title_ko") or "")
         if title_ko:
             title = title_ko
         summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
         summary_lines = ensure_lines_1_to_3(ai_result.get("summary_lines") or [], summary_source)
-        why_important = ai_result.get("why_important") or ""
-        importance_rationale = ai_result.get("importance_rationale") or ""
+
+        def _drop_reason_message(reason: str) -> str:
+            if not reason:
+                return "본문 확보 실패"
+            if "summary_binary" in reason:
+                return "요약/본문 데이터에 바이너리 또는 손상 텍스트가 포함되어 있습니다."
+            if "summary_title_only" in reason:
+                return "요약이 제목 반복으로 편집 기준을 충족하지 못합니다."
+            if reason.startswith("fetch_failed:"):
+                return reason.split(":", 1)[1]
+            if reason.startswith("ai_low_quality:"):
+                return reason.split(":", 1)[1]
+            return reason
+
+        policy_drop_reason = ""
+        if any(_contains_binary(line) for line in summary_lines) or _contains_binary(summary_raw) or _contains_binary(summary):
+            policy_drop_reason = "summary_binary"
+        elif drop_reason:
+            policy_drop_reason = ""
+        elif _is_title_like_summary(title, summary_lines):
+            policy_drop_reason = "summary_title_only"
+
+        if policy_drop_reason and not drop_reason:
+            drop_reason = f"policy:{policy_drop_reason}"
+        if drop_reason:
+            status_value = "dropped"
+            summary_lines = [f"요약 불가: {_drop_reason_message(drop_reason)}"]
+
+        def _fallback_why() -> str:
+            if drop_reason or status_value == "dropped":
+                return f"요약 불가: {_drop_reason_message(drop_reason)}"
+            return "기사 본문을 바탕으로 한 중요성 설명이 충분히 제공되지 않았습니다."
+
+        def _fallback_importance_rationale() -> str:
+            if drop_reason or status_value == "dropped":
+                return f"근거: {_drop_reason_message(drop_reason)}"
+            return "근거: 기사 텍스트에서 명확한 수치나 범위 근거를 찾지 못했습니다."
+
+        why_important = clean_text(ai_result.get("why_important") or item.get("whyImportant") or "")
+        importance_rationale = clean_text(ai_result.get("importance_rationale") or item.get("importanceRationale") or "")
+        if not why_important:
+            why_important = _fallback_why()
+        if not importance_rationale:
+            importance_rationale = _fallback_importance_rationale()
+
         dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
         impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
         importance = ai_result.get("importance_score")
@@ -159,6 +265,16 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
         from news_digest_exporter import map_topic_to_category
         category = item.get("aiCategory") or map_topic_to_category(topic)
+
+        quality_label = ai_result.get("quality_label") or item.get("aiQuality") or "ok"
+        quality_reason = clean_text(ai_result.get("quality_reason") or item.get("quality_reason") or "")
+        if drop_reason or status_value == "dropped":
+            quality_label = "low_quality"
+            if not quality_reason:
+                quality_reason = _drop_reason_message(drop_reason)
+        if not quality_reason:
+            quality_reason = "정보성 기사"
+
         out_item = {
             "id": f"{date_str}_{i}",
             "date": date_str,
@@ -174,11 +290,13 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "sourceUrl": link,
             "publishedAt": published,
             "readTimeSec": read_time_sec,
-            "status": "kept",
+            "status": status_value,
             "importance": importance,
+            "qualityLabel": quality_label,
+            "qualityReason": quality_reason,
         }
-        if item.get("dropReason"):
-            out_item["dropReason"] = item.get("dropReason")
+        if drop_reason:
+            out_item["dropReason"] = drop_reason
         items_out.append(out_item)
 
     digest = {

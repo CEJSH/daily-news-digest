@@ -9,6 +9,7 @@ from typing import Any
 
 import requests
 
+from daily_news_digest.core.constants import IMPACT_SIGNALS_MAP, SANCTIONS_KEYWORDS, TRADE_TARIFF_KEYWORDS
 from daily_news_digest.utils import clean_text, sanitize_text, split_summary_to_lines
 
 try:
@@ -34,6 +35,7 @@ GEMINI_MAX_OUTPUT_TOKENS = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "700"))
 AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "4000"))
 AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
+AI_IMPACT_EVIDENCE_MIN_CHARS = int(os.getenv("AI_IMPACT_EVIDENCE_MIN_CHARS", "400"))
 
 _ALLOWED_IMPACT_SIGNALS = {
     "policy",
@@ -141,7 +143,7 @@ Output schema:
   "importance_rationale": string,
   "dedupe_key": string,
   "importance_score": integer,
-  "impact_signals": [string],
+  "impact_signals": [{"label": string, "evidence": string}],
   "category_label": string,
   "quality_label": string,
   "quality_reason": string,
@@ -150,7 +152,7 @@ Output schema:
 
 Field rules:
 - title_ko: If the title is in English, translate to natural Korean; if already Korean, keep as-is. No source/publisher names, no dates.
-- summary_lines: 1 to 3 short, clear Korean sentences capturing the core facts. No fluff. Do NOT include information not present in the text.
+- summary_lines: 2 to 3 short, clear Korean sentences capturing the core facts. No fluff. Do NOT include information not present in the text.
   - Each line must be a COMPLETE sentence (not a headline fragment). End with proper sentence ending (e.g., "~입니다/~합니다") and avoid ellipses ("…", "...").
   - Do NOT repeat the title or paraphrase the title as a line. Each line must add distinct information.
   - Do NOT use placeholders like "자세한 내용은 아직 알려지지 않았습니다/추가 정보는 없습니다/기사에서 확인" in summary_lines.
@@ -208,9 +210,13 @@ Routine updates, narrow scope, or insufficient detail.
 Low relevance/noise, or text too thin.
 
 impact_signals:
-- Choose only from this list; include only signals explicitly supported by the text; return [] if none apply.
-Valid impact_signals: policy, budget, sanctions, capex, earnings, stats, market-demand, security, infra.
-- Do NOT infer signals.
+- Choose only from candidates provided in user prompt (ImpactSignalCandidates). Do NOT invent new labels.
+- Max 2 items. If no solid evidence, return [].
+- Each item must include evidence sentence copied verbatim from the text.
+Format:
+  [
+    {"label": "...", "evidence": "..."}
+  ]
 
 category_label rules (choose exactly one):
 - IT = technology, AI, semiconductors, cloud, security, digital infrastructure
@@ -433,6 +439,146 @@ def _normalize_label_list(value: Any, allowed: set[str]) -> list[str]:
 def _normalize_impact_signals(value: Any) -> list[str]:
     # 임팩트 시그널 값을 허용 목록 기준으로 정리
     return _normalize_label_list(value, _ALLOWED_IMPACT_SIGNALS)
+
+
+def _rule_based_impact_signals(text: str) -> list[str]:
+    text_lower = clean_text(text).lower()
+    signals: list[str] = []
+    for signal, keywords in IMPACT_SIGNALS_MAP.items():
+        if signal == "sanctions":
+            continue
+        if any(kw.lower() in text_lower for kw in keywords):
+            signals.append(signal)
+
+    if any(kw.lower() in text_lower for kw in SANCTIONS_KEYWORDS):
+        signals.append("sanctions")
+
+    if any(kw.lower() in text_lower for kw in TRADE_TARIFF_KEYWORDS):
+        if "policy" not in signals:
+            signals.append("policy")
+
+    seen = set()
+    ordered: list[str] = []
+    for s in signals:
+        if s in _ALLOWED_IMPACT_SIGNALS and s not in seen:
+            ordered.append(s)
+            seen.add(s)
+    priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+    ordered = [s for s in priority if s in ordered]
+    return ordered
+
+
+def _split_sentences(text: str) -> list[str]:
+    if not text:
+        return []
+    parts = [
+        p.strip()
+        for p in re.split(r"(?<=[\.\!\?。])\s+|(?<=다\.)\s+", text)
+        if p.strip()
+    ]
+    return parts if parts else [text.strip()]
+
+
+def _find_evidence_sentence(text: str, keywords: list[str]) -> str:
+    if not text or not keywords:
+        return ""
+    lowered = text.lower()
+    for kw in keywords:
+        if not kw:
+            continue
+        if kw.lower() in lowered:
+            for sent in _split_sentences(text):
+                if kw.lower() in sent.lower():
+                    snippet = clean_text(sent)
+                    return snippet[:160]
+            return clean_text(text)[:160]
+    return ""
+
+
+def _build_impact_signal_evidence(text: str) -> dict[str, str]:
+    text_clean = clean_text(text)
+    if len(text_clean) < AI_IMPACT_EVIDENCE_MIN_CHARS:
+        return {}
+
+    evidence: dict[str, str] = {}
+    for label, keywords in IMPACT_SIGNALS_MAP.items():
+        if label == "sanctions":
+            continue
+        snippet = _find_evidence_sentence(text_clean, list(keywords))
+        if snippet:
+            evidence[label] = snippet
+
+    sanctions_snippet = _find_evidence_sentence(text_clean, list(SANCTIONS_KEYWORDS))
+    if sanctions_snippet:
+        evidence["sanctions"] = sanctions_snippet
+
+    trade_snippet = _find_evidence_sentence(text_clean, list(TRADE_TARIFF_KEYWORDS))
+    if trade_snippet and "policy" not in evidence:
+        evidence["policy"] = trade_snippet
+
+    return evidence
+
+
+def _normalize_impact_signal_objects(value: Any) -> list[dict[str, str]]:
+    if not value:
+        return []
+    if isinstance(value, dict):
+        value = [value]
+    if not isinstance(value, list):
+        return []
+    cleaned: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+        label = clean_text(str(item.get("label") or "")).lower()
+        evidence = clean_text(str(item.get("evidence") or ""))
+        if not label or not evidence:
+            continue
+        cleaned.append({"label": label, "evidence": evidence})
+    return cleaned
+
+
+def _evidence_has_trigger(label: str, evidence: str) -> bool:
+    if not label or not evidence:
+        return False
+    text = evidence.lower()
+    if label == "sanctions":
+        return any(kw.lower() in text for kw in SANCTIONS_KEYWORDS)
+    keywords = IMPACT_SIGNALS_MAP.get(label, [])
+    if any(kw.lower() in text for kw in keywords):
+        return True
+    if label == "policy":
+        return any(kw.lower() in text for kw in TRADE_TARIFF_KEYWORDS)
+    return False
+
+
+def _filter_impact_signal_objects(
+    items: list[dict[str, str]],
+    candidates: list[str],
+    full_text: str,
+) -> tuple[list[str], dict[str, str]]:
+    full_lower = clean_text(full_text or "").lower()
+    kept: list[dict[str, str]] = []
+    for item in items:
+        label = item.get("label") or ""
+        evidence = item.get("evidence") or ""
+        if label not in candidates:
+            continue
+        if not evidence:
+            continue
+        if clean_text(evidence).lower() not in full_lower:
+            continue
+        if not _evidence_has_trigger(label, evidence):
+            continue
+        kept.append(item)
+
+    priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+    kept = [k for k in kept if k["label"] in priority]
+    kept.sort(key=lambda x: priority.index(x["label"]))
+    kept = kept[:2]
+    labels = [k["label"] for k in kept]
+    evidence_map = {k["label"]: k["evidence"] for k in kept}
+    return labels, evidence_map
 
 
 def _normalize_quality_label(value: Any) -> str:
@@ -779,9 +925,15 @@ def enrich_item_with_ai(item: dict) -> dict:
     if not input_text:
         _log_ai_unavailable(f"본문 없음: {item.get('link') or item.get('title','')[:60]}")
         return {}
+    full_text_clean = clean_text(full_text or "")
+    if len(full_text_clean) < AI_IMPACT_EVIDENCE_MIN_CHARS:
+        candidates = []
+    else:
+        candidates = _rule_based_impact_signals(full_text_clean)
     user_prompt = (
         f"Title: {title}\n"
-        f"ImpactSignals: {', '.join(impact_signals)}\n"
+        f"ImpactSignalsHint: {', '.join(impact_signals)}\n"
+        f"ImpactSignalCandidates: {', '.join(candidates)}\n"
         f"Text: {input_text}\n"
         "Return only JSON."
     )
@@ -810,7 +962,17 @@ def enrich_item_with_ai(item: dict) -> dict:
     if not dedupe_key:
         dedupe_key = _normalize_dedupe_key(item.get("dedupeKey") or title or summary_raw)
 
-    impact_signals_ai = _normalize_impact_signals(payload.get("impact_signals"))
+    impact_signals_obj = _normalize_impact_signal_objects(payload.get("impact_signals"))
+    evidence_text = full_text_clean
+    if len(evidence_text) < AI_IMPACT_EVIDENCE_MIN_CHARS:
+        candidates = []
+    else:
+        candidates = _rule_based_impact_signals(evidence_text)
+    impact_signals_ai, evidence_map = _filter_impact_signal_objects(
+        impact_signals_obj,
+        candidates,
+        evidence_text,
+    )
     importance_score = _normalize_importance_score(
         payload.get("importance_score") or payload.get("importance"),
         impact_signals,
@@ -842,6 +1004,7 @@ def enrich_item_with_ai(item: dict) -> dict:
         "dedupe_key": dedupe_key,
         "importance_score": importance_score,
         "impact_signals": impact_signals_ai,
+        "impact_signals_evidence": {s: evidence_map.get(s, "") for s in impact_signals_ai},
         "quality_label": quality_label,
         "quality_reason": quality_reason,
         "quality_tags": quality_tags,

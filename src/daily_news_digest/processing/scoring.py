@@ -98,7 +98,9 @@ class ItemFilterScorer:
         if not has_sanctions and "sanctions" in signals:
             signals = [s for s in signals if s != "sanctions"]
 
-        return signals
+        priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+        ordered = [s for s in priority if s in signals]
+        return ordered[:2]
 
     def map_topic_to_category(self, topic: str) -> str:
         return map_topic_to_category(topic)

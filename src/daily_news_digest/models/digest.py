@@ -3,6 +3,11 @@ from __future__ import annotations
 from typing import NotRequired, TypedDict
 
 
+class ImpactSignal(TypedDict):
+    label: str
+    evidence: str
+
+
 class DigestItem(TypedDict):
     id: str
     date: str
@@ -11,7 +16,7 @@ class DigestItem(TypedDict):
     summary: list[str]
     whyImportant: str
     importanceRationale: str
-    impactSignals: list[str]
+    impactSignals: list[ImpactSignal]
     sourceName: str
     sourceUrl: str
     status: str

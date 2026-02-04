@@ -284,6 +284,14 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
         dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
         impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
+        evidence_map = ai_result.get("impact_signals_evidence") or {}
+        impact_signals_detail = []
+        for label in impact_signals:
+            evidence = clean_text(evidence_map.get(label) or "")
+            if not evidence:
+                continue
+            impact_signals_detail.append({"label": label, "evidence": evidence})
+        impact_signals = [d["label"] for d in impact_signals_detail]
         importance = ai_result.get("importance_score")
         if not importance:
             signals = set(item.get("impactSignals") or [])
@@ -307,6 +315,8 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
                 quality_reason = _drop_reason_message(drop_reason)
         if not quality_reason:
             quality_reason = "정보성 기사"
+        if quality_label == "low_quality":
+            status_value = "dropped"
 
         out_item = {
             "id": f"{date_str}_{i}",
@@ -316,7 +326,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "summary": summary_lines if summary_lines else [summary],
             "whyImportant": why_important,
             "importanceRationale": importance_rationale,
-            "impactSignals": impact_signals,
+            "impactSignals": impact_signals_detail,
             "dedupeKey": dedupe_key,
             "matchedTo": item.get("matchedTo"),
             "sourceName": source_name,

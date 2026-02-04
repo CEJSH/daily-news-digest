@@ -288,6 +288,34 @@ class DedupeEngine:
                 continue
             kept.append((event_groups, entity_tokens, item))
 
+    def apply_dedupe_key_prefix(self, items: list[Item], prefix_tokens: int = 3) -> None:
+        if prefix_tokens <= 0:
+            return
+        candidates = sorted(
+            items,
+            key=lambda x: (
+                x.get("aiImportance") or x.get("importance") or x.get("score", 0.0)
+            ),
+            reverse=True,
+        )
+        kept_by_prefix: dict[str, Item] = {}
+        for item in candidates:
+            if not self._is_eligible(item):
+                continue
+            key = (item.get("dedupeKey") or "").strip()
+            if not key:
+                continue
+            parts = [p for p in key.split("-") if p]
+            if len(parts) < prefix_tokens:
+                continue
+            prefix = "-".join(parts[:prefix_tokens])
+            matched = kept_by_prefix.get(prefix)
+            if matched:
+                item["dropReason"] = f"dedupe_key_prefix:{matched.get('title','')[:60]}"
+                item["matchedTo"] = matched.get("id") or matched.get("dedupeKey") or matched.get("title")
+                continue
+            kept_by_prefix[prefix] = item
+
     def load_recent_dedupe_map(self, digest_path: str, history_path: str, days: int) -> dict[str, str]:
         if days <= 0:
             return {}
@@ -351,4 +379,3 @@ class DedupeEngine:
                 if alt_key:
                     dedupe_map[alt_key] = item_id
         return dedupe_map
-

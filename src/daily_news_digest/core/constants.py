@@ -119,7 +119,7 @@ STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
 
 SANCTIONS_KEYWORDS = {
     "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
-    "제재", "수출통제", "블랙리스트", "금융제재", "자산동결",
+    "수출통제", "블랙리스트", "자산 동결", "자산동결", "금수", "금수조치", "embargo",
 }
 
 TRADE_TARIFF_KEYWORDS = {
@@ -129,30 +129,48 @@ TRADE_TARIFF_KEYWORDS = {
 
 IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
     "policy": [
-        "regulation", "rule", "policy", "bill", "law", "guideline", "government",
+        "bill", "law", "amendment", "regulation", "rule", "policy", "guideline", "government",
+        "parliament", "congress", "penalty", "fine", "license", "approval", "supervision",
         "tariff", "tariffs", "trade", "trade talks", "negotiation", "agreement",
-        "규제", "법안", "정책", "가이드라인", "정부", "국회", "관세", "무역", "협상", "협정",
+        "법안", "개정", "시행령", "규정", "규제", "국회", "정부", "금융위", "공정위",
+        "과징금", "인허가", "감독", "제재", "가이드라인", "관세", "무역", "협상", "협정",
     ],
-    "budget": ["budget", "fiscal", "appropriation", "incentive", "subsidy", "예산", "재정", "지원금", "세제혜택"],
+    "earnings": [
+        "earnings", "guidance", "consensus", "profit", "loss", "margin", "forecast", "outlook",
+        "revenue", "disclosure", "quarter", "q1", "q2", "q3", "q4", "upgrade", "downgrade",
+        "매출", "영업이익", "순이익", "실적", "컨센서스", "가이던스", "전망", "마진", "상향", "하향",
+    ],
+    "capex": [
+        "capex", "expansion", "build", "construction", "plant", "factory", "line",
+        "data center", "datacentre", "facility", "investment", "funding", "round",
+        "증설", "투자", "설비", "시설", "공장", "데이터센터", "건설", "라인", "캐팩스",
+        "투자유치", "펀딩", "라운드",
+    ],
+    "market-demand": [
+        "sales", "demand", "deliveries", "shipments", "orders", "bookings", "inventory",
+        "price increase", "price decrease", "pricing", "consumption", "consumer sentiment",
+        "판매", "수요", "출하", "주문", "예약", "재고", "가격 상승", "가격 하락", "소비 둔화",
+    ],
+    "security": [
+        "breach", "hack", "leak", "attack", "ransomware", "cve", "vulnerability",
+        "terror", "shooting", "public safety", "civil rights", "national security",
+        "침해", "해킹", "유출", "공격", "랜섬웨어", "취약점", "민권", "총격", "테러", "안보",
+    ],
     "sanctions": [
         "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
-        "제재", "수출통제", "블랙리스트", "금융제재", "자산동결",
+        "수출통제", "블랙리스트", "자산 동결", "자산동결", "금수", "금수조치", "embargo",
     ],
-    "capex": ["data center", "datacentre", "capex", "investment", "build", "expansion", "infrastructure", "facility", "데이터센터", "증설", "투자", "설비"],
-    "earnings": ["earnings", "guidance", "profit", "loss", "revenue", "흑자", "적자", "실적", "가이던스", "매출", "영업이익"],
+    "budget": [
+        "budget", "fiscal", "appropriation", "incentive", "subsidy",
+        "예산", "재정", "지원금", "세제혜택",
+    ],
     "stats": [
         "cpi", "ppi", "inflation", "gdp", "pmi", "unemployment", "jobs report", "payrolls",
         "retail sales", "industrial production", "trade balance", "macro data", "economic data",
         "통계", "지표", "물가", "소비자물가", "생산자물가", "gdp", "pmi", "실업률", "고용지표",
         "고용", "수출입", "무역수지", "소매판매", "산업생산", "경제지표",
     ],
-    "market-demand": [
-        "registrations", "registration", "deliveries", "delivery", "sales", "demand", "shipments",
-        "tariff", "tariffs", "trade", "관세", "무역",
-        "등록", "판매", "수요",
-    ],
-    "security": ["breach", "exploit", "ransomware", "cve", "vulnerability", "침해", "해킹", "랜섬웨어", "취약점"],
-    "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"]
+    "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"],
 }
 
 DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어

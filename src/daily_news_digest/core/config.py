@@ -1,14 +1,18 @@
+from __future__ import annotations
+
 import os
+from pathlib import Path
 
 try:
     from dotenv import load_dotenv
 except Exception:  # pragma: no cover - optional dependency
     load_dotenv = None
 
-from constants import SOURCE_TIER_A, SOURCE_TIER_B
+from daily_news_digest.core.constants import SOURCE_TIER_A, SOURCE_TIER_B
 
 if load_dotenv:
-    load_dotenv()
+    _repo_root = Path(__file__).resolve().parents[3]
+    load_dotenv(dotenv_path=_repo_root / ".env")
 
 # ==========================================
 # 사용자 설정 (수정 가능)
@@ -23,7 +27,7 @@ RSS_SOURCES = [
     {"topic": "글로벌_정세", "url": "https://news.google.com/rss/search?q=tariff+OR+sanctions+OR+trade+OR+supply+chain+OR+diplomacy+OR+geopolitics+-opinion+-column+-sports+-celebrity+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en", "limit": 15},
     {"topic": "글로벌_빅테크", "url": "https://news.google.com/rss/search?q=Apple+OR+Microsoft+OR+Google+OR+OpenAI+OR+NVIDIA+OR+Amazon+OR+Meta+OR+Tesla+OR+TSMC+-opinion+-column+-webinar+-whitepaper&hl=en&gl=US&ceid=US:en", "limit": 15},
     {"topic": "글로벌_빅테크", "url": "https://news.google.com/rss/search?q=애플+OR+마이크로소프트+OR+구글+OR+오픈AI+OR+엔비디아+OR+아마존+OR+메타+OR+TSMC+-리포트+-세미나+-칼럼&hl=ko&gl=KR&ceid=KR:ko", "limit": 10},
-     # 1) 기업 실적·가이던스 (숫자 기반 – 가장 안정적인 지속 이슈)
+     # 1) 기업 실적·가이던스
     {
         "topic": "실적_가이던스",
         "url": "https://news.google.com/rss/search?q=실적+OR+가이던스+OR+전망+OR+매출+OR+영업이익+OR+컨센서스+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
@@ -34,7 +38,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=earnings+OR+guidance+OR+forecast+OR+quarterly+results+OR+revenue+OR+margin+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 15
     },
-    # 2) 반도체 공급망 (AI칩 → 장비·HBM·패키징으로 확장)
+    # 2) 반도체 공급망
     {
         "topic": "반도체_공급망",
         "url": "https://news.google.com/rss/search?q=HBM+OR+첨단패키징+OR+파운드리+OR+EUV+OR+반도체장비+OR+수출통제+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
@@ -45,7 +49,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=HBM+OR+advanced+packaging+OR+foundry+OR+EUV+OR+semiconductor+equipment+OR+export+controls+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 15
     },
-    # 3) 전력 인프라 (데이터센터 성장의 현실 제약 요인)
+    # 3) 전력 인프라
     {
         "topic": "전력_인프라",
         "url": "https://news.google.com/rss/search?q=전력망+OR+송전+OR+변전소+OR+전기요금+OR+원전+OR+LNG+OR+전력수급+-칼럼+-리포트+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
@@ -56,7 +60,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=power+grid+OR+electricity+prices+OR+utility+OR+nuclear+OR+natural+gas+OR+transmission+OR+substation+OR+data+center+power+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 15
     },
-    # 4) AI 저작권·데이터 권리 (규제보다 실무 영향이 큼)
+    # 4) AI 저작권·데이터 권리
     {
         "topic": "AI_저작권_데이터권리",
         "url": "https://news.google.com/rss/search?q=AI+저작권+OR+학습데이터+OR+라이선스+OR+개인정보+OR+데이터보호+-칼럼+-리포트+-세미나&hl=ko&gl=KR&ceid=KR:ko",
@@ -67,7 +71,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=AI+copyright+OR+training+data+OR+licensing+OR+privacy+OR+data+protection+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 12
     },
-    # 5) 보안 취약점·패치 (감정 자극 없는 실무형 보안 뉴스)
+    # 5) 보안 취약점·패치
     {
         "topic": "보안_취약점_패치",
         "url": "https://news.google.com/rss/search?q=취약점+OR+CVE+OR+제로데이+OR+보안패치+OR+권고+OR+침해사고+-칼럼+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
@@ -78,7 +82,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=zero-day+OR+patch+OR+CVE+OR+ransomware+OR+breach+notification+OR+incident+response+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 12
     },
-    # 6) 투자·M&A·IPO (감정 배제된 결정형 이벤트)
+    # 6) 투자·M&A·IPO
     {
         "topic": "투자_MA_IPO",
         "url": "https://news.google.com/rss/search?q=IPO+OR+상장+OR+인수합병+OR+투자유치+OR+시리즈A+OR+벤처캐피탈+-칼럼+-연예+-스포츠&hl=ko&gl=KR&ceid=KR:ko",
@@ -89,7 +93,7 @@ RSS_SOURCES = [
         "url": "https://news.google.com/rss/search?q=IPO+OR+acquisition+OR+merger+OR+funding+round+OR+venture+capital+-opinion+-column+-webinar&hl=en&gl=US&ceid=US:en",
         "limit": 12
     },
-    # 7) 국내 정책·제도 (법/가이드라인 중심 – 지속 영향 큼)
+    # 7) 국내 정책·제도
     {
         "topic": "국내_정책_규제",
         "url": "https://news.google.com/rss/search?q=국회+OR+입법+OR+시행령+OR+가이드라인+OR+금융위원회+OR+공정거래위원회+OR+개인정보보호위원회+OR+과학기술정보통신부+-연예+-스포츠+-칼럼&hl=ko&gl=KR&ceid=KR:ko",
@@ -102,8 +106,12 @@ NEWSLETTER_TITLE = "🚀 DAILY WORLD – AI & Tech 일일 요약"
 AFFILIATE_AD_TEXT = "🔥 오늘만 50% 할인! 최고의 생산성 도구 구경하기"
 AFFILIATE_LINK = "https://your-affiliate-link.com"
 OUTPUT_FILENAME = "daily_world_news.html"
-OUTPUT_JSON = "daily_digest.json"
-DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", "dedupe_history.json")
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+DATA_DIR = Path(os.getenv("DATA_DIR", str(REPO_ROOT / "data")))
+
+OUTPUT_JSON = os.getenv("OUTPUT_JSON", str(DATA_DIR / "daily_digest.json"))
+DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", str(DATA_DIR / "dedupe_history.json"))
 DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "5"))
 SOURCE_WEIGHT_ENABLED = os.getenv("SOURCE_WEIGHT_ENABLED", "1") == "1"
 SOURCE_WEIGHT_FACTOR = float(os.getenv("SOURCE_WEIGHT_FACTOR", "0.6"))
@@ -120,12 +128,14 @@ DEDUPKEY_NGRAM_N = int(os.getenv("DEDUPKEY_NGRAM_N", "2"))
 DEDUPKEY_NGRAM_SIM = float(os.getenv("DEDUPKEY_NGRAM_SIM", "0.35"))
 
 def _parse_csv_env(name: str) -> list[str]:
+    """CSV 형태의 환경변수를 리스트로 파싱."""
     raw = os.getenv(name, "").strip()
     if not raw:
         return []
     return [x.strip() for x in raw.split(",") if x.strip()]
 
 def _env_int(name: str) -> int | None:
+    """정수형 환경변수를 안전하게 파싱."""
     raw = os.getenv(name, "").strip()
     if not raw:
         return None
@@ -135,6 +145,7 @@ def _env_int(name: str) -> int | None:
         return None
 
 def _auto_tuned_limit(default_limit: int, multiplier: float, min_floor: int) -> int:
+    """TOP_LIMIT 기준으로 상/하한을 지키며 자동 조정."""
     max_cap = max(default_limit, TOP_LIMIT)
     tuned = int(TOP_LIMIT * multiplier)
     tuned = max(min_floor, tuned)
@@ -150,6 +161,7 @@ def _resolve_limit(
     min_floor: int,
     auto_tune: bool,
 ) -> int:
+    """환경변수 우선, 없으면 자동 조정 또는 기본값 사용."""
     explicit = _env_int(env_name)
     if explicit is not None:
         return explicit
@@ -204,3 +216,19 @@ _fresh_except_env = set(_parse_csv_env("TOP_FRESH_EXCEPT_SIGNALS"))
 TOP_FRESH_EXCEPT_SIGNALS = _fresh_except_env if _fresh_except_env else {"policy", "sanctions", "earnings", "stats"}
 TOP_FRESH_EXCEPT_MAX_HOURS = int(os.getenv("TOP_FRESH_EXCEPT_MAX_HOURS", "168"))
 TOP_REQUIRE_PUBLISHED = os.getenv("TOP_REQUIRE_PUBLISHED", "1") == "1"
+
+# ==========================================
+# low_quality 정책
+# - drop: qualityLabel=low_quality인 아이템은 status=dropped로 강제
+# - downgrade: status는 유지하되 importance를 1 이하로 하향
+# ==========================================
+
+LOW_QUALITY_POLICY = (os.getenv("LOW_QUALITY_POLICY", "drop") or "drop").strip().lower()
+if LOW_QUALITY_POLICY not in {"drop", "downgrade"}:
+    LOW_QUALITY_POLICY = "drop"
+
+LOW_QUALITY_DOWNGRADE_MAX_IMPORTANCE = int(os.getenv("LOW_QUALITY_DOWNGRADE_MAX_IMPORTANCE", "1"))
+LOW_QUALITY_DOWNGRADE_RATIONALE = os.getenv(
+    "LOW_QUALITY_DOWNGRADE_RATIONALE",
+    "근거 부족이라 영향 판단 불가",
+).strip()

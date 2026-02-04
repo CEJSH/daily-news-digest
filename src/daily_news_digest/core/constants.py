@@ -1,11 +1,13 @@
-QUALITY_KEYWORDS = [
+from __future__ import annotations
+
+QUALITY_KEYWORDS = [  # 고품질/심층 기사 신호어 (가중치·선별에 사용)
     "분석", "해설", "전망", "심층", "진단", "전략", "패권", "패러다임", "변곡점", "구조",
     "재편", "지형", "모멘텀", "구조적", "생태계", "시나리오", "data", "in-depth",
     "diagnosis", "strategy", "paradigm", "inflection point", "structure", "reorganization",
     "ecosystem", "scenario"
 ]
 
-HARD_EXCLUDE_KEYWORDS = [
+HARD_EXCLUDE_KEYWORDS = [  # 보고서/행사/홍보성 등 즉시 제외 키워드
     "동향", "동향리포트", "리포트", "브리프", "백서", "자료집", "보고서", "연구보고서",
     "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수", "보도자료",
     "홍보", "프로모션", "할인", "출시기념", "사설", "칼럼", "기고", "기자수첩",
@@ -14,11 +16,11 @@ HARD_EXCLUDE_KEYWORDS = [
     "must", "should"
 ]
 
-HARD_EXCLUDE_URL_HINTS = [
+HARD_EXCLUDE_URL_HINTS = [  # URL에 포함되면 제외하는 힌트 경로
     "/report", "/whitepaper", "/webinar", "/seminar", "/conference", "/event", "/download"
 ]
 
-EXCLUDE_KEYWORDS = [
+EXCLUDE_KEYWORDS = [  # 연예/스포츠/사건사고/감성성 기사 제외 키워드
     "연예", "스타", "걸그룹", "보이그룹", "아이돌", "배우", "가수", "예능", "드라마", "영화",
     "팬미팅", "컴백", "앨범", "뮤직비디오", "뮤비", "티저", "화보", "열애", "결별", "이혼",
     "결혼", "출산", "야구", "축구", "농구", "배구", "골프", "e스포츠", "K리그", "KBO",
@@ -41,17 +43,17 @@ EXCLUDE_KEYWORDS = [
     "마을 주민", "농촌 체험", "어촌 체험", "지역 축제", "군민", "공모 사업"
 ]
 
-SOURCE_TIER_A = {
+SOURCE_TIER_A = {  # 신뢰도 상위 A 등급 소스(우선 선별)
     "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "WSJ",
     "연합뉴스", "한국경제", "매일경제", "서울경제"
 }
 
-SOURCE_TIER_B = {
+SOURCE_TIER_B = {  # 신뢰도 B 등급 소스(보조 선별)
     "중앙일보", "동아일보", "한겨레", "경향신문", "머니투데이",
     "전자신문", "ZDNet Korea", "TechCrunch", "The Verge"
 }
 
-LOCAL_PROMO_KEYWORDS = [
+LOCAL_PROMO_KEYWORDS = [  # 지역 홍보·장터성 콘텐츠 제외 키워드
     "지역 특산품", "특산품", "홈쇼핑", "완판", "매진", "품절",
     "지역 축제", "지역 행사", "마을 축제", "농촌 체험", "어촌 체험", "체험 행사",
     "지역 소식", "지역 주민", "주민", "마을 주민", "읍사무소", "면사무소", "마을회관",
@@ -60,7 +62,7 @@ LOCAL_PROMO_KEYWORDS = [
     "sold out", "local residents", "community event"
 ]
 
-DEDUPE_EVENT_TOKENS = {
+DEDUPE_EVENT_TOKENS = {  # 이벤트 유형(투자·M&A·실적 등) 중복 판단 토큰
     "funding", "financing", "investment", "invests", "invest", "round", "series", "raise", "raised",
     "valuation", "capital", "funds",
     "acquisition", "acquire", "acquires", "merger", "m&a", "deal", "buyout", "stake", "takeover",
@@ -78,7 +80,7 @@ DEDUPE_EVENT_TOKENS = {
     "무역", "협상", "회담", "정상회담", "협의", "대화", "합의", "협정",
 }
 
-DEDUPE_EVENT_GROUPS = {
+DEDUPE_EVENT_GROUPS = {  # 이벤트 토큰을 카테고리로 묶어 중복 군집화
     "funding": {
         "funding", "financing", "investment", "invests", "invest", "raise", "raised",
         "round", "series", "valuation", "capital", "funds",
@@ -110,12 +112,12 @@ DEDUPE_EVENT_GROUPS = {
     },
 }
 
-STOPWORDS = {
+STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
     "the", "a", "an", "to", "for", "of", "and", "or", "in", "on", "with",
     "is", "are", "must", "should", "how", "become", "show", "little"
 }
 
-IMPACT_SIGNALS_MAP = {
+IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
     "policy": ["regulation", "rule", "policy", "bill", "law", "guideline", "government", "규제", "법안", "정책", "가이드라인", "정부", "국회"],
     "budget": ["budget", "fiscal", "appropriation", "incentive", "subsidy", "예산", "재정", "지원금", "세제혜택"],
     "sanctions": ["sanction", "export control", "entity list", "tariff", "제재", "수출통제", "블랙리스트", "관세"],
@@ -132,7 +134,7 @@ IMPACT_SIGNALS_MAP = {
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"]
 }
 
-DEDUPE_NOISE_WORDS = {
+DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어
     "bold", "little", "recovery", "shock", "inside", "first", "new", "top", "best",
     "strategy", "how", "why", "what", "where", "when", "show", "showcase", "unveils",
     "exclusive", "breaking", "update", "latest", "years", "after", "cornerstone", "become",
@@ -141,14 +143,14 @@ DEDUPE_NOISE_WORDS = {
     "한겨레", "경향신문", "techcrunch", "verge"
 }
 
-EMOTIONAL_DROP_KEYWORDS = ["참사", "충격", "분노", "논란", "폭로"]
-DROP_CATEGORIES = {"사회", "사건", "연예"}
+EMOTIONAL_DROP_KEYWORDS = ["참사", "충격", "분노", "논란", "폭로"]  # 감정 유발성 키워드 드롭
+DROP_CATEGORIES = {"사회", "사건", "연예"}  # 카테고리 기준 즉시 제외
 
-MONTH_TOKENS = {
+MONTH_TOKENS = {  # 날짜 토큰 정규화/필터링용 월 문자열
     "jan", "january", "feb", "february", "mar", "march", "apr", "april", "may", "jun", "june",
     "jul", "july", "aug", "august", "sep", "sept", "september", "oct", "october", "nov",
     "november", "dec", "december"
 }
 
-LONG_IMPACT_SIGNALS = {"policy", "budget", "sanctions", "stats"}
-MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "tv", "TV")
+LONG_IMPACT_SIGNALS = {"policy", "budget", "sanctions", "stats"}  # 장기 영향 신호 카테고리
+MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "tv", "TV")  # 언론사명 접미사 추정

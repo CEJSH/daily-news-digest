@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import ast
 import json
 import os
@@ -7,7 +9,7 @@ from typing import Any
 
 import requests
 
-from utils import clean_text, split_summary_to_lines
+from daily_news_digest.utils import clean_text, sanitize_text, split_summary_to_lines
 
 try:
     from dotenv import load_dotenv
@@ -17,7 +19,10 @@ except Exception:  # pragma: no cover - optional dependency
 _AI_UNAVAILABLE_LOGGED: set[str] = set()
 
 if load_dotenv:
-    load_dotenv()
+    from pathlib import Path
+
+    _repo_root = Path(__file__).resolve().parents[3]
+    load_dotenv(dotenv_path=_repo_root / ".env")
 
 GEMINI_API_BASE = os.getenv("GEMINI_API_BASE", "https://generativelanguage.googleapis.com/v1beta")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
@@ -25,25 +30,10 @@ GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-0
 GEMINI_TIMEOUT_SEC = int(os.getenv("GEMINI_TIMEOUT_SEC", "60"))
 GEMINI_MAX_RETRIES = int(os.getenv("GEMINI_MAX_RETRIES", "2"))
 GEMINI_RETRY_BACKOFF_SEC = float(os.getenv("GEMINI_RETRY_BACKOFF_SEC", "1.5"))
+GEMINI_MAX_OUTPUT_TOKENS = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "700"))
 AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "4000"))
 AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
-
-_CONTROL_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")
-_PNG_SIGNS = ("PNG", "IHDR", "IDAT", "IEND")  # 단순 바이너리 탐지
-
-def sanitize_text(s: str) -> str:
-    """모델 입력 전에 바이너리/깨진 텍스트를 정화."""
-    if not s:
-        return ""
-    s = _CONTROL_RE.sub(" ", s)
-    if s.count("�") / max(1, len(s)) > 0.01:
-        return ""
-    upper = s.upper()
-    if any(sign in upper for sign in _PNG_SIGNS):
-        return ""
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
 
 _ALLOWED_IMPACT_SIGNALS = {
     "policy",
@@ -701,7 +691,7 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
         },
         "generationConfig": {
             "temperature": 0.2,
-            "maxOutputTokens": 350,
+            "maxOutputTokens": GEMINI_MAX_OUTPUT_TOKENS,
             "responseMimeType": "application/json",
         },
     }
@@ -757,7 +747,10 @@ def _gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any
                 time.sleep(GEMINI_RETRY_BACKOFF_SEC * (2 ** (attempt - 1)))
                 continue
             snippet = re.sub(r"\s+", " ", text)[:160]
-            _log_ai_unavailable(f"{last_err}: {snippet}")
+            truncated_hint = ""
+            if text.strip().startswith("{") and not text.strip().endswith("}"):
+                truncated_hint = " (truncated?)"
+            _log_ai_unavailable(f"{last_err}{truncated_hint}: {snippet}")
             return None
 
         return parsed

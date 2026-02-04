@@ -1,3 +1,6 @@
 venu/*
 __pycache__/*
 .env
+__pycache__
+*.cpython-*.pyc
+*.pyc

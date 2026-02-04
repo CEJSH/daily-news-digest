@@ -1,27 +1,35 @@
+from __future__ import annotations
+
 import html
 import re
 from typing import Any
 
-_WS_RE = re.compile(r"\s+")
-_TRAILING_TAG_RE = re.compile(r"\s*[\[\(][^\]\)]+[\]\)]\s*$")
-_SOURCE_SEPARATOR_RE = re.compile(r"\s*[\|\-–—·•:｜ㅣ]\s*")
+_WS_RE = re.compile(r"\s+")  # 공백 정리 시 연속 공백을 단일 공백으로 축약
+_TRAILING_TAG_RE = re.compile(r"\s*[\[\(][^\]\)]+[\]\)]\s*$")  # 제목 끝의 괄호/대괄호 태그 제거용
+_SOURCE_SEPARATOR_RE = re.compile(r"\s*\|\s*|\s+[–—-]\s+|\s*[·•:｜ㅣ]\s*")  # 제목에서 소스/섹션 구분자 분리용
+_CONTROL_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")  # 바이너리/제어문자 검출용
+_PNG_SIGNS = ("PNG", "IHDR", "IDAT", "IEND")  # 깨진 텍스트에 섞이는 PNG 시그니처 검출용
 
-_MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "TV", "tv")
+_MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "TV", "tv")  # 언론사/미디어명 추정용 접미사
+
 _SECTION_TOKENS = {
     "국제", "정치", "경제", "사회", "산업", "증권", "금융", "IT", "테크", "세계", "글로벌"
-}
+}  # 섹션명으로 보이는 토큰 (제목 꼬리 제거 판단에 사용)
+
 _LATIN_MEDIA_TOKENS = {
     "reuters", "bloomberg", "ft", "wsj", "journal", "times", "news", "press", "media"
-}
+}  # 영문 매체명/토큰 추정용
+
 _KOREAN_PARTICLE_SUFFIXES = (
     "에게서", "에서", "에게", "까지", "부터", "으로", "로", "과", "와", "을", "를", "은", "는",
     "이", "가", "의", "에", "도", "만"
-)
+)  # 중복 제거용 토큰 정규화 시 조사 제거
+
 _KOREAN_VERB_ENDINGS = (
     "했습니다", "하였다", "했다", "한다", "합니다", "하며", "된다", "됐다", "되고", "되며",
     "됩니다", "되는", "했다고", "한다고", "했다며", "한다며", "했다는", "한다는", "이었다",
     "이라며", "이라고", "이다", "였다", "였던", "했던", "했고", "되었다", "되었습니다"
-)
+)  # 중복 제거용 토큰 정규화 시 동사 어미 제거
 
 def clean_text(s: str) -> str:
     if not s:
@@ -38,6 +46,31 @@ def clean_text(s: str) -> str:
     # 4) 공백 정리
     s = _WS_RE.sub(" ", s).strip()
     return s
+
+def clean_text_ws(text: str) -> str:
+    return _WS_RE.sub(" ", (text or "").strip())
+
+def contains_binary(text: str) -> bool:
+    if not text:
+        return False
+    if _CONTROL_RE.search(text):
+        return True
+    if text.count("�") / max(1, len(text)) > 0.01:
+        return True
+    upper = text.upper()
+    return any(sign in upper for sign in _PNG_SIGNS)
+
+def sanitize_text(text: str) -> str:
+    """모델 입력 전에 바이너리/깨진 텍스트를 정화."""
+    if not text:
+        return ""
+    text = _CONTROL_RE.sub(" ", text)
+    if text.count("�") / max(1, len(text)) > 0.01:
+        return ""
+    upper = text.upper()
+    if any(sign in upper for sign in _PNG_SIGNS):
+        return ""
+    return _WS_RE.sub(" ", text).strip()
 
 def _looks_like_source_segment(segment: str) -> bool:
     seg = (segment or "").strip()
@@ -224,3 +257,10 @@ def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
+
+def jaccard_tokens(a: str, b: str) -> float:
+    toks_a = set(clean_text_ws(a).split())
+    toks_b = set(clean_text_ws(b).split())
+    if not toks_a or not toks_b:
+        return 0.0
+    return len(toks_a & toks_b) / len(toks_a | toks_b)

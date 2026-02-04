@@ -241,15 +241,21 @@ def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
 
 def ensure_lines_1_to_3(lines: list[str], fallback_text: str) -> list[str]:
     """요약 라인을 1~3줄로 보정한다. (강제 분할 없음)"""
-    cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
+    cleaned = []
+    for x in (lines or []):
+        base = clean_text(x)
+        base = strip_summary_boilerplate(base)
+        base = clean_text(base)
+        if base:
+            cleaned.append(base)
     if cleaned:
-        return cleaned[:3]
+        return _dedupe_lines(cleaned)[:3]
 
     fallback = clean_text(fallback_text or "")
     if not fallback:
         return []
-    fallback_lines = split_summary_to_lines(fallback, max_lines=3)
-    return fallback_lines[:3] if fallback_lines else [fallback]
+    fallback_lines = split_summary_to_lines(strip_summary_boilerplate(fallback), max_lines=3)
+    return _dedupe_lines(fallback_lines[:3] if fallback_lines else [fallback])[:3]
 
 def estimate_read_time_seconds(text: str) -> int:
     """한국어 평균 읽기 속도 ~500자/분 가정. 10초 단위 반올림, 10~40초로 클램프."""
@@ -271,6 +277,63 @@ def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
+
+def strip_summary_boilerplate(text: str) -> str:
+    """요약 후보에서 저작권/연락처/주소 등 고정 문구를 제거."""
+    if not text:
+        return ""
+    lines = [line.strip() for line in re.split(r"[\\r\\n]+", text) if line.strip()]
+    patterns = [
+        r"\\-\\s*제호",
+        r"대표전화",
+        r"주소\\s*:\\s*",
+        r"등록번호",
+        r"등록일",
+        r"발행인",
+        r"편집인",
+        r"기사배열책임자",
+        r"청소년보호책임자",
+        r"Copyright",
+        r"All\\s*Rights",
+        r"Rights\\s*Reserved",
+        r"Rights\\s*R",
+        r"ⓒ",
+        r"무단전재",
+        r"재배포",
+        r"AI 학습 이용",
+        r"열린보도원칙",
+        r"반론",
+        r"정정 보도",
+    ]
+    cleaned: list[str] = []
+    for line in lines:
+        earliest = None
+        for pat in patterns:
+            m = re.search(pat, line, flags=re.IGNORECASE)
+            if m:
+                earliest = m.start() if earliest is None else min(earliest, m.start())
+        if earliest is not None:
+            if earliest <= 3:
+                continue
+            line = line[:earliest]
+        line = re.sub(r"[\\s\\-–—·•:｜ㅣ]+$", "", line).strip()
+        if not line:
+            continue
+        cleaned.append(line)
+    return clean_text(" ".join(cleaned))
+
+def _dedupe_lines(lines: list[str]) -> list[str]:
+    seen = set()
+    out: list[str] = []
+    for line in lines:
+        norm = clean_text(line)
+        if not norm:
+            continue
+        if norm in seen:
+            continue
+        seen.add(norm)
+        out.append(norm)
+    return out
 
 def is_briefing_title_or_text(title: str, summary_text: str) -> bool:
     combined = f"{title} {summary_text}".lower()

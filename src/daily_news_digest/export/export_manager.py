@@ -24,6 +24,7 @@ from daily_news_digest.utils import (
     ensure_lines_1_to_3,
     estimate_read_time_seconds,
     jaccard_tokens,
+    strip_summary_boilerplate,
 )
 
 _LONG_IMPACT = {"policy", "sanctions"}  # 장기 영향 신호로 간주하는 카테고리
@@ -84,18 +85,17 @@ def _infer_importance_from_signals(signals: set[str]) -> int:
     return 1
 
 
-def _pick_summary_source(title: str, summary: str, summary_raw: str, full_text: str) -> str:
-    """요약 후보 중 제목과 중복되지 않는 가장 긴 본문 선택."""
+def _pick_summary_source(
+    title: str,
+    summary: str,
+    summary_raw: str,
+) -> str:
+    """LLM 요약이 없을 때 RSS 요약만 사용 (본문은 사용하지 않음)."""
     title_clean = clean_text(title)
-    candidates = [
-        clean_text(full_text),
-        clean_text(summary_raw),
-        clean_text(summary),
-    ]
-    filtered = [c for c in candidates if c and c.lower() != title_clean.lower()]
-    if filtered:
-        return max(filtered, key=len)
-    return clean_text(summary_raw or summary or full_text or title_clean)
+    base = clean_text(summary_raw or summary)
+    if base and base.lower() != title_clean.lower():
+        return base
+    return ""
 
 def _load_existing_digest(path: str) -> DailyDigest | None:
     """기존 digest 파일 로드."""
@@ -211,8 +211,15 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         title_ko = clean_text(ai_result.get("title_ko") or "")
         if title_ko:
             title = title_ko
-        summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
-        summary_lines = ensure_lines_1_to_3(ai_result.get("summary_lines") or [], summary_source)
+        ai_lines_raw = ai_result.get("summary_lines") or []
+        has_llm_summary = isinstance(ai_lines_raw, list) and len([x for x in ai_lines_raw if clean_text(x)]) > 0
+        summary_source = _pick_summary_source(
+            title,
+            summary,
+            summary_raw,
+        )
+        summary_source = strip_summary_boilerplate(summary_source)
+        summary_lines = ensure_lines_1_to_3(ai_lines_raw, summary_source)
 
         quality_label = ai_result.get("quality_label") or item.get("aiQuality") or "ok"
         quality_reason = clean_text(ai_result.get("quality_reason") or item.get("quality_reason") or "")

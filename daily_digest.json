@@ -1,11 +1,14 @@
 {
   "date": "2026-02-04",
+  "date": "2026-02-04",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
   "lastUpdatedAt": "2026-02-04T12:00:50.432756+09:00",
   "items": [
     {
+      "id": "2026-02-04_1",
+      "date": "2026-02-04",
       "id": "2026-02-04_1",
       "date": "2026-02-04",
       "category": "IT",
@@ -16,9 +19,7 @@
       ],
       "whyImportant": "궤도 데이터 센터는 막대한 투자와 기술적 난제를 수반하는 미래 기술로, AWS와 같은 주요 기업의 판단은 업계 방향성에 영향을 미칠 수 있습니다.",
       "importanceRationale": "근거: AWS CEO의 발언은 궤도 데이터 센터 구축에 대한 단기적인 투자가 이루어지기 어렵다는 점을 시사합니다.",
-      "impactSignals": [
-        "capex"
-      ],
+      "impactSignals": ["capex"],
       "dedupeKey": "아마존-aws-궤도데이터센터-미래기술",
       "matchedTo": null,
       "sourceName": "Reuters",
@@ -41,10 +42,7 @@
       ],
       "whyImportant": "이번 입법 추진은 연방 요원의 책임 범위와 민권 보호 간의 균형에 대한 중요한 논의를 촉발할 수 있습니다.",
       "importanceRationale": "근거: 미국 일부 지역에서 연방 요원의 민권 침해 면책 제한 입법이 추진됨에 따라, 향후 유사한 입법 시도가 전국적으로 확산될 가능성이 있습니다.",
-      "impactSignals": [
-        "security",
-        "policy"
-      ],
+      "impactSignals": ["security", "policy"],
       "dedupeKey": "미국-연방요원-민권침해-면책",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -67,9 +65,7 @@
       ],
       "whyImportant": "기관투자가의 스튜어드십코드 이행 감독 문제는 자본시장의 건전성과 투자자 보호에 중요한 영향을 미칩니다.",
       "importanceRationale": "근거: 금융위원회의 10년 간의 감독 소홀은 기관 투자자의 책임 있는 투자 활동을 저해하고, 장기적으로 자본 시장의 신뢰도에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        "capex"
-      ],
+      "impactSignals": ["capex"],
       "dedupeKey": "기관투자자-스튜어드십코드-이행감독-금융위",
       "matchedTo": null,
       "sourceName": "한겨레",
@@ -91,9 +87,7 @@
       ],
       "whyImportant": "기업의 실적 증가는 투자 및 고용 확대로 이어져 경제에 긍정적인 영향을 미칠 수 있습니다.",
       "importanceRationale": "근거: 에이피알의 최대 매출 및 영업이익 달성은 기업 성과를 나타내는 지표이며, 향후 투자 결정에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        "earnings"
-      ],
+      "impactSignals": ["earnings"],
       "dedupeKey": "에이피알-최대-매출-영업이익",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -115,9 +109,7 @@
       ],
       "whyImportant": "새로운 공법의 실적 확보는 향후 유사 프로젝트 수주에 긍정적인 영향을 미칠 수 있습니다.",
       "importanceRationale": "근거: DL이앤씨가 새로운 RBM 공법을 활용한 터널 굴착 실적을 확보했다는 사실은 향후 프로젝트 수주에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        "earnings"
-      ],
+      "impactSignals": ["earnings"],
       "dedupeKey": "dl이앤씨-rbm공법-터널굴착",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -140,9 +132,7 @@
       ],
       "whyImportant": "가덕도신공항 건설은 향후 국내 건설 산업에 중요한 영향을 미칠 수 있는 대규모 프로젝트입니다.",
       "importanceRationale": "근거: 대우건설의 공항 건설 경험 언급은 향후 유사 프로젝트 수주 경쟁에 영향을 줄 수 있어 중요도 3으로 판단됩니다.",
-      "impactSignals": [
-        "earnings"
-      ],
+      "impactSignals": ["earnings"],
       "dedupeKey": "대우건설-가덕도신공항-공사-경험-실적",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -165,10 +155,7 @@
       ],
       "whyImportant": "미국 시장에서의 판매 호조는 현대차와 기아의 글로벌 실적에 긍정적인 영향을 미칠 수 있습니다.",
       "importanceRationale": "근거: 기사에서 구체적인 판매량이나 실적 수치가 제공되지 않아 중요도 평가는 제한적입니다.",
-      "impactSignals": [
-        "earnings",
-        "market-demand"
-      ],
+      "impactSignals": ["earnings", "market-demand"],
       "dedupeKey": "현대차-기아-미국-판매-호조",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -191,9 +178,7 @@
       ],
       "whyImportant": "체중 감량 치료제 시장의 성장 가능성을 시사하며, 관련 기업들의 전략적 의사 결정에 영향을 줄 수 있습니다.",
       "importanceRationale": "근거: 암젠의 실적 발표는 체중 감량 옵션에 대한 수요를 강조하며, 이는 관련 산업 전반에 걸쳐 중요한 시사점을 제공합니다.",
-      "impactSignals": [
-        "earnings"
-      ],
+      "impactSignals": ["policy", "capex"],
       "dedupeKey": "암젠-체중감량",
       "matchedTo": null,
       "sourceName": "Reuters",
@@ -216,9 +201,7 @@
       ],
       "whyImportant": "소비 심리 변화가 외식 산업 전반에 미치는 영향을 파악하는 데 중요한 지표가 될 수 있습니다.",
       "importanceRationale": "근거: 소비자의 재량적 지출 감소가 기업의 매출 및 마진에 직접적인 영향을 미치는 것을 보여주므로 중요도 3으로 판단됩니다.",
-      "impactSignals": [
-        "market-demand"
-      ],
+      "impactSignals": ["market-demand"],
       "dedupeKey": "치폴레-매출-마진-소비자지출",
       "matchedTo": null,
       "sourceName": "Reuters",

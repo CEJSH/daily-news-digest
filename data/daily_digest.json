@@ -3,7 +3,7 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-05T00:59:16.940373+09:00",
+  "lastUpdatedAt": "2026-02-05T02:39:00.427270+09:00",
   "items": [
     {
       "id": "2026-02-05_1",
@@ -12,18 +12,18 @@
       "title": "코인 거래소 대표들, 국회에 지분 제한 우려 전달",
       "summary": [
         "국내 주요 가상자산 거래소 대표들이 국회에서 디지털자산기본법의 대주주 지분 제한 방안에 대한 우려를 표명했습니다.",
-        "이들은 해당 규제가 산업 혁신과 글로벌 경쟁력을 저해할 수 있다고 주장하며, 차등 규제 필요성을 제기했습니다.",
+        "이들은 해당 규제가 산업 혁신과 글로벌 경쟁력을 저해할 수 있다고 주장하며, 차등 규제의 필요성을 제기했습니다.",
         "금융위원회는 거래소 대주주 지분율을 15~20%로 제한하는 방안을 추진 중이며, 업계는 과도한 재산권 침해라며 반발하고 있습니다."
       ],
-      "whyImportant": "가상자산 거래소 지분 제한 관련 정책 방향은 국내 가상자산 시장의 경쟁 환경과 투자자 보호에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금융위원회가 거래소 대주주 지분율을 15~20%로 제한하는 방안을 추진하고 있어, 규제 도입 여부에 따라 시장에 미치는 영향이 클 수 있습니다.",
+      "whyImportant": "가상자산 거래소 지분 제한 관련 정책 결정은 국내 가상자산 시장의 경쟁 환경과 투자에 중대한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융위원회가 거래소 대주주 지분율을 15~20%로 제한하는 방안을 추진하고 있어, 규제 대상이 되는 여러 거래소에 직접적인 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "정부가 가상자산거래소의 대주주 지분 제한을 추진하는 가운데 거래소 대표들이 국회에 우려를 전달했다."
         }
       ],
-      "dedupeKey": "코인-거래소-지분제한-국회-디지털자산",
+      "dedupeKey": "코인-거래소-지분제한-국회-우려",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9NRlppM2pCLTluR0xUX0IwektUUXBpbTktRl9EMElzQlByNkFUeUtHcEp0SnAtY0NSWTY5OWM4YXVnbFprdWxBS1h6eXZkQ2VvLUtsVVRLYjdtUdIBVEFVX3lxTE93dXAxbUY0Wk05TlR5Vjl0YklINzhBWWlSSVZjNHl3NlNnZmVZbjExd05UOVVkNGtTUGJhSXVYNmJFNGZPcVFXeTMxR180UDk3QU1QRQ?oc=5",
@@ -41,11 +41,11 @@
       "category": "IT",
       "title": "삼성, ASML 출신이 세운 첨단 공정 기업에 투자",
       "summary": [
-        "삼성전자는 인공지능(AI) 반도체 불량 검출 전문 기업인 네덜란드 스타트업 인비식스에 소수 지분 투자를 단행했습니다.",
+        "삼성전자는 인공지능 반도체 불량 검출 전문 기업인 네덜란드 스타트업 인비식스에 소수 지분 투자를 단행했습니다.",
         "인비식스는 ASML 핵심 엔지니어 출신들이 설립한 회사로, 삼성전자는 이 회사의 소프트 엑스레이 기반 3차원 계측 솔루션에 주목하고 있습니다.",
         "삼성벤처투자는 미국 반도체 계측 장비 기업 펨토메트릭스에도 추가 투자를 단행하여 지분을 늘렸습니다."
       ],
-      "whyImportant": "이번 투자는 삼성전자가 첨단 공정 수율을 안정화하고 파운드리 시장에서 TSMC를 추격하는 데 중요한 역할을 할 수 있습니다.",
+      "whyImportant": "이번 투자는 삼성전자가 첨단 공정 수율을 안정화하고 파운드리 시장에서 TSMC를 추격하기 위한 전략적 움직임으로 해석될 수 있습니다.",
       "importanceRationale": "근거: 삼성전자는 2㎚ 기반 GAA 공정 수율 안정화를 위해 인비식스 솔루션 도입을 고려하고 있으며, 펨토메트릭스에 10년 만에 후속 투자를 단행했습니다.",
       "impactSignals": [
         {
@@ -53,7 +53,7 @@
           "evidence": "삼성전자가 인공지능(AI) 반도체의 불량을 찾아내는 ‘계측’ 전문 유망 기업에 대한 투자를 늘리고 있다."
         }
       ],
-      "dedupeKey": "삼성-asml-인비식스-펨토메트릭스-투자",
+      "dedupeKey": "삼성-asml-첨단공정-인비식스-펨토메트릭스-투자",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LSlcwYTBGVFYtTm12b29JZ0VVekJTMnBjXzZybHlrdEFKMzViM0M4Q0FXVTJDNzZqTnczcHRacjVDUjZ5VG1heHJXTVk2U2szQlRZekJtaDlrQdIBVEFVX3lxTFBfOHdJb3ZveVNtMlF0a1pMS2hnZXZsX003aUlZdW16RTBmT1VXOTVsSlVYd1l6S0tlVzlQTm5ZTFJ5U0NLT3duNFUwUXZ5THJKYTZ0Sw?oc=5",
@@ -73,10 +73,10 @@
       "summary": [
         "금융위원회는 ESG 공시 제도화를 추진하며, 공급망 전반 배출량 공시인 스코프3를 포함하되 충분한 유예기간을 부여할 예정입니다.",
         "국제적으로 통용되는 기준을 토대로 제조업 기반의 국내 산업 구조와 현실을 반영한 공시 기준을 마련할 계획입니다.",
-        "대형 상장사부터 단계적으로 공시를 시작하고, 초기에는 거래소 공시로 운영 후 법정 공시로 전환하는 방안을 고려하고 있습니다."
+        "공시 역량이 충분한 대형 상장사부터 단계적으로 공시를 시작하고, 초기에는 거래소 공시로 운영 후 법정 공시로 전환하는 방안을 고려하고 있습니다."
       ],
       "whyImportant": "ESG 공시 제도화는 기업의 지속가능성 관련 정보 공개를 촉진하여 투자 및 경영 의사 결정에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금융위원회는 '2035년 국가온실가스 감축목표'를 수립한 만큼 ESG 공시 제도화를 미룰 수 없다고 밝혔으며, EU와 일본의 사례를 참고하여 공시를 의무화하는 방안을 고려하고 있습니다.",
+      "importanceRationale": "근거: 2035년 국가온실가스 감축목표 수립에 따라 ESG 공시 제도화가 추진되며, 대형 상장사부터 단계적으로 공시를 시작할 예정입니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -90,7 +90,7 @@
       "publishedAt": "Wed, 04 Feb 2026 01:00:01 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
@@ -99,20 +99,20 @@
       "id": "2026-02-05_4",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "공정거래위원회 전속고발제, 46년 만에 전면 손질되나",
+      "title": "국민의힘 디지털자산TF 자문위, 금융위의 '가상자산거래소 지분 제한' 추진에 반대",
       "summary": [
-        "이재명 대통령이 공정거래위원회의 전속고발제 폐지를 언급하면서 제도 변경에 대한 관심이 높아지고 있습니다.",
-        "전속고발제는 공정위만이 불공정행위 위반 행위를 고발할 수 있도록 한 제도로, 1980년부터 시행되었으나 '재벌 봐주기' 논란이 있었습니다.",
-        "일각에서는 전면 폐지 시 중소기업의 피해를 우려하며 신중한 접근을 요구하고 있으며, 입찰 담합 분야부터 우선 시행하자는 제안도 제기되었습니다."
+        "국민의힘 디지털자산특별위원회 자문위원회가 금융위원회의 '가상자산거래소 지분 제한' 추진에 반대 입장을 표명했습니다.",
+        "자문위는 지분 제한이 시장 경쟁을 저해하고 투자자 보호에 부정적인 영향을 미칠 수 있다고 우려하고 있습니다.",
+        "- 제호 : MTN(엠티엔) - ight ved."
       ],
-      "whyImportant": "전속고발제 폐지 논의는 기업 경영 활동 및 규제 환경에 중대한 영향을 미칠 수 있는 정책 변화 가능성을 시사합니다.",
-      "importanceRationale": "근거: 이재명 대통령의 발언과 함께 46년간 유지된 제도의 변경 가능성이 제기되었으며, 특히 중소기업에 미칠 영향에 대한 우려가 제기되어 정책 결정에 중요한 고려 사항이 될 수 있습니다.",
+      "whyImportant": "가상자산 거래소 지분 제한에 대한 정책 방향은 시장의 경쟁 환경과 투자자 보호에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융위원회의 가상자산거래소 지분 제한 추진에 대한 반대 입장이 제시되었으나, 구체적인 정책 결정이나 시행 시점은 명시되지 않아 중요도 점수는 3점입니다.",
       "impactSignals": [],
-      "dedupeKey": "공정위-전속고발제-폐지-중소기업",
+      "dedupeKey": "디지털자산tf-자문위-가상자산거래소-지분제한",
       "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE05b01DaWE0Tk8yTUdqaU5PdDhSVnhlaFZRUG5QeUZybVR2QmhyOXpHeGY3NWNKUnlSR1Z5R1BYcEVKSDNjektTWVc2bDdqWXl6MG1LWnR3MENUbFZkbVRGaWctcS1lYWtWM0hhcXhUalRIZTAw?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 09:22:08 GMT",
+      "sourceName": "MTN 머니투데이방송",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Ga0hwTDM5clVKc1draDkyU01JNkZOVFdVbG9oN1Y5anlEZVRYVEdXWTc4OHA2VWxKZ0dPdTFpUlRNWWRrUXJwRFdNZ001cURxS0tXM1lqOGNYVm1lOEs5QXNQcFg?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 06:22:50 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -126,12 +126,12 @@
       "category": "경제",
       "title": "미국 원전 건설 제안 소식에 원전주 동반 강세",
       "summary": [
-        "미국이 한국에 자국 원전 건설을 투자 프로젝트로 제안한 소식이 전해지면서 원전 관련 주식이 강세를 보이고 있습니다.",
-        "한전산업은 20.13% 상승했으며, 한전기술, 대우건설, 한국전력, 두산에너빌리티 등 다른 원전 관련 주식도 일제히 상승했습니다.",
-        "러트닉 미 상무장관은 지난달 김정관 산업통상부 장관과의 만남에서 미국 내 원자력발전소 건설을 투자 프로젝트로 제안한 것으로 알려졌습니다."
+        "미국이 한국에 자국 원전 건설을 투자 프로젝트로 제안한 소식에 원전 관련 주식이 장 초반 강세를 보이고 있습니다.",
+        "한전산업은 전 거래일보다 20.13% 상승했으며, 한전기술, 대우건설, 한국전력, 두산에너빌리티 등도 일제히 상승했습니다.",
+        "러트닉 미 상무장관은 김정관 산업통상부 장관과의 만남에서 미국 내 원자력발전소 건설을 최우선 투자 프로젝트로 제안한 것으로 알려졌습니다."
       ],
-      "whyImportant": "미국의 원전 건설 제안은 향후 국내 원전 관련 기업의 투자 및 사업 확장에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 상무장관이 한국에 원전 건설 투자 프로젝트를 제안했으며, 이에 따라 한전산업 주가가 20.13% 상승하는 등 원전주 전반이 강세를 보였습니다.",
+      "whyImportant": "미국 내 원전 건설 프로젝트 참여 가능성은 국내 원전 산업에 중요한 기회가 될 수 있습니다.",
+      "importanceRationale": "근거: 미국 상무장관이 산업통상부 장관에게 미국 내 원전 건설을 투자 프로젝트로 제안한 사실은 국내 원전 관련 기업에 영향을 미칠 수 있습니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -154,21 +154,21 @@
       "id": "2026-02-05_6",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "중국 로봇 기업들, 국영 펀드 참여로 잇단 투자 유치 성공",
+      "title": "중국 로봇 기업들, 국영 펀드 참여로 투자 유치 잇따라 성공",
       "summary": [
-        "중국 로봇 기업들이 국영 펀드와 빅테크 기업들의 지원을 받아 수천억 원 단위의 투자를 잇달아 유치했습니다.",
+        "중국 로봇 기업들이 국영 펀드와 대형 빅테크의 지원을 받아 수천억 원 단위의 투자를 잇달아 유치했습니다.",
         "림엑스 다이나믹스는 2억 달러, X스퀘어로봇은 10억 위안, 링허우로봇과 오픈마인드인텔리전트로봇은 각각 1억 위안 이상의 투자를 유치했습니다.",
-        "베이징 휴머노이드 로봇 혁신센터 또한 7억 위안 이상의 투자를 유치했으며, 투자자들의 관심이 하드웨어에서 소프트웨어 및 운영체제로 이동하고 있다는 분석이 나옵니다."
+        "베이징 휴머노이드 로봇 혁신센터도 7억 위안 이상의 투자를 유치했으며, 빅테크와 국영 펀드들이 로봇 소프트웨어와 운영체제 투자로 관심을 돌리고 있다는 분석이 나옵니다."
       ],
-      "whyImportant": "중국 로봇 산업의 소프트웨어 및 운영체제 분야 투자 확대는 장기적으로 기술 경쟁력 강화에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 올해 로봇 산업 분야에서 총 85건, 33억 위안(약 6천911억원) 이상의 투자가 유치되었으며, 이 중 73%가 초기 단계 프로젝트에 집행되었습니다.",
+      "whyImportant": "중국 로봇 산업의 소프트웨어 및 운영체제 분야 투자 확대로 기술 경쟁력 강화가 예상됩니다.",
+      "importanceRationale": "근거: 올해 로봇 산업 분야에서 총 85건, 33억 위안(약 6천911억원) 이상의 투자가 유치되었고, 투자의 73%가 초기 단계 프로젝트에 집행되었습니다.",
       "impactSignals": [
         {
           "label": "capex",
           "evidence": "광둥성 선전 소재의 휴머노이드 로봇 제조사 림엑스 다이나믹스는 전날 2억 달러(약 2천905억원) 규모의 투자를 유치했다."
         }
       ],
-      "dedupeKey": "중국-로봇-투자유치-국영펀드-소프트웨어",
+      "dedupeKey": "중국-로봇-투자유치-국영펀드",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mWFdMbUlFbTE5X3I5ZzlncF9PUkhCNGYwb1NBOW0wbzM5UmtRdFRzOGRaSHE4NWxqNV9jQlkzMFhXR0hncy1famxEOV9sRDNJNnlVSF9xem0tNlZYRDVaek1Kejh2Sm9rQ21faS1JZ2FZV2JK?oc=5",
@@ -187,7 +187,7 @@
       "title": "케이웨더, 나스닥 상장사 비보파워로부터 450만 달러 투자 유치",
       "summary": [
         "케이웨더는 나스닥 상장 기업인 비보파워로부터 450만 달러의 투자를 유치했습니다.",
-        "- 제호 : MTN(엠티엔) - ight ⓒ MTN All Rights R ved."
+        "- 제호 : MTN(엠티엔) - ight ved."
       ],
       "whyImportant": "이번 투자는 기상 산업 분야의 성장 가능성을 보여주는 사례입니다.",
       "importanceRationale": "근거: 근거 부족이라 영향 판단 불가",
@@ -207,141 +207,26 @@
     {
       "id": "2026-02-05_8",
       "date": "2026-02-05",
-      "category": "경제",
-      "title": "코오롱, 작년 영업이익 638억원으로 흑자 전환",
-      "summary": [
-        "㈜코오롱은 작년 연결 기준으로 매출 5조 8,511억원, 영업이익 638억원을 기록하며 흑자 전환했습니다.",
-        "매출액은 전년 대비 소폭 감소했으나, 코오롱모빌리티그룹의 수입차 판매 호조로 영업이익이 개선되었습니다.",
-        "코오롱글로벌은 건설 경기 불황에도 3조 572억원의 수주액을 기록했으며, 올해 코오롱인더스트리는 신규 시장 중심의 사업 성장을 추진할 계획입니다."
-      ],
-      "whyImportant": "코오롱의 흑자 전환은 사업 구조 변화 및 신규 시장 확대를 통해 지속적인 성장 가능성을 보여주는 지표입니다.",
-      "importanceRationale": "근거: 코오롱은 영업이익 638억원을 기록하며 흑자 전환했고, 코오롱글로벌은 3조 572억원의 수주액을 기록하여 실적 정상화를 위한 기반을 마련했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "㈜코오롱은 작년 한 해 연결 기준 매출 5조8천511억원, 영업이익 638억원을 기록했다고 4일 밝혔다."
-        }
-      ],
-      "dedupeKey": "코오롱-영업이익-흑자전환-코오롱모빌리티-수입차",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFdVV2S1ZnQlVpSWRYZkdVNy1LdDBpdWItWEd1ZnFhVm5QVEpMenhWRDZYSzFyNWxXQjcxX21YSk0tRWV0RHpzUmNOMTB4dWtkb3JLZzZXVHAzWFN1ZzdIMzNZY1NwdTNJaHNicG9POFgyMDB3?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 08:23:30 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_9",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "재계, 청년 채용 및 지방 투자에 300조원 투자",
-      "summary": [
-        "이재명 대통령은 10대 그룹 대표와 재계 관계자를 만나 청년 채용, 창업 지원, 지역 경제 육성 등을 당부했습니다.",
-        "이에 재계는 300조원 규모의 지방 투자와 적극적인 채용 및 교육으로 화답했습니다.",
-        "재계는 300조원 규모 지방 투자와 적극적인 채용·교육 등으로 화답했다."
-      ],
-      "whyImportant": "재계의 대규모 투자는 청년 일자리 창출과 지역 경제 활성화에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 근거 부족이라 영향 판단 불가",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "재계는 300조원 규모 지방 투자와 적극적인 채용·교육 등으로 화답했다."
-        }
-      ],
-      "dedupeKey": "재계-청년채용-지방투자",
-      "matchedTo": null,
-      "sourceName": "전자신문",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5OelBtZm5Cc0NwY2c1R2xEdDVBVHNGMTI2bVRiMHlYT2NGQmFRNHE1VWlkVnpxUDFHclhWQkNJSlhla182OW1pNllOaGpLdw?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 06:00:53 GMT",
-      "readTimeSec": 10,
-      "status": "dropped",
-      "importance": 1,
-      "qualityLabel": "low_quality",
-      "qualityReason": "정보 부족",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_10",
-      "date": "2026-02-05",
       "category": "글로벌",
       "title": "돌파구를 찾지 못하는 한미 관세 협상",
       "summary": [
         "한국 통상·외교 수장들이 미국의 즉각적인 약속 이행 및 대미 투자 결과물 요구에 빈손으로 귀국하면서 관세 인상 공포가 확산되고 있습니다.",
-        "미국은 한국의 대미투자특별법 입법 지연과 비관세 장벽 문제에 대한 불신을 드러내고 있으며, 한국 정부가 제시한 협의안으로 인해 한미 FTA 공동위 일정조차 잡지 못하고 있습니다.",
-        "전문가들은 정부가 대미 투자 법안 통과와 별개로 1호 투자 건을 신속히 제시하는 등 미국의 불만을 해소해야 한다고 분석합니다."
+        "미국은 한국의 대미투자특별법 입법 지연과 비관세 장벽 문제에 대한 불신을 드러내고 있으며, 한국 정부가 제시한 협의안으로 인해 한미 FTA 공동위원회 일정조차 잡지 못하고 있습니다.",
+        "전문가들은 정부가 대미 투자 법안 통과와 별개로 1호 투자 건을 신속히 제시하는 등 미국 달래기에 나서야 한다고 분석합니다."
       ],
-      "whyImportant": "미국과의 관세 협상 난항은 향후 국내 산업, 특히 자동차 업종과 후방산업에 큰 충격을 줄 수 있는 중요한 문제입니다.",
-      "importanceRationale": "근거: 25% 관세 재인상 가능성이 제기되고 있으며, 실제 관세가 부과될 경우 자동차 업종부터 국내 후방산업에 큰 충격이 예상된다고 언급되어 있습니다.",
+      "whyImportant": "미국과의 관세 협상 난항은 국내 산업, 특히 자동차 업종과 후방산업에 큰 충격을 줄 수 있어, 정부의 적극적인 대응이 중요합니다.",
+      "importanceRationale": "근거: 미국이 한국에 즉각적인 약속 이행과 대미 투자 결과물을 요구하고 있으며, 실제 관세가 부과되면 자동차 업종부터 국내 후방산업에 큰 충격이 예상됩니다.",
       "impactSignals": [
         {
           "label": "capex",
           "evidence": "정부가 대미투자 법안 통과와 별개로 ‘1호 투자건’을 신속히 제시하는 등 미국 달래기에 나설 시점이라는 분석도 나온다."
         }
       ],
-      "dedupeKey": "한미-관세-협상-투자-비관세장벽",
+      "dedupeKey": "한미-관세-협상-투자-불신",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kbGFVQldUbjAtUFpFbXoxd0h5UUlDbHI4Mm5rUWVrbGV3UjBuZzNhbENfTF9ha1pyVmtfVXBRem5HalRCVndEcnBkaGVoTVVOVnVMZjZud0NHUdIBVEFVX3lxTE1Fdm10RXNnalB1SHl2Z0JWZlg4S3FBV3E4ekdtb2hLX2ViRW55dEptbzZybFFqZFFOVnVodXl1eGhlLVVETm9xM3lYeFZRWlk1Q1lBMA?oc=5",
       "publishedAt": "Wed, 04 Feb 2026 09:11:31 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_11",
-      "date": "2026-02-05",
-      "category": "글로벌",
-      "title": "한미 외교수장 회동, 미-이란 협상 전 긴장 고조",
-      "summary": [
-        "조현 외교부 장관이 마코 루비오 미국 국무장관과 만나 원자력, 핵잠, 조선 분야 협력과 북한 비핵화 의지를 재확인했습니다.",
-        "미국 중부사령부는 아라비아해에서 이란 드론을 격추했으며, 호르무즈 해협에서는 이란 혁명수비대가 미국 국적 유조선을 위협한 것으로 알려졌습니다.",
-        "마르크 뤼터 나토 사무총장은 우크라이나 종전 후 안전 보장을 위해 우크라이나에 나토 병력을 배치하겠다고 밝혔습니다."
-      ],
-      "whyImportant": "주요 외교 및 안보 관련 논의와 긴장 고조 상황은 국제 정세에 지속적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 한미 외교 협력, 미-이란 간의 군사적 긴장, 그리고 나토의 우크라이나 안전 보장 논의는 지정학적 리스크에 영향을 미치므로 중요도는 3입니다.",
-      "impactSignals": [],
-      "dedupeKey": "한미-외교-미국-이란-나토-우크라이나",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBocXFEdlFuWVgyWnBUTU9BRm1vcGVZTnpLckhWWnlXbnVOd0lrNjMteTAzNjJZMFYyWXlnd2Vqd0Q1d1VXWE5ieWdSMEpralljOGE3Qm5ta1k3dC1BWG9lckpoM3VDbng2eHhwUGlBZy1sajM3?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 00:37:30 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_12",
-      "date": "2026-02-05",
-      "category": "글로벌",
-      "title": "장동혁 \"대미 관세 협상 원점, 정부·여당 이제 와서 남 탓\"",
-      "summary": [
-        "국민의힘 장동혁 대표는 한국산 제품에 대한 미국의 관세 인상 가능성에 대해 정부와 여당이 입법을 미뤄놓고 이제 와서 남 탓을 한다고 비판했습니다.",
-        "장 대표는 관세 협상이 원점으로 돌아간 데에는 복합적인 원인이 있으며, 정부의 쿠팡, 유한킴벌리 사태 대응과 플랫폼 규제 추진 방식이 우려스럽다고 지적했습니다.",
-        "또한, 대통령이 직접 나서서 이 문제를 해결해야 한다고 주장했습니다."
-      ],
-      "whyImportant": "미국과의 관세 협상 문제는 국내 산업에 미치는 영향이 크기 때문에 중요한 사안입니다.",
-      "importanceRationale": "근거: 관세 협상이 원점으로 돌아갔다는 언급은 국내 산업에 대한 잠재적 영향을 시사하며, 대통령의 직접적인 문제 해결 필요성을 강조하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "국민의힘 장동혁 대표는 29일 도널드 트럼프 미국 대통령이 한국 국회의 입법 미비를 이유로 한국산 제품에 대한 관세를 인상하겠다고 밝힌 것과 관련, \"정부와 여당이 입법을 미뤄놓고 인제 와서 남 탓을 하는 것\"이라고 말했다."
-        }
-      ],
-      "dedupeKey": "대미-관세-협상-원점-정부-여당",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4zdUppZG1tRjRwVnZSVmFocHNQWlZTc1YtVVVZU2FRR05lWDhQYlVnNV9leGM3czNxSkMyblRfZ1pocXVLUkNNcklfZXBtczVEbFUxLTdMeE9vMjE1NXBWYndvV2FmdVFGRmF0U29qYjFOdU9Z?oc=5",
-      "publishedAt": "Thu, 29 Jan 2026 00:36:03 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

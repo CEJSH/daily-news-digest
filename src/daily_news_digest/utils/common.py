@@ -241,6 +241,8 @@ def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
 
 def ensure_lines_1_to_3(lines: list[str], fallback_text: str) -> list[str]:
     """요약 라인을 1~3줄로 보정한다. (강제 분할 없음)"""
+    if not isinstance(lines, list):
+        lines = [str(lines)]
     cleaned = []
     for x in (lines or []):
         base = clean_text(x)
@@ -284,7 +286,7 @@ def strip_summary_boilerplate(text: str) -> str:
         return ""
     lines = [line.strip() for line in re.split(r"[\\r\\n]+", text) if line.strip()]
     patterns = [
-        r"\\-\\s*제호",
+        r"제호",
         r"대표전화",
         r"주소\\s*:\\s*",
         r"등록번호",
@@ -313,9 +315,10 @@ def strip_summary_boilerplate(text: str) -> str:
             if m:
                 earliest = m.start() if earliest is None else min(earliest, m.start())
         if earliest is not None:
-            if earliest <= 3:
+            prefix = line[:earliest].strip()
+            if len(prefix) < 12:
                 continue
-            line = line[:earliest]
+            line = prefix
         line = re.sub(r"[\\s\\-–—·•:｜ㅣ]+$", "", line).strip()
         if not line:
             continue

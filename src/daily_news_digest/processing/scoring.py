@@ -48,6 +48,9 @@ class ItemFilterScorer:
         long_impact_signals: set[str],
         emotional_drop_keywords: list[str],
         drop_categories: set[str],
+        political_actor_keywords: list[str],
+        political_commentary_keywords: list[str],
+        policy_action_keywords: list[str],
         source_tier_a: set[str],
         source_tier_b: set[str],
         source_weight_enabled: bool,
@@ -64,6 +67,9 @@ class ItemFilterScorer:
         self._long_impact_signals = long_impact_signals
         self._emotional_drop_keywords = emotional_drop_keywords
         self._drop_categories = drop_categories
+        self._political_actor_keywords = [k.lower() for k in political_actor_keywords]
+        self._political_commentary_keywords = [k.lower() for k in political_commentary_keywords]
+        self._policy_action_keywords = [k.lower() for k in policy_action_keywords]
         self._source_tier_a = source_tier_a
         self._source_tier_b = source_tier_b
         self._source_weight_enabled = source_weight_enabled
@@ -232,6 +238,8 @@ class ItemFilterScorer:
             return True
         if any(bad in text_all for bad in exclude_keywords):
             return True
+        if self._is_political_commentary(text_all):
+            return True
         if matched_to:
             return True
         if not impact_signals:
@@ -241,3 +249,14 @@ class ItemFilterScorer:
         if not self.passes_emotional_filter(category, text_all, impact_signals):
             return True
         return False
+
+    def _is_political_commentary(self, text_lower: str) -> bool:
+        if not text_lower:
+            return False
+        if not any(k in text_lower for k in self._political_actor_keywords):
+            return False
+        if not any(k in text_lower for k in self._political_commentary_keywords):
+            return False
+        if any(k in text_lower for k in self._policy_action_keywords):
+            return False
+        return True

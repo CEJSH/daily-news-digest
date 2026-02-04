@@ -299,17 +299,6 @@ def is_multi_topic_summary(lines: list[str]) -> bool:
         return True
     return False
 
-def normalize_summary_lines_for_focus(
-    lines: list[str],
-    title: str,
-    summary_text: str,
-) -> tuple[list[str], bool]:
-    is_briefing = is_briefing_title_or_text(title, summary_text)
-    if is_briefing:
-        return lines, True
-    if is_multi_topic_summary(lines):
-        return lines[:1], False
-    return lines, False
 
 def jaccard_tokens(a: str, b: str) -> float:
     toks_a = set(clean_text_ws(a).split())

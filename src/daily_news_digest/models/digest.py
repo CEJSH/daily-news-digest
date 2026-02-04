@@ -28,7 +28,6 @@ class DigestItem(TypedDict):
     readTimeSec: NotRequired[int]
     dedupeKey: NotRequired[str]
     dropReason: NotRequired[str]
-    isBriefing: NotRequired[bool]
 
 
 class DailyDigest(TypedDict):

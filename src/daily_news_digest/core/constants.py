@@ -117,10 +117,27 @@ STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
     "is", "are", "must", "should", "how", "become", "show", "little"
 }
 
+SANCTIONS_KEYWORDS = {
+    "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
+    "제재", "수출통제", "블랙리스트", "금융제재", "자산동결",
+}
+
+TRADE_TARIFF_KEYWORDS = {
+    "tariff", "tariffs", "trade", "trade war", "trade talks", "negotiation", "agreement",
+    "관세", "무역", "무역전쟁", "협상", "협정",
+}
+
 IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
-    "policy": ["regulation", "rule", "policy", "bill", "law", "guideline", "government", "규제", "법안", "정책", "가이드라인", "정부", "국회"],
+    "policy": [
+        "regulation", "rule", "policy", "bill", "law", "guideline", "government",
+        "tariff", "tariffs", "trade", "trade talks", "negotiation", "agreement",
+        "규제", "법안", "정책", "가이드라인", "정부", "국회", "관세", "무역", "협상", "협정",
+    ],
     "budget": ["budget", "fiscal", "appropriation", "incentive", "subsidy", "예산", "재정", "지원금", "세제혜택"],
-    "sanctions": ["sanction", "export control", "entity list", "tariff", "제재", "수출통제", "블랙리스트", "관세"],
+    "sanctions": [
+        "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
+        "제재", "수출통제", "블랙리스트", "금융제재", "자산동결",
+    ],
     "capex": ["data center", "datacentre", "capex", "investment", "build", "expansion", "infrastructure", "facility", "데이터센터", "증설", "투자", "설비"],
     "earnings": ["earnings", "guidance", "profit", "loss", "revenue", "흑자", "적자", "실적", "가이던스", "매출", "영업이익"],
     "stats": [
@@ -129,7 +146,11 @@ IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
         "통계", "지표", "물가", "소비자물가", "생산자물가", "gdp", "pmi", "실업률", "고용지표",
         "고용", "수출입", "무역수지", "소매판매", "산업생산", "경제지표",
     ],
-    "market-demand": ["registrations", "registration", "deliveries", "delivery", "sales", "demand", "shipments", "등록", "판매", "수요"],
+    "market-demand": [
+        "registrations", "registration", "deliveries", "delivery", "sales", "demand", "shipments",
+        "tariff", "tariffs", "trade", "관세", "무역",
+        "등록", "판매", "수요",
+    ],
     "security": ["breach", "exploit", "ransomware", "cve", "vulnerability", "침해", "해킹", "랜섬웨어", "취약점"],
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"]
 }

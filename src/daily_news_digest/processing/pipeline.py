@@ -301,7 +301,7 @@ class DigestPipeline:
         self._dedupe_engine.apply_entity_event_dedupe(all_items)
         self._ai_service.apply_semantic_dedupe(all_items)
         self._dedupe_engine.apply_dedupe_key_similarity(all_items)
-        self._ai_service.prefetch_full_text(all_items)
+        # 성능 최적화: 전체 후보에 대한 본문 prefetch는 비용이 크므로 생략
 
         for topic, items in grouped_items.items():
             filtered = [x for x in items if self._filter_scorer.is_eligible(x)]

@@ -31,6 +31,20 @@ _KOREAN_VERB_ENDINGS = (
     "이라며", "이라고", "이다", "였다", "였던", "했던", "했고", "되었다", "되었습니다"
 )  # 중복 제거용 토큰 정규화 시 동사 어미 제거
 
+_BRIEFING_HINTS = (
+    "브리핑", "모닝 브리핑", "시장 브리핑", "증시 브리핑", "마감 브리핑", "시장 요약", "뉴스 요약",
+    "헤드라인", "오늘의 뉴스", "오늘의 주요", "주요 뉴스", "데일리", "daily brief", "market wrap",
+    "모닝", "정오", "마감", "아침 회의", "뉴스 정리",
+    "오늘의 증시", "증시 요약", "시장 마감", "장 마감", "시황", "시황 요약", "시장 동향",
+    "경제 브리핑", "경제 요약", "금융 요약", "주요 경제", "주요 이슈", "이슈 브리핑",
+    "morning briefing", "evening briefing", "closing bell", "market close", "market summary",
+    "daily briefing", "news briefing", "top headlines", "morning wrap", "evening wrap",
+)
+
+_MULTI_TOPIC_JOINERS = (
+    "그리고", "또한", "한편", "등", "·", "/", "및", "와", "과", "더불어", "이어", "이에", "반면",
+)
+
 def clean_text(s: str) -> str:
     if not s:
         return ""
@@ -257,6 +271,45 @@ def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
+
+def is_briefing_title_or_text(title: str, summary_text: str) -> bool:
+    combined = f"{title} {summary_text}".lower()
+    return any(hint.lower() in combined for hint in _BRIEFING_HINTS)
+
+def _topic_tokens(text: str) -> set[str]:
+    t = clean_text(text).lower()
+    t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
+    parts = [normalize_token_for_dedupe(x, stopwords=set()) for x in t.split()]
+    return {p for p in parts if p}
+
+def is_multi_topic_summary(lines: list[str]) -> bool:
+    if len(lines) < 2:
+        return False
+    tokens_list = [_topic_tokens(line) for line in lines if line]
+    tokens_list = [t for t in tokens_list if len(t) >= 2]
+    if len(tokens_list) < 2:
+        return False
+    overlaps = []
+    for i in range(len(tokens_list) - 1):
+        overlaps.append(jaccard(tokens_list[i], tokens_list[i + 1]))
+    if overlaps and min(overlaps) < 0.2:
+        return True
+    joined = " ".join(lines)
+    if sum(1 for j in _MULTI_TOPIC_JOINERS if j in joined) >= 1:
+        return True
+    return False
+
+def normalize_summary_lines_for_focus(
+    lines: list[str],
+    title: str,
+    summary_text: str,
+) -> tuple[list[str], bool]:
+    is_briefing = is_briefing_title_or_text(title, summary_text)
+    if is_briefing:
+        return lines, True
+    if is_multi_topic_summary(lines):
+        return lines[:1], False
+    return lines, False
 
 def jaccard_tokens(a: str, b: str) -> float:
     toks_a = set(clean_text_ws(a).split())

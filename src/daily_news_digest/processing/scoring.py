@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime
 from typing import Any, Callable
 
+from daily_news_digest.core.constants import SANCTIONS_KEYWORDS, TRADE_TARIFF_KEYWORDS
 from daily_news_digest.processing.types import Item
 
 
@@ -78,11 +79,25 @@ class ItemFilterScorer:
         )
 
     def get_impact_signals(self, text: str) -> list[str]:
-        signals = []
+        signals: list[str] = []
         text_lower = text.lower()
         for signal, keywords in self._impact_signals_map.items():
             if any(kw.lower() in text_lower for kw in keywords):
                 signals.append(signal)
+
+        # 관세/무역은 policy + market-demand 기본 신호로 간주
+        has_trade = any(kw in text_lower for kw in TRADE_TARIFF_KEYWORDS)
+        if has_trade:
+            if "policy" not in signals:
+                signals.append("policy")
+            if "market-demand" not in signals:
+                signals.append("market-demand")
+
+        # 제재는 명시된 제재/수출통제 키워드가 있을 때만 허용
+        has_sanctions = any(kw in text_lower for kw in SANCTIONS_KEYWORDS)
+        if not has_sanctions and "sanctions" in signals:
+            signals = [s for s in signals if s != "sanctions"]
+
         return signals
 
     def map_topic_to_category(self, topic: str) -> str:

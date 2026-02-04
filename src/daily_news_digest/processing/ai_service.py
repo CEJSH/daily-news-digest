@@ -60,6 +60,7 @@ class AIEnrichmentService:
         self._article_fetch_min_chars = article_fetch_min_chars
         self._article_fetch_timeout_sec = article_fetch_timeout_sec
         self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
+        self._fetch_cache: dict[str, tuple[str, str, int | None, str | None, list[str]]] = {}
 
     @staticmethod
     def _parse_meta_kv(meta_str: str) -> dict[str, str]:
@@ -120,6 +121,20 @@ class AIEnrichmentService:
         if hasattr(res, "extractor"):
             extractor = getattr(res, "extractor")
         return text, resolved, status_code, extractor, notes_local
+
+    def _fetch_with_cache(self, link: str) -> tuple[str, str, int | None, str | None, list[str]]:
+        if not link:
+            return "", "", None, None, []
+        cached = self._fetch_cache.get(link)
+        if cached is not None:
+            return cached
+        fetch_output = self._fetch_article_text(
+            link,
+            timeout_sec=self._article_fetch_timeout_sec,
+        )
+        result = self._normalize_fetch_result(fetch_output)
+        self._fetch_cache[link] = result
+        return result
 
     def _mark_uneditable(self, item: Item, reason: str) -> None:
         if item.get("dropReason"):
@@ -271,11 +286,7 @@ class AIEnrichmentService:
             if self._article_fetch_enabled and self._fetch_article_text and fetch_budget > 0:
                 if need_fetch:
                     fetch_attempted += 1
-                    fetch_output = self._fetch_article_text(
-                        link,
-                        timeout_sec=self._article_fetch_timeout_sec,
-                    )
-                    text, resolved_url, status_code, extractor, notes_local = self._normalize_fetch_result(fetch_output)
+                    text, resolved_url, status_code, extractor, notes_local = self._fetch_with_cache(link)
                     fetch_budget -= 1
                     parsed_status = None
                     resolved_for_item = resolved_url
@@ -407,20 +418,23 @@ class AIEnrichmentService:
             return f"title={title}|source={source}|score={score}|age={age}|budget={budget}|need_fetch={int(need_fetch)}"
 
         self._log(f"본문 prefetch 시작: {len(candidates)}개 (예산 {fetch_budget})")
+        seen_links: set[str] = set()
         for item in candidates:
             if fetch_budget <= 0:
                 break
             full_text = item.get("fullText") or ""
             link = item.get("link") or ""
+            if len(full_text.strip()) >= self._article_fetch_min_chars:
+                continue
+            if link and link in seen_links:
+                continue
+            if link:
+                seen_links.add(link)
             need_fetch = len(full_text) < self._article_fetch_min_chars or "news.google.com" in link
             if not need_fetch:
                 continue
             fetch_attempted += 1
-            fetch_output = self._fetch_article_text(
-                link,
-                timeout_sec=self._article_fetch_timeout_sec,
-            )
-            text, resolved_url, status_code, extractor, notes_local = self._normalize_fetch_result(fetch_output)
+            text, resolved_url, status_code, extractor, notes_local = self._fetch_with_cache(link)
             fetch_budget -= 1
             parsed_status = None
             resolved_for_item = resolved_url
@@ -530,4 +544,3 @@ class AIEnrichmentService:
             if not is_dup:
                 kept.append(item)
         self._log("AI 중복 제거 완료")
-

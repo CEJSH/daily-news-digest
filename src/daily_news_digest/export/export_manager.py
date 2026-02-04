@@ -24,6 +24,7 @@ from daily_news_digest.utils import (
     ensure_lines_1_to_3,
     estimate_read_time_seconds,
     jaccard_tokens,
+    normalize_summary_lines_for_focus,
 )
 
 _LONG_IMPACT = {"policy", "sanctions"}  # 장기 영향 신호로 간주하는 카테고리
@@ -213,6 +214,11 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             title = title_ko
         summary_source = _pick_summary_source(title, summary, summary_raw, full_text)
         summary_lines = ensure_lines_1_to_3(ai_result.get("summary_lines") or [], summary_source)
+        summary_lines, is_briefing = normalize_summary_lines_for_focus(
+            summary_lines,
+            title,
+            summary_source,
+        )
 
         quality_label = ai_result.get("quality_label") or item.get("aiQuality") or "ok"
         quality_reason = clean_text(ai_result.get("quality_reason") or item.get("quality_reason") or "")
@@ -321,6 +327,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "importance": importance,
             "qualityLabel": quality_label,
             "qualityReason": quality_reason,
+            "isBriefing": is_briefing,
         }
         if drop_reason:
             out_item["dropReason"] = drop_reason

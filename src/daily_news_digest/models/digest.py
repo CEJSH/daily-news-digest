@@ -23,6 +23,7 @@ class DigestItem(TypedDict):
     readTimeSec: NotRequired[int]
     dedupeKey: NotRequired[str]
     dropReason: NotRequired[str]
+    isBriefing: NotRequired[bool]
 
 
 class DailyDigest(TypedDict):
@@ -32,4 +33,3 @@ class DailyDigest(TypedDict):
     question: str
     lastUpdatedAt: str
     items: list[DigestItem]
-

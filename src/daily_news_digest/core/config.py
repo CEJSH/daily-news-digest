@@ -105,7 +105,6 @@ RSS_SOURCES = [
 NEWSLETTER_TITLE = "🚀 DAILY WORLD – AI & Tech 일일 요약"
 AFFILIATE_AD_TEXT = "🔥 오늘만 50% 할인! 최고의 생산성 도구 구경하기"
 AFFILIATE_LINK = "https://your-affiliate-link.com"
-OUTPUT_FILENAME = "daily_world_news.html"
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = Path(os.getenv("DATA_DIR", str(REPO_ROOT / "data")))

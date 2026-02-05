@@ -33,7 +33,6 @@ GEMINI_MAX_RETRIES = int(os.getenv("GEMINI_MAX_RETRIES", "2"))
 GEMINI_RETRY_BACKOFF_SEC = float(os.getenv("GEMINI_RETRY_BACKOFF_SEC", "1.5"))
 GEMINI_MAX_OUTPUT_TOKENS = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "700"))
 AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "4000"))
-AI_SUMMARY_MIN_CHARS = int(os.getenv("AI_SUMMARY_MIN_CHARS", "200"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
 AI_IMPACT_EVIDENCE_MIN_CHARS = int(os.getenv("AI_IMPACT_EVIDENCE_MIN_CHARS", "400"))
 
@@ -436,11 +435,6 @@ def _normalize_label_list(value: Any, allowed: set[str]) -> list[str]:
     return cleaned
 
 
-def _normalize_impact_signals(value: Any) -> list[str]:
-    # 임팩트 시그널 값을 허용 목록 기준으로 정리
-    return _normalize_label_list(value, _ALLOWED_IMPACT_SIGNALS)
-
-
 def _rule_based_impact_signals(text: str) -> list[str]:
     text_lower = clean_text(text).lower()
     signals: list[str] = []
@@ -477,46 +471,6 @@ def _split_sentences(text: str) -> list[str]:
         if p.strip()
     ]
     return parts if parts else [text.strip()]
-
-
-def _find_evidence_sentence(text: str, keywords: list[str]) -> str:
-    if not text or not keywords:
-        return ""
-    lowered = text.lower()
-    for kw in keywords:
-        if not kw:
-            continue
-        if kw.lower() in lowered:
-            for sent in _split_sentences(text):
-                if kw.lower() in sent.lower():
-                    snippet = clean_text(sent)
-                    return snippet[:160]
-            return clean_text(text)[:160]
-    return ""
-
-
-def _build_impact_signal_evidence(text: str) -> dict[str, str]:
-    text_clean = clean_text(text)
-    if len(text_clean) < AI_IMPACT_EVIDENCE_MIN_CHARS:
-        return {}
-
-    evidence: dict[str, str] = {}
-    for label, keywords in IMPACT_SIGNALS_MAP.items():
-        if label == "sanctions":
-            continue
-        snippet = _find_evidence_sentence(text_clean, list(keywords))
-        if snippet:
-            evidence[label] = snippet
-
-    sanctions_snippet = _find_evidence_sentence(text_clean, list(SANCTIONS_KEYWORDS))
-    if sanctions_snippet:
-        evidence["sanctions"] = sanctions_snippet
-
-    trade_snippet = _find_evidence_sentence(text_clean, list(TRADE_TARIFF_KEYWORDS))
-    if trade_snippet and "policy" not in evidence:
-        evidence["policy"] = trade_snippet
-
-    return evidence
 
 
 def _normalize_impact_signal_objects(value: Any) -> list[dict[str, str]]:

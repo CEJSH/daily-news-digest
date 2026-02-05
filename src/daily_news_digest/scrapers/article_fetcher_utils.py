@@ -8,8 +8,6 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 from daily_news_digest.utils.common import clean_text_ws
 
-_WS_RE = re.compile(r"\s+")
-
 _MEDIA_EXTENSIONS = (
     ".png",
     ".jpg",

@@ -1,12 +1,5 @@
 from __future__ import annotations
 
-QUALITY_KEYWORDS = [  # 고품질/심층 기사 신호어 (가중치·선별에 사용)
-    "분석", "해설", "전망", "심층", "진단", "전략", "패권", "패러다임", "변곡점", "구조",
-    "재편", "지형", "모멘텀", "구조적", "생태계", "시나리오", "data", "in-depth",
-    "diagnosis", "strategy", "paradigm", "inflection point", "structure", "reorganization",
-    "ecosystem", "scenario"
-]
-
 HARD_EXCLUDE_KEYWORDS = [  # 보고서/행사/홍보성 등 즉시 제외 키워드
     "동향", "동향리포트", "리포트", "브리프", "백서", "자료집", "보고서", "연구보고서",
     "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수", "보도자료",

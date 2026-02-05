@@ -31,20 +31,6 @@ _KOREAN_VERB_ENDINGS = (
     "이라며", "이라고", "이다", "였다", "였던", "했던", "했고", "되었다", "되었습니다"
 )  # 중복 제거용 토큰 정규화 시 동사 어미 제거
 
-_BRIEFING_HINTS = (
-    "브리핑", "모닝 브리핑", "시장 브리핑", "증시 브리핑", "마감 브리핑", "시장 요약", "뉴스 요약",
-    "헤드라인", "오늘의 뉴스", "오늘의 주요", "주요 뉴스", "데일리", "daily brief", "market wrap",
-    "모닝", "정오", "마감", "아침 회의", "뉴스 정리",
-    "오늘의 증시", "증시 요약", "시장 마감", "장 마감", "시황", "시황 요약", "시장 동향",
-    "경제 브리핑", "경제 요약", "금융 요약", "주요 경제", "주요 이슈", "이슈 브리핑",
-    "morning briefing", "evening briefing", "closing bell", "market close", "market summary",
-    "daily briefing", "news briefing", "top headlines", "morning wrap", "evening wrap",
-)
-
-_MULTI_TOPIC_JOINERS = (
-    "그리고", "또한", "한편", "등", "·", "/", "및", "와", "과", "더불어", "이어", "이에", "반면",
-)
-
 def clean_text(s: str) -> str:
     if not s:
         return ""
@@ -175,29 +161,6 @@ def normalize_token_for_dedupe(token: str, stopwords: set[str]) -> str:
             return ""
     return tok
 
-def split_summary_to_3lines(summary: str) -> list[str]:
-    """요약 문자열을 최대 3줄 배열로 변환. (MVP UI용)"""
-    s = (summary or "").strip()
-    if not s:
-        return []
-
-    # 문장 단위 분리(영문/국문 공통) → 최대 3개
-    parts = [
-        p.strip()
-        for p in re.split(r"(?<=[\.\!\?。])\s+|(?<=다\.)\s+", s)
-        if p.strip()
-    ]
-    if len(parts) >= 3:
-        return parts[:3]
-
-    # 문장 분리가 애매하면 길이로 균등 분할
-    if len(parts) <= 1 and len(s) > 120:
-        step = max(40, len(s)//3)
-        chunks = [s[i:i+step].strip() for i in range(0, len(s), step)]
-        return chunks[:3]
-
-    return parts
-
 def split_summary_to_lines(summary: str, max_lines: int = 3) -> list[str]:
     """문장 경계 기준으로만 분리 (강제 분할 없음)."""
     s = (summary or "").strip()
@@ -211,33 +174,6 @@ def split_summary_to_lines(summary: str, max_lines: int = 3) -> list[str]:
     if parts:
         return parts[:max_lines]
     return [s]
-
-def ensure_three_lines(lines: list[str], fallback_text: str) -> list[str]:
-    """요약 라인이 3줄이 되도록 보정한다."""
-    cleaned = [clean_text(x) for x in (lines or []) if clean_text(x)]
-    if len(cleaned) >= 3:
-        return cleaned[:3]
-
-    fallback = clean_text(fallback_text or "")
-    if fallback:
-        parts = split_summary_to_3lines(fallback)
-        if not (len(parts) == 1 and not cleaned):
-            for line in parts:
-                if line and line not in cleaned:
-                    cleaned.append(line)
-                if len(cleaned) >= 3:
-                    return cleaned[:3]
-
-        if len(cleaned) < 3:
-            step = max(20, (len(fallback) + 2) // 3)
-            chunks = [fallback[i:i + step].strip() for i in range(0, len(fallback), step)]
-            for c in chunks:
-                if c and c not in cleaned:
-                    cleaned.append(c)
-                if len(cleaned) >= 3:
-                    return cleaned[:3]
-
-    return cleaned[:3]
 
 def ensure_lines_1_to_3(lines: list[str], fallback_text: str) -> list[str]:
     """요약 라인을 1~3줄로 보정한다. (강제 분할 없음)"""
@@ -337,34 +273,6 @@ def _dedupe_lines(lines: list[str]) -> list[str]:
         seen.add(norm)
         out.append(norm)
     return out
-
-def is_briefing_title_or_text(title: str, summary_text: str) -> bool:
-    combined = f"{title} {summary_text}".lower()
-    return any(hint.lower() in combined for hint in _BRIEFING_HINTS)
-
-def _topic_tokens(text: str) -> set[str]:
-    t = clean_text(text).lower()
-    t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
-    parts = [normalize_token_for_dedupe(x, stopwords=set()) for x in t.split()]
-    return {p for p in parts if p}
-
-def is_multi_topic_summary(lines: list[str]) -> bool:
-    if len(lines) < 2:
-        return False
-    tokens_list = [_topic_tokens(line) for line in lines if line]
-    tokens_list = [t for t in tokens_list if len(t) >= 2]
-    if len(tokens_list) < 2:
-        return False
-    overlaps = []
-    for i in range(len(tokens_list) - 1):
-        overlaps.append(jaccard(tokens_list[i], tokens_list[i + 1]))
-    if overlaps and min(overlaps) < 0.2:
-        return True
-    joined = " ".join(lines)
-    if sum(1 for j in _MULTI_TOPIC_JOINERS if j in joined) >= 1:
-        return True
-    return False
-
 
 def jaccard_tokens(a: str, b: str) -> float:
     toks_a = set(clean_text_ws(a).split())

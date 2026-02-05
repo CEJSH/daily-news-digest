@@ -766,17 +766,3 @@ def fetch_article_text(
 ) -> FetchResult:
     _ = session
     return _DEFAULT_FETCHER.fetch(url, timeout_sec=timeout_sec, max_chars=max_chars)
-
-
-def fetch_article_text_compat(
-    url: str,
-    timeout_sec: Optional[int] = None,
-    max_chars: Optional[int] = None,
-) -> tuple[str, str]:
-    r = fetch_article_text(url, timeout_sec=timeout_sec, max_chars=max_chars)
-    m = r.meta
-    meta_str = (
-        f"final_url={m.final_url}||status={m.status}||html_len={m.html_len}"
-        f"||extractor={m.extractor}||notes={','.join(m.notes)}"
-    )
-    return r.text, meta_str

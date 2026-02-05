@@ -186,7 +186,8 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
     last_updated_at = now_kst.isoformat()
 
     items_out: list[dict[str, Any]] = []
-    for i, item in enumerate(top_items[:TOP_LIMIT], start=1):
+    out_index = 0
+    for item in top_items[:TOP_LIMIT]:
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
         summary = (item.get("summary") or "").strip()
@@ -203,6 +204,8 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if full_text_len < 80 and not drop_reason and not is_merged:
             drop_reason = "policy:full_text_missing"
             status_value = "dropped"
+        if drop_reason or status_value == "dropped":
+            continue
 
         ai_result = item.get("ai")
         should_skip_ai = bool(is_merged or drop_reason or status_value == "dropped" or full_text_len < 80)
@@ -214,7 +217,6 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if title_ko:
             title = title_ko
         ai_lines_raw = ai_result.get("summary_lines") or []
-        has_llm_summary = isinstance(ai_lines_raw, list) and len([x for x in ai_lines_raw if clean_text(x)]) > 0
         summary_source = _pick_summary_source(
             title,
             summary,
@@ -325,9 +327,12 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             quality_reason = "정보성 기사"
         if quality_label == "low_quality" and not is_merged:
             status_value = "dropped"
+        if status_value == "dropped":
+            continue
 
+        out_index += 1
         out_item = {
-            "id": f"{date_str}_{i}",
+            "id": f"{date_str}_{out_index}",
             "date": date_str,
             "category": category,
             "title": title,

@@ -159,6 +159,7 @@ def _update_dedupe_history(digest: dict, path: str, days: int) -> None:
         items_out.append({
             "id": it.get("id"),
             "dedupeKey": it.get("dedupeKey"),
+            "clusterKey": it.get("clusterKey"),
             "title": it.get("title") or "",
             "summary": summary_text,
         })
@@ -197,13 +198,14 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
         drop_reason = item.get("dropReason") or ""
         status_value = item.get("status") or ("dropped" if drop_reason else "kept")
+        is_merged = status_value == "merged"
         full_text_len = len(clean_text(full_text))
-        if full_text_len < 80 and not drop_reason:
+        if full_text_len < 80 and not drop_reason and not is_merged:
             drop_reason = "policy:full_text_missing"
             status_value = "dropped"
 
         ai_result = item.get("ai")
-        should_skip_ai = bool(drop_reason or status_value == "dropped" or full_text_len < 80)
+        should_skip_ai = bool(is_merged or drop_reason or status_value == "dropped" or full_text_len < 80)
         if not should_skip_ai and (not isinstance(ai_result, dict) or not ai_result):
             ai_result = enrich_item_with_ai(item) or {}
         elif not isinstance(ai_result, dict):
@@ -227,7 +229,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             quality_reason = "정보 부족"
 
         force_low_quality_downgrade = False
-        if quality_label == "low_quality" and not drop_reason and status_value != "dropped":
+        if quality_label == "low_quality" and not drop_reason and status_value != "dropped" and not is_merged:
             if LOW_QUALITY_POLICY == "drop":
                 drop_reason = f"ai_low_quality:{quality_reason}"
             else:
@@ -247,16 +249,20 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             return reason
 
         policy_drop_reason = ""
-        if any(contains_binary(line) for line in summary_lines) or contains_binary(summary_raw) or contains_binary(summary):
+        if not is_merged and (
+            any(contains_binary(line) for line in summary_lines)
+            or contains_binary(summary_raw)
+            or contains_binary(summary)
+        ):
             policy_drop_reason = "summary_binary"
         elif drop_reason:
             policy_drop_reason = ""
-        elif _is_title_like_summary(title, summary_lines):
+        elif not is_merged and _is_title_like_summary(title, summary_lines):
             policy_drop_reason = "summary_title_only"
 
-        if policy_drop_reason and not drop_reason:
+        if policy_drop_reason and not drop_reason and not is_merged:
             drop_reason = f"policy:{policy_drop_reason}"
-        if drop_reason:
+        if drop_reason and not is_merged:
             status_value = "dropped"
             summary_lines = [f"요약 불가: {_drop_reason_message(drop_reason)}"]
 
@@ -276,14 +282,15 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             why_important = _fallback_why()
         if not importance_rationale:
             importance_rationale = _fallback_importance_rationale()
-        if full_text_len < 80:
+        if full_text_len < 80 and not is_merged:
             why_important = "본문 확보 실패로 판단 불가입니다."
             importance_rationale = "근거: 본문 확보 실패로 판단 불가입니다."
-        if drop_reason or status_value == "dropped":
+        if (drop_reason or status_value == "dropped") and not is_merged:
             why_important = _fallback_why()
             importance_rationale = _fallback_importance_rationale()
 
         dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
+        cluster_key = item.get("clusterKey") or ""
         impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
         evidence_map = ai_result.get("impact_signals_evidence") or {}
         impact_signals_detail = []
@@ -297,7 +304,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         if not importance:
             signals = set(item.get("impactSignals") or [])
             importance = _infer_importance_from_signals(signals)
-        if force_low_quality_downgrade:
+        if force_low_quality_downgrade and not is_merged:
             try:
                 max_importance = int(LOW_QUALITY_DOWNGRADE_MAX_IMPORTANCE)
             except Exception:
@@ -310,13 +317,13 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
         category = item.get("aiCategory") or map_topic_to_category(topic)
 
-        if drop_reason or status_value == "dropped":
+        if (drop_reason or status_value == "dropped") and not is_merged:
             quality_label = "low_quality"
             if not quality_reason:
                 quality_reason = _drop_reason_message(drop_reason)
         if not quality_reason:
             quality_reason = "정보성 기사"
-        if quality_label == "low_quality":
+        if quality_label == "low_quality" and not is_merged:
             status_value = "dropped"
 
         out_item = {
@@ -329,6 +336,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "importanceRationale": importance_rationale,
             "impactSignals": impact_signals_detail,
             "dedupeKey": dedupe_key,
+            "clusterKey": cluster_key,
             "matchedTo": item.get("matchedTo"),
             "sourceName": source_name,
             "sourceUrl": link,
@@ -340,9 +348,23 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             "qualityReason": quality_reason,
             "isBriefing": False,
         }
-        if drop_reason:
+        if drop_reason and not is_merged:
             out_item["dropReason"] = drop_reason
         items_out.append(out_item)
+
+    # merged 기사 matchedTo를 대표 기사 id로 보정
+    cluster_rep: dict[str, str] = {}
+    for it in items_out:
+        if it.get("status") in {"published", "kept"}:
+            ck = it.get("clusterKey") or ""
+            if ck and ck not in cluster_rep:
+                cluster_rep[ck] = it.get("id", "")
+    for it in items_out:
+        if it.get("status") == "merged":
+            ck = it.get("clusterKey") or ""
+            rep_id = cluster_rep.get(ck)
+            if rep_id:
+                it["matchedTo"] = rep_id
 
     digest = {
         "date": date_str,

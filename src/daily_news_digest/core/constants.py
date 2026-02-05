@@ -120,6 +120,68 @@ DEDUPE_EVENT_GROUPS = {  # 이벤트 토큰을 카테고리로 묶어 중복 군
     },
 }
 
+# dedupe용 이슈 클러스터 상위 키(표준 라벨)
+DEDUPE_CLUSTER_EVENT_LABELS = {
+    "funding": "투자",
+    "mna": "인수합병",
+    "ipo": "상장",
+    "earnings": "실적",
+    "sanctions": "제재",
+    "policy": "정책",
+    "capex": "설비투자",
+    "trade_talks": "관세",
+}
+
+# 클러스터 도메인 키워드(상위 주제)
+DEDUPE_CLUSTER_DOMAINS = {
+    "에너지": {
+        "에너지", "전력", "전기", "전력망", "천연가스","natural gas" "lng", "원전", "원자력", "smr", "원자로",
+        "energy", "power", "electricity", "nuclear",  "grid", "utility"
+    },
+    "반도체": {
+        "반도체", "hbm", "메모리", "파운드리", "팹", "노광", "asml", "tsmc","euv", "수율", "계측", "미세공정", "나노", "2nm", "3nm", "gaa", "메트롤로지",   "패키징", "첨단패키징", "hpc", "칩", "fabless", "eda"
+    },
+    "ai": {
+        "ai", "인공지능", "llm", "모델", "생성ai", "생성형", "gpu",  "npu", "accelerator", "추론", "학습", "training", "inference", "파라미터", "프롬프트"
+    },
+    "배터리": {
+        "배터리", "전기차", "ev", "2차전지", "리튬", "양극재", "음극재","셀", "팩", "원통형", "파우치", "lfp", "ncm", "전해질", "분리막", "실리콘음극", "리사이클", "recycling"
+    },
+    "로봇": {
+        "로봇", "robot","휴머노이드", "자율주행로봇", "로보틱스", "humanoid", "robotics"
+    },
+    "통신": {
+        "통신", "5g", "6g",  "네트워크",
+    },
+    "클라우드": {
+        "클라우드", "cloud", "데이터센터", "datacenter", "datacentre", "aws", "azure", "gcp", "hyperscaler","colocation", "코로케이션", "서버팜",
+    },
+}
+
+# 주요 국가/지역 관계 상위 키
+DEDUPE_CLUSTER_RELATIONS = {
+    "한미": {"한국", "미국"},
+    "미중": {"미국", "중국"},
+    "한중": {"한국", "중국"},
+    "한일": {"한국", "일본"},
+    "미일": {"미국", "일본"},
+    "미대만": {"미국", "대만"},
+    "중대만": {"중국", "대만"},
+    "한EU": {"한국", "유럽", "europe", "eu"},
+    "미EU": {"미국", "유럽", "europe", "eu"},
+    "중EU": {"중국", "유럽", "europe", "eu"},
+    "미러": {"미국", "러시아", "러"},
+    "중러": {"중국", "러시아", "러"},
+    "미인도": {"미국", "인도"},
+    "일중": {"일본", "중국"},
+    "한북": {"한국", "북한"},
+    "이스라엘이란": {"이스라엘", "이란"},
+    "미중동": {"미국", "중동"},
+}
+
+DEDUPE_CLUSTER_MAX_TOKENS = 4
+DEDUPE_CLUSTER_MAX_ENTITIES = 2
+
 STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
     "the", "a", "an", "to", "for", "of", "and", "or", "in", "on", "with",
     "is", "are", "must", "should", "how", "become", "show", "little"
@@ -150,9 +212,14 @@ IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
     ],
     "capex": [
         "capex", "expansion", "build", "construction", "plant", "factory", "line",
-        "data center", "datacentre", "facility", "investment", "funding", "round",
-        "증설", "투자", "설비", "시설", "공장", "데이터센터", "건설", "라인", "캐팩스",
-        "투자유치", "펀딩", "라운드",
+        "data center", "datacentre", "facility", "capacity", "utilization",
+        "증설", "설비", "시설", "공장", "데이터센터", "건설", "라인", "캐팩스", "가동률", "가동",
+    ],
+    "investment": [
+        "funding", "financing", "fundraising", "raise", "raised", "round", "series",
+        "investment", "invests", "invest", "equity", "stake", "valuation", "capital",
+        "투자", "지분투자", "전략적 투자", "투자유치", "펀딩", "라운드", "시리즈",
+        "자금조달", "벤처", "vc", "밸류에이션", "기업가치", "투자협상", "투자 협상",
     ],
     "market-demand": [
         "sales", "demand", "deliveries", "shipments", "orders", "bookings", "inventory",

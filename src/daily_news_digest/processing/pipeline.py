@@ -39,6 +39,11 @@ from daily_news_digest.core.constants import (
     DEDUPE_NOISE_WORDS,
     DEDUPE_EVENT_TOKENS,
     DEDUPE_EVENT_GROUPS,
+    DEDUPE_CLUSTER_EVENT_LABELS,
+    DEDUPE_CLUSTER_DOMAINS,
+    DEDUPE_CLUSTER_RELATIONS,
+    DEDUPE_CLUSTER_MAX_TOKENS,
+    DEDUPE_CLUSTER_MAX_ENTITIES,
     DROP_CATEGORIES,
     POLICY_ACTION_KEYWORDS,
     POLITICAL_ACTOR_KEYWORDS,
@@ -116,7 +121,7 @@ class DigestPipeline:
 
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
         def _pick_from_candidates(candidates: list[Item]) -> list[Item]:
-            buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "글로벌": []}
+            buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "정책": [], "글로벌": []}
             for item in candidates:
                 buckets[self._filter_scorer.get_item_category(item)].append(item)
 
@@ -223,14 +228,11 @@ class DigestPipeline:
                 text_all = (title_clean + " " + analysis_text).lower()
                 impact_signals = self._filter_scorer.get_impact_signals(text_all)
                 dedupe_key = self._dedupe_engine.build_dedupe_key(title_clean, analysis_text)
+                cluster_key = self._dedupe_engine.build_cluster_key(dedupe_key)
                 dedupe_ngrams = self._dedupe_engine.dedupe_key_ngrams(dedupe_key, DEDUPKEY_NGRAM_N)
-                matched_to = yesterday_dedupe_map.get(dedupe_key)
+                matched_to = yesterday_dedupe_map.get(cluster_key) if cluster_key else None
 
-                kept_item = self._dedupe_engine.find_existing_duplicate(
-                    tokens,
-                    dedupe_key,
-                    dedupe_ngrams,
-                )
+                kept_item = self._dedupe_engine.find_existing_duplicate(tokens)
                 if kept_item:
                     feed_dupes += 1
                     kept_item.setdefault("mergedSources", []).append(
@@ -276,6 +278,7 @@ class DigestPipeline:
                     "source": source_name,
                     "impactSignals": impact_signals,
                     "dedupeKey": dedupe_key,
+                    "clusterKey": cluster_key,
                     "matchedTo": matched_to,
                     "readTimeSec": read_time_sec,
                     "ageHours": age_hours,
@@ -285,6 +288,7 @@ class DigestPipeline:
                     tokens=tokens,
                     dedupe_key=dedupe_key,
                     dedupe_ngrams=dedupe_ngrams,
+                    cluster_key=cluster_key,
                     item=item,
                 )
                 feed_kept += 1
@@ -298,10 +302,8 @@ class DigestPipeline:
 
         self._log(f"수집 완료: 처리 {total_seen}개, 후보 {len(all_items)}개")
         self._ai_service.apply_ai_importance(all_items)
-        self._dedupe_engine.apply_entity_event_dedupe(all_items)
+        self._dedupe_engine.apply_cluster_dedupe(all_items)
         self._ai_service.apply_semantic_dedupe(all_items)
-        self._dedupe_engine.apply_dedupe_key_similarity(all_items)
-        self._dedupe_engine.apply_dedupe_key_prefix(all_items, prefix_tokens=3)
         # 성능 최적화: 전체 후보에 대한 본문 prefetch는 비용이 크므로 생략
 
         for topic, items in grouped_items.items():
@@ -365,6 +367,11 @@ def build_default_dedupe_engine(
         dedupe_ngram_sim=DEDUPKEY_NGRAM_SIM,
         dedupe_event_tokens=DEDUPE_EVENT_TOKENS,
         dedupe_event_groups=DEDUPE_EVENT_GROUPS,
+        cluster_event_labels=DEDUPE_CLUSTER_EVENT_LABELS,
+        cluster_domains=DEDUPE_CLUSTER_DOMAINS,
+        cluster_relations=DEDUPE_CLUSTER_RELATIONS,
+        cluster_max_tokens=DEDUPE_CLUSTER_MAX_TOKENS,
+        cluster_max_entities=DEDUPE_CLUSTER_MAX_ENTITIES,
         normalize_title_for_dedupe_func=normalize_title_for_dedupe,
         normalize_token_for_dedupe_func=normalize_token_for_dedupe,
         clean_text_func=clean_text,

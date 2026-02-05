@@ -523,6 +523,8 @@ class AIEnrichmentService:
                 self._log(f"AI 중복 제거 진행: {idx}/{total}")
             if not self._is_eligible(item):
                 continue
+            if item.get("status") == "merged":
+                continue
             text = self._dedupe_text(item)
             if not text:
                 continue
@@ -530,15 +532,21 @@ class AIEnrichmentService:
             if not embedding:
                 continue
             item["embedding"] = embedding
+            item_cluster = item.get("clusterKey") or ""
             is_dup = False
             for ref in kept:
                 ref_emb = ref.get("embedding")
                 if not ref_emb:
                     continue
+                ref_cluster = ref.get("clusterKey") or ""
+                if item_cluster or ref_cluster:
+                    if item_cluster != ref_cluster:
+                        continue
                 sim = self._cosine_similarity(embedding, ref_emb)
                 if sim >= self._ai_semantic_dedupe_threshold:
-                    item["dropReason"] = f"semantic_duplicate:{ref.get('title','')[:60]}"
-                    item["matchedTo"] = ref.get("id") or ref.get("dedupeKey") or ref.get("title")
+                    item["status"] = "merged"
+                    item["matchedTo"] = ref.get("id") or ref.get("clusterKey") or ref.get("dedupeKey") or ref.get("title")
+                    item["mergeReason"] = "semantic_duplicate"
                     is_dup = True
                     break
             if not is_dup:

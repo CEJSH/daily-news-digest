@@ -220,7 +220,8 @@ Format:
 category_label rules (choose exactly one):
 - IT = technology, AI, semiconductors, cloud, security, digital infrastructure
 - 경제 = macroeconomy, markets, finance, energy transition, corporate earnings
-- 글로벌 = geopolitics, trade, sanctions, international relations
+- 정책 = domestic legislation/regulation, government enforcement, diplomacy/trade policy
+- 글로벌 = geopolitics and international relations (non-policy primary)
 - If multiple apply, choose the primary driver of impact described in the text.
 
 Quality policy (strict):
@@ -553,7 +554,7 @@ def _normalize_quality_tags(value: Any) -> list[str]:
 
 
 def _normalize_category_label(value: Any) -> str:
-    # 카테고리 라벨을 IT/경제/글로벌로 정규화
+    # 카테고리 라벨을 IT/경제/정책/글로벌로 정규화
     if not value:
         return ""
     raw = clean_text(str(value)).lower()
@@ -561,10 +562,14 @@ def _normalize_category_label(value: Any) -> str:
         return "IT"
     if raw in {"경제", "economy", "economic", "macro", "finance"}:
         return "경제"
+    if raw in {"정책", "policy", "regulation", "legislation", "trade policy", "diplomacy"}:
+        return "정책"
     if raw in {"글로벌", "global", "geopolitics", "world"}:
         return "글로벌"
     if "경제" in raw:
         return "경제"
+    if "정책" in raw or "규제" in raw or "입법" in raw or "통상" in raw or "외교" in raw:
+        return "정책"
     if "global" in raw or "글로벌" in raw:
         return "글로벌"
     if "it" in raw or "tech" in raw:

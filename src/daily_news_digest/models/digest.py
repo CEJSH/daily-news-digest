@@ -27,6 +27,7 @@ class DigestItem(TypedDict):
     publishedAt: NotRequired[str]
     readTimeSec: NotRequired[int]
     dedupeKey: NotRequired[str]
+    clusterKey: NotRequired[str]
     dropReason: NotRequired[str]
 
 

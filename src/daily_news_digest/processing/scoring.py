@@ -19,12 +19,28 @@ def map_topic_to_category(topic: str) -> str:
     if "ai" in t or "반도체" in t or "보안" in t or "저작권" in t or "데이터" in t:
         return "IT"
 
+    if (
+        "정책" in t
+        or "규제" in t
+        or "입법" in t
+        or "법안" in t
+        or "국회" in t
+        or "시행령" in t
+        or "가이드라인" in t
+        or "외교" in t
+        or "통상" in t
+        or "관세" in t
+        or "무역" in t
+        or "협상" in t
+        or "제재" in t
+        or "수출통제" in t
+    ):
+        return "정책"
+
     if "글로벌_정세" in t or "정세" in t or "외교" in t:
         return "글로벌"
 
     if "국내" in t:
-        return "경제"
-    if "정책" in t or "규제" in t:
         return "경제"
     if "실적" in t or "가이던스" in t:
         return "경제"
@@ -104,7 +120,18 @@ class ItemFilterScorer:
         if not has_sanctions and "sanctions" in signals:
             signals = [s for s in signals if s != "sanctions"]
 
-        priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+        priority = [
+            "policy",
+            "earnings",
+            "security",
+            "capex",
+            "investment",
+            "market-demand",
+            "sanctions",
+            "budget",
+            "stats",
+            "infra",
+        ]
         ordered = [s for s in priority if s in signals]
         return ordered[:2]
 
@@ -116,7 +143,7 @@ class ItemFilterScorer:
         topic = item.get("topic", "")
         if ai_category == "글로벌" and "국내" in (topic or ""):
             return "경제"
-        if ai_category in {"IT", "경제", "글로벌"}:
+        if ai_category in {"IT", "경제", "정책", "글로벌"}:
             return ai_category
         return self.map_topic_to_category(topic)
 
@@ -214,6 +241,8 @@ class ItemFilterScorer:
         return score
 
     def is_eligible(self, item: Item) -> bool:
+        if item.get("status") == "merged":
+            return False
         return not item.get("dropReason")
 
     def should_skip_entry(

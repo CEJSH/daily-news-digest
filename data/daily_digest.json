@@ -3,20 +3,51 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-05T18:25:31.736576+09:00",
+  "lastUpdatedAt": "2026-02-05T20:19:09.840972+09:00",
   "items": [
     {
       "id": "2026-02-05_1",
       "date": "2026-02-05",
       "category": "IT",
-      "title": "ElevenLabs, Sequoia Capital 주도하에 5억 달러 투자 유치, 기업 가치 110억 달러로 평가",
+      "title": "DB하이텍, 중국 파운드리 주문 증가로 올해 '풀가동' 전망",
       "summary": [
-        "음성 AI 기업 E Labs가 Sequoia Capital 주도하에 5억 달러의 신규 자금을 조달했으며, 기업 가치는 110억 달러로 평가받았습니다.",
-        "기존 투자자인 a16z는 투자 금액을 4배로 늘렸고, I iq는 3배로 늘렸으며, Lightspeed V e P s, E tic Capital, B d 등이 새로운 투자자로 참여했습니다.",
-        "E Labs는 이번 자금을 연구 개발, 제품 개발 및 인도, 일본, 싱가포르, 브라질, 멕시코와 같은 국제 시장 확장에 사용할 계획입니다."
+        "DB하이텍은 올해 매출 1조 5000억원, 영업이익 3000억원을 목표로 하고 있습니다.",
+        "고전압 전력반도체 사업의 성장과 중국 고객사 증가, AI 확산에 따른 전력반도체 수요 확대로 가동률이 98%에 달할 것으로 예상됩니다.",
+        "지난해 4분기 매출은 전년 동기 대비 36.8%, 영업이익은 99.4% 급증했습니다."
       ],
-      "whyImportant": "이번 투자는 음성 AI 기술의 성장 가능성을 보여주며, ElevenLabs가 음성 외 다른 분야로 확장할 수 있는 기반을 마련해 줄 수 있습니다.",
-      "importanceRationale": "근거: ElevenLabs는 5억 달러의 투자를 유치했으며, ARR이 3억 3천만 달러에 달하는 성장세를 보이고 있어 음성 AI 모델 시장의 경쟁이 심화될 것으로 예상됩니다.",
+      "whyImportant": "DB하이텍의 실적 증가는 국내 파운드리 산업의 성장과 전력반도체 시장의 확대 가능성을 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: DB하이텍은 지난해 매출이 2024년보다 23.5%, 영업이익은 45.3% 증가했으며, 올해 매출 목표를 7.4%, 영업이익 목표를 8.2% 높게 설정했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "DB하이텍은 “중국 고객사 증가와 인공지능(AI) 확산에 따른 전력반도체 수요의 지속적 확대가 실적에 긍정적인 영향을 줬다”고 설명했다."
+        }
+      ],
+      "dedupeKey": "db하이텍-파운드리-전력반도체-실적",
+      "clusterKey": "실적/반도체/에너지/db하이텍",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0yXzN4aG4yUTJUbW0yQ01kSjRiWFMzUVctTkRjUGFwT05sLXRXMmlnOVZ2bWxMQmFCbFluNUZOREkxZEkzSlVvZTUta0phLWVXWll2T3lKbXBRUdIBVEFVX3lxTE42Tzlkd3FidkpSN0dPSmNuX0wycC1GSnZNcjN0RkpMVmV3bGFjTVBJSkNEcE5QV3pOdzlMc2dVSWZNZTlnSjhmdTJZT3lDUVExMlJIRg?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 09:06:50 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-05_2",
+      "date": "2026-02-05",
+      "category": "IT",
+      "title": "ElevenLabs, Sequoia Capital 주도 하에 5억 달러 투자 유치, 기업 가치 110억 달러로 평가",
+      "summary": [
+        "음성 AI 기업 E Labs가 Sequoia Capital이 주도하는 새로운 투자 라운드에서 5억 달러를 유치했으며, 기업 가치는 110억 달러로 평가받았습니다.",
+        "이번 투자에는 기존 투자자인 a16z가 투자 금액을 4배로 늘렸고, I iq는 3배로 늘렸으며, Lightspeed V e P s, E tic Capital, B d 등 새로운 투자자들도 참여했습니다.",
+        "E Labs는 이번 자금을 연구 개발, 제품 개발, 그리고 인도, 일본, 싱가포르, 브라질, 멕시코와 같은 국제 시장 확장에 사용할 계획입니다."
+      ],
+      "whyImportant": "음성 AI 기술의 발전과 시장 확장에 중요한 자금 지원이 될 수 있습니다.",
+      "importanceRationale": "근거: ElevenLabs는 5억 달러의 투자를 유치했으며, 이는 음성 AI 모델 제공업체에 대한 투자자들의 관심을 보여주는 사례입니다.",
       "impactSignals": [],
       "dedupeKey": "elevenlabs-투자유치-sequoia-음성ai",
       "clusterKey": "투자/elevenlabs/sequoia",
@@ -32,17 +63,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_2",
+      "id": "2026-02-05_3",
       "date": "2026-02-05",
       "category": "IT",
       "title": "구글, 클라우드 호실적과 AI 인프라 투자 확대",
       "summary": [
-        "알파벳은 올해 AI 인프라 투자를 전년 대비 2배로 늘릴 계획이며, 이는 자체 칩과 모델을 통합한 AI 클라우드 시장 선두를 위한 전략으로 풀이됩니다.",
-        "구글 클라우드의 4분기 매출은 전년 대비 47% 급증했으며, 수주 잔액은 전 분기 대비 55% 증가한 2400억달러를 기록했습니다.",
+        "알파벳은 올해 AI 인프라 투자를 전년 대비 2배로 늘릴 계획이며, 이는 자체 칩과 모델을 통합한 AI 클라우드 시장 선두를 위한 전략으로 해석됩니다.",
+        "구글 클라우드의 4분기 매출은 전년 대비 47% 급증했으며, 클라우드 수주 잔액은 전 분기 대비 55% 증가한 2400억 달러를 기록했습니다.",
         "알파벳은 올해 자본 지출 가이던스를 지난해의 2배 수준으로 제시하며 AI 인프라 투자 기준을 새로 세웠다는 평가를 받고 있습니다."
       ],
-      "whyImportant": "구글의 AI 인프라 투자 확대는 클라우드 시장 경쟁 심화와 AI 기술 발전에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 알파벳은 AI 인프라 투자를 2배로 늘리고, 클라우드 수주 잔액이 2400억달러로 증가하는 등 AI 및 클라우드 시장에 대한 투자를 확대하고 있습니다.",
+      "whyImportant": "구글의 AI 인프라 투자 확대는 클라우드 시장 경쟁 심화 및 AI 기술 발전에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 알파벳은 AI 인프라 투자를 2배로 늘리고, 클라우드 수주 잔액이 2400억 달러로 증가하는 등 클라우드 시장에서의 경쟁 심화와 AI 기술 발전에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "earnings",
@@ -63,54 +94,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_3",
-      "date": "2026-02-05",
-      "category": "IT",
-      "title": "삼성, ASML 출신이 세운 첨단 공정 기업에 투자",
-      "summary": [
-        "요약 불가: 정보 부족"
-      ],
-      "whyImportant": "요약 불가: 정보 부족",
-      "importanceRationale": "근거: 정보 부족",
-      "impactSignals": [],
-      "dedupeKey": "삼성-asml-첨단공정-인비식스-펨토메트릭스-투자",
-      "clusterKey": "투자/반도체/삼성/세운",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LSlcwYTBGVFYtTm12b29JZ0VVekJTMnBjXzZybHlrdEFKMzViM0M4Q0FXVTJDNzZqTnczcHRacjVDUjZ5VG1heHJXTVk2U2szQlRZekJtaDlrQdIBVEFVX3lxTFBfOHdJb3ZveVNtMlF0a1pMS2hnZXZsX003aUlZdW16RTBmT1VXOTVsSlVYd1l6S0tlVzlQTm5ZTFJ5U0NLT3duNFUwUXZ5THJKYTZ0Sw?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 07:50:36 GMT",
-      "readTimeSec": 10,
-      "status": "dropped",
-      "importance": 3,
-      "qualityLabel": "low_quality",
-      "qualityReason": "정보 부족",
-      "isBriefing": false,
-      "dropReason": "ai_low_quality:정보 부족"
-    },
-    {
       "id": "2026-02-05_4",
       "date": "2026-02-05",
       "category": "IT",
-      "title": "Alphabet, 투자자들에게 Google-Apple AI 계약에 대해 언급하지 않음",
+      "title": "메모리 공급 계약 방식 변화: 단기 계약 및 사후 정산 도입",
       "summary": [
-        "Alphabet은 4분기 실적 발표에서 Apple과의 AI 계약에 대한 투자자의 질문에 답변을 거부했습니다.",
-        "Apple의 S i용 AI 구동과 관련된 이번 파트너십이 Alphabet의 핵심 사업에 미치는 영향에 대해 언급을 피한 것으로 보입니다.",
-        "Google은 과거 Apple 기기의 기본 검색 엔진으로 지정되기 위해 Apple에 200억 달러를 지불한 바 있습니다."
+        "메모리 가격 상승으로 인해 삼성전자, SK하이닉스, 마이크론 등 메모리 제조사들이 공급 계약 방식을 변경하고 있습니다.",
+        "기존의 장기 공급 계약에서 단기 계약으로 전환되고 있으며, 통합 가격 결정 방식 대신 시세를 반영한 사후 정산 개념이 도입되고 있습니다."
       ],
-      "whyImportant": "Alphabet과 Apple 간의 AI 협력은 AI 기술 경쟁 환경과 검색 광고 시장에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: Apple과의 AI 계약이 Google의 광고 수익 모델에 미치는 영향이 불분명하며, 경쟁사 Anthropic이 광고 기반 AI에 도전하는 상황에서 Alphabet이 구체적인 언급을 회피함에 따라 중요도 3으로 판단됩니다.",
+      "whyImportant": "메모리 공급 계약 방식의 변화는 메모리 시장의 가격 변동성에 대한 대응 전략 변화를 의미하며, 관련 산업 전반에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 메모리 가격 상승이 계약 방식 변화를 야기하고 있으며, 삼성전자, SK하이닉스, 마이크론 등 여러 기업에 영향을 미치고 있습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "Alphabet declined to answer one of its investors during questions about Google’s AI deal with Apple on Wednesday’s fourth-quarter earnings call."
+          "label": "market-demand",
+          "evidence": "메모리 가격 상승이 공급 계약 방식까지 바꾸고 있다."
         }
       ],
-      "dedupeKey": "alphabet-google-apple-계약",
-      "clusterKey": "관세/alphabet/won",
+      "dedupeKey": "메모리-공급계약-가격-사후정산",
+      "clusterKey": "투자/구글/올해",
       "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWEwwREZ2a054UVdaeTVFTmxBMTZZNjNoOVFGNnhIWGRncWwxSGFSS2JNUUhfbVA1M1BZeWlxcGk0YW5UQVFPSWJSaGU2dllhaUptbUNVNVVjdUFVcHJrTXA1bG5LT1JKQ0Z0UjdBZS1TcXZkR3RWV2V5LUdmMlBiTWs1S3ZhVUNmSXJDSEFBa1pEOEJCRUppTGdRdHRhcTJWa1R3bA?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 23:28:31 GMT",
+      "sourceName": "전자신문",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zc1dTb3A1SHNERWV6MTdBQTVxVUR3RFBqRWFhYlhUbEJwMHFGdmE0UFdmY1NZTm94bzE0MF80QlBHUWFfUDBuV2hNUzhLUQ?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 05:08:46 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -122,45 +127,14 @@
       "id": "2026-02-05_5",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "미-이란 핵 협상 불확실성에 국제유가 3% 상승",
+      "title": "IHI, 일본 원전 재가동·신설 추진에 부품 증산",
       "summary": [
-        "미국과 이란 간의 협상 관련 불확실성이 커지면서 국제유가가 3% 넘게 상승했습니다.",
-        "브렌트유 선물 종가는 배럴당 69.46달러로 3.16% 올랐으며, 서부텍사스산원유(WTI) 선물 종가는 배럴당 65.14달러로 3.05% 상승했습니다.",
-        "이란에서 전쟁이 발생할 경우 하루 340만 배럴에 달하는 이란의 원유 공급이 위험에 처할 수 있다는 분석이 나왔습니다."
+        "일본 중공업 업체 IHI가 원자력발전소 부품 증산에 나설 예정이며, 이를 위해 3년간 약 1,857억원을 투자할 계획입니다.",
+        "IHI는 요코하마 공장의 제조 설비 보강 및 교체, 그리고 직원 수 증원도 검토 중입니다.",
+        "일본 정부의 원전 정책 전환과 AI 보급에 따른 전력 수요 증가 전망이 IHI의 원전 부품 증산 추진 배경으로 분석됩니다."
       ],
-      "whyImportant": "미국과 이란 간의 핵 협상 결과는 국제 에너지 시장의 변동성을 야기할 수 있어 중요합니다.",
-      "importanceRationale": "근거: 국제유가가 3% 상승했으며, 이란 전쟁 발생 시 하루 340만 배럴의 원유 공급에 차질이 생길 수 있다는 분석이 유가 변동의 근거입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "미국과 이란 간 협상 관련 불확실성이 커지면서 4일(현지시간) 국제유가가 3% 넘게 올랐다."
-        }
-      ],
-      "dedupeKey": "국제유가-미국-이란-핵협상-불확실성",
-      "clusterKey": "국제유가/미국",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB0TmJtS1Z3UnRqYklpVVpMQUNWWFAxU0lLWGlGRzNabnlQaUM4dlJYdkpDSTJqQmxjV1NZTTlueDFTd2FtQUNDSGh6eGFyWllIaUthdmF5Rk5tWDJNc2VKUjhaNVdpVHowT3V0Y201VjdlbHVK?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 20:52:41 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_6",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "IHI, 일본 원전 재가동 및 신설 추진에 부품 증산",
-      "summary": [
-        "일본 중공업 업체 IHI가 원자력발전소 부품 증산에 나설 예정입니다.",
-        "IHI는 3년간 원전 부문에 약 1,857억원을 투자하고 요코하마 공장의 제조 설비 보강 및 교체를 검토 중이며, 직원 수도 늘릴 계획입니다.",
-        "간사이전력은 후쿠이현 미하마 원전에 차세대 원전 신설을 위한 조사를 시작했습니다."
-      ],
-      "whyImportant": "원전 부품 증산은 향후 에너지 정책 및 관련 산업에 영향을 미칠 수 있는 중요한 결정입니다.",
-      "importanceRationale": "근거: IHI가 원전 부문에 3년간 약 1,857억원을 투자하고, 간사이전력이 차세대 원전 신설 조사를 시작하는 등 원전 산업 확대 움직임이 나타나고 있습니다.",
+      "whyImportant": "원전 부품 산업 확장은 에너지 정책 변화와 전력 수요 증가에 따른 장기적인 추세를 반영합니다.",
+      "importanceRationale": "근거: IHI가 원전 부문에 3년간 약 1,857억원을 투자하고, 미쓰비시중공업도 2025년 4월부터 원전 관련 인력을 200명 이상 늘리는 등 일본 원전 산업 전반의 확대가 예상됩니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -168,10 +142,10 @@
         },
         {
           "label": "market-demand",
-          "evidence": "신문은 일본 정부가 원전 축소에서 최대한 활용하는 쪽으로 방침을 전환해 원자로 재가동·신설 움직임이 나타나고 있고, 외국에서도 인공지능(AI) 보급으로 전력 수요가 늘어날 것으로 전망되자 IHI가 원전 부품 증산을 추진하려는 것으로 보인다고 해설했다."
+          "evidence": "외국에서도 인공지능(AI) 보급으로 전력 수요가 늘어날 것으로 전망되자 IHI가 원전 부품 증산을 추진하려는 것으로 보인다고 해설했다."
         }
       ],
-      "dedupeKey": "ihi-원전-부품-증산-투자",
+      "dedupeKey": "일본-원전-재가동-부품-증산-ihi",
       "clusterKey": "에너지/재가동/신설",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -185,48 +159,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_7",
+      "id": "2026-02-05_6",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "한미약품, 작년 매출 및 영업이익 역대 최대 달성",
+      "title": "KAI, 작년 영업이익 2,692억 원으로 11.8% 증가…올해 매출 목표 최초 5조 원대",
       "summary": [
-        "한미약품은 작년 연결 기준 영업이익이 2,578억원으로 전년 대비 19.2% 증가했으며, 매출은 1조 5,475억원으로 3.5% 증가했다고 밝혔습니다.",
-        "주요 품목인 로수젯의 성장과 MSD 기술료 수익 확대, 북경한미 정상화 등이 실적에 기여했습니다.",
-        "이상지질혈증 복합신약 로수젯은 전년 대비 8.4% 성장한 2,279억원의 처방 매출을 기록했습니다."
-      ],
-      "whyImportant": "한미약품의 역대 최대 실적 달성은 국내 제약 산업의 성장 가능성을 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 한미약품은 작년 매출 1조 5,475억원을 기록하며 전년 대비 3.5% 증가했고, 영업이익은 2,578억원으로 19.2% 증가하여 역대 최대치를 기록했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "한미약품은 작년 매출과 영업이익이 창사 이래 최대치를 기록했다고 5일 밝혔다."
-        }
-      ],
-      "dedupeKey": "한미약품-매출-영업이익-최대-로수젯",
-      "clusterKey": "한미_실적/작년/영업익",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5maXNZVHI4dkFzdFpGTUdsM2xuVEJPUXg1eVpkZWRMZ1hUdmQ1ZzlSWW91Y3NQME5LbWdyMmN0S3AtSU5hYUJNWl9hQ1NtYk9NQU9FYnZJaEFHaDlUSjJ5MEVsbVRhV015Rmh6bzVXNUI2R3lM?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 07:57:59 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_8",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "KAI, 작년 영업이익 2,692억원으로 11.8% 증가…올해 매출 목표 최초 5조원대",
-      "summary": [
-        "한국항공우주산업(KAI)은 완제기 수주 호조로 지난해 매출 3조 6,964억원, 영업이익 2,692억원의 실적을 달성했다고 밝혔습니다.",
+        "한국항공우주산업(KAI)은 완제기 수주 호조로 지난해 매출 3조 6,964억 원, 영업이익 2,692억 원의 잠정 실적을 달성했다고 밝혔습니다.",
         "이는 전년 동기 대비 매출은 1.7%, 영업이익은 11.8% 증가한 수치입니다.",
-        "KAI는 올해 매출 가이던스를 전년 실적 대비 58.1% 증가한 5조 7,306억원으로 제시했으며, 이는 창립 이래 처음으로 5조원 이상을 제시한 것입니다."
+        "KAI는 올해 매출 가이던스를 전년 실적 대비 58.1% 증가한 5조 7,306억 원으로 제시했으며, 이는 창립 이래 처음으로 5조 원 이상을 제시한 것입니다."
       ],
-      "whyImportant": "KAI의 매출 목표 증가는 KF-21 양산 전환 및 수출 확대를 통해 대한민국 항공우주산업의 성장을 가늠할 수 있는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: KAI는 올해 매출 가이던스를 전년 실적 대비 58.1% 증가한 5조 7,306억원으로 제시했는데, 이는 창립 이래 처음으로 5조원 이상을 제시한 것입니다.",
+      "whyImportant": "KAI의 매출 목표 증가는 KF-21 양산 전환 및 수출 확대를 통해 대한민국 항공우주산업의 성장을 가속화할 수 있다는 점에서 중요합니다.",
+      "importanceRationale": "근거: KAI는 올해 매출 가이던스를 전년 대비 58.1% 증가한 5조 7,306억 원으로 제시했으며, 수주는 63% 증가한 10조 4,383억 원으로 제시했습니다.",
       "impactSignals": [
         {
           "label": "earnings",
@@ -247,17 +190,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_9",
+      "id": "2026-02-05_7",
       "date": "2026-02-05",
       "category": "경제",
       "title": "KT&G, 작년 영업이익 14% 증가 및 역대 최대 매출 기록",
       "summary": [
         "KT&G는 연결 기준으로 작년 한 해 영업이익이 1조 3,495억 원으로 전년 대비 13.5% 증가했다고 공시했습니다.",
-        "매출은 11.4% 증가한 6조 5,796억 원으로 역대 최대치를 기록했으며, 해외 궐련 사업 매출 증가와 전자담배 매출 증가가 주요 원인입니다.",
+        "매출은 11.4% 증가한 6조 5,796억 원으로 역대 최대치를 기록했으며, 해외 궐련 사업 매출 증가와 전자담배 매출 증가가 주요 요인입니다.",
         "올해 상반기 인도네시아 신공장 가동을 통해 해외 거점 생산 전환을 가속화하고 수익성 강화에 나설 예정입니다."
       ],
-      "whyImportant": "KT&G의 해외 생산 시설 확대 전략은 향후 글로벌 담배 시장에서의 경쟁력 강화에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 해외 궐련 매출 비중이 처음으로 국내를 넘어섰고, 인도네시아 신공장 가동을 통해 해외 생산을 확대할 예정이므로 중요도는 3입니다.",
+      "whyImportant": "KT&G의 해외 시장 확대 전략과 생산 기지 전환은 향후 실적에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 해외 궐련 매출 비중이 처음으로 국내를 넘어섰고, 인도네시아 신공장 가동을 통해 해외 생산 시설 확대를 추진하여 수익성 강화를 목표로 하고 있기 때문입니다.",
       "impactSignals": [
         {
           "label": "earnings",
@@ -278,24 +221,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_10",
+      "id": "2026-02-05_8",
       "date": "2026-02-05",
       "category": "경제",
       "title": "넷마블, 게임 흥행으로 작년 역대 최대 매출 경신",
       "summary": [
-        "넷마블은 '세븐나이츠 리버스' 등의 게임 매출 호조에 힘입어 지난해 역대 최대 매출을 기록하며 실적이 크게 상승했다고 밝혔습니다.",
-        "작년 한 해 영업이익은 3,525억 원으로 전년 대비 63.5% 증가했으며, 매출은 2조 8,351억 원으로 6.4% 증가했습니다.",
-        "넷마블은 2026년까지 총 8종의 신작 게임을 출시할 예정이며, 하이브와 3,200억 원 규모의 주가주식스와프 계약을 체결하여 재무구조 개선에 활용할 계획입니다."
+        "넷마블은 '세븐나이츠 리버스' 등의 게임 매출 호조에 힘입어 작년 한 해 영업이익이 3,525억원으로 전년 대비 63.5% 증가했다고 발표했습니다.",
+        "매출은 2조 8,351억원으로 전년 대비 6.4% 증가하며 연간 및 분기 기준 사상 최고치를 기록했으며, 2026년까지 8종의 신작 게임을 출시할 예정입니다.",
+        "또한 넷마블은 하이브와 3,200억원 규모의 주가주식스와프 계약을 체결하고, 재무구조 개선에 활용할 계획이라고 밝혔습니다."
       ],
-      "whyImportant": "넷마블의 실적 개선과 신작 출시 계획은 게임 산업 내 경쟁 심화 및 투자 확대로 이어질 수 있어 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 넷마블은 지난해 매출 2조 8,351억 원을 기록했으며, 2026년까지 8종의 신작 출시 및 하이브와의 3,200억 원 규모 계약을 통해 재무구조 개선을 추진합니다.",
+      "whyImportant": "넷마블의 실적 개선과 신작 출시 계획은 게임 산업 내 경쟁 심화 및 시장 변화에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 넷마블은 매출이 2조 8,351억원으로 증가했고, 2026년까지 8종의 신작을 출시할 예정이며, 하이브와 3,200억원 규모의 계약을 체결했습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "넷마블은 연결 기준 작년 한 해 영업이익이 3천525억원으로 전년보다 63.5% 증가한 것으로 잠정 집계됐다고 5일 공시했다."
+          "evidence": "넷마블[251270]이 '세븐나이츠 리버스'를 비롯한 게임 매출 호조에 지난해 역대 최대 규모 매출을 경신, 큰 폭의 실적 상승을 보였다."
         }
       ],
-      "dedupeKey": "넷마블-매출-최대-실적-게임-신작",
+      "dedupeKey": "넷마블-최대매출-신작출시-하이브계약",
       "clusterKey": "실적/넷마블/게임",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -309,25 +252,25 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_11",
+      "id": "2026-02-05_9",
       "date": "2026-02-05",
       "category": "정책",
       "title": "위성락 \"미국 안보협상팀, 관세 문제로 지연…영향 우려\"",
       "summary": [
-        "위성락 국가안보실장은 미국의 관세 재인상 통보 이후 통관 협상 지연으로 한미 안보 협상에도 영향이 미치고 있다고 우려를 표명했습니다.",
-        "특히 핵추진잠수함, 핵연료 농축·재처리 등 미국과의 후속 협상에 차질이 발생하고 있다고 밝혔습니다.",
-        "위 실장은 관세 문제가 미·중·일 관계 구조 안정화의 한 축을 흔들고 있다고 평가했습니다."
+        "위성락 국가안보실장은 미국의 관세 재인상 통보 이후 통관 협상 지연으로 인해 한미 안보 후속 논의에도 영향이 미치고 있다고 밝혔습니다.",
+        "특히 핵추진잠수함, 핵연료 농축·재처리 등 미국과의 후속 협상에 차질이 발생하고 있다고 언급했습니다.",
+        "위 실장은 관세 문제가 미·중·일 관계 구조 안정화의 한 축을 흔들고 있다고 평가하며 우려를 표명했습니다."
       ],
-      "whyImportant": "미국과의 통상 문제가 안보 협력에까지 영향을 미치는 상황은 외교 및 안보 전략에 대한 재검토 필요성을 제기합니다.",
-      "importanceRationale": "근거: 미국의 관세 재인상으로 인해 핵추진잠수함, 핵연료 농축·재처리 등 안보 분야 후속 협상에 제동이 걸렸다는 내용이 명시되어 있습니다.",
+      "whyImportant": "미국과의 안보 협상 지연은 한반도 안보 및 관련 정책 결정에 중장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국의 관세 문제로 인해 핵추진잠수함, 핵연료 농축·재처리 등 안보 협상에 제동이 걸렸다는 내용이 명시되어 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "위성락 국가안보실장은 도널드 트럼프 미국 대통령의 25% 관세 재인상 발표 이후 안보 분야에도 영향을 미쳤다고 우려했습니다."
         }
       ],
-      "dedupeKey": "위성락-미국-안보협상-관세-지연",
-      "clusterKey": "관세/위성락/미국",
+      "dedupeKey": "한미-안보협상-관세-지연",
+      "clusterKey": "한미_관세/안보협상/지연",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBUUERCZk9qcG14ZUFBc253YWp2OG0yQmsxSXl3azBEVXk0S0NuX3JGWUUwZlozYjVyblVieFhxSVZHazdmanVHTHJtR2tiRHhfQW51LWZUbzZnWkEwR3Fib2ZkY0JROUtFUzhKVjR2dXRxanFN?oc=5",
@@ -340,42 +283,52 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_12",
+      "id": "2026-02-05_10",
       "date": "2026-02-05",
       "category": "정책",
-      "title": "유엔 자동차 AI 기술 가이드라인 논의 회의 서울 개최",
+      "title": "한미 원자력·핵잠 논의 지연, 관세 문제 영향",
       "summary": [
-        "요약 불가: 정보 부족"
+        "미국의 관세 재인상 압박으로 인해 한미 간 핵추진 잠수함, 우라늄 농축 등 안보 분야 후속 논의가 지연되고 있습니다.",
+        "위성락 국가안보실장은 미국이 관세와 외교·안보를 함께 다루는 기류가 있어 논의가 지연되고 있다고 밝혔습니다.",
+        "정부는 11월 미국 중간선거 이전까지 구체적인 성과를 내려고 했으나, 계획에 차질이 예상됩니다."
       ],
-      "whyImportant": "요약 불가: 정보 부족",
-      "importanceRationale": "근거: 정보 부족",
-      "impactSignals": [],
-      "dedupeKey": "유엔-자동차-기술-가이드라인",
-      "clusterKey": "정책/게시판/서울서",
+      "whyImportant": "한미 안보 협력에 있어 관세 문제가 영향을 미치는 상황은 양국 관계의 복잡성을 보여주는 중요한 지점입니다.",
+      "importanceRationale": "근거: 트럼프 대통령의 관세 재인상 선언으로 안보 분야 후속 논의에 악영향을 미치고 있으며, 11월 미국 중간선거 이전 성과 목표에 차질이 생길 수 있다는 내용이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "트럼프 대통령의 관세 재인상 선언으로 관세 협상이 사실상 무너지게 되면서, 그 여파가 핵추진 잠수함과 한·미 원자력 협정 개정 등 안보 분야 후속 논의에도 악영향을 미치고 있다는 취지다."
+        },
+        {
+          "label": "security",
+          "evidence": "도널드 트럼프 미국 대통령의 ‘관세 재인상’ 압박의 불길이 한·미 간 합의된 핵추진 잠수함, 우라늄 농축·사용후 핵연료 재처리 등 안보 분야 후속 논의로도 번지고 있다."
+        }
+      ],
+      "dedupeKey": "한미-원자력-핵잠-관세-안보",
+      "clusterKey": "한미_관세/에너지/핵잠/안보",
       "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1udktiVkNFN0p2OUs1QWc0WVJBeXVEb2FmT1J6bVJyemhsWDF2MGtDTDVac1ZjeEFYVWhsQXdOSlY4a29RTkFWV0J6RnE0bmw0R3d3VnlPU1ROTTJ1RXBHc1Vtb256UERvYmhoUnUtUGc0d2xp?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 01:58:43 GMT",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1taFVuVUVvQkZKdzlqdlJmVjhIWVhvMTFUVWhVZzVVY01hcjFDUHF0dl9kaWVwdzFDeUdWTkRRNlVjVEhmTXYzVklVQnMzaE1KUWNrQzJfcVJrTWo2dXl6NjMweXM0VXdEeXZHY3FONndhcjV6?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 09:27:00 GMT",
       "readTimeSec": 10,
-      "status": "dropped",
+      "status": "kept",
       "importance": 3,
-      "qualityLabel": "low_quality",
-      "qualityReason": "정보 부족",
-      "isBriefing": false,
-      "dropReason": "ai_low_quality:정보 부족"
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
     },
     {
-      "id": "2026-02-05_13",
+      "id": "2026-02-05_11",
       "date": "2026-02-05",
       "category": "정책",
       "title": "한미 외교장관 회담, 관세 합의에 대한 입장차",
       "summary": [
         "조현 외교부 장관과 마코 루비오 미국 국무장관 겸 국가안보보좌관의 회담 후 양국 보도자료에서 상호 관세 합의에 대한 미묘한 입장 차이가 드러났습니다.",
-        "한국은 상호관세 합의와 공동 팩트시트의 신속한 이행을 강조했지만, 미국은 관세에 대한 직접적인 언급 없이 한국의 대미 투자 확대와 원자력, 핵추진 잠수함 협력 등을 언급했습니다.",
-        "미국 국무부는 민수용 원자력, 핵추진 잠수함, 조선 분야 협력과 더불어 미국 핵심 산업 재건을 위한 한국의 투자 확대에 대한 협력을 강조했습니다."
+        "한국은 상호관세 합의와 공동 팩트시트의 신속한 이행을 강조했지만, 미국은 관세를 직접 언급하지 않고 한국의 대미 투자 확대와 원자력, 핵추진 잠수함 등의 협력을 강조했습니다.",
+        "미국 국무부 자료에는 한국 정부의 중요 관심사인 관세 협상 관련 내용이 빠져 있어, 양국 간 입장 차이를 보여줍니다."
       ],
-      "whyImportant": "한미 간의 통상 및 안보 협력 방향에 대한 이견은 향후 양국 관계 및 관련 산업에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 한국 정부의 중요 관심사인 관세 협상 관련 내용이 미국 국무부 자료에서 빠져 있으며, 미국은 한국의 대미 투자 확대와 원자력, 핵추진 잠수함 협력 등을 강조하여 입장차를 보이고 있기 때문입니다.",
+      "whyImportant": "한미 간의 통상 및 안보 현안에 대한 입장 차이는 향후 협상 및 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 국무부 자료에서 한국의 관세 합의 요청에 대한 언급이 빠져 있어, 한미 간의 입장 차이가 드러나기 때문에 중요도는 3입니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -396,49 +349,50 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_14",
+      "id": "2026-02-05_12",
       "date": "2026-02-05",
-      "category": "정책",
-      "title": "이억원 금융위원장, 주택담보대출 위험가중자산 추가 상향 검토",
+      "category": "글로벌",
+      "title": "한미 외교수장 회동 및 미-이란 협상 관련 긴장 고조",
       "summary": [
-        "요약 불가: 정보 부족"
+        "조현 외교부 장관이 마코 루비오 미국 국무장관과 만나 원자력, 핵잠, 조선 분야 협력과 북한 비핵화 의지를 재확인했습니다.",
+        "미국은 아라비아해에서 이란 드론을 격추하고, 호르무즈 해협에서는 이란 혁명수비대가 미국 국적 유조선을 위협하는 등 미국과 이란 간 긴장이 이어지고 있습니다.",
+        "마르크 뤼터 나토 사무총장은 우크라이나 종전 후 안전 보장을 위해 우크라이나에 나토 병력을 배치하겠다고 밝혔습니다."
       ],
-      "whyImportant": "요약 불가: 정보 부족",
-      "importanceRationale": "근거: 정보 부족",
+      "whyImportant": "주요 외교 및 안보 관련 사안들이 복잡하게 얽혀 있어 국제 정세에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 한미 외교장관 회담, 미-이란 간 긴장 고조, 나토 사무총장의 우크라이나 안전 보장 발언 등 여러 사안이 복합적으로 작용하고 있습니다.",
       "impactSignals": [],
-      "dedupeKey": "주택담보대출-위험가중자산-금융위원회",
-      "clusterKey": "이억원/금융위원장",
+      "dedupeKey": "한미-외교-미국-이란-협상-긴장",
+      "clusterKey": "한미_관세/외교/이란",
       "matchedTo": null,
-      "sourceName": "MTN 머니투데이방송",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5tc2ZMNmlUUVFSOGtEaUZkOHBLczJqRDIzSVJzVTV1WGlFc0Z0SU9lcXg0LVVRWEZnbExDcHZwMFR2RWFEMEl6LTNfQ0NKenFvaG1YelVsOWo0dWV1bFpzY1VvYlc?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 08:03:52 GMT",
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBocXFEdlFuWVgyWnBUTU9BRm1vcGVZTnpLckhWWnlXbnVOd0lrNjMteTAzNjJZMFYyWXlnd2Vqd0Q1d1VXWE5ieWdSMEpralljOGE3Qm5ta1k3dC1BWG9lckpoM3VDbng2eHhwUGlBZy1sajM3?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 00:37:30 GMT",
       "readTimeSec": 10,
-      "status": "dropped",
-      "importance": 2,
-      "qualityLabel": "low_quality",
-      "qualityReason": "정보 부족",
-      "isBriefing": false,
-      "dropReason": "ai_low_quality:정보 부족"
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
     },
     {
-      "id": "2026-02-05_15",
+      "id": "2026-02-05_13",
       "date": "2026-02-05",
       "category": "글로벌",
       "title": "미국의 대한국 관세 협상 불신 심화",
       "summary": [
         "한국 통상·외교 수장들이 미국의 관세 인상 위협을 막지 못하고 빈손으로 귀국하면서 관세 인상 공포가 확산되고 있습니다.",
-        "미국은 한국에 즉각적인 약속 이행과 대미 투자 결과물을 요구하고 있으며, 한국 정부는 국회 입법 지연을 이유로 설명하면서 양국 간 인식 차이가 드러났습니다.",
-        "미국은 한국이 대미 투자 법안 통과를 지연시키고 비관세 장벽을 해결하지 않는 것에 대한 불신을 표출하고 있습니다."
+        "미국은 한국에 즉각적인 약속 이행과 대미 투자 결과물을 요구하고 있으며, 한국 정부의 입법 지연 해명에 양국 간 인식 차이가 드러나고 있습니다.",
+        "미국은 한국이 약속을 이행하지 않는다고 지적하며, 비관세 장벽 문제와 소통 부족으로 누적된 불신이 관세 협상의 난항을 초래하고 있다는 분석이 제기됩니다."
       ],
       "whyImportant": "미국과의 관세 협상 문제는 국내 산업에 직접적인 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 미국이 한국의 투자 이행에 대한 불신을 표출하며 25% 관세 재인상 가능성이 제기되어 자동차 업종을 포함한 국내 후방산업에 충격이 예상됩니다.",
+      "importanceRationale": "근거: 실제 관세가 부과될 경우 자동차 업종부터 국내 후방산업에 큰 충격이 예상되므로 중요도는 3입니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "미국 내 각 부처가 관세율 인상에 대한 내용을 연방관보에 게재하는 절차를 협의 중”이라고 밝혔다."
         }
       ],
-      "dedupeKey": "미국-관세-협상-투자-불신",
+      "dedupeKey": "미국-관세-협상-불신-대미투자",
       "clusterKey": "투자/이행/하겠다",
       "matchedTo": null,
       "sourceName": "한국경제",
@@ -446,24 +400,28 @@
       "publishedAt": "Wed, 04 Feb 2026 09:11:31 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_16",
+      "id": "2026-02-05_14",
       "date": "2026-02-05",
       "category": "글로벌",
-      "title": "한국, 더 강경한 미국의 자원 안보 라인 상대해야",
+      "title": "한국, 더 강경한 미국의 자원 안보 라인에 대응해야 할 상황",
       "summary": [
-        "미국이 에너지 공급망과 핵심 광물을 국가 안보 사안으로 묶어 관세 정책과 연계하면서 한미 협상이 더욱 어려워질 것이라는 분석이 제기됩니다.",
-        "미국 통상 운용 체계가 백악관 국가안보실(NSC) 중심으로 재편되고 있으며, 에너지 공급망에서 중국과의 연계 축소 여부가 관세 협상의 주요 기준이 될 것이라는 평가입니다.",
-        "한국은 NSC에 대응할 에너지 정책 컨트롤타워가 부재하고, 에너지·산업·외교 기능이 분산되어 일관된 대응이 어렵다는 지적이 나옵니다."
+        "미국이 에너지 공급망과 핵심 광물을 국가 안보 사안으로 묶어 관세 정책과 연계하면서 한미 협상이 더욱 어려워질 것이라는 평가가 나오고 있습니다.",
+        "미국의 통상 운용 체계가 백악관 NSC 중심으로 재편되면서, 에너지 공급망에서 중국과의 연계를 줄이는 것이 관세 협상의 주요 기준이 될 것이라는 분석입니다.",
+        "한국은 NSC에 대응하여 에너지 정책을 총괄 조율할 컨트롤타워가 뚜렷하지 않아 일관된 대응이 어렵다는 지적이 있습니다."
       ],
       "whyImportant": "미국의 자원 안보 정책 변화는 한국의 대미 통상 및 에너지 정책에 중장기적인 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 미국이 에너지·광물을 안보 사안으로 묶어 관세 정책과 연계하기 시작하면서 한국의 대미 협상이 까다로워질 수 있다는 분석이 제시되었기 때문입니다.",
+      "importanceRationale": "근거: 미국이 에너지·광물 안보를 관세 정책과 연계하고, 한국의 대응 체계가 미흡하다는 지적이 있어 향후 대미 협상에 부담으로 작용할 수 있기 때문입니다.",
       "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "미국이 에너지 공급망과 핵심 광물을 국가 안보 사안으로 묶어 관세 정책과 연계하기 시작하면서다."
+        },
         {
           "label": "security",
           "evidence": "미국이 에너지 공급망과 핵심 광물을 국가 안보 사안으로 묶어 관세 정책과 연계하기 시작하면서다."
@@ -483,24 +441,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_17",
+      "id": "2026-02-05_15",
       "date": "2026-02-05",
       "category": "글로벌",
-      "title": "미국이 요구한 '한국 대미 투자 1호'는 거론되지 않은 에너지 사업",
+      "title": "미국, 한국에 에너지 분야 대미 투자 제안",
       "summary": [
         "미국 정부가 한국 정부와의 협상에서 에너지 분야 사업을 '제1호 대미 투자 사업'으로 제안한 것으로 확인되었습니다.",
-        "미국은 대한국 상호 관세 인상 압박을 가하고 있으며, 한국 정부는 관세 인상 시기를 늦추는 데 협상 초점을 맞추고 있습니다.",
+        "이는 미국이 대한국 상호 관세 재인상을 압박하는 가운데 나온 제안입니다.",
         "국회는 대미투자특별법의 신속한 처리를 위해 특별위원회를 구성하기로 했습니다."
       ],
-      "whyImportant": "미국의 대한국 투자 요구와 관세 압박은 한미 경제 관계에 중요한 영향을 미칠 수 있는 사안입니다.",
-      "importanceRationale": "근거: 미국이 '제1호 대미 투자 사업'으로 에너지 분야를 제안하고, 한국 국회가 대미투자특별법 처리를 위해 특별위원회를 구성하기로 결정함에 따라 중요도는 3입니다.",
+      "whyImportant": "미국의 대한국 투자 요구와 관세 압박은 한미 경제 관계에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 '제1호 대미 투자 사업'으로 에너지 분야를 특정 제안했으며, 트럼프 대통령이 상호관세 인상을 예고하는 등 정책적 움직임이 확인되어 중요도 3으로 판단합니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "국회도 대미투자특별법의 신속한 처리를 위해 3개 유관 상임위원회 소속 위원들이 참여하는 특별위원회를 구성하기로 했다."
+          "evidence": "대미 투자 지연을 이유로 상호관세 재인상을 압박하는 미국 정부가 최근 우리 정부와의 협상에서 에너지 분야 사업을 ‘제1호 대미 투자 사업’으로 제안한 사실이 4일 확인됐다."
         }
       ],
-      "dedupeKey": "미국-대미투자-에너지사업-관세",
+      "dedupeKey": "미국-한국-대미투자-에너지사업-관세",
       "clusterKey": "한미/에너지/단독/요구한",
       "matchedTo": null,
       "sourceName": "한겨레",
@@ -514,95 +472,35 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_18",
+      "id": "2026-02-05_16",
       "date": "2026-02-05",
       "category": "정책",
-      "title": "이찬진 금감원장, 특사경 수사 금융위 통제 합의",
+      "title": "미국, 에너지 분야 투자 압박에 정부, 원전 협력 제안",
       "summary": [
-        "이찬진 금융감독원장은 금융감독원 특별사법경찰(특사경) 확대와 관련하여 금융위원회 수사심의위원회의 통제를 받기로 양 기관 간 협의가 정리되고 있다고 밝혔습니다.",
-        "특사경의 인지수사권은 자본시장 불공정거래 사건에, 특사경 확대 범위는 불법 사금융 범죄에 국한될 예정입니다."
+        "미국 정부가 한국에 에너지 분야 투자를 희망하며, 지난해 한·미가 합의한 508조원 규모의 대미 투자를 둘러싼 논의가 심화될 것으로 예상됩니다.",
+        "정부는 미국이 투자 실행을 압박하는 가운데 내부적으로 투자 분야 검토 작업을 진행 중이며, 원전 사업 투자를 제안한 것으로 알려졌습니다.",
+        "미국은 인공지능 붐으로 인한 전력 수요 충족에 어려움을 겪고 있어 외부 투자가 필요한 상황이며, 국내 원전 업계는 소형모듈원자로(SMR) 분야 협력을 기대하고 있습니다."
       ],
-      "whyImportant": "특사경의 수사 범위 및 통제 절차에 대한 합의는 금융 시장의 안정성과 투자자 보호에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금감원 특사경의 수사 범위를 자본시장 불공정거래 및 불법 사금융 범죄로 제한하고, 금융위 수사심의위 통제를 받기로 하여 정책적 의미가 있습니다.",
+      "whyImportant": "미국의 에너지 분야 투자 압박과 한국 정부의 원전 협력 제안은 향후 한미 에너지 협력 방향 및 국내 원전 산업에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 508조원 규모의 대미 투자를 압박하는 상황에서 정부가 원전 사업 투자를 제안했으며, 이는 미국의 전력 수요 문제와 국내 원전 업계의 SMR 협력 기대와 맞물려 정책적 중요성을 가집니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "민주적 통제 절차는 금융위원회의 수사심의위원회가 통제하는 것으로 양 기관 간 협의가 정리되고 있다"
+          "evidence": "관세 재인상 압박에 나선 미국 정부가 최근 한국에 에너지 분야 투자를 희망한다는 뜻을 제시하면서 지난해 한·미가 관세협상 과정에서 합의한 3500억달러(약 508조원) 대미 투자를 둘러싼 논의가 심화될 것으로 보인다."
         }
       ],
-      "dedupeKey": "특사경-수사-금융위-통제-자본시장-불공정거래",
-      "clusterKey": "이찬진/특사경",
+      "dedupeKey": "미국-에너지투자-원전협력-대미투자",
+      "clusterKey": "에너지/미국/원전협력",
       "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94Z2NZV3U1QzVYTEg3LUFzdURBLW9GbTJ5XzlrUG1Ydi1mUWUzdnZ2VTBSOWtoSUpJdm50Sk9XLUl6aDZVSWozY2o1ekRXdlZBb1lDQXFtNldUQmU5OEp1cmZ1WkZhdXZ4T1NXci1rZzdyT2dV?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 05:35:00 GMT",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kTE92Mk41bnZkaXJrMjYzVGRfcmU0amVhUE1HVE9oNGkxY3huOWZnYy1LY1J3dnU0ZDV1N2FULVphQjR6U0VUOGdCSzNrN3RzNndCNnIwS3hOOW1DU0pYTUVLbG1QZ21xWUg5T3pGX2FTQQ?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 11:52:00 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_19",
-      "date": "2026-02-05",
-      "category": "정책",
-      "title": "국민의힘 김건 의원, 대미 투자 특별법 발의",
-      "summary": [
-        "국민의힘 김건 의원이 한미 관세 협상 관련 대미 투자 사업 추진 시 국회 동의 절차를 강화하는 특별법을 대표 발의했습니다.",
-        "법안은 대미 투자 사업 추진 시 국회의 사전 동의를 받도록 하고, 국내 경제 및 재정에 미치는 영향 평가 결과 등을 국회에 제출하도록 합니다.",
-        "또한 한미 간 관세 합의 양해각서가 국내에서 법적 효력을 갖지 않도록 규정하고 있습니다."
-      ],
-      "whyImportant": "이 법안은 향후 대미 투자 사업 추진에 있어 국회의 역할을 강화하고, 국내 경제에 미치는 영향을 신중하게 고려하는 데 중요한 의미를 가집니다.",
-      "importanceRationale": "근거: 법안은 대미 투자 사업 추진 시 국회의 사전 동의를 받도록 하여 정책 결정에 영향을 미치며, 수백조원의 재정적 부담이 국민에게 가해질 수 있다는 점을 강조합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "국회 외교통일위원회 소속 국민의힘 김건 의원은 5일 한미 관세협상과 관련, 대미 투자사업 추진 시 국회의 동의 절차를 강화하는 '한미 전략적 투자 관리를 위한 특별법'(대미투자특별법)을 대표 발의했다."
-        }
-      ],
-      "dedupeKey": "국민의힘-대미투자-특별법-발의",
-      "clusterKey": "국힘/김건",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE56aW81X3o1TF9GRnQ5amh2SDdZcDBTSU43V2gtRHZSamQxcHg5bFdybTN2YmlLRnE5WWtIZVBIdUNlLUpLcmlFcjUtbTFVR0d1MFJTT0s1eTlJNTdXVVBEb1h1MHdKTUh1d3dXX3pENHFYUmtv?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 06:51:32 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_20",
-      "date": "2026-02-05",
-      "category": "정책",
-      "title": "경제계, 대미투자법 국회 특위 구성 환영 및 이달 내 통과 요청",
-      "summary": [
-        "요약 불가: 정보 부족"
-      ],
-      "whyImportant": "요약 불가: 정보 부족",
-      "importanceRationale": "근거: 정보 부족",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "경제계는 여야가 대미투자특별법안 처리를 위한 국회 특별위원회 구성에 합의한 데 대해 환영의 입장을 밝혔다."
-        }
-      ],
-      "dedupeKey": "경제계-대미투자법-국회특위-통과요청",
-      "clusterKey": "경제계/대미투자법",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9BdnhIbDdQNGkwbjE1ZHhpVWRBWXN4WHkwOWpFeE1ENTY0WDFJQjJvSkpYWUZZa3hXeF82c09wVFdQYjZ1WDlFWjh6Wm9uN2M0Q3JJNHdEQWxGZWpXMFZrdDRLdGcwS0ZNSUpMei1lYk9RXzV5?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 07:46:44 GMT",
-      "readTimeSec": 10,
-      "status": "dropped",
       "importance": 4,
-      "qualityLabel": "low_quality",
-      "qualityReason": "정보 부족",
-      "isBriefing": false,
-      "dropReason": "ai_low_quality:정보 부족"
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
     }
   ]
 }

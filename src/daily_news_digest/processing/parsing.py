@@ -6,7 +6,6 @@ from typing import Any, Callable
 from daily_news_digest.utils import clean_text, trim_title_noise
 
 
-SUMMARY_FALLBACK = "내용을 확인하려면 클릭하세요."
 
 
 class EntryParser:
@@ -74,15 +73,13 @@ class EntryParser:
         summary_clean = self._clean_text(summary_raw)
         summary_clean = self.strip_source_from_text(summary_clean, source_name)
         title_clean = self._trim_title_noise(self._clean_text(title_raw), source_name)
-        summary = summary_clean if summary_clean else SUMMARY_FALLBACK
+        summary = summary_clean if summary_clean else ""
         parts = self._extract_full_text_parts(entry)
         full_text = self._clean_text(" ".join(parts)) if parts else ""
         analysis_text = self.pick_analysis_text(full_text, summary_clean)
         return (
             title_raw,
             title_clean,
-            summary_raw,
-            summary_clean,
             summary,
             full_text,
             analysis_text,

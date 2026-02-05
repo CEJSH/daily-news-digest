@@ -3,7 +3,7 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-05T13:22:18.994937+09:00",
+  "lastUpdatedAt": "2026-02-05T15:35:00.991685+09:00",
   "items": [
     {
       "id": "2026-02-05_1",
@@ -11,16 +11,16 @@
       "category": "IT",
       "title": "삼성, ASML 출신이 세운 첨단 공정 기업에 투자",
       "summary": [
-        "삼성전자는 인공지능 반도체 불량 검출 전문 기업인 네덜란드 스타트업 인비식스에 소수 지분 투자를 단행했습니다.",
-        "인비식스는 ASML 핵심 엔지니어 출신들이 설립한 회사로, 삼성전자는 이 회사의 소프트 엑스레이 기반 3차원 계측 솔루션에 주목하고 있습니다.",
+        "삼성전자는 AI 반도체 불량 검사 전문 기업인 네덜란드 스타트업 인비식스에 소수 지분 투자를 단행했습니다.",
+        "인비식스는 ASML 핵심 엔지니어 출신들이 설립한 회사로, 삼성은 이 회사의 소프트 엑스레이 기반 3차원 계측 솔루션에 주목하고 있습니다.",
         "또한 삼성벤처투자는 미국 반도체 계측 장비 기업 펨토메트릭스에 추가 투자를 단행하여 지분을 늘렸습니다."
       ],
-      "whyImportant": "이번 투자는 삼성전자가 첨단 공정 수율을 안정화하고 파운드리 시장에서 경쟁력을 강화하려는 전략의 일환으로 중요합니다.",
-      "importanceRationale": "근거: 삼성전자가 2㎚ 기반 GAA 공정 수율 안정화를 위해 인비식스 솔루션 도입을 고려하고 있으며, 펨토메트릭스 투자 역시 HBM 공정의 불량률 감소를 목표로 하고 있습니다.",
+      "whyImportant": "이번 투자는 삼성전자가 첨단 공정 수율을 안정화하고 파운드리 시장에서 TSMC를 추격하기 위한 전략적 움직임으로 해석됩니다.",
+      "importanceRationale": "근거: 삼성전자는 2㎚ 기반 GAA 공정 수율 안정화 및 HBM 공정 비용 절감을 위해 인비식스와 펨토메트릭스에 투자했습니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "삼성전자는 지난해 말 투자 전문 계열사인 삼성벤처투자를 통해 네덜란드의 반도체 계측 스타트업 인비식스(invisix)에 대한 투자를 단행해 소수 지분을 확보했다."
+          "evidence": "삼성전자가 인공지능(AI) 반도체의 불량을 찾아내는 ‘계측’ 전문 유망 기업에 대한 투자를 늘리고 있다."
         }
       ],
       "dedupeKey": "삼성-asml-인비식스-펨토메트릭스-투자",
@@ -30,7 +30,7 @@
       "publishedAt": "Wed, 04 Feb 2026 07:50:36 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
@@ -39,14 +39,14 @@
       "id": "2026-02-05_2",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "미국, 에너지 분야 투자 압박에 정부, 원전 협력 제안",
+      "title": "미국의 에너지 분야 투자 압박에 정부, 원전 협력 제안",
       "summary": [
-        "미국 정부가 한국에 에너지 분야 투자를 희망하며, 지난해 한·미가 합의한 508조 원 규모의 대미 투자를 둘러싼 논의가 심화될 것으로 예상됩니다.",
+        "미국 정부가 한국에 에너지 분야 투자를 희망하면서, 한·미 간 3500억 달러 규모의 대미 투자 논의가 심화될 것으로 예상됩니다.",
         "정부는 미국이 투자 실행을 압박하는 가운데 내부적으로 투자 분야 검토 작업을 진행 중이며, 원전 사업 투자를 제안한 것으로 알려졌습니다.",
-        "미국은 인공지능 붐으로 인한 전력 수요 충족에 어려움을 겪고 있어 외부 투자가 필요한 상황이며, 국내 원전 업계는 소형모듈원자로(SMR) 분야 협력을 기대하고 있습니다."
+        "미국은 인공지능 붐으로 인한 전력 수요 충족에 어려움을 겪고 있어 외부 투자가 필요한 상황입니다."
       ],
-      "whyImportant": "미국의 에너지 분야 투자 압박과 한국 정부의 원전 협력 제안은 향후 한미 에너지 협력 방향과 국내 원전 산업에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국이 508조 원 규모의 대미 투자를 압박하고 있으며, 특히 에너지 분야 투자를 강조하면서 한국 정부가 원전 사업 투자를 제안한 것은 정책 결정에 영향을 줄 수 있습니다.",
+      "whyImportant": "미국의 에너지 투자 압박과 한국의 원전 협력 제안은 향후 한미 에너지 협력 방향과 국내 원전 산업에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 2050년까지 원자력 발전량을 4배로 늘리기 위해 원전 300기 증설을 구상하고 있으며, 일본 또한 5500억 달러 중 3320억 달러를 에너지 분야에 투자할 계획이라는 내용이 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -54,14 +54,74 @@
         },
         {
           "label": "capex",
-          "evidence": "미국이 제안한 에너지 분야 투자는 지난해 11월 한-미 정상회담 결과를 담은 공동 설명자료(조인트 팩트시트)와 양해각서에 주되게 거론된 대목이다."
+          "evidence": "미·일이 지난해 10월 발표한 팩트시트에는 일본이 미국에 투자하기로 한 총 5500억달러(약 797조원) 가운데 3320억달러를 투자 기업들이 소형모듈원자로 등 에너지 분야에 투입할 계획이라는 내용이 담겼다."
         }
       ],
-      "dedupeKey": "미국-에너지투자-한국-원전협력",
+      "dedupeKey": "미국-에너지투자-원전협력-한미관계",
       "matchedTo": null,
       "sourceName": "한겨레",
       "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kTE92Mk41bnZkaXJrMjYzVGRfcmU0amVhUE1HVE9oNGkxY3huOWZnYy1LY1J3dnU0ZDV1N2FULVphQjR6U0VUOGdCSzNrN3RzNndCNnIwS3hOOW1DU0pYTUVLbG1QZ21xWUg5T3pGX2FTQQ?oc=5",
       "publishedAt": "Wed, 04 Feb 2026 11:52:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-05_3",
+      "date": "2026-02-05",
+      "category": "글로벌",
+      "title": "일본군 '위안부' 피해 왜곡 처벌 법안, 국회 상임위 통과",
+      "summary": [
+        "일본군 '위안부' 피해자의 명예훼손을 금지하고 허위사실 유포 시 처벌하는 법안이 국회 성평등가족위원회에서 의결·통과되었습니다.",
+        "개정안은 '위안부' 피해자를 비방할 목적으로 허위 사실을 유포해 명예를 훼손하는 행위를 금지하며, 신문·방송 등을 통해 유포할 경우 5년 이하의 징역 또는 5천만원 이하의 벌금에 처하도록 규정합니다.",
+        "이번 개정안은 일본군 '위안부' 피해에 대한 비방과 명예훼손을 막을 법적 근거를 처음 마련했다는 데 의미가 있습니다."
+      ],
+      "whyImportant": "이번 법안은 일본군 '위안부' 피해자에 대한 역사 왜곡 행위에 법적 책임을 묻는 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 허위 사실 유포 시 5년 이하 징역 또는 5천만원 이하 벌금에 처하도록 하여 법적 처벌 근거를 마련했으며, 이는 일본군 '위안부' 피해 왜곡에 대한 처벌 법안입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "일본군 ‘위안부’ 피해자의 명예 훼손을 금지하고 허위사실을 유포할 경우 처벌하는 법안이 국회 성평등가족위원회에서 의결·통과됐다."
+        }
+      ],
+      "dedupeKey": "일본군-위안부-피해-왜곡-처벌-법안",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBRcGNjTHVBMFh2YnVRaUJLOU1sZFdIaVd5Ny1PWW1EQThzeWktU01zbExIRENEWVF4Sk9SNzNTSzhMNlpEcTR0U0hpRGZiY0lYdkZIV25ycEVzWndvVU1kVGFsMUtKWHdsTVBrNHRHblF6Zw?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 05:10:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-05_4",
+      "date": "2026-02-05",
+      "category": "경제",
+      "title": "국회 연금개혁특위, 자문위 의견 청취 후 쟁점 우선순위 논의 결정",
+      "summary": [
+        "국회 연금개혁특별위원회는 활동 기간 연장 후 첫 회의를 열어 국민연금 구조 개혁 방향에 관한 민간 자문기구의 의견을 청취했습니다.",
+        "민간자문위원회는 연금 재정 안정화와 노후 소득 보장 우선이라는 의견 차이를 보였습니다.",
+        "특위는 쟁점의 우선순위를 정해 토론에 속도를 내기로 했습니다."
+      ],
+      "whyImportant": "연금 개혁 방향 설정에 영향을 미칠 수 있는 국회 논의의 진행 상황을 보여주는 중요한 지표입니다.",
+      "importanceRationale": "근거: 국회 연금개혁특별위원회가 민간 자문기구의 의견을 청취하고 쟁점의 우선순위를 정해 토론하기로 결정했기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "국회 연금개혁특별위원회는 5일 활동 기간 연장 후 첫 회의를 열고 국민연금 구조 개혁 방향에 관한 민간 자문기구의 의견을 청취했다."
+        }
+      ],
+      "dedupeKey": "국회-연금개혁-자문위-쟁점-우선순위",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90cy1icncybEFkNjNiaUotWVB2OHpBR3MtQ0dCdU95U21ZaHYzbmFvNlFmUHh1U2tDVFhGUXhIbF82NktWcGM4b0Q0LXlhQ3F3RGN6UVZmRklkU1V6b0lQcWdxVEpGSk5UWFdCOWVlOXhkNGlD?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 02:49:04 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -70,17 +130,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_3",
+      "id": "2026-02-05_5",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "강선우 의원 구속영장 청구 시 22대 국회 네 번째 사례 예상, 국회 표결 주목",
+      "title": "강선우 의원 구속영장 청구 시 22대 국회 네 번째 사례, 국회 표결 주목",
       "summary": [
         "경찰이 강선우 의원에 대한 구속영장을 신청할 경우, 22대 국회에서 네 번째 체포동의안 사례가 될 것으로 예상됩니다.",
         "헌법 44조에 따라 국회의원은 회기 중 국회 동의 없이 체포 또는 구금되지 않으며, 이는 불체포 특권에 해당합니다.",
-        "22대 국회에서는 권성동, 추경호, 신영대 의원의 체포동의안이 제출된 바 있으며, 강 의원의 체포동의안이 국회 본회의에 상정될 경우 표결 절차가 진행될 예정입니다."
+        "과거 권성동, 추경호 의원의 체포동의안은 국회에서 가결되었으나, 신영대 의원의 체포동의안은 부결된 바 있습니다."
       ],
-      "whyImportant": "국회의원의 체포동의안 표결 결과는 향후 사법 절차에 영향을 미치고, 국회의원의 특권 및 사법 정의에 대한 논의를 심화시킬 수 있습니다.",
-      "importanceRationale": "근거: 22대 국회에서 이미 3건의 체포동의안이 제출되었으며, 강선우 의원의 사례가 추가될 경우 국회의 불체포 특권에 대한 논쟁이 재점화될 수 있습니다.",
+      "whyImportant": "국회의원의 체포동의안은 국회의원의 불체포특권과 관련된 중요한 사안이며, 향후 국회 운영 및 정치적 상황에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 22대 국회에서 강선우 의원 건이 네 번째 사례이며, 과거 권성동, 추경호 의원의 체포동의안 처리 결과가 달랐던 점을 고려할 때, 이번 표결 결과가 주목됩니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -100,24 +160,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_4",
+      "id": "2026-02-05_6",
       "date": "2026-02-05",
       "category": "경제",
       "title": "국회 일정 및 의원실 세미나, 기자회견",
       "summary": [
         "국회에서는 연금개혁특별위원회, 정무위원회 등 상임위원회 전체회의가 예정되어 있습니다.",
-        "의원실에서는 실종 예방, 집단소송법 제정, 지방행정통합, 지속가능성 공시 등 다양한 주제로 세미나가 개최됩니다.",
-        "정춘생 의원 등은 공직선거후보 부적격 심사, 가짜뉴스 규탄, 법안 발의 등과 관련된 기자회견을 진행할 예정입니다."
+        "의원실에서는 실종 예방, 집단소송법 제정, 지방행정통합, 지속가능성 공시 등 다양한 주제로 세미나가 개최될 예정입니다.",
+        "정춘생 의원의 공직선거후보 부적격 심사 발표, 강득구 의원의 가짜뉴스 규탄 기자회견 등 다양한 기자회견도 예정되어 있습니다."
       ],
-      "whyImportant": "국회 일정과 의원실 세미나 및 기자회견은 정책 논의와 입법 활동에 영향을 미칠 수 있기 때문에 중요합니다.",
-      "importanceRationale": "근거: 다양한 정책 관련 토론회와 기자회견이 예정되어 있어, 향후 정책 방향에 대한 논의가 이루어질 수 있음을 시사합니다.",
+      "whyImportant": "국회 일정과 의원실 세미나 및 기자회견은 정책 논의와 입법 활동에 영향을 미칠 수 있는 중요한 정보입니다.",
+      "importanceRationale": "근거: 다양한 상임위원회 회의와 여러 의원실에서 진행되는 세미나 및 기자회견은 향후 정책 결정에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "▲ 상임위원회 연금개혁특별위원회 전체회의(09:00 본관 601호) 정무위원회 전체회의(10:00 본관 604호) 행정안전위원회 전체회의(10:00 본관 445호) 성평등가족위원회 전체회의(11:00 본관 550호) 기후에너지환경노동위원회 고용노동법안심사소위원회(14:00 본관 621호)"
         }
       ],
-      "dedupeKey": "국회-의원실-세미나-기자회견-정책",
+      "dedupeKey": "국회-일정-의원실-세미나-기자회견",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xem9UWTV0YnhvdlFjOHgxbGgyZEE1ODYyU2k1R1UyT1ZvTTRTVEF3MzVwcHFhUGwtNUVDSXVvUEc3bHNHRnM1bC1oODAzVHhkeTRZbHVtX1B5b3F4UEVIeTI0UVRYdG1wOTU5WWgwQlZQanBl?oc=5",
@@ -130,83 +190,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_5",
+      "id": "2026-02-05_7",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "금융위, STO 인가 관련 국회 설명 진행",
+      "title": "금융위, STO 인가 관련 국회 설명…유통 플랫폼 인가 제한 재확인",
       "summary": [
         "금융위원회가 토큰증권(STO) 장외유통플랫폼 인가와 관련하여 국회에 심사 기준과 배경을 설명했습니다.",
         "금융위는 STO 유통플랫폼 인가를 최대 2곳으로 제한한다는 기존 방침을 재확인했습니다.",
         "또한, 금융위는 현행 제도가 스타트업에 불리하게 작용할 수 있다는 지적에 대해 제도 개선 논의 필요성을 언급했습니다."
       ],
-      "whyImportant": "STO 유통플랫폼 인가 기준은 향후 관련 시장의 경쟁 구도 및 투자자 보호에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금융위는 STO 유통플랫폼 인가를 최대 2곳으로 제한하고, 컨소시엄 구성을 주요 가점 요소로 제시하여 시장 인프라 역할을 수행할 수 있도록 했습니다.",
+      "whyImportant": "STO 유통 플랫폼 인가 제한 방침은 향후 디지털 자산 시장의 구조와 경쟁 환경에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융위는 STO 유통플랫폼 인가를 최대 2곳으로 제한하는 기존 방침을 재확인했으며, 이는 유동성 분산 및 투자자 피해를 방지하기 위함입니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "금융위원회가 국회를 찾아 심사 기준과 판단 배경을 설명한 것으로 확인됐다."
         }
       ],
-      "dedupeKey": "sto-인가-금융위-국회-설명",
+      "dedupeKey": "금융위-sto-인가-국회-설명",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JLVgxbUxIUW1lSUZkaXB3d3NWNFZpaUZDTkp2ZmFUcjZJdFNibnRLVmNGNWpqY0pFZHdYbmMtMHVnbk5IdXdaX25YRUhFZ0MyTkJyR0hyV1c4UdIBVEFVX3lxTFBhNDVnRFdTdU11c3ROcThMSkRmNlZGNzlzYzFLSXhZSTl4cWZnMlBPdzdKVzc3WmtFZ1B5UXJVQVE4MDY1d2NJQ0JZVFJvUU1VOVV5Ug?oc=5",
       "publishedAt": "Thu, 05 Feb 2026 01:00:03 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_6",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "공정거래위원회 전속고발제, 46년 만에 전면 손질되나",
-      "summary": [
-        "이재명 대통령이 공정거래위원회의 '전속고발제 폐지'에 대해 언급하면서 제도 변경 가능성이 커지고 있습니다.",
-        "전속고발제는 공정거래법 위반 행위에 대한 고발을 공정위만 할 수 있도록 한 제도로, '재벌 봐주기' 논란이 있어 왔습니다.",
-        "일각에서는 전면 폐지 시 중소기업 피해 우려가 있어 신중한 접근이 필요하다는 의견도 제기되고 있습니다."
-      ],
-      "whyImportant": "전속고발제 폐지 논의는 기업 활동 및 규제 환경에 중대한 영향을 미칠 수 있는 정책 변경 가능성을 시사합니다.",
-      "importanceRationale": "근거: 이재명 대통령의 발언으로 46년간 유지된 제도의 변경 가능성이 커졌고, 이는 중소기업을 포함한 여러 기업의 경영 활동에 영향을 줄 수 있기 때문입니다.",
-      "impactSignals": [],
-      "dedupeKey": "공정위-전속고발제-폐지-중소기업",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE05b01DaWE0Tk8yTUdqaU5PdDhSVnhlaFZRUG5QeUZybVR2QmhyOXpHeGY3NWNKUnlSR1Z5R1BYcEVKSDNjektTWVc2bDdqWXl6MG1LWnR3MENUbFZkbVRGaWctcS1lYWtWM0hhcXhUalRIZTAw?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 09:22:08 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_7",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "미국 원전 건설 제안 소식에 원전주 동반 강세",
-      "summary": [
-        "미국이 한국에 자국 원전 건설을 투자 프로젝트로 제안한 소식이 전해지면서 원전 관련 주식이 강세를 보이고 있습니다.",
-        "한전산업은 20.13% 상승했으며, 한전기술, 대우건설, 한국전력, 두산에너빌리티 등도 일제히 상승했습니다.",
-        "미국은 '마스가' 프로젝트나 알래스카 LNG 개발보다 원전 건설 투자를 최우선으로 요구한 것으로 알려졌습니다."
-      ],
-      "whyImportant": "미국의 원전 건설 제안은 향후 국내 원전 관련 기업의 투자 및 사업 확장에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 상무장관이 산업통상부 장관에게 미국 내 원자력발전소 건설을 투자 프로젝트로 제안했다는 보도가 있었으며, 이에 따라 국내 원전주가 일제히 상승했습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "미국이 우리나라에 자국의 원전 건설을 투자 프로젝트 안건으로 제안했다는 소식 이후 원전주가 4일 장 초반 동반 강세다."
-        }
-      ],
-      "dedupeKey": "미국-원전건설-제안-원전주-강세",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE83VUF6dlgteHVCOWVnQ3ZRWmNzRUltaGJyYjFEVDFDWGd1eVc3UEViMFZyTTN1aVVmRzdWcTZFS0JPcnYwUnZhRzYzUDJTRTZXTV9mYm5vTVQ0QdIBVEFVX3lxTFBST3dJYjNBUVBYVFBhRE1EOWlqRzJrMVUybi1CbTFqX280ZmdHdnlBX3lCcnI3THhMOWZsRDhOSWhIRGNCTHNQdzJzeU55TFNSazN3RQ?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 00:28:08 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -248,15 +253,15 @@
         "림엑스 다이나믹스는 2억 달러, X스퀘어로봇은 10억 위안의 투자를 유치했으며, 링허우로봇 등 다른 기업들도 투자를 유치했습니다.",
         "베이징 휴머노이드 로봇 혁신센터는 7억 위안 이상의 투자를 유치했으며, 투자자들의 관심이 하드웨어에서 소프트웨어 및 운영체제로 이동하고 있다는 분석이 나옵니다."
       ],
-      "whyImportant": "중국 로봇 산업의 발전과 기술 경쟁력 강화에 중요한 영향을 미칠 수 있는 투자 동향입니다.",
-      "importanceRationale": "근거: 올해 들어 로봇 산업 분야에서 총 85건, 33억 위안(약 6천911억원) 이상의 투자가 유치되었으며, 이는 중국 로봇 산업의 성장 가능성을 시사합니다.",
+      "whyImportant": "중국 로봇 산업의 성장과 기술 발전에 중요한 자금 공급원이 될 수 있으며, 특히 AI 기반 소프트웨어 및 운영체제 개발에 집중될 가능성이 있습니다.",
+      "importanceRationale": "근거: 올해 로봇 산업 분야에서 총 85건, 33억 위안(약 6천911억원) 이상의 투자가 유치되었고, 투자의 73%가 초기 단계 프로젝트에 집행되었습니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "광둥성 선전 소재의 휴머노이드 로봇 제조사 림엑스 다이나믹스는 전날 2억 달러(약 2천905억원) 규모의 투자를 유치했다."
+          "evidence": "중국 로봇기업들이 국영 펀드와 대형 빅테크(거대 정보기술기업)의 지원에 힘입어 수천억원 단위의 투자 유치에 잇달아 성공했다."
         }
       ],
-      "dedupeKey": "중국-로봇기업-투자유치-국영펀드-빅테크",
+      "dedupeKey": "중국-로봇-투자유치-국영펀드-빅테크",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mWFdMbUlFbTE5X3I5ZzlncF9PUkhCNGYwb1NBOW0wbzM5UmtRdFRzOGRaSHE4NWxqNV9jQlkzMFhXR0hncy1famxEOV9sRDNJNnlVSF9xem0tNlZYRDVaek1Kejh2Sm9rQ21faS1JZ2FZV2JK?oc=5",
@@ -272,32 +277,28 @@
       "id": "2026-02-05_10",
       "date": "2026-02-05",
       "category": "글로벌",
-      "title": "미국, 한국 투자 이행에 대한 불신으로 관세 협상 난항",
+      "title": "미국, 한국의 투자 이행에 대한 불신으로 관세 협상 난항",
       "summary": [
-        "한국 통상·외교 수장들이 미국의 즉각적인 약속 이행 및 대미 투자 결과물 요구에 빈손으로 귀국하면서 관세 인상 공포가 확산되고 있습니다.",
-        "미국은 한국 정부의 입법 지연 해명에 대해 '시간 끌기'로 인식하며, 비관세 장벽 문제 해결이 지연되는 것에 대한 불신이 누적된 것으로 분석됩니다.",
-        "전문가들은 정부가 대미투자 법안 통과와 별개로 '1호 투자건'을 신속히 제시하여 미국의 불만을 해소해야 한다고 지적합니다."
+        "한국 통상·외교 수장들이 미국의 관세 위협을 막지 못하고 빈손으로 귀국하면서 관세 인상에 대한 우려가 커지고 있습니다.",
+        "미국은 한국에 즉각적인 약속 이행과 대미 투자 결과물을 요구하고 있으며, 한국 정부는 입법 지연을 이유로 설명하면서 양국 간 인식 차이가 드러났습니다.",
+        "미국은 한국이 약속을 이행하지 않는다고 지적하며, 비관세 장벽 문제와 소통 부족이 누적된 불신을 야기했다는 분석이 제기되고 있습니다."
       ],
-      "whyImportant": "미국과의 관세 협상 난항은 국내 자동차 업종을 비롯한 후방산업에 큰 충격을 줄 수 있어, 정부의 적극적인 대응이 중요합니다.",
-      "importanceRationale": "근거: 미국이 한국의 대미 투자 이행에 대한 불신으로 25% 관세 재인상을 고려 중이며, 이는 자동차 업종과 국내 후방산업에 큰 영향을 미칠 수 있다는 우려가 제기되었기 때문입니다.",
+      "whyImportant": "미국과의 관세 협상 난항은 향후 한국의 대미 투자 및 통상 관계에 부정적인 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 미국이 한국에 즉각적인 약속 이행과 대미 투자 결과물을 요구하고 있으며, 25% 관세 재인상 가능성이 제기되어 중요도 3으로 판단됩니다.",
       "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "미국 내 각 부처가 관세율 인상에 대한 내용을 연방관보에 게재하는 절차를 협의 중”이라고 밝혔다."
-        },
         {
           "label": "capex",
           "evidence": "정부가 대미투자 법안 통과와 별개로 ‘1호 투자건’을 신속히 제시하는 등 미국 달래기에 나설 시점이라는 분석도 나온다."
         }
       ],
-      "dedupeKey": "한미-관세-협상-투자-불신",
+      "dedupeKey": "한미-관세-협상-투자-이행-불신",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kbGFVQldUbjAtUFpFbXoxd0h5UUlDbHI4Mm5rUWVrbGV3UjBuZzNhbENfTF9ha1pyVmtfVXBRem5HalRCVndEcnBkaGVoTVVOVnVMZjZud0NHUdIBVEFVX3lxTE1Fdm10RXNnalB1SHl2Z0JWZlg4S3FBV3E4ekdtb2hLX2ViRW55dEptbzZybFFqZFFOVnVodXl1eGhlLVVETm9xM3lYeFZRWlk1Q1lBMA?oc=5",
       "publishedAt": "Wed, 04 Feb 2026 09:11:31 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
@@ -306,16 +307,41 @@
       "id": "2026-02-05_11",
       "date": "2026-02-05",
       "category": "글로벌",
+      "title": "인도, 대미 무역 협상에서 미국의 협박에 굴복하지 않겠다는 메시지 전달",
+      "summary": [
+        "인도 모디 총리는 대미 무역 협상 과정에서 미국의 협박에 굴하지 않겠다는 의사를 미국에 전달한 것으로 알려졌습니다.",
+        "이를 위해 모디 총리는 아지트 도발 인도 국가안보보좌관을 미국에 보내 무역 협상을 재개하되 협박에는 굴복하지 않겠다는 메시지를 전달했다고 합니다.",
+        "이후 트럼프 대통령은 모디 총리에게 생일 축하 전화를 걸어 관계 개선의 조짐을 보였으며, 양국은 인도 상품에 대한 관세를 낮추는 무역 합의에 도달했습니다."
+      ],
+      "whyImportant": "인도의 대미 관계 전략 변화는 향후 국제 무역 및 외교 관계에 영향을 미칠 수 있는 중요한 결정입니다.",
+      "importanceRationale": "근거: 인도 총리가 미국의 협박에 굴하지 않겠다는 메시지를 전달하고, 이후 양국 간 관세 합의에 도달한 것은 무역 관계에 영향을 줄 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "인도-대미-무역협상-메시지",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5PY0s2cFQ2RjJZcW8wYnFlN1Vzd2pHbUdlNTByaXBMSTR0VDhieERKQUtnd3lqYVZMdThIOFR5a3NSNzhkNnhBRk9sQnUyQWw4OTBITXdmTllaUGFBZUU0dWxIUmd1STJ6UzVOR08xUkJiOWUt?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 01:34:38 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-05_12",
+      "date": "2026-02-05",
+      "category": "글로벌",
       "title": "한미 외교수장 회동, 미-이란 협상 전 긴장 고조",
       "summary": [
         "조현 외교부 장관이 마코 루비오 미국 국무장관과 만나 원자력, 핵잠, 조선 분야 협력과 북한 비핵화 의지를 재확인했습니다.",
         "미국 중부사령부는 아라비아해에서 이란 드론을 격추했으며, 호르무즈 해협에서는 이란 혁명수비대가 미국 국적 유조선을 위협한 것으로 알려졌습니다.",
         "마르크 뤼터 나토 사무총장은 우크라이나 종전 후 안전 보장을 위해 우크라이나에 나토 병력을 배치하겠다고 밝혔습니다."
       ],
-      "whyImportant": "주요 외교 및 안보 관련 논의와 긴장 고조 상황은 국제 정세에 지속적인 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 한미 외교 협력, 미-이란 간의 군사적 긴장, 그리고 나토의 우크라이나 안전 보장 계획은 국제 관계에 중요한 변화를 가져올 수 있습니다.",
+      "whyImportant": "주요 외교 및 안보 관련 논의와 긴장 고조 상황은 국제 정세에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 한미 외교 협력, 미-이란 간 긴장, 나토의 우크라이나 지원 논의는 지정학적 리스크와 관련된 정책 결정에 영향을 줄 수 있습니다.",
       "impactSignals": [],
-      "dedupeKey": "한미-외교-미국-이란-나토-우크라이나",
+      "dedupeKey": "한미-외교-미국-이란-나토",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBocXFEdlFuWVgyWnBUTU9BRm1vcGVZTnpLckhWWnlXbnVOd0lrNjMteTAzNjJZMFYyWXlnd2Vqd0Q1d1VXWE5ieWdSMEpralljOGE3Qm5ta1k3dC1BWG9lckpoM3VDbng2eHhwUGlBZy1sajM3?oc=5",
@@ -328,7 +354,7 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_12",
+      "id": "2026-02-05_13",
       "date": "2026-02-05",
       "category": "글로벌",
       "title": "미국, 한국에 에너지 분야 대미 투자 제안",
@@ -338,11 +364,15 @@
         "정부는 관세 인상 시기를 늦추는 데 협상의 초점을 맞추고 있으며, 국회는 대미투자특별법의 신속한 처리를 위해 특별위원회를 구성하기로 했습니다."
       ],
       "whyImportant": "미국의 대한국 투자 요구와 관세 압박은 한미 경제 관계에 중요한 영향을 미칠 수 있는 사안입니다.",
-      "importanceRationale": "근거: 미국이 '제1호 대미 투자 사업'으로 에너지 분야를 특정 제안했으며, 트럼프 대통령이 상호관세 인상을 예고하는 등 구체적인 움직임이 나타나고 있기 때문입니다.",
+      "importanceRationale": "근거: 미국이 한국에 에너지 분야 투자를 제안하고, 상호 관세 인상 시기를 늦추기 위한 협상이 진행 중이며, 국회는 대미투자특별법 처리를 위해 특별위원회를 구성하기로 결정했습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "대미 투자 지연을 이유로 상호관세 재인상을 압박하는 미국 정부가 최근 우리 정부와의 협상에서 에너지 분야 사업을 ‘제1호 대미 투자 사업’으로 제안한 사실이 4일 확인됐다."
+        },
+        {
+          "label": "capex",
+          "evidence": "미국이 제안한 ‘에너지 분야’ 사업은 국내 언론에 보도된 적이 없는 프로젝트로, 과거 한국 기업 한곳이 미국에 투자 가능성을 검토했다가 사업성 부족 등을 이유로 접었던 사안인 것으로 알려졌다."
         }
       ],
       "dedupeKey": "미국-한국-대미투자-에너지사업-관세",
@@ -358,7 +388,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_13",
+      "id": "2026-02-05_14",
+      "date": "2026-02-05",
+      "category": "경제",
+      "title": "코트라, '5극3특' 중심 지방 수출 및 투자 유치 지원 강화",
+      "summary": [
+        "코트라는 '5극3특' 중심의 지역별 전략 산업 투자 전략 등을 논의하고 지방 수출 및 투자 유치 지원을 강화할 것이라고 밝혔습니다.",
+        "이를 위해 해외 무역사절단을 총 63회 파견하고 150여회의 지방 수출상담회 등을 추진할 계획입니다.",
+        "또한, '수출희망 1000' 프로젝트를 통해 5년간 매년 200개씩 총 1천개 기업을 선정하여 지원할 예정입니다."
+      ],
+      "whyImportant": "코트라의 지방 수출 및 투자 유치 지원 강화는 지역 경제 활성화에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 코트라는 지방 기업 수출 확대를 위해 해외 무역사절단을 63회 파견하고, '수출희망 1000' 프로젝트를 통해 5년간 1천개 기업을 지원할 예정입니다.",
+      "impactSignals": [],
+      "dedupeKey": "코트라-지방수출-투자유치",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oYlVuOHZUZUh1Zl91Tnl1OHBYUGNqQ0s3bWNZQmdSZm93YkFUaVI3UTg4OUVZdjloV2JJOVRycXNkM0txc2JWU3pueFNGWHp0b2F1WVJpcGRvd2Z5NThSWjROWGVvQl8ySWlOMHdCdkd5N1dj?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 02:00:01 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-05_15",
       "date": "2026-02-05",
       "category": "경제",
       "title": "이억원 금융위원장, 자본시장 활력 및 투자 유인 강화 계획 발표",
@@ -367,15 +422,15 @@
         "코스닥 시장 신뢰도 및 혁신 제고, 비상장·중소기업의 자본시장 접근성 개선 방안을 추진할 예정입니다.",
         "취약계층의 경제활동 복귀 지원을 위해 연체채권 추심 근절 및 상시 채무조정 내실화를 추진할 계획입니다."
       ],
-      "whyImportant": "자본시장 활성화 및 취약계층 지원 정책은 장기적으로 국내 경제의 안정적인 성장 기반을 마련하는 데 중요합니다.",
-      "importanceRationale": "근거: 금융위는 코스닥 시장 신뢰도 제고, 중소기업 자본시장 접근성 개선, 중저신용자 대출 목표를 내년 34%, 내후년 35%까지 단계적으로 높일 예정입니다.",
+      "whyImportant": "자본시장 활성화 정책은 투자 환경 개선과 기업 자금 조달에 영향을 미쳐 장기적으로 경제 성장에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 금융위원장은 코스닥 시장 신뢰도 제고 및 중소기업 자본시장 접근성 개선 방안을 추진하고, 중저신용자 대출 목표를 내후년 35%까지 단계적으로 높일 예정입니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "이억원 금융위원장은 5일 \"자본시장 활력이 지속 가능하게 이어지도록 우리 증시에 투자유인을 강화하겠다\"고 말했다."
         }
       ],
-      "dedupeKey": "자본시장-활력-투자유인-코스닥-중소기업-취약계층",
+      "dedupeKey": "자본시장-활력-투자유인-코스닥-중소기업",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9vb25KT0VSLVM4X0gtYjlqblRBQmpfLWd2UWs3Vzd6UFFJbXE0TWdpTlJObGxIdGZQQ1FUN1BYNjc0MjVfakR2LU1TZkMwUk1XYmdudlJ0dUlkcXBYbTNSb1YwVVE4a2wwTkZTZ1hvN1VUemx1?oc=5",
@@ -388,35 +443,10 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_14",
+      "id": "2026-02-05_16",
       "date": "2026-02-05",
       "category": "경제",
-      "title": "국민의힘 디지털자산TF 자문위, 금융위의 '가상자산거래소 지분 제한' 추진에 반대",
-      "summary": [
-        "국민의힘 디지털자산특별위원회 자문위원회가 금융위원회의 '가상자산거래소 지분 제한' 추진에 반대 입장을 표명했습니다.",
-        "자문위는 지분 제한이 시장 경쟁을 저해하고 투자자 보호에 부정적인 영향을 미칠 수 있다고 우려하고 있습니다.",
-        "ved."
-      ],
-      "whyImportant": "가상자산 거래소 규제 방향에 대한 정부 내 이견은 향후 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 기사에 정책 방향에 대한 이견이 언급되었으나, 구체적인 시행 시점이나 대상 범위가 명시되지 않아 중요도는 2로 설정합니다.",
-      "impactSignals": [],
-      "dedupeKey": "디지털자산-가상자산거래소-지분제한-금융위",
-      "matchedTo": null,
-      "sourceName": "MTN 머니투데이방송",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Ga0hwTDM5clVKc1draDkyU01JNkZOVFdVbG9oN1Y5anlEZVRYVEdXWTc4OHA2VWxKZ0dPdTFpUlRNWWRrUXJwRFdNZ001cURxS0tXM1lqOGNYVm1lOEs5QXNQcFg?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 06:22:50 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_15",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "한화비전, 작년 영업이익 1,623억원 기록",
+      "title": "한화비전, 작년 영업이익 1623억원 기록",
       "summary": [
         "요약 불가: 정보 부족"
       ],
@@ -428,7 +458,7 @@
           "evidence": "한화비전은 연결재무제표 기준으로 작년 매출 1조7천909억원, 영업이익 1천623억원을 기록했다고 5일 밝혔다."
         }
       ],
-      "dedupeKey": "한화비전-영업이익-시큐리티-매출-ai카메라",
+      "dedupeKey": "한화비전-영업이익-시큐리티-부르즈아지지",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGcXNtX1g0Mnc2djBCUE1FMnpJcWUwS2tvVlF3NG9qalgxclZMazlaX29ITXZXRF9VM3F0OU56NllZaFNQTk9RQnhnOVZNcDdHdHpHOVpEeWgwZ3lwTnFFQTFlMGIyejhVZnZKSFdyTl9MNUxN?oc=5",
@@ -442,7 +472,7 @@
       "dropReason": "ai_low_quality:정보 부족"
     },
     {
-      "id": "2026-02-05_16",
+      "id": "2026-02-05_17",
       "date": "2026-02-05",
       "category": "경제",
       "title": "DB하이텍, 작년 영업이익 2,773억원 기록, 올해 가동률 98% 전망",
@@ -451,8 +481,8 @@
         "매출은 1조 3,972억원으로 24% 증가했으며, 영업이익률은 20%를 기록했습니다.",
         "올해 매출 목표는 1조 5천억원, 영업이익은 3천억원으로 제시되었으며, 연간 가동률은 98%로 전망됩니다."
       ],
-      "whyImportant": "DB하이텍의 실적 증가는 전력반도체 수요 증가와 중국 반도체 자국화 정책의 수혜를 보여주는 지표입니다.",
-      "importanceRationale": "근거: DB하이텍의 작년 영업이익은 2,773억원으로 45% 증가했으며, 올해 가동률은 98%로 전망되어 실적 개선 추세가 이어질 것으로 예상됩니다.",
+      "whyImportant": "DB하이텍의 실적 증가는 전력반도체 수요 증가와 중국 반도체 자국화 정책의 수혜를 보여주며, 향후 고전압 전력반도체 시장에서의 경쟁력 강화에 중요한 기반이 될 수 있습니다.",
+      "importanceRationale": "근거: DB하이텍은 작년 영업이익이 2,773억원으로 45% 증가했으며, 올해 가동률은 98%로 전망되어 실적 개선 추세가 이어질 것으로 예상됩니다.",
       "impactSignals": [
         {
           "label": "earnings",
@@ -476,17 +506,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_17",
+      "id": "2026-02-05_18",
       "date": "2026-02-05",
       "category": "경제",
       "title": "수도권 집값 상승세에 따른 2월 아파트 분양전망 큰 폭 개선",
       "summary": [
         "주택산업연구원의 조사 결과, 2월 전국 아파트 분양전망지수가 전월 대비 17.7포인트 상승한 98.1로 나타났습니다.",
-        "수도권은 15.6포인트 상승하여 긍정적인 전망이 우세하며, 특히 서울은 14.8포인트 상승한 111.9를 기록했습니다.",
-        "분양가격 전망지수는 소폭 하락했지만 여전히 기준선을 웃돌아 분양 가격 상승 전망이 우세합니다."
+        "수도권은 15.6포인트 상승하여 긍정적인 전망이 우세하며, 서울은 14.8포인트, 인천은 17.9포인트, 경기는 14.4포인트 상승했습니다.",
+        "주택가격 상승 흐름이 수도권 외곽까지 확대되면서 분양시장에 긍정적인 영향을 미칠 것이라는 기대감이 반영된 결과로 분석됩니다."
       ],
-      "whyImportant": "수도권 집값 상승세가 분양 시장에 긍정적인 영향을 미칠 것이라는 기대감이 반영된 결과로, 향후 주택 시장의 방향성을 가늠할 수 있는 지표입니다.",
-      "importanceRationale": "근거: 2월 전국 아파트 분양전망지수가 전월 대비 17.7포인트 상승한 98.1로 조사되어, 수도권 외곽까지 주택가격 상승 흐름이 확대될 것이라는 기대감을 반영합니다.",
+      "whyImportant": "수도권 집값 상승세가 분양 시장에 미치는 영향에 대한 지표로 활용될 수 있습니다.",
+      "importanceRationale": "근거: 2월 전국 아파트 분양전망지수가 전월 대비 17.7포인트 상승한 98.1로 조사되어, 수도권 집값 상승세가 분양 시장에 긍정적 영향을 미칠 것이라는 기대감을 반영합니다.",
       "impactSignals": [],
       "dedupeKey": "수도권-집값-상승-아파트-분양전망",
       "matchedTo": null,
@@ -501,17 +531,41 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-05_18",
+      "id": "2026-02-05_19",
+      "date": "2026-02-05",
+      "category": "경제",
+      "title": "KCC, 작년 영업이익 9.2% 감소",
+      "summary": [
+        "요약 불가: 정보 부족"
+      ],
+      "whyImportant": "요약 불가: 정보 부족",
+      "importanceRationale": "근거: 정보 부족",
+      "impactSignals": [],
+      "dedupeKey": "kcc-영업이익-감소",
+      "matchedTo": null,
+      "sourceName": "서울경제TV",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01cmlDUDhoWE9rRHZkWG9OS1JPb1lIWkNKZWk3WHNCSkRXa041QzkyLXNfM0dzRUVmcFFZTThycmltRnlJU3FzTU5XNXhackxZOFlwelZXcklHQkptblRUVDRXazI?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 05:40:29 GMT",
+      "readTimeSec": 10,
+      "status": "dropped",
+      "importance": 2,
+      "qualityLabel": "low_quality",
+      "qualityReason": "정보 부족",
+      "isBriefing": false,
+      "dropReason": "ai_low_quality:정보 부족"
+    },
+    {
+      "id": "2026-02-05_20",
       "date": "2026-02-05",
       "category": "경제",
       "title": "파나소닉, 인력 감축 1만 2천 명으로 확대 및 실적 전망치 하향 조정",
       "summary": [
         "파나소닉홀딩스는 구조 개혁의 일환으로 국내외 인력 감축 규모를 당초 1만 명에서 1만 2천 명으로 확대할 전망입니다.",
-        "퇴직금 등 구조조정 비용 증가로 2025회계연도 연결 순이익 전망치를 2,600억 엔에서 2,400억 엔으로 하향 조정했습니다.",
+        "퇴직금 등 구조조정 비용 증가로 2025 회계연도 연결 순이익 전망치를 2,600억 엔에서 2,400억 엔으로 하향 조정했습니다.",
         "미국 시장 내 전기차 수요 둔화에 따른 차세대 전지 판매 감소가 실적 악화의 주요 원인으로 분석됩니다."
       ],
       "whyImportant": "파나소닉의 인력 감축 및 실적 전망치 하향 조정은 전기차 시장의 변화와 기업의 대응 전략을 보여주는 중요한 사례입니다.",
-      "importanceRationale": "근거: 파나소닉은 인력 감축 규모를 1만 2천 명으로 확대하고, 2025회계연도 연결 순이익 전망치를 2,400억 엔으로 하향 조정하여 실적에 영향을 미치고 있습니다.",
+      "importanceRationale": "근거: 파나소닉은 1만 2천 명 감축, 구조조정 비용 1,800억 엔 증가, 2025 회계연도 순이익 전망치를 2,400억 엔으로 하향 조정했습니다.",
       "impactSignals": [
         {
           "label": "earnings",
@@ -523,36 +577,6 @@
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0wTEg5cXVuNmNEaFdOdFo5S0xPODlVR1RlVEFxQkcyTzJPV2ZUQmNNNGY5bUN5QlJiQXlsdnpHZTQtN29mbDdJV3RVZ3VJNVZaaGxyb2R0Wk5nQV9zZ2haUFV0YU5DOG5iQnJ4dGJsQXhZdkxm?oc=5",
       "publishedAt": "Thu, 05 Feb 2026 01:33:55 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-05_19",
-      "date": "2026-02-05",
-      "category": "경제",
-      "title": "올해 한국 경제 성장률 2% 중반 전망 등장, 씨티 2.2%에서 2.4%로 상향",
-      "summary": [
-        "주요 투자은행(IB)들이 반도체 수출 호조에 힘입어 올해 한국의 실질 GDP 성장률 전망치를 상향 조정하고 있습니다.",
-        "씨티는 기존 2.2%에서 2.4%로, UBS는 2.0%에서 2.2%로 전망치를 높였으며, 씨티는 GDP 대비 경상수지 전망치도 7.1%에서 9.4%로 대폭 상향했습니다.",
-        "주요 IB들의 올해 소비자물가지수(CPI) 상승률 전망치 또한 소폭 상승했습니다."
-      ],
-      "whyImportant": "주요 투자은행들의 한국 경제 성장률 전망치 상향은 향후 경제 정책 결정에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 주요 IB 8곳의 경제성장률 전망치가 평균 2.1%로, 한국은행(1.8%)과 정부(2.0%) 전망치보다 높은 수준이며, 씨티는 반도체 수출 증가율 전망치를 54%로 예상했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "주요 투자은행(IB)들이 올해 한국의 실질 국내총생산(GDP) 성장률 전망치를 상향 조정하고 있다."
-        }
-      ],
-      "dedupeKey": "한국-경제성장률-전망-반도체-수출",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4ZkhIdFNfdUNlWTlNcm5GUTJabUNrQXlTcnZ5WWxQX09pZ2xkdVZlWG00akFsRnAxZDJtZ2RDUDBsb2ZrNldTUGRDYXVVMk5vMUlRWGE3WV9WNEJ1Mk84ODNUZWtzQWlzcHNtS0wteHJ5YnJw?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 01:31:52 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

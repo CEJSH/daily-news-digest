@@ -32,6 +32,7 @@ _KOREAN_VERB_ENDINGS = (
 )  # 중복 제거용 토큰 정규화 시 동사 어미 제거
 
 def clean_text(s: str) -> str:
+    """HTML 엔티티/태그를 제거하고 공백을 정리한 깔끔한 텍스트로 정규화."""
     if not s:
         return ""
     # 1) &nbsp; 같은 HTML 엔티티를 문자로 변환

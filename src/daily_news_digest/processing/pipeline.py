@@ -213,8 +213,6 @@ class DigestPipeline:
                 (
                     title,
                     title_clean,
-                    _summary_raw,
-                    summary_clean,
                     summary,
                     full_text,
                     analysis_text,
@@ -267,11 +265,10 @@ class DigestPipeline:
                     feed_low_score += 1
                     continue
 
-                item: Item = {
+                item = {
                     "title": title_clean,
                     "link": link,
                     "summary": summary,
-                    "summaryRaw": summary_clean,
                     "fullText": full_text,
                     "published": getattr(entry, "published", None),
                     "score": score,

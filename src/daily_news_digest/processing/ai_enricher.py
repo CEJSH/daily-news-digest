@@ -407,7 +407,7 @@ def _normalize_importance_score(value: Any, impact_signals: list[str]) -> int:
         return _fallback_importance_score(impact_signals)
     return max(1, min(5, score))
 
-def _pick_ai_input_text(summary_raw: str, full_text: str) -> str:
+def _pick_ai_input_text(full_text: str) -> str:
     # 본문만 사용. 없으면 빈 문자열 반환.
     text = full_text or ""
     if len(text) > AI_INPUT_MAX_CHARS:
@@ -875,7 +875,7 @@ def enrich_item_with_ai(item: dict) -> dict:
     impact_signals = item.get("impactSignals") or []
 
     # 모델 입력 구성
-    input_text = _pick_ai_input_text(summary_raw, full_text)
+    input_text = _pick_ai_input_text(full_text)
     if not input_text:
         _log_ai_unavailable(f"본문 없음: {item.get('link') or item.get('title','')[:60]}")
         return {}
@@ -901,7 +901,7 @@ def enrich_item_with_ai(item: dict) -> dict:
     title_ko = clean_text(payload.get("title_ko") or "")
     if not title_ko:
         title_ko = title
-    summary_fallback = full_text or summary_raw or title
+    summary_fallback = summary_raw
     summary_lines = _normalize_summary_lines(
         payload.get("summary_lines") or [],
         title_ko or title,

@@ -43,6 +43,8 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Generate daily_digest.json
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python -m daily_news_digest.export.news_digest_exporter
           test -f data/daily_digest.json

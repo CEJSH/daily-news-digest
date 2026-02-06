@@ -53,14 +53,14 @@ class ArticleFetcherConfig:
     candidate_limit: int = _env_int("ARTICLE_FETCH_CANDIDATE_LIMIT", 20)
     candidate_log_limit: int = _env_int("ARTICLE_FETCH_CANDIDATE_LOG_LIMIT", 50)
     max_candidate_depth: int = _env_int("ARTICLE_FETCH_MAX_CANDIDATE_DEPTH", 1)
-    post_nav_wait_ms: int = _env_int("ARTICLE_FETCH_POST_NAV_WAIT_MS", 0)
+    post_nav_wait_ms: int = _env_int("ARTICLE_FETCH_POST_NAV_WAIT_MS", 500)
     google_news_wait_ms: int = _env_int("ARTICLE_FETCH_GOOGLE_NEWS_WAIT_MS", 600)
     google_news_wait_for_selector: str = os.getenv(
         "ARTICLE_FETCH_GOOGLE_NEWS_WAIT_SELECTOR",
         "a[href]",
     )
-    context_pool_size: int = _env_int("ARTICLE_FETCH_CONTEXT_POOL_SIZE", 2)
-    parallel_fetch_max_workers: int = _env_int("ARTICLE_FETCH_PARALLEL_MAX_WORKERS", 4)
+    context_pool_size: int = _env_int("ARTICLE_FETCH_CONTEXT_POOL_SIZE", 1)
+    parallel_fetch_max_workers: int = _env_int("ARTICLE_FETCH_PARALLEL_MAX_WORKERS", 1)
     browser_locale: str = os.getenv("ARTICLE_FETCH_BROWSER_LOCALE", "en-US")
     headless: bool = _env_bool("ARTICLE_FETCH_HEADLESS", True)
     log_candidates: bool = _env_bool("ARTICLE_FETCH_LOG_CANDIDATES", True)

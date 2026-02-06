@@ -111,7 +111,7 @@ DATA_DIR = Path(os.getenv("DATA_DIR", str(REPO_ROOT / "data")))
 
 OUTPUT_JSON = os.getenv("OUTPUT_JSON", str(DATA_DIR / "daily_digest.json"))
 DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", str(DATA_DIR / "dedupe_history.json"))
-DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "5"))
+DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "3"))
 SOURCE_WEIGHT_ENABLED = os.getenv("SOURCE_WEIGHT_ENABLED", "1") == "1"
 SOURCE_WEIGHT_FACTOR = float(os.getenv("SOURCE_WEIGHT_FACTOR", "0.6"))
 SELECTION_CRITERIA = "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외"
@@ -174,7 +174,7 @@ def _resolve_limit(
 
 AI_IMPORTANCE_ENABLED = os.getenv("AI_IMPORTANCE_ENABLED", "1") == "1"
 AI_AUTO_TUNE = os.getenv("AI_AUTO_TUNE", "1") == "1"
-_DEFAULT_AI_IMPORTANCE_MAX = 100
+_DEFAULT_AI_IMPORTANCE_MAX = 120
 _DEFAULT_AI_SEMANTIC_MAX = 50
 AI_IMPORTANCE_MAX_ITEMS = _resolve_limit(
     "AI_IMPORTANCE_MAX_ITEMS",
@@ -195,11 +195,11 @@ AI_SEMANTIC_DEDUPE_MAX_ITEMS = _resolve_limit(
 )
 AI_SEMANTIC_DEDUPE_THRESHOLD = float(os.getenv("AI_SEMANTIC_DEDUPE_THRESHOLD", "0.88"))
 ARTICLE_FETCH_ENABLED = os.getenv("ARTICLE_FETCH_ENABLED", "1") == "1"
-ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "100"))
+ARTICLE_FETCH_MAX_ITEMS = int(os.getenv("ARTICLE_FETCH_MAX_ITEMS", "120"))
 ARTICLE_FETCH_MIN_CHARS = int(os.getenv("ARTICLE_FETCH_MIN_CHARS", "300"))
 ARTICLE_FETCH_TIMEOUT_SEC = int(os.getenv("ARTICLE_FETCH_TIMEOUT_SEC", "6"))
 FULLTEXT_LOG_ENABLED = os.getenv("FULLTEXT_LOG_ENABLED", "0") == "1"
-FULLTEXT_LOG_MAX_CHARS = int(os.getenv("FULLTEXT_LOG_MAX_CHARS", "400"))
+FULLTEXT_LOG_MAX_CHARS = int(os.getenv("FULLTEXT_LOG_MAX_CHARS", "50"))
 
 # ==========================================
 # TOP 20 품질 강화 옵션
@@ -210,7 +210,7 @@ TOP_SOURCE_ALLOWLIST_STRICT = os.getenv("TOP_SOURCE_ALLOWLIST_STRICT", "1") == "
 _allowlist_env = set(_parse_csv_env("TOP_SOURCE_ALLOWLIST"))
 TOP_SOURCE_ALLOWLIST = _allowlist_env if _allowlist_env else (set(SOURCE_TIER_A) | set(SOURCE_TIER_B))
 
-TOP_FRESH_MAX_HOURS = int(os.getenv("TOP_FRESH_MAX_HOURS", "72"))
+TOP_FRESH_MAX_HOURS = int(os.getenv("TOP_FRESH_MAX_HOURS", "48"))
 _fresh_except_env = set(_parse_csv_env("TOP_FRESH_EXCEPT_SIGNALS"))
 TOP_FRESH_EXCEPT_SIGNALS = _fresh_except_env if _fresh_except_env else {"policy", "sanctions", "earnings", "stats"}
 TOP_FRESH_EXCEPT_MAX_HOURS = int(os.getenv("TOP_FRESH_EXCEPT_MAX_HOURS", "168"))

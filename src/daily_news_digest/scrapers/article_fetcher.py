@@ -99,10 +99,27 @@ class PlaywrightClient:
 
     def _ensure_browser(self):
         with self._lock:
-            if self._browser is None:
+            if self._browser is not None:
+                return self._browser
+
+            if self._pw is None:
                 self._pw = sync_playwright().start()
+
+            try:
                 self._browser = self._pw.chromium.launch(headless=self._config.headless)
-        return self._browser
+            except Exception:
+                # If browser launch fails (e.g., missing installed browsers on CI),
+                # stop Playwright to avoid leaving a running asyncio loop behind.
+                try:
+                    if self._pw is not None:
+                        self._pw.stop()
+                except Exception:
+                    pass
+                self._pw = None
+                self._browser = None
+                raise
+
+            return self._browser
 
     def close(self) -> None:
         with self._lock:

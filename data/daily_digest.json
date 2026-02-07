@@ -1,77 +1,21 @@
 {
-  "date": "2026-02-07",
+  "date": "2026-02-08",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-07T18:30:12.658646+09:00",
+  "lastUpdatedAt": "2026-02-08T08:04:27.311709+09:00",
   "items": [
     {
-      "id": "2026-02-07_1",
-      "date": "2026-02-07",
-      "category": "IT",
-      "title": "AI 투자 확대에 대한 빅테크 기업의 딜레마 심화",
-      "summary": [
-        "아마존이 AI 인프라에 대규모 투자를 발표한 후 주가가 급락하며 시장의 의구심이 확산되고 있습니다.",
-        "마이크로소프트와 알파벳 또한 AI 투자 계획 발표 후 주가가 하락하는 등 빅테크 전반으로 우려가 확산 중입니다.",
-        "데이터센터 과잉 공급과 수익성 저하에 대한 우려가 커지고 있습니다."
-      ],
-      "whyImportant": "AI 투자가 장기적인 성장으로 이어질지 불확실성이 커지면서 관련 기업들의 투자 전략에 대한 시장의 평가가 더욱 중요해지고 있습니다.",
-      "importanceRationale": "근거: 아마존은 올해 AI 인프라에 2000억 달러를 투자할 계획을 밝혔으나, 시장은 수익성 잠식을 우려하여 주가가 하락했고, AWS 수주 잔액이 2440억 달러임에도 불구하고 투자 경쟁을 흡수할 만큼 충분한지에 대한 신중론이 제기되었습니다.",
-      "impactSignals": [],
-      "dedupeKey": "투자-빅테크-수익성-데이터센터",
-      "clusterKey": "늦으면/회사멸망",
-      "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9kZ1RKLUc0aV9LSHBSTUV5amZLbFJ4Q19mYV95RTJCeHd3dGJfMVdaSmtLYjdub2xjSWJOaUVWdUdrbDlOWFNEV0dZZTY1UQ?oc=5",
-      "publishedAt": "Fri, 06 Feb 2026 11:23:28 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_2",
-      "date": "2026-02-07",
-      "category": "IT",
-      "title": "젠슨 황, 빅테크 AI 투자 적절하고 지속 가능하다고 평가",
-      "summary": [
-        "엔비디아의 젠슨 황 CEO는 빅테크 기업들의 AI 투자 확대가 적절하고 지속 가능하다고 진단했습니다.",
-        "알파벳, 마이크로소프트, 메타, 아마존 등은 올해 AI 데이터센터와 장비 등에 약 950조 원을 투자할 계획입니다."
-      ],
-      "whyImportant": "AI 투자가 지속 가능하다는 젠슨 황 CEO의 발언은 향후 AI 시장의 성장 가능성을 시사합니다.",
-      "importanceRationale": "근거: 4개 기업이 올해 약 950조 원을 투자할 계획이며, 이는 지난 3년간 투자액을 합친 것과 비슷하거나 그 이상일 것으로 예상되기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "그는 인공지능 투자 수요가 “엄청나게 높다”며 “인공지능은 유용하고 매우 유능해졌으며, 인공지능 도입률도 엄청나게 높아졌다”고 강조했다."
-        }
-      ],
-      "dedupeKey": "젠슨황-빅테크-ai투자-지속가능",
-      "clusterKey": "젠슨/빅테크",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZUE5iMWpnU29HMEpqaHFtSFBRdzQ2ZjU5VFJjZVBKYTZNWU5HcE9iemZST2p4ZVYyT1ZKM0NSaVFFWnh3R1cxekZ3Q2VrVm9pUTg1YjNvcGZwZUFZS0E5c0RCbkhiSHRGeGdVaXhwMmhEUQ?oc=5",
-      "publishedAt": "Sat, 07 Feb 2026 06:59:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_3",
-      "date": "2026-02-07",
+      "id": "2026-02-08_1",
+      "date": "2026-02-08",
       "category": "경제",
       "title": "미-이란 핵 협상 불확실성에 국제유가 3% 상승",
       "summary": [
         "미국과 이란 간의 협상 관련 불확실성이 커지면서 국제유가가 3% 넘게 상승했습니다.",
         "이란에서 전쟁이 발생할 경우 하루 340만 배럴에 달하는 이란의 원유 공급이 위험에 처할 수 있다는 분석이 나왔습니다."
       ],
-      "whyImportant": "미국과 이란의 핵 협상 결과는 국제 에너지 시장의 안정성에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 국제유가가 3% 상승했으며, 이란의 원유 공급(하루 340만 배럴) 및 호르무즈 해협 통제 가능성이 유가 변동에 영향을 미칠 수 있습니다.",
+      "whyImportant": "미국과 이란의 핵 협상 결과는 국제 에너지 시장의 변동성을 야기할 수 있기 때문에 중요합니다.",
+      "importanceRationale": "근거: 국제유가가 3% 넘게 상승했으며, 이란의 원유 공급량과 호르무즈 해협 통제 가능성이 언급되어 시장에 미치는 영향이 클 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -82,12 +26,12 @@
           "evidence": "이 같은 소식에 중동 긴장이 다시 고조되면서 유가를 밀어 올렸다."
         }
       ],
-      "dedupeKey": "교촌에프앤비-영업이익-매출-해외시장",
-      "clusterKey": "실적/교촌에프앤비/작년",
+      "dedupeKey": "국제유가-미국-이란-핵협상-불확실성",
+      "clusterKey": "국제유가/미국",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10X1YtMU9HZFY3N1gtVVdha2xvbUM2TjlyMmFhU3dwcGItMEFFdmxLclFuWk5nbDl5LVAxVjZmNk9MZkdBalJnVG9VTlZ2ZXV5eXFIcGstelVFRklvV1l3UERNLU9mMk1IWHoteGxVVDlKNnRQ?oc=5",
-      "publishedAt": "Fri, 06 Feb 2026 08:04:03 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB0TmJtS1Z3UnRqYklpVVpMQUNWWFAxU0lLWGlGRzNabnlQaUM4dlJYdkpDSTJqQmxjV1NZTTlueDFTd2FtQUNDSGh6eGFyWllIaUthdmF5Rk5tWDJNc2VKUjhaNVdpVHowT3V0Y201VjdlbHVK?oc=5",
+      "publishedAt": "Wed, 04 Feb 2026 20:52:41 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -96,8 +40,34 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-07_4",
-      "date": "2026-02-07",
+      "id": "2026-02-08_2",
+      "date": "2026-02-08",
+      "category": "정책",
+      "title": "한미 관세 협상, 올해도 워싱턴에서 계속될 전망",
+      "summary": [
+        "조현 외교부 장관은 한미 간 관세 갈등으로 인해 올 상반기 워싱턴 출장이 잦을 것으로 예상했습니다.",
+        "트럼프 대통령은 한국 국회에 계류 중인 대미투자특별법안을 문제 삼아 관세 인상 위협을 가하고 있습니다.",
+        "미국은 한국의 비관세 장벽 문제 해결도 요구하고 있어 협상에 난항이 예상됩니다."
+      ],
+      "whyImportant": "한미 간 관세 협상 결과는 양국 경제 관계에 지속적인 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 트럼프 대통령의 관세 인상 위협과 미국의 비관세 장벽 해결 요구는 11월 중간선거를 앞두고 한미 통상 관계에 영향을 줄 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "한미-관세-협상-대미투자특별법",
+      "clusterKey": "한미_관세/대미투자특별법",
+      "matchedTo": null,
+      "sourceName": "연합뉴스 한민족센터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5fOXlVbDd0d2VTcHBORWo4UjJUS0RLUmlwNDRwN2dnVjJRakdiM2VIQ2MxbS1tVXphMDl1ZDdDZ2JLR1ZwNWU2UF9SUC1fWU0yUl9uVktEVzFEWGZjbTd0eFJrZ3J3NG0xeXY4TmVSV3Q2NTFq?oc=5",
+      "publishedAt": "Sat, 07 Feb 2026 22:07:00 GMT",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-08_3",
+      "date": "2026-02-08",
       "category": "정책",
       "title": "미국, 이란과 협상 재개 당일 대이란 제재 발표",
       "summary": [
@@ -105,7 +75,7 @@
         "이번 제재는 미국이 이란과의 핵 협상을 재개한 가운데 나왔으며, 이란에 대한 압박을 유지하겠다는 신호로 해석됩니다."
       ],
       "whyImportant": "미국의 대이란 제재는 이란의 경제 활동 및 국제 관계에 지속적인 영향을 미칠 수 있는 정책 결정입니다.",
-      "importanceRationale": "근거: 미국 국무부는 이란산 석유 및 석유화학 제품의 불법 거래에 연루된 단체 15곳, 개인 2명, 선박 14척을 제재 대상으로 발표하여 정책적 의지를 드러냈습니다.",
+      "importanceRationale": "근거: 미국 국무부는 이란산 석유 및 석유화학 제품의 불법 거래에 연루된 단체 15곳과 개인 2명, 선박 14척을 제재 대상으로 발표했습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -116,8 +86,8 @@
           "evidence": "이번 제재에 따라 이들은 미국 내 보유한 모든 자산이 동결되고, 미국 국민 및 기업과의 거래가 금지된다."
         }
       ],
-      "dedupeKey": "미국-이란-제재-핵협상-석유",
-      "clusterKey": "제재/미국/이란",
+      "dedupeKey": "미국-이란-제재-석유-협상",
+      "clusterKey": "제재/관세/미국/이란",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
       "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UcW9sNV9oajIxb2hYMzRUMzU2N3JJVTFCbnMwOWI3Q2FvYXY4bGhHUHNXRS1xUndNWWRJNk1udFhOYkRPVk5EMFlRbkRTRDlZbmVhN0RVQmV3ZHZWVkR5b0lEdU42SjNzcUNxNHl3X29uRm0y?oc=5",
@@ -130,8 +100,8 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-07_5",
-      "date": "2026-02-07",
+      "id": "2026-02-08_4",
+      "date": "2026-02-08",
       "category": "정책",
       "title": "미국 재무장관, 우크라이나 전쟁 평화 협상에 따른 러시아 그림자 함대 제재 검토",
       "summary": [
@@ -139,7 +109,7 @@
         "베선트 장관은 러시아의 우크라이나 침략이 불법이며 주권 침해라는 데 동의한다고 밝혔습니다."
       ],
       "whyImportant": "미국의 제재 검토는 러시아의 에너지 수출에 영향을 미쳐 국제 에너지 시장과 지정학적 관계에 중요한 변화를 가져올 수 있습니다.",
-      "importanceRationale": "근거: 베선트 장관은 러시아 석유 기업 로스네프트와 루코일 제재가 러시아를 협상 테이블로 이끌었다고 언급하여, 제재가 협상에 미치는 영향을 시사했습니다.",
+      "importanceRationale": "근거: 미국 재무장관이 러시아 석유 수출에 사용되는 '그림자 함대'에 대한 추가 제재 여부를 검토하겠다고 밝혀 정책적 변화 가능성을 시사합니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -150,7 +120,7 @@
           "evidence": "스콧 베선트 미국 재무장관은 5일(현지시간) 미국과 러시아, 우크라이나 간에 진행 중인 우크라이나 전쟁 종식을 위한 협상 상황을 봐가며 러시아 석유 수출에 쓰이는 이른바 '그림자함대'에 대한 추가 제재 여부를 검토하겠다고 밝혔다."
         }
       ],
-      "dedupeKey": "미국-러시아-우크라이나-제재-그림자함대",
+      "dedupeKey": "미국-러시아-우크라이나-그림자함대-제재",
       "clusterKey": "제재/미국/러시아",
       "matchedTo": null,
       "sourceName": "연합뉴스 한민족센터",
@@ -164,29 +134,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-07_6",
-      "date": "2026-02-07",
-      "category": "정책",
+      "id": "2026-02-08_5",
+      "date": "2026-02-08",
+      "category": "글로벌",
       "title": "트럼프, 에너지 패권 확보에 관세 활용 및 한국에 패키지 딜 요구 가능성",
       "summary": [
         "미국이 관세 압박을 통해 한국에 에너지 관련 패키지 딜을 요구할 가능성이 제기됩니다.",
-        "미국은 한국에 에너지 프로젝트를 제안하며 공급망 동참을 요구하고, 미국산 에너지 구매 압박을 높일 수 있습니다.",
+        "미국은 한국에 에너지 프로젝트를 제안하며 공급망 동참을 요구하고, 미국산 원유 구매 압박을 키울 수 있습니다.",
         "전문가들은 에너지 공급망 안보와 연계한 전략 마련이 필요하다고 조언합니다."
       ],
-      "whyImportant": "미국의 에너지 정책 변화와 관세 압박은 한국의 에너지 안보 및 경제에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국이 한국산 관세율을 25%로 올리겠다고 압박하며 에너지 공급망 동참을 요구하는 것은 정책 변화의 구체적인 움직임입니다.",
+      "whyImportant": "미국의 에너지 정책 변화와 관세 압박은 한국의 에너지 안보 및 공급망 전략에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 한국산 관세율을 25%로 올리겠다고 압박하면서 에너지 공급망 동참을 요구하는 것은 정책 변화의 실행 가능성을 보여줍니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "미국의 기조 변화 속에 관세 압박은 무역적자 개선을 넘어 에너지 패권 강화를 위한 도구로 사용되고 있다."
+          "evidence": "트럼프 대통령의 관세 재상향 압박을 받는 한국도 에너지와 관련된 패키지 딜을 요구받을 가능성이 높다는 분석이 나온다."
         }
       ],
       "dedupeKey": "에너지-패권-관세-미국-한국-패키지딜",
-      "clusterKey": "한미_관세/에너지/패권/패키지딜",
+      "clusterKey": "관세/에너지/패권/확보",
       "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBocXFEdlFuWVgyWnBUTU9BRm1vcGVZTnpLckhWWnlXbnVOd0lrNjMteTAzNjJZMFYyWXlnd2Vqd0Q1d1VXWE5ieWdSMEpralljOGE3Qm5ta1k3dC1BWG9lckpoM3VDbng2eHhwUGlBZy1sajM3?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 00:37:30 GMT",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tMDJNRm5oTXd6XzlxZnp4LWpCbGFxbm5xSEJYbDJxeE51MmJBMk0wMTYtYjFZWFU0Tld3OUFZUmV0XzNOTUxIY1h1N1VQM3UwSmtKWVZZb0tSQdIBVEFVX3lxTE41cEM5MlpLUEtwMVc4YlBLbFpZS01xQWp1bWVqWmVqMWlOTWExZEg5Tnp4M2ZNRUcxamducnp6ZWs1X2dsNUQxc1VqWjNncWZtamRybw?oc=5",
+      "publishedAt": "Thu, 05 Feb 2026 08:56:48 GMT",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -195,174 +165,36 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-07_7",
-      "date": "2026-02-07",
-      "category": "정책",
-      "title": "ESG, 글로벌 무역 운영에 내재화되는 추세",
-      "summary": [
-        "ESG 노력이 기업 무역 기능의 핵심 책임으로 유지되고 있으며, 무역 관리에 더욱 구조적으로 내재화되고 있습니다.",
-        "T R s I stitute의 2026년 글로벌 무역 보고서에 따르면, ESG 관련 노력이 형태와 포지셔닝은 변화하고 있지만 감소하지는 않았습니다."
-      ],
-      "whyImportant": "ESG가 공급망 관리 및 기업 운영의 핵심 요소로 자리 잡으면서, 기업의 지속가능성 전략과 장기적인 경쟁력에 중요한 영향을 미칩니다.",
-      "importanceRationale": "근거: 보고서에 따르면 아시아 태평양, 라틴 아메리카, 유럽 연합-영국, 미국 응답자의 99%가 공급업체 선정 시 ESG 고려 사항이 중요하다고 답했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "As the United States government sharply pulled back its role in encouraging ESG in global trade in 2025, concerns were raised over whether that would impact ESG efforts globally."
-        }
-      ],
-      "dedupeKey": "esg-글로벌무역-공급망-데이터수집",
-      "clusterKey": "esg/글로벌무역",
-      "matchedTo": null,
-      "sourceName": "Thomson Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNUhrM2hOVjcyWFN2RXViSnRxNW5pVkRDUDBndWFXZlA5RGJYQnhSMzNmeXdKaXJPM0YxSnpUSTF1TXg1akZpdU5UWlJPeVVac0ZCWU1DenhnZDNJdjZUREdjbHFudGFrdzNsNG9zUnBUU1ZZTkI5UXg5Q0NFWHJmTFdPVHNyUzlyUnhDRlBJbkRESUpob21aN1ppd2NEQ09tSnBCUlFPZFlUMTdjSWc?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 13:42:15 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_8",
-      "date": "2026-02-07",
-      "category": "정책",
-      "title": "트럼프, 이란과 교역 시 추가 관세 부과 압박",
-      "summary": [
-        "트럼프 행정부가 이란과 핵 협상을 재개하며 이란과 교역하는 국가에 추가 관세를 부과하겠다고 밝혔습니다.",
-        "이번 행정명령은 이란으로부터 상품이나 서비스를 직간접적으로 확보하는 국가에 부과될 수 있습니다.",
-        "해당 명령은 7일부터 발효되며, 이란 경제에 단기적 타격이 예상됩니다."
-      ],
-      "whyImportant": "미국의 대이란 제재는 국제 무역 관계 및 에너지 시장에 장기적인 영향을 미칠 수 있는 결정입니다.",
-      "importanceRationale": "근거: 7일부터 발효되는 행정명령은 이란과 교역하는 국가에 대한 추가 관세 부과를 가능하게 하여, 이란 경제와 교역국에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "6일(현지시각) 도널드 트럼프 미국 대통령은 이란과 교역하는 국가의 대미 수출품에 추가로 관세를 부과할 수 있게 하는 내용의 행정명령에 서명했다."
-        }
-      ],
-      "dedupeKey": "트럼프-이란-교역-관세-제재",
-      "clusterKey": "제재/관세/트럼프/이란",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeGpxSGlUNzJRd3pMNm1ZeFlmcmJJby02SnduX1k2b3VYMW9aR3g2b3p2MWJ2bDZNS01SLWVQU0VTUk9YT2tIbWNqY3lZVFdudExBeU04SGswTVdfcUpVbmlQdVJUdmxZTENuV3VrVUFBaHUyUV9oQXFSU0hMZldoQ0Rn?oc=5",
-      "publishedAt": "Sat, 07 Feb 2026 05:35:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_9",
-      "date": "2026-02-07",
-      "category": "정책",
-      "title": "국회 의원실 세미나 및 토론회 개최",
-      "summary": [
-        "국회 의원실에서 국가 손상예방관리시스템 구축, 지역 의료격차 해소, 직장어린이집 지원체계 모색 등을 위한 세미나와 토론회가 개최됩니다.",
-        "쿠팡 해킹, 한국영화산업 홀드백 정책, 희귀질환 환자 생존권 보장, 참여예산제 등 다양한 주제의 토론회도 예정되어 있습니다."
-      ],
-      "whyImportant": "다양한 사회 문제 해결을 위한 정책 논의가 국회에서 활발하게 이루어지고 있음을 보여줍니다.",
-      "importanceRationale": "근거: 여러 의원실에서 다양한 주제로 토론회를 개최하여 정책 방향을 모색하고 있어 정책 결정에 영향을 줄 수 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "국회-의원실-세미나-토론회-정책",
-      "clusterKey": "오늘/국회일정",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3LW5nNVBnSlRZZ0ZuTjR3Y0lHTmhrMnlCNWdDdjhhTnhjU0NMRTYxaTdxeG9ZTDhTekVqR0I5bk04N3o4SGFvMWVuYXJaeVRHeGxVaHVjemswcS0xTjBKSXRrWi1lS3hXVzZVcEdWSXN2SE52?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 22:00:02 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_10",
-      "date": "2026-02-07",
-      "category": "정책",
-      "title": "이찬진 금감원장, 특사경 통제 및 금감원 위상 관련 입장 밝혀",
-      "summary": [
-        "이찬진 금융감독원장은 금감원 특별사법경찰(특사경) 확대에 대해 금융위원회의 통제를 받는다고 밝혔습니다.",
-        "또한 금감원의 기관 성격에 대해 국가기관이 바람직하다는 입장을 표명했습니다.",
-        "이억원 금융위원장은 상장폐지 요건 강화 및 동전주 상장폐지 도입을 검토하겠다고 밝혔습니다."
-      ],
-      "whyImportant": "금융감독원의 역할과 권한에 대한 논의는 금융 시장의 안정성과 효율성에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금감원 특사경 확대에 대한 금융위 통제, 금감원 위상에 대한 논의, 그리고 상장폐지 요건 강화 검토 등은 금융 시장 전반에 영향을 미칠 수 있는 정책 변화 가능성을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "이찬진 금융감독원장은 5일 금융감독원 특별사법경찰(특사경) 확대와 관련 \"민주적 통제 절차는 금융위원회의 수사심의위원회가 통제하는 것으로 양 기관 간 협의가 정리되고 있다\"고 말했다."
-        }
-      ],
-      "dedupeKey": "금감원-특사경-금융위-통제-상장폐지",
-      "clusterKey": "이찬진/특사경",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14Yk55Sjl3d196RDRlU2RlaE9CMG95ZjdORWQzUGQ3dTNlWjVaaDl2dVRieXlnbE10WFMwdFJYeDNDLUt6X2JWbHpDUnBxM2FlZ0RlVE9pYnJiNkU2UWstTFMtaTBhYmpPRUhIcEJFT29hUlkz?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 09:17:34 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_12",
-      "date": "2026-02-07",
+      "id": "2026-02-08_6",
+      "date": "2026-02-08",
       "category": "글로벌",
-      "title": "한미 외교장관 회담, 관세 합의에 대한 입장차",
+      "title": "멕시코, 미국의 위협 속에서도 쿠바 지원 모색…석유 공급 협상 중",
       "summary": [
-        "조현 외교부 장관과 마코 루비오 미국 국무장관 겸 국가안보보좌관의 회담 후 양국 보도자료에서 상호 관세 합의에 대한 미묘한 입장 차이가 드러났습니다.",
-        "한국은 상호관세 합의와 공동 팩트시트의 신속한 이행을 강조했지만, 미국은 관세를 직접 언급하지 않고 한국의 대미 투자 확대와 원자력, 핵추진 잠수함 등의 협력을 강조했습니다.",
-        "미국 국무부 자료에는 한국 정부의 중요 관심사인 관세 협상 관련 내용이 빠져 있어, 양국 간의 입장 차이를 보여줍니다."
+        "멕시코가 미국의 제재 위협에도 불구하고 쿠바에 석유를 포함한 인도적 지원을 지속하는 방안을 모색하고 있습니다.",
+        "멕시코는 쿠바 국민을 돕겠다는 정책 기조를 유지하며 미국과 쿠바 석유 공급 관련 협의를 진행 중입니다.",
+        "쿠바는 에너지 수요의 상당 부분을 수입에 의존하고 있으며, 미국의 제재로 연료 부족이 심화되고 있습니다."
       ],
-      "whyImportant": "한미 간의 통상 및 안보 현안에 대한 입장 차이는 향후 협상 및 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 국무부 자료에서 한국의 관세 합의 요청에 대한 언급이 빠져 있어, 통상 문제에 대한 양국 간 입장 차이가 있음을 시사하며, 이는 향후 협상에 영향을 줄 수 있습니다.",
+      "whyImportant": "멕시코의 쿠바 지원은 미국의 제재 압박 속에서 국제 관계 및 에너지 공급망에 영향을 미칠 수 있는 결정입니다.",
+      "importanceRationale": "근거: 미국이 쿠바에 석유를 공급하는 국가에 관세 부과를 경고한 가운데, 멕시코가 쿠바 지원을 지속하려 하며, 쿠바는 에너지 수요의 약 3분의 2를 수입 연료에 의존하고 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "한국은 상호관세 합의와 신속한 공동 팩트시트 이행을 강조하는 반면, 미국은 관세를 직접 언급하지 않고 한국의 대미 투자 확대와 원자력, 핵추진 잠수함 등의 협력을 말했다."
+          "evidence": "멕시코가 도널드 트럼프 미국 행정부의 제재 위협에도 불구하고 쿠바에게 석유 등 인도적 지원을 지속하는 방안을 모색하고 있다."
+        },
+        {
+          "label": "sanctions",
+          "evidence": "멕시코가 도널드 트럼프 미국 행정부의 제재 위협에도 불구하고 쿠바에게 석유 등 인도적 지원을 지속하는 방안을 모색하고 있다."
         }
       ],
-      "dedupeKey": "한미-외교장관-회담-관세-합의",
-      "clusterKey": "관세/요청/피한",
+      "dedupeKey": "멕시코-쿠바-석유공급-미국제재",
+      "clusterKey": "관세/멕시코/트럼프",
       "matchedTo": null,
       "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9ZWWh2VFdlX0JiT29ka3NhUEJIUHBlT0FqRXRfdmxSX0dXbzZ6LUs4WEM3ZE43dDFUNVE4R21tbTlqQ3EtaUVyZUJsVnJsdlNFQnRmam0wcEFDWUJvVTVuRHFpTkNKYlZCbjh2UkZGdFlFYTBO?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 13:10:00 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa3pwMG9nazlEODBpZG9pNkwyZ0dOTWZHRHd0eW1LUDIydF9CTS10Snd2SnRuVU4zVVFZUkVGSWhSQVJfUmZQYmFGMVZ2dDJONVI4cWZxQzVzQ3NwVHlRSUZSYTQ0WG5UOUdfcm1uNU5TVy00VkIxZXhJQkZMNThvREJn?oc=5",
+      "publishedAt": "Fri, 06 Feb 2026 00:10:00 GMT",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-07_13",
-      "date": "2026-02-07",
-      "category": "정책",
-      "title": "쿠팡 로저스, 경찰 2차 출석…'국회 위증' 혐의 조사",
-      "summary": [
-        "해롤드 로저스 쿠팡 한국 임시대표가 국회 '쿠팡 사태 연석 청문회'에서 허위 증언을 한 혐의로 경찰에 출석했습니다.",
-        "그는 국회증언감정법상 위증 혐의로 조사를 받고 있습니다."
-      ],
-      "whyImportant": "이번 조사는 기업 대표의 국회 증언에 대한 책임성을 강조하고, 향후 유사 사례에 대한 경각심을 불러일으킬 수 있습니다.",
-      "importanceRationale": "근거: 로저스 쿠팡 한국 임시대표가 국회 위증 혐의로 경찰 조사를 받는다는 내용으로, 정책적 함의가 있을 수 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "쿠팡-로저스-국회-위증혐의-조사",
-      "clusterKey": "속보/쿠팡",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1yOGJFZTFUc1gtYndFVjFPUmxPY2t4dlhKbVhLVExwZmZGWUEzYl8zTU1ucTlPUUxCM1A1enU1UWI4eDBiWVJZSnRJSEUwaC05Ny1QWEVUTXhDcGNDa0toUkdLdVJFTjRjZkFpbXBHNVJqN3I2?oc=5",
-      "publishedAt": "Fri, 06 Feb 2026 04:29:36 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

@@ -188,8 +188,9 @@ STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
 }
 
 SANCTIONS_KEYWORDS = {
-    "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
-    "수출통제", "블랙리스트", "자산 동결", "자산동결", "금수", "금수조치", "embargo",
+    "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze", "assets frozen",
+    "shadow fleet",
+    "수출통제", "블랙리스트", "자산 동결", "자산동결", "동결", "거래 금지", "거래금지", "금수", "금수조치", "embargo",
 }
 
 TRADE_TARIFF_KEYWORDS = {
@@ -224,16 +225,18 @@ IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
     "market-demand": [
         "sales", "demand", "deliveries", "shipments", "orders", "bookings", "inventory",
         "price increase", "price decrease", "pricing", "consumption", "consumer sentiment",
-        "판매", "수요", "출하", "주문", "예약", "재고", "가격 상승", "가격 하락", "소비 둔화",
+        "판매", "수요", "출하", "주문", "예약", "재고", "가격 상승", "가격 하락", "소비 둔화", "유가",
     ],
     "security": [
         "breach", "hack", "leak", "attack", "ransomware", "cve", "vulnerability",
         "terror", "shooting", "public safety", "civil rights", "national security",
         "침해", "해킹", "유출", "공격", "랜섬웨어", "취약점", "민권", "총격", "테러", "안보",
+        "격추", "위협", "드론", "유조선", "해협 봉쇄", "해협봉쇄",
     ],
     "sanctions": [
         "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
-        "수출통제", "블랙리스트", "자산 동결", "자산동결", "금수", "금수조치", "embargo",
+        "assets frozen", "shadow fleet",
+        "수출통제", "블랙리스트", "자산 동결", "자산동결", "동결", "거래 금지", "거래금지", "금수", "금수조치", "embargo",
     ],
     "budget": [
         "budget", "fiscal", "appropriation", "incentive", "subsidy",
@@ -247,6 +250,21 @@ IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
     ],
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"],
 }
+
+SANCTIONS_EVIDENCE_KEYWORDS = [
+    "제재", "동결", "거래 금지", "거래금지", "블랙리스트", "수출통제", "shadow fleet", "assets frozen",
+    "sanction", "sanctions", "export control", "asset freeze",
+]
+
+MARKET_DEMAND_EVIDENCE_KEYWORDS = [
+    "판매", "수요", "출하", "주문", "재고", "가격", "유가",
+    "sales", "demand", "shipments", "deliveries", "orders", "inventory", "price", "oil price",
+]
+
+SECURITY_EVIDENCE_KEYWORDS = [
+    "격추", "위협", "드론", "공격", "침해", "유조선", "해협 봉쇄", "해협봉쇄",
+    "attack", "breach", "drone", "threat", "tanker", "strait blockade",
+]
 
 DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어
     "bold", "little", "recovery", "shock", "inside", "first", "new", "top", "best",

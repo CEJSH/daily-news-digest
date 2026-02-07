@@ -9,7 +9,14 @@ from typing import Any
 
 import requests
 
-from daily_news_digest.core.constants import IMPACT_SIGNALS_MAP, SANCTIONS_KEYWORDS, TRADE_TARIFF_KEYWORDS
+from daily_news_digest.core.constants import (
+    IMPACT_SIGNALS_MAP,
+    MARKET_DEMAND_EVIDENCE_KEYWORDS,
+    SANCTIONS_EVIDENCE_KEYWORDS,
+    SANCTIONS_KEYWORDS,
+    SECURITY_EVIDENCE_KEYWORDS,
+    TRADE_TARIFF_KEYWORDS,
+)
 from daily_news_digest.utils import clean_text, sanitize_text, split_summary_to_lines
 
 try:
@@ -151,7 +158,7 @@ Output schema:
 
 Field rules:
 - title_ko: If the title is in English, translate to natural Korean; if already Korean, keep as-is. No source/publisher names, no dates.
-- summary_lines: 2 to 3 short, clear Korean sentences capturing the core facts. No fluff. Do NOT include information not present in the text.
+- summary_lines: 2–3 clear Korean sentences capturing the core facts, total length ≤ 60 characters (excluding spaces). No fluff. Do NOT include information not present in the text.
   - Each line must be a COMPLETE sentence (not a headline fragment). End with proper sentence ending (e.g., "~입니다/~합니다") and avoid ellipses ("…", "...").
   - Do NOT repeat the title or paraphrase the title as a line. Each line must add distinct information.
   - Do NOT use placeholders like "자세한 내용은 아직 알려지지 않았습니다/추가 정보는 없습니다/기사에서 확인" in summary_lines.
@@ -499,12 +506,35 @@ def _evidence_has_trigger(label: str, evidence: str) -> bool:
     text = evidence.lower()
     if label == "sanctions":
         return any(kw.lower() in text for kw in SANCTIONS_KEYWORDS)
+    if label == "market-demand":
+        return any(kw.lower() in text for kw in MARKET_DEMAND_EVIDENCE_KEYWORDS)
     keywords = IMPACT_SIGNALS_MAP.get(label, [])
     if any(kw.lower() in text for kw in keywords):
         return True
     if label == "policy":
         return any(kw.lower() in text for kw in TRADE_TARIFF_KEYWORDS)
     return False
+
+
+def _pick_evidence_by_keywords(
+    items: list[dict[str, str]],
+    full_lower: str,
+    keywords: list[str],
+) -> str:
+    if not items or not keywords or not full_lower:
+        return ""
+    for item in items:
+        evidence = item.get("evidence") or ""
+        if not evidence:
+            continue
+        evidence_clean = clean_text(evidence).lower()
+        if not evidence_clean:
+            continue
+        if evidence_clean not in full_lower:
+            continue
+        if any(kw.lower() in evidence_clean for kw in keywords):
+            return evidence
+    return ""
 
 
 def _filter_impact_signal_objects(
@@ -527,10 +557,40 @@ def _filter_impact_signal_objects(
             continue
         kept.append(item)
 
+    sanctions_evidence = _pick_evidence_by_keywords(
+        items,
+        full_lower,
+        SANCTIONS_EVIDENCE_KEYWORDS,
+    )
+    security_evidence = _pick_evidence_by_keywords(
+        items,
+        full_lower,
+        SECURITY_EVIDENCE_KEYWORDS,
+    )
+    if sanctions_evidence and not any(k.get("label") == "sanctions" for k in kept):
+        kept.append({"label": "sanctions", "evidence": sanctions_evidence})
+    if security_evidence and not any(k.get("label") == "security" for k in kept):
+        kept.append({"label": "security", "evidence": security_evidence})
+
+    deduped: list[dict[str, str]] = []
+    seen = set()
+    for item in kept:
+        label = item.get("label") or ""
+        if not label or label in seen:
+            continue
+        deduped.append(item)
+        seen.add(label)
+
     priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
-    kept = [k for k in kept if k["label"] in priority]
-    kept.sort(key=lambda x: priority.index(x["label"]))
-    kept = kept[:2]
+    deduped = [k for k in deduped if k["label"] in priority]
+    deduped.sort(key=lambda x: priority.index(x["label"]))
+
+    kept = deduped[:2]
+    if sanctions_evidence and not any(k["label"] == "sanctions" for k in kept):
+        keep_primary = [k for k in deduped if k["label"] != "sanctions"][:1]
+        kept = keep_primary + [{"label": "sanctions", "evidence": sanctions_evidence}]
+        kept.sort(key=lambda x: priority.index(x["label"]))
+
     labels = [k["label"] for k in kept]
     evidence_map = {k["label"]: k["evidence"] for k in kept}
     return labels, evidence_map

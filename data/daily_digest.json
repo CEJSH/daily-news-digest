@@ -3,7 +3,7 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-08T20:40:58.983150+09:00",
+  "lastUpdatedAt": "2026-02-08T20:55:50.630612+09:00",
   "items": [
     {
       "id": "2026-02-08_1",
@@ -12,10 +12,10 @@
       "title": "공정위, DB 김준기 총수 검찰 고발",
       "summary": [
         "공정거래위원회는 김준기 DB 창업회장을 공정거래법 위반 혐의로 검찰에 고발했습니다.",
-        "김 창업회장이 '그림자 계열사'를 활용해 그룹 지배력을 유지하고, 관련 자료를 허위 제출한 혐의입니다.",
+        "김 창업회장이 '그림자 계열사'를 활용해 그룹 지배력을 유지하고 관련 자료를 허위 제출한 혐의입니다.",
         "공정위는 DB그룹이 재단 회사들을 총수 일가의 지배력 유지와 사익 추구에 활용했다고 판단했습니다."
       ],
-      "whyImportant": "이번 고발은 기업 총수의 불법적인 지배력 유지 및 사익 추구 행위에 대한 규제 당국의 강력한 제재 의지를 보여주는 사례입니다.",
+      "whyImportant": "이번 고발은 기업 총수의 불법적인 지배력 유지 및 사익 추구 행위에 대한 규제 당국의 강력한 제재 의지를 보여줍니다.",
       "importanceRationale": "근거: 공정위는 김준기 창업회장이 2개의 재단과 15개의 회사를 DB 소속 법인 현황에서 누락한 것을 확인하고 검찰에 고발했으며, 이는 2010년부터 시작된 행위입니다.",
       "impactSignals": [
         {
@@ -39,34 +39,25 @@
     {
       "id": "2026-02-08_2",
       "date": "2026-02-08",
-      "category": "국제",
-      "title": "트럼프, 이란과 거래 시 관세 부과…이란은 핵 농축 지속",
+      "category": "정책",
+      "title": "로저스 쿠팡 대표 경찰 출석…'국회 위증' 혐의 조사",
       "summary": [
-        "미국과 이란이 8개월 만에 핵 협상을 재개했으나, 견해차만 확인했습니다.",
-        "트럼프 대통령은 이란과 교역하는 국가에 추가 관세를 부과하는 행정명령에 서명했습니다.",
-        "이란은 핵 개발에 사용될 수 있는 우라늄 농축을 계속하겠다는 입장을 밝혔습니다."
+        "해롤드 로저스 쿠팡 임시대표가 국회 위증 혐의로 경찰에 출석하여 조사를 받았습니다.",
+        "로저스 대표는 앞으로도 정부 조사에 전적으로 협조하겠다고 밝혔습니다.",
+        "이번 경찰 소환은 두 번째이며, 국정원 지시 여부에 대한 위증 혐의를 받고 있습니다."
       ],
-      "whyImportant": "미국과 이란의 핵 협상 관련 갈등은 국제 에너지 시장 및 지정학적 리스크에 지속적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 이란과 교역하는 국가에 추가 관세를 부과하는 행정명령에 서명하여 2차 제재를 예고했고, 이란은 우라늄 농축을 지속하겠다고 밝혔기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "트럼프 대통령은 양국 회담이 끝난 지 6시간 정도 뒤에 이란과 교역하는 국가의 대미 수출품에 관세를 추가로 부과하는 내용의 행정명령에 서명했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "미국과 이란이 핵 프로그램 폐기 협상에 나섰지만 뚜렷한 성과가 나오지 않자 유가는 소폭 올랐다."
-        }
-      ],
-      "dedupeKey": "트럼프-trade_talks-8개월-재개했으나-견해차-행정명령-계속하겠다-밝혔습니다",
-      "clusterKey": "관세/트럼프/8개월",
+      "whyImportant": "이번 조사는 기업의 국회 증언 신뢰성과 관련된 중요한 사안입니다.",
+      "importanceRationale": "근거: 로저스 대표는 국회 청문회에서 '국정원의 지시에 따른 것'이라는 취지로 발언했으나, 국정원은 이를 부인하여 위증 혐의를 받고 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "로저스-임시대표-출석하여-받았습니다-협조하겠다고-밝혔습니다-번째이며-있습니다",
+      "clusterKey": "로저스/임시대표",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zV3hpci0xNGNwUEJjSkhFN05oZHZRZ2tUTW43aXhMOGsyaHBQOU1RTElUYkhham9HVGVHTnJSX0JDSmpQVDBSU2FnWXRoSHptOFE2UzZyaWZuQdIBVEFVX3lxTE5DR1Z1UzI5enhuajJaMFlvOUNCelRoQUJQTzhaM1lzelpNVmdCSUZsSXliMkxvb1Q3b2tKaFBVdmpBTFBSbVpvRVNOZWg4c2NEM2V5Qw?oc=5",
-      "publishedAt": "2026-02-08T08:43:43+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IaW8wa2JGOUJwT0x5U3dPb0RYTW1mY3h0ZGdLOUVyVkFEYzlhR052TW1lVlI5cENJeU5sbWFPSXlrampaVU1RNnlxRXdZQlpkWDZiZ0QwaTI1TGQ1bHBkRkRZY09jYmRYdE1XTDVJNFd2Zw?oc=5",
+      "publishedAt": "2026-02-07T23:35:49+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
@@ -75,17 +66,17 @@
       "id": "2026-02-08_3",
       "date": "2026-02-08",
       "category": "정책",
-      "title": "공정위, 김준기 DB 회장 검찰 고발…“위장 계열사, 총수 일가 사익 활용”",
+      "title": "공정위, 김준기 DB 회장 고발…“위장 계열사, 총수 일가 사익 활용”",
       "summary": [
         "공정거래위원회는 김준기 DB그룹 창업회장을 위장 계열사 운영 혐의로 검찰에 고발했습니다.",
         "공정위는 김 회장이 공시대상기업집단 지정 자료를 제출하면서 재단 및 산하 회사 15곳을 누락했다고 밝혔습니다.",
-        "이들 재단 회사는 총수 일가의 지배력 유지 및 사익을 위해 활용된 것으로 판단됩니다."
+        "이들 재단회사는 총수 일가의 지배력 유지 및 사익을 위해 활용된 것으로 판단됩니다."
       ],
-      "whyImportant": "이번 고발은 총수 일가의 위장 계열사 운영을 통한 사익 추구 행위에 대한 규제 당국의 감시를 강화하는 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: 공정위는 최소 2010년부터 위장 계열사가 총수 일가의 지배력 유지 및 사익을 위해 활용되었다고 판단했으며, 2021~2025년 5년간의 지정자료 허위 제출에 대해 고발했습니다.",
+      "whyImportant": "이번 고발은 총수 일가의 위장 계열사 운영을 통한 사익 편취 행위에 대한 규제 강화의 신호탄이 될 수 있습니다.",
+      "importanceRationale": "근거: 공정위는 최소 2010년부터 총수 일가의 지배력 유지를 위해 위장 계열사가 활용되었다고 판단했으며, 2021~2025년 5년간의 지정자료 허위 제출에 대해 고발했습니다.",
       "impactSignals": [],
-      "dedupeKey": "공정위-김준기-공정거래위원회-db그룹-창업회장-공시대상기업집단-제출하면서-밝혔습니다",
-      "clusterKey": "플랫폼규제/김준기/공정거래위원회",
+      "dedupeKey": "공정위-공정거래위원회-db그룹-창업회장-공시대상기업집단-제출하면서-밝혔습니다-재단회사",
+      "clusterKey": "플랫폼규제/공정거래위원회/db그룹",
       "matchedTo": null,
       "sourceName": "한겨레",
       "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5RTlBBc29ibC1FYUszNEl5Z0FFcjVtTE9zVnRJdW56M0FOOFZzVE54OVNwZ2JpaTlrN0pWSGI4ZHJGZVZlVEZobVM1RV9lTm9wM3dKd2FMY0ViQk9iLXc2dFRJaUFXSnd5Tkc4YkkwOVI3Zw?oc=5",

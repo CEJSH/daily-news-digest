@@ -325,12 +325,17 @@ class ItemFilterScorer:
             return age_hours <= self._top_fresh_except_max_hours
         return False
 
-    def is_top_source_allowed(self, source_name: str | None) -> bool:
+    def is_top_source_allowed(
+        self,
+        source_name: str | None,
+        source_raw: str | None = None,
+    ) -> bool:
         if not self._top_source_allowlist_enabled:
             return True
-        if not source_name:
+        source_text = source_raw or source_name or ""
+        if not source_text:
             return False
-        s = source_name.strip().lower()
+        s = source_text.strip().lower()
         for allowed in self._top_source_allowlist:
             token = allowed.strip()
             if not token:

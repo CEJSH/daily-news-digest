@@ -388,7 +388,7 @@ class AIEnrichmentService:
             elif label == "security":
                 keywords = SECURITY_EVIDENCE_KEYWORDS
             elif label == "policy":
-                keywords = (IMPACT_SIGNALS_MAP.get("policy", []) + TRADE_TARIFF_KEYWORDS)
+                keywords = IMPACT_SIGNALS_MAP.get("policy", []) + list(TRADE_TARIFF_KEYWORDS)
             else:
                 keywords = IMPACT_SIGNALS_MAP.get(label, [])
             return any(kw.lower() in text for kw in keywords)

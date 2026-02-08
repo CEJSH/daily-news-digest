@@ -99,6 +99,26 @@ class AIEnrichmentService:
             tokens.add(tok)
         return tokens
 
+    def _script_bucket(self, text: str) -> str:
+        if not text:
+            return "unknown"
+        hangul = len(re.findall(r"[가-힣]", text))
+        latin = len(re.findall(r"[A-Za-z]", text))
+        total = hangul + latin
+        if total == 0:
+            return "unknown"
+        hangul_ratio = hangul / total
+        if hangul_ratio >= 0.6:
+            return "hangul"
+        if hangul_ratio <= 0.1:
+            return "latin"
+        return "mixed"
+
+    def _is_script_mismatch(self, a: str, b: str) -> bool:
+        if a in {"unknown", "mixed"} or b in {"unknown", "mixed"}:
+            return False
+        return a != b
+
     def _log_integrity_drop(self, item: Item, reason: str) -> None:
         item_id = item.get("itemId") or ""
         link = item.get("link") or ""
@@ -115,6 +135,15 @@ class AIEnrichmentService:
         )
 
     def _integrity_precheck(self, items: list[Item]) -> None:
+        mixed_stats = {
+            "checked": 0,
+            "dropped": 0,
+            "skipped_lang": 0,
+            "skipped_short": 0,
+            "skipped_weak": 0,
+        }
+        min_tokens_for_drop = 6
+        min_jaccard_for_drop = 0.05
         for item in items:
             if not self._is_eligible(item):
                 continue
@@ -149,11 +178,38 @@ class AIEnrichmentService:
                 ai_tokens = self._tokenize_for_overlap(ai_view_text)
                 rule_tokens = self._tokenize_for_overlap(rule_view_text)
                 if ai_tokens and rule_tokens:
+                    mixed_stats["checked"] += 1
+                    ai_script = self._script_bucket(ai_view_text)
+                    rule_script = self._script_bucket(rule_view_text)
+                    if self._is_script_mismatch(ai_script, rule_script):
+                        mixed_stats["skipped_lang"] += 1
+                        item_id = item.get("itemId") or ""
+                        title_short = (title or "")[:50]
+                        self._log(
+                            "WARN: MIXED_VIEW_FIELDS_SKIPPED_LANG_MISMATCH "
+                            f"id={item_id} ai_script={ai_script} rule_script={rule_script} title={title_short}"
+                        )
+                        continue
+                    if len(ai_tokens) < min_tokens_for_drop or len(rule_tokens) < min_tokens_for_drop:
+                        mixed_stats["skipped_short"] += 1
+                        continue
                     overlap = len(ai_tokens & rule_tokens) / max(1, len(rule_tokens))
-                    if overlap < 0.2:
+                    union = ai_tokens | rule_tokens
+                    jaccard = len(ai_tokens & rule_tokens) / max(1, len(union))
+                    if overlap < 0.2 and jaccard <= min_jaccard_for_drop:
                         item["status"] = "dropped"
                         item["dropReason"] = "ERROR: MIXED_VIEW_FIELDS"
                         self._log_integrity_drop(item, "ERROR: MIXED_VIEW_FIELDS")
+                        mixed_stats["dropped"] += 1
+                    else:
+                        mixed_stats["skipped_weak"] += 1
+        if mixed_stats["checked"]:
+            self._log(
+                "MIXED_VIEW_FIELDS_STATS "
+                f"checked={mixed_stats['checked']} dropped={mixed_stats['dropped']} "
+                f"skipped_lang={mixed_stats['skipped_lang']} skipped_short={mixed_stats['skipped_short']} "
+                f"skipped_weak={mixed_stats['skipped_weak']}"
+            )
 
     @staticmethod
     def _parse_meta_kv(meta_str: str) -> dict[str, str]:

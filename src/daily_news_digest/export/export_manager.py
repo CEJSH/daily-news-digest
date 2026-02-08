@@ -1415,6 +1415,10 @@ def export_daily_digest_json(
             key = clean_text(dedupe_key)
             if key:
                 if key in kept_dedupe_keys:
+                    print(
+                        "EXPORT_SKIP_DUPLICATE_DEDUPE "
+                        f"id={item.get('itemId') or ''} key={key[:80]} title={(title or '')[:60]}"
+                    )
                     continue
                 kept_dedupe_keys.add(key)
 

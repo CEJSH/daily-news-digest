@@ -676,19 +676,25 @@ class AIEnrichmentService:
 
         self._log(f"본문 prefetch 시작: {len(candidates)}개 (예산 {fetch_budget})")
         seen_links: set[str] = set()
+        skip_fulltext = 0
+        skip_dup_link = 0
+        skip_no_need = 0
         for item in candidates:
             if fetch_budget <= 0:
                 break
             full_text = item.get("fullText") or ""
             link = item.get("link") or ""
             if len(full_text.strip()) >= self._article_fetch_min_chars:
+                skip_fulltext += 1
                 continue
             if link and link in seen_links:
+                skip_dup_link += 1
                 continue
             if link:
                 seen_links.add(link)
             need_fetch = len(full_text) < self._article_fetch_min_chars or "news.google.com" in link
             if not need_fetch:
+                skip_no_need += 1
                 continue
             fetch_attempted += 1
             text, resolved_url, status_code, extractor, notes_local = self._fetch_with_cache(link)
@@ -745,6 +751,10 @@ class AIEnrichmentService:
         self._log(
             "본문 prefetch 완료 "
             f"(성공 {fetch_succeeded}/{fetch_attempted}, 실패 드롭 {fetch_dropped}, 예산 잔여 {fetch_budget})"
+        )
+        self._log(
+            "본문 prefetch 스킵 "
+            f"(fulltext_ok={skip_fulltext}, dup_link={skip_dup_link}, no_need={skip_no_need})"
         )
         if fetch_errors:
             sample = "; ".join(fetch_errors[:5])

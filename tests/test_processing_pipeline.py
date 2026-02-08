@@ -106,3 +106,32 @@ def test_pipeline_handles_missing_link() -> None:
     assert grouped
     assert top_items
     assert "link" in top_items[0]
+
+
+def test_pick_top_with_mix_enforces_policy_cap_and_minimums() -> None:
+    pipeline = _build_pipeline(_Feed([]))
+    base = {
+        "status": "kept",
+        "dropReason": "",
+        "ageHours": 1,
+        "impactSignals": [],
+        "summary": "요약",
+        "fullText": "본문",
+    }
+    items = [
+        {"title": "정책1", "score": 10, "aiCategory": "정책", "source": "A", **base},
+        {"title": "정책2", "score": 9, "aiCategory": "정책", "source": "B", **base},
+        {"title": "정책3", "score": 8, "aiCategory": "정책", "source": "C", **base},
+        {"title": "정책4", "score": 7, "aiCategory": "정책", "source": "D", **base},
+        {"title": "산업", "score": 6, "aiCategory": "산업", "source": "E", **base},
+        {"title": "경제", "score": 5, "aiCategory": "경제", "source": "F", **base},
+        {"title": "국제", "score": 4, "aiCategory": "국제", "source": "G", **base},
+    ]
+    picked = pipeline.pick_top_with_mix(items, top_limit=5)
+    categories = {}
+    for item in picked:
+        categories[item.get("aiCategory") or ""] = categories.get(item.get("aiCategory") or "", 0) + 1
+    assert categories.get("정책", 0) <= 2
+    assert categories.get("산업", 0) >= 1
+    assert categories.get("경제", 0) >= 1
+    assert categories.get("국제", 0) >= 1

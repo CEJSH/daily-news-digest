@@ -11,11 +11,14 @@ import requests
 
 from daily_news_digest.core.constants import (
     ALLOWED_IMPACT_SIGNALS,
+    DEDUPE_NOISE_WORDS,
+    DEDUPE_EVENT_GROUPS,
     IMPACT_SIGNALS_MAP,
     MARKET_DEMAND_EVIDENCE_KEYWORDS,
     SANCTIONS_EVIDENCE_KEYWORDS,
     SANCTIONS_KEYWORDS,
     SECURITY_EVIDENCE_KEYWORDS,
+    STOPWORDS,
     TRADE_TARIFF_KEYWORDS,
 )
 from daily_news_digest.utils import clean_text, sanitize_text, split_summary_to_lines
@@ -159,7 +162,7 @@ Field rules:
   - Must NOT add facts beyond the text. If the text has no anchors, say so and keep importance_score <= 2.
   - Format constraint (strict): Start with "근거:" and keep it under 120 characters.
 
-- dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no numbers, no stopwords, no source/publisher names.
+- dedupe_key: 4-8 core concepts only, hyphen-separated, lowercase, alphanumeric and Korean characters only; no dates, no stopwords, no source/publisher names. Prefer proper nouns/기관명 and 숫자(연·월·일·분기 같은 날짜는 제외).
 
 IMPORTANT: Evidence discipline
 - If the provided text lacks concrete details (e.g., “details not provided”, “more in link”, extremely short summary),
@@ -349,6 +352,26 @@ def _parse_json(text: str) -> dict[str, Any] | None:
         return None
 
 
+def _is_date_like_token(token: str) -> bool:
+    if not token:
+        return False
+    if token.isdigit():
+        if len(token) == 4:
+            try:
+                year = int(token)
+            except Exception:
+                return True
+            return 1900 <= year <= 2100
+        return False
+    if re.match(r"^\d{1,4}(년|월|일|분기)$", token):
+        return True
+    if re.match(r"^(q[1-4]|[1-4]q)$", token):
+        return True
+    if re.match(r"^\d{1,2}분기$", token):
+        return True
+    return False
+
+
 def _normalize_dedupe_key(raw: str) -> str:
     # dedupe 키를 토큰 규칙에 맞게 정규화
     if not raw:
@@ -359,11 +382,16 @@ def _normalize_dedupe_key(raw: str) -> str:
     parts = [p for p in t.split("-") if p]
     cleaned: list[str] = []
     seen = set()
+    event_labels = set(DEDUPE_EVENT_GROUPS.keys())
     for p in parts:
         # 중복/너무 짧은 토큰 제거
         if p in seen:
             continue
-        if re.search(r"\d", p):
+        if p in event_labels:
+            continue
+        if p in STOPWORDS or p in DEDUPE_NOISE_WORDS:
+            continue
+        if _is_date_like_token(p):
             continue
         if re.search(r"[가-힣]", p):
             if len(p) < 2:
@@ -375,6 +403,23 @@ def _normalize_dedupe_key(raw: str) -> str:
         seen.add(p)
         if len(cleaned) >= 8:
             break
+    if len(cleaned) < 4:
+        # 부족하면 노이즈 필터를 완화해 보강
+        for p in parts:
+            if p in seen:
+                continue
+            if _is_date_like_token(p):
+                continue
+            if re.search(r"[가-힣]", p):
+                if len(p) < 2:
+                    continue
+            else:
+                if len(p) < 3:
+                    continue
+            cleaned.append(p)
+            seen.add(p)
+            if len(cleaned) >= 4:
+                break
     return "-".join(cleaned) or t
 
 

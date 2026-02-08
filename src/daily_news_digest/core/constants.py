@@ -79,12 +79,14 @@ DEDUPE_EVENT_TOKENS = {  # 이벤트 유형(투자·M&A·실적 등) 중복 판�
     "earnings", "results", "guidance", "revenue", "profit", "loss",
     "sanction", "sanctions", "tariff", "tariffs", "export", "control",
     "policy", "regulation", "bill", "law", "guideline", "rule",
+    "enforcement", "investigation", "probe", "indictment", "prosecution", "lawsuit",
     "capex", "expansion", "build",
     "trade", "tariff", "tariffs", "negotiation", "negotiations", "talk", "talks", "summit", "meeting", "dialogue", "agreement",
     "투자", "투자유치", "자금조달", "펀딩", "라운드", "시리즈", "자금",
     "인수", "합병", "인수합병", "매각", "지분",
     "상장", "공모", "실적", "가이던스", "매출", "영업이익", "순이익", "실적발표",
     "제재", "관세", "수출통제", "규제", "법안", "정책", "가이드라인", "시행령",
+    "고발", "기소", "수사", "조사", "검찰", "위반", "법위반", "담합", "반독점", "불공정",
     "증설", "설비", "투자계획",
     "무역", "협상", "회담", "정상회담", "협의", "대화", "합의", "협정",
 }
@@ -112,6 +114,10 @@ DEDUPE_EVENT_GROUPS = {  # 이벤트 토큰을 카테고리로 묶어 중복 군
     "policy": {
         "policy", "regulation", "bill", "law", "guideline", "rule", "규제", "법안", "정책", "가이드라인", "시행령",
     },
+    "enforcement": {
+        "enforcement", "investigation", "probe", "indictment", "prosecution", "lawsuit",
+        "고발", "기소", "수사", "조사", "검찰", "위반", "법위반", "담합", "반독점", "불공정",
+    },
     "capex": {
         "capex", "expansion", "build", "증설", "설비", "투자계획",
     },
@@ -129,6 +135,7 @@ DEDUPE_CLUSTER_EVENT_LABELS = {
     "earnings": "실적",
     "sanctions": "제재",
     "policy": "정책",
+    "enforcement": "법집행",
     "capex": "설비투자",
     "trade_talks": "관세",
 }
@@ -158,7 +165,7 @@ DEDUPE_CLUSTER_DOMAINS = {
         "클라우드", "cloud", "데이터센터", "datacenter", "datacentre", "aws", "azure", "gcp", "hyperscaler","colocation", "코로케이션", "서버팜",
     },
     "금융": {
-        "금융", "은행", "증권", "보험", "자산운용", "투자", "대출", "채권", "주식", "capital market", "bank",
+        "금융", "은행", "증권", "보험", "자산운용", "대출", "채권", "주식", "capital market", "bank",
     },
     "고용": {
         "고용", "실업", "일자리", "노동", "임금", "취업", "채용", "layoff", "employment", "job", "wage",
@@ -170,7 +177,8 @@ DEDUPE_CLUSTER_DOMAINS = {
         "공급망", "물류", "조달", "납품", "재고", "supply chain", "logistics", "procurement",
     },
     "플랫폼규제": {
-        "플랫폼", "앱마켓", "앱스토어", "독점", "반독점", "규제", "공정위", "platform", "app store", "antitrust",
+        "플랫폼", "앱마켓", "앱스토어", "독점", "반독점", "규제", "공정위", "공정거래위원회",
+        "platform", "app store", "antitrust",
     },
 }
 
@@ -200,7 +208,11 @@ DEDUPE_CLUSTER_MAX_ENTITIES = 2
 
 STOPWORDS = {  # 제목/요약 토큰 정규화 시 제거되는 불용어
     "the", "a", "an", "to", "for", "of", "and", "or", "in", "on", "with",
-    "is", "are", "must", "should", "how", "become", "show", "little"
+    "is", "are", "must", "should", "how", "become", "show", "little",
+    # 한국어 기능어/완곡 표현
+    "것", "수", "등", "등의", "등을", "등은", "및", "관련", "대한", "대해", "위해",
+    "통해", "이번", "지난", "최근", "현재", "향후", "또", "이미", "계속", "추가",
+    "가능", "가능성", "예상", "전망", "우려", "논의", "검토", "계획", "예정",
 }
 
 SANCTIONS_KEYWORDS = {
@@ -321,7 +333,12 @@ DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어
     "exclusive", "breaking", "update", "latest", "years", "after", "cornerstone", "become",
     "reuters", "bloomberg", "ft", "wsj", "financial", "times", "wall", "street", "journal",
     "연합뉴스", "매일경제", "한국경제", "서울경제", "머니투데이", "중앙일보", "동아일보",
-    "한겨레", "경향신문", "techcrunch", "verge"
+    "한겨레", "경향신문", "techcrunch", "verge",
+    # 한국어 완곡/서술 조각
+    "유지", "혐의", "제출", "밝힘", "밝히", "밝혔", "전망", "예상", "가능", "가능성",
+    "논의", "검토", "계획", "예정", "추진", "관련", "대한", "대해", "위해", "통해",
+    "등", "등의", "등을", "등은", "수", "것", "부분", "사실", "이날", "이번", "지난", "최근",
+    "현재", "향후", "추가", "이미", "계속",
 }
 
 EMOTIONAL_DROP_KEYWORDS = ["참사", "충격", "분노", "논란", "폭로"]  # 감정 유발성 키워드 드롭

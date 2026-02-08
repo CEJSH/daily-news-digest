@@ -13,7 +13,7 @@ def test_parse_json_handles_fenced_and_trailing_commas() -> None:
     assert parsed == {"a": 1}
 
 
-def test_normalize_dedupe_key_drops_numbers_and_short_tokens() -> None:
+def test_normalize_dedupe_key_drops_date_like_numbers_and_short_tokens() -> None:
     raw = "삼성 2024 반도체 한국 IT"
     assert ai._normalize_dedupe_key(raw) == "삼성-반도체-한국"
 

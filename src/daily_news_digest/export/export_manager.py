@@ -1234,6 +1234,8 @@ def export_daily_digest_json(
         "impactLabels": {},
         "sources": {},
         "categories": {},
+        "importanceDistribution": {},
+        "importanceBySignals": {},
     }
     out_index = 0
     kept_dedupe_keys: set[str] = set()
@@ -1282,6 +1284,7 @@ def export_daily_digest_json(
             title = title_ko
             title_from_ai = True
         ai_lines_raw = ai_result.get("summary_lines") or []
+        summary_from_ai = any(clean_text(str(x)) for x in ai_lines_raw) if isinstance(ai_lines_raw, list) else False
         summary_source = _pick_summary_source(
             title,
             summary,
@@ -1358,8 +1361,7 @@ def export_daily_digest_json(
             
         engine = _get_dedupe_engine()
         summary_text = " ".join(summary_lines) if summary_lines else summary
-        if title_from_ai:
-            
+        if title_from_ai or summary_from_ai:
             dedupe_key = engine.build_dedupe_key(title, summary_text)
             cluster_key = engine.build_cluster_key(dedupe_key, hint_text=f"{title} {summary_text}")
         else:
@@ -1409,6 +1411,10 @@ def export_daily_digest_json(
                 quality_reason = _drop_reason_message(drop_reason)
         if not quality_reason:
             quality_reason = "정보성 기사"
+        if int(importance or 0) >= 3 and not impact_signals_detail:
+            importance = 2
+            if "근거부족" not in quality_reason:
+                quality_reason = "근거부족" if quality_reason == "정보성 기사" else f"{quality_reason} / 근거부족"
         if status_value == "dropped":
             continue
         if status_value in {"kept", "published"}:
@@ -1467,6 +1473,13 @@ def export_daily_digest_json(
         out_item.pop("_impactRetryDone", None)
         if out_item.get("status") == "dropped":
             continue
+        if int(out_item.get("importance") or 0) >= 3 and not out_item.get("impactSignals"):
+            out_item["importance"] = 2
+            if "근거부족" not in (out_item.get("qualityReason") or ""):
+                if out_item.get("qualityReason") == "정보성 기사":
+                    out_item["qualityReason"] = "근거부족"
+                else:
+                    out_item["qualityReason"] = f"{out_item.get('qualityReason') or ''} / 근거부족".strip(" /")
         items_out.append(out_item)
 
         metrics["total_out"] += 1
@@ -1476,6 +1489,16 @@ def export_daily_digest_json(
         cat_label = out_item.get("category") or ""
         if cat_label:
             metrics["categories"][cat_label] = metrics["categories"].get(cat_label, 0) + 1
+        try:
+            importance_val = int(out_item.get("importance") or 0)
+        except Exception:
+            importance_val = 0
+        imp_key = str(importance_val)
+        metrics["importanceDistribution"][imp_key] = metrics["importanceDistribution"].get(imp_key, 0) + 1
+        imp_bucket = metrics["importanceBySignals"].setdefault(imp_key, {"total": 0, "withSignals": 0})
+        imp_bucket["total"] += 1
+        if out_item.get("impactSignals"):
+            imp_bucket["withSignals"] += 1
         for sig in out_item.get("impactSignals") or []:
             label = clean_text(sig.get("label") or "").lower()
             if not label:
@@ -1498,6 +1521,16 @@ def export_daily_digest_json(
 
     items_out, dedupe_logs = _resolve_duplicate_dedupe_items(items_out)
     validation_logs.extend(dedupe_logs)
+
+    if metrics.get("sources"):
+        max_source = max(metrics["sources"].values()) if metrics["sources"] else 0
+    else:
+        max_source = 0
+    metrics["topDiversity"] = {
+        "uniqueSources": len(metrics.get("sources", {})),
+        "uniqueCategories": len(metrics.get("categories", {})),
+        "maxPerSource": max_source,
+    }
 
     digest = {
         "date": date_str,

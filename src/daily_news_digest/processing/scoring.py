@@ -414,26 +414,53 @@ class ItemFilterScorer:
         exclude_keywords: list[str],
         local_promo_keywords: list[str],
     ) -> bool:
+        return self.get_skip_reason(
+            text_all=text_all,
+            link_lower=link_lower,
+            matched_to=matched_to,
+            impact_signals=impact_signals,
+            age_hours=age_hours,
+            category=category,
+            hard_exclude_keywords=hard_exclude_keywords,
+            hard_exclude_url_hints=hard_exclude_url_hints,
+            exclude_keywords=exclude_keywords,
+            local_promo_keywords=local_promo_keywords,
+        ) is not None
+
+    def get_skip_reason(
+        self,
+        *,
+        text_all: str,
+        link_lower: str,
+        matched_to: str | None,
+        impact_signals: list[str],
+        age_hours: float | None,
+        category: str,
+        hard_exclude_keywords: list[str],
+        hard_exclude_url_hints: list[str],
+        exclude_keywords: list[str],
+        local_promo_keywords: list[str],
+    ) -> str | None:
         if any(bad in text_all for bad in hard_exclude_keywords):
-            return True
+            return "hard_exclude_keyword"
         if any(hint in link_lower for hint in hard_exclude_url_hints):
-            return True
+            return "hard_exclude_url_hint"
         if any(bad in text_all for bad in local_promo_keywords):
-            return True
+            return "local_promo"
         if any(bad in text_all for bad in exclude_keywords):
             if not self._has_structural_context(text_all, impact_signals):
-                return True
+                return "exclude_keyword"
         if self._is_political_commentary(text_all):
-            return True
+            return "political_commentary"
         if matched_to:
-            return True
+            return "recent_duplicate"
         if not impact_signals and not self._has_structural_context(text_all, impact_signals):
-            return True
+            return "no_structural_signal"
         if not self.passes_freshness(age_hours, impact_signals, text_all):
-            return True
+            return "freshness"
         if not self.passes_emotional_filter(category, text_all, impact_signals):
-            return True
-        return False
+            return "emotional_filter"
+        return None
 
     def _is_political_commentary(self, text_lower: str) -> bool:
         if not text_lower:

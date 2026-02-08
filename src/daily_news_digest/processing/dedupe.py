@@ -60,6 +60,7 @@ class DedupeEngine:
         for key in self._dedupe_event_groups.keys():
             self._dedupe_event_tokens.add(key.lower())
             self._dedupe_event_groups[key].add(key.lower())
+        self._dedupe_event_group_labels = set(self._dedupe_event_groups.keys())
         self._event_token_to_group: dict[str, str] = {}
         for group, vocab in self._dedupe_event_groups.items():
             for token in vocab:
@@ -137,6 +138,35 @@ class DedupeEngine:
             return len(token) >= 2
         return len(token) >= 3
 
+    def _is_date_like_token(self, token: str) -> bool:
+        if not token:
+            return False
+        if token.isdigit():
+            if len(token) == 4:
+                try:
+                    year = int(token)
+                except Exception:
+                    return True
+                return 1900 <= year <= 2100
+            return False
+        if re.match(r"^\d{1,4}(년|월|일|분기)$", token):
+            return True
+        if re.match(r"^(q[1-4]|[1-4]q)$", token):
+            return True
+        if re.match(r"^\d{1,2}분기$", token):
+            return True
+        return False
+
+    def _looks_like_org_token(self, token: str) -> bool:
+        if not token:
+            return False
+        org_suffixes = (
+            "위원회", "청", "부", "처", "국", "원", "공사", "공단", "협회",
+            "재단", "연구원", "센터", "본부", "그룹", "은행", "증권", "보험",
+            "지주", "대학", "학교", "회사", "기업", "당국", "정부",
+        )
+        return any(token.endswith(suf) for suf in org_suffixes)
+
     def dedupe_key_ngrams(self, key: str, n: int | None = None) -> set[str]:
         if not key:
             return set()
@@ -166,56 +196,92 @@ class DedupeEngine:
         return groups
 
     def build_dedupe_key(self, title: str, summary: str) -> str:
-        tokens = self.tokenize_for_dedupe(f"{title} {summary}")
+        title_tokens = self.tokenize_for_dedupe(title or "")
+        summary_tokens = self.tokenize_for_dedupe(summary or "")
+        tokens_with_meta: list[tuple[str, bool, int]] = []
+        idx = 0
+        for tok in title_tokens:
+            tokens_with_meta.append((tok, True, idx))
+            idx += 1
+        for tok in summary_tokens:
+            tokens_with_meta.append((tok, False, idx))
+            idx += 1
 
-        seen = set()
-        filtered: list[str] = []
-        for tok in tokens:
-            tok = self._normalize_token_for_dedupe(tok, self._stopwords)
-            if not tok:
-                continue
-            # 짧은 토큰은 dedupeKey에 들어오면 이후 cluster substring과 결합해 오탐을 유발
-            if not self.valid_token_length(tok):
-                continue
-            group = self._event_token_to_group.get(tok)
-            if group:
-                tok = group
-            if tok in seen:
-                continue
-            if self.is_noise_token(tok):
-                continue
-            filtered.append(tok)
-            seen.add(tok)
-
-        if len(filtered) < 4:
-            for tok in tokens:
-                tok = self._normalize_token_for_dedupe(tok, self._stopwords)
+        def _collect(allow_noise: bool) -> list[dict[str, object]]:
+            seen_local: set[str] = set()
+            out: list[dict[str, object]] = []
+            for raw, from_title, order in tokens_with_meta:
+                tok = self._normalize_token_for_dedupe(raw, self._stopwords)
                 if not tok:
                     continue
-                # 보강 루프도 동일한 길이 규칙 적용(결정성/일관성)
                 if not self.valid_token_length(tok):
                     continue
-                if tok in seen:
+                if tok in self._dedupe_event_group_labels:
                     continue
-                if tok in self._stopwords or tok in self._dedupe_noise_words or tok in self._month_tokens:
+                if self._is_date_like_token(tok):
                     continue
-                if tok.isdigit() or len(tok) < 2:
+                if not allow_noise and self.is_noise_token(tok):
                     continue
-                filtered.append(tok)
-                seen.add(tok)
-                if len(filtered) >= 4:
+                if tok in seen_local:
+                    continue
+                out.append(
+                    {
+                        "tok": tok,
+                        "from_title": from_title,
+                        "order": order,
+                        "has_digit": bool(re.search(r"\d", tok)),
+                        "org": self._looks_like_org_token(tok),
+                        "length": len(tok),
+                    }
+                )
+                seen_local.add(tok)
+            return out
+
+        candidates = _collect(allow_noise=False)
+        if len(candidates) < 4:
+            # 최소 토큰 보강: 노이즈 필터 완화
+            candidates = _collect(allow_noise=True)
+
+        if not candidates:
+            fallback = [t for t in self.tokenize_for_dedupe(f"{title} {summary}") if t][:4]
+            return "-".join(fallback if fallback else ["news"]).lower()
+
+        def _priority(meta: dict[str, object]) -> tuple[int, int, int]:
+            score = 0
+            if meta.get("from_title"):
+                score += 3
+            if meta.get("org"):
+                score += 2
+            if meta.get("has_digit"):
+                score += 2
+            length = int(meta.get("length") or 0)
+            if length >= 4:
+                score += 1
+            return (score, -int(meta.get("order") or 0), length)
+
+        ordered = sorted(candidates, key=lambda m: int(m.get("order") or 0))
+        tokens_ordered = [m["tok"] for m in ordered]
+        if len(tokens_ordered) > 8:
+            ranked = sorted(candidates, key=_priority, reverse=True)
+            keep = {m["tok"] for m in ranked[:8]}
+            tokens_ordered = [t for t in tokens_ordered if t in keep][:8]
+
+        if len(tokens_ordered) < 4:
+            # 그래도 부족하면 원문 토큰으로 보강
+            for raw in self.tokenize_for_dedupe(f"{title} {summary}"):
+                if len(tokens_ordered) >= 4:
                     break
+                tok = self._normalize_token_for_dedupe(raw, self._stopwords)
+                if not tok or tok in tokens_ordered:
+                    continue
+                if self._is_date_like_token(tok):
+                    continue
+                if not self.valid_token_length(tok):
+                    continue
+                tokens_ordered.append(tok)
+            tokens_ordered = tokens_ordered[:4]
 
-        if len(filtered) > 8:
-            ranked = sorted(filtered, key=lambda x: (-len(x), filtered.index(x)))
-            top = set(ranked[:8])
-            filtered = [t for t in filtered if t in top][:8]
-
-        if not filtered:
-            fallback = [t for t in tokens if t][:4]
-            filtered = fallback if fallback else ["news"]
-
-        return "-".join(filtered).lower()
+        return "-".join(tokens_ordered).lower()
 
     def _normalize_cluster_token(self, token: str) -> str:
         if not token:
@@ -241,12 +307,13 @@ class DedupeEngine:
                 return label, set(required)
         return "", set()
 
-    def _match_cluster_domains(self, tokens: list[str]) -> tuple[list[str], set[str]]:
+    def _match_cluster_domains(self, tokens: list[str]) -> tuple[list[str], set[str], dict[str, int]]:
         if not tokens:
-            return [], set()
+            return [], set(), {}
         tokens_set = set(tokens)
         matched_labels: list[str] = []
         matched_tokens: set[str] = set()
+        hit_counts: dict[str, int] = {}
         # dict insertion order에 의존하지 않도록 label 정렬 (결정성 확보)
         for label in sorted(self._cluster_domains.keys()):
             vocab = self._cluster_domains[label]
@@ -254,6 +321,7 @@ class DedupeEngine:
             if direct:
                 matched_labels.append(label)
                 matched_tokens |= direct
+                hit_counts[label] = hit_counts.get(label, 0) + len(direct)
                 continue
             # substring 매칭은 "충분히 긴 vocab"만 허용(예: ai/ev/dc 같은 짧은 토큰 오탐 방지)
             safe_vocab = self._safe_substring_vocab(vocab)
@@ -263,8 +331,18 @@ class DedupeEngine:
                 if any(v in tok for v in safe_vocab):
                     matched_labels.append(label)
                     matched_tokens.add(tok)
-                    break
-        return matched_labels, matched_tokens
+                    hit_counts[label] = hit_counts.get(label, 0) + 1
+        return matched_labels, matched_tokens, hit_counts
+
+    def _is_generic_entity_token(self, token: str) -> bool:
+        if not token:
+            return True
+        generic = {
+            "전망", "가능", "유지", "논의", "시사", "추진", "예정", "발표", "계획", "검토",
+            "관련", "대한", "대해", "위해", "통해", "확대", "강화", "재개", "확정",
+            "합의", "협의", "대화", "검토", "추가",
+        }
+        return token in generic or self.is_noise_token(token)
     
 
     def _cluster_hint_tokens(self, text: str) -> list[str]:
@@ -290,71 +368,109 @@ class DedupeEngine:
 
     def build_cluster_key(self, dedupe_key: str, hint_text: str | None = None) -> str:
         tokens_raw = self._dedupe_key_tokens(dedupe_key)
-        if not tokens_raw:
-            return ""
-        tokens: list[str] = []
+        base_tokens: list[str] = []
         for tok in tokens_raw:
             norm = self._normalize_cluster_token(tok)
             if not norm:
                 continue
             if self.is_noise_token(norm):
                 continue
-            tokens.append(norm)
-        if not tokens:
+            base_tokens.append(norm)
+
+        hint_tokens = self._cluster_hint_tokens(hint_text) if hint_text else []
+        tokens_for_cluster = hint_tokens if hint_tokens else base_tokens
+        if not tokens_for_cluster:
             return ""
 
-        relation_tokens_source = tokens
-        if hint_text:
-            hint_tokens = self._cluster_hint_tokens(hint_text)
-            if hint_tokens:
-                relation_tokens_source = tokens + [t for t in hint_tokens if t not in tokens]
-
-        relation_label, relation_tokens = self._detect_relation(relation_tokens_source)
-        event_groups = self._event_group_ids(set(tokens))
+        relation_label, relation_tokens = self._detect_relation(tokens_for_cluster)
+        event_groups = self._event_group_ids(set(tokens_for_cluster))
         event_labels = [
             self._normalize_cluster_token(self._cluster_event_labels.get(group, group))
             for group in sorted(event_groups)
         ]
         event_labels = [x for x in event_labels if x]
 
-        domain_labels, domain_tokens = self._match_cluster_domains(relation_tokens_source)
+        domain_labels, domain_tokens, domain_hits = self._match_cluster_domains(tokens_for_cluster)
+        if domain_hits:
+            strong_domains = [k for k, v in domain_hits.items() if v >= 2]
+            if strong_domains:
+                domain_labels = [d for d in domain_labels if d in strong_domains]
+            else:
+                domain_labels = []
         domain_labels = [self._normalize_cluster_token(x) for x in domain_labels if x]
+        if len(domain_labels) > 2:
+            domain_labels = domain_labels[:2]
 
         event_token_set = set(self._dedupe_event_tokens)
         domain_token_set = set(domain_tokens)
         relation_token_set = set(relation_tokens)
 
         entity_tokens: list[str] = []
-        for tok in tokens:
+        entity_source = hint_tokens if hint_tokens else base_tokens
+        for tok in entity_source:
             if tok in event_token_set:
                 continue
             if tok in domain_token_set:
                 continue
             if tok in relation_token_set:
                 continue
+            if self._is_generic_entity_token(tok):
+                continue
             if tok in entity_tokens:
                 continue
             entity_tokens.append(tok)
 
         cluster_tokens: list[str] = []
+        used_relation = False
+        has_event_label = False
+        has_domain_label = False
         if relation_label and event_labels:
             cluster_tokens.append(f"{relation_label}_{event_labels[0]}")
+            used_relation = True
+            has_event_label = True
+            event_labels = event_labels[1:]
+        elif event_labels:
+            cluster_tokens.append(event_labels[0])
+            has_event_label = True
             event_labels = event_labels[1:]
         elif relation_label:
             cluster_tokens.append(relation_label)
+            used_relation = True
 
-        for tok in event_labels:
-            if tok not in cluster_tokens:
-                cluster_tokens.append(tok)
+        # 도메인 라벨 우선 반영
         for tok in domain_labels:
             if tok not in cluster_tokens:
                 cluster_tokens.append(tok)
+                has_domain_label = True
+                break
+
+        # 엔티티(행위자) 최소 1개 확보
+        added_entity_initial = False
+        for tok in entity_tokens:
+            if tok not in cluster_tokens:
+                cluster_tokens.append(tok)
+                added_entity_initial = True
+                break
+
+        # 남은 슬롯 채우기 (event/domain/relation/entity 순)
+        for tok in event_labels:
+            if len(cluster_tokens) >= self._cluster_max_tokens:
+                break
+            if tok not in cluster_tokens:
+                cluster_tokens.append(tok)
+        for tok in domain_labels:
+            if len(cluster_tokens) >= self._cluster_max_tokens:
+                break
+            if tok not in cluster_tokens:
+                cluster_tokens.append(tok)
+        if relation_label and not used_relation and len(cluster_tokens) < self._cluster_max_tokens:
+            if relation_label not in cluster_tokens:
+                cluster_tokens.append(relation_label)
 
         remaining_slots = max(0, self._cluster_max_tokens - len(cluster_tokens))
         entity_cap = remaining_slots if self._cluster_max_entities <= 0 else min(remaining_slots, self._cluster_max_entities)
-        if entity_cap <= 0 and not cluster_tokens:
-            entity_cap = self._cluster_max_tokens
-
+        if added_entity_initial and (has_event_label or has_domain_label):
+            entity_cap = 0
         added_entities = 0
         for tok in entity_tokens:
             if len(cluster_tokens) >= self._cluster_max_tokens or added_entities >= entity_cap:

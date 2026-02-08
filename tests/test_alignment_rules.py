@@ -78,3 +78,13 @@ def test_missing_impact_signals_for_high_importance_trigger() -> None:
     item["_summaryText"] = item["summary"][0]
     errors = em._collect_item_errors(item, full_text=item["_fullText"], summary_text=item["_summaryText"])
     assert "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE" in errors
+
+
+def test_cluster_key_prefers_hint_tokens_over_dedupe_key() -> None:
+    engine = em._get_dedupe_engine()
+    bad_key = "회식-혼술-주류"
+    hint = "HBM3 대량생산 SK하이닉스 반도체 투자"
+    cluster = engine.build_cluster_key(bad_key, hint_text=hint)
+    assert "회식" not in cluster
+    assert "혼술" not in cluster
+    assert "반도체" in cluster or "hbm" in cluster

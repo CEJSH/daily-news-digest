@@ -141,3 +141,43 @@ def test_is_title_like_summary_detects_repetition() -> None:
 def test_pick_summary_source_skips_title_only() -> None:
     assert em._pick_summary_source("제목", "요약", "제목") == ""
     assert em._pick_summary_source("제목", "요약", "본문 요약") == "본문 요약"
+
+
+def test_export_downgrades_importance_without_impact_signals(monkeypatch, tmp_path) -> None:
+    monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
+    monkeypatch.setattr(em, "TOP_LIMIT", 5)
+    monkeypatch.setattr(em, "METRICS_JSON", str(tmp_path / "metrics.json"))
+    output_path = tmp_path / "digest.json"
+    ai_payload = {
+        "summary_lines": ["정부가 정책을 발표했습니다."],
+        "why_important": "정책 변화가 영향을 미칩니다.",
+        "importance_rationale": "근거: 정부가 정책을 발표했습니다.",
+        "importance_score": 4,
+        "impact_signals": [],
+        "quality_label": "ok",
+        "quality_reason": "",
+    }
+    item = {
+        "title": "정부 정책 발표",
+        "summary": "정부가 정책을 발표했다.",
+        "summaryRaw": "정부가 정책을 발표했다.",
+        "fullText": "정부가 정책을 발표했다. " * 10,
+        "topic": "정책",
+        "source": "source",
+        "sourceRaw": "source",
+        "link": "http://example.com",
+        "publishedAtUtc": "2024-01-10T00:00:00+09:00",
+        "updatedAtUtc": "2024-01-10T00:00:00+09:00",
+        "impactSignals": [],
+        "dedupeKey": "정부-정책-발표",
+        "clusterKey": "정책/정부",
+        "score": 3.0,
+        "ai": ai_payload,
+    }
+    digest = em.export_daily_digest_json(
+        [item],
+        str(output_path),
+        {"selection_criteria": "", "editor_note": "", "question": ""},
+    )
+    assert digest["items"][0]["importance"] == 2
+    assert "근거부족" in digest["items"][0]["qualityReason"]

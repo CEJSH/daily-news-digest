@@ -774,8 +774,10 @@ class AIEnrichmentService:
         title = item.get("title") or ""
         full_text = item.get("fullText") or ""
         summary_raw = item.get("summaryRaw") or item.get("summary") or ""
-        base = full_text if full_text else summary_raw
-        return clean_text(f"{title} {base}")
+        if isinstance(summary_raw, list):
+            summary_raw = " ".join([str(x) for x in summary_raw if x])
+        text = clean_text(f"{title} {summary_raw} {full_text}")
+        return text[:4000]
 
     def apply_semantic_dedupe(self, items: list[Item]) -> None:
         if not self._ai_semantic_dedupe_enabled:
@@ -784,9 +786,56 @@ class AIEnrichmentService:
             return
         self._integrity_precheck(items)
 
-        candidates = sorted(items, key=lambda x: x["score"], reverse=True)[: self._ai_semantic_dedupe_max_items]
-        self._log(f"AI 중복 제거 시작: {len(candidates)}개")
+        eligible = [item for item in items if self._is_eligible(item) and item.get("status") != "merged"]
+        ranked = sorted(eligible, key=lambda x: x.get("score", 0.0), reverse=True)
+        max_items = int(self._ai_semantic_dedupe_max_items or 0)
+        base = ranked[:max_items] if max_items > 0 else ranked
+        base_clusters = {item.get("clusterKey") for item in base if item.get("clusterKey")}
+
+        def _dedupe_prefix(item: Item, n: int = 3) -> str:
+            key = (item.get("dedupeKey") or "").strip()
+            parts = [p for p in key.split("-") if p]
+            if len(parts) >= n:
+                return "-".join(parts[:n])
+            return ""
+
+        base_prefixes = {p for p in (_dedupe_prefix(x) for x in base) if p}
+        extra: list[Item] = []
+        if max_items > 0 and len(ranked) > len(base):
+            for item in ranked[len(base):]:
+                if item.get("clusterKey") in base_clusters:
+                    extra.append(item)
+                    continue
+                prefix = _dedupe_prefix(item)
+                if prefix and prefix in base_prefixes:
+                    extra.append(item)
+            extra = extra[: max(0, max_items // 2)]
+
+        seen_ids: set[int] = set()
+        candidates: list[Item] = []
+        for item in base + extra:
+            obj_id = id(item)
+            if obj_id in seen_ids:
+                continue
+            candidates.append(item)
+            seen_ids.add(obj_id)
+
+        self._log(f"AI 중복 제거 시작: {len(candidates)}개 (base={len(base)}, extra={len(extra)})")
         kept: list[Item] = []
+        token_cache: dict[int, set[str]] = {}
+
+        def _cached_tokens(it: Item) -> set[str]:
+            obj_id = id(it)
+            cached = token_cache.get(obj_id)
+            if cached is not None:
+                return cached
+            summary_val = it.get("summary") or it.get("summaryRaw") or ""
+            if isinstance(summary_val, list):
+                summary_val = " ".join([str(x) for x in summary_val if x])
+            text = f"{it.get('title','')} {summary_val}"
+            tokens = self._tokenize_for_overlap(text)
+            token_cache[obj_id] = tokens
+            return tokens
         total = len(candidates)
         for idx, item in enumerate(candidates, start=1):
             if idx == 1 or idx % 10 == 0 or idx == total:
@@ -809,10 +858,20 @@ class AIEnrichmentService:
                 if not ref_emb:
                     continue
                 ref_cluster = ref.get("clusterKey") or ""
+                threshold = float(self._ai_semantic_dedupe_threshold)
                 if item_cluster and ref_cluster and item_cluster != ref_cluster:
-                    continue
+                    item_prefix = _dedupe_prefix(item)
+                    ref_prefix = _dedupe_prefix(ref)
+                    item_tokens = _cached_tokens(item)
+                    ref_tokens = _cached_tokens(ref)
+                    overlap = 0.0
+                    if item_tokens and ref_tokens:
+                        overlap = len(item_tokens & ref_tokens) / max(1, min(len(item_tokens), len(ref_tokens)))
+                    if not (item_prefix and item_prefix == ref_prefix) and overlap < 0.5:
+                        continue
+                    threshold = max(0.82, threshold - 0.03)
                 sim = self._cosine_similarity(embedding, ref_emb)
-                if sim >= self._ai_semantic_dedupe_threshold:
+                if sim >= threshold:
                     item["status"] = "merged"
                     item["matchedTo"] = ref.get("id") or ref.get("clusterKey") or ref.get("dedupeKey") or ref.get("title")
                     item["mergeReason"] = "semantic_duplicate"

@@ -71,7 +71,12 @@ from daily_news_digest.core.constants import (
     STOPWORDS,
 )
 from daily_news_digest.processing.ai_service import AIEnrichmentService
-from daily_news_digest.processing.constants import DEFAULT_TOP_MIX_TARGET
+from daily_news_digest.processing.constants import (
+    DEFAULT_TOP_MIX_MAX,
+    DEFAULT_TOP_MIX_MIN,
+    DEFAULT_TOP_MIX_TARGET,
+    DEFAULT_TOP_SOURCE_MAX_PER_OUTLET,
+)
 from daily_news_digest.processing.dedupe import DedupeEngine
 from daily_news_digest.processing.parsing import EntryParser
 from daily_news_digest.processing.scoring import ItemFilterScorer
@@ -129,9 +134,17 @@ class DigestPipeline:
         self._dedupe_recent_days = dedupe_recent_days
         self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
         self._last_signal_cap_stats: dict[str, Any] = {}
+        self._last_mix_stats: dict[str, Any] = {}
+        self._metrics: dict[str, Any] = {}
 
     def get_signal_cap_stats(self) -> dict[str, Any]:
         return dict(self._last_signal_cap_stats)
+
+    def get_mix_stats(self) -> dict[str, Any]:
+        return dict(self._last_mix_stats)
+
+    def get_pipeline_metrics(self) -> dict[str, Any]:
+        return dict(self._metrics)
 
     def _log_allowlist_debug(self, candidates: list[Item], top_limit: int) -> None:
         if not candidates:
@@ -163,9 +176,26 @@ class DigestPipeline:
         )
 
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
+        from collections import defaultdict
+
+        def _score(item: Item) -> float:
+            try:
+                return float(item.get("score") or 0.0)
+            except Exception:
+                return 0.0
+
+        def _source_label(item: Item) -> str:
+            return (item.get("source") or item.get("sourceRaw") or "UNKNOWN").strip() or "UNKNOWN"
+
         def _apply_signal_cap(
             picked_local: list[Item],
             candidates: list[Item],
+            *,
+            item_meta: dict[int, tuple[str, str]],
+            counts_cat: dict[str, int],
+            counts_src: dict[str, int],
+            max_targets: dict[str, int],
+            source_cap: int,
         ) -> list[Item]:
             cap_labels = {clean_text(str(s)).lower() for s in SIGNAL_CAP_LABELS if s}
             if not SIGNAL_CAP_ENABLED or not cap_labels:
@@ -182,12 +212,6 @@ class DigestPipeline:
                 }
                 return picked_local
             cap_limit = max(1, int(top_limit * SIGNAL_CAP_RATIO))
-
-            def _score(item: Item) -> float:
-                try:
-                    return float(item.get("score") or 0.0)
-                except Exception:
-                    return 0.0
 
             def _signals(item: Item) -> set[str]:
                 raw = item.get("impactSignals") or []
@@ -235,22 +259,35 @@ class DigestPipeline:
             for victim in removable:
                 if over <= 0:
                     break
-                replacement = next(
-                    (
-                        c
-                        for c in remaining
-                        if not (_is_capped(c) and not _is_exempt(c))
-                    ),
-                    None,
-                )
-                if not replacement:
-                    break
-                if _score(replacement) >= _score(victim) - SIGNAL_CAP_PENALTY:
-                    picked_local.remove(victim)
-                    picked_local.append(replacement)
-                    remaining.remove(replacement)
-                    over -= 1
-                    replaced += 1
+                victim_meta = item_meta.get(id(victim))
+                if not victim_meta:
+                    continue
+                v_cat, v_src = victim_meta
+                for replacement in remaining:
+                    if _is_capped(replacement) and not _is_exempt(replacement):
+                        continue
+                    r_meta = item_meta.get(id(replacement))
+                    if not r_meta:
+                        continue
+                    r_cat, r_src = r_meta
+                    counts_cat[v_cat] = max(0, counts_cat.get(v_cat, 0) - 1)
+                    counts_src[v_src] = max(0, counts_src.get(v_src, 0) - 1)
+                    can_add = True
+                    if r_cat in max_targets and counts_cat.get(r_cat, 0) >= max_targets[r_cat]:
+                        can_add = False
+                    if source_cap > 0 and counts_src.get(r_src, 0) >= source_cap:
+                        can_add = False
+                    if can_add and _score(replacement) >= _score(victim) - SIGNAL_CAP_PENALTY:
+                        picked_local.remove(victim)
+                        picked_local.append(replacement)
+                        remaining.remove(replacement)
+                        counts_cat[r_cat] = counts_cat.get(r_cat, 0) + 1
+                        counts_src[r_src] = counts_src.get(r_src, 0) + 1
+                        over -= 1
+                        replaced += 1
+                        break
+                    counts_cat[v_cat] = counts_cat.get(v_cat, 0) + 1
+                    counts_src[v_src] = counts_src.get(v_src, 0) + 1
 
             if replaced > 0:
                 self._log(
@@ -270,29 +307,151 @@ class DigestPipeline:
             return picked_local
 
         def _pick_from_candidates(candidates: list[Item]) -> list[Item]:
-            buckets: dict[str, list[Item]] = {k: [] for k in self._top_mix_target.keys()}
+            if not candidates:
+                self._last_mix_stats = {
+                    "topLimit": top_limit,
+                    "minTargets": {},
+                    "maxTargets": {},
+                    "sourceCap": 0,
+                    "picked": 0,
+                    "categoryCounts": {},
+                    "sourceCounts": {},
+                    "minShortfall": {},
+                    "minAdjusted": {},
+                }
+                return []
+
+            item_meta: dict[int, tuple[str, str]] = {}
+            buckets: dict[str, list[Item]] = {}
             for item in candidates:
                 category = self._filter_scorer.get_item_category(item)
-                if category not in buckets:
-                    buckets[category] = []
-                buckets[category].append(item)
-
+                source = _source_label(item)
+                item_meta[id(item)] = (category, source)
+                buckets.setdefault(category, []).append(item)
             for category in buckets:
-                buckets[category].sort(key=lambda x: x["score"], reverse=True)
+                buckets[category].sort(key=_score, reverse=True)
 
-            picked_local: list[Item] = []
-            for category, limit in self._top_mix_target.items():
-                picked_local += buckets.get(category, [])[:limit]
+            min_targets = dict(DEFAULT_TOP_MIX_MIN)
+            max_targets = dict(DEFAULT_TOP_MIX_MAX)
+            source_cap = int(DEFAULT_TOP_SOURCE_MAX_PER_OUTLET or 0)
 
-            if len(picked_local) < top_limit:
-                remain = [
-                    x for x in sorted(candidates, key=lambda x: x["score"], reverse=True)
-                    if x not in picked_local
-                ]
-                picked_local += remain[: top_limit - len(picked_local)]
+            adjusted_min: dict[str, int] = {}
+            for cat, val in min_targets.items():
+                adjusted_min[cat] = min(int(val or 0), len(buckets.get(cat, [])))
+            total_min = sum(adjusted_min.values())
+            if total_min > top_limit:
+                strengths = {
+                    cat: (_score(buckets.get(cat, [])[0]) if buckets.get(cat) else 0.0)
+                    for cat in adjusted_min
+                }
+                order = sorted(adjusted_min.keys(), key=lambda c: (strengths.get(c, 0.0), c))
+                idx = 0
+                while total_min > top_limit and order:
+                    cat = order[idx % len(order)]
+                    if adjusted_min[cat] > 0:
+                        adjusted_min[cat] -= 1
+                        total_min -= 1
+                    idx += 1
 
-            picked_local = picked_local[:top_limit]
-            return _apply_signal_cap(picked_local, candidates)[:top_limit]
+            picked: list[Item] = []
+            picked_ids: set[int] = set()
+            counts_cat: dict[str, int] = defaultdict(int)
+            counts_src: dict[str, int] = defaultdict(int)
+
+            def _can_add(item: Item, *, enforce_max: bool = True, enforce_source: bool = True) -> bool:
+                cat, src = item_meta.get(id(item), ("", ""))
+                if enforce_max and cat in max_targets and counts_cat.get(cat, 0) >= max_targets[cat]:
+                    return False
+                if enforce_source and source_cap > 0 and counts_src.get(src, 0) >= source_cap:
+                    return False
+                return True
+
+            for cat, need in adjusted_min.items():
+                if need <= 0:
+                    continue
+                for item in buckets.get(cat, []):
+                    if counts_cat.get(cat, 0) >= need:
+                        break
+                    if not _can_add(item, enforce_max=False):
+                        continue
+                    obj_id = id(item)
+                    if obj_id in picked_ids:
+                        continue
+                    picked.append(item)
+                    picked_ids.add(obj_id)
+                    counts_cat[cat] += 1
+                    counts_src[item_meta[obj_id][1]] += 1
+
+            ranked = sorted(candidates, key=_score, reverse=True)
+            for item in ranked:
+                if len(picked) >= top_limit:
+                    break
+                obj_id = id(item)
+                if obj_id in picked_ids:
+                    continue
+                if not _can_add(item):
+                    continue
+                picked.append(item)
+                picked_ids.add(obj_id)
+                cat, src = item_meta[obj_id]
+                counts_cat[cat] += 1
+                counts_src[src] += 1
+
+            if len(picked) < top_limit and source_cap > 0:
+                for item in ranked:
+                    if len(picked) >= top_limit:
+                        break
+                    obj_id = id(item)
+                    if obj_id in picked_ids:
+                        continue
+                    if not _can_add(item, enforce_source=False):
+                        continue
+                    picked.append(item)
+                    picked_ids.add(obj_id)
+                    cat, src = item_meta[obj_id]
+                    counts_cat[cat] += 1
+                    counts_src[src] += 1
+
+            if len(picked) < top_limit:
+                for item in ranked:
+                    if len(picked) >= top_limit:
+                        break
+                    obj_id = id(item)
+                    if obj_id in picked_ids:
+                        continue
+                    picked.append(item)
+                    picked_ids.add(obj_id)
+                    cat, src = item_meta[obj_id]
+                    counts_cat[cat] += 1
+                    counts_src[src] += 1
+
+            picked = _apply_signal_cap(
+                picked,
+                candidates,
+                item_meta=item_meta,
+                counts_cat=counts_cat,
+                counts_src=counts_src,
+                max_targets=max_targets,
+                source_cap=source_cap,
+            )[:top_limit]
+
+            min_shortfall = {
+                cat: max(0, adjusted_min.get(cat, 0) - counts_cat.get(cat, 0))
+                for cat in adjusted_min
+                if adjusted_min.get(cat, 0) > counts_cat.get(cat, 0)
+            }
+            self._last_mix_stats = {
+                "topLimit": top_limit,
+                "minTargets": dict(min_targets),
+                "minAdjusted": dict(adjusted_min),
+                "maxTargets": dict(max_targets),
+                "sourceCap": source_cap,
+                "picked": len(picked),
+                "categoryCounts": dict(counts_cat),
+                "sourceCounts": dict(counts_src),
+                "minShortfall": min_shortfall,
+            }
+            return picked[:top_limit]
 
         fresh_candidates = [
             item
@@ -333,6 +492,18 @@ class DigestPipeline:
         top_limit: int = 3,
     ) -> tuple[dict[str, list[Item]], list[Item]]:
         self._log("뉴스 수집 및 큐레이팅 시작")
+        self._metrics = {
+            "fetch": {
+                "totalSeen": 0,
+                "candidates": 0,
+                "dupes": 0,
+                "filtered": 0,
+                "lowScore": 0,
+                "skipReasons": {},
+            },
+            "dedupe": {},
+            "selection": {},
+        }
         grouped_items: dict[str, list[Item]] = {}
         all_items: list[Item] = []
         total_seen = 0
@@ -365,6 +536,7 @@ class DigestPipeline:
             for entry_idx, entry in enumerate(feed.entries[: self._max_entries_per_feed], start=1):
                 feed_seen += 1
                 total_seen += 1
+                self._metrics["fetch"]["totalSeen"] += 1
                 if entry_idx == total_entries:
                     self._log(
                         f"항목 처리: {topic} {entry_idx}/{total_entries} "
@@ -399,6 +571,7 @@ class DigestPipeline:
                 kept_item = self._dedupe_engine.find_existing_duplicate(tokens)
                 if kept_item:
                     feed_dupes += 1
+                    self._metrics["fetch"]["dupes"] += 1
                     kept_item.setdefault("mergedSources", []).append(
                         {"title": title_clean, "link": link, "source": source_name}
                     )
@@ -406,11 +579,12 @@ class DigestPipeline:
 
                 if self._dedupe_engine.is_title_seen(title):
                     feed_dupes += 1
+                    self._metrics["fetch"]["dupes"] += 1
                     continue
                 category = self._filter_scorer.map_topic_to_category(topic)
                 age_hours = self._filter_scorer.compute_age_hours(entry)
 
-                if self._filter_scorer.should_skip_entry(
+                skip_reason = self._filter_scorer.get_skip_reason(
                     text_all=text_all,
                     link_lower=link.lower(),
                     matched_to=matched_to,
@@ -421,8 +595,12 @@ class DigestPipeline:
                     hard_exclude_url_hints=hard_exclude_url_hints,
                     exclude_keywords=exclude_keywords,
                     local_promo_keywords=local_promo_keywords,
-                ):
+                )
+                if skip_reason:
                     feed_filtered += 1
+                    self._metrics["fetch"]["filtered"] += 1
+                    reason_counts = self._metrics["fetch"]["skipReasons"]
+                    reason_counts[skip_reason] = reason_counts.get(skip_reason, 0) + 1
                     continue
 
                 read_time_sec = estimate_read_time_seconds(analysis_text)
@@ -434,6 +612,7 @@ class DigestPipeline:
                 )
                 if score < self._min_score:
                     feed_low_score += 1
+                    self._metrics["fetch"]["lowScore"] += 1
                     continue
 
                 item_seq += 1
@@ -483,9 +662,18 @@ class DigestPipeline:
             )
 
         self._log(f"수집 완료: 처리 {total_seen}개, 후보 {len(all_items)}개")
+        self._metrics["fetch"]["candidates"] = len(all_items)
         self._ai_service.apply_ai_importance(all_items)
+        before_cluster = sum(1 for x in all_items if x.get("mergeReason") == "cluster_duplicate")
         self._dedupe_engine.apply_cluster_dedupe(all_items)
+        after_cluster = sum(1 for x in all_items if x.get("mergeReason") == "cluster_duplicate")
+        before_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._ai_service.apply_semantic_dedupe(all_items)
+        after_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
+        self._metrics["dedupe"] = {
+            "clusterMerged": max(0, after_cluster - before_cluster),
+            "semanticMerged": max(0, after_semantic - before_semantic),
+        }
         # 성능 최적화: 전체 후보에 대한 본문 prefetch는 비용이 크므로 생략
 
         for topic, items in grouped_items.items():
@@ -494,6 +682,10 @@ class DigestPipeline:
             grouped_items[topic] = filtered[: topic_limits.get(topic, TOP_LIMIT)]
 
         top_items = self.pick_top_with_mix(all_items, top_limit)
+        self._metrics["selection"] = {
+            "signalCap": self.get_signal_cap_stats(),
+            "mix": self.get_mix_stats(),
+        }
         # 최종 선택 후보에 대해 본문을 최대한 확보 (편집 품질 보장)
         self._ai_service.prefetch_full_text(top_items)
         top_items = [item for item in top_items if self._filter_scorer.is_eligible(item)]
@@ -502,6 +694,22 @@ class DigestPipeline:
             refill = self.pick_top_with_mix(all_items, top_limit)
             self._ai_service.prefetch_full_text(refill)
             top_items = [item for item in refill if self._filter_scorer.is_eligible(item)]
+
+        if isinstance(self._metrics.get("selection"), dict):
+            source_counts: dict[str, int] = {}
+            category_counts: dict[str, int] = {}
+            for item in top_items:
+                source = (item.get("source") or item.get("sourceRaw") or "UNKNOWN").strip() or "UNKNOWN"
+                source_counts[source] = source_counts.get(source, 0) + 1
+                category = self._filter_scorer.get_item_category(item)
+                category_counts[category] = category_counts.get(category, 0) + 1
+            self._metrics["selection"].update(
+                {
+                    "finalCount": len(top_items),
+                    "finalSources": source_counts,
+                    "finalCategories": category_counts,
+                }
+            )
 
         return grouped_items, top_items
 

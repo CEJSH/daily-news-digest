@@ -37,11 +37,12 @@ def main() -> None:
         }
 
         signal_cap_stats = pipeline.get_signal_cap_stats()
+        pipeline_metrics = pipeline.get_pipeline_metrics()
         export_daily_digest_json(
             top_items,
             OUTPUT_JSON,
             config,
-            metrics_extra={"signalCap": signal_cap_stats},
+            metrics_extra={"signalCap": signal_cap_stats, "pipeline": pipeline_metrics},
         )
         _log(f"완료! {OUTPUT_JSON} 파일이 생성되었습니다.")
 

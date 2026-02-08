@@ -105,16 +105,25 @@ def test_dedupe_key_deterministic() -> None:
     assert key1 == key2
 
 
-def test_dedupe_key_filters_numbers() -> None:
+def test_dedupe_key_allows_non_date_numbers() -> None:
     engine = _build_dedupe_engine()
     key = engine.build_dedupe_key("", "2024년 4분기 1200억 매출 발표")
-    assert not any(ch.isdigit() for ch in key)
+    assert "2024" not in key
+    assert "4분기" not in key
+    assert any(ch.isdigit() for ch in key)
 
 
 def test_dedupe_key_limits_tokens() -> None:
     engine = _build_dedupe_engine()
     key = engine.build_dedupe_key("", "alpha beta gamma delta epsilon zeta eta theta iota kappa")
     assert len([p for p in key.split("-") if p]) <= 8
+
+
+def test_dedupe_key_strips_sentence_fragments() -> None:
+    engine = _build_dedupe_engine()
+    key = engine.build_dedupe_key("공정위 고발", "공정위는 조사 결과를 밝혔습니다 전망입니다")
+    assert "밝혔" not in key
+    assert "전망" not in key
 
 
 def test_cluster_key_respects_max_tokens() -> None:
@@ -145,8 +154,21 @@ def test_cluster_key_excludes_noise_tokens() -> None:
 
 def test_cluster_key_includes_domain_from_hint_text() -> None:
     engine = _build_dedupe_engine()
-    cluster = engine.build_cluster_key("투자-발표", hint_text="반도체 투자 발표")
+    cluster = engine.build_cluster_key("투자-발표", hint_text="반도체 HBM 투자 발표")
     assert "반도체" in cluster
+
+
+def test_cluster_key_merges_enforcement_case() -> None:
+    engine = _build_dedupe_engine()
+    title_a = "공정위, DB 김준기 총수 검찰 고발"
+    summary_a = "공정위는 김준기 창업회장을 공정거래법 위반 혐의로 검찰에 고발했다."
+    title_b = "공정위, 김준기 DB 회장 고발…위장 계열사 논란"
+    summary_b = "공정위는 DB그룹의 공정거래법 위반 혐의를 조사해 고발했다."
+    key_a = engine.build_dedupe_key(title_a, summary_a)
+    key_b = engine.build_dedupe_key(title_b, summary_b)
+    cluster_a = engine.build_cluster_key(key_a, hint_text=f"{title_a} {summary_a}")
+    cluster_b = engine.build_cluster_key(key_b, hint_text=f"{title_b} {summary_b}")
+    assert cluster_a == cluster_b
 
 
 def test_normalize_source_name_removes_suffix() -> None:

@@ -3,19 +3,44 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-08T20:55:50.630612+09:00",
+  "lastUpdatedAt": "2026-02-08T23:52:54.965380+09:00",
   "items": [
     {
       "id": "2026-02-08_1",
+      "date": "2026-02-08",
+      "category": "금융",
+      "title": "다카이치 외교 정책, 한일 협력 지속 전망",
+      "summary": [
+        "다카이치 총리의 국내 정치 기반 강화로 한일 관계는 큰 변화가 없을 것이라는 관측이 나옵니다.",
+        "중국과의 갈등 속에서 한국과는 양호한 관계를 유지할 것이란 전망입니다."
+      ],
+      "whyImportant": "다카이치 내각의 외교 정책 방향은 향후 한일 관계 및 동아시아 정세에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 기사에서 전문가들은 다카이치 총리의 정책 변화 가능성과 미중 관계가 중일 관계에 미칠 영향 등을 언급하고 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "다카이치-policy-것이라-나옵니다-중국과-속에서-한국과-전망입니다",
+      "clusterKey": "한일_정책/다카이치/것이라",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ndUdfSV9DaWk5V2o0SVh0ZUwtdHd6aTdibWtUNDNPYUpZYVJRakNzMnd0YU5xREozWWhpVG81N1JEU1p5eG13NEdKeVVydWZuQUE2RFVNNmMyUdIBVEFVX3lxTE1DVW9HdEZ6ZnEwMkY5ekZvRF9OVllieXFJbWtaOTd3dHJfX1NEejZHd0RhNl84d0JjN1I3STg5dlNJZlVJMlVoTENUc2dhQ0VmdER5dA?oc=5",
+      "publishedAt": "2026-02-08T14:08:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-08_2",
       "date": "2026-02-08",
       "category": "정책",
       "title": "공정위, DB 김준기 총수 검찰 고발",
       "summary": [
         "공정거래위원회는 김준기 DB 창업회장을 공정거래법 위반 혐의로 검찰에 고발했습니다.",
-        "김 창업회장이 '그림자 계열사'를 활용해 그룹 지배력을 유지하고 관련 자료를 허위 제출한 혐의입니다.",
+        "김 창업회장이 '그림자 계열사'를 활용해 그룹 지배력을 유지하고, 관련 자료를 허위 제출한 혐의입니다.",
         "공정위는 DB그룹이 재단 회사들을 총수 일가의 지배력 유지와 사익 추구에 활용했다고 판단했습니다."
       ],
-      "whyImportant": "이번 고발은 기업 총수의 불법적인 지배력 유지 및 사익 추구 행위에 대한 규제 당국의 강력한 제재 의지를 보여줍니다.",
+      "whyImportant": "이번 고발은 기업 총수의 불법적인 지배력 유지 및 사익 추구 행위에 대한 규제 당국의 강력한 제재 의지를 보여주는 사례입니다.",
       "importanceRationale": "근거: 공정위는 김준기 창업회장이 2개의 재단과 15개의 회사를 DB 소속 법인 현황에서 누락한 것을 확인하고 검찰에 고발했으며, 이는 2010년부터 시작된 행위입니다.",
       "impactSignals": [
         {
@@ -37,12 +62,42 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-08_2",
+      "id": "2026-02-08_3",
+      "date": "2026-02-08",
+      "category": "정책",
+      "title": "유통법 개정 논의, 대형마트 새벽 배송 허용 시사",
+      "summary": [
+        "당정청은 대형마트 새벽 배송 규제를 완화하는 방향으로 유통산업발전법 개정에 의견을 모았습니다.",
+        "온라인 유통업체와의 불균형 해소와 전통시장, 골목상권 육성을 병행할 예정입니다."
+      ],
+      "whyImportant": "유통 규제 완화는 대형마트의 온라인 배송 경쟁력 강화에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 당정청은 유통산업발전법 개정을 통해 대형마트 새벽 배송 규제 완화를 논의했으며, 이달 중 129건의 법안 처리를 목표로 하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "더불어민주당과 정부, 청와대는 대형마트 새벽배송 규제를 완화하는 방향으로 유통산업발전법을 개정하기로 8일 의견을 모았다."
+        }
+      ],
+      "dedupeKey": "대형마트-policy-유통산업발전법-모았습니다-유통업체와-전통시장-골목상권-예정입니다",
+      "clusterKey": "정책/플랫폼규제/대형마트/유통산업발전법",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9URE9iaHFJbm1fRGlHMFhWeWZzTE45d3k5QjRfS0FRdjl5cXl2ZldUSG5zbWJIa290Y2I0cWZJY3dmRXR6U2ExLU1lR0p2TDAwRkdoUUV0WHpQUdIBVEFVX3lxTE9XajdyTmRHdHZBcDVMbEtHa3hJTXNGeTVpWjBvaWRHd2Z4S3hvMkNyejdWMmJwM1hrQXc0dmpyWWNyS0FHY094cTY5TWJpQUs4VUZxcA?oc=5",
+      "publishedAt": "2026-02-08T11:00:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-08_4",
       "date": "2026-02-08",
       "category": "정책",
       "title": "로저스 쿠팡 대표 경찰 출석…'국회 위증' 혐의 조사",
       "summary": [
-        "해롤드 로저스 쿠팡 임시대표가 국회 위증 혐의로 경찰에 출석하여 조사를 받았습니다.",
+        "해롤드 로저스 쿠팡 한국 임시대표가 국회 위증 혐의로 경찰에 출석하여 조사를 받았습니다.",
         "로저스 대표는 앞으로도 정부 조사에 전적으로 협조하겠다고 밝혔습니다.",
         "이번 경찰 소환은 두 번째이며, 국정원 지시 여부에 대한 위증 혐의를 받고 있습니다."
       ],
@@ -63,7 +118,7 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-08_3",
+      "id": "2026-02-08_5",
       "date": "2026-02-08",
       "category": "정책",
       "title": "공정위, 김준기 DB 회장 고발…“위장 계열사, 총수 일가 사익 활용”",
@@ -72,8 +127,8 @@
         "공정위는 김 회장이 공시대상기업집단 지정 자료를 제출하면서 재단 및 산하 회사 15곳을 누락했다고 밝혔습니다.",
         "이들 재단회사는 총수 일가의 지배력 유지 및 사익을 위해 활용된 것으로 판단됩니다."
       ],
-      "whyImportant": "이번 고발은 총수 일가의 위장 계열사 운영을 통한 사익 편취 행위에 대한 규제 강화의 신호탄이 될 수 있습니다.",
-      "importanceRationale": "근거: 공정위는 최소 2010년부터 총수 일가의 지배력 유지를 위해 위장 계열사가 활용되었다고 판단했으며, 2021~2025년 5년간의 지정자료 허위 제출에 대해 고발했습니다.",
+      "whyImportant": "이번 고발은 총수 일가의 위장 계열사 운영을 통한 사익 추구 행위에 대한 규제 강화로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 공정위는 최소 2010년부터 총수 일가가 위장 계열사를 통해 지배력을 유지하고 사익을 추구했다고 판단했으며, 2021~2025년 5년간의 지정자료 허위 제출에 대해 고발했습니다.",
       "impactSignals": [],
       "dedupeKey": "공정위-공정거래위원회-db그룹-창업회장-공시대상기업집단-제출하면서-밝혔습니다-재단회사",
       "clusterKey": "플랫폼규제/공정거래위원회/db그룹",

@@ -195,7 +195,7 @@ class AIEnrichmentService:
         if self._get_item_category is None:
             return ranked[:max_items]
 
-        buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "글로벌": []}
+        buckets: dict[str, list[Item]] = {k: [] for k in self._top_mix_target.keys()}
         other: list[Item] = []
         for item in ranked:
             category = self._get_item_category(item)

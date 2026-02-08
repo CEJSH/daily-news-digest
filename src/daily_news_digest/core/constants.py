@@ -249,6 +249,42 @@ IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
         "고용", "수출입", "무역수지", "소매판매", "산업생산", "경제지표",
     ],
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"],
+    "industry-trend": [
+        "industry trend", "sector trend", "structural trend", "industry-wide", "sector-wide",
+        "업계", "업황", "산업 전반", "산업 전체", "업계 동향", "산업 구조",
+    ],
+    "technology": [
+        "technology", "tech", "innovation", "r&d", "research", "roadmap", "patent", "standard",
+        "기술", "신기술", "기술 개발", "기술 로드맵", "연구개발", "특허", "표준", "표준화",
+    ],
+    "consumer-behavior": [
+        "consumer", "consumer behavior", "user behavior", "usage", "subscriber", "churn", "retention",
+        "구매", "소비자", "소비 패턴", "이용자", "사용자", "가입자", "해지", "이탈", "재구매",
+    ],
+    "regulation-risk": [
+        "regulatory risk", "compliance", "investigation", "probe", "antitrust", "litigation",
+        "규제 리스크", "규제 위험", "법적 리스크", "컴플라이언스", "조사", "반독점", "소송",
+    ],
+    "labor": [
+        "labor", "union", "strike", "wage", "workforce", "layoff", "headcount", "hiring",
+        "노조", "파업", "임금", "고용", "인력", "채용", "감원", "해고", "인력 구조조정",
+    ],
+    "health": [
+        "health", "healthcare", "medical", "disease", "infection", "vaccine", "clinical", "drug",
+        "보건", "의료", "건강", "질병", "감염", "백신", "임상", "의약",
+    ],
+    "environment": [
+        "environment", "climate", "emission", "carbon", "sustainability", "pollution",
+        "환경", "기후", "배출", "탄소", "온실가스", "지속가능", "오염", "환경규제",
+    ],
+    "infrastructure": [
+        "infrastructure", "grid", "utility", "power grid", "transmission", "pipeline", "port", "rail", "road",
+        "인프라", "전력망", "전력", "송전", "철도", "도로", "항만", "파이프라인", "데이터센터",
+    ],
+    "social-impact": [
+        "social impact", "public impact", "community", "inequality", "inclusion", "safety",
+        "사회적 영향", "공공", "지역사회", "불평등", "포용", "사회 안전",
+    ],
 }
 
 SANCTIONS_EVIDENCE_KEYWORDS = [
@@ -276,7 +312,7 @@ DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어
 }
 
 EMOTIONAL_DROP_KEYWORDS = ["참사", "충격", "분노", "논란", "폭로"]  # 감정 유발성 키워드 드롭
-DROP_CATEGORIES = {"사회", "사건", "연예"}  # 카테고리 기준 즉시 제외
+DROP_CATEGORIES = {"사건", "연예"}  # 카테고리 기준 즉시 제외
 
 MONTH_TOKENS = {  # 날짜 토큰 정규화/필터링용 월 문자열
     "jan", "january", "feb", "february", "mar", "march", "apr", "april", "may", "jun", "june",

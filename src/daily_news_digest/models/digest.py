@@ -17,18 +17,19 @@ class DigestItem(TypedDict):
     whyImportant: str
     importanceRationale: str
     impactSignals: list[ImpactSignal]
+    dedupeKey: str
     sourceName: str
     sourceUrl: str
+    publishedAt: str
     status: str
     importance: int
     qualityLabel: str
     qualityReason: str
     matchedTo: NotRequired[str]
-    publishedAt: NotRequired[str]
     readTimeSec: NotRequired[int]
-    dedupeKey: NotRequired[str]
     clusterKey: NotRequired[str]
     dropReason: NotRequired[str]
+    isCarriedOver: NotRequired[bool]
 
 
 class DailyDigest(TypedDict):

@@ -10,14 +10,14 @@ from daily_news_digest.processing.types import Item
 def map_topic_to_category(topic: str) -> str:
     t = (topic or "").lower()
     if not t:
-        return "글로벌"
+        return "국제"
 
     if "글로벌_빅테크" in t or "빅테크" in t:
-        return "IT"
+        return "기술"
     if t.startswith("it") or "it" in t or "tech" in t:
-        return "IT"
-    if "ai" in t or "반도체" in t or "보안" in t or "저작권" in t or "데이터" in t:
-        return "IT"
+        return "기술"
+    if "ai" in t or "보안" in t or "저작권" in t or "데이터" in t or "클라우드" in t:
+        return "기술"
 
     if (
         "정책" in t
@@ -37,23 +37,73 @@ def map_topic_to_category(topic: str) -> str:
     ):
         return "정책"
 
-    if "글로벌_정세" in t or "정세" in t or "외교" in t:
-        return "글로벌"
+    if "에너지" in t or "전력" in t or "전력망" in t or "원전" in t or "천연가스" in t or "lng" in t:
+        return "에너지"
+    if (
+        "모빌리티" in t
+        or "자동차" in t
+        or "전기차" in t
+        or "ev" in t
+        or "자율주행" in t
+        or "항공" in t
+        or "우주" in t
+        or "드론" in t
+        or "철도" in t
+        or "선박" in t
+        or "해운" in t
+    ):
+        return "모빌리티"
+    if "헬스" in t or "바이오" in t or "의료" in t or "제약" in t or "보건" in t:
+        return "헬스"
+    if "환경" in t or "기후" in t or "탄소" in t or "온실" in t or "배출" in t:
+        return "환경"
+    if (
+        "금융" in t
+        or "금리" in t
+        or "환율" in t
+        or "증시" in t
+        or "채권" in t
+        or "주가" in t
+        or "ipo" in t
+        or "m&a" in t
+        or "투자" in t
+        or "실적" in t
+        or "가이던스" in t
+    ):
+        return "금융"
+    if (
+        "경제" in t
+        or "경기" in t
+        or "물가" in t
+        or "gdp" in t
+        or "pmi" in t
+        or "고용" in t
+        or "실업" in t
+    ):
+        return "경제"
+    if (
+        "산업" in t
+        or "공급망" in t
+        or "업계" in t
+        or "제조" in t
+        or "생산" in t
+        or "공장" in t
+        or "설비" in t
+    ):
+        return "산업"
+    if "반도체" in t or "software" in t or "플랫폼" in t:
+        return "기술"
+    if "사회" in t or "노동" in t or "노조" in t or "인권" in t or "안전" in t:
+        return "사회"
+    if "라이프" in t or "생활" in t or "소비" in t or "유통" in t or "리테일" in t:
+        return "라이프"
 
     if "국내" in t:
         return "경제"
-    if "실적" in t or "가이던스" in t:
-        return "경제"
-    if "투자" in t or "ipo" in t or "m&a" in t or "ma" in t:
-        return "경제"
-    if "전력" in t or "인프라" in t or "에너지" in t:
-        return "경제"
-    if "경제" in t:
-        return "경제"
 
-    if "글로벌" in t or "global" in t:
-        return "글로벌"
-    return "글로벌"
+    if "글로벌_정세" in t or "정세" in t or "글로벌" in t or "global" in t:
+        return "국제"
+    return "국제"
 
 
 class ItemFilterScorer:
@@ -99,6 +149,43 @@ class ItemFilterScorer:
         self._now_provider = now_provider or (
             lambda: datetime.datetime.now(datetime.timezone.utc)
         )
+        self._structural_context_signals = {
+            "policy",
+            "regulation-risk",
+            "security",
+            "infra",
+            "infrastructure",
+            "environment",
+            "labor",
+            "social-impact",
+            "sanctions",
+            "budget",
+            "stats",
+            "industry-trend",
+        }
+        self._structural_context_keywords = [
+            "제도",
+            "안전",
+            "안전대책",
+            "재발 방지",
+            "재발방지",
+            "관리 체계",
+            "관리체계",
+            "대책",
+            "감독",
+            "책임 규명",
+            "책임규명",
+            "규정",
+            "규제",
+            "지침",
+            "표준",
+            "기준",
+            "safety",
+            "regulation",
+            "policy",
+            "standard",
+            "guideline",
+        ]
 
     def get_impact_signals(self, text: str) -> list[str]:
         signals: list[str] = []
@@ -128,6 +215,15 @@ class ItemFilterScorer:
             "investment",
             "market-demand",
             "sanctions",
+            "regulation-risk",
+            "industry-trend",
+            "technology",
+            "consumer-behavior",
+            "labor",
+            "health",
+            "environment",
+            "infrastructure",
+            "social-impact",
             "budget",
             "stats",
             "infra",
@@ -141,9 +237,22 @@ class ItemFilterScorer:
     def get_item_category(self, item: Item) -> str:
         ai_category = item.get("aiCategory") or ""
         topic = item.get("topic", "")
-        if ai_category == "글로벌" and "국내" in (topic or ""):
-            return "경제"
-        if ai_category in {"IT", "경제", "정책", "글로벌"}:
+        if ai_category == "국제" and "국내" in (topic or ""):
+            return self.map_topic_to_category(topic)
+        if ai_category in {
+            "경제",
+            "산업",
+            "기술",
+            "금융",
+            "정책",
+            "국제",
+            "사회",
+            "라이프",
+            "헬스",
+            "환경",
+            "에너지",
+            "모빌리티",
+        }:
             return ai_category
         return self.map_topic_to_category(topic)
 
@@ -217,10 +326,17 @@ class ItemFilterScorer:
         if category in self._drop_categories:
             return False
         if any(k in text_all for k in self._emotional_drop_keywords):
-            if any(s in self._long_impact_signals for s in impact_signals):
-                return True
-            return False
+            return self._has_structural_context(text_all, impact_signals)
         return True
+
+    def _has_structural_context(self, text_all: str, impact_signals: list[str]) -> bool:
+        if any(s in self._structural_context_signals for s in impact_signals):
+            return True
+        if any(k in text_all for k in self._policy_action_keywords):
+            return True
+        if any(k in text_all for k in self._structural_context_keywords):
+            return True
+        return False
 
     def score_entry(
         self,
@@ -266,12 +382,13 @@ class ItemFilterScorer:
         if any(bad in text_all for bad in local_promo_keywords):
             return True
         if any(bad in text_all for bad in exclude_keywords):
-            return True
+            if not self._has_structural_context(text_all, impact_signals):
+                return True
         if self._is_political_commentary(text_all):
             return True
         if matched_to:
             return True
-        if not impact_signals:
+        if not impact_signals and not self._has_structural_context(text_all, impact_signals):
             return True
         if not self.passes_freshness(age_hours, impact_signals):
             return True

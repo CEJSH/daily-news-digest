@@ -53,6 +53,15 @@ _ALLOWED_IMPACT_SIGNALS = {
     "market-demand",
     "security",
     "infra",
+    "industry-trend",
+    "technology",
+    "consumer-behavior",
+    "regulation-risk",
+    "labor",
+    "health",
+    "environment",
+    "infrastructure",
+    "social-impact",
 }
 _ALLOWED_QUALITY_TAGS = {
     "clickbait",
@@ -225,10 +234,18 @@ Format:
   ]
 
 category_label rules (choose exactly one):
-- IT = technology, AI, semiconductors, cloud, security, digital infrastructure
-- 경제 = macroeconomy, markets, finance, energy transition, corporate earnings
-- 정책 = domestic legislation/regulation, government enforcement, diplomacy/trade policy
-- 글로벌 = geopolitics and international relations (non-policy primary)
+- 경제 = macroeconomy, inflation, rates, employment, GDP, broad economic indicators
+- 산업 = supply chain, manufacturing, sector-wide shifts, industrial production
+- 기술 = AI, software, semiconductors, cloud, cybersecurity, digital infrastructure
+- 금융 = markets, corporate earnings, investment, M&A, IPO, capital flows
+- 정책 = legislation/regulation, government enforcement, official policy actions
+- 국제 = geopolitics, international relations, diplomacy (non-policy primary)
+- 사회 = labor, education, public safety, social issues
+- 라이프 = consumer lifestyle, retail, daily life trends
+- 헬스 = healthcare, biotech, medical, public health
+- 환경 = climate, emissions, sustainability, environmental impact
+- 에너지 = power, utilities, oil/gas, energy infrastructure
+- 모빌리티 = automotive, EVs, autonomous driving, aviation, logistics
 - If multiple apply, choose the primary driver of impact described in the text.
 
 Quality policy (strict):
@@ -465,7 +482,26 @@ def _rule_based_impact_signals(text: str) -> list[str]:
         if s in _ALLOWED_IMPACT_SIGNALS and s not in seen:
             ordered.append(s)
             seen.add(s)
-    priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+    priority = [
+        "policy",
+        "earnings",
+        "security",
+        "capex",
+        "market-demand",
+        "sanctions",
+        "regulation-risk",
+        "industry-trend",
+        "technology",
+        "consumer-behavior",
+        "labor",
+        "health",
+        "environment",
+        "infrastructure",
+        "social-impact",
+        "budget",
+        "stats",
+        "infra",
+    ]
     ordered = [s for s in priority if s in ordered]
     return ordered
 
@@ -581,7 +617,26 @@ def _filter_impact_signal_objects(
         deduped.append(item)
         seen.add(label)
 
-    priority = ["policy", "earnings", "security", "capex", "market-demand", "sanctions", "budget", "stats", "infra"]
+    priority = [
+        "policy",
+        "earnings",
+        "security",
+        "capex",
+        "market-demand",
+        "sanctions",
+        "regulation-risk",
+        "industry-trend",
+        "technology",
+        "consumer-behavior",
+        "labor",
+        "health",
+        "environment",
+        "infrastructure",
+        "social-impact",
+        "budget",
+        "stats",
+        "infra",
+    ]
     deduped = [k for k in deduped if k["label"] in priority]
     deduped.sort(key=lambda x: priority.index(x["label"]))
 
@@ -614,26 +669,59 @@ def _normalize_quality_tags(value: Any) -> list[str]:
 
 
 def _normalize_category_label(value: Any) -> str:
-    # 카테고리 라벨을 IT/경제/정책/글로벌로 정규화
+    # 카테고리 라벨을 확장 체계로 정규화
     if not value:
         return ""
     raw = clean_text(str(value)).lower()
-    if raw in {"it", "tech", "technology"}:
-        return "IT"
-    if raw in {"경제", "economy", "economic", "macro", "finance"}:
+    if raw in {"경제", "economy", "economic", "macro", "macroeconomy"}:
         return "경제"
-    if raw in {"정책", "policy", "regulation", "legislation", "trade policy", "diplomacy"}:
+    if raw in {"산업", "industry", "industrial", "manufacturing", "supply chain"}:
+        return "산업"
+    if raw in {"기술", "tech", "technology", "ai", "software", "semiconductor", "it"}:
+        return "기술"
+    if raw in {"금융", "finance", "financial", "markets", "market", "capital"}:
+        return "금융"
+    if raw in {"정책", "policy", "regulation", "legislation", "trade policy"}:
         return "정책"
-    if raw in {"글로벌", "global", "geopolitics", "world"}:
-        return "글로벌"
-    if "경제" in raw:
+    if raw in {"국제", "글로벌", "global", "geopolitics", "world", "international", "diplomacy"}:
+        return "국제"
+    if raw in {"사회", "social", "society", "public"}:
+        return "사회"
+    if raw in {"라이프", "lifestyle", "consumer", "retail"}:
+        return "라이프"
+    if raw in {"헬스", "health", "healthcare", "medical", "biotech"}:
+        return "헬스"
+    if raw in {"환경", "environment", "climate", "sustainability", "esg"}:
+        return "환경"
+    if raw in {"에너지", "energy", "power", "utility", "oil", "gas"}:
+        return "에너지"
+    if raw in {"모빌리티", "mobility", "transport", "automotive", "ev", "autonomous"}:
+        return "모빌리티"
+
+    if "경제" in raw or "inflation" in raw or "gdp" in raw or "macro" in raw:
         return "경제"
-    if "정책" in raw or "규제" in raw or "입법" in raw or "통상" in raw or "외교" in raw:
+    if "산업" in raw or "supply chain" in raw or "manufactur" in raw:
+        return "산업"
+    if "기술" in raw or "tech" in raw or "ai" in raw or "software" in raw or "cloud" in raw or raw.startswith("it"):
+        return "기술"
+    if "금융" in raw or "finance" in raw or "market" in raw or "earnings" in raw:
+        return "금융"
+    if "정책" in raw or "규제" in raw or "입법" in raw or "통상" in raw:
         return "정책"
-    if "global" in raw or "글로벌" in raw:
-        return "글로벌"
-    if "it" in raw or "tech" in raw:
-        return "IT"
+    if "global" in raw or "국제" in raw or "글로벌" in raw or "geopolitic" in raw or "diplomac" in raw:
+        return "국제"
+    if "사회" in raw or "social" in raw or "labor" in raw:
+        return "사회"
+    if "라이프" in raw or "lifestyle" in raw or "consumer" in raw:
+        return "라이프"
+    if "헬스" in raw or "health" in raw or "medical" in raw or "biotech" in raw:
+        return "헬스"
+    if "환경" in raw or "environment" in raw or "climate" in raw:
+        return "환경"
+    if "에너지" in raw or "energy" in raw or "power" in raw or "oil" in raw or "gas" in raw:
+        return "에너지"
+    if "모빌리티" in raw or "mobility" in raw or "transport" in raw or "automotive" in raw:
+        return "모빌리티"
     return ""
 
 def _tokenize_basic(text: str) -> list[str]:

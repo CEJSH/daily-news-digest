@@ -121,16 +121,19 @@ class DigestPipeline:
 
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
         def _pick_from_candidates(candidates: list[Item]) -> list[Item]:
-            buckets: dict[str, list[Item]] = {"IT": [], "경제": [], "정책": [], "글로벌": []}
+            buckets: dict[str, list[Item]] = {k: [] for k in self._top_mix_target.keys()}
             for item in candidates:
-                buckets[self._filter_scorer.get_item_category(item)].append(item)
+                category = self._filter_scorer.get_item_category(item)
+                if category not in buckets:
+                    buckets[category] = []
+                buckets[category].append(item)
 
             for category in buckets:
                 buckets[category].sort(key=lambda x: x["score"], reverse=True)
 
             picked_local: list[Item] = []
             for category, limit in self._top_mix_target.items():
-                picked_local += buckets[category][:limit]
+                picked_local += buckets.get(category, [])[:limit]
 
             if len(picked_local) < top_limit:
                 remain = [

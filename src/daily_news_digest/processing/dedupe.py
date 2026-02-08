@@ -424,7 +424,7 @@ class DedupeEngine:
                 continue
             key = (item.get("clusterKeyRule") or item.get("clusterKey") or "").strip()
             dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ""
-            if dedupe_key and not item.get("clusterKeyRule"):
+            if not item.get("clusterKeyRule") and not item.get("clusterKey") and dedupe_key:
                 recomputed = self.build_cluster_key(dedupe_key)
                 if recomputed:
                     key = recomputed
@@ -436,6 +436,35 @@ class DedupeEngine:
             if matched:
                 # clusterKey가 너무 짧으면(오탐 위험) 바로 병합하지 않음
                 if self._cluster_key_token_count(key) >= self._match_policy.min_cluster_tokens_for_merge:
+                    item_title_tokens = self.normalize_title_tokens(item.get("title") or "")
+                    matched_title_tokens = self.normalize_title_tokens(matched.get("title") or "")
+                    if not item_title_tokens or not matched_title_tokens:
+                        continue
+                    if not (item_title_tokens & matched_title_tokens):
+                        item_title = (item.get("title") or "")[:60]
+                        matched_title = (matched.get("title") or "")[:60]
+                        item_dedupe = (item.get("dedupeKeyRule") or item.get("dedupeKey") or "")[:60]
+                        matched_dedupe = (matched.get("dedupeKeyRule") or matched.get("dedupeKey") or "")[:60]
+                        print(
+                            "ERROR: CLUSTER_MERGE_NO_TITLE_OVERLAP "
+                            f"key={key} item_title={item_title} matched_title={matched_title} "
+                            f"item_dedupe={item_dedupe} matched_dedupe={matched_dedupe}"
+                        )
+                        continue
+                    title_jaccard = self._jaccard(item_title_tokens, matched_title_tokens)
+                    title_threshold = max(0.3, float(self._title_dedupe_jaccard))
+                    if title_jaccard < title_threshold:
+                        continue
+                    item_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ""
+                    matched_key = matched.get("dedupeKeyRule") or matched.get("dedupeKey") or ""
+                    item_ngrams = self.dedupe_key_ngrams(item_key)
+                    matched_ngrams = self.dedupe_key_ngrams(matched_key)
+                    if not item_ngrams or not matched_ngrams:
+                        continue
+                    ngram_sim = self._jaccard(item_ngrams, matched_ngrams)
+                    ngram_threshold = max(0.3, float(self._dedupe_ngram_sim))
+                    if ngram_sim < ngram_threshold:
+                        continue
                     self._mark_merged(item, matched, "cluster_duplicate")
                 continue
             kept_by_cluster[key] = item

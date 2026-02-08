@@ -8,26 +8,41 @@ from typing import Any
 
 from daily_news_digest.processing.ai_enricher import enrich_item_with_ai
 from daily_news_digest.processing.scoring import map_topic_to_category
+from daily_news_digest.processing.dedupe import DedupeEngine
 from daily_news_digest.core.config import (
     DEDUPE_HISTORY_PATH,
     DEDUPE_RECENT_DAYS,
+    DEDUPKEY_NGRAM_N,
+    DEDUPKEY_NGRAM_SIM,
     LOW_QUALITY_DOWNGRADE_MAX_IMPORTANCE,
     LOW_QUALITY_DOWNGRADE_RATIONALE,
     LOW_QUALITY_POLICY,
     METRICS_JSON,
     MIN_TOP_ITEMS,
     TOP_LIMIT,
+    TITLE_DEDUPE_JACCARD,
 )
 from daily_news_digest.core.constants import (
     ALLOWED_IMPACT_SIGNALS,
+    DEDUPE_CLUSTER_DOMAINS,
+    DEDUPE_CLUSTER_EVENT_LABELS,
+    DEDUPE_CLUSTER_MAX_ENTITIES,
+    DEDUPE_CLUSTER_MAX_TOKENS,
+    DEDUPE_CLUSTER_RELATIONS,
+    DEDUPE_EVENT_GROUPS,
+    DEDUPE_EVENT_TOKENS,
+    DEDUPE_NOISE_WORDS,
     IMPACT_SIGNAL_BASE_LEVELS,
     IMPACT_SIGNAL_LONG_TRIGGERS,
     IMPACT_SIGNALS_MAP,
     MARKET_DEMAND_EVIDENCE_KEYWORDS,
+    MEDIA_SUFFIXES,
     SANCTIONS_EVIDENCE_KEYWORDS,
     SECURITY_EVIDENCE_KEYWORDS,
     SOURCE_TIER_A,
     SOURCE_TIER_B,
+    MONTH_TOKENS,
+    STOPWORDS,
     normalize_source_name,
 )
 from daily_news_digest.models import DailyDigest
@@ -37,6 +52,9 @@ from daily_news_digest.utils import (
     ensure_lines_1_to_3,
     estimate_read_time_seconds,
     jaccard_tokens,
+    jaccard,
+    normalize_title_for_dedupe,
+    normalize_token_for_dedupe,
     parse_date_base_utc,
     parse_datetime_utc,
     strip_summary_boilerplate,
@@ -169,6 +187,82 @@ def _safe_read_json(path: str, default: Any) -> Any:
 
 
 _IMPACT_LEVEL_SCORE = {"long": 4, "med": 3, "low": 2}
+_DEDUPE_ENGINE: DedupeEngine | None = None
+
+_ALIGNMENT_TRIGGERS = [
+    "policy",
+    "sanctions",
+    "capex",
+    "earnings",
+    "tariff",
+    "제재",
+    "법안",
+    "실적",
+    "투자",
+    "증설",
+]
+
+
+def _get_dedupe_engine() -> DedupeEngine:
+    global _DEDUPE_ENGINE
+    if _DEDUPE_ENGINE is not None:
+        return _DEDUPE_ENGINE
+    _DEDUPE_ENGINE = DedupeEngine(
+        stopwords=STOPWORDS,
+        dedupe_noise_words=DEDUPE_NOISE_WORDS,
+        month_tokens=MONTH_TOKENS,
+        media_suffixes=MEDIA_SUFFIXES,
+        title_dedupe_jaccard=TITLE_DEDUPE_JACCARD,
+        dedupe_ngram_n=DEDUPKEY_NGRAM_N,
+        dedupe_ngram_sim=DEDUPKEY_NGRAM_SIM,
+        dedupe_event_tokens=DEDUPE_EVENT_TOKENS,
+        dedupe_event_groups=DEDUPE_EVENT_GROUPS,
+        cluster_event_labels=DEDUPE_CLUSTER_EVENT_LABELS,
+        cluster_domains=DEDUPE_CLUSTER_DOMAINS,
+        cluster_relations=DEDUPE_CLUSTER_RELATIONS,
+        cluster_max_tokens=DEDUPE_CLUSTER_MAX_TOKENS,
+        cluster_max_entities=DEDUPE_CLUSTER_MAX_ENTITIES,
+        normalize_title_for_dedupe_func=normalize_title_for_dedupe,
+        normalize_token_for_dedupe_func=normalize_token_for_dedupe,
+        clean_text_func=clean_text,
+        jaccard_func=jaccard,
+    )
+    return _DEDUPE_ENGINE
+
+
+def _normalize_text_tokens(text: str) -> set[str]:
+    t = clean_text(text or "").lower()
+    t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
+    tokens: set[str] = set()
+    for tok in t.split():
+        if re.search(r"[가-힣]", tok):
+            if len(tok) < 2:
+                continue
+        else:
+            if len(tok) < 3:
+                continue
+        tokens.add(tok)
+    return tokens
+
+
+def _regenerate_keys_from_title_summary(item: dict) -> None:
+    title = clean_text(item.get("title") or "")
+    summary_list = item.get("summary")
+    if isinstance(summary_list, list):
+        summary_text = " ".join([str(x) for x in summary_list if x])
+    else:
+        summary_text = clean_text(str(summary_list or ""))
+
+    input_text = f"{title} {summary_text}".strip()
+
+    engine = _get_dedupe_engine()
+
+    dedupe_key = engine.build_dedupe_key(title, summary_text)
+    cluster_key = engine.build_cluster_key(dedupe_key, hint_text=input_text)
+    if dedupe_key:
+        item["dedupeKey"] = dedupe_key
+    if cluster_key:
+        item["clusterKey"] = cluster_key
 
 def _impact_base_level(label: str) -> str:
     return IMPACT_SIGNAL_BASE_LEVELS.get(label, "low")
@@ -512,6 +606,67 @@ def _sanitize_impact_signals(raw: Any, full_text: str, summary_text: str) -> lis
         seen_evidence.add(evidence_key)
     return cleaned
 
+
+def _build_impact_signals_detail(
+    item: dict,
+    ai_result: dict,
+    *,
+    full_text: str,
+    summary_text: str,
+) -> list[dict[str, str]]:
+    raw_signals = ai_result.get("impact_signals")
+    impact_signals_detail: list[dict[str, str]] = []
+    if isinstance(raw_signals, list) and raw_signals and isinstance(raw_signals[0], dict):
+        for entry in raw_signals:
+            if not isinstance(entry, dict):
+                continue
+            label = clean_text(entry.get("label") or "").lower()
+            evidence = clean_text(entry.get("evidence") or "")
+            if not label or not evidence:
+                continue
+            impact_signals_detail.append({"label": label, "evidence": evidence})
+    else:
+        impact_signals = raw_signals or item.get("impactSignals", [])
+        evidence_map = ai_result.get("impact_signals_evidence") or {}
+        for label in impact_signals:
+            evidence = clean_text(evidence_map.get(label) or "")
+            if not evidence:
+                continue
+            impact_signals_detail.append({"label": label, "evidence": evidence})
+
+    impact_signals_detail = _sanitize_impact_signals(impact_signals_detail, full_text, summary_text)
+    return impact_signals_detail
+
+
+def _retry_impact_signals(
+    item: dict,
+    source_item: dict | None,
+    *,
+    full_text: str,
+    summary_text: str,
+) -> bool:
+    if source_item is None:
+        return False
+    ai_result = enrich_item_with_ai(source_item) or {}
+    if not isinstance(ai_result, dict) or not ai_result:
+        return False
+    impact_signals_detail = _build_impact_signals_detail(
+        source_item,
+        ai_result,
+        full_text=full_text,
+        summary_text=summary_text,
+    )
+    if not impact_signals_detail:
+        return False
+    item["impactSignals"] = impact_signals_detail
+    try:
+        importance_score = int(ai_result.get("importance_score") or 0)
+    except Exception:
+        importance_score = 0
+    if importance_score:
+        item["importance"] = max(1, min(5, importance_score))
+    return True
+
 def _collect_item_errors(
     item: dict,
     *,
@@ -532,6 +687,17 @@ def _collect_item_errors(
 
     source_text = full_text or summary_text or ""
     source_lower = clean_text(source_text).lower()
+
+    title_text = clean_text(item.get("title") or "")
+    summary_clean = clean_text(summary_text or "")
+    align_text = f"{title_text} {summary_clean}".strip()
+    norm_tokens = _normalize_text_tokens(align_text)
+    dedupe_tokens = _normalize_text_tokens((item.get("dedupeKey") or "").replace("-", " "))
+    cluster_tokens = _normalize_text_tokens((item.get("clusterKey") or "").replace("/", " "))
+    if len(dedupe_tokens & norm_tokens) < 2:
+        errors.append("ERROR: DEDUPE_KEY_NOT_ALIGNED")
+    if len(cluster_tokens & norm_tokens) < 1:
+        errors.append("ERROR: CLUSTER_KEY_NOT_ALIGNED")
 
     for label, evidence in _iter_impact_signal_entries(impact_signals):
         if label not in _ALLOWED_IMPACT_LABELS:
@@ -572,6 +738,10 @@ def _collect_item_errors(
     if importance >= 3 and isinstance(impact_signals, list) and len(impact_signals) == 0:
         errors.append("ERROR: IMPACT_SIGNALS_REQUIRED")
 
+    if importance >= 3 and isinstance(impact_signals, list) and len(impact_signals) == 0:
+        if any(t in align_text.lower() for t in _ALIGNMENT_TRIGGERS):
+            errors.append("ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE")
+
     published_at = _parse_datetime(str(item.get("publishedAt") or ""))
     base_date = _parse_date_base(str(item.get("date") or ""))
     if published_at and base_date:
@@ -597,6 +767,9 @@ def classify_errors(errors: list[str]) -> dict[str, list[str]]:
         "ERROR: INVALID_IMPACT_SIGNAL_FORMAT",
         "ERROR: DUPLICATE_IMPACT_SIGNAL_EVIDENCE",
         "ERROR: DUPLICATE_IMPACT_SIGNAL_LABEL",
+        "ERROR: DEDUPE_KEY_NOT_ALIGNED",
+        "ERROR: CLUSTER_KEY_NOT_ALIGNED",
+        "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE",
     }
     s3 = {"ERROR: LOW_QUALITY_MISMATCH", "ERROR: IMPACT_SIGNALS_REQUIRED"}
     return {
@@ -729,9 +902,15 @@ def apply_soft_warnings(item: dict, errors: list[str]) -> None:
         if importance >= 3:
             item["importance"] = 2
 
-def handle_validation_errors(item: dict, errors: list[str]) -> dict:
+def handle_validation_errors(
+    item: dict,
+    errors: list[str],
+    *,
+    source_item: dict | None = None,
+) -> dict:
     log = {
-        "item_id": item.get("id") or "",
+        "item_id": item.get("_itemId") or item.get("id") or "",
+        "dedupe_input_hash": item.get("_dedupeInputHash") or "",
         "original_errors": list(errors),
         "auto_fixed": [],
         "remaining_errors": [],
@@ -749,6 +928,20 @@ def handle_validation_errors(item: dict, errors: list[str]) -> dict:
         if sanitized != item.get("impactSignals"):
             item["impactSignals"] = sanitized
             log["auto_fixed"].append("sanitize_impact_signals")
+        if "ERROR: DEDUPE_KEY_NOT_ALIGNED" in errors or "ERROR: CLUSTER_KEY_NOT_ALIGNED" in errors:
+            _regenerate_keys_from_title_summary(item)
+            log["auto_fixed"].append("regen_dedupe_cluster")
+        if "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE" in errors:
+            if not item.get("_impactRetryDone"):
+                item["_impactRetryDone"] = True
+                retried = _retry_impact_signals(
+                    item,
+                    source_item,
+                    full_text=item.get("_fullText") or "",
+                    summary_text=item.get("_summaryText") or "",
+                )
+                if retried:
+                    log["auto_fixed"].append("retry_llm_impact_signals")
     new_errors = revalidate(
         item,
         full_text=item.get("_fullText") or "",
@@ -756,6 +949,14 @@ def handle_validation_errors(item: dict, errors: list[str]) -> dict:
     )
     log["remaining_errors"] = new_errors
     classified_after = classify_errors(new_errors)
+    if "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE" in new_errors:
+        item["qualityLabel"] = "low_quality"
+        if not item.get("qualityReason"):
+            item["qualityReason"] = "impact_signals_missing"
+        item["status"] = "dropped"
+        item["dropReason"] = "impact_signals_missing"
+        log["final_action"] = "dropped"
+        return log
     if classified_after["s2"] and not classified_after["s1"] and not classified_after["unknown"]:
         if item.get("impactSignals"):
             item["impactSignals"] = []
@@ -1076,8 +1277,10 @@ def export_daily_digest_json(
         elif not isinstance(ai_result, dict):
             ai_result = {}
         title_ko = clean_text(ai_result.get("title_ko") or "")
+        title_from_ai = False
         if title_ko:
             title = title_ko
+            title_from_ai = True
         ai_lines_raw = ai_result.get("summary_lines") or []
         summary_source = _pick_summary_source(
             title,
@@ -1152,31 +1355,27 @@ def export_daily_digest_json(
         if (drop_reason or status_value == "dropped") and not is_merged:
             why_important = _fallback_why()
             importance_rationale = _fallback_importance_rationale()
-
-        dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ai_result.get("dedupe_key") or ""
-        cluster_key = item.get("clusterKey") or ""
-        raw_signals = ai_result.get("impact_signals")
-        impact_signals_detail: list[dict[str, str]] = []
-        if isinstance(raw_signals, list) and raw_signals and isinstance(raw_signals[0], dict):
-            for entry in raw_signals:
-                if not isinstance(entry, dict):
-                    continue
-                label = clean_text(entry.get("label") or "").lower()
-                evidence = clean_text(entry.get("evidence") or "")
-                if not label or not evidence:
-                    continue
-                impact_signals_detail.append({"label": label, "evidence": evidence})
-        else:
-            impact_signals = raw_signals or item.get("impactSignals", [])
-            evidence_map = ai_result.get("impact_signals_evidence") or {}
-            for label in impact_signals:
-                evidence = clean_text(evidence_map.get(label) or "")
-                if not evidence:
-                    continue
-                impact_signals_detail.append({"label": label, "evidence": evidence})
-
+            
+        engine = _get_dedupe_engine()
         summary_text = " ".join(summary_lines) if summary_lines else summary
-        impact_signals_detail = _sanitize_impact_signals(impact_signals_detail, full_text, summary_text)
+        if title_from_ai:
+            
+            dedupe_key = engine.build_dedupe_key(title, summary_text)
+            cluster_key = engine.build_cluster_key(dedupe_key, hint_text=f"{title} {summary_text}")
+        else:
+            dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ""
+            dedupe_input_summary = clean_text(summary or summary_raw)
+            if not dedupe_key:
+                dedupe_key = engine.build_dedupe_key(title, dedupe_input_summary)
+            cluster_key = item.get("clusterKey") or ""
+            if not cluster_key and dedupe_key:
+                cluster_key = engine.build_cluster_key(dedupe_key, hint_text=f"{title} {dedupe_input_summary}")
+        impact_signals_detail = _build_impact_signals_detail(
+            item,
+            ai_result,
+            full_text=full_text,
+            summary_text=summary_text,
+        )
         impact_signals = [d["label"] for d in impact_signals_detail]
         importance = ai_result.get("importance_score")
         if not importance:
@@ -1248,15 +1447,20 @@ def export_daily_digest_json(
             out_item["dropReason"] = drop_reason
         out_item["_fullText"] = full_text
         out_item["_summaryText"] = summary_text
+        out_item["_itemId"] = item.get("itemId")
+        out_item["_dedupeInputHash"] = item.get("dedupeInputHash")
         item_errors = _collect_item_errors(
             out_item,
             full_text=full_text,
             summary_text=summary_text,
         )
-        log_entry = handle_validation_errors(out_item, item_errors)
+        log_entry = handle_validation_errors(out_item, item_errors, source_item=item)
         validation_logs.append(log_entry)
         out_item.pop("_fullText", None)
         out_item.pop("_summaryText", None)
+        out_item.pop("_itemId", None)
+        out_item.pop("_dedupeInputHash", None)
+        out_item.pop("_impactRetryDone", None)
         if out_item.get("status") == "dropped":
             continue
         items_out.append(out_item)

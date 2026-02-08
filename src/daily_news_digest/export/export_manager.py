@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import datetime
-import email.utils
 import json
 import os
 import re
@@ -15,6 +14,7 @@ from daily_news_digest.core.config import (
     LOW_QUALITY_DOWNGRADE_MAX_IMPORTANCE,
     LOW_QUALITY_DOWNGRADE_RATIONALE,
     LOW_QUALITY_POLICY,
+    METRICS_JSON,
     MIN_TOP_ITEMS,
     TOP_LIMIT,
 )
@@ -37,6 +37,8 @@ from daily_news_digest.utils import (
     ensure_lines_1_to_3,
     estimate_read_time_seconds,
     jaccard_tokens,
+    parse_date_base_utc,
+    parse_datetime_utc,
     strip_summary_boilerplate,
 )
 
@@ -184,6 +186,8 @@ def _impact_level_for_evidence(label: str, evidence: str) -> str:
     base = _impact_base_level(label)
     if _has_long_trigger(label, evidence):
         return "long"
+    if label in {"policy", "sanctions"}:
+        return "low"
     return base
 
 def _infer_importance_from_signals(signals: Any) -> int:
@@ -293,27 +297,10 @@ def _has_number_token(text: str) -> bool:
     return any(unit in t for unit in ["억", "조", "만", "%", "달러", "원", "billion", "million", "trillion", "usd", "$"])
 
 def _parse_datetime(value: str) -> datetime.datetime | None:
-    if not value:
-        return None
-    try:
-        dt = datetime.datetime.fromisoformat(value)
-    except Exception:
-        try:
-            dt = email.utils.parsedate_to_datetime(value)
-        except Exception:
-            return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=_KST)
-    return dt.astimezone(datetime.timezone.utc)
+    return parse_datetime_utc(value, default_tz=_KST)
 
 def _parse_date_base(value: str) -> datetime.datetime | None:
-    if not value:
-        return None
-    try:
-        d = datetime.date.fromisoformat(value)
-    except Exception:
-        return None
-    return datetime.datetime(d.year, d.month, d.day, tzinfo=_KST).astimezone(datetime.timezone.utc)
+    return parse_date_base_utc(value, base_tz=_KST)
 
 def _policy_evidence_valid(text: str) -> bool:
     t = clean_text(text or "").lower()
@@ -611,7 +598,7 @@ def classify_errors(errors: list[str]) -> dict[str, list[str]]:
         "ERROR: DUPLICATE_IMPACT_SIGNAL_EVIDENCE",
         "ERROR: DUPLICATE_IMPACT_SIGNAL_LABEL",
     }
-    s3 = {"ERROR: LOW_QUALITY_MISMATCH"}
+    s3 = {"ERROR: LOW_QUALITY_MISMATCH", "ERROR: IMPACT_SIGNALS_REQUIRED"}
     return {
         "s1": [e for e in errors if e in s1],
         "s2": [e for e in errors if e in s2],
@@ -720,21 +707,27 @@ def handle_hard_fails(item: dict, errors: list[str]) -> None:
             item["dropReason"] = item.get("dropReason") or "validation_error"
 
 def apply_soft_warnings(item: dict, errors: list[str]) -> None:
-    if "ERROR: LOW_QUALITY_MISMATCH" not in errors:
-        return
-    item["qualityLabel"] = "low_quality"
-    if not item.get("qualityReason"):
-        item["qualityReason"] = "정보 부족"
-    if "qualityTags" not in item:
-        item["qualityTags"] = []
-    try:
-        importance = int(item.get("importance") or 0)
-    except Exception:
-        importance = 0
-    if importance > 2:
-        item["importance"] = 2
-    elif importance > 1:
-        item["importance"] = max(1, importance - 1)
+    if "ERROR: LOW_QUALITY_MISMATCH" in errors:
+        item["qualityLabel"] = "low_quality"
+        if not item.get("qualityReason"):
+            item["qualityReason"] = "정보 부족"
+        if "qualityTags" not in item:
+            item["qualityTags"] = []
+        try:
+            importance = int(item.get("importance") or 0)
+        except Exception:
+            importance = 0
+        if importance > 2:
+            item["importance"] = 2
+        elif importance > 1:
+            item["importance"] = max(1, importance - 1)
+    if "ERROR: IMPACT_SIGNALS_REQUIRED" in errors:
+        try:
+            importance = int(item.get("importance") or 0)
+        except Exception:
+            importance = 0
+        if importance >= 3:
+            item["importance"] = 2
 
 def handle_validation_errors(item: dict, errors: list[str]) -> dict:
     log = {
@@ -748,6 +741,14 @@ def handle_validation_errors(item: dict, errors: list[str]) -> dict:
     if classified["s2"]:
         auto_fixed = apply_auto_fixes(item)
         log["auto_fixed"] = auto_fixed
+        sanitized = _sanitize_impact_signals(
+            item.get("impactSignals"),
+            item.get("_fullText") or "",
+            item.get("_summaryText") or "",
+        )
+        if sanitized != item.get("impactSignals"):
+            item["impactSignals"] = sanitized
+            log["auto_fixed"].append("sanitize_impact_signals")
     new_errors = revalidate(
         item,
         full_text=item.get("_fullText") or "",
@@ -755,6 +756,17 @@ def handle_validation_errors(item: dict, errors: list[str]) -> dict:
     )
     log["remaining_errors"] = new_errors
     classified_after = classify_errors(new_errors)
+    if classified_after["s2"] and not classified_after["s1"] and not classified_after["unknown"]:
+        if item.get("impactSignals"):
+            item["impactSignals"] = []
+            log["auto_fixed"].append("drop_invalid_impact_signals")
+        new_errors = revalidate(
+            item,
+            full_text=item.get("_fullText") or "",
+            summary_text=item.get("_summaryText") or "",
+        )
+        log["remaining_errors"] = new_errors
+        classified_after = classify_errors(new_errors)
     if classified_after["s1"] or classified_after["s2"] or classified_after["unknown"]:
         handle_hard_fails(
             item,
@@ -999,7 +1011,13 @@ def _update_dedupe_history(digest: dict, path: str, days: int) -> None:
 
     _atomic_write_json(path, history)
 
-def export_daily_digest_json(top_items: list[dict], output_path: str, config: dict) -> DailyDigest:
+def export_daily_digest_json(
+    top_items: list[dict],
+    output_path: str,
+    config: dict,
+    *,
+    metrics_extra: dict[str, Any] | None = None,
+) -> DailyDigest:
     """MVP 스키마로 변환해 JSON으로 저장."""
     now_kst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
     date_str = now_kst.strftime("%Y-%m-%d")
@@ -1007,9 +1025,19 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
     items_out: list[dict[str, Any]] = []
     validation_logs: list[dict[str, Any]] = []
+    metrics = {
+        "total_in": 0,
+        "total_out": 0,
+        "dropped": 0,
+        "dropReasons": {},
+        "impactLabels": {},
+        "sources": {},
+        "categories": {},
+    }
     out_index = 0
     kept_dedupe_keys: set[str] = set()
     for item in top_items[:TOP_LIMIT]:
+        metrics["total_in"] += 1
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
         summary = (item.get("summary") or "").strip()
@@ -1017,7 +1045,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
         full_text = (item.get("fullText") or "").strip()
         topic = (item.get("topic") or "").strip()
         source_name = (item.get("source") or "").strip()
-        published = item.get("published")
+        published = item.get("updatedAtUtc") or item.get("publishedAtUtc") or item.get("published")
         published_at = clean_text(str(published)) if published is not None else ""
         is_carried_over = item.get("isCarriedOver") is True
 
@@ -1036,6 +1064,9 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             drop_reason = "policy:full_text_missing"
             status_value = "dropped"
         if drop_reason or status_value == "dropped":
+            metrics["dropped"] += 1
+            label = drop_reason or "dropped"
+            metrics["dropReasons"][label] = metrics["dropReasons"].get(label, 0) + 1
             continue
 
         ai_result = item.get("ai")
@@ -1122,7 +1153,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             why_important = _fallback_why()
             importance_rationale = _fallback_importance_rationale()
 
-        dedupe_key = ai_result.get("dedupe_key") or item.get("dedupeKey", "")
+        dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ai_result.get("dedupe_key") or ""
         cluster_key = item.get("clusterKey") or ""
         raw_signals = ai_result.get("impact_signals")
         impact_signals_detail: list[dict[str, str]] = []
@@ -1230,6 +1261,19 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             continue
         items_out.append(out_item)
 
+        metrics["total_out"] += 1
+        src_label = out_item.get("sourceName") or ""
+        if src_label:
+            metrics["sources"][src_label] = metrics["sources"].get(src_label, 0) + 1
+        cat_label = out_item.get("category") or ""
+        if cat_label:
+            metrics["categories"][cat_label] = metrics["categories"].get(cat_label, 0) + 1
+        for sig in out_item.get("impactSignals") or []:
+            label = clean_text(sig.get("label") or "").lower()
+            if not label:
+                continue
+            metrics["impactLabels"][label] = metrics["impactLabels"].get(label, 0) + 1
+
     # merged 기사 matchedTo를 대표 기사 id로 보정
     cluster_rep: dict[str, str] = {}
     for it in items_out:
@@ -1261,6 +1305,17 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             print(json.dumps(log_entry, ensure_ascii=False))
         except Exception:
             pass
+    metrics_payload: dict[str, Any] = {"type": "metrics_summary", "date": date_str, **metrics}
+    if metrics_extra:
+        metrics_payload.update(metrics_extra)
+    try:
+        print(json.dumps(metrics_payload, ensure_ascii=False))
+    except Exception:
+        pass
+    try:
+        _atomic_write_json(METRICS_JSON, metrics_payload)
+    except Exception:
+        pass
 
     valid, error = _validate_digest(digest)
     if not valid:

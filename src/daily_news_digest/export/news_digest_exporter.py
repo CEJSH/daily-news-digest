@@ -36,7 +36,13 @@ def main() -> None:
             "question": QUESTION_OF_THE_DAY,
         }
 
-        export_daily_digest_json(top_items, OUTPUT_JSON, config)
+        signal_cap_stats = pipeline.get_signal_cap_stats()
+        export_daily_digest_json(
+            top_items,
+            OUTPUT_JSON,
+            config,
+            metrics_extra={"signalCap": signal_cap_stats},
+        )
         _log(f"완료! {OUTPUT_JSON} 파일이 생성되었습니다.")
 
     except Exception as e:

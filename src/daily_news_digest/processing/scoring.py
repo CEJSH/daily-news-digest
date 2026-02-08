@@ -10,6 +10,7 @@ from daily_news_digest.core.constants import (
     normalize_source_name,
 )
 from daily_news_digest.processing.types import Item
+from daily_news_digest.utils import parse_datetime_utc
 
 
 def map_topic_to_category(topic: str) -> str:
@@ -270,10 +271,20 @@ class ItemFilterScorer:
         return normalized * self._source_weight_factor
 
     def compute_age_hours(self, entry: Any) -> float | None:
-        published_parsed = getattr(entry, "published_parsed", None)
-        if not published_parsed:
-            return None
-        published_dt = datetime.datetime(*published_parsed[:6], tzinfo=datetime.timezone.utc)
+        updated_raw = getattr(entry, "updated", None)
+        published_raw = getattr(entry, "published", None)
+        published_dt = None
+        if updated_raw:
+            published_dt = parse_datetime_utc(str(updated_raw))
+        if published_dt is None and published_raw:
+            published_dt = parse_datetime_utc(str(published_raw))
+        if published_dt is None:
+            updated_parsed = getattr(entry, "updated_parsed", None)
+            published_parsed = getattr(entry, "published_parsed", None)
+            parsed = updated_parsed or published_parsed
+            if not parsed:
+                return None
+            published_dt = datetime.datetime(*parsed[:6], tzinfo=datetime.timezone.utc)
         now = self._now_provider()
         delta = now - published_dt
         return delta.total_seconds() / 3600.0
@@ -290,6 +301,9 @@ class ItemFilterScorer:
             if any(kw.lower() in text_lower for kw in triggers):
                 triggered.add(label)
         return triggered
+
+    def get_long_impact_labels(self, text_all: str, impact_signals: list[str]) -> set[str]:
+        return self._long_impact_labels(text_all, impact_signals)
 
     def passes_freshness(self, age_hours: float | None, impact_signals: list[str], text_all: str) -> bool:
         if age_hours is None:
@@ -362,10 +376,13 @@ class ItemFilterScorer:
         med_labels = {
             s
             for s in impact_signals
-            if s in {"policy", "sanctions", "capex", "infra", "security"} and s not in long_labels
+            if s in {"capex", "infra", "security"} and s not in long_labels
         }
         if med_labels:
             score += 2.0
+        soft_policy = {s for s in impact_signals if s in {"policy", "sanctions"} and s not in long_labels}
+        if soft_policy:
+            score += 1.0
         if any(s in {"earnings", "market-demand"} for s in impact_signals):
             score += 1.0
         if read_time_sec <= 20:

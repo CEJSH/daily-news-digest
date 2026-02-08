@@ -23,6 +23,12 @@ from daily_news_digest.core.config import (
     MAX_ENTRIES_PER_FEED,
     MIN_SCORE,
     OUTPUT_JSON,
+    SIGNAL_CAP_ENABLED,
+    SIGNAL_CAP_EXCEPT_IMPORTANCE,
+    SIGNAL_CAP_EXCEPT_LONG_TRIGGER,
+    SIGNAL_CAP_LABELS,
+    SIGNAL_CAP_PENALTY,
+    SIGNAL_CAP_RATIO,
     TOP_LIMIT,
     TOP_SOURCE_ALLOWLIST,
     TOP_SOURCE_ALLOWLIST_ENABLED,
@@ -57,6 +63,7 @@ from daily_news_digest.core.constants import (
     LONG_IMPACT_SIGNALS,
     MEDIA_SUFFIXES,
     MONTH_TOKENS,
+    normalize_source_name,
     SOURCE_TIER_A,
     SOURCE_TIER_B,
     STOPWORDS,
@@ -74,6 +81,7 @@ from daily_news_digest.utils import (
     jaccard,
     normalize_title_for_dedupe,
     normalize_token_for_dedupe,
+    parse_datetime_utc,
     trim_title_noise,
 )
 
@@ -118,8 +126,118 @@ class DigestPipeline:
         self._dedupe_history_path = dedupe_history_path
         self._dedupe_recent_days = dedupe_recent_days
         self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
+        self._last_signal_cap_stats: dict[str, Any] = {}
+
+    def get_signal_cap_stats(self) -> dict[str, Any]:
+        return dict(self._last_signal_cap_stats)
 
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
+        def _apply_signal_cap(
+            picked_local: list[Item],
+            candidates: list[Item],
+        ) -> list[Item]:
+            cap_labels = {clean_text(str(s)).lower() for s in SIGNAL_CAP_LABELS if s}
+            if not SIGNAL_CAP_ENABLED or not cap_labels:
+                self._last_signal_cap_stats = {
+                    "enabled": bool(SIGNAL_CAP_ENABLED),
+                    "applied": False,
+                    "replaced": 0,
+                    "capLimit": 0,
+                    "labels": sorted(cap_labels),
+                    "ratio": SIGNAL_CAP_RATIO,
+                    "penalty": SIGNAL_CAP_PENALTY,
+                    "exceptLongTrigger": SIGNAL_CAP_EXCEPT_LONG_TRIGGER,
+                    "exceptImportance": SIGNAL_CAP_EXCEPT_IMPORTANCE,
+                }
+                return picked_local
+            cap_limit = max(1, int(top_limit * SIGNAL_CAP_RATIO))
+
+            def _score(item: Item) -> float:
+                try:
+                    return float(item.get("score") or 0.0)
+                except Exception:
+                    return 0.0
+
+            def _signals(item: Item) -> set[str]:
+                raw = item.get("impactSignals") or []
+                return {clean_text(str(s)).lower() for s in raw if s}
+
+            def _is_capped(item: Item) -> bool:
+                return bool(_signals(item) & cap_labels)
+
+            def _is_exempt(item: Item) -> bool:
+                importance = item.get("aiImportance") or item.get("importance") or 0
+                try:
+                    if int(importance) >= SIGNAL_CAP_EXCEPT_IMPORTANCE:
+                        return True
+                except Exception:
+                    pass
+                if not SIGNAL_CAP_EXCEPT_LONG_TRIGGER:
+                    return False
+                text_all = f"{item.get('title', '')} {item.get('summary', '')} {item.get('fullText', '')}"
+                long_labels = self._filter_scorer.get_long_impact_labels(
+                    text_all,
+                    item.get("impactSignals") or [],
+                )
+                return bool(long_labels & cap_labels)
+
+            capped_non_exempt = [p for p in picked_local if _is_capped(p) and not _is_exempt(p)]
+            over = len(capped_non_exempt) - cap_limit
+            if over <= 0:
+                self._last_signal_cap_stats = {
+                    "enabled": True,
+                    "applied": False,
+                    "replaced": 0,
+                    "capLimit": cap_limit,
+                    "labels": sorted(cap_labels),
+                    "ratio": SIGNAL_CAP_RATIO,
+                    "penalty": SIGNAL_CAP_PENALTY,
+                    "exceptLongTrigger": SIGNAL_CAP_EXCEPT_LONG_TRIGGER,
+                    "exceptImportance": SIGNAL_CAP_EXCEPT_IMPORTANCE,
+                }
+                return picked_local
+
+            remaining = [c for c in candidates if c not in picked_local]
+            remaining.sort(key=_score, reverse=True)
+            removable = sorted(capped_non_exempt, key=_score)
+            replaced = 0
+            for victim in removable:
+                if over <= 0:
+                    break
+                replacement = next(
+                    (
+                        c
+                        for c in remaining
+                        if not (_is_capped(c) and not _is_exempt(c))
+                    ),
+                    None,
+                )
+                if not replacement:
+                    break
+                if _score(replacement) >= _score(victim) - SIGNAL_CAP_PENALTY:
+                    picked_local.remove(victim)
+                    picked_local.append(replacement)
+                    remaining.remove(replacement)
+                    over -= 1
+                    replaced += 1
+
+            if replaced > 0:
+                self._log(
+                    f"signal cap 적용: capped_limit={cap_limit} replaced={replaced}"
+                )
+            self._last_signal_cap_stats = {
+                "enabled": True,
+                "applied": replaced > 0,
+                "replaced": replaced,
+                "capLimit": cap_limit,
+                "labels": sorted(cap_labels),
+                "ratio": SIGNAL_CAP_RATIO,
+                "penalty": SIGNAL_CAP_PENALTY,
+                "exceptLongTrigger": SIGNAL_CAP_EXCEPT_LONG_TRIGGER,
+                "exceptImportance": SIGNAL_CAP_EXCEPT_IMPORTANCE,
+            }
+            return picked_local
+
         def _pick_from_candidates(candidates: list[Item]) -> list[Item]:
             buckets: dict[str, list[Item]] = {k: [] for k in self._top_mix_target.keys()}
             for item in candidates:
@@ -142,7 +260,8 @@ class DigestPipeline:
                 ]
                 picked_local += remain[: top_limit - len(picked_local)]
 
-            return picked_local[:top_limit]
+            picked_local = picked_local[:top_limit]
+            return _apply_signal_cap(picked_local, candidates)[:top_limit]
 
         fresh_candidates = [
             item
@@ -219,6 +338,7 @@ class DigestPipeline:
                         f"(누적 후보 {len(all_items)}개, 처리 {total_seen}개)"
                     )
                 source_name = get_source_name(entry)
+                source_norm = normalize_source_name(source_name) or (source_name or "").strip()
                 (
                     title,
                     title_clean,
@@ -227,12 +347,17 @@ class DigestPipeline:
                     analysis_text,
                 ) = self._entry_parser.parse_entry(entry, source_name)
                 link = getattr(entry, "link", "") or ""
+                published_raw = getattr(entry, "published", None)
+                updated_raw = getattr(entry, "updated", None)
+                published_at_utc = parse_datetime_utc(str(published_raw)) if published_raw else None
+                updated_at_utc = parse_datetime_utc(str(updated_raw)) if updated_raw else None
 
                 tokens = self._dedupe_engine.normalize_title_tokens(title_clean)
                 text_all = (title_clean + " " + analysis_text).lower()
                 impact_signals = self._filter_scorer.get_impact_signals(text_all)
                 dedupe_key = self._dedupe_engine.build_dedupe_key(title_clean, analysis_text)
-                cluster_key = self._dedupe_engine.build_cluster_key(dedupe_key)
+                cluster_hint = f"{title_clean} {summary}".strip()
+                cluster_key = self._dedupe_engine.build_cluster_key(dedupe_key, hint_text=cluster_hint)
                 dedupe_ngrams = self._dedupe_engine.dedupe_key_ngrams(dedupe_key, DEDUPKEY_NGRAM_N)
                 matched_to = yesterday_dedupe_map.get(cluster_key) if cluster_key else None
 
@@ -281,13 +406,18 @@ class DigestPipeline:
                     "link": link,
                     "summary": summary,
                     "fullText": full_text,
-                    "published": getattr(entry, "published", None),
+                    "published": published_raw,
+                    "publishedAtUtc": published_at_utc.isoformat() if published_at_utc else "",
+                    "updatedAtUtc": updated_at_utc.isoformat() if updated_at_utc else "",
                     "score": score,
                     "topic": topic,
-                    "source": source_name,
+                    "source": source_norm,
+                    "sourceRaw": source_name,
                     "impactSignals": impact_signals,
                     "dedupeKey": dedupe_key,
+                    "dedupeKeyRule": dedupe_key,
                     "clusterKey": cluster_key,
+                    "clusterKeyRule": cluster_key,
                     "matchedTo": matched_to,
                     "readTimeSec": read_time_sec,
                     "ageHours": age_hours,

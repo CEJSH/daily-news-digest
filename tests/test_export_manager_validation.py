@@ -129,7 +129,7 @@ def test_sanitize_impact_signals_requires_market_demand_keywords() -> None:
 
 def test_long_trigger_required_for_upgrade() -> None:
     signals = [{"label": "policy", "evidence": "정부가 정책 발표를 했습니다."}]
-    assert em._infer_importance_from_signals(signals) == 3
+    assert em._infer_importance_from_signals(signals) == 2
 
 
 def test_is_title_like_summary_detects_repetition() -> None:

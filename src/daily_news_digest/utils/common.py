@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import datetime
+import email.utils
 import html
 import re
 from typing import Any
@@ -9,6 +11,7 @@ _TRAILING_TAG_RE = re.compile(r"\s*[\[\(][^\]\)]+[\]\)]\s*$")  # 제목 끝의 �
 _SOURCE_SEPARATOR_RE = re.compile(r"\s*\|\s*|\s+[–—-]\s+|\s*[·•:｜ㅣ]\s*")  # 제목에서 소스/섹션 구분자 분리용
 _CONTROL_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F]")  # 바이너리/제어문자 검출용
 _PNG_SIGNS = ("PNG", "IHDR", "IDAT", "IEND")  # 깨진 텍스트에 섞이는 PNG 시그니처 검출용
+_KST = datetime.timezone(datetime.timedelta(hours=9))
 
 _MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "TV", "tv")  # 언론사/미디어명 추정용 접미사
 
@@ -50,6 +53,30 @@ def clean_text(s: str) -> str:
 
 def clean_text_ws(text: str) -> str:
     return _WS_RE.sub(" ", (text or "").strip())
+
+def parse_datetime_utc(value: str, *, default_tz: datetime.tzinfo | None = None) -> datetime.datetime | None:
+    if not value:
+        return None
+    try:
+        dt = datetime.datetime.fromisoformat(value)
+    except Exception:
+        try:
+            dt = email.utils.parsedate_to_datetime(value)
+        except Exception:
+            return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=default_tz or _KST)
+    return dt.astimezone(datetime.timezone.utc)
+
+def parse_date_base_utc(value: str, *, base_tz: datetime.tzinfo | None = None) -> datetime.datetime | None:
+    if not value:
+        return None
+    try:
+        d = datetime.date.fromisoformat(value)
+    except Exception:
+        return None
+    tz = base_tz or _KST
+    return datetime.datetime(d.year, d.month, d.day, tzinfo=tz).astimezone(datetime.timezone.utc)
 
 def contains_binary(text: str) -> bool:
     if not text:

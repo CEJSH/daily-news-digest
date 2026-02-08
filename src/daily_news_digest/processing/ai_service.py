@@ -6,6 +6,7 @@ from typing import Any, Callable
 
 from daily_news_digest.core.config import FULLTEXT_LOG_ENABLED, FULLTEXT_LOG_MAX_CHARS
 from daily_news_digest.processing.constants import DEFAULT_TOP_MIX_TARGET
+from daily_news_digest.core.constants import HARD_EXCLUDE_URL_HINTS
 from daily_news_digest.processing.types import Item, LogFunc
 from daily_news_digest.utils import clean_text
 
@@ -48,6 +49,7 @@ class AIEnrichmentService:
         self._get_item_category = get_item_category_func
         self._is_eligible = is_eligible_func
         self._log = logger
+        self._hard_exclude_url_hints = [h.lower() for h in HARD_EXCLUDE_URL_HINTS]
         self._ai_importance_enabled = ai_importance_enabled
         self._ai_importance_max_items = ai_importance_max_items
         self._ai_importance_weight = ai_importance_weight
@@ -59,6 +61,19 @@ class AIEnrichmentService:
         self._article_fetch_max_items = article_fetch_max_items
         self._article_fetch_min_chars = article_fetch_min_chars
         self._article_fetch_timeout_sec = article_fetch_timeout_sec
+
+    def _should_exclude_url(self, url: str) -> bool:
+        if not url:
+            return False
+        lowered = url.lower()
+        return any(hint in lowered for hint in self._hard_exclude_url_hints)
+
+    def _apply_url_hint_drop(self, item: Item, url: str) -> bool:
+        if not self._should_exclude_url(url):
+            return False
+        item["dropReason"] = item.get("dropReason") or "hard_exclude_url_hint"
+        item["status"] = "dropped"
+        return True
         self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
         self._fetch_cache: dict[str, tuple[str, str, int | None, str | None, list[str]]] = {}
 
@@ -298,6 +313,8 @@ class AIEnrichmentService:
                         parsed_status = meta_parts.get("status", parsed_status)
                     if resolved_for_item:
                         item["resolvedUrl"] = resolved_for_item
+                        if self._apply_url_hint_drop(item, resolved_for_item):
+                            continue
 
                     failure_reasons: list[str] = []
                     if text and len(text.strip()) >= 50:
@@ -351,6 +368,8 @@ class AIEnrichmentService:
                 debug = _format_fetch_debug(item, budget=fetch_budget, need_fetch=need_fetch)
                 fetch_errors.append(f"no_full_text|{reason}:{base}|{debug}")
                 continue
+            if self._apply_url_hint_drop(item, item.get("resolvedUrl") or link):
+                continue
             ai_result = self._enrich_item_with_ai(item)
             if not ai_result:
                 continue
@@ -358,7 +377,9 @@ class AIEnrichmentService:
             item["ai"] = ai_result
             ai_dedupe_key = ai_result.get("dedupe_key")
             if ai_dedupe_key:
-                item["dedupeKey"] = ai_dedupe_key
+                item["dedupeKeyAI"] = ai_dedupe_key
+                if not item.get("dedupeKey"):
+                    item["dedupeKey"] = ai_dedupe_key
             if self._ai_quality_enabled:
                 quality_label = ai_result.get("quality_label")
                 if quality_label:
@@ -452,6 +473,8 @@ class AIEnrichmentService:
                 parsed_status = meta_parts.get("status", parsed_status)
             if resolved_for_item:
                 item["resolvedUrl"] = resolved_for_item
+                if self._apply_url_hint_drop(item, resolved_for_item):
+                    continue
 
             failure_reasons: list[str] = []
             if text and len(text.strip()) >= 50:

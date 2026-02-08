@@ -267,7 +267,28 @@ class DedupeEngine:
         return matched_labels, matched_tokens
     
 
-    def build_cluster_key(self, dedupe_key: str) -> str:
+    def _cluster_hint_tokens(self, text: str) -> list[str]:
+        tokens_raw = self.tokenize_for_dedupe(text or "")
+        if not tokens_raw:
+            return []
+        seen: set[str] = set()
+        hint_tokens: list[str] = []
+        for tok in tokens_raw:
+            tok = self._normalize_token_for_dedupe(tok, self._stopwords)
+            if not tok:
+                continue
+            if not self.valid_token_length(tok):
+                continue
+            if self.is_noise_token(tok):
+                continue
+            norm = self._normalize_cluster_token(tok)
+            if not norm or norm in seen:
+                continue
+            seen.add(norm)
+            hint_tokens.append(norm)
+        return hint_tokens
+
+    def build_cluster_key(self, dedupe_key: str, hint_text: str | None = None) -> str:
         tokens_raw = self._dedupe_key_tokens(dedupe_key)
         if not tokens_raw:
             return ""
@@ -282,7 +303,13 @@ class DedupeEngine:
         if not tokens:
             return ""
 
-        relation_label, relation_tokens = self._detect_relation(tokens)
+        relation_tokens_source = tokens
+        if hint_text:
+            hint_tokens = self._cluster_hint_tokens(hint_text)
+            if hint_tokens:
+                relation_tokens_source = tokens + [t for t in hint_tokens if t not in tokens]
+
+        relation_label, relation_tokens = self._detect_relation(relation_tokens_source)
         event_groups = self._event_group_ids(set(tokens))
         event_labels = [
             self._normalize_cluster_token(self._cluster_event_labels.get(group, group))
@@ -290,7 +317,7 @@ class DedupeEngine:
         ]
         event_labels = [x for x in event_labels if x]
 
-        domain_labels, domain_tokens = self._match_cluster_domains(tokens)
+        domain_labels, domain_tokens = self._match_cluster_domains(relation_tokens_source)
         domain_labels = [self._normalize_cluster_token(x) for x in domain_labels if x]
 
         event_token_set = set(self._dedupe_event_tokens)
@@ -395,13 +422,14 @@ class DedupeEngine:
         for item in candidates:
             if not self._is_eligible(item):
                 continue
-            key = (item.get("clusterKey") or "").strip()
-            dedupe_key = item.get("dedupeKey") or ""
-            if dedupe_key:
+            key = (item.get("clusterKeyRule") or item.get("clusterKey") or "").strip()
+            dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ""
+            if dedupe_key and not item.get("clusterKeyRule"):
                 recomputed = self.build_cluster_key(dedupe_key)
                 if recomputed:
                     key = recomputed
                     item["clusterKey"] = recomputed
+                    item["clusterKeyRule"] = recomputed
             if not key:
                 continue
             matched = kept_by_cluster.get(key)

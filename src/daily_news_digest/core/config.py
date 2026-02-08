@@ -111,6 +111,7 @@ DATA_DIR = Path(os.getenv("DATA_DIR", str(REPO_ROOT / "data")))
 
 OUTPUT_JSON = os.getenv("OUTPUT_JSON", str(DATA_DIR / "daily_digest.json"))
 DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", str(DATA_DIR / "dedupe_history.json"))
+METRICS_JSON = os.getenv("METRICS_JSON", str(DATA_DIR / "digest_metrics.json"))
 DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "3"))
 SOURCE_WEIGHT_ENABLED = os.getenv("SOURCE_WEIGHT_ENABLED", "1") == "1"
 SOURCE_WEIGHT_FACTOR = float(os.getenv("SOURCE_WEIGHT_FACTOR", "0.6"))
@@ -215,6 +216,18 @@ _fresh_except_env = set(_parse_csv_env("TOP_FRESH_EXCEPT_SIGNALS"))
 TOP_FRESH_EXCEPT_SIGNALS = _fresh_except_env if _fresh_except_env else {"policy", "sanctions", "earnings", "stats"}
 TOP_FRESH_EXCEPT_MAX_HOURS = int(os.getenv("TOP_FRESH_EXCEPT_MAX_HOURS", "168"))
 TOP_REQUIRE_PUBLISHED = os.getenv("TOP_REQUIRE_PUBLISHED", "1") == "1"
+
+# ==========================================
+# Signal cap (편향 완화)
+# ==========================================
+
+SIGNAL_CAP_ENABLED = os.getenv("SIGNAL_CAP_ENABLED", "1") == "1"
+SIGNAL_CAP_RATIO = float(os.getenv("SIGNAL_CAP_RATIO", "0.3"))
+SIGNAL_CAP_PENALTY = float(os.getenv("SIGNAL_CAP_PENALTY", "0.7"))
+_signal_cap_labels_env = set(_parse_csv_env("SIGNAL_CAP_LABELS"))
+SIGNAL_CAP_LABELS = _signal_cap_labels_env if _signal_cap_labels_env else {"policy", "sanctions"}
+SIGNAL_CAP_EXCEPT_LONG_TRIGGER = os.getenv("SIGNAL_CAP_EXCEPT_LONG_TRIGGER", "1") == "1"
+SIGNAL_CAP_EXCEPT_IMPORTANCE = int(os.getenv("SIGNAL_CAP_EXCEPT_IMPORTANCE", "4"))
 
 # ==========================================
 # low_quality 정책

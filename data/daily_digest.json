@@ -3,31 +3,32 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-09T00:55:47.293187+09:00",
+  "lastUpdatedAt": "2026-02-09T03:01:25.008756+09:00",
   "items": [
     {
       "id": "2026-02-09_1",
       "date": "2026-02-09",
-      "category": "금융",
-      "title": "정제 마진 호조 및 유가 안정에 따른 정유업계 실적 반등 기대",
+      "category": "산업",
+      "title": "엔비디아 주가 8% 상승, 젠슨 황 CEO의 6,600억 달러 규모 설비 투자 지속 가능 발언",
       "summary": [
-        "정제 마진 강세가 전망되는 가운데 국제 유가도 안정될 것으로 예상되어 올해 정유업계의 실적 회복 기대감이 커지고 있습니다.",
-        "미국의 제재와 공급 차질로 정제 마진이 상승 전환되었고, 정제 설비 축소로 구조적인 강세가 예상됩니다."
+        "젠슨 황 엔비디아 CEO는 AI 인프라에 대한 기술 업계의 급증하는 설비 투자가 정당하다고 밝혔습니다.",
+        "그는 주요 고객사인 메타, 아마존, 구글, 마이크로소프트가 AI 인프라에 대한 투자를 대폭 늘릴 계획이라고 언급했습니다.",
+        "이들 하이퍼스케일러는 올해 총 6,600억 달러를 설비 투자에 지출할 수 있으며, 이 중 상당 부분이 엔비디아 칩 구매에 사용될 것이라고 예상됩니다."
       ],
-      "whyImportant": "정유 업계의 실적 개선은 에너지 시장 전반에 걸쳐 영향을 미치며, 관련 기업들의 투자 및 생산 전략에 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 정제 설비 순증설 규모가 올해 약 79만 배럴에 그칠 것으로 예상되어, 최소 2030년까지 공급 부족으로 정제 마진 상승세가 계속될 것이라는 분석이 있습니다.",
+      "whyImportant": "AI 인프라 투자의 지속 가능성은 엔비디아뿐만 아니라 관련 산업 전반의 성장과 발전에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 하이퍼스케일러들이 올해 총 6,600억 달러를 설비 투자에 지출할 수 있다는 언급은 AI 인프라 투자 규모가 상당함을 시사합니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "지정학적 변수와 수급 여건 영향으로 정제마진 강세가 전망되는 가운데, 국제유가도 안정적일 것으로 예상되면서 올해 정유업계의 실적 회복 기대감이 커지는 모습이다."
+          "evidence": "Huang said that the “largest infrastructure buildout in human history” is being driven by “sky high” demand for computing power, which AI companies and hyperscalers can use to make more money."
         }
       ],
-      "dedupeKey": "정제-마진-호조-유가-안정-따른-정유업계-실적",
-      "clusterKey": "설비투자/정제/실적/제재",
+      "dedupeKey": "엔비디아-주가-상승-젠슨-ceo-600억-달러-규모",
+      "clusterKey": "설비투자/엔비디아/투자",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YQnhpNTE4Y3BlVlFMd0V2M2hyT2NZcHpIN21WZkZhUTE5MmNQbXpyaF9ZMUdRcVNPY3hwRGpzWEp3SjZCRDJ5TzY2TW9KWjNQQkRrLU1vZTQ1aGxCeS1SWGFocU1QNDZVRFl5ZnZRYnpqV1I3?oc=5",
-      "publishedAt": "2026-02-07T21:10:00+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXZwRXJVWnp0S19fMmk1SVpXZUJyQjFrdzdGdHhCLXd5YzZqY0lmelBOekNyLUhBWXRuT1c2dkQxSWFVVHpsdDBDVy16Nlpzb0dMc2RGbnQxakY4UVZNTFFnTktCaUJTX25sc1Q2M3Bab1BhVEYxSmpNU25HTFJTajlOajhfbDQwUWtWNTBUSUxZcnFMRlROWHhGbmwzODlvWDlwOGF5LW9WTlM4N1pZUExR0gG3AUFVX3lxTE9wS2trTXQ3M1hESThyRW1nRWdldFJ5VXNQaGp0Zi1iME1LYlJhaHBBcFppR3NzQWpkRmtxT2tveFR3NERpM3V5WnRURWY1SFpfSWNGdTlpN3Bpa3hVVEQ3TzZuYkMxMjZ5UDJhb3BiNkMxMjRsVERGWVBYMFNVc1FmNE8xenFTRkx1MzJKdzk4OFduZjVYcnhMWTEyakRrMFV1bUM0MS1YMkZwVjlqOW9sdDNvemhVOA?oc=5",
+      "publishedAt": "2026-02-06T18:59:57+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -39,15 +40,15 @@
       "id": "2026-02-09_2",
       "date": "2026-02-09",
       "category": "금융",
-      "title": "다카이치 내각 외교 정책, 한일 협력 유지 전망",
+      "title": "다카이치 총리 외교 정책, 한일 협력 유지 전망",
       "summary": [
-        "일본 다카이치 총리의 국내 정치 기반 강화로 한일 관계는 큰 변화가 없을 것이라는 전망이 나왔습니다.",
-        "중국과의 갈등 속에서 한국과는 역사·영토 문제를 관리하며 양호한 관계를 유지할 것이라는 분석입니다."
+        "다카이치 총리의 국내 정치 기반 강화로 한일 관계는 큰 변화가 없을 것이라는 전망이 나왔습니다.",
+        "중국과의 갈등 속에서 한국과는 양호한 관계를 유지할 것이라는 분석입니다."
       ],
-      "whyImportant": "한일 관계의 지속적인 협력 여부는 외교 및 안보 정책 결정에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 기사에서 전문가들은 국제 환경 변화가 없는 상황에서 한일 관계 기조가 바뀌지 않을 가능성이 크다고 언급했습니다.",
+      "whyImportant": "한국과 일본의 관계는 경제 및 안보에 중요한 영향을 미치므로, 정치적 변화에도 불구하고 협력 관계가 유지될지 여부가 중요합니다.",
+      "importanceRationale": "근거: 기사에서 전문가들은 국제 환경 변화가 없는 상황에서 한일 관계 기조가 바뀌지 않을 가능성이 크다고 언급하며, 다카이치 총리의 정치적 기반 강화를 그 이유로 들었습니다.",
       "impactSignals": [],
-      "dedupeKey": "다카이치-내각-외교-정책-한일-협력-일본-총리",
+      "dedupeKey": "다카이치-총리-외교-정책-한일-협력-국내-정치",
       "clusterKey": "한일_정책/다카이치",
       "matchedTo": null,
       "sourceName": "한국경제",
@@ -63,30 +64,56 @@
     {
       "id": "2026-02-09_3",
       "date": "2026-02-09",
-      "category": "정책",
-      "title": "공정위, DB 김준기 총수 검찰 고발",
+      "category": "기술",
+      "title": "구글 고정밀 지도 반출 관련 보완 서류 제출, 정부 최종 판단 주목",
       "summary": [
-        "공정거래위원회는 김준기 DB 창업회장을 공정거래법 위반 혐의로 검찰에 고발했습니다.",
-        "김 창업회장이 '그림자 계열사'를 활용해 그룹 지배력을 유지하고, 관련 자료를 허위 제출한 혐의입니다.",
-        "공정위는 DB그룹이 재단 회사들을 총수 일가의 지배력 유지와 사익 추구에 활용했다고 판단했습니다."
+        "구글이 고정밀 지도 국외 반출 관련 보완 서류를 정부에 제출했습니다.",
+        "정부는 관계 부처 협의체를 통해 반출 여부를 심의할 예정입니다.",
+        "이번 결정은 국내 공간정보 산업 경쟁력과 통상·외교 문제에 영향을 줄 수 있습니다."
       ],
-      "whyImportant": "이번 고발은 기업 총수의 불법적인 지배력 유지 및 사익 추구 행위에 대한 규제 당국의 강력한 제재 의지를 보여줍니다.",
-      "importanceRationale": "근거: 공정위는 김준기 창업회장이 2개의 재단과 15개의 회사를 DB 소속 법인 현황에서 누락한 것을 확인하고 검찰에 고발했으며, 이는 2010년부터 시작된 행위입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "소회의 의결에 따라 공정위는 김 창업회장을 독점규제 및 공정거래에 관한 법률(공정거래법) 위반 혐의로 검찰에 고발했다."
-        }
-      ],
-      "dedupeKey": "공정위-김준기-총수-검찰-고발-공정거래위원회-그룹-db그룹",
-      "clusterKey": "법집행/플랫폼규제/김준기",
+      "whyImportant": "구글의 고정밀 지도 데이터 반출 결정은 국내 공간정보 산업과 정부의 디지털 규제에 대한 통상·외교 문제에 영향을 미칠 수 있어 중요합니다.",
+      "importanceRationale": "근거: 정부는 구글이 제출한 보완 서류를 검토 후 8개 부처가 참여하는 협의체에서 반출 여부를 심의할 예정이며, 이는 향후 10년간 최대 197조원의 경제적 손실을 야기할 수 있다는 주장이 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "구글-고정밀-지도-반출-보완-서류-정부-최종",
+      "clusterKey": "구글/고정밀/지도",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BZHQ1cS1jaTRQMDJUYk1xVlZ3aFBQTDVDVlVWVmZfVmZQYnFkVEVnVDIxdTVzSHltRmdPXzlEbGJmeHFNQTNJOXRhaTBUaEdRczRjdnQySXNxQdIBVEFVX3lxTE5jTUEtOVk1TG9wSGlqNk1CNUUtRnczakRIQkQxRnFLTHBRR3AyV1Vmd0JXc3ktSEV1bEFPMk5ObGhsWVJLd0VqRlkxcE9sWE0yTDkzNQ?oc=5",
-      "publishedAt": "2026-02-08T08:53:22+00:00",
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9DMXpUNEd3LTZHQjNUZV9GTVZILUJTd1lTaEUxNFpDNVNBUmtKY0tQRjBRZUw3alY0amFUV2hIZjlZNE5CNUxmUlphQ25aajlmcmg1Sm9mSks3S1p3Sm1aNWxUR0pocjNa0gFsQVVfeXFMT0VBa3FId3ZCZnlHUWVEWEkzRFU3a0JsVXZJN29EdG8wdnFEWjFoXzBodmhfd3hHckNZVm1GRzgwOWRGTlBBN28zZnhhMTJLTDJWRlRTdEJwQWpVaTVYT21CUVMtNUJBZW9TVHBO?oc=5",
+      "publishedAt": "2026-02-08T09:30:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_4",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "IBK투자증권, 연간 순이익 500억 원 돌파",
+      "summary": [
+        "IBK투자증권의 연간 순이익이 500억 원을 넘어서며 전년 대비 100억 원 이상 증가했습니다.",
+        "세일즈앤트레이딩(S&T) 부문의 실적 개선이 주요 요인으로 분석됩니다.",
+        "총 자산은 10조 4030억 원으로 증가했으며, 자본은 1조 3720억 원으로 늘었습니다."
+      ],
+      "whyImportant": "IBK투자증권의 실적 개선은 금융 투자 업계의 경쟁 심화 속에서 특정 부문의 성장이 전체 실적에 미치는 영향을 보여주는 사례입니다.",
+      "importanceRationale": "근거: IBK투자증권의 지난해 당기순이익은 575억 원으로 전년 동기 대비 26.4% 증가했으며, S&T 부문은 3분기 누적 기준 세전분기손익이 42.3% 늘었습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "IBK투자증권이 연간 순이익 500억원을 넘기며 1년 새 100억원 넘게 성장한 것으로 나타났다."
+        }
+      ],
+      "dedupeKey": "ibk투자증권-연간-순이익-500억-돌파-100억-4030억-3720억",
+      "clusterKey": "실적/연간",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuSF9Fczl3QkdNcEItazZnM0ZtM0ZSbFZsWnNkWVk1WE55dG5GWmRKZjVYbnhfQmFRR0lna3k3ZlUtR0pwd1dKSkZUUVh4TUFhaC1zZU1HREQ1UEJQOFhPaGxZRjZEUEd50gFsQVVfeXFMTnA3bFY3ajU1SEZOTVVTSjJfV3ZlQ1ROc2NuWFA4bXlRc1FJOWJkbTBYUjgyVy1saURON1JrRWhRVEgybFNIS2NUOEp2RmZhenQwd1JuNUszdnpzSGpKaEFEWTNfa3lZY2RQZ2ti?oc=5",
+      "publishedAt": "2026-02-07T04:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

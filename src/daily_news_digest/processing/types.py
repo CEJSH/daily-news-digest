@@ -9,6 +9,7 @@ class PipelineItem(TypedDict, total=False):
     summary: str
     summaryRaw: str
     fullText: str
+    itemId: NotRequired[str]
     published: NotRequired[str]
     publishedAtUtc: NotRequired[str]
     updatedAtUtc: NotRequired[str]
@@ -22,6 +23,7 @@ class PipelineItem(TypedDict, total=False):
     dedupeKeyAI: NotRequired[str]
     clusterKey: NotRequired[str]
     clusterKeyRule: NotRequired[str]
+    dedupeInputHash: NotRequired[str]
     matchedTo: NotRequired[str]
     readTimeSec: int
     ageHours: NotRequired[float]

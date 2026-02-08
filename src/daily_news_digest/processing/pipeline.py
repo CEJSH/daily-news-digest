@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Callable
 
+import hashlib
+
 import feedparser
 
 from daily_news_digest.core.config import (
@@ -304,6 +306,7 @@ class DigestPipeline:
         grouped_items: dict[str, list[Item]] = {}
         all_items: list[Item] = []
         total_seen = 0
+        item_seq = 0
         topic_limits: dict[str, int] = {}
         yesterday_dedupe_map = self._dedupe_engine.load_recent_dedupe_map(
             self._output_json,
@@ -354,10 +357,12 @@ class DigestPipeline:
 
                 tokens = self._dedupe_engine.normalize_title_tokens(title_clean)
                 text_all = (title_clean + " " + analysis_text).lower()
-                impact_signals = self._filter_scorer.get_impact_signals(text_all)
-                dedupe_key = self._dedupe_engine.build_dedupe_key(title_clean, analysis_text)
-                cluster_hint = f"{title_clean} {summary}".strip()
+                impact_signals = list(self._filter_scorer.get_impact_signals(text_all))
+                dedupe_input_text = f"{title_clean} {summary}".strip()
+                dedupe_key = self._dedupe_engine.build_dedupe_key(title_clean, summary)
+                cluster_hint = dedupe_input_text
                 cluster_key = self._dedupe_engine.build_cluster_key(dedupe_key, hint_text=cluster_hint)
+                input_hash = hashlib.sha1(clean_text(dedupe_input_text).encode("utf-8")).hexdigest()[:12]
                 dedupe_ngrams = self._dedupe_engine.dedupe_key_ngrams(dedupe_key, DEDUPKEY_NGRAM_N)
                 matched_to = yesterday_dedupe_map.get(cluster_key) if cluster_key else None
 
@@ -401,7 +406,14 @@ class DigestPipeline:
                     feed_low_score += 1
                     continue
 
+                item_seq += 1
+                item_id = f"item_{item_seq}"
+                self._log(
+                    f"item_build id={item_id} dedupe_input_hash={input_hash} "
+                    f"dedupeKey={dedupe_key} clusterKey={cluster_key}"
+                )
                 item = {
+                    "itemId": item_id,
                     "title": title_clean,
                     "link": link,
                     "summary": summary,
@@ -418,6 +430,7 @@ class DigestPipeline:
                     "dedupeKeyRule": dedupe_key,
                     "clusterKey": cluster_key,
                     "clusterKeyRule": cluster_key,
+                    "dedupeInputHash": input_hash,
                     "matchedTo": matched_to,
                     "readTimeSec": read_time_sec,
                     "ageHours": age_hours,

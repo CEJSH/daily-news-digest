@@ -3,7 +3,12 @@ from __future__ import annotations
 import datetime
 from typing import Any, Callable
 
-from daily_news_digest.core.constants import SANCTIONS_KEYWORDS, TRADE_TARIFF_KEYWORDS
+from daily_news_digest.core.constants import (
+    IMPACT_SIGNAL_LONG_TRIGGERS,
+    SANCTIONS_KEYWORDS,
+    TRADE_TARIFF_KEYWORDS,
+    normalize_source_name,
+)
 from daily_news_digest.processing.types import Item
 
 
@@ -138,6 +143,8 @@ class ItemFilterScorer:
         self._policy_action_keywords = [k.lower() for k in policy_action_keywords]
         self._source_tier_a = source_tier_a
         self._source_tier_b = source_tier_b
+        self._source_tier_a_norm = {normalize_source_name(s).lower() for s in source_tier_a if s}
+        self._source_tier_b_norm = {normalize_source_name(s).lower() for s in source_tier_b if s}
         self._source_weight_enabled = source_weight_enabled
         self._source_weight_factor = source_weight_factor
         self._top_source_allowlist = {s for s in top_source_allowlist if s}
@@ -209,24 +216,12 @@ class ItemFilterScorer:
 
         priority = [
             "policy",
-            "earnings",
-            "security",
-            "capex",
-            "investment",
-            "market-demand",
             "sanctions",
-            "regulation-risk",
-            "industry-trend",
-            "technology",
-            "consumer-behavior",
-            "labor",
-            "health",
-            "environment",
-            "infrastructure",
-            "social-impact",
-            "budget",
-            "stats",
+            "capex",
             "infra",
+            "security",
+            "earnings",
+            "market-demand",
         ]
         ordered = [s for s in priority if s in signals]
         return ordered[:2]
@@ -257,10 +252,10 @@ class ItemFilterScorer:
         return self.map_topic_to_category(topic)
 
     def source_weight(self, source_name: str) -> float:
-        s = (source_name or "").strip().lower()
-        if any(a.lower() in s for a in self._source_tier_a):
+        normalized = normalize_source_name(source_name).lower()
+        if normalized and normalized in self._source_tier_a_norm:
             return 3.0
-        if any(b.lower() in s for b in self._source_tier_b):
+        if normalized and normalized in self._source_tier_b_norm:
             return 1.5
         return 0.3
 
@@ -283,21 +278,36 @@ class ItemFilterScorer:
         delta = now - published_dt
         return delta.total_seconds() / 3600.0
 
-    def passes_freshness(self, age_hours: float | None, impact_signals: list[str]) -> bool:
+    def _long_impact_labels(self, text_all: str, impact_signals: list[str]) -> set[str]:
+        if not text_all or not impact_signals:
+            return set()
+        text_lower = text_all.lower()
+        triggered: set[str] = set()
+        for label in impact_signals:
+            if label not in self._long_impact_signals:
+                continue
+            triggers = IMPACT_SIGNAL_LONG_TRIGGERS.get(label, [])
+            if any(kw.lower() in text_lower for kw in triggers):
+                triggered.add(label)
+        return triggered
+
+    def passes_freshness(self, age_hours: float | None, impact_signals: list[str], text_all: str) -> bool:
         if age_hours is None:
             return True
         if age_hours > 168:
             return False
-        if age_hours > 72 and not any(s in self._long_impact_signals for s in impact_signals):
+        if age_hours > 72 and not self._long_impact_labels(text_all, impact_signals):
             return False
         return True
 
-    def passes_top_freshness(self, age_hours: float | None, impact_signals: list[str]) -> bool:
+    def passes_top_freshness(self, age_hours: float | None, impact_signals: list[str], text_all: str) -> bool:
         if age_hours is None:
             return not self._top_require_published
         if age_hours <= self._top_fresh_max_hours:
             return True
         if any(s in self._top_fresh_except_signals for s in impact_signals):
+            if not self._long_impact_labels(text_all, impact_signals):
+                return False
             return age_hours <= self._top_fresh_except_max_hours
         return False
 
@@ -343,13 +353,20 @@ class ItemFilterScorer:
         impact_signals: list[str],
         read_time_sec: int,
         source_name: str | None = None,
+        text_all: str | None = None,
     ) -> float:
         score = 0.0
-        if any(s in self._long_impact_signals for s in impact_signals):
+        long_labels = self._long_impact_labels(text_all or "", impact_signals)
+        if long_labels:
             score += 3.0
-        if any(s in ["capex", "infra", "security"] for s in impact_signals):
+        med_labels = {
+            s
+            for s in impact_signals
+            if s in {"policy", "sanctions", "capex", "infra", "security"} and s not in long_labels
+        }
+        if med_labels:
             score += 2.0
-        if any(s in ["earnings", "market-demand"] for s in impact_signals):
+        if any(s in {"earnings", "market-demand"} for s in impact_signals):
             score += 1.0
         if read_time_sec <= 20:
             score += 0.5
@@ -390,7 +407,7 @@ class ItemFilterScorer:
             return True
         if not impact_signals and not self._has_structural_context(text_all, impact_signals):
             return True
-        if not self.passes_freshness(age_hours, impact_signals):
+        if not self.passes_freshness(age_hours, impact_signals, text_all):
             return True
         if not self.passes_emotional_filter(category, text_all, impact_signals):
             return True

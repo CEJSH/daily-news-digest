@@ -151,6 +151,7 @@ class DigestPipeline:
             and self._filter_scorer.passes_top_freshness(
                 item.get("ageHours"),
                 item.get("impactSignals") or [],
+                f"{item.get('title', '')} {item.get('summary', '')} {item.get('fullText', '')}",
             )
         ]
         allowlist_candidates = [
@@ -265,7 +266,12 @@ class DigestPipeline:
                     continue
 
                 read_time_sec = estimate_read_time_seconds(analysis_text)
-                score = self._filter_scorer.score_entry(impact_signals, read_time_sec, source_name)
+                score = self._filter_scorer.score_entry(
+                    impact_signals,
+                    read_time_sec,
+                    source_name,
+                    text_all,
+                )
                 if score < self._min_score:
                     feed_low_score += 1
                     continue

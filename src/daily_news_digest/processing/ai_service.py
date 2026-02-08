@@ -381,7 +381,13 @@ class AIEnrichmentService:
                     summary_raw = item.get("summaryRaw") or item.get("summary") or ""
                     read_time_sec = self._estimate_read_time_seconds(summary_raw)
                     item["readTimeSec"] = read_time_sec
-                item["score"] = self._score_entry(merged, read_time_sec, item.get("source"))
+                summary_value = item.get("summary")
+                if isinstance(summary_value, list):
+                    summary_text = " ".join([str(x) for x in summary_value if x])
+                else:
+                    summary_text = str(summary_value or "")
+                text_all = f"{item.get('title', '')} {item.get('summaryRaw', '')} {summary_text} {item.get('fullText', '')}"
+                item["score"] = self._score_entry(merged, read_time_sec, item.get("source"), text_all)
             importance = ai_result.get("importance_score")
             if not importance:
                 continue

@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+import re
+
 HARD_EXCLUDE_KEYWORDS = [  # 보고서/행사/홍보성 등 즉시 제외 키워드
     "동향", "동향리포트", "리포트", "브리프", "백서", "자료집", "보고서", "연구보고서",
-    "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수", "보도자료",
-    "홍보", "프로모션", "할인", "출시기념", "사설", "칼럼", "기고", "기자수첩",
-    "whitepaper", "report", "brief", "webinar", "conference", "forum", "press release",
-    "promotion", "apply now", "opinion", "editorial", "column", "commentary", "view",
-    "must", "should"
+    "세미나", "웨비나", "컨퍼런스", "포럼", "행사", "모집", "신청", "접수",
+    "홍보", "프로모션", "할인", "출시기념", "기자수첩",
+    "whitepaper", "report", "brief", "webinar", "conference", "forum",
+    "promotion", "apply now"
 ]
 
 HARD_EXCLUDE_URL_HINTS = [  # URL에 포함되면 제외하는 힌트 경로
@@ -135,7 +136,7 @@ DEDUPE_CLUSTER_EVENT_LABELS = {
 # 클러스터 도메인 키워드(상위 주제)
 DEDUPE_CLUSTER_DOMAINS = {
     "에너지": {
-        "에너지", "전력", "전기", "전력망", "천연가스","natural gas" "lng", "원전", "원자력", "smr", "원자로",
+        "에너지", "전력", "전기", "전력망", "천연가스", "natural gas", "lng", "원전", "원자력", "smr", "원자로",
         "energy", "power", "electricity", "nuclear",  "grid", "utility"
     },
     "반도체": {
@@ -155,6 +156,21 @@ DEDUPE_CLUSTER_DOMAINS = {
     },
     "클라우드": {
         "클라우드", "cloud", "데이터센터", "datacenter", "datacentre", "aws", "azure", "gcp", "hyperscaler","colocation", "코로케이션", "서버팜",
+    },
+    "금융": {
+        "금융", "은행", "증권", "보험", "자산운용", "투자", "대출", "채권", "주식", "capital market", "bank",
+    },
+    "고용": {
+        "고용", "실업", "일자리", "노동", "임금", "취업", "채용", "layoff", "employment", "job", "wage",
+    },
+    "헬스케어": {
+        "헬스케어", "의료", "병원", "제약", "바이오", "보건", "의약", "백신", "healthcare", "pharma", "biotech",
+    },
+    "공급망": {
+        "공급망", "물류", "조달", "납품", "재고", "supply chain", "logistics", "procurement",
+    },
+    "플랫폼규제": {
+        "플랫폼", "앱마켓", "앱스토어", "독점", "반독점", "규제", "공정위", "platform", "app store", "antitrust",
     },
 }
 
@@ -198,92 +214,89 @@ TRADE_TARIFF_KEYWORDS = {
     "관세", "무역", "무역전쟁", "협상", "협정",
 }
 
-IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑
+ALLOWED_IMPACT_SIGNALS = {
+    "policy",
+    "sanctions",
+    "capex",
+    "infra",
+    "security",
+    "earnings",
+    "market-demand",
+}
+
+IMPACT_SIGNALS_MAP = {  # 영향도 신호어(카테고리별) 매핑 - 허용 라벨만 유지
     "policy": [
         "bill", "law", "amendment", "regulation", "rule", "policy", "guideline", "government",
         "parliament", "congress", "penalty", "fine", "license", "approval", "supervision",
         "tariff", "tariffs", "trade", "trade talks", "negotiation", "agreement",
         "법안", "개정", "시행령", "규정", "규제", "국회", "정부", "금융위", "공정위",
-        "과징금", "인허가", "감독", "제재", "가이드라인", "관세", "무역", "협상", "협정",
-    ],
-    "earnings": [
-        "earnings", "guidance", "consensus", "profit", "loss", "margin", "forecast", "outlook",
-        "revenue", "disclosure", "quarter", "q1", "q2", "q3", "q4", "upgrade", "downgrade",
-        "매출", "영업이익", "순이익", "실적", "컨센서스", "가이던스", "전망", "마진", "상향", "하향",
-    ],
-    "capex": [
-        "capex", "expansion", "build", "construction", "plant", "factory", "line",
-        "data center", "datacentre", "facility", "capacity", "utilization",
-        "증설", "설비", "시설", "공장", "데이터센터", "건설", "라인", "캐팩스", "가동률", "가동",
-    ],
-    "investment": [
-        "funding", "financing", "fundraising", "raise", "raised", "round", "series",
-        "investment", "invests", "invest", "equity", "stake", "valuation", "capital",
-        "투자", "지분투자", "전략적 투자", "투자유치", "펀딩", "라운드", "시리즈",
-        "자금조달", "벤처", "vc", "밸류에이션", "기업가치", "투자협상", "투자 협상",
-    ],
-    "market-demand": [
-        "sales", "demand", "deliveries", "shipments", "orders", "bookings", "inventory",
-        "price increase", "price decrease", "pricing", "consumption", "consumer sentiment",
-        "판매", "수요", "출하", "주문", "예약", "재고", "가격 상승", "가격 하락", "소비 둔화", "유가",
-    ],
-    "security": [
-        "breach", "hack", "leak", "attack", "ransomware", "cve", "vulnerability",
-        "terror", "shooting", "public safety", "civil rights", "national security",
-        "침해", "해킹", "유출", "공격", "랜섬웨어", "취약점", "민권", "총격", "테러", "안보",
-        "격추", "위협", "드론", "유조선", "해협 봉쇄", "해협봉쇄",
+        "과징금", "인허가", "감독", "가이드라인", "관세", "무역", "협상", "협정",
     ],
     "sanctions": [
         "sanction", "sanctions", "export control", "entity list", "embargo", "asset freeze",
         "assets frozen", "shadow fleet",
         "수출통제", "블랙리스트", "자산 동결", "자산동결", "동결", "거래 금지", "거래금지", "금수", "금수조치", "embargo",
     ],
-    "budget": [
-        "budget", "fiscal", "appropriation", "incentive", "subsidy",
-        "예산", "재정", "지원금", "세제혜택",
-    ],
-    "stats": [
-        "cpi", "ppi", "inflation", "gdp", "pmi", "unemployment", "jobs report", "payrolls",
-        "retail sales", "industrial production", "trade balance", "macro data", "economic data",
-        "통계", "지표", "물가", "소비자물가", "생산자물가", "gdp", "pmi", "실업률", "고용지표",
-        "고용", "수출입", "무역수지", "소매판매", "산업생산", "경제지표",
+    "capex": [
+        "capex", "expansion", "build", "construction", "plant", "factory", "line",
+        "data center", "datacentre", "facility", "capacity", "utilization",
+        "증설", "설비", "시설", "공장", "데이터센터", "건설", "라인", "캐팩스", "가동률", "가동",
     ],
     "infra": ["outage", "downtime", "disruption", "장애", "정전", "서비스 중단"],
-    "industry-trend": [
-        "industry trend", "sector trend", "structural trend", "industry-wide", "sector-wide",
-        "업계", "업황", "산업 전반", "산업 전체", "업계 동향", "산업 구조",
+    "security": [
+        "breach", "hack", "leak", "attack", "ransomware", "cve", "vulnerability",
+        "terror", "shooting", "public safety", "civil rights", "national security",
+        "침해", "해킹", "유출", "공격", "랜섬웨어", "취약점", "민권", "총격", "테러", "안보",
+        "격추", "위협", "드론", "유조선", "해협 봉쇄", "해협봉쇄",
     ],
-    "technology": [
-        "technology", "tech", "innovation", "r&d", "research", "roadmap", "patent", "standard",
-        "기술", "신기술", "기술 개발", "기술 로드맵", "연구개발", "특허", "표준", "표준화",
+    "earnings": [
+        "earnings", "guidance", "consensus", "profit", "loss", "margin", "forecast", "outlook",
+        "revenue", "disclosure", "quarter", "q1", "q2", "q3", "q4", "upgrade", "downgrade",
+        "매출", "영업이익", "순이익", "실적", "컨센서스", "가이던스", "전망", "마진", "상향", "하향",
     ],
-    "consumer-behavior": [
-        "consumer", "consumer behavior", "user behavior", "usage", "subscriber", "churn", "retention",
-        "구매", "소비자", "소비 패턴", "이용자", "사용자", "가입자", "해지", "이탈", "재구매",
+    "market-demand": [
+        "sales", "demand", "deliveries", "shipments", "orders", "bookings", "inventory",
+        "price increase", "price decrease", "pricing", "consumption", "consumer sentiment",
+        "판매", "수요", "출하", "주문", "예약", "재고", "가격 상승", "가격 하락", "소비 둔화", "유가",
     ],
-    "regulation-risk": [
-        "regulatory risk", "compliance", "investigation", "probe", "antitrust", "litigation",
-        "규제 리스크", "규제 위험", "법적 리스크", "컴플라이언스", "조사", "반독점", "소송",
+}
+
+IMPACT_SIGNAL_BASE_LEVELS = {
+    "policy": "med",
+    "sanctions": "med",
+    "capex": "med",
+    "infra": "med",
+    "security": "med",
+    "earnings": "low",
+    "market-demand": "low",
+}
+
+IMPACT_SIGNAL_LONG_TRIGGERS = {
+    "policy": [
+        "law passed", "enacted", "implemented", "effective date", "takes effect", "took effect",
+        "budget approved", "appropriation approved", "treaty signed", "legally binding",
+        "법안 통과", "법률 통과", "법률 시행", "발효", "효력 발생", "공포", "승인", "확정",
+        "예산 승인", "예산 확정", "예산안 통과", "조약 서명", "협정 서명", "법적 구속력",
     ],
-    "labor": [
-        "labor", "union", "strike", "wage", "workforce", "layoff", "headcount", "hiring",
-        "노조", "파업", "임금", "고용", "인력", "채용", "감원", "해고", "인력 구조조정",
+    "sanctions": [
+        "sanctions imposed", "sanctions expanded", "secondary sanctions", "asset freeze",
+        "assets frozen", "export ban", "export controls imposed", "designated", "blacklist",
+        "제재 부과", "제재 확대", "제재 대상", "제재 명단", "자산 동결", "거래 금지",
+        "수출 금지", "수출 금지령", "수출 통제 시행", "2차 제재", "블랙리스트",
     ],
-    "health": [
-        "health", "healthcare", "medical", "disease", "infection", "vaccine", "clinical", "drug",
-        "보건", "의료", "건강", "질병", "감염", "백신", "임상", "의약",
+    "earnings": [
+        "multi-year", "long-term", "long-term guidance", "multi-year guidance",
+        "structural margin", "margin structure", "restructuring", "business model shift",
+        "capex plan", "multi-year forecast",
+        "중장기", "장기", "중장기 가이던스", "장기 가이던스",
+        "구조적 마진", "마진 구조", "구조조정", "사업 재편",
+        "설비투자 계획 변경", "투자 계획 변경", "중장기 전망", "장기 전망", "다년 전망",
     ],
-    "environment": [
-        "environment", "climate", "emission", "carbon", "sustainability", "pollution",
-        "환경", "기후", "배출", "탄소", "온실가스", "지속가능", "오염", "환경규제",
-    ],
-    "infrastructure": [
-        "infrastructure", "grid", "utility", "power grid", "transmission", "pipeline", "port", "rail", "road",
-        "인프라", "전력망", "전력", "송전", "철도", "도로", "항만", "파이프라인", "데이터센터",
-    ],
-    "social-impact": [
-        "social impact", "public impact", "community", "inequality", "inclusion", "safety",
-        "사회적 영향", "공공", "지역사회", "불평등", "포용", "사회 안전",
+    "security": [
+        "mandatory", "required", "regulatory framework", "new framework",
+        "mandatory standards", "critical infrastructure",
+        "의무", "의무화", "필수", "강제", "규제 체계", "새 기준",
+        "표준 의무", "법적 의무", "핵심 인프라", "중요 인프라",
     ],
 }
 
@@ -320,5 +333,21 @@ MONTH_TOKENS = {  # 날짜 토큰 정규화/필터링용 월 문자열
     "november", "dec", "december"
 }
 
-LONG_IMPACT_SIGNALS = {"policy", "budget", "sanctions", "stats"}  # 장기 영향 신호 카테고리
+LONG_IMPACT_SIGNALS = {"policy", "sanctions", "earnings", "security"}  # 장기 영향 가능 신호(트리거 기반)
 MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "tv", "TV")  # 언론사명 접미사 추정
+
+def normalize_source_name(source_name: str) -> str:
+    if not source_name:
+        return ""
+    text = re.sub(r"[^0-9a-zA-Z가-힣\s]", " ", source_name)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+    token = text.split(" ")[0]
+    lowered = token.lower()
+    for suf in MEDIA_SUFFIXES:
+        suf_lower = suf.lower()
+        if lowered.endswith(suf_lower) and len(token) > len(suf):
+            token = token[: -len(suf)].strip()
+            break
+    return token or text

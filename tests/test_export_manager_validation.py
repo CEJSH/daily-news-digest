@@ -9,10 +9,10 @@ def _base_item(**overrides: object) -> dict:
         "date": "2024-01-10",
         "category": "IT",
         "title": "정부 정책 발표",
-        "summary": ["정부가 산업 정책을 발표했습니다."],
+        "summary": ["정부가 산업 정책을 발표하며 적용 범위를 설명했습니다."],
         "whyImportant": "정책 변화가 산업 전반에 영향을 줍니다.",
-        "importanceRationale": "근거: 정부가 정책 발표를 했습니다.",
-        "impactSignals": [{"label": "policy", "evidence": "정부가 정책 발표를 했습니다."}],
+        "importanceRationale": "근거: 정부가 산업 정책을 발표하며 적용 범위를 설명했습니다.",
+        "impactSignals": [{"label": "policy", "evidence": "정부가 산업 정책을 발표하며 적용 범위를 설명했습니다."}],
         "dedupeKey": "policy-change",
         "sourceName": "source",
         "sourceUrl": "http://example.com",
@@ -74,11 +74,62 @@ def test_validate_digest_rejects_invalid_policy_evidence(monkeypatch) -> None:
     monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
     monkeypatch.setattr(em, "TOP_LIMIT", 10)
     item = _base_item(
-        impactSignals=[{"label": "policy", "evidence": "단순 발표"}],
+        impactSignals=[{"label": "policy", "evidence": "기업은 새로운 제품을 공개하며 세부 사항을 설명했습니다."}],
     )
     valid, error = em._validate_digest(_build_digest([item]))
     assert valid is False
     assert error == "ERROR: INVALID_POLICY_LABEL"
+
+
+def test_validate_digest_rejects_invalid_impact_label(monkeypatch) -> None:
+    monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
+    monkeypatch.setattr(em, "TOP_LIMIT", 10)
+    item = _base_item(
+        impactSignals=[{"label": "budget", "evidence": "정부가 예산을 확정했습니다."}],
+    )
+    valid, error = em._validate_digest(_build_digest([item]))
+    assert valid is False
+    assert error == "ERROR: INVALID_IMPACT_LABEL"
+
+
+def test_validate_digest_rejects_missing_evidence(monkeypatch) -> None:
+    monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
+    monkeypatch.setattr(em, "TOP_LIMIT", 10)
+    item = _base_item(
+        impactSignals=[{"label": "policy", "evidence": ""}],
+    )
+    valid, error = em._validate_digest(_build_digest([item]))
+    assert valid is False
+    assert error == "ERROR: IMPACT_EVIDENCE_REQUIRED"
+
+
+def test_sanitize_impact_signals_drops_missing_evidence() -> None:
+    full_text = "정부가 정책 발표를 했습니다."
+    raw = [{"label": "policy", "evidence": "기사에 없는 문장"}]
+    assert em._sanitize_impact_signals(raw, full_text, "") == []
+
+
+def test_sanitize_impact_signals_requires_substring() -> None:
+    full_text = "미국 국무부는 제재 대상과 관련한 세부 내용을 발표했다."
+    raw = [{"label": "sanctions", "evidence": "이 문장은 본문에 존재하지 않는다는 점을 강조했습니다."}]
+    assert em._sanitize_impact_signals(raw, full_text, "") == []
+
+
+def test_sanitize_impact_signals_requires_sanctions_keywords() -> None:
+    full_text = "미국 국무부는 관련 조치를 설명하며 추가 발표를 이어갔다."
+    raw = [{"label": "sanctions", "evidence": "미국 국무부는 관련 조치를 설명하며 추가 발표를 이어갔다."}]
+    assert em._sanitize_impact_signals(raw, full_text, "") == []
+
+
+def test_sanitize_impact_signals_requires_market_demand_keywords() -> None:
+    full_text = "기업이 신규 전략을 발표했으며 사업 방향을 재정비한다고 밝혔다."
+    raw = [{"label": "market-demand", "evidence": "기업이 신규 전략을 발표했으며 사업 방향을 재정비한다고 밝혔다."}]
+    assert em._sanitize_impact_signals(raw, full_text, "") == []
+
+
+def test_long_trigger_required_for_upgrade() -> None:
+    signals = [{"label": "policy", "evidence": "정부가 정책 발표를 했습니다."}]
+    assert em._infer_importance_from_signals(signals) == 3
 
 
 def test_is_title_like_summary_detects_repetition() -> None:

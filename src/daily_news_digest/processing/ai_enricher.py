@@ -10,6 +10,7 @@ from typing import Any
 import requests
 
 from daily_news_digest.core.constants import (
+    ALLOWED_IMPACT_SIGNALS,
     IMPACT_SIGNALS_MAP,
     MARKET_DEMAND_EVIDENCE_KEYWORDS,
     SANCTIONS_EVIDENCE_KEYWORDS,
@@ -43,26 +44,7 @@ AI_INPUT_MAX_CHARS = int(os.getenv("AI_INPUT_MAX_CHARS", "4000"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
 AI_IMPACT_EVIDENCE_MIN_CHARS = int(os.getenv("AI_IMPACT_EVIDENCE_MIN_CHARS", "400"))
 
-_ALLOWED_IMPACT_SIGNALS = {
-    "policy",
-    "budget",
-    "sanctions",
-    "capex",
-    "earnings",
-    "stats",
-    "market-demand",
-    "security",
-    "infra",
-    "industry-trend",
-    "technology",
-    "consumer-behavior",
-    "regulation-risk",
-    "labor",
-    "health",
-    "environment",
-    "infrastructure",
-    "social-impact",
-}
+_ALLOWED_IMPACT_SIGNALS = set(ALLOWED_IMPACT_SIGNALS)
 _ALLOWED_QUALITY_TAGS = {
     "clickbait",
     "promo",
@@ -225,9 +207,11 @@ Routine updates, narrow scope, or insufficient detail.
 Low relevance/noise, or text too thin.
 
 impact_signals:
-- Choose only from candidates provided in user prompt (ImpactSignalCandidates). Do NOT invent new labels.
-- Max 2 items. If no solid evidence, return [].
-- Each item must include evidence sentence copied verbatim from the text.
+ - Choose only from candidates provided in user prompt (ImpactSignalCandidates). Do NOT invent new labels.
+ - Allowed labels are limited to: policy, sanctions, capex, infra, security, earnings, market-demand.
+ - Max 2 items. If no solid evidence, return [].
+ - Each item must include evidence sentence copied verbatim from the text.
+ - Do NOT reuse the same evidence sentence for multiple labels.
 Format:
   [
     {"label": "...", "evidence": "..."}
@@ -484,23 +468,12 @@ def _rule_based_impact_signals(text: str) -> list[str]:
             seen.add(s)
     priority = [
         "policy",
-        "earnings",
-        "security",
-        "capex",
-        "market-demand",
         "sanctions",
-        "regulation-risk",
-        "industry-trend",
-        "technology",
-        "consumer-behavior",
-        "labor",
-        "health",
-        "environment",
-        "infrastructure",
-        "social-impact",
-        "budget",
-        "stats",
+        "capex",
         "infra",
+        "security",
+        "earnings",
+        "market-demand",
     ]
     ordered = [s for s in priority if s in ordered]
     return ordered
@@ -535,11 +508,20 @@ def _normalize_impact_signal_objects(value: Any) -> list[dict[str, str]]:
         cleaned.append({"label": label, "evidence": evidence})
     return cleaned
 
+def _normalize_evidence_key(text: str) -> str:
+    t = clean_text(text or "").lower()
+    if not t:
+        return ""
+    t = re.sub(r"[^a-z0-9가-힣]+", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
 
 def _evidence_has_trigger(label: str, evidence: str) -> bool:
     if not label or not evidence:
         return False
     text = evidence.lower()
+    if label not in _ALLOWED_IMPACT_SIGNALS:
+        return False
     if label == "sanctions":
         return any(kw.lower() in text for kw in SANCTIONS_KEYWORDS)
     if label == "market-demand":
@@ -580,10 +562,11 @@ def _filter_impact_signal_objects(
 ) -> tuple[list[str], dict[str, str]]:
     full_lower = clean_text(full_text or "").lower()
     kept: list[dict[str, str]] = []
+    seen_evidence: set[str] = set()
     for item in items:
         label = item.get("label") or ""
         evidence = item.get("evidence") or ""
-        if label not in candidates:
+        if label not in candidates or label not in _ALLOWED_IMPACT_SIGNALS:
             continue
         if not evidence:
             continue
@@ -591,6 +574,10 @@ def _filter_impact_signal_objects(
             continue
         if not _evidence_has_trigger(label, evidence):
             continue
+        evidence_key = _normalize_evidence_key(evidence)
+        if not evidence_key or evidence_key in seen_evidence:
+            continue
+        seen_evidence.add(evidence_key)
         kept.append(item)
 
     sanctions_evidence = _pick_evidence_by_keywords(
@@ -604,9 +591,15 @@ def _filter_impact_signal_objects(
         SECURITY_EVIDENCE_KEYWORDS,
     )
     if sanctions_evidence and not any(k.get("label") == "sanctions" for k in kept):
-        kept.append({"label": "sanctions", "evidence": sanctions_evidence})
+        evidence_key = _normalize_evidence_key(sanctions_evidence)
+        if evidence_key and evidence_key not in seen_evidence:
+            kept.append({"label": "sanctions", "evidence": sanctions_evidence})
+            seen_evidence.add(evidence_key)
     if security_evidence and not any(k.get("label") == "security" for k in kept):
-        kept.append({"label": "security", "evidence": security_evidence})
+        evidence_key = _normalize_evidence_key(security_evidence)
+        if evidence_key and evidence_key not in seen_evidence:
+            kept.append({"label": "security", "evidence": security_evidence})
+            seen_evidence.add(evidence_key)
 
     deduped: list[dict[str, str]] = []
     seen = set()
@@ -619,23 +612,12 @@ def _filter_impact_signal_objects(
 
     priority = [
         "policy",
-        "earnings",
-        "security",
-        "capex",
-        "market-demand",
         "sanctions",
-        "regulation-risk",
-        "industry-trend",
-        "technology",
-        "consumer-behavior",
-        "labor",
-        "health",
-        "environment",
-        "infrastructure",
-        "social-impact",
-        "budget",
-        "stats",
+        "capex",
         "infra",
+        "security",
+        "earnings",
+        "market-demand",
     ]
     deduped = [k for k in deduped if k["label"] in priority]
     deduped.sort(key=lambda x: priority.index(x["label"]))

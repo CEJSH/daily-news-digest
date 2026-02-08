@@ -1032,14 +1032,14 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
                 drop_reason = drop_reason or "outdated"
                 status_value = "dropped"
         full_text_len = len(clean_text(full_text))
-        if full_text_len < 80 and not drop_reason and not is_merged:
+        if full_text_len < 50 and not drop_reason and not is_merged:
             drop_reason = "policy:full_text_missing"
             status_value = "dropped"
         if drop_reason or status_value == "dropped":
             continue
 
         ai_result = item.get("ai")
-        should_skip_ai = bool(is_merged or drop_reason or status_value == "dropped" or full_text_len < 80)
+        should_skip_ai = bool(is_merged or drop_reason or status_value == "dropped" or full_text_len < 50)
         if not should_skip_ai and (not isinstance(ai_result, dict) or not ai_result):
             ai_result = enrich_item_with_ai(item) or {}
         elif not isinstance(ai_result, dict):
@@ -1115,7 +1115,7 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
             why_important = _fallback_why()
         if not importance_rationale:
             importance_rationale = _fallback_importance_rationale()
-        if full_text_len < 80 and not is_merged:
+        if full_text_len < 50 and not is_merged:
             why_important = "본문 확보 실패로 판단 불가입니다."
             importance_rationale = "근거: 본문 확보 실패로 판단 불가입니다."
         if (drop_reason or status_value == "dropped") and not is_merged:
@@ -1264,6 +1264,14 @@ def export_daily_digest_json(top_items: list[dict], output_path: str, config: di
 
     valid, error = _validate_digest(digest)
     if not valid:
+        if error == "INVALID_DIGEST" and 0 < len(items_out) < MIN_TOP_ITEMS:
+            print(f"⚠️ 최소 개수({MIN_TOP_ITEMS}) 미달로 {len(items_out)}개만 저장합니다.")
+            _atomic_write_json(output_path, digest)
+            try:
+                _update_dedupe_history(digest, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS)
+            except Exception:
+                pass
+            return digest
         if error == "VALIDATION_ERROR: MISSING_FIELD":
             raise RuntimeError(error)
         if error == "ERROR: IMPACT_SIGNALS_REQUIRED":

@@ -371,7 +371,7 @@ def extract_main_text_heuristic(html: str) -> str:
     return clean_text(body.get_text(" "))
 
 
-def looks_like_article_text(text: str, min_chars: int = 80) -> bool:
+def looks_like_article_text(text: str, min_chars: int = 50) -> bool:
     t = clean_text(text)
     if not t:
         return False

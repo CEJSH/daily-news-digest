@@ -49,7 +49,7 @@ DEFAULT_USER_AGENTS: Tuple[str, ...] = (
 class ArticleFetcherConfig:
     default_timeout_sec: int = _env_int("ARTICLE_FETCH_TIMEOUT_SEC", 6)
     max_chars: int = _env_int("ARTICLE_FETCH_MAX_CHARS", 12000)
-    min_text_chars: int = _env_int("ARTICLE_FETCH_TEXT_MIN_CHARS", 80)
+    min_text_chars: int = _env_int("ARTICLE_FETCH_TEXT_MIN_CHARS", 50)
     candidate_limit: int = _env_int("ARTICLE_FETCH_CANDIDATE_LIMIT", 20)
     candidate_log_limit: int = _env_int("ARTICLE_FETCH_CANDIDATE_LOG_LIMIT", 50)
     max_candidate_depth: int = _env_int("ARTICLE_FETCH_MAX_CANDIDATE_DEPTH", 1)

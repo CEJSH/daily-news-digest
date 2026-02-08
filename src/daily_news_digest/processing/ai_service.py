@@ -300,12 +300,12 @@ class AIEnrichmentService:
                         item["resolvedUrl"] = resolved_for_item
 
                     failure_reasons: list[str] = []
-                    if text and len(text.strip()) >= 80:
+                    if text and len(text.strip()) >= 50:
                         item["fullText"] = text
                         fetch_succeeded += 1
                         self._log_full_text(item, text, "ai_importance", notes_local)
                     else:
-                        failure_reasons.append("본문 80자 미만")
+                        failure_reasons.append("본문 50자 미만")
 
                     if extractor == "none":
                         failure_reasons.append("extractor=none")
@@ -339,8 +339,8 @@ class AIEnrichmentService:
 
             # fetch를 시도하지 못한 경우에도 본문이 충분하면 통과
             full_text_len = len((item.get("fullText") or "").strip())
-            if full_text_len < 80:
-                reason = "본문 없음 혹은 80자 미만"
+            if full_text_len < 50:
+                reason = "본문 없음 혹은 50자 미만"
                 if need_fetch and fetch_budget <= 0:
                     reason = "fetch_budget_exhausted"
                 elif need_fetch and (not self._article_fetch_enabled or not self._fetch_article_text):
@@ -454,12 +454,12 @@ class AIEnrichmentService:
                 item["resolvedUrl"] = resolved_for_item
 
             failure_reasons: list[str] = []
-            if text and len(text.strip()) >= 80:
+            if text and len(text.strip()) >= 50:
                 item["fullText"] = text
                 fetch_succeeded += 1
                 self._log_full_text(item, text, "prefetch", notes_local)
             else:
-                failure_reasons.append("본문 80자 미만")
+                failure_reasons.append("본문 50자 미만")
 
             if extractor == "none":
                 failure_reasons.append("extractor=none")

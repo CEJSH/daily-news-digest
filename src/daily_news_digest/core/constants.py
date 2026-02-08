@@ -53,13 +53,13 @@ POLICY_ACTION_KEYWORDS = [
 ]
 
 SOURCE_TIER_A = {  # 신뢰도 상위 A 등급 소스(우선 선별)
-    "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "WSJ",
-    "연합뉴스", "한국경제", "매일경제", "서울경제"
+    "Reuters", "Bloomberg", "Financial Times", "The Wall Street Journal", "WSJ","J.P. Morgan","Goldman Sachs (Global Research)","Gartner",
+    "연합뉴스", "한국경제", "매일경제", "서울경제","The Economist","CNBC","AP", "AFP","The New York Times","NYT","Ars Technica"
 }
 
 SOURCE_TIER_B = {  # 신뢰도 B 등급 소스(보조 선별)
-    "중앙일보", "동아일보", "한겨레", "경향신문", "머니투데이",
-    "전자신문", "ZDNet Korea", "TechCrunch", "The Verge"
+    "중앙일보", "동아일보","MBC","SBS","KBS","YTN","조선일보", "한겨레", "경향신문", "머니투데이","Wired","이데일리","블로터","비즈워치",
+    "전자신문", "ZDNet Korea", "TechCrunch", "The Verge","MIT Technology Review","Semafor","디일렉"
 }
 
 LOCAL_PROMO_KEYWORDS = [  # 지역 홍보·장터성 콘텐츠 제외 키워드

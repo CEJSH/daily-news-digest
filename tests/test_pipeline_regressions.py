@@ -126,6 +126,23 @@ def test_dedupe_key_strips_sentence_fragments() -> None:
     assert "전망" not in key
 
 
+def test_no_structural_signal_lenient_for_policy_category() -> None:
+    scorer = _build_scorer()
+    reason = scorer.get_skip_reason(
+        text_all="정부가 외교 협상을 진행했다.",
+        link_lower="",
+        matched_to=None,
+        impact_signals=[],
+        age_hours=1,
+        category="정책",
+        hard_exclude_keywords=[],
+        hard_exclude_url_hints=[],
+        exclude_keywords=[],
+        local_promo_keywords=[],
+    )
+    assert reason is None
+
+
 def test_cluster_key_respects_max_tokens() -> None:
     engine = _build_dedupe_engine()
     cluster = engine.build_cluster_key("alpha-beta-gamma-delta-epsilon")

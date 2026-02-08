@@ -170,6 +170,9 @@ class ItemFilterScorer:
             "budget",
             "stats",
             "industry-trend",
+            "capex",
+            "earnings",
+            "market-demand",
         }
         self._structural_context_keywords = [
             "제도",
@@ -188,11 +191,69 @@ class ItemFilterScorer:
             "지침",
             "표준",
             "기준",
+            "공급망",
+            "수급",
+            "병목",
+            "원자재",
+            "원료",
+            "조달",
+            "물류",
+            "재고",
+            "납품",
+            "차질",
+            "중단",
+            "지연",
+            "수출",
+            "수입",
+            "통제",
             "safety",
             "regulation",
             "policy",
             "standard",
             "guideline",
+            "supply chain",
+            "logistics",
+            "procurement",
+            "bottleneck",
+        ]
+        self._lenient_context_categories = {"정책", "국제"}
+        self._lenient_context_keywords = [
+            "정부",
+            "당국",
+            "국회",
+            "의회",
+            "위원회",
+            "공정위",
+            "검찰",
+            "법원",
+            "헌재",
+            "외교",
+            "정상회담",
+            "회담",
+            "협상",
+            "협정",
+            "제재",
+            "관세",
+            "수출통제",
+            "규제",
+            "법안",
+            "법률",
+            "행정명령",
+            "government",
+            "regulator",
+            "ministry",
+            "parliament",
+            "congress",
+            "court",
+            "prosecution",
+            "sanctions",
+            "tariff",
+            "export control",
+            "diplomacy",
+            "summit",
+            "talks",
+            "agreement",
+            "treaty",
         ]
 
     def get_impact_signals(self, text: str) -> list[str]:
@@ -355,16 +416,20 @@ class ItemFilterScorer:
         if category in self._drop_categories:
             return False
         if any(k in text_all for k in self._emotional_drop_keywords):
-            return self._has_structural_context(text_all, impact_signals)
+            return self._has_structural_context(text_all, impact_signals, category)
         return True
 
-    def _has_structural_context(self, text_all: str, impact_signals: list[str]) -> bool:
+    def _has_structural_context(self, text_all: str, impact_signals: list[str], category: str | None = None) -> bool:
+        text_lower = (text_all or "").lower()
         if any(s in self._structural_context_signals for s in impact_signals):
             return True
-        if any(k in text_all for k in self._policy_action_keywords):
+        if any(k in text_lower for k in self._policy_action_keywords):
             return True
-        if any(k in text_all for k in self._structural_context_keywords):
+        if any(k in text_lower for k in self._structural_context_keywords):
             return True
+        if category in self._lenient_context_categories:
+            if any(k in text_lower for k in self._lenient_context_keywords):
+                return True
         return False
 
     def score_entry(
@@ -448,13 +513,13 @@ class ItemFilterScorer:
         if any(bad in text_all for bad in local_promo_keywords):
             return "local_promo"
         if any(bad in text_all for bad in exclude_keywords):
-            if not self._has_structural_context(text_all, impact_signals):
+            if not self._has_structural_context(text_all, impact_signals, category):
                 return "exclude_keyword"
         if self._is_political_commentary(text_all):
             return "political_commentary"
         if matched_to:
             return "recent_duplicate"
-        if not impact_signals and not self._has_structural_context(text_all, impact_signals):
+        if not impact_signals and not self._has_structural_context(text_all, impact_signals, category):
             return "no_structural_signal"
         if not self.passes_freshness(age_hours, impact_signals, text_all):
             return "freshness"

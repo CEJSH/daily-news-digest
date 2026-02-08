@@ -3,66 +3,40 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-09T03:01:25.008756+09:00",
+  "lastUpdatedAt": "2026-02-09T08:04:02.955459+09:00",
   "items": [
     {
       "id": "2026-02-09_1",
       "date": "2026-02-09",
-      "category": "산업",
-      "title": "엔비디아 주가 8% 상승, 젠슨 황 CEO의 6,600억 달러 규모 설비 투자 지속 가능 발언",
+      "category": "금융",
+      "title": "롯데웰푸드, 올해 실적 개선 전망",
       "summary": [
-        "젠슨 황 엔비디아 CEO는 AI 인프라에 대한 기술 업계의 급증하는 설비 투자가 정당하다고 밝혔습니다.",
-        "그는 주요 고객사인 메타, 아마존, 구글, 마이크로소프트가 AI 인프라에 대한 투자를 대폭 늘릴 계획이라고 언급했습니다.",
-        "이들 하이퍼스케일러는 올해 총 6,600억 달러를 설비 투자에 지출할 수 있으며, 이 중 상당 부분이 엔비디아 칩 구매에 사용될 것이라고 예상됩니다."
+        "DS투자증권은 롯데웰푸드의 목표 주가를 16만원에서 17만원으로 상향 조정하고, 투자의견을 '매수'로 유지했습니다.",
+        "롯데웰푸드는 올해 매출 성장률 4~5%, 영업이익률 4~6%를 연간 가이던스로 제시했습니다."
       ],
-      "whyImportant": "AI 인프라 투자의 지속 가능성은 엔비디아뿐만 아니라 관련 산업 전반의 성장과 발전에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 하이퍼스케일러들이 올해 총 6,600억 달러를 설비 투자에 지출할 수 있다는 언급은 AI 인프라 투자 규모가 상당함을 시사합니다.",
+      "whyImportant": "롯데웰푸드의 실적 개선은 식품 산업 전반의 수익성 변화를 가늠할 수 있는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 롯데웰푸드는 올해 매출 성장률 4~5%, 영업이익률 4~6%를 제시하여, 실적 개선에 대한 전망치를 구체적으로 제시했습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "Huang said that the “largest infrastructure buildout in human history” is being driven by “sky high” demand for computing power, which AI companies and hyperscalers can use to make more money."
+          "label": "earnings",
+          "evidence": "롯데웰푸드는 올해 연간 가이던스(전망치)로 매출 성장률 4~5%, 영업이익률 4~6%를 제시했다."
         }
       ],
-      "dedupeKey": "엔비디아-주가-상승-젠슨-ceo-600억-달러-규모",
-      "clusterKey": "설비투자/엔비디아/투자",
+      "dedupeKey": "롯데웰푸드-올해-실적-개선-ds투자증권-16만원-17만원-투자의견",
+      "clusterKey": "실적/롯데웰푸드",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeXZwRXJVWnp0S19fMmk1SVpXZUJyQjFrdzdGdHhCLXd5YzZqY0lmelBOekNyLUhBWXRuT1c2dkQxSWFVVHpsdDBDVy16Nlpzb0dMc2RGbnQxakY4UVZNTFFnTktCaUJTX25sc1Q2M3Bab1BhVEYxSmpNU25HTFJTajlOajhfbDQwUWtWNTBUSUxZcnFMRlROWHhGbmwzODlvWDlwOGF5LW9WTlM4N1pZUExR0gG3AUFVX3lxTE9wS2trTXQ3M1hESThyRW1nRWdldFJ5VXNQaGp0Zi1iME1LYlJhaHBBcFppR3NzQWpkRmtxT2tveFR3NERpM3V5WnRURWY1SFpfSWNGdTlpN3Bpa3hVVEQ3TzZuYkMxMjZ5UDJhb3BiNkMxMjRsVERGWVBYMFNVc1FmNE8xenFTRkx1MzJKdzk4OFduZjVYcnhMWTEyakRrMFV1bUM0MS1YMkZwVjlqOW9sdDNvemhVOA?oc=5",
-      "publishedAt": "2026-02-06T18:59:57+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pTFY3MzdTeVBsM0RicEhsZ1pxMUp4TDlVTGtBcTVSZ00zSXpjNzRxVFJuOEY3MFRPcXpQX2ZBd3hDWnVueEhGQzhCaEc5SGx3TkFpV2NURHNSQdIBVEFVX3lxTE9pLTZSYl9OX2ZiUzFWZGxxbTF3VjAyOUxzZk40aTl0WThKN1JCNnI0UHdSUmhNQkNQa09SWnJSa0RzWXk4Q1J3VFNXcE8yV1pvZDBXRw?oc=5",
+      "publishedAt": "2026-02-08T22:35:44+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
       "id": "2026-02-09_2",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "다카이치 총리 외교 정책, 한일 협력 유지 전망",
-      "summary": [
-        "다카이치 총리의 국내 정치 기반 강화로 한일 관계는 큰 변화가 없을 것이라는 전망이 나왔습니다.",
-        "중국과의 갈등 속에서 한국과는 양호한 관계를 유지할 것이라는 분석입니다."
-      ],
-      "whyImportant": "한국과 일본의 관계는 경제 및 안보에 중요한 영향을 미치므로, 정치적 변화에도 불구하고 협력 관계가 유지될지 여부가 중요합니다.",
-      "importanceRationale": "근거: 기사에서 전문가들은 국제 환경 변화가 없는 상황에서 한일 관계 기조가 바뀌지 않을 가능성이 크다고 언급하며, 다카이치 총리의 정치적 기반 강화를 그 이유로 들었습니다.",
-      "impactSignals": [],
-      "dedupeKey": "다카이치-총리-외교-정책-한일-협력-국내-정치",
-      "clusterKey": "한일_정책/다카이치",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5ndUdfSV9DaWk5V2o0SVh0ZUwtdHd6aTdibWtUNDNPYUpZYVJRakNzMnd0YU5xREozWWhpVG81N1JEU1p5eG13NEdKeVVydWZuQUE2RFVNNmMyUdIBVEFVX3lxTE1DVW9HdEZ6ZnEwMkY5ekZvRF9OVllieXFJbWtaOTd3dHJfX1NEejZHd0RhNl84d0JjN1I3STg5dlNJZlVJMlVoTENUc2dhQ0VmdER5dA?oc=5",
-      "publishedAt": "2026-02-08T14:08:04+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_3",
       "date": "2026-02-09",
       "category": "기술",
       "title": "구글 고정밀 지도 반출 관련 보완 서류 제출, 정부 최종 판단 주목",
@@ -71,8 +45,8 @@
         "정부는 관계 부처 협의체를 통해 반출 여부를 심의할 예정입니다.",
         "이번 결정은 국내 공간정보 산업 경쟁력과 통상·외교 문제에 영향을 줄 수 있습니다."
       ],
-      "whyImportant": "구글의 고정밀 지도 데이터 반출 결정은 국내 공간정보 산업과 정부의 디지털 규제에 대한 통상·외교 문제에 영향을 미칠 수 있어 중요합니다.",
-      "importanceRationale": "근거: 정부는 구글이 제출한 보완 서류를 검토 후 8개 부처가 참여하는 협의체에서 반출 여부를 심의할 예정이며, 이는 향후 10년간 최대 197조원의 경제적 손실을 야기할 수 있다는 주장이 있습니다.",
+      "whyImportant": "고정밀 지도 데이터 반출 결정은 국내 산업 경쟁력과 정부의 디지털 규제에 대한 통상·외교 문제에 영향을 미칠 수 있어 중요합니다.",
+      "importanceRationale": "근거: 정부는 관계 부처가 참여하는 협의체에서 심의할 예정이며, 이는 국내 공간정보 산업과 통상·외교 문제에 영향을 줄 수 있습니다.",
       "impactSignals": [],
       "dedupeKey": "구글-고정밀-지도-반출-보완-서류-정부-최종",
       "clusterKey": "구글/고정밀/지도",
@@ -83,37 +57,6 @@
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_4",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "IBK투자증권, 연간 순이익 500억 원 돌파",
-      "summary": [
-        "IBK투자증권의 연간 순이익이 500억 원을 넘어서며 전년 대비 100억 원 이상 증가했습니다.",
-        "세일즈앤트레이딩(S&T) 부문의 실적 개선이 주요 요인으로 분석됩니다.",
-        "총 자산은 10조 4030억 원으로 증가했으며, 자본은 1조 3720억 원으로 늘었습니다."
-      ],
-      "whyImportant": "IBK투자증권의 실적 개선은 금융 투자 업계의 경쟁 심화 속에서 특정 부문의 성장이 전체 실적에 미치는 영향을 보여주는 사례입니다.",
-      "importanceRationale": "근거: IBK투자증권의 지난해 당기순이익은 575억 원으로 전년 동기 대비 26.4% 증가했으며, S&T 부문은 3분기 누적 기준 세전분기손익이 42.3% 늘었습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "IBK투자증권이 연간 순이익 500억원을 넘기며 1년 새 100억원 넘게 성장한 것으로 나타났다."
-        }
-      ],
-      "dedupeKey": "ibk투자증권-연간-순이익-500억-돌파-100억-4030억-3720억",
-      "clusterKey": "실적/연간",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBuSF9Fczl3QkdNcEItazZnM0ZtM0ZSbFZsWnNkWVk1WE55dG5GWmRKZjVYbnhfQmFRR0lna3k3ZlUtR0pwd1dKSkZUUVh4TUFhaC1zZU1HREQ1UEJQOFhPaGxZRjZEUEd50gFsQVVfeXFMTnA3bFY3ajU1SEZOTVVTSjJfV3ZlQ1ROc2NuWFA4bXlRc1FJOWJkbTBYUjgyVy1saURON1JrRWhRVEgybFNIS2NUOEp2RmZhenQwd1JuNUszdnpzSGpKaEFEWTNfa3lZY2RQZ2ti?oc=5",
-      "publishedAt": "2026-02-07T04:00:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

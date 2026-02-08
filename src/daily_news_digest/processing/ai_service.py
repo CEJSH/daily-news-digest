@@ -61,6 +61,8 @@ class AIEnrichmentService:
         self._article_fetch_max_items = article_fetch_max_items
         self._article_fetch_min_chars = article_fetch_min_chars
         self._article_fetch_timeout_sec = article_fetch_timeout_sec
+        self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
+        self._fetch_cache: dict[str, tuple[str, str, int | None, str | None, list[str]]] = {}
 
     def _should_exclude_url(self, url: str) -> bool:
         if not url:
@@ -74,8 +76,6 @@ class AIEnrichmentService:
         item["dropReason"] = item.get("dropReason") or "hard_exclude_url_hint"
         item["status"] = "dropped"
         return True
-        self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
-        self._fetch_cache: dict[str, tuple[str, str, int | None, str | None, list[str]]] = {}
 
     @staticmethod
     def _parse_meta_kv(meta_str: str) -> dict[str, str]:

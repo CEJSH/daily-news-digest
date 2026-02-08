@@ -133,6 +133,35 @@ class DigestPipeline:
     def get_signal_cap_stats(self) -> dict[str, Any]:
         return dict(self._last_signal_cap_stats)
 
+    def _log_allowlist_debug(self, candidates: list[Item], top_limit: int) -> None:
+        if not candidates:
+            self._log("allowlist 디버그: 후보 없음")
+            return
+        missing_source = 0
+        unmatched: dict[str, int] = {}
+        for item in candidates:
+            source = item.get("source")
+            source_raw = item.get("sourceRaw")
+            if not source and not source_raw:
+                missing_source += 1
+            if self._filter_scorer.is_top_source_allowed(source, source_raw):
+                continue
+            label = (source_raw or source or "UNKNOWN").strip() or "UNKNOWN"
+            unmatched[label] = unmatched.get(label, 0) + 1
+        if missing_source:
+            self._log(f"allowlist 미매칭: source 없음 {missing_source}개")
+        if unmatched:
+            top = sorted(unmatched.items(), key=lambda x: x[1], reverse=True)[:10]
+            top_str = ", ".join([f"{name}:{count}" for name, count in top])
+            self._log(f"allowlist 미매칭 소스 상위: {top_str}")
+        self._log(
+            "allowlist 디버그: "
+            f"fresh_candidates={len(candidates)} "
+            f"allowlist_size={len(TOP_SOURCE_ALLOWLIST)} "
+            f"strict={int(TOP_SOURCE_ALLOWLIST_STRICT)} "
+            f"top_limit={top_limit}"
+        )
+
     def pick_top_with_mix(self, all_items: list[Item], top_limit: int = 5) -> list[Item]:
         def _apply_signal_cap(
             picked_local: list[Item],
@@ -278,13 +307,14 @@ class DigestPipeline:
         allowlist_candidates = [
             item
             for item in fresh_candidates
-            if self._filter_scorer.is_top_source_allowed(item.get("source"))
+            if self._filter_scorer.is_top_source_allowed(item.get("source"), item.get("sourceRaw"))
         ]
 
         if TOP_SOURCE_ALLOWLIST_ENABLED:
             if TOP_SOURCE_ALLOWLIST_STRICT:
                 if len(allowlist_candidates) < top_limit:
                     self._log(f"⚠️ TOP allowlist 부족: {len(allowlist_candidates)}/{top_limit}")
+                    self._log_allowlist_debug(fresh_candidates, top_limit)
                 return _pick_from_candidates(allowlist_candidates)
             picked = _pick_from_candidates(allowlist_candidates)
             if len(picked) < top_limit:

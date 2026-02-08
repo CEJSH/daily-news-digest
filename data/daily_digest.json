@@ -3,38 +3,29 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-08T08:04:27.311709+09:00",
+  "lastUpdatedAt": "2026-02-08T19:07:19.018404+09:00",
   "items": [
     {
       "id": "2026-02-08_1",
       "date": "2026-02-08",
-      "category": "경제",
-      "title": "미-이란 핵 협상 불확실성에 국제유가 3% 상승",
+      "category": "금융",
+      "title": "중국, HBM3 대량 생산 시작…한국과의 격차 축소",
       "summary": [
-        "미국과 이란 간의 협상 관련 불확실성이 커지면서 국제유가가 3% 넘게 상승했습니다.",
-        "이란에서 전쟁이 발생할 경우 하루 340만 배럴에 달하는 이란의 원유 공급이 위험에 처할 수 있다는 분석이 나왔습니다."
+        "중국이 올해 고대역폭메모리(HBM) 4세대 제품인 HBM3의 대량 생산을 시작합니다.",
+        "이는 HBM 추격전의 시작으로, 한국 반도체 기업들도 기술 추격을 따돌리기 위해 노력하고 있습니다."
       ],
-      "whyImportant": "미국과 이란의 핵 협상 결과는 국제 에너지 시장의 변동성을 야기할 수 있기 때문에 중요합니다.",
-      "importanceRationale": "근거: 국제유가가 3% 넘게 상승했으며, 이란의 원유 공급량과 호르무즈 해협 통제 가능성이 언급되어 시장에 미치는 영향이 클 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "미국과 이란 간 협상 관련 불확실성이 커지면서 4일(현지시간) 국제유가가 3% 넘게 올랐다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "이 같은 소식에 중동 긴장이 다시 고조되면서 유가를 밀어 올렸다."
-        }
-      ],
-      "dedupeKey": "국제유가-미국-이란-핵협상-불확실성",
-      "clusterKey": "국제유가/미국",
+      "whyImportant": "중국의 HBM 기술 발전은 반도체 시장 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국의 HBM3 대량 생산은 반도체 산업 전반에 걸쳐 경쟁 심화를 야기할 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "회식-사라지고-혼술-줄고-주류-소비-안보이-주류업계",
+      "clusterKey": "회식/사라지고",
       "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB0TmJtS1Z3UnRqYklpVVpMQUNWWFAxU0lLWGlGRzNabnlQaUM4dlJYdkpDSTJqQmxjV1NZTTlueDFTd2FtQUNDSGh6eGFyWllIaUthdmF5Rk5tWDJNc2VKUjhaNVdpVHowT3V0Y201VjdlbHVK?oc=5",
-      "publishedAt": "Wed, 04 Feb 2026 20:52:41 GMT",
+      "sourceName": "매일경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTSDlKa04tX1NIZF9FSVM4OWItYW9STXo2ZFE5ZGd0YW13bThDbHllYzlPbElXUVhIVTNrZ2NUZ2Y3RE5YTm1GaXNWVHZCc0VEMkhNc19B?oc=5",
+      "publishedAt": "2026-02-08T03:41:57+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
@@ -42,159 +33,34 @@
     {
       "id": "2026-02-08_2",
       "date": "2026-02-08",
-      "category": "정책",
-      "title": "한미 관세 협상, 올해도 워싱턴에서 계속될 전망",
+      "category": "국제",
+      "title": "트럼프, 이란과 거래 시 관세 부과…이란은 핵 농축 지속",
       "summary": [
-        "조현 외교부 장관은 한미 간 관세 갈등으로 인해 올 상반기 워싱턴 출장이 잦을 것으로 예상했습니다.",
-        "트럼프 대통령은 한국 국회에 계류 중인 대미투자특별법안을 문제 삼아 관세 인상 위협을 가하고 있습니다.",
-        "미국은 한국의 비관세 장벽 문제 해결도 요구하고 있어 협상에 난항이 예상됩니다."
+        "미국과 이란이 8개월 만에 핵 협상을 재개했으나, 견해차만 확인했습니다.",
+        "트럼프 대통령은 이란과 교역하는 국가에 추가 관세를 부과하는 행정명령에 서명했습니다.",
+        "이란은 핵 개발에 사용될 수 있는 우라늄 농축을 계속하겠다는 입장을 밝혔습니다."
       ],
-      "whyImportant": "한미 간 관세 협상 결과는 양국 경제 관계에 지속적인 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 트럼프 대통령의 관세 인상 위협과 미국의 비관세 장벽 해결 요구는 11월 중간선거를 앞두고 한미 통상 관계에 영향을 줄 수 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "한미-관세-협상-대미투자특별법",
-      "clusterKey": "한미_관세/대미투자특별법",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5fOXlVbDd0d2VTcHBORWo4UjJUS0RLUmlwNDRwN2dnVjJRakdiM2VIQ2MxbS1tVXphMDl1ZDdDZ2JLR1ZwNWU2UF9SUC1fWU0yUl9uVktEVzFEWGZjbTd0eFJrZ3J3NG0xeXY4TmVSV3Q2NTFq?oc=5",
-      "publishedAt": "Sat, 07 Feb 2026 22:07:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-08_3",
-      "date": "2026-02-08",
-      "category": "정책",
-      "title": "미국, 이란과 협상 재개 당일 대이란 제재 발표",
-      "summary": [
-        "미국 국무부는 이란산 석유 및 석유화학 제품 불법 거래에 연루된 단체와 개인, 선박을 제재한다고 밝혔습니다.",
-        "이번 제재는 미국이 이란과의 핵 협상을 재개한 가운데 나왔으며, 이란에 대한 압박을 유지하겠다는 신호로 해석됩니다."
-      ],
-      "whyImportant": "미국의 대이란 제재는 이란의 경제 활동 및 국제 관계에 지속적인 영향을 미칠 수 있는 정책 결정입니다.",
-      "importanceRationale": "근거: 미국 국무부는 이란산 석유 및 석유화학 제품의 불법 거래에 연루된 단체 15곳과 개인 2명, 선박 14척을 제재 대상으로 발표했습니다.",
+      "whyImportant": "미국과 이란의 핵 협상 관련 갈등은 국제 유가 및 에너지 시장에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 이란과 교역하는 국가에 25% 추가 관세를 부과하는 행정명령에 서명하여, 무역 및 에너지 시장에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "미국 국무부가 이란산 석유 및 석유화학 제품의 불법 거래에 연루된 단체 15곳과 개인 2명, 선박 14척을 제재한다고 6일(현지시간) 밝혔다."
+          "evidence": "트럼프 대통령은 양국 회담이 끝난 지 6시간 정도 뒤에 이란과 교역하는 국가의 대미 수출품에 관세를 추가로 부과하는 내용의 행정명령에 서명했다."
         },
         {
-          "label": "sanctions",
-          "evidence": "이번 제재에 따라 이들은 미국 내 보유한 모든 자산이 동결되고, 미국 국민 및 기업과의 거래가 금지된다."
+          "label": "market-demand",
+          "evidence": "미국과 이란이 핵 프로그램 폐기 협상에 나섰지만 뚜렷한 성과가 나오지 않자 유가는 소폭 올랐다."
         }
       ],
-      "dedupeKey": "미국-이란-제재-석유-협상",
-      "clusterKey": "제재/관세/미국/이란",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UcW9sNV9oajIxb2hYMzRUMzU2N3JJVTFCbnMwOWI3Q2FvYXY4bGhHUHNXRS1xUndNWWRJNk1udFhOYkRPVk5EMFlRbkRTRDlZbmVhN0RVQmV3ZHZWVkR5b0lEdU42SjNzcUNxNHl3X29uRm0y?oc=5",
-      "publishedAt": "Fri, 06 Feb 2026 16:52:40 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-08_4",
-      "date": "2026-02-08",
-      "category": "정책",
-      "title": "미국 재무장관, 우크라이나 전쟁 평화 협상에 따른 러시아 그림자 함대 제재 검토",
-      "summary": [
-        "스콧 베선트 미국 재무장관은 우크라이나 전쟁 종식을 위한 협상 상황을 보며 러시아 석유 수출에 쓰이는 '그림자 함대'에 대한 추가 제재 여부를 검토하겠다고 밝혔습니다.",
-        "베선트 장관은 러시아의 우크라이나 침략이 불법이며 주권 침해라는 데 동의한다고 밝혔습니다."
-      ],
-      "whyImportant": "미국의 제재 검토는 러시아의 에너지 수출에 영향을 미쳐 국제 에너지 시장과 지정학적 관계에 중요한 변화를 가져올 수 있습니다.",
-      "importanceRationale": "근거: 미국 재무장관이 러시아 석유 수출에 사용되는 '그림자 함대'에 대한 추가 제재 여부를 검토하겠다고 밝혀 정책적 변화 가능성을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "스콧 베선트 미국 재무장관은 5일(현지시간) 미국과 러시아, 우크라이나 간에 진행 중인 우크라이나 전쟁 종식을 위한 협상 상황을 봐가며 러시아 석유 수출에 쓰이는 이른바 '그림자함대'에 대한 추가 제재 여부를 검토하겠다고 밝혔다."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "스콧 베선트 미국 재무장관은 5일(현지시간) 미국과 러시아, 우크라이나 간에 진행 중인 우크라이나 전쟁 종식을 위한 협상 상황을 봐가며 러시아 석유 수출에 쓰이는 이른바 '그림자함대'에 대한 추가 제재 여부를 검토하겠다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "미국-러시아-우크라이나-그림자함대-제재",
-      "clusterKey": "제재/미국/러시아",
-      "matchedTo": null,
-      "sourceName": "연합뉴스 한민족센터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04Nzl1a1YwRkhsTlJuN2w4bGtFdmlCZnhTR3hZendBeVFLeTZXdVdEQXJZNEFpcnVvVU9ZNnBVd1B1am9DaFVZVXZUbnc3SlhFTXozajVIemtUQ0NuMUVkYVNPZE9saVdoSktOTElVMEU5bm5x?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 17:43:28 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-08_5",
-      "date": "2026-02-08",
-      "category": "글로벌",
-      "title": "트럼프, 에너지 패권 확보에 관세 활용 및 한국에 패키지 딜 요구 가능성",
-      "summary": [
-        "미국이 관세 압박을 통해 한국에 에너지 관련 패키지 딜을 요구할 가능성이 제기됩니다.",
-        "미국은 한국에 에너지 프로젝트를 제안하며 공급망 동참을 요구하고, 미국산 원유 구매 압박을 키울 수 있습니다.",
-        "전문가들은 에너지 공급망 안보와 연계한 전략 마련이 필요하다고 조언합니다."
-      ],
-      "whyImportant": "미국의 에너지 정책 변화와 관세 압박은 한국의 에너지 안보 및 공급망 전략에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국이 한국산 관세율을 25%로 올리겠다고 압박하면서 에너지 공급망 동참을 요구하는 것은 정책 변화의 실행 가능성을 보여줍니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "트럼프 대통령의 관세 재상향 압박을 받는 한국도 에너지와 관련된 패키지 딜을 요구받을 가능성이 높다는 분석이 나온다."
-        }
-      ],
-      "dedupeKey": "에너지-패권-관세-미국-한국-패키지딜",
-      "clusterKey": "관세/에너지/패권/확보",
+      "dedupeKey": "트럼프-이란-거래하면-trade_talks-핵농축-계속",
+      "clusterKey": "관세/트럼프/이란",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tMDJNRm5oTXd6XzlxZnp4LWpCbGFxbm5xSEJYbDJxeE51MmJBMk0wMTYtYjFZWFU0Tld3OUFZUmV0XzNOTUxIY1h1N1VQM3UwSmtKWVZZb0tSQdIBVEFVX3lxTE41cEM5MlpLUEtwMVc4YlBLbFpZS01xQWp1bWVqWmVqMWlOTWExZEg5Tnp4M2ZNRUcxamducnp6ZWs1X2dsNUQxc1VqWjNncWZtamRybw?oc=5",
-      "publishedAt": "Thu, 05 Feb 2026 08:56:48 GMT",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zV3hpci0xNGNwUEJjSkhFN05oZHZRZ2tUTW43aXhMOGsyaHBQOU1RTElUYkhham9HVGVHTnJSX0JDSmpQVDBSU2FnWXRoSHptOFE2UzZyaWZuQdIBVEFVX3lxTE5DR1Z1UzI5enhuajJaMFlvOUNCelRoQUJQTzhaM1lzelpNVmdCSUZsSXliMkxvb1Q3b2tKaFBVdmpBTFBSbVpvRVNOZWg4c2NEM2V5Qw?oc=5",
+      "publishedAt": "2026-02-08T08:43:43+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-08_6",
-      "date": "2026-02-08",
-      "category": "글로벌",
-      "title": "멕시코, 미국의 위협 속에서도 쿠바 지원 모색…석유 공급 협상 중",
-      "summary": [
-        "멕시코가 미국의 제재 위협에도 불구하고 쿠바에 석유를 포함한 인도적 지원을 지속하는 방안을 모색하고 있습니다.",
-        "멕시코는 쿠바 국민을 돕겠다는 정책 기조를 유지하며 미국과 쿠바 석유 공급 관련 협의를 진행 중입니다.",
-        "쿠바는 에너지 수요의 상당 부분을 수입에 의존하고 있으며, 미국의 제재로 연료 부족이 심화되고 있습니다."
-      ],
-      "whyImportant": "멕시코의 쿠바 지원은 미국의 제재 압박 속에서 국제 관계 및 에너지 공급망에 영향을 미칠 수 있는 결정입니다.",
-      "importanceRationale": "근거: 미국이 쿠바에 석유를 공급하는 국가에 관세 부과를 경고한 가운데, 멕시코가 쿠바 지원을 지속하려 하며, 쿠바는 에너지 수요의 약 3분의 2를 수입 연료에 의존하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "멕시코가 도널드 트럼프 미국 행정부의 제재 위협에도 불구하고 쿠바에게 석유 등 인도적 지원을 지속하는 방안을 모색하고 있다."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "멕시코가 도널드 트럼프 미국 행정부의 제재 위협에도 불구하고 쿠바에게 석유 등 인도적 지원을 지속하는 방안을 모색하고 있다."
-        }
-      ],
-      "dedupeKey": "멕시코-쿠바-석유공급-미국제재",
-      "clusterKey": "관세/멕시코/트럼프",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOa3pwMG9nazlEODBpZG9pNkwyZ0dOTWZHRHd0eW1LUDIydF9CTS10Snd2SnRuVU4zVVFZUkVGSWhSQVJfUmZQYmFGMVZ2dDJONVI4cWZxQzVzQ3NwVHlRSUZSYTQ0WG5UOUdfcm1uNU5TVy00VkIxZXhJQkZMNThvREJn?oc=5",
-      "publishedAt": "Fri, 06 Feb 2026 00:10:00 GMT",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

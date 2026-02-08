@@ -1,12 +1,20 @@
 from __future__ import annotations
 
+import hashlib
 import math
 import re
 from typing import Any, Callable
 
 from daily_news_digest.core.config import FULLTEXT_LOG_ENABLED, FULLTEXT_LOG_MAX_CHARS
 from daily_news_digest.processing.constants import DEFAULT_TOP_MIX_TARGET
-from daily_news_digest.core.constants import HARD_EXCLUDE_URL_HINTS
+from daily_news_digest.core.constants import (
+    HARD_EXCLUDE_URL_HINTS,
+    IMPACT_SIGNALS_MAP,
+    MARKET_DEMAND_EVIDENCE_KEYWORDS,
+    SANCTIONS_EVIDENCE_KEYWORDS,
+    SECURITY_EVIDENCE_KEYWORDS,
+    TRADE_TARIFF_KEYWORDS,
+)
 from daily_news_digest.processing.types import Item, LogFunc
 from daily_news_digest.utils import clean_text
 
@@ -76,6 +84,76 @@ class AIEnrichmentService:
         item["dropReason"] = item.get("dropReason") or "hard_exclude_url_hint"
         item["status"] = "dropped"
         return True
+
+    def _tokenize_for_overlap(self, text: str) -> set[str]:
+        t = clean_text(text or "").lower()
+        t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
+        tokens: set[str] = set()
+        for tok in t.split():
+            if re.search(r"[가-힣]", tok):
+                if len(tok) < 2:
+                    continue
+            else:
+                if len(tok) < 3:
+                    continue
+            tokens.add(tok)
+        return tokens
+
+    def _log_integrity_drop(self, item: Item, reason: str) -> None:
+        item_id = item.get("itemId") or ""
+        link = item.get("link") or ""
+        if not item_id:
+            link_hash = hashlib.sha1(str(link).encode("utf-8")).hexdigest()[:10]
+            item_id = f"link_{link_hash}"
+        title = (item.get("title") or "")[:60]
+        dedupe_key = (item.get("dedupeKey") or "")[:60]
+        cluster_key = (item.get("clusterKey") or "")[:60]
+        source = (item.get("source") or "")[:60]
+        self._log(
+            f"{reason} id={item_id} title={title} dedupeKey={dedupe_key} "
+            f"clusterKey={cluster_key} source={source} link={link}"
+        )
+
+    def _integrity_precheck(self, items: list[Item]) -> None:
+        for item in items:
+            if not self._is_eligible(item):
+                continue
+            title = item.get("title") or ""
+            dedupe_key = item.get("dedupeKey") or ""
+            if title and dedupe_key:
+                title_tokens = self._tokenize_for_overlap(title)
+                dedupe_tokens = self._tokenize_for_overlap(dedupe_key.replace("-", " "))
+                if title_tokens and dedupe_tokens:
+                    overlap = len(title_tokens & dedupe_tokens) / max(1, len(title_tokens))
+                    if overlap < 0.2:
+                        item["status"] = "dropped"
+                        item["dropReason"] = "ERROR: DEDUPE_KEY_TITLE_MISMATCH"
+                        self._log_integrity_drop(item, "ERROR: DEDUPE_KEY_TITLE_MISMATCH")
+                        continue
+
+            ai_result = item.get("ai") if isinstance(item.get("ai"), dict) else {}
+            if ai_result:
+                title_ko = clean_text(ai_result.get("title_ko") or "")
+                summary_lines = ai_result.get("summary_lines") or []
+                if not isinstance(summary_lines, list):
+                    summary_lines = []
+                summary_ai = " ".join([str(x) for x in summary_lines if x])
+                why_important = clean_text(ai_result.get("why_important") or "")
+                ai_view_text = " ".join([title_ko, summary_ai, why_important]).strip()
+                rule_summary = item.get("summary")
+                if isinstance(rule_summary, list):
+                    rule_summary_text = " ".join([str(x) for x in rule_summary if x])
+                else:
+                    rule_summary_text = str(rule_summary or "")
+                rule_view_text = f"{title} {rule_summary_text}".strip()
+                ai_tokens = self._tokenize_for_overlap(ai_view_text)
+                rule_tokens = self._tokenize_for_overlap(rule_view_text)
+                if ai_tokens and rule_tokens:
+                    overlap = len(ai_tokens & rule_tokens) / max(1, len(rule_tokens))
+                    if overlap < 0.2:
+                        item["status"] = "dropped"
+                        item["dropReason"] = "ERROR: MIXED_VIEW_FIELDS"
+                        self._log_integrity_drop(item, "ERROR: MIXED_VIEW_FIELDS")
 
     @staticmethod
     def _parse_meta_kv(meta_str: str) -> dict[str, str]:
@@ -271,12 +349,66 @@ class AIEnrichmentService:
             return
 
         def _format_fetch_debug(item: Item, *, budget: int, need_fetch: bool) -> str:
+            item_id = item.get("itemId") or ""
+            input_hash = item.get("dedupeInputHash") or ""
             title = (item.get("title") or "").replace("|", " ").strip()
             title = title[:50]
             source = (item.get("source") or "").replace("|", " ").strip()
             score = item.get("score")
             age = item.get("ageHours")
-            return f"title={title}|source={source}|score={score}|age={age}|budget={budget}|need_fetch={int(need_fetch)}"
+            return (
+                f"id={item_id}|hash={input_hash}|title={title}|source={source}"
+                f"|score={score}|age={age}|budget={budget}|need_fetch={int(need_fetch)}"
+            )
+
+        def _tokenize_basic(text: str) -> set[str]:
+            t = clean_text(text or "").lower()
+            t = re.sub(r"[^a-z0-9가-힣\s-]", " ", t)
+            tokens: set[str] = set()
+            for tok in re.split(r"[\s-]+", t):
+                if not tok:
+                    continue
+                if re.search(r"[가-힣]", tok):
+                    if len(tok) < 2:
+                        continue
+                else:
+                    if len(tok) < 3:
+                        continue
+                tokens.add(tok)
+            return tokens
+
+        def _label_has_evidence(label: str, text_all: str) -> bool:
+            if not label or not text_all:
+                return False
+            text = text_all.lower()
+            if label == "sanctions":
+                keywords = SANCTIONS_EVIDENCE_KEYWORDS
+            elif label == "market-demand":
+                keywords = MARKET_DEMAND_EVIDENCE_KEYWORDS
+            elif label == "security":
+                keywords = SECURITY_EVIDENCE_KEYWORDS
+            elif label == "policy":
+                keywords = (IMPACT_SIGNALS_MAP.get("policy", []) + TRADE_TARIFF_KEYWORDS)
+            else:
+                keywords = IMPACT_SIGNALS_MAP.get(label, [])
+            return any(kw.lower() in text for kw in keywords)
+
+        def _format_snapshot(item: Item, stage: str) -> str:
+            item_id = item.get("itemId") or ""
+            title = (item.get("title") or "").replace("|", " ").strip()[:50]
+            impact = [s for s in (item.get("impactSignals") or []) if isinstance(s, str)]
+            dedupe_key = item.get("dedupeKey") or ""
+            dedupe_rule = item.get("dedupeKeyRule") or ""
+            cluster_key = item.get("clusterKey") or ""
+            cluster_rule = item.get("clusterKeyRule") or ""
+            ai_quality = item.get("aiQuality") or ""
+            ai_importance = item.get("aiImportance") or ""
+            return (
+                f"AI_IMPORTANCE_{stage} id={item_id} title={title} "
+                f"dedupeKey={dedupe_key} dedupeKeyRule={dedupe_rule} "
+                f"clusterKey={cluster_key} clusterKeyRule={cluster_rule} "
+                f"impactSignals={impact} aiQuality={ai_quality} aiImportance={ai_importance}"
+            )
 
         candidates = self._pick_ai_importance_candidates(items)
         self._log(f"AI 중요도 평가 시작: {len(candidates)}개")
@@ -370,15 +502,32 @@ class AIEnrichmentService:
                 continue
             if self._apply_url_hint_drop(item, item.get("resolvedUrl") or link):
                 continue
+            summary_value = item.get("summary")
+            if isinstance(summary_value, list):
+                summary_text = " ".join([str(x) for x in summary_value if x])
+            else:
+                summary_text = str(summary_value or "")
+            text_all = f"{item.get('title', '')} {item.get('summaryRaw', '')} {summary_text} {item.get('fullText', '')}"
+            self._log(_format_snapshot(item, "PRE"))
             ai_result = self._enrich_item_with_ai(item)
             if not ai_result:
+                self._log(_format_snapshot(item, "POST"))
                 continue
             ai_enriched += 1
-            item["ai"] = ai_result
+            item["ai"] = dict(ai_result)
             ai_dedupe_key = ai_result.get("dedupe_key")
             if ai_dedupe_key:
                 item["dedupeKeyAI"] = ai_dedupe_key
-                if not item.get("dedupeKey"):
+                if item.get("dedupeKey"):
+                    title_tokens = _tokenize_basic(item.get("title") or "")
+                    ai_tokens = _tokenize_basic(str(ai_dedupe_key))
+                    if len(title_tokens & ai_tokens) < 1:
+                        item_id = item.get("itemId") or ""
+                        self._log(
+                            "WARN: DEDUPE_KEY_AI_NOT_ALIGNED "
+                            f"id={item_id} ai_dedupe_key={ai_dedupe_key} title={(item.get('title') or '')[:50]}"
+                        )
+                else:
                     item["dedupeKey"] = ai_dedupe_key
             if self._ai_quality_enabled:
                 quality_label = ai_result.get("quality_label")
@@ -389,31 +538,51 @@ class AIEnrichmentService:
                     item["dropReason"] = f"ai_low_quality:{reason}"
                     item["aiQualityTags"] = ai_result.get("quality_tags") or []
                     ai_low_quality_dropped += 1
+                    self._log(_format_snapshot(item, "POST"))
                     continue
             ai_category = ai_result.get("category_label")
             if ai_category:
                 item["aiCategory"] = ai_category
-            impact_signals_ai = ai_result.get("impact_signals") or []
-            if impact_signals_ai:
-                merged = sorted(set((item.get("impactSignals") or []) + impact_signals_ai))
+            existing_signals = [
+                s for s in (item.get("impactSignals") or []) if isinstance(s, str) and s
+            ]
+            item["impactSignals"] = existing_signals
+            ai_labels_raw = ai_result.get("impact_signals") or []
+            evidence_map = ai_result.get("impact_signals_evidence") or {}
+            validated_ai: list[str] = []
+            if isinstance(ai_labels_raw, list):
+                for raw_label in ai_labels_raw:
+                    if not isinstance(raw_label, str):
+                        continue
+                    label = clean_text(raw_label).lower()
+                    if not label:
+                        continue
+                    evidence = clean_text(str(evidence_map.get(label) or ""))
+                    if not evidence:
+                        continue
+                    if not _label_has_evidence(label, text_all):
+                        continue
+                    if label not in validated_ai:
+                        validated_ai.append(label)
+            if validated_ai:
+                merged = existing_signals[:]
+                for label in validated_ai:
+                    if label not in merged:
+                        merged.append(label)
                 item["impactSignals"] = merged
                 read_time_sec = item.get("readTimeSec")
                 if not read_time_sec:
                     summary_raw = item.get("summaryRaw") or item.get("summary") or ""
                     read_time_sec = self._estimate_read_time_seconds(summary_raw)
                     item["readTimeSec"] = read_time_sec
-                summary_value = item.get("summary")
-                if isinstance(summary_value, list):
-                    summary_text = " ".join([str(x) for x in summary_value if x])
-                else:
-                    summary_text = str(summary_value or "")
-                text_all = f"{item.get('title', '')} {item.get('summaryRaw', '')} {summary_text} {item.get('fullText', '')}"
                 item["score"] = self._score_entry(merged, read_time_sec, item.get("source"), text_all)
             importance = ai_result.get("importance_score")
             if not importance:
+                self._log(_format_snapshot(item, "POST"))
                 continue
             item["aiImportance"] = importance
             item["score"] = max(0.0, item["score"] + (importance - 3) * self._ai_importance_weight)
+            self._log(_format_snapshot(item, "POST"))
         self._log(
             "AI 중요도 평가 완료 "
             f"(AI 적용 {ai_enriched}/{total}, low_quality 드롭 {ai_low_quality_dropped}, "
@@ -437,12 +606,17 @@ class AIEnrichmentService:
         fetch_errors: list[str] = []
 
         def _format_fetch_debug(item: Item, *, budget: int, need_fetch: bool) -> str:
+            item_id = item.get("itemId") or ""
+            input_hash = item.get("dedupeInputHash") or ""
             title = (item.get("title") or "").replace("|", " ").strip()
             title = title[:50]
             source = (item.get("source") or "").replace("|", " ").strip()
             score = item.get("score")
             age = item.get("ageHours")
-            return f"title={title}|source={source}|score={score}|age={age}|budget={budget}|need_fetch={int(need_fetch)}"
+            return (
+                f"id={item_id}|hash={input_hash}|title={title}|source={source}"
+                f"|score={score}|age={age}|budget={budget}|need_fetch={int(need_fetch)}"
+            )
 
         self._log(f"본문 prefetch 시작: {len(candidates)}개 (예산 {fetch_budget})")
         seen_links: set[str] = set()
@@ -542,6 +716,7 @@ class AIEnrichmentService:
             return
         if self._get_embedding is None:
             return
+        self._integrity_precheck(items)
 
         candidates = sorted(items, key=lambda x: x["score"], reverse=True)[: self._ai_semantic_dedupe_max_items]
         self._log(f"AI 중복 제거 시작: {len(candidates)}개")
@@ -568,9 +743,8 @@ class AIEnrichmentService:
                 if not ref_emb:
                     continue
                 ref_cluster = ref.get("clusterKey") or ""
-                if item_cluster or ref_cluster:
-                    if item_cluster != ref_cluster:
-                        continue
+                if item_cluster and ref_cluster and item_cluster != ref_cluster:
+                    continue
                 sim = self._cosine_similarity(embedding, ref_emb)
                 if sim >= self._ai_semantic_dedupe_threshold:
                     item["status"] = "merged"

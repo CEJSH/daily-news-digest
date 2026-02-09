@@ -66,6 +66,12 @@ class DedupeEngine:
             for token in vocab:
                 self._event_token_to_group[token] = group
         self._cluster_event_labels = cluster_event_labels or {}
+        self._cluster_label_to_group: dict[str, str] = {}
+        for group, label in self._cluster_event_labels.items():
+            norm_label = self._normalize_cluster_token(label)
+            if norm_label:
+                self._cluster_label_to_group[norm_label] = group
+            self._cluster_label_to_group[self._normalize_cluster_token(group)] = group
         self._cluster_domains = {
             label: {t.lower() for t in tokens}
             for label, tokens in (cluster_domains or {}).items()
@@ -633,6 +639,18 @@ class DedupeEngine:
             if not tokens:
                 continue
             event_groups = self._event_group_ids(tokens)
+            if not event_groups:
+                cluster_key = item.get("clusterKeyRule") or item.get("clusterKey") or ""
+                if cluster_key:
+                    cluster_tokens = [
+                        self._normalize_cluster_token(t)
+                        for t in cluster_key.replace("_", "/").split("/")
+                        if t
+                    ]
+                    for tok in cluster_tokens:
+                        group = self._cluster_label_to_group.get(tok)
+                        if group:
+                            event_groups.add(group)
             if not event_groups:
                 continue
             entity_tokens = {t for t in tokens if t not in self._dedupe_event_tokens}

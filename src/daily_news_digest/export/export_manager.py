@@ -60,88 +60,74 @@ from daily_news_digest.utils import (
     strip_summary_boilerplate,
 )
 
-_ALLOWED_IMPACT_LABELS = set(ALLOWED_IMPACT_SIGNALS)
-_IMPACT_LABEL_PRIORITY = ["sanctions", "policy", "security", "capex", "infra", "earnings", "market-demand"]
+# 분리된 모듈에서 import
+from daily_news_digest.export.constants import (
+    ALLOWED_IMPACT_LABELS,
+    ALIGNMENT_TRIGGERS,
+    CAPEX_ACTION_KEYWORDS,
+    CAPEX_PLAN_KEYWORDS,
+    EARNINGS_METRIC_KEYWORDS,
+    IMPACT_LABEL_PRIORITY,
+    IMPACT_LEVEL_SCORE,
+    INFRA_KEYWORDS,
+    KST,
+    POLICY_GOV_KEYWORDS,
+    POLICY_NEGOTIATION_KEYWORDS,
+    POLICY_STRONG_KEYWORDS,
+    POLICY_TRADE_ONLY_KEYWORDS,
+    SIMPLE_INCIDENT_KEYWORDS,
+)
+from daily_news_digest.export.validators.evidence import (
+    has_number_token,
+    label_evidence_valid,
+    policy_evidence_valid,
+    sanctions_evidence_valid,
+    evidence_keyword_hits,          # NEW
+    evidence_specificity_score,     # NEW
+)
+from daily_news_digest.export.validators.impact_signal import (
+    has_duplicate_impact_evidence,
+    has_duplicate_impact_labels,
+    is_evidence_too_short,
+    normalize_evidence_key,
+    sanitize_impact_signals,
+)
 
-_SIMPLE_INCIDENT_KEYWORDS = [
-    "사고", "화재", "폭발", "추락", "충돌", "교통사고", "정전", "붕괴", "침몰",
-    "사망", "부상", "실종", "희생", "피해",
-    "범죄", "사건", "살인", "폭행", "강간", "납치", "강도", "테러",
-    "체포", "구속", "수사", "기소", "재판", "판결", "징역",
-    "부고", "별세", "추모", "장례",
-    "인사", "임명", "선임", "취임", "사임", "퇴임", "승진",
-    "accident", "crash", "fire", "explosion", "collapse", "sinking",
-    "death", "killed", "injured", "missing", "victim",
-    "crime", "murder", "assault", "rape", "kidnapping", "robbery", "terror",
-    "arrest", "detention", "investigation", "indictment", "trial", "sentence",
-    "obituary", "died", "appointed", "resigned", "ceo", "chairman",
-]
+# 하위 호환성을 위한 alias (분리된 모듈에서 import됨)
+_ALLOWED_IMPACT_LABELS = ALLOWED_IMPACT_LABELS
+_IMPACT_LABEL_PRIORITY = IMPACT_LABEL_PRIORITY
+_SIMPLE_INCIDENT_KEYWORDS = SIMPLE_INCIDENT_KEYWORDS
+_POLICY_STRONG_KEYWORDS = POLICY_STRONG_KEYWORDS
+_POLICY_GOV_KEYWORDS = POLICY_GOV_KEYWORDS
+_POLICY_NEGOTIATION_KEYWORDS = POLICY_NEGOTIATION_KEYWORDS
+_POLICY_TRADE_ONLY_KEYWORDS = POLICY_TRADE_ONLY_KEYWORDS
+_EARNINGS_METRIC_KEYWORDS = EARNINGS_METRIC_KEYWORDS
+_CAPEX_ACTION_KEYWORDS = CAPEX_ACTION_KEYWORDS
+_CAPEX_PLAN_KEYWORDS = CAPEX_PLAN_KEYWORDS
+_INFRA_KEYWORDS = INFRA_KEYWORDS
+_KST = KST
+_IMPACT_LEVEL_SCORE = IMPACT_LEVEL_SCORE
+_ALIGNMENT_TRIGGERS = ALIGNMENT_TRIGGERS
 
-_POLICY_ACTION_KEYWORDS = [
-    "법안", "법률", "규제", "행정명령", "법 개정", "법개정", "정부 요구", "정책 발표",
-    "통과", "의결", "시행", "발효", "공포", "가이드라인", "지침",
-    "관세", "비관세", "무역 장벽", "trade barrier", "tariff", "non-tariff",
-    "policy announcement", "official policy",
-]
-_POLICY_NEGOTIATION_KEYWORDS = ["협상", "협의", "협정", "회담", "대화", "negotiation", "talks", "summit", "dialogue"]
-_POLICY_GOV_KEYWORDS = ["정부", "외교", "국가", "당국", "diplomatic", "government", "state"]
-_POLICY_TRADE_ONLY_KEYWORDS = [
-    "협상", "협의", "협정", "회담", "대화",
-    "관세", "무역", "무역전쟁", "trade", "tariff", "trade talks", "negotiation", "agreement", "summit", "dialogue",
-]
-_POLICY_STRONG_KEYWORDS = [
-    "법안", "법률", "규제", "행정명령", "법 개정", "법개정", "정책 발표",
-    "통과", "의결", "시행", "발효", "공포", "가이드라인", "지침", "인허가", "과징금", "감독",
-    "policy announcement", "official policy", "regulation", "rule", "guideline", "law", "bill",
-]
+# 함수 alias (하위 호환성)
+_has_number_token = has_number_token
+_label_evidence_valid = label_evidence_valid
+_policy_evidence_valid = policy_evidence_valid
+_sanctions_evidence_valid = sanctions_evidence_valid
 
-_SANCTIONS_REQUIRED_KEYWORDS = [
-    "제재", "제재 발표", "제재 부과", "제재 확대", "자산 동결", "자산동결", "거래 금지", "거래금지",
-    "블랙리스트", "수출통제", "수출 금지", "2차 제재",
-    "sanction", "sanctions", "asset freeze", "assets frozen", "export ban", "secondary sanctions",
-    "entity list", "export control",
-]
+# Impact Signal 관련함수 alias
+_sanitize_impact_signals = sanitize_impact_signals
+_normalize_evidence_key = normalize_evidence_key
+_is_evidence_too_short = is_evidence_too_short
+_has_duplicate_impact_labels = has_duplicate_impact_labels
+_has_duplicate_impact_evidence = has_duplicate_impact_evidence
+_evidence_keyword_hits = evidence_keyword_hits
+_evidence_specificity_score = evidence_specificity_score
 
-_MARKET_VARIABLE_KEYWORDS = [
-    "가격", "유가", "환율", "금리", "주가",
-    "수요", "주문", "판매", "재고", "출하", "생산", "생산량",
-    "price", "oil", "exchange rate", "fx", "interest rate", "stock",
-    "demand", "orders", "sales", "inventory", "shipments", "deliveries", "production", "output",
-]
-_MARKET_CHANGE_KEYWORDS = [
-    "상승", "하락", "급등", "급락", "증가", "감소", "확대", "축소", "줄", "늘",
-    "rise", "fall", "surge", "plunge", "increase", "decrease", "drop", "decline", "gain", "slump",
-]
 
-_EARNINGS_METRIC_KEYWORDS = [
-    "매출", "영업이익", "영업익", "순이익", "순손실", "실적",
-    "revenue", "operating profit", "operating income", "net income", "net profit", "earnings", "ebit", "ebitda",
-]
 
-_CAPEX_ACTION_KEYWORDS = [
-    "설비투자", "투자", "투자 계획", "투자계획", "투자 발표",
-    "증설", "라인", "공장", "데이터센터", "시설", "건설", "착공",
-    "capex", "expansion", "build", "construction", "plant", "factory", "data center",
-]
-_CAPEX_PLAN_KEYWORDS = [
-    "계획", "발표", "착공", "건설", "설립", "확대", "증설", "추진", "예정",
-    "plan", "announce", "start", "begin", "expand",
-]
 
-_INFRA_KEYWORDS = [
-    "장애", "정전", "서비스 중단", "중단", "복구", "전력망", "망 장애", "통신 장애",
-    "outage", "downtime", "disruption", "service disruption", "power grid", "network outage",
-]
 
-_SECURITY_INCIDENT_KEYWORDS = [
-    "무력", "충돌", "공격", "격추", "군사", "군사 행동", "미사일", "드론", "폭격", "교전", "전투",
-    "침해", "해킹", "랜섬웨어", "유출", "취약점", "보안 패치", "보안취약점", "제로데이", "cve",
-    "해협 봉쇄", "해협봉쇄", "유조선",
-    "attack", "strike", "shoot down", "intercept", "missile", "drone", "military", "conflict", "clash",
-    "breach", "hack", "ransomware", "vulnerability", "zero-day", "patch", "cve", "blockade", "tanker",
-]
-
-_KST = datetime.timezone(datetime.timedelta(hours=9))
 
 def _normalize_for_compare(text: str) -> str:
     """제목/요약 비교를 위한 정규화 텍스트 생성."""
@@ -348,47 +334,9 @@ def _is_simple_incident_item(item: dict) -> bool:
         return False
     return any(kw in text for kw in _SIMPLE_INCIDENT_KEYWORDS)
 
-def _has_duplicate_impact_labels(impact_signals: Any) -> bool:
-    if not isinstance(impact_signals, list):
-        return False
-    labels: list[str] = []
-    for entry in impact_signals:
-        if isinstance(entry, dict):
-            label = clean_text(entry.get("label") or "").lower()
-        else:
-            label = clean_text(str(entry)).lower()
-        if not label:
-            continue
-        labels.append(label)
-    return len(set(labels)) != len(labels)
 
-def _has_duplicate_impact_evidence(impact_signals: Any) -> bool:
-    if not isinstance(impact_signals, list):
-        return False
-    seen: set[str] = set()
-    for entry in impact_signals:
-        if not isinstance(entry, dict):
-            continue
-        evidence = clean_text(entry.get("evidence") or "")
-        if not evidence:
-            continue
-        key = _normalize_evidence_key(evidence)
-        if not key:
-            continue
-        if key in seen:
-            return True
-        seen.add(key)
-    return False
 
-def _has_number_token(text: str) -> bool:
-    if not text:
-        return False
-    t = clean_text(text)
-    if not t:
-        return False
-    if re.search(r"\d", t):
-        return True
-    return any(unit in t for unit in ["억", "조", "만", "%", "달러", "원", "billion", "million", "trillion", "usd", "$"])
+
 
 def _parse_datetime(value: str) -> datetime.datetime | None:
     return parse_datetime_utc(value, default_tz=_KST)
@@ -396,75 +344,7 @@ def _parse_datetime(value: str) -> datetime.datetime | None:
 def _parse_date_base(value: str) -> datetime.datetime | None:
     return parse_date_base_utc(value, base_tz=_KST)
 
-def _policy_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    policy_keywords = [k.lower() for k in IMPACT_SIGNALS_MAP.get("policy", [])]
-    if not any(k in t for k in policy_keywords):
-        return False
-    if any(k in t for k in _POLICY_STRONG_KEYWORDS):
-        return True
-    if any(k in t for k in _POLICY_GOV_KEYWORDS) and any(k in t for k in _POLICY_NEGOTIATION_KEYWORDS):
-        return False
-    if any(k in t for k in _POLICY_TRADE_ONLY_KEYWORDS):
-        return False
-    return False
 
-def _sanctions_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    return any(k.lower() in t for k in SANCTIONS_EVIDENCE_KEYWORDS)
-
-def _market_demand_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    return any(k.lower() in t for k in MARKET_DEMAND_EVIDENCE_KEYWORDS)
-
-def _earnings_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    return any(k in t for k in _EARNINGS_METRIC_KEYWORDS) and _has_number_token(t)
-
-def _capex_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    has_action = any(k in t for k in _CAPEX_ACTION_KEYWORDS)
-    has_plan = any(k in t for k in _CAPEX_PLAN_KEYWORDS) or _has_number_token(t)
-    return has_action and has_plan
-
-def _infra_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    return any(k in t for k in _INFRA_KEYWORDS)
-
-def _security_evidence_valid(text: str) -> bool:
-    t = clean_text(text or "").lower()
-    if not t:
-        return False
-    return any(k.lower() in t for k in SECURITY_EVIDENCE_KEYWORDS)
-
-def _label_evidence_valid(label: str, evidence: str) -> bool:
-    if label == "policy":
-        return _policy_evidence_valid(evidence)
-    if label == "sanctions":
-        return _sanctions_evidence_valid(evidence)
-    if label == "market-demand":
-        return _market_demand_evidence_valid(evidence)
-    if label == "earnings":
-        return _earnings_evidence_valid(evidence)
-    if label == "capex":
-        return _capex_evidence_valid(evidence)
-    if label == "infra":
-        return _infra_evidence_valid(evidence)
-    if label == "security":
-        return _security_evidence_valid(evidence)
-    return False
 
 def _iter_impact_signal_entries(impact_signals: Any) -> list[tuple[str, str]]:
     if not isinstance(impact_signals, list):
@@ -473,21 +353,22 @@ def _iter_impact_signal_entries(impact_signals: Any) -> list[tuple[str, str]]:
     for entry in impact_signals:
         if isinstance(entry, dict):
             label = clean_text(entry.get("label") or "").lower()
-            evidence = clean_text(entry.get("evidence") or "")
         else:
             label = clean_text(str(entry)).lower()
             evidence = ""
+        if isinstance(entry, dict):
+            evidence = clean_text(entry.get("evidence") or "")
+        
         if not label:
             continue
         entries.append((label, evidence))
     return entries
 
-def _normalize_evidence_key(text: str) -> str:
-    t = clean_text(text or "").lower()
-    if not t:
-        return ""
-    t = re.sub(r"[^a-z0-9가-힣]+", " ", t)
-    return re.sub(r"\s+", " ", t).strip()
+def _remap_label_by_evidence(evidence: str) -> str:
+    for label in _IMPACT_LABEL_PRIORITY:
+        if _label_evidence_valid(label, evidence):
+            return label
+    return ""
 
 def _split_sentences_for_evidence(text: str) -> list[str]:
     if not text:
@@ -501,50 +382,6 @@ def _split_sentences_for_evidence(text: str) -> list[str]:
         if p.strip()
     ]
     return parts if parts else [cleaned]
-
-def _is_evidence_too_short(text: str) -> bool:
-    t = clean_text(text or "")
-    if not t:
-        return True
-    if len(t) < 20:
-        return True
-    if len(t.split()) < 6:
-        return True
-    return False
-
-def _evidence_keyword_hits(label: str, evidence: str) -> int:
-    t = clean_text(evidence or "").lower()
-    if not t:
-        return 0
-    if label == "sanctions":
-        keywords = SANCTIONS_EVIDENCE_KEYWORDS
-    elif label == "market-demand":
-        keywords = MARKET_DEMAND_EVIDENCE_KEYWORDS
-    elif label == "security":
-        keywords = SECURITY_EVIDENCE_KEYWORDS
-    elif label == "policy":
-        keywords = IMPACT_SIGNALS_MAP.get("policy", [])
-    elif label == "capex":
-        keywords = _CAPEX_ACTION_KEYWORDS
-    elif label == "earnings":
-        keywords = _EARNINGS_METRIC_KEYWORDS
-    elif label == "infra":
-        keywords = _INFRA_KEYWORDS
-    else:
-        keywords = []
-    return sum(1 for kw in keywords if kw.lower() in t)
-
-def _evidence_specificity_score(label: str, evidence: str) -> tuple[int, int, int]:
-    length_score = len(clean_text(evidence or ""))
-    number_score = 1 if _has_number_token(evidence or "") else 0
-    keyword_score = _evidence_keyword_hits(label, evidence)
-    return (length_score, number_score, keyword_score)
-
-def _remap_label_by_evidence(evidence: str) -> str:
-    for label in _IMPACT_LABEL_PRIORITY:
-        if _label_evidence_valid(label, evidence):
-            return label
-    return ""
 
 def _extract_evidence_sentence(label: str, text: str) -> str:
     if not label or not text:
@@ -562,49 +399,6 @@ def _extract_evidence_sentence(label: str, text: str) -> str:
         return ""
     candidates.sort(key=lambda s: _evidence_specificity_score(label, s), reverse=True)
     return candidates[0]
-
-def _sanitize_impact_signals(raw: Any, full_text: str, summary_text: str) -> list[dict[str, str]]:
-    if not isinstance(raw, list):
-        return []
-    source_text = full_text or summary_text or ""
-    source_norm = clean_text(source_text or "").lower()
-    if not source_norm:
-        return []
-    candidates: dict[str, tuple[tuple[int, int, int], str]] = {}
-    for entry in raw:
-        if not isinstance(entry, dict):
-            continue
-        label = clean_text(entry.get("label") or "").lower()
-        evidence = clean_text(entry.get("evidence") or "")
-        if label not in _ALLOWED_IMPACT_LABELS:
-            continue
-        if not evidence:
-            continue
-        if _is_evidence_too_short(evidence):
-            continue
-        if clean_text(evidence).lower() not in source_norm:
-            continue
-        if not _label_evidence_valid(label, evidence):
-            continue
-        score = _evidence_specificity_score(label, evidence)
-        best = candidates.get(label)
-        if not best or score > best[0]:
-            candidates[label] = (score, evidence)
-
-    ordered: list[tuple[str, tuple[int, int, int], str]] = [
-        (label, payload[0], payload[1]) for label, payload in candidates.items()
-    ]
-    ordered.sort(key=lambda x: x[1], reverse=True)
-
-    cleaned: list[dict[str, str]] = []
-    seen_evidence: set[str] = set()
-    for label, _score, evidence in ordered:
-        evidence_key = _normalize_evidence_key(evidence)
-        if not evidence_key or evidence_key in seen_evidence:
-            continue
-        cleaned.append({"label": label, "evidence": evidence})
-        seen_evidence.add(evidence_key)
-    return cleaned
 
 
 def _build_impact_signals_detail(

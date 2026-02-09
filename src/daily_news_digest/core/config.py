@@ -225,7 +225,7 @@ SIGNAL_CAP_ENABLED = os.getenv("SIGNAL_CAP_ENABLED", "1") == "1"
 SIGNAL_CAP_RATIO = float(os.getenv("SIGNAL_CAP_RATIO", "0.3"))
 SIGNAL_CAP_PENALTY = float(os.getenv("SIGNAL_CAP_PENALTY", "0.7"))
 _signal_cap_labels_env = set(_parse_csv_env("SIGNAL_CAP_LABELS"))
-SIGNAL_CAP_LABELS = _signal_cap_labels_env if _signal_cap_labels_env else {"policy", "sanctions"}
+SIGNAL_CAP_LABELS = _signal_cap_labels_env if _signal_cap_labels_env else {"policy", "sanctions", "earnings"}
 SIGNAL_CAP_EXCEPT_LONG_TRIGGER = os.getenv("SIGNAL_CAP_EXCEPT_LONG_TRIGGER", "1") == "1"
 SIGNAL_CAP_EXCEPT_IMPORTANCE = int(os.getenv("SIGNAL_CAP_EXCEPT_IMPORTANCE", "4"))
 

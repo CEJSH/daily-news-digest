@@ -674,12 +674,20 @@ class DigestPipeline:
         self._ai_service.apply_ai_importance(all_items)
         before_cluster = sum(1 for x in all_items if x.get("mergeReason") == "cluster_duplicate")
         self._dedupe_engine.apply_cluster_dedupe(all_items)
+        before_entity_event = sum(1 for x in all_items if x.get("mergeReason") == "entity_event_duplicate")
+        self._dedupe_engine.apply_entity_event_dedupe(all_items)
+        after_entity_event = sum(1 for x in all_items if x.get("mergeReason") == "entity_event_duplicate")
+        before_key_sim = sum(1 for x in all_items if x.get("mergeReason") == "dedupe_key_sim")
+        self._dedupe_engine.apply_dedupe_key_similarity(all_items)
+        after_key_sim = sum(1 for x in all_items if x.get("mergeReason") == "dedupe_key_sim")
         after_cluster = sum(1 for x in all_items if x.get("mergeReason") == "cluster_duplicate")
         before_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._ai_service.apply_semantic_dedupe(all_items)
         after_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._metrics["dedupe"] = {
             "clusterMerged": max(0, after_cluster - before_cluster),
+            "entityEventMerged": max(0, after_entity_event - before_entity_event),
+            "dedupeKeySimMerged": max(0, after_key_sim - before_key_sim),
             "semanticMerged": max(0, after_semantic - before_semantic),
         }
         # 성능 최적화: 전체 후보에 대한 본문 prefetch는 비용이 크므로 생략

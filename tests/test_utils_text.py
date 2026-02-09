@@ -10,7 +10,7 @@ def test_contains_binary_detects_control() -> None:
 
 
 def test_sanitize_text_strips_binary() -> None:
-    assert sanitize_text("ok\x01bad") == ""
+    assert sanitize_text("ok\x01bad") == "ok bad"
 
 
 def test_jaccard_tokens_basic() -> None:

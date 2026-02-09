@@ -3,16 +3,16 @@ from daily_news_digest.processing.scoring import ItemFilterScorer, map_topic_to_
 
 
 def test_map_topic_to_category_it() -> None:
-    assert map_topic_to_category("글로벌_빅테크") == "IT"
-    assert map_topic_to_category("AI_저작권_데이터권리") == "IT"
+    assert map_topic_to_category("글로벌_빅테크") == "기술"
+    assert map_topic_to_category("AI_저작권_데이터권리") == "기술"
 
 
 def test_map_topic_to_category_global() -> None:
-    assert map_topic_to_category("글로벌_정세") == "글로벌"
+    assert map_topic_to_category("글로벌_정세") == "국제"
 
 
 def test_map_topic_to_category_economy() -> None:
-    assert map_topic_to_category("실적_가이던스") == "경제"
+    assert map_topic_to_category("실적_가이던스") == "금융"
 
 
 def test_source_weight_case_insensitive() -> None:
@@ -21,6 +21,9 @@ def test_source_weight_case_insensitive() -> None:
         long_impact_signals=set(),
         emotional_drop_keywords=[],
         drop_categories=set(),
+        political_actor_keywords=[],
+        political_commentary_keywords=[],
+        policy_action_keywords=[],
         source_tier_a={"Reuters"},
         source_tier_b={"TechCrunch"},
         source_weight_enabled=True,
@@ -42,6 +45,9 @@ def test_source_weight_normalizes_korean_suffixes() -> None:
         long_impact_signals=set(),
         emotional_drop_keywords=[],
         drop_categories=set(),
+        political_actor_keywords=[],
+        political_commentary_keywords=[],
+        policy_action_keywords=[],
         source_tier_a={"연합뉴스"},
         source_tier_b=set(),
         source_weight_enabled=True,

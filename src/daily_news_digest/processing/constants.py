@@ -24,5 +24,6 @@ DEFAULT_TOP_MIX_MIN = {
 }
 DEFAULT_TOP_MIX_MAX = {
     "정책": 2,
+    "금융": 5,
 }
 DEFAULT_TOP_SOURCE_MAX_PER_OUTLET = 2

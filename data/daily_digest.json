@@ -3,31 +3,57 @@
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-09T08:04:02.955459+09:00",
+  "lastUpdatedAt": "2026-02-09T20:53:05.971743+09:00",
   "items": [
     {
       "id": "2026-02-09_1",
       "date": "2026-02-09",
-      "category": "금융",
-      "title": "롯데웰푸드, 올해 실적 개선 전망",
+      "category": "국제",
+      "title": "미국, 협상장에서 군복 입은 장성으로 이란 압박… 이란 \"우라늄 포기 불가\"",
       "summary": [
-        "DS투자증권은 롯데웰푸드의 목표 주가를 16만원에서 17만원으로 상향 조정하고, 투자의견을 '매수'로 유지했습니다.",
-        "롯데웰푸드는 올해 매출 성장률 4~5%, 영업이익률 4~6%를 연간 가이던스로 제시했습니다."
+        "미국과 이란이 8개월 만에 협상을 재개했으나 핵심 쟁점에서 이견을 좁히지 못했습니다.",
+        "미국은 군 수뇌부를 협상 전면에 투입하며 이란을 압박하고 있으며, 이란은 우라늄 농축 권리를 포기할 수 없다는 입장입니다."
       ],
-      "whyImportant": "롯데웰푸드의 실적 개선은 식품 산업 전반의 수익성 변화를 가늠할 수 있는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 롯데웰푸드는 올해 매출 성장률 4~5%, 영업이익률 4~6%를 제시하여, 실적 개선에 대한 전망치를 구체적으로 제시했습니다.",
+      "whyImportant": "미국과 이란의 핵 협상 관련 갈등은 국제적인 안보 및 외교 관계에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 8개월 만에 재개된 협상에서 미국이 군 수뇌부를 투입하여 이란을 압박하고, 이란은 우라늄 농축 권리를 포기할 수 없다고 밝히면서 양국 간 긴장이 고조되고 있기 때문입니다.",
+      "impactSignals": [],
+      "dedupeKey": "미국-협상장-군복-입은-장성-이란-압박-우라늄",
+      "clusterKey": "관세/미국",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11ZVJ3a3p5MU5nU0FwcmgtTlQzNXV4R09NNTZoaHBQN0VOeXh1YjdFNUZnTVlheWVnX3d0Y0NPRjJKam85SlZCT2dVS19QekhheDhPU25LWF83cEowUkt3UnlBYVVMNE9ZSWhFVnNqaUJ0ZlJi?oc=5",
+      "publishedAt": "2026-02-09T03:55:29+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_2",
+      "date": "2026-02-09",
+      "category": "국제",
+      "title": "미국-이란 핵 협상 재개, 이견 속에 추가 협상 예정",
+      "summary": [
+        "미국과 이란이 오만에서 8개월 만에 핵 협상을 재개했으나, 우라늄 농축 및 미사일 문제에서 이견을 좁히지 못했습니다.",
+        "미국은 군사적 압박을 강화하고 이란 제재를 확대하고 있으며, 이스라엘은 미사일 문제 논의 부재에 우려를 표명했습니다.",
+        "양측은 추가 협상에는 공감했으나, 구체적인 날짜는 확정하지 못했습니다."
+      ],
+      "whyImportant": "미국과 이란의 핵 협상 결과는 중동 지역의 안보 및 국제 관계에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국과 이란이 핵 협상을 재개했으나, 핵심 쟁점에서 이견이 커 타협점을 찾기 어려울 것으로 예상되며, 미국은 이란 제재 대상을 15개 단체와 2명 개인, 14척 선박으로 확대했습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "롯데웰푸드는 올해 연간 가이던스(전망치)로 매출 성장률 4~5%, 영업이익률 4~6%를 제시했다."
+          "label": "policy",
+          "evidence": "트럼프 대통령은 이란과 거래하는 국가에 관세를 추가로 부과할 수 있는 절차를 담은 행정명령에 서명했습니다."
         }
       ],
-      "dedupeKey": "롯데웰푸드-올해-실적-개선-ds투자증권-16만원-17만원-투자의견",
-      "clusterKey": "실적/롯데웰푸드",
+      "dedupeKey": "미국-이란-협상-재개-이견-속에-8개월-재개했으나",
+      "clusterKey": "이스라엘이란_제재/미국/관세",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5pTFY3MzdTeVBsM0RicEhsZ1pxMUp4TDlVTGtBcTVSZ00zSXpjNzRxVFJuOEY3MFRPcXpQX2ZBd3hDWnVueEhGQzhCaEc5SGx3TkFpV2NURHNSQdIBVEFVX3lxTE9pLTZSYl9OX2ZiUzFWZGxxbTF3VjAyOUxzZk40aTl0WThKN1JCNnI0UHdSUmhNQkNQa09SWnJSa0RzWXk4Q1J3VFNXcE8yV1pvZDBXRw?oc=5",
-      "publishedAt": "2026-02-08T22:35:44+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IUnQxRHpNTXRtM2JFMTE0T0pfVmtva1pPajZFOXhtaHhUR0hvNzRpRENpdUtHa3VRd2xOcTRqY3hNU0VrX20wODBJanNUU1hKS3B5MTZtWk0zM0tQQnQ5VkNEX1dqMERUUG5ZSGZVVXg0elNO?oc=5",
+      "publishedAt": "2026-02-08T04:17:11+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -36,27 +62,268 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-09_2",
+      "id": "2026-02-09_3",
       "date": "2026-02-09",
-      "category": "기술",
-      "title": "구글 고정밀 지도 반출 관련 보완 서류 제출, 정부 최종 판단 주목",
+      "category": "에너지",
+      "title": "GS건설, 호주 전력망·인프라 구축사업 확장 추진",
       "summary": [
-        "구글이 고정밀 지도 국외 반출 관련 보완 서류를 정부에 제출했습니다.",
-        "정부는 관계 부처 협의체를 통해 반출 여부를 심의할 예정입니다.",
-        "이번 결정은 국내 공간정보 산업 경쟁력과 통상·외교 문제에 영향을 줄 수 있습니다."
+        "GS건설은 호주 건설 시장 확대를 위해 대표가 직접 현지 인프라 현장을 점검하고 주요 인사를 면담했습니다.",
+        "GS건설은 호주에서 전력망 인프라 구축 사업으로 포트폴리오 확장을 준비하고 있습니다.",
+        "GS건설은 2024년 호주 빅토리아주 SRL 지하철 터널 공사를 수주하여 진행 중입니다."
       ],
-      "whyImportant": "고정밀 지도 데이터 반출 결정은 국내 산업 경쟁력과 정부의 디지털 규제에 대한 통상·외교 문제에 영향을 미칠 수 있어 중요합니다.",
-      "importanceRationale": "근거: 정부는 관계 부처가 참여하는 협의체에서 심의할 예정이며, 이는 국내 공간정보 산업과 통상·외교 문제에 영향을 줄 수 있습니다.",
+      "whyImportant": "GS건설의 호주 전력망 인프라 구축 사업 참여는 향후 해외 시장에서의 추가적인 사업 기회 확보에 중요한 전환점이 될 수 있습니다.",
+      "importanceRationale": "근거: GS건설은 호주에서 대규모 송전망 구축 기회를 포착하고 전력망 인프라 구축 사업에 적극 참여할 계획입니다.",
       "impactSignals": [],
-      "dedupeKey": "구글-고정밀-지도-반출-보완-서류-정부-최종",
-      "clusterKey": "구글/고정밀/지도",
+      "dedupeKey": "gs건설-호주-전력망-인프라-구축사업-확장-포트폴리오-공사",
+      "clusterKey": "gs건설/호주/인프라",
       "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9DMXpUNEd3LTZHQjNUZV9GTVZILUJTd1lTaEUxNFpDNVNBUmtKY0tQRjBRZUw3alY0amFUV2hIZjlZNE5CNUxmUlphQ25aajlmcmg1Sm9mSks3S1p3Sm1aNWxUR0pocjNa0gFsQVVfeXFMT0VBa3FId3ZCZnlHUWVEWEkzRFU3a0JsVXZJN29EdG8wdnFEWjFoXzBodmhfd3hHckNZVm1GRzgwOWRGTlBBN28zZnhhMTJLTDJWRlRTdEJwQWpVaTVYT21CUVMtNUJBZW9TVHBO?oc=5",
-      "publishedAt": "2026-02-08T09:30:00+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5va2V3TThnYTNkbmtvN1cya29fQWt3anlyV0YxczE5ODFhRXpJRm92a3Q2eFV2MUpHcXY3WGo5dXNRX2k1ekZ5SnNscTRRV1hwSE9tUXBNZm1od9IBVEFVX3lxTE04OVFnSHlFaHlzLWtORlFCZE4xNFdFYnhraFRlZXVHc29qUVpXNkRyTWxyMURkRU5OWlgtVjdGUUVCMV9OVGtfdmc5VTRfa0l2N0Qyaw?oc=5",
+      "publishedAt": "2026-02-09T00:49:38+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_4",
+      "date": "2026-02-09",
+      "category": "기술",
+      "title": "EU, WhatsApp AI 정책에 대한 메타 제재 계획 발표",
+      "summary": [
+        "유럽연합 집행위원회는 메타가 왓츠앱에서 타사 AI 비서를 배제하는 것을 막기 위해 잠정 조치를 부과할 계획이라고 밝혔습니다.",
+        "EU는 메타가 EU 반독점 규칙을 위반했다고 보고 있으며, 경쟁을 보호하기 위해 신속하게 잠정 조치를 고려하고 있다고 덧붙였습니다.",
+        "메타는 왓츠앱 비즈니스 솔루션 약관을 업데이트하여 타사 AI 비서의 접근을 금지했으며, 이 정책은 1월에 발효되었습니다."
+      ],
+      "whyImportant": "이번 조치는 빠르게 발전하는 AI 시장에서 공정한 경쟁 환경을 조성하고, 지배적인 기술 기업이 불법적으로 우위를 점하는 것을 방지하는 데 중요합니다.",
+      "importanceRationale": "근거: EU 집행위는 메타의 새로운 정책이 유럽 내 경쟁에 돌이킬 수 없는 해를 끼치는 것을 막기 위해 신속하게 잠정 조치를 고려하고 있으며, 이는 1월에 발효된 정책에 대한 대응입니다.",
+      "impactSignals": [],
+      "dedupeKey": "whatsapp-정책-메타-제재-발표-유럽연합-집행위원회-보호하기",
+      "clusterKey": "법집행/whatsapp/정책/제재",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeHRibzBhdXR5VEhjOHBVcml4X09QQ0VjajNlZ1dwbVB3aXNDWXRCV2g2cWZiemM1elFxNzYxVm5wLUgyVHA3bHJ5MHNVUVA3OHFIdW93Ymh6SUxIcExqeGliMEhLVl9CLVE0N3dIaTNpRmVvVElXYVIwanhEOF9hZ0J2QkhPbGpGbDR0WXRUbUdJb2pSMHfSAZsBQVVfeXFMTmlsQ0NLcmNyd0hxR3czQlc0aWlNV0hNcjRjRkQyRVo3TnFtTTVMbEUtSVFGcGttTG9JaGFybEtRZ1FqbzZmV28xMzFTbkFqNW51N2FiLVZoZUdTSG41YnMtZVNZTkNqNXloSVJtdG0wTU1HWWRCOE84N3FqeFp3SGFxS0ZFSjl5RU9MYXp2TjNDN19zMXQyNjExV2s?oc=5",
+      "publishedAt": "2026-02-09T09:55:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_5",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "고려아연, 광물 가격 강세로 작년 사상 최대 실적 기록",
+      "summary": [
+        "고려아연은 작년 매출액 16조5851억원, 영업이익 1조2324억원을 기록하며 사상 최대 실적을 달성했습니다.",
+        "핵심광물과 귀금속 회수율 확대, 신재생에너지 및 배터리 소재 사업 등이 실적 개선에 기여했습니다.",
+        "온산제련소 신규 설비 투자와 미국 비철금속 제련소 건설 등 핵심광물 생산 확대를 위한 투자도 진행 중입니다."
+      ],
+      "whyImportant": "핵심 광물 확보 경쟁이 심화되는 가운데, 고려아연의 실적 증가는 관련 산업에 대한 투자 및 공급망 안정화 노력에 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 고려아연은 매출과 영업이익이 전년 대비 각각 37.6%, 70.4% 증가했으며, 미국에 약 74억 달러를 투자하여 비철금속 통합 제련소를 건설할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "고려아연이 지난해 연결 기준 매출액 16조5851억원, 영업이익 1조2324억원을 기록했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "미국에서는 약 74억달러를 투자해 비철금속 통합 제련소를 건설할 계획이다."
+        }
+      ],
+      "dedupeKey": "고려아연-광물-가격-강세-작년-사상-16조5851억원-1조2324억원",
+      "clusterKey": "설비투자/고려아연/실적/투자",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95UlpUUG9qUHVPYm1xYXBKRVFJSDlvYWI5SXRpMnNHWnpsOUk2U1dQa18zNGZnOEZlREdwRktJR1BrTWZJdDhfQ2RUR3dwZWU0c3U3bFBXWjI4WWJmQkxPWFJGeEdVQQ?oc=5",
+      "publishedAt": "2026-02-09T07:55:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_6",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "한화에어로스페이스, 3년 연속 최대 실적 경신",
+      "summary": [
+        "한화에어로스페이스는 작년 연결 기준 매출 26조 6078억원, 영업이익 3조 345억원을 기록했다고 발표했습니다.",
+        "이는 전년 대비 매출은 137%, 영업이익은 75% 증가한 수치입니다.",
+        "지상방산, 항공우주 부문 성장과 한화오션 실적 연결 편입 효과가 반영되었습니다."
+      ],
+      "whyImportant": "한화에어로스페이스의 실적 증가는 방산 및 항공우주 산업의 성장과 기업 경쟁력 강화에 중요한 지표가 됩니다.",
+      "importanceRationale": "근거: 매출이 전년 대비 137%, 영업이익은 75% 증가했으며, 지상방산 부문 매출은 8조 1331억원으로 최근 2년간 약 두 배 증가했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "한화에어로스페이스는 지난해 연결 기준 매출 26조6078억원, 영업이익 3조345억원을 기록했다고 9일 발표했다."
+        }
+      ],
+      "dedupeKey": "한화에어로스페이스-연속-최대-실적-경신-26조-6078억원-345억원",
+      "clusterKey": "실적/한화에어로스페이스",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tOTU5X3FyWEZEU0Ixay10dmVONnRVZjdXdDNCdTlpMnZhTWc5MVBpckNIMVJuM05ldGtCZGFKZmcxU2FLbUY0UmRVTDBycXExOEo5NU9JTld3aGFPV0ZzaGJBSThiZw?oc=5",
+      "publishedAt": "2026-02-09T09:17:39+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_7",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "HD한국조선해양, 작년 최대 실적 기록",
+      "summary": [
+        "HD한국조선해양은 2023년 매출 29조9332억원, 영업이익 3조9045억원을 기록했다고 밝혔습니다.",
+        "이는 전년 대비 매출은 17.2%, 영업이익은 172.3% 증가한 수치입니다.",
+        "HD현대중공업, HD현대삼호 등 계열사 실적 호조가 전체 실적을 견인했습니다."
+      ],
+      "whyImportant": "조선업 활황에 따른 국내 조선사들의 실적 증가는 조선 산업 전반의 성장세를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: HD한국조선해양은 매출이 17.2%, 영업이익은 172.3% 증가했으며, 한화오션과 삼성중공업도 각각 매출과 영업이익이 증가하는 등 국내 주요 조선사들의 실적 호조가 나타났기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "에이치디(HD)현대의 조선 부문 중간지주사인 에이치디한국조선해양은 2025년 연결기준으로 매출 29조9332억원에 영업이익 3조9045억원을 기록했다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "hd한국조선해양-작년-최대-실적-기록-29조9332억원-영업이익-3조9045억원",
+      "clusterKey": "실적/hd한국조선해양",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1uVU5hUC1WSXhPQVF0dTRUVGJ6am92NlpDZVZJSHhrT0dMclh6RWtnXzM3ZzN1UldLdGRQazA5bmg5VzhKLURfQzNtWkktaXFQYzJidm5XdE5HRlNGQ1NwRVBKRFBhMDd4ZlhZa0F5UVRIQQ?oc=5",
+      "publishedAt": "2026-02-09T10:01:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_8",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "크래프톤, 4분기 매출 증가에도 영업이익 급감",
+      "summary": [
+        "크래프톤은 2025년 4분기 매출이 증가했으나 영업이익이 99.3% 감소했다고 밝혔습니다.",
+        "ADK 편입과 일회성 비용이 발생하여 비용 구조에 변화가 생겼기 때문입니다.",
+        "2026년부터 3년간 1조원 이상의 주주 환원 정책을 시행할 예정입니다."
+      ],
+      "whyImportant": "크래프톤의 수익성 변화와 주주 환원 정책은 향후 게임 업계 투자 및 사업 전략에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 4분기 영업이익이 99.3% 감소했고, 2026년부터 3년간 1조원 이상의 주주 환원 정책이 발표되어 투자 결정에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "4분기 매출은 9197억원으로 증가했으나 영업이익은 24억원으로 전 분기(3486억원) 대비 99.3% 감소했다."
+        }
+      ],
+      "dedupeKey": "크래프톤-매출-증가에-영업이익-급감-3년간-1조원-환원",
+      "clusterKey": "실적/크래프톤/정책",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNnpSTzMtalZLZklyb0FEVDRsVkd5Z05qTUhVNFR2UnVGcFF2Q1JHYndkRFI5REpQOVVFTVhFUkNKTU1GZTRWdTNuem5oSnlBeHd0YWhERERCcDZBaFdRT3dYdjQ1eFhP0gFsQVVfeXFMUGtrMGh5N3dTaFd0STNCcG9TdnNMQ2xMN0lVei14TVlFV3FSS1g0RkNXb0tMdWlzYmI0a0RFU3dYRkxaZktoQlRWTHkwLVJ2eDR5VkZYalE5RXNvOXc1V04yZ2NRa0k1RElrcXZL?oc=5",
+      "publishedAt": "2026-02-09T10:17:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_9",
+      "date": "2026-02-09",
+      "category": "에너지",
+      "title": "도쿄전력 가시와자키 원전 재가동 재개",
+      "summary": [
+        "도쿄전력이 가시와자키 원전 6호기의 재가동 작업을 9일 재개했습니다.",
+        "지난달 재가동 시도 중 경보가 울려 중단된 후 약 보름 만에 재개된 것입니다.",
+        "도쿄전력은 시험 발전을 거쳐 내달 18일께 영업 운전에 나설 계획입니다."
+      ],
+      "whyImportant": "원전 재가동은 전력 공급 및 에너지 정책에 영향을 미칠 수 있는 중요한 결정입니다.",
+      "importanceRationale": "근거: 도쿄전력이 후쿠시마 원전 사고 이후 처음으로 원전을 재가동하여 영업 운전을 하려는 것으로, 내달 18일께 영업 운전에 나설 계획입니다.",
+      "impactSignals": [],
+      "dedupeKey": "도쿄전력-가시와자키-원전-재가동-재개-6호기-작업-18일께",
+      "clusterKey": "도쿄전력/가시와자키/재가동",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4wbTg5dktSUS14Z1ZiZWhSMEJLWjlxbm0tQ1ZHSUNVUWtDMktvRE9weU5UdWl4aE5PdURVQ1BWRGowVDNXTHZwYWluaFI0dk1tc1pic0ptc09WQ0JGbFlLcTRyOUM2OUNHZGVXNW5UQnUxYkdz?oc=5",
+      "publishedAt": "2026-02-09T05:55:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_10",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "CJ제일제당, 작년 매출 및 영업이익 감소…국내 식품·바이오 부진",
+      "summary": [
+        "CJ제일제당은 국내 식품 경기 침체와 바이오 부진으로 작년 영업이익이 감소했다고 밝혔습니다.",
+        "작년 매출은 17조 7,549억원으로 0.6% 감소, 영업이익은 8,612억원으로 15.2% 줄었습니다.",
+        "해외 식품 사업 매출은 처음으로 국내 매출을 넘어섰습니다."
+      ],
+      "whyImportant": "CJ제일제당의 실적 부진은 국내 식품 산업의 침체와 바이오 업황 부진이 복합적으로 작용한 결과로, 향후 사업 전략에 중요한 시사점을 제공합니다.",
+      "importanceRationale": "근거: CJ제일제당의 작년 영업이익은 8,612억원으로 15.2% 감소했으며, 바이오 사업 부문 매출은 5.4% 감소했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "CJ제일제당은 지난해 CJ대한통운[000120]을 제외한 매출이 17조7천549억원으로 전년 대비 0.6% 감소하고 영업이익은 8천612억 원으로 15.2% 줄었다고 9일 밝혔다."
+        }
+      ],
+      "dedupeKey": "cj제일제당-작년-매출-영업이익-감소-국내-549억원-612억원",
+      "clusterKey": "실적/cj제일제당",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1MdjQ5WjRzcFVPQmFkZUxLZEZra0p0X2hPQ3haeC16ZlJjejNhYWk3bFg0UmM4a2h2R2M1dDlvaXRsN1Fxc2llaC1HR3VWZDlzM01YQ0JROXJMTElkMkthOTBzOHg2ZWdISlZnXzRaZWladzF1?oc=5",
+      "publishedAt": "2026-02-09T08:04:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-09_11",
+      "date": "2026-02-09",
+      "category": "금융",
+      "title": "한화에어로, 작년 매출 26.6조·영업익 3조…3년 연속 최대 실적",
+      "summary": [
+        "한화에어로스페이스는 연결 기준으로 작년 영업이익이 3조 345억 원으로 전년 대비 75.2% 증가했다고 밝혔습니다.",
+        "매출은 26조 6천78억 원으로 전년 대비 136.7% 증가했으며, 한화오션 실적 편입이 영향을 미쳤습니다."
+      ],
+      "whyImportant": "한화에어로스페이스의 실적 증가는 방산 및 조선해양 통합 기업으로서의 성장 가능성을 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 매출이 전년 대비 136.7% 증가한 26조 6천78억 원을 기록하며 역대 최대 규모를 달성했고, 영업이익도 75.2% 증가한 3조 345억 원을 기록했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "한화에어로스페이스[012450]는 연결 기준 작년 한 해 영업이익이 3조345억원으로 전년보다 75.2% 증가했다고 9일 밝혔다."
+        }
+      ],
+      "dedupeKey": "한화에어-작년-매출-6조-영업익-3조-연속-최대",
+      "clusterKey": "실적/한화에어",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1HTmwzUmJraVZydjA5TC1VckRmUV9RUFNBSjJqOXNQSzJxSXlsblZFSm5lOXc2ajhZR3pndDZCWUNoRldRWnRCYXAza0hrWjA0YVpvdnNQWjFkeE4zSEdIRDFtZkFTb1c5WFlJUHJOYWM1Z1Zr?oc=5",
+      "publishedAt": "2026-02-09T07:20:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

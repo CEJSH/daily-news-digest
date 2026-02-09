@@ -44,6 +44,10 @@ class DedupeEngine:
         jaccard_func: Callable[[set[str], set[str]], float],
         is_eligible_func: Callable[[Item], bool] | None = None,
     ) -> None:
+        self._normalize_title_for_dedupe = normalize_title_for_dedupe_func
+        self._normalize_token_for_dedupe = normalize_token_for_dedupe_func
+        self._text_cleaner = clean_text_func
+        self._jaccard = jaccard_func
         self._stopwords = stopwords
         self._dedupe_noise_words = dedupe_noise_words
         self._month_tokens = month_tokens
@@ -83,10 +87,6 @@ class DedupeEngine:
         self._cluster_relation_labels = set(self._cluster_relations.keys())
         self._cluster_max_tokens = max(1, int(cluster_max_tokens or 1))
         self._cluster_max_entities = max(0, int(cluster_max_entities or 0))
-        self._normalize_title_for_dedupe = normalize_title_for_dedupe_func
-        self._normalize_token_for_dedupe = normalize_token_for_dedupe_func
-        self._clean_text = clean_text_func
-        self._jaccard = jaccard_func
         self._is_eligible = is_eligible_func or (lambda item: not item.get("dropReason"))
         self.seen_titles: set[str] = set()
         self.seen_title_tokens: list[tuple[set[str], Item]] = []
@@ -99,7 +99,7 @@ class DedupeEngine:
         return float(x.get("aiImportance") or x.get("importance") or x.get("score") or 0.0)
 
     def tokenize_for_dedupe(self, text: str) -> list[str]:
-        t = self._clean_text(text or "").lower()
+        t = self._text_cleaner(text or "").lower()
         t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
         return [x for x in t.split() if x]
 
@@ -177,7 +177,7 @@ class DedupeEngine:
         if not key:
             return set()
         n_value = self._dedupe_ngram_n if n is None else n
-        t = self._clean_text(key).lower()
+        t = self._text_cleaner(key).lower()
         t = re.sub(r"[-\s]+", "", t)
         if len(t) < n_value:
             return set()
@@ -186,7 +186,7 @@ class DedupeEngine:
     def _dedupe_key_tokens(self, key: str) -> list[str]:
         if not key:
             return []
-        t = self._clean_text(key).lower()
+        t = self._text_cleaner(key).lower()
         return [p for p in t.split("-") if p]
 
     def _dedupe_core_tokens(self, key: str) -> list[str]:
@@ -292,7 +292,7 @@ class DedupeEngine:
     def _normalize_cluster_token(self, token: str) -> str:
         if not token:
             return ""
-        t = self._clean_text(token).lower()
+        t = self._text_cleaner(token).lower()
         t = re.sub(r"[^a-z0-9가-힣_]", "", t)
         return t
 
@@ -602,7 +602,7 @@ class DedupeEngine:
                 continue
             key = item.get("dedupeKey") or ""
             if key:
-                key_norm = self._clean_text(key).lower()
+                key_norm = self._text_cleaner(key).lower()
                 key_tokens = [p for p in key_norm.split("-") if p]
                 if len(key_tokens) >= 2:
                     matched_key = seen_keys.get(key_norm)

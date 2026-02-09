@@ -474,6 +474,14 @@ class DigestPipeline:
                 if len(allowlist_candidates) < top_limit:
                     self._log(f"⚠️ TOP allowlist 부족: {len(allowlist_candidates)}/{top_limit}")
                     self._log_allowlist_debug(fresh_candidates, top_limit)
+                    picked = _pick_from_candidates(allowlist_candidates)
+                    if len(picked) < top_limit:
+                        remain = [
+                            x for x in sorted(fresh_candidates, key=lambda x: x["score"], reverse=True)
+                            if x not in picked
+                        ]
+                        picked += remain[: top_limit - len(picked)]
+                    return picked[:top_limit]
                 return _pick_from_candidates(allowlist_candidates)
             picked = _pick_from_candidates(allowlist_candidates)
             if len(picked) < top_limit:

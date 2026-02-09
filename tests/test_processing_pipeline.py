@@ -3,6 +3,7 @@ from __future__ import annotations
 import datetime
 
 from daily_news_digest.processing.ai_service import AIEnrichmentService
+import daily_news_digest.processing.pipeline as pipeline_mod
 from daily_news_digest.processing.dedupe import DedupeEngine
 from daily_news_digest.processing.parsing import EntryParser
 from daily_news_digest.processing.pipeline import DigestPipeline
@@ -135,3 +136,29 @@ def test_pick_top_with_mix_enforces_policy_cap_and_minimums() -> None:
     assert categories.get("산업", 0) >= 1
     assert categories.get("경제", 0) >= 1
     assert categories.get("국제", 0) >= 1
+
+
+def test_allowlist_strict_fallback_when_short(monkeypatch) -> None:
+    pipeline = _build_pipeline(_Feed([]))
+    scorer = pipeline._filter_scorer
+    scorer._top_source_allowlist_enabled = True
+    scorer._top_source_allowlist = {"good"}
+    monkeypatch.setattr(pipeline_mod, "TOP_SOURCE_ALLOWLIST_ENABLED", True)
+    monkeypatch.setattr(pipeline_mod, "TOP_SOURCE_ALLOWLIST_STRICT", True)
+
+    base = {
+        "status": "kept",
+        "dropReason": "",
+        "ageHours": 1,
+        "impactSignals": [],
+        "summary": "요약",
+        "fullText": "본문",
+    }
+    items = [
+        {"title": "GOOD1", "score": 5, "aiCategory": "경제", "source": "good", "sourceRaw": "good", **base},
+        {"title": "BAD1", "score": 4, "aiCategory": "경제", "source": "bad", "sourceRaw": "bad", **base},
+        {"title": "BAD2", "score": 3, "aiCategory": "경제", "source": "bad2", "sourceRaw": "bad2", **base},
+    ]
+    picked = pipeline.pick_top_with_mix(items, top_limit=3)
+    assert len(picked) == 3
+    assert any(it.get("source") == "bad" for it in picked)

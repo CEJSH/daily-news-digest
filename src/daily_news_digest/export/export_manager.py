@@ -82,8 +82,13 @@ from daily_news_digest.export.validators.evidence import (
     label_evidence_valid,
     policy_evidence_valid,
     sanctions_evidence_valid,
-    evidence_keyword_hits,          # NEW
-    evidence_specificity_score,     # NEW
+    market_demand_evidence_valid,   # NEW
+    earnings_evidence_valid,        # NEW
+    capex_evidence_valid,           # NEW
+    infra_evidence_valid,           # NEW
+    security_evidence_valid,        # NEW
+    evidence_keyword_hits,
+    evidence_specificity_score,
 )
 from daily_news_digest.export.validators.impact_signal import (
     has_duplicate_impact_evidence,
@@ -114,6 +119,11 @@ _has_number_token = has_number_token
 _label_evidence_valid = label_evidence_valid
 _policy_evidence_valid = policy_evidence_valid
 _sanctions_evidence_valid = sanctions_evidence_valid
+_market_demand_evidence_valid = market_demand_evidence_valid
+_earnings_evidence_valid = earnings_evidence_valid
+_capex_evidence_valid = capex_evidence_valid
+_infra_evidence_valid = infra_evidence_valid
+_security_evidence_valid = security_evidence_valid
 
 # Impact Signal 관련함수 alias
 _sanitize_impact_signals = sanitize_impact_signals

@@ -85,6 +85,16 @@ class DedupeEngine:
             for label, tokens in (cluster_relations or {}).items()
         }
         self._cluster_relation_labels = set(self._cluster_relations.keys())
+        relation_tokens: set[str] = set()
+        for label, required in self._cluster_relations.items():
+            norm_label = self._normalize_cluster_token(label)
+            if norm_label:
+                relation_tokens.add(norm_label)
+            for tok in required:
+                norm = self._normalize_cluster_token(tok)
+                if norm:
+                    relation_tokens.add(norm)
+        self._relation_entity_tokens = relation_tokens
         self._cluster_max_tokens = max(1, int(cluster_max_tokens or 1))
         self._cluster_max_entities = max(0, int(cluster_max_entities or 0))
         self._is_eligible = is_eligible_func or (lambda item: not item.get("dropReason"))
@@ -346,9 +356,44 @@ class DedupeEngine:
         generic = {
             "전망", "가능", "유지", "논의", "시사", "추진", "예정", "발표", "계획", "검토",
             "관련", "대한", "대해", "위해", "통해", "확대", "강화", "재개", "확정",
-            "합의", "협의", "대화", "검토", "추가",
+            "합의", "협의", "대화", "검토", "추가", "면담", "회의", "회담", "방문", "방한",
+            "발언", "언급", "결정", "승인", "촉구", "지적", "요구", "제안",
+            "상승", "하락", "급등", "급락", "반등", "회복", "개선", "부진", "증가", "감소",
+            "성장", "강세", "약세", "수요", "공급", "가격", "주가", "시장",
+            "장관", "본부장", "부대표", "대표", "위원장", "당국", "정부",
+            "growth", "decline", "rise", "fall", "market", "price", "demand", "supply",
         }
-        return token in generic or self.is_noise_token(token)
+        if token in generic:
+            return True
+        if token in self._relation_entity_tokens:
+            return True
+        return self.is_noise_token(token)
+
+    def _normalize_entity_tokens(self, tokens: set[str]) -> set[str]:
+        out: set[str] = set()
+        for tok in tokens:
+            norm = self._normalize_cluster_token(tok)
+            if not norm:
+                continue
+            if not self.valid_token_length(norm):
+                continue
+            if self._is_generic_entity_token(norm):
+                continue
+            out.add(norm)
+        return out
+
+    def _entity_overlap_enough(self, a: set[str], b: set[str]) -> bool:
+        overlap = a & b
+        if len(overlap) >= 2:
+            return True
+        if len(overlap) == 1:
+            tok = next(iter(overlap))
+            if self._looks_like_org_token(tok):
+                return True
+            if self.is_korean_token(tok):
+                return len(tok) >= 2
+            return len(tok) >= 4
+        return False
     
 
     def _cluster_hint_tokens(self, text: str) -> list[str]:
@@ -635,10 +680,10 @@ class DedupeEngine:
             if not self._is_eligible(item):
                 continue
             key = item.get("dedupeKey") or ""
-            tokens = set(self._dedupe_core_tokens(key))
-            if not tokens:
+            tokens_raw = {self._normalize_cluster_token(t) for t in self._dedupe_core_tokens(key) if t}
+            if not tokens_raw:
                 continue
-            event_groups = self._event_group_ids(tokens)
+            event_groups = self._event_group_ids(tokens_raw)
             if not event_groups:
                 cluster_key = item.get("clusterKeyRule") or item.get("clusterKey") or ""
                 if cluster_key:
@@ -653,14 +698,27 @@ class DedupeEngine:
                             event_groups.add(group)
             if not event_groups:
                 continue
-            entity_tokens = {t for t in tokens if t not in self._dedupe_event_tokens}
+            entity_tokens = {t for t in tokens_raw if t not in self._dedupe_event_tokens}
+            entity_tokens = self._normalize_entity_tokens(entity_tokens)
+            cluster_key = item.get("clusterKeyRule") or item.get("clusterKey") or ""
+            if cluster_key:
+                cluster_tokens = {
+                    self._normalize_cluster_token(t)
+                    for t in cluster_key.replace("_", "/").split("/")
+                    if t
+                }
+                cluster_entities = {
+                    t for t in cluster_tokens if t and t not in self._dedupe_event_tokens
+                }
+                entity_tokens |= self._normalize_entity_tokens(cluster_entities)
             if not entity_tokens:
                 continue
             matched = next(
                 (
                     ref
                     for ref_groups, ref_entities, ref in kept
-                    if (event_groups & ref_groups) and (entity_tokens & ref_entities)
+                    if (event_groups & ref_groups)
+                    and self._entity_overlap_enough(entity_tokens, ref_entities)
                 ),
                 None,
             )

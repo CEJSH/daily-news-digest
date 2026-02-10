@@ -237,8 +237,9 @@ def normalize_token_for_dedupe(token: str, stopwords: set[str]) -> str:
         "한화에어로스페이스": "한화에어로",
         "한화에어로": "한화에어로",
     }
+    alias_locked = tok in token_aliases
     tok = token_aliases.get(tok, tok)
-    if re.search(r"[가-힣]", tok):
+    if re.search(r"[가-힣]", tok) and not alias_locked:
         for _ in range(3):
             changed = False
             for suf in sorted(_KOREAN_VERB_ENDINGS, key=len, reverse=True):

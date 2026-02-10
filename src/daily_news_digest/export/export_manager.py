@@ -589,9 +589,9 @@ def _collect_item_errors(
         importance = int(item.get("importance") or 0)
     except Exception:
         importance = 0
-    if isinstance(impact_signals, list) and len(impact_signals) == 0:
+    if importance >= 3 and isinstance(impact_signals, list) and len(impact_signals) == 0:
         errors.append("ERROR: IMPACT_SIGNALS_REQUIRED")
-        if importance >= 3 and any(t in align_text.lower() for t in _ALIGNMENT_TRIGGERS):
+        if any(t in align_text.lower() for t in _ALIGNMENT_TRIGGERS):
             errors.append("ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE")
 
     published_at = _parse_datetime(str(item.get("publishedAt") or ""))
@@ -622,9 +622,8 @@ def classify_errors(errors: list[str]) -> dict[str, list[str]]:
         "ERROR: DEDUPE_KEY_NOT_ALIGNED",
         "ERROR: CLUSTER_KEY_NOT_ALIGNED",
         "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE",
-        "ERROR: IMPACT_SIGNALS_REQUIRED",
     }
-    s3 = {"ERROR: LOW_QUALITY_MISMATCH"}
+    s3 = {"ERROR: LOW_QUALITY_MISMATCH", "ERROR: IMPACT_SIGNALS_REQUIRED"}
     return {
         "s1": [e for e in errors if e in s1],
         "s2": [e for e in errors if e in s2],
@@ -751,6 +750,13 @@ def apply_soft_warnings(item: dict, errors: list[str]) -> None:
             item["importance"] = 2
         elif importance > 1:
             item["importance"] = max(1, importance - 1)
+    if "ERROR: IMPACT_SIGNALS_REQUIRED" in errors:
+        try:
+            importance = int(item.get("importance") or 0)
+        except Exception:
+            importance = 0
+        if importance >= 3:
+            item["importance"] = 2
 
 def handle_validation_errors(
     item: dict,
@@ -990,9 +996,14 @@ def _validate_digest(digest: dict) -> tuple[bool, str]:
                 return False, "ERROR: INVALID_INFRA_LABEL"
             if label == "security" and not _security_evidence_valid(evidence):
                 return False, "ERROR: INVALID_SECURITY_LABEL"
-        impact_signals = it.get("impactSignals")
-        if isinstance(impact_signals, list) and len(impact_signals) == 0:
-            return False, "ERROR: IMPACT_SIGNALS_REQUIRED"
+        try:
+            importance = int(it.get("importance") or 0)
+        except Exception:
+            importance = 0
+        if importance >= 3:
+            impact_signals = it.get("impactSignals")
+            if isinstance(impact_signals, list) and len(impact_signals) == 0:
+                return False, "ERROR: IMPACT_SIGNALS_REQUIRED"
         if not it.get("title") or not it.get("sourceUrl"):
             return False, "INVALID_DIGEST"
         summary = it.get("summary")

@@ -1,21 +1,216 @@
 {
-  "date": "2026-02-09",
+  "date": "2026-02-10",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-09T20:53:05.971743+09:00",
+  "lastUpdatedAt": "2026-02-10T23:03:04.068392+09:00",
   "items": [
     {
-      "id": "2026-02-09_1",
-      "date": "2026-02-09",
+      "id": "2026-02-10_1",
+      "date": "2026-02-10",
+      "category": "산업",
+      "title": "kt클라우드, 4분기 매출 26% 성장 및 데이터센터 가동률 상승",
+      "summary": [
+        "kt클라우드는 2025년 4분기에 26%의 매출 성장률을 기록하며 2분기 연속 20%대 성장률을 이어갔습니다.",
+        "공공 분야 대형 수주 확보와 신규 AI 데이터센터 가동이 성장 동력으로 작용했으며, 매출액은 2779억 원입니다.",
+        "연간 총매출은 9975억 원으로 전년 대비 27.4% 성장하여 1조 원 달성을 눈앞에 두고 있습니다."
+      ],
+      "whyImportant": "kt클라우드의 성장은 데이터센터 및 AI 클라우드 시장의 성장 가능성을 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 2025년 4분기 매출이 26% 성장했으며, 연간 총매출은 27.4% 성장하여 1조 원 달성을 앞두고 있다는 점에서 중요성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "kt클라우드가 2025년 4분기 경영 실적에서 26%의 매출 성장률을 기록하며 두 분기 연속 20%대 성장률을 이어갔다."
+        }
+      ],
+      "dedupeKey": "kt클라우드-매출-성장-데이터센터-가동률-상승-2779억-9975억",
+      "clusterKey": "실적/kt클라우드",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBIY0haUE1zSDR0Z0pVU2JJdHZDQW9DU1l4VXdScnQ5UGZCRF9JcTQ4eXF3ckNOZ0tEUDhEMElhNVN0cWItN3ctcm9WbXAwd3dhYVgtNm5mbkVfZDQ3UzVlYWl3bl8wdw?oc=5",
+      "publishedAt": "2026-02-10T08:51:55+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_2",
+      "date": "2026-02-10",
+      "category": "국제",
+      "title": "여한구, 내일 미국 무역대표부와 비관세 장벽 논의",
+      "summary": [
+        "여한구 통상교섭본부장이 릭 스위처 미국 무역대표부 부대표와 만나 통상 문제를 협의할 예정입니다.",
+        "이번 협상에서는 비관세 분야 이행 상황을 중점적으로 논의할 것으로 보입니다."
+      ],
+      "whyImportant": "이번 협상은 한미 통상 관계에 영향을 미칠 수 있는 비관세 장벽 문제를 다루기 때문에 중요합니다.",
+      "importanceRationale": "근거: 농산물 교역, 온라인 플랫폼 규제 등 현안에 대한 이견으로 한미 자유무역협정 공동위원회 개최가 연기된 상황에서 비관세 장벽 문제가 관세 협상에 영향을 미칠 가능성이 제기되고 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "여한구-내일-미국-무역대표부-비관세-장벽-통상교섭본부장-스위처",
+      "clusterKey": "관세/여한구",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1EWmlIU3dQZDExVzRrSGRoZDlOeVpOS3pybUZXcVBmNDNWaHZVR3ZtZGY2RnBZQWVtbzdUTnU0a3N0WkhsekhYcWdQSTRoYmh6UGlOaHRFcXROc0xMay15T3c4eG96YlZkV3ZhYVFsUmRvZGZZ?oc=5",
+      "publishedAt": "2026-02-10T09:49:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_3",
+      "date": "2026-02-10",
+      "category": "국제",
+      "title": "통상본부장, USTR 부대표 면담 예정",
+      "summary": [
+        "여한구 통상교섭본부장이 릭 스위처 USTR 부대표와 서울에서 만나 통상 문제를 협의할 예정입니다.",
+        "이번 회담에서는 비관세 분야 이행 상황을 중점적으로 논의할 것으로 보입니다.",
+        "미국이 비관세장벽 관련 협상에서 진척이 없을 경우 한국에 대한 관세 인상을 고려할 수 있다는 언급도 있었습니다."
+      ],
+      "whyImportant": "미국과의 비관세장벽 협상 결과에 따라 한국 제품에 대한 관세 인상 가능성이 있어 국내 산업에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 미국이 비관세장벽 협상에서 진전이 없을 경우 한국에 대한 관세 인상을 통해 무역적자를 개선하려 한다는 언급이 있어 중요도 3으로 판단합니다.",
+      "impactSignals": [],
+      "dedupeKey": "통상본부장-ustr-부대표-면담-통상교섭본부장-스위처-미국-한국",
+      "clusterKey": "한미_관세/통상본부장",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE54V2hXUXFsLW15Q2E5M0dmYkk4a2p2MEROMlNDRzlxdDRHdGhscEQwS1ZiTmJXanRlSTZ2LTBQYnFiRkw3ZVJudUhRejAzREJsMXkxNEF0RVd4d3VJWktTNktVRlV3WEptcC1TTi1pazdmTWk5?oc=5",
+      "publishedAt": "2026-02-10T03:17:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_4",
+      "date": "2026-02-10",
+      "category": "국제",
+      "title": "김정관 장관, 미국 관세 인상 유예 가능성 언급",
+      "summary": [
+        "김정관 산업통상부 장관은 미국의 대한국 관세 인상 유예 가능성이 높다고 밝혔습니다.",
+        "미국의 관세 인상 근거였던 대미 투자 지연 문제가 해소 국면에 접어들고 있다고 판단했습니다.",
+        "한미 에너지·원자력 협력 논의가 진행 중이며, 미국 안보 협상팀이 이달 방한할 예정입니다."
+      ],
+      "whyImportant": "미국의 대한국 관세 인상 유예 여부는 국내 산업에 직접적인 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 김정관 장관은 트럼프 대통령이 관세 인상 관련 글을 올린 후 2주 가까이 관보 게재가 이뤄지지 않고 있다는 점을 근거로 들었습니다.",
+      "impactSignals": [],
+      "dedupeKey": "김정관-장관-미국-관세-인상-유예-언급-산업통상부",
+      "clusterKey": "한미_투자/에너지/김정관/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBzRzBrVlRmdUZ5ZmkzWTh3WVhaaS1pTHNKVjUwYUgweXEzMENpWF9uVVh2RUlpN1ptRkR2YWVQaVVIa2ZtRmFVWWpZWEhuTFJtUFAxdHIxQTJDZ9IBVEFVX3lxTFBaakNYcWVKR0l6WkVGRlpLWDZGMGZfdFZyWkNOMDg0UVhVR2tNQXZOVWc3UEN4QWN1eFRtaFI4N3E2QnEtVmF6VUtRUUE0WWFkZHk2aQ?oc=5",
+      "publishedAt": "2026-02-09T08:40:13+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_5",
+      "date": "2026-02-10",
+      "category": "국제",
+      "title": "미국 USTR 부대표 방한, 비관세 장벽 완화 협상 전망",
+      "summary": [
+        "미국무역대표부(USTR) 부대표가 방한하여 여한구 통상교섭본부장과 통상 현안을 논의할 예정입니다.",
+        "미국은 한국의 비관세 장벽 문제(농산물, 자동차, 온라인 플랫폼, 지도 데이터 등)에 대한 완화를 요구할 것으로 예상됩니다.",
+        "한미는 작년 정상회담에서 비관세 장벽 논의 및 상호 무역 촉진 공약을 명문화하기로 합의한 바 있습니다."
+      ],
+      "whyImportant": "이번 협상은 한미 자유무역협정(FTA) 공동위원회에서 비관세 장벽 관련 합의 도출에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 작년 11월 정상회담에서 양국은 비관세 장벽 논의 및 상호 무역 촉진 공약을 올해 안에 FTA 공동위원회에서 채택하기로 합의했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "미국-ustr-부대표-방한-비관세-장벽-완화-협상",
+      "clusterKey": "한미_관세/ustr",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNZGNKMGlORnlKUDhWcVhxNlluRzRIRGNiOUJyMTNWdjdCbGtGX2cyY3ZvWkdFdTR2LWVob1dpbVVXTU9ubm1DYTBVQ0IwNGo5MmVfT00xZEhLdGdycXNHN01IWTJFNGFVZTZQek5saE1jZw?oc=5",
+      "publishedAt": "2026-02-10T10:14:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_6",
+      "date": "2026-02-10",
+      "category": "기술",
+      "title": "인권위, 점자 공보물 면수 제한 폐지 권고",
+      "summary": [
+        "국가인권위원회가 중앙선거관리위원회와 방송미디어통신위원회에 장애인 참정권 보장을 위한 제도 개선을 권고했습니다.",
+        "점자 공보물 면수 제한 폐지와 수어 통역 확대 등이 권고 내용에 포함되었습니다.",
+        "장애인 단체는 4년 가까이 지연된 권고에 안타까움을 표했습니다."
+      ],
+      "whyImportant": "이번 권고는 장애인의 참정권 보장을 위한 제도 개선에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 인권위가 중앙선관위에 점자형 선거공보 면수 제한 폐지를 위한 공직선거법 개정을 추진할 것을 권고했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "인권위-점자-공보물-면수-제한-폐지-권고-국가인권위원회",
+      "clusterKey": "인권위/점자/공보물",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE91RFZaTWRXWFZpaVluU1lSVGlPYTE1OUMxNzg5akNBa09MUmpKNTdBclpHOHhjV25hNEp0WFVyX2JMRENVNDJia25pMHdlZUt4TmliQlBjTHEzMDRKU1pIYWNGMGptd1pfTUszbkc5SWpiUQ?oc=5",
+      "publishedAt": "2026-02-10T03:47:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_7",
+      "date": "2026-02-10",
+      "category": "금융",
+      "title": "코카콜라, 수요 우려 속 완만한 성장 전망에 주가 3% 하락",
+      "summary": [
+        "코카콜라는 혼조된 분기별 실적을 발표했으며, 2026년 유기적 매출 성장률은 4~5%, 주당 순이익 성장률은 7~8%로 전망했습니다.",
+        "북미와 라틴 아메리카에서의 음료 수요는 개선 조짐을 보이고 있으며, 코카콜라 제로 슈거의 판매량은 13% 증가했습니다.",
+        "코카콜라 주가는 개장 전 거래에서 약 3% 하락했습니다."
+      ],
+      "whyImportant": "코카콜라의 실적 및 전망은 음료 산업 전반의 수요 변화와 소비자 트렌드를 파악하는 데 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 코카콜라의 2026년 유기적 매출 성장률 전망치 4~5%와 주당 순이익 성장률 7~8%는 향후 실적 방향성을 제시하며, 북미와 라틴 아메리카에서의 수요 개선은 지역별 시장 상황을 반영합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Like rival PepsiCo, Coke has seen demand for its drinks fall as budget-conscious shoppers try to save more on their grocery bills and dine out less frequently."
+        },
+        {
+          "label": "earnings",
+          "evidence": "Looking ahead to 2026, the company is projecting organic revenue growth of 4% to 5% and comparable earnings per share growth of 7% to 8% for the full year."
+        }
+      ],
+      "dedupeKey": "코카콜라-수요-완만한-성장-주가-하락-발표했으며-아메리카에서",
+      "clusterKey": "실적/코카콜라",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZeWNFZ0ZZMkVkX05XcnFnUXg3OFEwNTB4aV9qU0ZDUHJzVFU5UnIyWWpmcU51c2R0SGp5OWhWbjZWQWFxZ0lBaUdiYjJoZlhDQ1VFb0VPclljR1VqbFZsZm1naDJPMHp4c2h0cENNLUlyVDlV0gF6QVVfeXFMTXJYdFRyX0VCQlpnU19ESUxKTXY2UUUxaERjZDdHVDNuQ1BDSnhLWFZHbk85U1hfZVZqNlh6c21ZazFoWFluUTg3N0dnd3hlNjFSVTNQdlhEMC1RNXVZVUdtd2tQSXRaSUVMT1RpTjNPVzd2TVZBSTF2anc?oc=5",
+      "publishedAt": "2026-02-10T11:35:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-10_8",
+      "date": "2026-02-10",
       "category": "국제",
       "title": "미국, 협상장에서 군복 입은 장성으로 이란 압박… 이란 \"우라늄 포기 불가\"",
       "summary": [
         "미국과 이란이 8개월 만에 협상을 재개했으나 핵심 쟁점에서 이견을 좁히지 못했습니다.",
         "미국은 군 수뇌부를 협상 전면에 투입하며 이란을 압박하고 있으며, 이란은 우라늄 농축 권리를 포기할 수 없다는 입장입니다."
       ],
-      "whyImportant": "미국과 이란의 핵 협상 관련 갈등은 국제적인 안보 및 외교 관계에 지속적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 8개월 만에 재개된 협상에서 미국이 군 수뇌부를 투입하여 이란을 압박하고, 이란은 우라늄 농축 권리를 포기할 수 없다고 밝히면서 양국 간 긴장이 고조되고 있기 때문입니다.",
+      "whyImportant": "미국과 이란의 핵 협상 관련 갈등은 중동 지역의 군사적 긴장을 고조시키고 국제 관계에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국이 이란 압박을 위해 군 수뇌부를 외교 협상 전면에 투입하고, 이란은 우라늄 농축 권리를 포기할 수 없다고 밝히면서 양국 간 군사적 긴장이 최고조에 달했다고 언급되어 있습니다.",
       "impactSignals": [],
       "dedupeKey": "미국-협상장-군복-입은-장성-이란-압박-우라늄",
       "clusterKey": "관세/미국",
@@ -31,55 +226,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-09_2",
-      "date": "2026-02-09",
-      "category": "국제",
-      "title": "미국-이란 핵 협상 재개, 이견 속에 추가 협상 예정",
-      "summary": [
-        "미국과 이란이 오만에서 8개월 만에 핵 협상을 재개했으나, 우라늄 농축 및 미사일 문제에서 이견을 좁히지 못했습니다.",
-        "미국은 군사적 압박을 강화하고 이란 제재를 확대하고 있으며, 이스라엘은 미사일 문제 논의 부재에 우려를 표명했습니다.",
-        "양측은 추가 협상에는 공감했으나, 구체적인 날짜는 확정하지 못했습니다."
-      ],
-      "whyImportant": "미국과 이란의 핵 협상 결과는 중동 지역의 안보 및 국제 관계에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국과 이란이 핵 협상을 재개했으나, 핵심 쟁점에서 이견이 커 타협점을 찾기 어려울 것으로 예상되며, 미국은 이란 제재 대상을 15개 단체와 2명 개인, 14척 선박으로 확대했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "트럼프 대통령은 이란과 거래하는 국가에 관세를 추가로 부과할 수 있는 절차를 담은 행정명령에 서명했습니다."
-        }
-      ],
-      "dedupeKey": "미국-이란-협상-재개-이견-속에-8개월-재개했으나",
-      "clusterKey": "이스라엘이란_제재/미국/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IUnQxRHpNTXRtM2JFMTE0T0pfVmtva1pPajZFOXhtaHhUR0hvNzRpRENpdUtHa3VRd2xOcTRqY3hNU0VrX20wODBJanNUU1hKS3B5MTZtWk0zM0tQQnQ5VkNEX1dqMERUUG5ZSGZVVXg0elNO?oc=5",
-      "publishedAt": "2026-02-08T04:17:11+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_3",
-      "date": "2026-02-09",
+      "id": "2026-02-10_9",
+      "date": "2026-02-10",
       "category": "에너지",
-      "title": "GS건설, 호주 전력망·인프라 구축사업 확장 추진",
+      "title": "대우건설, 실적 턴어라운드 및 원전 사업 기대감에 신고가 기록",
       "summary": [
-        "GS건설은 호주 건설 시장 확대를 위해 대표가 직접 현지 인프라 현장을 점검하고 주요 인사를 면담했습니다.",
-        "GS건설은 호주에서 전력망 인프라 구축 사업으로 포트폴리오 확장을 준비하고 있습니다.",
-        "GS건설은 2024년 호주 빅토리아주 SRL 지하철 터널 공사를 수주하여 진행 중입니다."
+        "대우건설 주가가 급등하며 52주 신고가를 경신했습니다.",
+        "지난해 4분기 '빅배스'를 통해 잠재 부실을 털어내 올해 실적 턴어라운드 기대감이 커진 것으로 분석됩니다.",
+        "체코 원전 수주를 시작으로 다수의 원전 수주 기회가 있을 것이라는 전망도 긍정적으로 작용하고 있습니다."
       ],
-      "whyImportant": "GS건설의 호주 전력망 인프라 구축 사업 참여는 향후 해외 시장에서의 추가적인 사업 기회 확보에 중요한 전환점이 될 수 있습니다.",
-      "importanceRationale": "근거: GS건설은 호주에서 대규모 송전망 구축 기회를 포착하고 전력망 인프라 구축 사업에 적극 참여할 계획입니다.",
+      "whyImportant": "대우건설의 실적 개선과 원전 사업 수주 결과는 향후 건설업계의 투자 및 사업 전략에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 대우건설은 체코 원전의 상반기 수주 계약을 예상하며, 미국과 베트남에서는 내년 수주를 목표로 사업을 진행 중이어서 건설업계에 의미있는 변화를 줄 수 있습니다.",
       "impactSignals": [],
-      "dedupeKey": "gs건설-호주-전력망-인프라-구축사업-확장-포트폴리오-공사",
-      "clusterKey": "gs건설/호주/인프라",
+      "dedupeKey": "대우건설-실적-턴어라운드-원전-사업-기대감-신고-기록",
+      "clusterKey": "실적/대우건설",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5va2V3TThnYTNkbmtvN1cya29fQWt3anlyV0YxczE5ODFhRXpJRm92a3Q2eFV2MUpHcXY3WGo5dXNRX2k1ekZ5SnNscTRRV1hwSE9tUXBNZm1od9IBVEFVX3lxTE04OVFnSHlFaHlzLWtORlFCZE4xNFdFYnhraFRlZXVHc29qUVpXNkRyTWxyMURkRU5OWlgtVjdGUUVCMV9OVGtfdmc5VTRfa0l2N0Qyaw?oc=5",
-      "publishedAt": "2026-02-09T00:49:38+00:00",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TcDZsdVRPYkZYUndhUUgyTkhmN0hQcEUwZFNYSDZPMXY4U01TVk81dnBpcmV0bnFuTDlrV0tiWGF2WWZPeXhGRUZpMDJrMmN6R2JscFcwdjB5UdIBVEFVX3lxTE42SzZtYmw2TjBHTzhXcFp1SWl6YmNRUFVyTEJQLWdXT2RuemUxSU9tV01SU1hvX09SQUZiR3BiMG5zOW43OTBKeXRiT00yTzR6Z013Ng?oc=5",
+      "publishedAt": "2026-02-10T00:43:28+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
@@ -88,171 +252,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-09_4",
-      "date": "2026-02-09",
-      "category": "기술",
-      "title": "EU, WhatsApp AI 정책에 대한 메타 제재 계획 발표",
-      "summary": [
-        "유럽연합 집행위원회는 메타가 왓츠앱에서 타사 AI 비서를 배제하는 것을 막기 위해 잠정 조치를 부과할 계획이라고 밝혔습니다.",
-        "EU는 메타가 EU 반독점 규칙을 위반했다고 보고 있으며, 경쟁을 보호하기 위해 신속하게 잠정 조치를 고려하고 있다고 덧붙였습니다.",
-        "메타는 왓츠앱 비즈니스 솔루션 약관을 업데이트하여 타사 AI 비서의 접근을 금지했으며, 이 정책은 1월에 발효되었습니다."
-      ],
-      "whyImportant": "이번 조치는 빠르게 발전하는 AI 시장에서 공정한 경쟁 환경을 조성하고, 지배적인 기술 기업이 불법적으로 우위를 점하는 것을 방지하는 데 중요합니다.",
-      "importanceRationale": "근거: EU 집행위는 메타의 새로운 정책이 유럽 내 경쟁에 돌이킬 수 없는 해를 끼치는 것을 막기 위해 신속하게 잠정 조치를 고려하고 있으며, 이는 1월에 발효된 정책에 대한 대응입니다.",
-      "impactSignals": [],
-      "dedupeKey": "whatsapp-정책-메타-제재-발표-유럽연합-집행위원회-보호하기",
-      "clusterKey": "법집행/whatsapp/정책/제재",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeHRibzBhdXR5VEhjOHBVcml4X09QQ0VjajNlZ1dwbVB3aXNDWXRCV2g2cWZiemM1elFxNzYxVm5wLUgyVHA3bHJ5MHNVUVA3OHFIdW93Ymh6SUxIcExqeGliMEhLVl9CLVE0N3dIaTNpRmVvVElXYVIwanhEOF9hZ0J2QkhPbGpGbDR0WXRUbUdJb2pSMHfSAZsBQVVfeXFMTmlsQ0NLcmNyd0hxR3czQlc0aWlNV0hNcjRjRkQyRVo3TnFtTTVMbEUtSVFGcGttTG9JaGFybEtRZ1FqbzZmV28xMzFTbkFqNW51N2FiLVZoZUdTSG41YnMtZVNZTkNqNXloSVJtdG0wTU1HWWRCOE84N3FqeFp3SGFxS0ZFSjl5RU9MYXp2TjNDN19zMXQyNjExV2s?oc=5",
-      "publishedAt": "2026-02-09T09:55:53+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_5",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "고려아연, 광물 가격 강세로 작년 사상 최대 실적 기록",
-      "summary": [
-        "고려아연은 작년 매출액 16조5851억원, 영업이익 1조2324억원을 기록하며 사상 최대 실적을 달성했습니다.",
-        "핵심광물과 귀금속 회수율 확대, 신재생에너지 및 배터리 소재 사업 등이 실적 개선에 기여했습니다.",
-        "온산제련소 신규 설비 투자와 미국 비철금속 제련소 건설 등 핵심광물 생산 확대를 위한 투자도 진행 중입니다."
-      ],
-      "whyImportant": "핵심 광물 확보 경쟁이 심화되는 가운데, 고려아연의 실적 증가는 관련 산업에 대한 투자 및 공급망 안정화 노력에 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 고려아연은 매출과 영업이익이 전년 대비 각각 37.6%, 70.4% 증가했으며, 미국에 약 74억 달러를 투자하여 비철금속 통합 제련소를 건설할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "고려아연이 지난해 연결 기준 매출액 16조5851억원, 영업이익 1조2324억원을 기록했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "미국에서는 약 74억달러를 투자해 비철금속 통합 제련소를 건설할 계획이다."
-        }
-      ],
-      "dedupeKey": "고려아연-광물-가격-강세-작년-사상-16조5851억원-1조2324억원",
-      "clusterKey": "설비투자/고려아연/실적/투자",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95UlpUUG9qUHVPYm1xYXBKRVFJSDlvYWI5SXRpMnNHWnpsOUk2U1dQa18zNGZnOEZlREdwRktJR1BrTWZJdDhfQ2RUR3dwZWU0c3U3bFBXWjI4WWJmQkxPWFJGeEdVQQ?oc=5",
-      "publishedAt": "2026-02-09T07:55:48+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_6",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "한화에어로스페이스, 3년 연속 최대 실적 경신",
-      "summary": [
-        "한화에어로스페이스는 작년 연결 기준 매출 26조 6078억원, 영업이익 3조 345억원을 기록했다고 발표했습니다.",
-        "이는 전년 대비 매출은 137%, 영업이익은 75% 증가한 수치입니다.",
-        "지상방산, 항공우주 부문 성장과 한화오션 실적 연결 편입 효과가 반영되었습니다."
-      ],
-      "whyImportant": "한화에어로스페이스의 실적 증가는 방산 및 항공우주 산업의 성장과 기업 경쟁력 강화에 중요한 지표가 됩니다.",
-      "importanceRationale": "근거: 매출이 전년 대비 137%, 영업이익은 75% 증가했으며, 지상방산 부문 매출은 8조 1331억원으로 최근 2년간 약 두 배 증가했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "한화에어로스페이스는 지난해 연결 기준 매출 26조6078억원, 영업이익 3조345억원을 기록했다고 9일 발표했다."
-        }
-      ],
-      "dedupeKey": "한화에어로스페이스-연속-최대-실적-경신-26조-6078억원-345억원",
-      "clusterKey": "실적/한화에어로스페이스",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0tOTU5X3FyWEZEU0Ixay10dmVONnRVZjdXdDNCdTlpMnZhTWc5MVBpckNIMVJuM05ldGtCZGFKZmcxU2FLbUY0UmRVTDBycXExOEo5NU9JTld3aGFPV0ZzaGJBSThiZw?oc=5",
-      "publishedAt": "2026-02-09T09:17:39+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_7",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "HD한국조선해양, 작년 최대 실적 기록",
-      "summary": [
-        "HD한국조선해양은 2023년 매출 29조9332억원, 영업이익 3조9045억원을 기록했다고 밝혔습니다.",
-        "이는 전년 대비 매출은 17.2%, 영업이익은 172.3% 증가한 수치입니다.",
-        "HD현대중공업, HD현대삼호 등 계열사 실적 호조가 전체 실적을 견인했습니다."
-      ],
-      "whyImportant": "조선업 활황에 따른 국내 조선사들의 실적 증가는 조선 산업 전반의 성장세를 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: HD한국조선해양은 매출이 17.2%, 영업이익은 172.3% 증가했으며, 한화오션과 삼성중공업도 각각 매출과 영업이익이 증가하는 등 국내 주요 조선사들의 실적 호조가 나타났기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "에이치디(HD)현대의 조선 부문 중간지주사인 에이치디한국조선해양은 2025년 연결기준으로 매출 29조9332억원에 영업이익 3조9045억원을 기록했다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "hd한국조선해양-작년-최대-실적-기록-29조9332억원-영업이익-3조9045억원",
-      "clusterKey": "실적/hd한국조선해양",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1uVU5hUC1WSXhPQVF0dTRUVGJ6am92NlpDZVZJSHhrT0dMclh6RWtnXzM3ZzN1UldLdGRQazA5bmg5VzhKLURfQzNtWkktaXFQYzJidm5XdE5HRlNGQ1NwRVBKRFBhMDd4ZlhZa0F5UVRIQQ?oc=5",
-      "publishedAt": "2026-02-09T10:01:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_8",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "크래프톤, 4분기 매출 증가에도 영업이익 급감",
-      "summary": [
-        "크래프톤은 2025년 4분기 매출이 증가했으나 영업이익이 99.3% 감소했다고 밝혔습니다.",
-        "ADK 편입과 일회성 비용이 발생하여 비용 구조에 변화가 생겼기 때문입니다.",
-        "2026년부터 3년간 1조원 이상의 주주 환원 정책을 시행할 예정입니다."
-      ],
-      "whyImportant": "크래프톤의 수익성 변화와 주주 환원 정책은 향후 게임 업계 투자 및 사업 전략에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 4분기 영업이익이 99.3% 감소했고, 2026년부터 3년간 1조원 이상의 주주 환원 정책이 발표되어 투자 결정에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "4분기 매출은 9197억원으로 증가했으나 영업이익은 24억원으로 전 분기(3486억원) 대비 99.3% 감소했다."
-        }
-      ],
-      "dedupeKey": "크래프톤-매출-증가에-영업이익-급감-3년간-1조원-환원",
-      "clusterKey": "실적/크래프톤/정책",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNnpSTzMtalZLZklyb0FEVDRsVkd5Z05qTUhVNFR2UnVGcFF2Q1JHYndkRFI5REpQOVVFTVhFUkNKTU1GZTRWdTNuem5oSnlBeHd0YWhERERCcDZBaFdRT3dYdjQ1eFhP0gFsQVVfeXFMUGtrMGh5N3dTaFd0STNCcG9TdnNMQ2xMN0lVei14TVlFV3FSS1g0RkNXb0tMdWlzYmI0a0RFU3dYRkxaZktoQlRWTHkwLVJ2eDR5VkZYalE5RXNvOXc1V04yZ2NRa0k1RElrcXZL?oc=5",
-      "publishedAt": "2026-02-09T10:17:06+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_9",
-      "date": "2026-02-09",
+      "id": "2026-02-10_10",
+      "date": "2026-02-10",
       "category": "에너지",
       "title": "도쿄전력 가시와자키 원전 재가동 재개",
       "summary": [
         "도쿄전력이 가시와자키 원전 6호기의 재가동 작업을 9일 재개했습니다.",
-        "지난달 재가동 시도 중 경보가 울려 중단된 후 약 보름 만에 재개된 것입니다.",
+        "지난달 재가동 시도 중 경보가 울려 중단된 후 보름여 만에 재개된 것입니다.",
         "도쿄전력은 시험 발전을 거쳐 내달 18일께 영업 운전에 나설 계획입니다."
       ],
-      "whyImportant": "원전 재가동은 전력 공급 및 에너지 정책에 영향을 미칠 수 있는 중요한 결정입니다.",
-      "importanceRationale": "근거: 도쿄전력이 후쿠시마 원전 사고 이후 처음으로 원전을 재가동하여 영업 운전을 하려는 것으로, 내달 18일께 영업 운전에 나설 계획입니다.",
+      "whyImportant": "원전 재가동은 에너지 정책 및 전력 공급에 영향을 미칠 수 있는 중요한 결정입니다.",
+      "importanceRationale": "근거: 도쿄전력이 후쿠시마 원전 사고 이후 처음으로 원전 재가동을 시도하며, 이는 향후 에너지 정책 방향에 영향을 줄 수 있습니다.",
       "impactSignals": [],
       "dedupeKey": "도쿄전력-가시와자키-원전-재가동-재개-6호기-작업-18일께",
       "clusterKey": "도쿄전력/가시와자키/재가동",
@@ -263,67 +273,6 @@
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_10",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "CJ제일제당, 작년 매출 및 영업이익 감소…국내 식품·바이오 부진",
-      "summary": [
-        "CJ제일제당은 국내 식품 경기 침체와 바이오 부진으로 작년 영업이익이 감소했다고 밝혔습니다.",
-        "작년 매출은 17조 7,549억원으로 0.6% 감소, 영업이익은 8,612억원으로 15.2% 줄었습니다.",
-        "해외 식품 사업 매출은 처음으로 국내 매출을 넘어섰습니다."
-      ],
-      "whyImportant": "CJ제일제당의 실적 부진은 국내 식품 산업의 침체와 바이오 업황 부진이 복합적으로 작용한 결과로, 향후 사업 전략에 중요한 시사점을 제공합니다.",
-      "importanceRationale": "근거: CJ제일제당의 작년 영업이익은 8,612억원으로 15.2% 감소했으며, 바이오 사업 부문 매출은 5.4% 감소했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "CJ제일제당은 지난해 CJ대한통운[000120]을 제외한 매출이 17조7천549억원으로 전년 대비 0.6% 감소하고 영업이익은 8천612억 원으로 15.2% 줄었다고 9일 밝혔다."
-        }
-      ],
-      "dedupeKey": "cj제일제당-작년-매출-영업이익-감소-국내-549억원-612억원",
-      "clusterKey": "실적/cj제일제당",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1MdjQ5WjRzcFVPQmFkZUxLZEZra0p0X2hPQ3haeC16ZlJjejNhYWk3bFg0UmM4a2h2R2M1dDlvaXRsN1Fxc2llaC1HR3VWZDlzM01YQ0JROXJMTElkMkthOTBzOHg2ZWdISlZnXzRaZWladzF1?oc=5",
-      "publishedAt": "2026-02-09T08:04:06+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-09_11",
-      "date": "2026-02-09",
-      "category": "금융",
-      "title": "한화에어로, 작년 매출 26.6조·영업익 3조…3년 연속 최대 실적",
-      "summary": [
-        "한화에어로스페이스는 연결 기준으로 작년 영업이익이 3조 345억 원으로 전년 대비 75.2% 증가했다고 밝혔습니다.",
-        "매출은 26조 6천78억 원으로 전년 대비 136.7% 증가했으며, 한화오션 실적 편입이 영향을 미쳤습니다."
-      ],
-      "whyImportant": "한화에어로스페이스의 실적 증가는 방산 및 조선해양 통합 기업으로서의 성장 가능성을 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 매출이 전년 대비 136.7% 증가한 26조 6천78억 원을 기록하며 역대 최대 규모를 달성했고, 영업이익도 75.2% 증가한 3조 345억 원을 기록했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "한화에어로스페이스[012450]는 연결 기준 작년 한 해 영업이익이 3조345억원으로 전년보다 75.2% 증가했다고 9일 밝혔다."
-        }
-      ],
-      "dedupeKey": "한화에어-작년-매출-6조-영업익-3조-연속-최대",
-      "clusterKey": "실적/한화에어",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1HTmwzUmJraVZydjA5TC1VckRmUV9RUFNBSjJqOXNQSzJxSXlsblZFSm5lOXc2ajhZR3pndDZCWUNoRldRWnRCYXAza0hrWjA0YVpvdnNQWjFkeE4zSEdIRDFtZkFTb1c5WFlJUHJOYWM1Z1Zr?oc=5",
-      "publishedAt": "2026-02-09T07:20:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

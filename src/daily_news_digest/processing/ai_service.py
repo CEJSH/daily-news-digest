@@ -106,16 +106,11 @@ class AIEnrichmentService:
     def _tokenize_for_overlap(self, text: str) -> set[str]:
         t = clean_text(text or "").lower()
         t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
-        tokens: set[str] = set()
-        for tok in t.split():
-            if re.search(r"[가-힣]", tok):
-                if len(tok) < 2:
-                    continue
-            else:
-                if len(tok) < 3:
-                    continue
-            tokens.add(tok)
-        return tokens
+        return {
+            tok
+            for tok in t.split()
+            if len(tok) >= (2 if re.search(r"[가-힣]", tok) else 3)
+        }
 
     def _is_date_like_token(self, token: str) -> bool:
         if not token:
@@ -149,7 +144,7 @@ class AIEnrichmentService:
                 continue
             if self._is_date_like_token(num):
                 continue
-            tokens |= self._normalize_numeric_tokens(num, prefix, unit)
+            tokens.update(self._normalize_numeric_tokens(num, prefix, unit))
         return tokens
 
     def _normalize_numeric_tokens(self, num: str, prefix: str, unit: str) -> set[str]:
@@ -234,7 +229,7 @@ class AIEnrichmentService:
         title = item.get("title") or ""
         summary = item.get("summary") or item.get("summaryRaw") or ""
         if isinstance(summary, list):
-            summary = " ".join([str(x) for x in summary if x])
+            summary = " ".join(str(x) for x in summary if x)
         full_text = item.get("fullText") or ""
         text = clean_text(f"{title} {summary} {full_text}")
         if len(text) > 2000:
@@ -335,12 +330,12 @@ class AIEnrichmentService:
                 summary_lines = ai_result.get("summary_lines") or []
                 if not isinstance(summary_lines, list):
                     summary_lines = []
-                summary_ai = " ".join([str(x) for x in summary_lines if x])
+                summary_ai = " ".join(str(x) for x in summary_lines if x)
                 why_important = clean_text(ai_result.get("why_important") or "")
                 ai_view_text = " ".join([title_ko, summary_ai, why_important]).strip()
                 rule_summary = item.get("summary")
                 if isinstance(rule_summary, list):
-                    rule_summary_text = " ".join([str(x) for x in rule_summary if x])
+                    rule_summary_text = " ".join(str(x) for x in rule_summary if x)
                 else:
                     rule_summary_text = str(rule_summary or "")
                 rule_view_text = f"{title} {rule_summary_text}".strip()
@@ -362,9 +357,10 @@ class AIEnrichmentService:
                     if len(ai_tokens) < min_tokens_for_drop or len(rule_tokens) < min_tokens_for_drop:
                         mixed_stats["skipped_short"] += 1
                         continue
-                    overlap = len(ai_tokens & rule_tokens) / max(1, len(rule_tokens))
+                    overlap_tokens = ai_tokens & rule_tokens
+                    overlap = len(overlap_tokens) / max(1, len(rule_tokens))
                     union = ai_tokens | rule_tokens
-                    jaccard = len(ai_tokens & rule_tokens) / max(1, len(union))
+                    jaccard = len(overlap_tokens) / max(1, len(union))
                     if overlap < 0.2 and jaccard <= min_jaccard_for_drop:
                         item["status"] = "dropped"
                         item["dropReason"] = "ERROR: MIXED_VIEW_FIELDS"
@@ -382,12 +378,11 @@ class AIEnrichmentService:
 
     @staticmethod
     def _parse_meta_kv(meta_str: str) -> dict[str, str]:
-        parts: dict[str, str] = {}
-        for part in (meta_str or "").split("||"):
-            if "=" in part:
-                key, val = part.split("=", 1)
-                parts[key] = val
-        return parts
+        return dict(
+            part.split("=", 1)
+            for part in (meta_str or "").split("||")
+            if "=" in part
+        )
 
     def _normalize_fetch_result(
         self, res: Any
@@ -476,18 +471,13 @@ class AIEnrichmentService:
         link = (item.get("resolvedUrl") or item.get("link") or "").strip()
         attempts_label = ""
         if notes:
-            attempts: list[str] = []
-            for note in notes:
-                if isinstance(note, str) and note.startswith("fetch_url:"):
-                    attempts.append(note.split("fetch_url:", 1)[1])
+            attempts = [
+                note.split("fetch_url:", 1)[1]
+                for note in notes
+                if isinstance(note, str) and note.startswith("fetch_url:")
+            ]
             if attempts:
-                seen: set[str] = set()
-                unique: list[str] = []
-                for attempt in attempts:
-                    if attempt in seen:
-                        continue
-                    seen.add(attempt)
-                    unique.append(attempt)
+                unique = list(dict.fromkeys(attempts))
                 if len(unique) <= 3:
                     attempts_label = f" attempts={','.join(unique)}"
                 else:
@@ -573,6 +563,27 @@ class AIEnrichmentService:
         if self._enrich_item_with_ai is None:
             return
 
+        policy_keywords = tuple(IMPACT_SIGNALS_MAP.get("policy", [])) + tuple(TRADE_TARIFF_KEYWORDS)
+        label_keywords_cache: dict[str, tuple[str, ...]] = {}
+
+        def _keywords_for_label(label: str) -> tuple[str, ...]:
+            cached = label_keywords_cache.get(label)
+            if cached is not None:
+                return cached
+            if label == "sanctions":
+                keywords = SANCTIONS_EVIDENCE_KEYWORDS
+            elif label == "market-demand":
+                keywords = MARKET_DEMAND_EVIDENCE_KEYWORDS
+            elif label == "security":
+                keywords = SECURITY_EVIDENCE_KEYWORDS
+            elif label == "policy":
+                keywords = policy_keywords
+            else:
+                keywords = IMPACT_SIGNALS_MAP.get(label, [])
+            cached = tuple(kw.lower() for kw in keywords)
+            label_keywords_cache[label] = cached
+            return cached
+
         def _format_fetch_debug(item: Item, *, budget: int, need_fetch: bool) -> str:
             item_id = item.get("itemId") or ""
             input_hash = item.get("dedupeInputHash") or ""
@@ -589,34 +600,17 @@ class AIEnrichmentService:
         def _tokenize_basic(text: str) -> set[str]:
             t = clean_text(text or "").lower()
             t = re.sub(r"[^a-z0-9가-힣\s-]", " ", t)
-            tokens: set[str] = set()
-            for tok in re.split(r"[\s-]+", t):
-                if not tok:
-                    continue
-                if re.search(r"[가-힣]", tok):
-                    if len(tok) < 2:
-                        continue
-                else:
-                    if len(tok) < 3:
-                        continue
-                tokens.add(tok)
-            return tokens
+            return {
+                tok
+                for tok in re.split(r"[\s-]+", t)
+                if tok and len(tok) >= (2 if re.search(r"[가-힣]", tok) else 3)
+            }
 
         def _label_has_evidence(label: str, text_all: str) -> bool:
             if not label or not text_all:
                 return False
             text = text_all.lower()
-            if label == "sanctions":
-                keywords = SANCTIONS_EVIDENCE_KEYWORDS
-            elif label == "market-demand":
-                keywords = MARKET_DEMAND_EVIDENCE_KEYWORDS
-            elif label == "security":
-                keywords = SECURITY_EVIDENCE_KEYWORDS
-            elif label == "policy":
-                keywords = IMPACT_SIGNALS_MAP.get("policy", []) + list(TRADE_TARIFF_KEYWORDS)
-            else:
-                keywords = IMPACT_SIGNALS_MAP.get(label, [])
-            return any(kw.lower() in text for kw in keywords)
+            return any(kw in text for kw in _keywords_for_label(label))
 
         def _format_snapshot(item: Item, stage: str) -> str:
             item_id = item.get("itemId") or ""
@@ -729,7 +723,7 @@ class AIEnrichmentService:
                 continue
             summary_value = item.get("summary")
             if isinstance(summary_value, list):
-                summary_text = " ".join([str(x) for x in summary_value if x])
+                summary_text = " ".join(str(x) for x in summary_value if x)
             else:
                 summary_text = str(summary_value or "")
             text_all = f"{item.get('title', '')} {item.get('summaryRaw', '')} {summary_text} {item.get('fullText', '')}"
@@ -775,6 +769,7 @@ class AIEnrichmentService:
             ai_labels_raw = ai_result.get("impact_signals") or []
             evidence_map = ai_result.get("impact_signals_evidence") or {}
             validated_ai: list[str] = []
+            seen_labels: set[str] = set()
             if isinstance(ai_labels_raw, list):
                 for raw_label in ai_labels_raw:
                     if not isinstance(raw_label, str):
@@ -787,13 +782,18 @@ class AIEnrichmentService:
                         continue
                     if not _label_has_evidence(label, text_all):
                         continue
-                    if label not in validated_ai:
-                        validated_ai.append(label)
+                    if label in seen_labels:
+                        continue
+                    seen_labels.add(label)
+                    validated_ai.append(label)
             if validated_ai:
                 merged = existing_signals[:]
+                merged_seen = set(existing_signals)
                 for label in validated_ai:
-                    if label not in merged:
-                        merged.append(label)
+                    if label in merged_seen:
+                        continue
+                    merged.append(label)
+                    merged_seen.add(label)
                 item["impactSignals"] = merged
                 read_time_sec = item.get("readTimeSec")
                 if not read_time_sec:
@@ -944,7 +944,7 @@ class AIEnrichmentService:
         full_text = item.get("fullText") or ""
         summary_raw = item.get("summaryRaw") or item.get("summary") or ""
         if isinstance(summary_raw, list):
-            summary_raw = " ".join([str(x) for x in summary_raw if x])
+            summary_raw = " ".join(str(x) for x in summary_raw if x)
         text = clean_text(f"{title} {summary_raw} {full_text}")
         return text[:4000]
 
@@ -969,7 +969,7 @@ class AIEnrichmentService:
 
         def _dedupe_prefix(item: Item, n: int = 3) -> str:
             key = (item.get("dedupeKey") or "").strip()
-            parts = [p for p in key.split("-") if p]
+            parts = tuple(p for p in key.split("-") if p)
             if len(parts) >= n:
                 return "-".join(parts[:n])
             return ""
@@ -1007,7 +1007,7 @@ class AIEnrichmentService:
                 return cached
             summary_val = it.get("summary") or it.get("summaryRaw") or ""
             if isinstance(summary_val, list):
-                summary_val = " ".join([str(x) for x in summary_val if x])
+                summary_val = " ".join(str(x) for x in summary_val if x)
             text = f"{it.get('title','')} {summary_val}"
             tokens = self._tokenize_for_overlap(text)
             token_cache[obj_id] = tokens
@@ -1029,14 +1029,15 @@ class AIEnrichmentService:
             item["embedding"] = embedding
             item_cluster = item.get("clusterKey") or ""
             is_dup = False
+            base_threshold = float(
+                self._ai_semantic_dedupe_threshold if threshold_override is None else threshold_override
+            )
             for ref in kept:
                 ref_emb = ref.get("embedding")
                 if not ref_emb:
                     continue
                 ref_cluster = ref.get("clusterKey") or ""
-                threshold = float(
-                    self._ai_semantic_dedupe_threshold if threshold_override is None else threshold_override
-                )
+                threshold = base_threshold
                 if not ignore_key_constraints:
                     if item_cluster and ref_cluster and item_cluster != ref_cluster:
                         item_prefix = _dedupe_prefix(item)

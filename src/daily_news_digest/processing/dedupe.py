@@ -32,9 +32,11 @@ class DedupeEngine:
         dedupe_ngram_sim: float,
         dedupe_event_tokens: set[str],
         dedupe_event_groups: dict[str, set[str]],
+        dedupe_action_tokens: set[str] | None = None,
         cluster_event_labels: dict[str, str],
         cluster_domains: dict[str, set[str]],
         cluster_relations: dict[str, set[str]],
+        action_relations: dict[str, set[str]] | None = None,
         cluster_max_tokens: int,
         cluster_min_tokens_for_merge: int | None = None,
         cluster_max_entities: int,
@@ -56,6 +58,7 @@ class DedupeEngine:
         self._dedupe_ngram_n = dedupe_ngram_n
         self._dedupe_ngram_sim = dedupe_ngram_sim
         self._dedupe_event_tokens = {t.lower() for t in dedupe_event_tokens}
+        self._dedupe_action_tokens = {t.lower() for t in (dedupe_action_tokens or set())}
         self._dedupe_event_groups = {
             key: {t.lower() for t in tokens}
             for key, tokens in (dedupe_event_groups or {}).items()
@@ -95,6 +98,18 @@ class DedupeEngine:
                 if norm:
                     relation_tokens.add(norm)
         self._relation_entity_tokens = relation_tokens
+        self._action_relations: dict[str, set[str]] = {}
+        for label, tokens in (action_relations or {}).items():
+            norm_label = self._normalize_cluster_token(label)
+            vocab = {
+                self._normalize_cluster_token(t)
+                for t in (tokens or set())
+                if self._normalize_cluster_token(t)
+            }
+            if norm_label:
+                vocab.add(norm_label)
+                self._action_relations[norm_label] = vocab
+        self._action_relation_labels = set(self._action_relations.keys())
         self._cluster_max_tokens = max(1, int(cluster_max_tokens or 1))
         self._cluster_max_entities = max(0, int(cluster_max_entities or 0))
         self._is_eligible = is_eligible_func or (lambda item: not item.get("dropReason"))
@@ -234,6 +249,8 @@ class DedupeEngine:
                     continue
                 if tok in self._dedupe_event_group_labels:
                     continue
+                if tok in self._dedupe_action_tokens:
+                    continue
                 if self._is_date_like_token(tok):
                     continue
                 if not allow_noise and self.is_noise_token(tok):
@@ -292,12 +309,17 @@ class DedupeEngine:
                     continue
                 if self._is_date_like_token(tok):
                     continue
+                if tok in self._dedupe_action_tokens:
+                    continue
                 if not self.valid_token_length(tok):
                     continue
                 tokens_ordered.append(tok)
             tokens_ordered = tokens_ordered[:4]
 
-        return "-".join(tokens_ordered).lower()
+        tokens_sorted = sorted({t for t in tokens_ordered if t})
+        if len(tokens_sorted) > 8:
+            tokens_sorted = tokens_sorted[:8]
+        return "-".join(tokens_sorted).lower()
 
     def _normalize_cluster_token(self, token: str) -> str:
         if not token:
@@ -306,19 +328,34 @@ class DedupeEngine:
         t = re.sub(r"[^a-z0-9가-힣_]", "", t)
         return t
 
-    def _detect_relation(self, tokens: list[str]) -> tuple[str, set[str]]:
+    def _detect_relation(
+        self,
+        tokens: list[str],
+        *,
+        relations: dict[str, set[str]] | None = None,
+        match_any: bool = False,
+    ) -> tuple[str, set[str]]:
         if not tokens:
             return "", set()
+        rels = relations or self._cluster_relations
         tokens_set = set(tokens)
-        for label in sorted(self._cluster_relation_labels, key=len, reverse=True):
+        if match_any:
+            for label in sorted(rels.keys(), key=len, reverse=True):
+                vocab = rels.get(label, set())
+                hit = tokens_set & vocab
+                if hit:
+                    return label, hit
+            return "", set()
+        relation_labels = self._cluster_relation_labels if rels is self._cluster_relations else set(rels.keys())
+        for label in sorted(relation_labels, key=len, reverse=True):
             for tok in tokens:
                 if label in tok:
                     related = {tok}
-                    required = self._cluster_relations.get(label, set())
+                    required = rels.get(label, set())
                     if required:
                         related |= (tokens_set & required)
                     return label, related
-        for label, required in self._cluster_relations.items():
+        for label, required in rels.items():
             if required and required.issubset(tokens_set):
                 return label, set(required)
         return "", set()
@@ -391,9 +428,44 @@ class DedupeEngine:
             if self._looks_like_org_token(tok):
                 return True
             if self.is_korean_token(tok):
-                return len(tok) >= 2
-            return len(tok) >= 4
+                return len(tok) >= 3
+            return len(tok) >= 5
         return False
+
+    def _item_title_summary(self, item: Item) -> tuple[str, str]:
+        title = item.get("title") or ""
+        summary = item.get("summary") or item.get("summaryRaw") or ""
+        if isinstance(summary, list):
+            summary = " ".join([str(x) for x in summary if x])
+        return title, summary
+
+    def _item_text_for_match(self, item: Item) -> str:
+        title, summary = self._item_title_summary(item)
+        return f"{title} {summary}".strip()
+
+    def _extract_numeric_tokens(self, text: str) -> set[str]:
+        tokens = self.tokenize_for_dedupe(text or "")
+        out: set[str] = set()
+        for tok in tokens:
+            if not re.search(r"\d", tok):
+                continue
+            if self._is_date_like_token(tok):
+                continue
+            norm = tok.replace(",", "")
+            if norm:
+                out.add(norm)
+        return out
+
+    def _extract_entity_tokens_from_title_summary(self, title: str, summary: str) -> set[str]:
+        tokens: set[str] = set()
+        if title:
+            tokens |= self._normalize_title_for_dedupe(title, self._stopwords)
+        if summary:
+            tokens |= self._normalize_title_for_dedupe(summary, self._stopwords)
+        if not tokens:
+            return set()
+        tokens = {t for t in tokens if t and t not in self._dedupe_event_tokens}
+        return self._normalize_entity_tokens(tokens)
     
 
     def _cluster_hint_tokens(self, text: str) -> list[str]:
@@ -416,6 +488,34 @@ class DedupeEngine:
             seen.add(norm)
             hint_tokens.append(norm)
         return hint_tokens
+
+    def _action_tokens_from_text(self, text: str) -> list[str]:
+        tokens_raw = self.tokenize_for_dedupe(text or "")
+        if not tokens_raw:
+            return []
+        out: list[str] = []
+        for tok in tokens_raw:
+            norm = self._normalize_token_for_dedupe(tok, self._stopwords)
+            if not norm:
+                continue
+            norm = self._normalize_cluster_token(norm)
+            if not norm:
+                continue
+            out.append(norm)
+        return out
+
+    def _pick_main_entities(self, entities: set[str]) -> set[str]:
+        if not entities:
+            return set()
+        ranked = sorted(
+            entities,
+            key=lambda t: (
+                1 if self._looks_like_org_token(t) else 0,
+                len(t),
+            ),
+            reverse=True,
+        )
+        return set(ranked[:2])
 
     def build_cluster_key(self, dedupe_key: str, hint_text: str | None = None) -> str:
         tokens_raw = self._dedupe_key_tokens(dedupe_key)
@@ -642,6 +742,29 @@ class DedupeEngine:
         candidates = sorted(items, key=self._rank_score, reverse=True)
         seen_keys: dict[str, Item] = {}
         kept: list[tuple[set[str], Item]] = []
+        meta_cache: dict[int, tuple[set[str], set[str]]] = {}
+
+        def _meta(item: Item) -> tuple[set[str], set[str]]:
+            obj_id = id(item)
+            cached = meta_cache.get(obj_id)
+            if cached is not None:
+                return cached
+            title, summary = self._item_title_summary(item)
+            text = f"{title} {summary}".strip()
+            nums = self._extract_numeric_tokens(text)
+            entities = self._extract_entity_tokens_from_title_summary(title, summary)
+            meta_cache[obj_id] = (nums, entities)
+            return meta_cache[obj_id]
+
+        def _conflicts_on_numbers_or_entities(a: Item, b: Item) -> bool:
+            nums_a, ents_a = _meta(a)
+            nums_b, ents_b = _meta(b)
+            if nums_a and nums_b and not (nums_a & nums_b):
+                return True
+            if ents_a and ents_b and not (ents_a & ents_b):
+                return True
+            return False
+
         for item in candidates:
             if not self._is_eligible(item):
                 continue
@@ -652,20 +775,21 @@ class DedupeEngine:
                 if len(key_tokens) >= 2:
                     matched_key = seen_keys.get(key_norm)
                     if matched_key:
-                        self._mark_merged(item, matched_key, "dedupe_key_exact")
-                        continue
+                        if not _conflicts_on_numbers_or_entities(item, matched_key):
+                            self._mark_merged(item, matched_key, "dedupe_key_exact")
+                            continue
                     seen_keys[key_norm] = item
             ngrams = self.dedupe_key_ngrams(key, self._dedupe_ngram_n)
             if not ngrams:
                 continue
-            matched = next(
-                (
-                    ref
-                    for ref_ngrams, ref in kept
-                    if self._jaccard(ngrams, ref_ngrams) >= self._dedupe_ngram_sim
-                ),
-                None,
-            )
+            matched: Item | None = None
+            for ref_ngrams, ref in kept:
+                if self._jaccard(ngrams, ref_ngrams) < self._dedupe_ngram_sim:
+                    continue
+                if _conflicts_on_numbers_or_entities(item, ref):
+                    continue
+                matched = ref
+                break
             if matched:
                 self._mark_merged(item, matched, "dedupe_key_sim")
                 continue
@@ -675,7 +799,7 @@ class DedupeEngine:
         if not self._dedupe_event_tokens:
             return
         candidates = sorted(items, key=self._rank_score, reverse=True)
-        kept: list[tuple[set[str], set[str], Item]] = []
+        kept: list[tuple[set[str], set[str], str, set[str], Item]] = []
         for item in candidates:
             if not self._is_eligible(item):
                 continue
@@ -713,19 +837,36 @@ class DedupeEngine:
                 entity_tokens |= self._normalize_entity_tokens(cluster_entities)
             if not entity_tokens:
                 continue
-            matched = next(
-                (
-                    ref
-                    for ref_groups, ref_entities, ref in kept
-                    if (event_groups & ref_groups)
-                    and self._entity_overlap_enough(entity_tokens, ref_entities)
-                ),
-                None,
+            title = item.get("title") or ""
+            summary = item.get("summary") or item.get("summaryRaw") or ""
+            if isinstance(summary, list):
+                summary = " ".join([str(x) for x in summary if x])
+            action_tokens = self._action_tokens_from_text(f"{title} {summary}".strip())
+            action_label, _ = self._detect_relation(
+                action_tokens,
+                relations=self._action_relations,
+                match_any=True,
             )
+            main_entities = self._pick_main_entities(entity_tokens)
+            matched = None
+            for ref_groups, ref_entities, ref_action, ref_main, ref in kept:
+                if (
+                    action_label
+                    and ref_action
+                    and action_label == ref_action
+                    and main_entities
+                    and ref_main
+                    and (main_entities & ref_main)
+                ):
+                    matched = ref
+                    break
+                if (event_groups & ref_groups) and self._entity_overlap_enough(entity_tokens, ref_entities):
+                    matched = ref
+                    break
             if matched:
                 self._mark_merged(item, matched, "entity_event_duplicate")
                 continue
-            kept.append((event_groups, entity_tokens, item))
+            kept.append((event_groups, entity_tokens, action_label, main_entities, item))
 
     def apply_dedupe_key_prefix(self, items: list[Item], prefix_tokens: int = 3) -> None:
         if prefix_tokens <= 0:

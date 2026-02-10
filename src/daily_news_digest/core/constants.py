@@ -127,6 +127,42 @@ DEDUPE_EVENT_GROUPS = {  # 이벤트 토큰을 카테고리로 묶어 중복 군
     },
 }
 
+# dedupeKey에서 제거할 동사적/행위 표현 토큰
+DEDUPE_ACTION_TOKENS = {
+    "발표", "공시", "공개", "개최", "논의", "검토", "추진", "협의", "회의", "회담",
+    "방문", "면담", "언급", "발언", "제안", "요구", "요청", "지시", "결정", "확정",
+    "승인", "발효", "공포", "서명", "체결", "합의", "착수", "개시", "재개", "중단",
+    "취소", "철회", "연기", "보류", "보고", "입장", "해명", "정정", "반박", "사과",
+    "경고", "수사", "조사", "기소", "고발", "제재", "해제",
+    "강조", "시사", "밝힘", "전망", "예상", "우려", "촉구", "지적", "비판",
+    "주장", "평가", "진단", "분석", "해석", "설명", "입장문", "성명", "논평",
+    "출시", "런칭", "런치", "출범",
+    "announce", "announced", "announce", "disclose", "disclosed", "reveal", "revealed",
+    "hold", "held", "discuss", "discussed", "review", "reviewed", "push", "pushed",
+    "agree", "agreed", "sign", "signed", "approve", "approved", "decide", "decided",
+    "launch", "launched", "release", "released", "unveil", "unveiled",
+}
+
+# 사건 구조(액션) 판정을 위한 동사/행위 토큰
+DEDUPE_ACTION_RELATIONS = {
+    "상승": {
+        "상승", "상승세", "급상승", "급등", "강세", "반등", "상향",
+        "rise", "rises", "rising", "surge", "rallies", "rally", "gain", "gains",
+        "jump", "jumps", "soar", "soars", "increase", "increases", "up",
+    },
+    "하락": {
+        "하락", "하락세", "급락", "약세", "하향", "하방",
+        "drop", "drops", "fall", "falls", "decline", "declines", "plunge", "plunges",
+        "slump", "slumps", "decrease", "decreases", "down", "dip", "dips",
+    },
+    "출시": {
+        "출시", "공개", "선보", "발표", "런칭", "런치", "출범",
+        "launch", "launches", "launched", "release", "releases", "released",
+        "unveil", "unveils", "unveiled", "introduce", "introduces", "introduced",
+        "rollout", "rolls", "rolled",
+    },
+}
+
 # dedupe용 이슈 클러스터 상위 키(표준 라벨)
 DEDUPE_CLUSTER_EVENT_LABELS = {
     "funding": "투자",
@@ -339,6 +375,30 @@ DEDUPE_NOISE_WORDS = {  # 중복 판정에서 의미 적은 노이즈 단어
     "논의", "검토", "계획", "예정", "추진", "관련", "대한", "대해", "위해", "통해",
     "등", "등의", "등을", "등은", "수", "것", "부분", "사실", "이날", "이번", "지난", "최근",
     "현재", "향후", "추가", "이미", "계속",
+    "전격", "전격적", "전격적으로", "깜짝", "전면", "전면적", "전면적으로",
+    "전면적인", "대대적", "대대적으로", "대대적", "대대적인",
+    "긴급", "긴급히", "긴급하게", "긴급한",
+    "신속", "신속히", "신속하게", "신속한",
+    "즉시", "즉각", "즉각적", "즉각적으로", "즉시적",
+    "전면", "전면적으로", "전면적", "전면적인",
+    "전폭", "전폭적", "전폭적으로",
+    "전방위", "전방위적", "전방위적으로",
+    "대규모", "대규모로", "대규모의",
+    "대폭", "대폭적", "대폭적으로", "대폭의",
+    "대거", "대거로", "대거의",
+    "본격", "본격적", "본격적으로", "본격적인",
+    "전면전", "전면전적", "전면전적으로",
+    "강력", "강력히", "강력하게", "강력한",
+    "강경", "강경히", "강경하게", "강경한",
+    "전격적으로", "전격적", "전격적인",
+    "급격", "급격히", "급격하게", "급격한",
+    "급속", "급속히", "급속하게", "급속한",
+    "대폭적으로", "대폭적", "대폭적인",
+    "재차", "다시", "또다시", "재차로",
+    "새롭게", "새로운", "새로", "새롭게",
+    "본격화", "본격화된", "본격화로",
+    "급증", "급증세", "급증한", "급증하며",
+    "급감", "급감세", "급감한", "급감하며",
 }
 
 EMOTIONAL_DROP_KEYWORDS = ["참사", "충격", "분노", "논란", "폭로"]  # 감정 유발성 키워드 드롭
@@ -352,6 +412,66 @@ MONTH_TOKENS = {  # 날짜 토큰 정규화/필터링용 월 문자열
 
 LONG_IMPACT_SIGNALS = {"policy", "sanctions", "earnings", "security"}  # 장기 영향 가능 신호(트리거 기반)
 MEDIA_SUFFIXES = ("일보", "신문", "뉴스", "방송", "미디어", "tv", "TV")  # 언론사명 접미사 추정
+
+INCREMENTAL_STAGE_TOKENS = {
+    "승인", "확정", "완료", "체결", "합의", "서명", "발효", "공포", "가결", "부결",
+    "판결", "기소", "입건", "선고", "수사", "조사", "제재", "해제", "종결", "종료",
+    "중단", "재개", "착수", "개시", "철회", "취소", "연기", "보류", "발표", "공시",
+    "approval", "approved", "confirm", "confirmed", "finalized", "finalise", "passed",
+    "completed", "signed", "verdict", "indicted", "charged", "sentenced", "filed",
+    "launched", "halted", "suspended", "resumed", "withdrawn", "canceled", "announced",
+}
+
+INCREMENTAL_RESULT_TOKENS = {
+    "결과", "실적", "실적발표", "실적 발표", "결과 발표",
+    "매출", "매출액", "영업이익", "순이익", "이익", "손실", "손익",
+    "가이던스", "전망", "수익", "흑자", "적자", "마진", "점유율",
+    "출하", "출하량", "판매", "판매량", "수주", "수주액",
+    "earnings", "results", "guidance", "revenue", "profit", "loss", "margin", "share",
+    "shipments", "deliveries", "sales", "eps", "ebitda", "backlog", "orders",
+}
+
+NUMERIC_UNIT_ALIASES = {
+    "%": "pct",
+    "퍼센트": "pct",
+    "percent": "pct",
+    "bp": "bp",
+    "bps": "bp",
+    "원": "krw",
+    "원화": "krw",
+    "달러": "usd",
+    "불": "usd",
+    "usd": "usd",
+    "$": "usd",
+    "us$": "usd",
+    "eur": "eur",
+    "유로": "eur",
+    "€": "eur",
+    "gbp": "gbp",
+    "파운드": "gbp",
+    "£": "gbp",
+    "jpy": "jpy",
+    "엔": "jpy",
+    "¥": "jpy",
+    "천만원": "천만",
+    "백만원": "백만",
+    "만원": "만",
+    "억원": "억",
+    "조원": "조",
+    "억": "억",
+    "조": "조",
+    "만": "만",
+    "천": "천",
+    "백": "백",
+    "k": "k",
+    "m": "m",
+    "b": "b",
+    "bn": "b",
+    "t": "t",
+    "million": "m",
+    "billion": "b",
+    "trillion": "t",
+}
 
 def normalize_source_name(source_name: str) -> str:
     if not source_name:

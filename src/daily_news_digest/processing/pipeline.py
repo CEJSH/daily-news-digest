@@ -47,6 +47,8 @@ from daily_news_digest.core.constants import (
     DEDUPE_NOISE_WORDS,
     DEDUPE_EVENT_TOKENS,
     DEDUPE_EVENT_GROUPS,
+    DEDUPE_ACTION_TOKENS,
+    DEDUPE_ACTION_RELATIONS,
     DEDUPE_CLUSTER_EVENT_LABELS,
     DEDUPE_CLUSTER_DOMAINS,
     DEDUPE_CLUSTER_RELATIONS,
@@ -684,11 +686,19 @@ class DigestPipeline:
         before_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._ai_service.apply_semantic_dedupe(all_items)
         after_semantic = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
+        before_semantic_secondary = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
+        self._ai_service.apply_semantic_dedupe(
+            all_items,
+            threshold_override=0.85,
+            ignore_key_constraints=True,
+        )
+        after_semantic_secondary = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._metrics["dedupe"] = {
             "clusterMerged": max(0, after_cluster - before_cluster),
             "entityEventMerged": max(0, after_entity_event - before_entity_event),
             "dedupeKeySimMerged": max(0, after_key_sim - before_key_sim),
             "semanticMerged": max(0, after_semantic - before_semantic),
+            "semanticMergedSecondary": max(0, after_semantic_secondary - before_semantic_secondary),
         }
         # 성능 최적화: 전체 후보에 대한 본문 prefetch는 비용이 크므로 생략
 
@@ -773,9 +783,11 @@ def build_default_dedupe_engine(
         dedupe_ngram_sim=DEDUPKEY_NGRAM_SIM,
         dedupe_event_tokens=DEDUPE_EVENT_TOKENS,
         dedupe_event_groups=DEDUPE_EVENT_GROUPS,
+        dedupe_action_tokens=DEDUPE_ACTION_TOKENS,
         cluster_event_labels=DEDUPE_CLUSTER_EVENT_LABELS,
         cluster_domains=DEDUPE_CLUSTER_DOMAINS,
         cluster_relations=DEDUPE_CLUSTER_RELATIONS,
+        action_relations=DEDUPE_ACTION_RELATIONS,
         cluster_max_tokens=DEDUPE_CLUSTER_MAX_TOKENS,
         cluster_max_entities=DEDUPE_CLUSTER_MAX_ENTITIES,
         normalize_title_for_dedupe_func=normalize_title_for_dedupe,

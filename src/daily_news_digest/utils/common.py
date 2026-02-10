@@ -23,17 +23,55 @@ _LATIN_MEDIA_TOKENS = {
     "reuters", "bloomberg", "ft", "wsj", "journal", "times", "news", "press", "media"
 }  # 영문 매체명/토큰 추정용
 
+_LEADING_TITLE_TAG_RE = re.compile(
+    r"^\s*[\[\(]?\s*(단독|종합|속보|상보|단신|특보|긴급|브리핑|해설|인터뷰|기획|특집|"
+    r"특별기획|심층|탐사|분석|리포트|팩트체크|Q&A|사설|칼럼|오피니언|논평|"
+    r"포토|사진|영상|그래픽|라이브|현장|핫이슈|집중|이슈|스페셜)\s*[\]\)]?\s*",
+    flags=re.IGNORECASE,
+)
+_LEADING_TITLE_TAG_PLAIN_RE = re.compile(
+    r"^\s*(단독|종합|속보|상보|단신|특보|긴급|브리핑|해설|인터뷰|기획|특집|"
+    r"특별기획|심층|탐사|분석|리포트|팩트체크|Q&A|사설|칼럼|오피니언|논평|"
+    r"포토|사진|영상|그래픽|라이브|현장|핫이슈|집중|이슈|스페셜)\s*[:\-–—·•]\s*",
+    flags=re.IGNORECASE,
+)
+_TRAILING_EMAIL_RE = re.compile(
+    r"\s*[\(\[（]?\s*[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\s*[\)\]）]?\s*$"
+)
+_TRAILING_REPORTER_RE = re.compile(r"\s*[가-힣]{2,4}\s*(기자|특파원|논설위원|편집위원)\s*$")
+_TRAILING_REPORTER_EMAIL_RE = re.compile(
+    r"\s*[가-힣]{2,4}\s*(기자|특파원|논설위원|편집위원)\s*[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\s*$"
+)
+_MEDIA_NAME_TOKENS = {
+    "연합뉴스", "연합뉴스TV", "뉴시스", "뉴스1", "뉴스프리존", "로이터", "블룸버그",
+    "AP", "AFP", "AP통신", "AFP통신", "로이터통신", "블룸버그통신",
+    "조선일보", "조선비즈", "중앙일보", "동아일보", "한겨레", "경향신문", "국민일보",
+    "세계일보", "서울신문", "문화일보", "한국일보", "부산일보", "대구일보", "국제신문",
+    "매일경제", "매경", "한국경제", "서울경제", "머니투데이", "이데일리", "아시아경제",
+    "파이낸셜뉴스", "헤럴드경제", "디지털타임스", "전자신문",
+    "KBS", "MBC", "SBS", "YTN", "JTBC", "채널A", "TV조선", "MBN",
+    "ZDNet", "ZDNet Korea", "TechCrunch", "The Verge", "MIT Technology Review", "Semafor",
+    "Reuters", "Bloomberg", "Financial Times", "FT", "Wall Street Journal", "WSJ",
+    "New York Times", "NYTimes", "Washington Post", "CNN", "BBC", "CNBC", "NPR",
+}
+
 _KOREAN_PARTICLE_SUFFIXES = (
-    "에게서", "에게는", "에서", "에서는", "에게", "까지", "부터", "으로서", "로서", "으로", "로",
+    "에게서도", "에게서", "에게는", "에게도", "에게만", "에게",
+    "으로부터", "로부터", "에서의", "으로의", "로의",
+    "에서는", "에서", "까지는", "까지", "부터는", "부터",
+    "으로써", "로써", "으로서", "로서", "으로", "로",
     "과", "와", "을", "를", "은", "는", "이", "가", "의", "에", "도", "만"
 )  # 중복 제거용 토큰 정규화 시 조사 제거
 
 _KOREAN_VERB_ENDINGS = (
-    "했습니다", "하였다", "했다", "한다", "합니다", "하며", "하면서", "하고",
-    "된다", "됐다", "되고", "되며", "됩니다", "되는", "되었다", "되었습니다",
-    "했다고", "한다고", "했다며", "한다며", "했다는", "한다는",
-    "이었다", "이라며", "이라고", "이다", "였다", "였던", "했던", "했고",
+    "했습니다", "했습니다만", "했습니다는", "하였습니다", "하였다", "했다", "했다고", "했다고는",
+    "했다며", "했다는", "했다가", "했으며", "했지만", "했으나",
+    "합니다", "한다고", "한다", "한다며", "한다는", "하며", "하면서", "하고", "하여", "해서", "해도",
+    "된다", "됐", "됐다", "됐고", "됐으며", "됐지만", "되다", "되는", "되며", "되고", "되었습니다",
+    "되었습니다만", "되었습니다는", "되었다", "되었", "되어", "돼서", "되서", "될", "된", "됨",
+    "이었다", "이라며", "이라고", "이다", "였다", "였던", "했던", "했고", "했",
     "습니다", "니다",
+    "하다", "한", "하는", "한데", "한지", "한지라",
 )  # 중복 제거용 토큰 정규화 시 동사 어미 제거
 
 def clean_text(s: str) -> str:
@@ -119,6 +157,14 @@ def trim_title_noise(title: str, source_name: str | None = None) -> str:
     if not title:
         return ""
 
+    # 0) 제목 앞 접두 태그 제거 (예: [단독], (상보), 단독:)
+    while True:
+        new_title = _LEADING_TITLE_TAG_RE.sub("", title)
+        new_title = _LEADING_TITLE_TAG_PLAIN_RE.sub("", new_title)
+        if new_title == title:
+            break
+        title = new_title.strip()
+
     # 1) 제목 끝에 붙는 [신문사 이름] 또는 (신문사 이름) 패턴 제거 (선택사항)
     # title = re.sub(r"[\s\[\(]+[가-힣\w\s]+[\]\)]\s*$", "", title)
 
@@ -149,6 +195,11 @@ def trim_title_noise(title: str, source_name: str | None = None) -> str:
         src = re.escape(source_name.strip())
         title = re.sub(rf"(?:\s*[\|\-–—·•:｜ㅣ]\s*)?{src}\s*$", "", title, flags=re.IGNORECASE)
 
+    # 4-1) 기자 이메일/바이라인 제거 (후미)
+    title = _TRAILING_EMAIL_RE.sub("", title).strip()
+    title = _TRAILING_REPORTER_EMAIL_RE.sub("", title).strip()
+    title = _TRAILING_REPORTER_RE.sub("", title).strip()
+
     # 5) 구분자 기반 후미 세그먼트 제거 (소스/섹션 추정)
     parts = _SOURCE_SEPARATOR_RE.split(title)
     if len(parts) >= 2:
@@ -156,6 +207,16 @@ def trim_title_noise(title: str, source_name: str | None = None) -> str:
         if _looks_like_source_segment(tail):
             title = re.sub(rf"{re.escape(tail)}\s*$", "", title).strip()
             title = re.sub(r"\s*[\|\-–—·•:｜ㅣ]\s*$", "", title).strip()
+
+    # 6) 후미 언론사명 제거 (구분자 없이 붙는 경우)
+    if _MEDIA_NAME_TOKENS:
+        media_alt = "|".join(re.escape(x) for x in sorted(_MEDIA_NAME_TOKENS, key=len, reverse=True))
+        title = re.sub(rf"\s*(?:{media_alt})\s*$", "", title, flags=re.IGNORECASE).strip()
+    title = re.sub(
+        r"\s+[가-힣A-Za-z0-9]{2,}(?:일보|신문|뉴스|방송|미디어|통신|타임즈|데일리|TV|tv)\s*$",
+        "",
+        title,
+    ).strip()
 
     return title.strip()
 
@@ -178,13 +239,21 @@ def normalize_token_for_dedupe(token: str, stopwords: set[str]) -> str:
     }
     tok = token_aliases.get(tok, tok)
     if re.search(r"[가-힣]", tok):
-        for suf in _KOREAN_VERB_ENDINGS:
-            if tok.endswith(suf) and len(tok) - len(suf) >= 2:
-                tok = tok[: -len(suf)]
-                break
-        for suf in _KOREAN_PARTICLE_SUFFIXES:
-            if tok.endswith(suf) and len(tok) - len(suf) >= 2:
-                tok = tok[: -len(suf)]
+        for _ in range(3):
+            changed = False
+            for suf in sorted(_KOREAN_VERB_ENDINGS, key=len, reverse=True):
+                if tok.endswith(suf) and len(tok) - len(suf) >= 2:
+                    tok = tok[: -len(suf)]
+                    changed = True
+                    break
+            if changed:
+                continue
+            for suf in sorted(_KOREAN_PARTICLE_SUFFIXES, key=len, reverse=True):
+                if tok.endswith(suf) and len(tok) - len(suf) >= 2:
+                    tok = tok[: -len(suf)]
+                    changed = True
+                    break
+            if not changed:
                 break
     if not tok or tok in stopwords:
         return ""

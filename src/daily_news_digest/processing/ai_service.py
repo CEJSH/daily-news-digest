@@ -8,15 +8,33 @@ from typing import Any, Callable
 from daily_news_digest.core.config import FULLTEXT_LOG_ENABLED, FULLTEXT_LOG_MAX_CHARS
 from daily_news_digest.processing.constants import DEFAULT_TOP_MIX_TARGET
 from daily_news_digest.core.constants import (
+    DEDUPE_NOISE_WORDS,
     HARD_EXCLUDE_URL_HINTS,
     IMPACT_SIGNALS_MAP,
+    INCREMENTAL_RESULT_TOKENS,
+    INCREMENTAL_STAGE_TOKENS,
     MARKET_DEMAND_EVIDENCE_KEYWORDS,
+    MONTH_TOKENS,
+    NUMERIC_UNIT_ALIASES,
     SANCTIONS_EVIDENCE_KEYWORDS,
     SECURITY_EVIDENCE_KEYWORDS,
+    STOPWORDS,
     TRADE_TARIFF_KEYWORDS,
 )
 from daily_news_digest.processing.types import Item, LogFunc
-from daily_news_digest.utils import clean_text
+from daily_news_digest.utils import clean_text, normalize_title_for_dedupe
+
+
+_INCREMENTAL_STAGE_TOKENS = INCREMENTAL_STAGE_TOKENS
+_INCREMENTAL_RESULT_TOKENS = INCREMENTAL_RESULT_TOKENS
+
+_NUMERIC_TOKEN_RE = re.compile(
+    r"(?<!\w)(?:(us\$|\$|€|£|¥|₩|usd|eur|gbp|jpy|원화|원|달러|유로|엔|파운드)\s*)?"
+    r"(\d+(?:[.,]\d+)?)(?:\s?"
+    r"(%|퍼센트|percent|bp|bps|원|원화|달러|usd|eur|gbp|jpy|유로|엔|파운드|"
+    r"억원|조원|만원|천만원|백만원|억|조|만|천|백|k|m|bn|b|t|million|billion|trillion))?(?!\w)",
+    re.IGNORECASE,
+)
 
 try:
     from daily_news_digest.scrapers.article_fetcher import FetchResult
@@ -98,6 +116,157 @@ class AIEnrichmentService:
                     continue
             tokens.add(tok)
         return tokens
+
+    def _is_date_like_token(self, token: str) -> bool:
+        if not token:
+            return False
+        if token.isdigit():
+            if len(token) == 4:
+                try:
+                    year = int(token)
+                except Exception:
+                    return True
+                return 1900 <= year <= 2100
+            return False
+        if re.match(r"^\d{1,4}(년|월|일|분기)$", token):
+            return True
+        if re.match(r"^(q[1-4]|[1-4]q)$", token, flags=re.IGNORECASE):
+            return True
+        if re.match(r"^\d{1,2}분기$", token):
+            return True
+        return False
+
+    def _extract_numeric_tokens(self, text: str) -> set[str]:
+        if not text:
+            return set()
+        cleaned = clean_text(text).lower().replace(",", "")
+        tokens = set()
+        for m in _NUMERIC_TOKEN_RE.finditer(cleaned):
+            prefix = (m.group(1) or "").strip()
+            num = (m.group(2) or "").strip()
+            unit = (m.group(3) or "").strip()
+            if not num:
+                continue
+            if self._is_date_like_token(num):
+                continue
+            tokens |= self._normalize_numeric_tokens(num, prefix, unit)
+        return tokens
+
+    def _normalize_numeric_tokens(self, num: str, prefix: str, unit: str) -> set[str]:
+        num = num.strip()
+        if not num:
+            return set()
+
+        prefix_raw = prefix.lower().strip().replace(" ", "") if prefix else ""
+        unit_raw = unit.lower().strip() if unit else ""
+        prefix_norm = NUMERIC_UNIT_ALIASES.get(prefix_raw, prefix_raw) if prefix_raw else ""
+        unit_norm = NUMERIC_UNIT_ALIASES.get(unit_raw, unit_raw) if unit_raw else ""
+
+        currency = ""
+        magnitude = ""
+        if prefix_norm in {"usd", "eur", "gbp", "jpy", "krw"}:
+            currency = prefix_norm
+        elif prefix_norm:
+            magnitude = prefix_norm
+        if unit_norm in {"usd", "eur", "gbp", "jpy", "krw"}:
+            currency = currency or unit_norm
+        elif unit_norm:
+            magnitude = unit_norm
+
+        tokens = set()
+        if currency and magnitude:
+            tokens.add(f"{num}{currency}{magnitude}")
+            tokens.add(f"{num}{magnitude}")
+        elif currency:
+            tokens.add(f"{num}{currency}")
+        elif magnitude:
+            tokens.add(f"{num}{magnitude}")
+        else:
+            tokens.add(num)
+        return tokens
+
+    def _is_generic_entity_token(self, token: str) -> bool:
+        if not token:
+            return True
+        if token in STOPWORDS or token in DEDUPE_NOISE_WORDS or token in MONTH_TOKENS:
+            return True
+        if token.isdigit() or re.search(r"\d", token):
+            return True
+        generic = {
+            "전망", "가능", "유지", "논의", "시사", "추진", "예정", "발표", "계획", "검토",
+            "관련", "대한", "대해", "위해", "통해", "확대", "강화", "재개", "확정",
+            "합의", "협의", "대화", "추가", "면담", "회의", "회담", "방문", "방한",
+            "발언", "언급", "결정", "승인", "촉구", "지적", "요구", "제안",
+            "상승", "하락", "급등", "급락", "반등", "회복", "개선", "부진", "증가", "감소",
+            "성장", "강세", "약세", "수요", "공급", "가격", "주가", "시장",
+            "장관", "본부장", "부대표", "대표", "위원장", "당국", "정부",
+            "growth", "decline", "rise", "fall", "market", "price", "demand", "supply",
+        }
+        if token in generic:
+            return True
+        return False
+
+    def _extract_entity_tokens(self, title: str, summary: str) -> set[str]:
+        tokens: set[str] = set()
+        if title:
+            tokens |= normalize_title_for_dedupe(title, STOPWORDS)
+        if summary:
+            tokens |= normalize_title_for_dedupe(summary, STOPWORDS)
+        if not tokens:
+            return set()
+        tokens = {t for t in tokens if t and not self._is_generic_entity_token(t)}
+        return tokens
+
+    def _contains_incremental_token(self, text: str, token: str) -> bool:
+        if not text or not token:
+            return False
+        if re.search(r"[a-zA-Z]", token) and token.isalpha():
+            return bool(re.search(rf"\\b{re.escape(token)}\\b", text))
+        return token in text
+
+    def _extract_incremental_tokens(self, text: str, vocab: set[str]) -> set[str]:
+        if not text:
+            return set()
+        lowered = clean_text(text).lower()
+        return {tok for tok in vocab if self._contains_incremental_token(lowered, tok)}
+
+    def _incremental_signals(self, item: Item) -> tuple[set[str], set[str], set[str], set[str]]:
+        title = item.get("title") or ""
+        summary = item.get("summary") or item.get("summaryRaw") or ""
+        if isinstance(summary, list):
+            summary = " ".join([str(x) for x in summary if x])
+        full_text = item.get("fullText") or ""
+        text = clean_text(f"{title} {summary} {full_text}")
+        if len(text) > 2000:
+            text = text[:2000]
+        numbers = self._extract_numeric_tokens(text)
+        entities = self._extract_entity_tokens(title, summary)
+        stages = self._extract_incremental_tokens(text, _INCREMENTAL_STAGE_TOKENS)
+        results = self._extract_incremental_tokens(text, _INCREMENTAL_RESULT_TOKENS)
+        return numbers, entities, stages, results
+
+    def _has_incremental_info(self, item: Item, ref: Item, cache: dict[int, tuple[set[str], set[str], set[str], set[str]]]) -> bool:
+        def _get(it: Item) -> tuple[set[str], set[str], set[str], set[str]]:
+            obj_id = id(it)
+            cached = cache.get(obj_id)
+            if cached is not None:
+                return cached
+            signals = self._incremental_signals(it)
+            cache[obj_id] = signals
+            return signals
+
+        nums_a, ents_a, stages_a, results_a = _get(item)
+        nums_b, ents_b, stages_b, results_b = _get(ref)
+
+        if nums_a and (nums_a - nums_b):
+            return True
+        if ents_a and (ents_a - ents_b):
+            return True
+        if stages_a and not stages_a.issubset(stages_b):
+            return True
+        if results_a and not results_a.issubset(results_b):
+            return True
+        return False
 
     def _script_bucket(self, text: str) -> str:
         if not text:
@@ -779,7 +948,13 @@ class AIEnrichmentService:
         text = clean_text(f"{title} {summary_raw} {full_text}")
         return text[:4000]
 
-    def apply_semantic_dedupe(self, items: list[Item]) -> None:
+    def apply_semantic_dedupe(
+        self,
+        items: list[Item],
+        *,
+        threshold_override: float | None = None,
+        ignore_key_constraints: bool = False,
+    ) -> None:
         if not self._ai_semantic_dedupe_enabled:
             return
         if self._get_embedding is None:
@@ -823,6 +998,7 @@ class AIEnrichmentService:
         self._log(f"AI 중복 제거 시작: {len(candidates)}개 (base={len(base)}, extra={len(extra)})")
         kept: list[Item] = []
         token_cache: dict[int, set[str]] = {}
+        incremental_cache: dict[int, tuple[set[str], set[str], set[str], set[str]]] = {}
 
         def _cached_tokens(it: Item) -> set[str]:
             obj_id = id(it)
@@ -858,20 +1034,27 @@ class AIEnrichmentService:
                 if not ref_emb:
                     continue
                 ref_cluster = ref.get("clusterKey") or ""
-                threshold = float(self._ai_semantic_dedupe_threshold)
-                if item_cluster and ref_cluster and item_cluster != ref_cluster:
-                    item_prefix = _dedupe_prefix(item)
-                    ref_prefix = _dedupe_prefix(ref)
-                    item_tokens = _cached_tokens(item)
-                    ref_tokens = _cached_tokens(ref)
-                    overlap = 0.0
-                    if item_tokens and ref_tokens:
-                        overlap = len(item_tokens & ref_tokens) / max(1, min(len(item_tokens), len(ref_tokens)))
-                    if not (item_prefix and item_prefix == ref_prefix) and overlap < 0.5:
-                        continue
-                    threshold = max(0.82, threshold - 0.03)
+                threshold = float(
+                    self._ai_semantic_dedupe_threshold if threshold_override is None else threshold_override
+                )
+                if not ignore_key_constraints:
+                    if item_cluster and ref_cluster and item_cluster != ref_cluster:
+                        item_prefix = _dedupe_prefix(item)
+                        ref_prefix = _dedupe_prefix(ref)
+                        item_tokens = _cached_tokens(item)
+                        ref_tokens = _cached_tokens(ref)
+                        overlap = 0.0
+                        if item_tokens and ref_tokens:
+                            overlap = len(item_tokens & ref_tokens) / max(
+                                1, min(len(item_tokens), len(ref_tokens))
+                            )
+                        if not (item_prefix and item_prefix == ref_prefix) and overlap < 0.5:
+                            continue
+                        threshold = max(0.82, threshold - 0.03)
                 sim = self._cosine_similarity(embedding, ref_emb)
                 if sim >= threshold:
+                    if self._has_incremental_info(item, ref, incremental_cache):
+                        continue
                     item["status"] = "merged"
                     item["matchedTo"] = ref.get("id") or ref.get("clusterKey") or ref.get("dedupeKey") or ref.get("title")
                     item["mergeReason"] = "semantic_duplicate"

@@ -410,6 +410,49 @@ def _extract_evidence_sentence(label: str, text: str) -> str:
     candidates.sort(key=lambda s: _evidence_specificity_score(label, s), reverse=True)
     return candidates[0]
 
+def _extract_evidence_with_context(label: str, text: str) -> str:
+    evidence = _extract_evidence_sentence(label, text)
+    if evidence:
+        return evidence
+    sentences = _split_sentences_for_evidence(text)
+    if not sentences:
+        return ""
+    for idx, sentence in enumerate(sentences):
+        if not sentence or not _label_evidence_valid(label, sentence):
+            continue
+        if not _is_evidence_too_short(sentence):
+            return sentence
+        combined = ""
+        if idx + 1 < len(sentences):
+            combined = f"{sentence} {sentences[idx + 1]}".strip()
+        if combined and not _is_evidence_too_short(combined) and _label_evidence_valid(label, combined):
+            return combined
+        if idx - 1 >= 0:
+            combined = f"{sentences[idx - 1]} {sentence}".strip()
+            if combined and not _is_evidence_too_short(combined) and _label_evidence_valid(label, combined):
+                return combined
+    return ""
+
+def _fallback_impact_signals_from_text(text: str) -> list[dict[str, str]]:
+    cleaned = clean_text(text or "")
+    if not cleaned:
+        return []
+    text_lower = cleaned.lower()
+    candidates: list[dict[str, str]] = []
+    for label in _IMPACT_LABEL_PRIORITY:
+        keywords = IMPACT_SIGNALS_MAP.get(label, [])
+        if keywords and not any(kw.lower() in text_lower for kw in keywords):
+            continue
+        evidence = _extract_evidence_with_context(label, cleaned)
+        if evidence:
+            candidates.append({"label": label, "evidence": evidence})
+    if not candidates:
+        for label in _IMPACT_LABEL_PRIORITY:
+            evidence = _extract_evidence_with_context(label, cleaned)
+            if evidence:
+                candidates.append({"label": label, "evidence": evidence})
+                break
+    return _sanitize_impact_signals(candidates, cleaned, cleaned)
 
 def _build_impact_signals_detail(
     item: dict,
@@ -439,6 +482,9 @@ def _build_impact_signals_detail(
             impact_signals_detail.append({"label": label, "evidence": evidence})
 
     impact_signals_detail = _sanitize_impact_signals(impact_signals_detail, full_text, summary_text)
+    if not impact_signals_detail:
+        fallback_text = full_text or summary_text or clean_text(item.get("title") or "")
+        impact_signals_detail = _fallback_impact_signals_from_text(fallback_text)
     return impact_signals_detail
 
 
@@ -539,11 +585,9 @@ def _collect_item_errors(
         importance = int(item.get("importance") or 0)
     except Exception:
         importance = 0
-    if importance >= 3 and isinstance(impact_signals, list) and len(impact_signals) == 0:
+    if isinstance(impact_signals, list) and len(impact_signals) == 0:
         errors.append("ERROR: IMPACT_SIGNALS_REQUIRED")
-
-    if importance >= 3 and isinstance(impact_signals, list) and len(impact_signals) == 0:
-        if any(t in align_text.lower() for t in _ALIGNMENT_TRIGGERS):
+        if importance >= 3 and any(t in align_text.lower() for t in _ALIGNMENT_TRIGGERS):
             errors.append("ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE")
 
     published_at = _parse_datetime(str(item.get("publishedAt") or ""))
@@ -574,8 +618,9 @@ def classify_errors(errors: list[str]) -> dict[str, list[str]]:
         "ERROR: DEDUPE_KEY_NOT_ALIGNED",
         "ERROR: CLUSTER_KEY_NOT_ALIGNED",
         "ERROR: IMPACT_SIGNALS_MISSING_FOR_HIGH_IMPORTANCE",
+        "ERROR: IMPACT_SIGNALS_REQUIRED",
     }
-    s3 = {"ERROR: LOW_QUALITY_MISMATCH", "ERROR: IMPACT_SIGNALS_REQUIRED"}
+    s3 = {"ERROR: LOW_QUALITY_MISMATCH"}
     return {
         "s1": [e for e in errors if e in s1],
         "s2": [e for e in errors if e in s2],
@@ -612,9 +657,13 @@ def _dedupe_signals_by_evidence(signals: list[dict[str, str]]) -> list[dict[str,
 def _auto_fix_impact_signals(item: dict) -> list[str]:
     auto_fixed: list[str] = []
     signals = _normalize_impact_signal_format(item)
-    if not signals:
-        return auto_fixed
     source_text = (item.get("_fullText") or "") or (item.get("_summaryText") or "")
+    if not signals:
+        fallback = _fallback_impact_signals_from_text(source_text)
+        if fallback:
+            item["impactSignals"] = fallback
+            auto_fixed.append("fill_impact_signals")
+        return auto_fixed
     source_lower = clean_text(source_text).lower()
     cleaned: list[dict[str, str]] = []
     for entry in signals:
@@ -698,13 +747,6 @@ def apply_soft_warnings(item: dict, errors: list[str]) -> None:
             item["importance"] = 2
         elif importance > 1:
             item["importance"] = max(1, importance - 1)
-    if "ERROR: IMPACT_SIGNALS_REQUIRED" in errors:
-        try:
-            importance = int(item.get("importance") or 0)
-        except Exception:
-            importance = 0
-        if importance >= 3:
-            item["importance"] = 2
 
 def handle_validation_errors(
     item: dict,
@@ -944,14 +986,9 @@ def _validate_digest(digest: dict) -> tuple[bool, str]:
                 return False, "ERROR: INVALID_INFRA_LABEL"
             if label == "security" and not _security_evidence_valid(evidence):
                 return False, "ERROR: INVALID_SECURITY_LABEL"
-        try:
-            importance = int(it.get("importance") or 0)
-        except Exception:
-            importance = 0
-        if importance >= 3:
-            impact_signals = it.get("impactSignals")
-            if isinstance(impact_signals, list) and len(impact_signals) == 0:
-                return False, "ERROR: IMPACT_SIGNALS_REQUIRED"
+        impact_signals = it.get("impactSignals")
+        if isinstance(impact_signals, list) and len(impact_signals) == 0:
+            return False, "ERROR: IMPACT_SIGNALS_REQUIRED"
         if not it.get("title") or not it.get("sourceUrl"):
             return False, "INVALID_DIGEST"
         summary = it.get("summary")

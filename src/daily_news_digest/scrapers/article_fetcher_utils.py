@@ -239,10 +239,7 @@ def decode_google_news_rss_url(url: str) -> str:
 
 
 def pick_redirect_target(redirect_urls: Sequence[str], final_url: str) -> str:
-    urls: list[str] = []
-    for u in redirect_urls:
-        if u:
-            urls.append(u)
+    urls = [u for u in redirect_urls if u]
     if final_url:
         urls.append(final_url)
     for u in urls:
@@ -401,11 +398,4 @@ def looks_like_article_text(text: str, min_chars: int = 50) -> bool:
 
 
 def _dedupe_keep_order(values: Iterable[str]) -> list[str]:
-    seen = set()
-    uniq: list[str] = []
-    for v in values:
-        if v in seen:
-            continue
-        seen.add(v)
-        uniq.append(v)
-    return uniq
+    return list(dict.fromkeys(values))

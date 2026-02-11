@@ -167,7 +167,7 @@ class DigestPipeline:
             self._log(f"allowlist 미매칭: source 없음 {missing_source}개")
         if unmatched:
             top = sorted(unmatched.items(), key=lambda x: x[1], reverse=True)[:10]
-            top_str = ", ".join([f"{name}:{count}" for name, count in top])
+            top_str = ", ".join(f"{name}:{count}" for name, count in top)
             self._log(f"allowlist 미매칭 소스 상위: {top_str}")
         self._log(
             "allowlist 디버그: "

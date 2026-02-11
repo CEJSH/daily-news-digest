@@ -190,20 +190,17 @@ def _normalize_label_list(value: Any, allowed: set[str]) -> list[str]:
     if not value:
         return []
     if isinstance(value, list):
-        raw_list = value
+        raw_iter = (str(v) for v in value)
     elif isinstance(value, str):
-        raw_list = re.split(r"[,\s]+", value)
+        raw_iter = re.split(r"[,\s]+", value)
     else:
         return []
-    cleaned: list[str] = []
-    seen = set()
-    for v in raw_list:
-        token = clean_text(str(v)).lower()
-        if not token or token not in allowed or token in seen:
-            continue
-        cleaned.append(token)
-        seen.add(token)
-    return cleaned
+    tokens = (
+        token
+        for token in (clean_text(v).lower() for v in raw_iter)
+        if token and token in allowed
+    )
+    return list(dict.fromkeys(tokens))
 
 
 def _rule_based_impact_signals(text: str) -> list[str]:

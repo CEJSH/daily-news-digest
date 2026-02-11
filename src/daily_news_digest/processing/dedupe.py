@@ -436,7 +436,7 @@ class DedupeEngine:
         title = item.get("title") or ""
         summary = item.get("summary") or item.get("summaryRaw") or ""
         if isinstance(summary, list):
-            summary = " ".join([str(x) for x in summary if x])
+            summary = " ".join(str(x) for x in summary if x)
         return title, summary
 
     def _item_text_for_match(self, item: Item) -> str:
@@ -840,7 +840,7 @@ class DedupeEngine:
             title = item.get("title") or ""
             summary = item.get("summary") or item.get("summaryRaw") or ""
             if isinstance(summary, list):
-                summary = " ".join([str(x) for x in summary if x])
+                summary = " ".join(str(x) for x in summary if x)
             action_tokens = self._action_tokens_from_text(f"{title} {summary}".strip())
             action_label, _ = self._detect_relation(
                 action_tokens,

@@ -233,23 +233,18 @@ def _get_dedupe_engine() -> DedupeEngine:
 def _normalize_text_tokens(text: str) -> set[str]:
     t = clean_text(text or "").lower()
     t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
-    tokens: set[str] = set()
-    for tok in t.split():
-        if re.search(r"[가-힣]", tok):
-            if len(tok) < 2:
-                continue
-        else:
-            if len(tok) < 3:
-                continue
-        tokens.add(tok)
-    return tokens
+    return {
+        tok
+        for tok in t.split()
+        if len(tok) >= (2 if re.search(r"[가-힣]", tok) else 3)
+    }
 
 
 def _regenerate_keys_from_title_summary(item: dict) -> None:
     title = clean_text(item.get("title") or "")
     summary_list = item.get("summary")
     if isinstance(summary_list, list):
-        summary_text = " ".join([str(x) for x in summary_list if x])
+        summary_text = " ".join(str(x) for x in summary_list if x)
     else:
         summary_text = clean_text(str(summary_list or ""))
 
@@ -330,17 +325,13 @@ def _is_valid_digest(digest: dict) -> bool:
     return valid
 
 def _missing_required_fields(item: dict, required: set[str]) -> list[str]:
-    missing: list[str] = []
-    for key in required:
-        if key not in item:
-            missing.append(key)
-    return missing
+    return [key for key in required if key not in item]
 
 def _is_simple_incident_item(item: dict) -> bool:
     title = clean_text(item.get("title") or "")
     summary = item.get("summary") or []
     if isinstance(summary, list):
-        summary_text = " ".join([str(s) for s in summary if s])
+        summary_text = " ".join(str(s) for s in summary if s)
     else:
         summary_text = str(summary or "")
     text = clean_text(f"{title} {summary_text}").lower()

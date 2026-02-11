@@ -313,8 +313,11 @@ def estimate_read_time_seconds(text: str) -> int:
 def normalize_title_for_dedupe(title: str, stopwords: set[str]) -> set[str]:
     t = trim_title_noise(clean_text(title)).lower()
     t = re.sub(r"[^a-z0-9가-힣\s]", " ", t)
-    toks = [normalize_token_for_dedupe(x, stopwords) for x in t.split()]
-    return {x for x in toks if x}
+    return {
+        tok
+        for tok in (normalize_token_for_dedupe(x, stopwords) for x in t.split())
+        if tok
+    }
 
 def jaccard(a: set[str], b: set[str]) -> float:
     if not a or not b:

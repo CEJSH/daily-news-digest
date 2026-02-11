@@ -258,18 +258,22 @@ class ItemFilterScorer:
 
     def get_impact_signals(self, text: str) -> list[str]:
         signals: list[str] = []
+        seen: set[str] = set()
         text_lower = text.lower()
         for signal, keywords in self._impact_signals_map.items():
-            if any(kw.lower() in text_lower for kw in keywords):
+            if any(kw.lower() in text_lower for kw in keywords) and signal not in seen:
                 signals.append(signal)
+                seen.add(signal)
 
         # 관세/무역은 policy + market-demand 기본 신호로 간주
         has_trade = any(kw in text_lower for kw in TRADE_TARIFF_KEYWORDS)
         if has_trade:
-            if "policy" not in signals:
+            if "policy" not in seen:
                 signals.append("policy")
-            if "market-demand" not in signals:
+                seen.add("policy")
+            if "market-demand" not in seen:
                 signals.append("market-demand")
+                seen.add("market-demand")
 
         # 제재는 명시된 제재/수출통제 키워드가 있을 때만 허용
         has_sanctions = any(kw in text_lower for kw in SANCTIONS_KEYWORDS)

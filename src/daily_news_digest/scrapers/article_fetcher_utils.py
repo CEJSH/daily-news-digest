@@ -155,6 +155,18 @@ _BAD_MARKERS = [
     "구독",
 ]
 
+_LISTING_HINTS = (
+    "마켓시그널",
+    "증권일반",
+    "정책·제도",
+    "부동산일반",
+    "finance",
+    "economy",
+    "markets",
+    "latest",
+    "breaking",
+)
+
 
 def clean_text(text: str) -> str:
     return clean_text_ws(text)
@@ -195,8 +207,30 @@ def is_probably_non_article_url(url: str) -> bool:
     host = (parsed.netloc or "").lower()
     path = (parsed.path or "").lower()
     query = (parsed.query or "").lower()
+    normalized_path = path.rstrip("/")
+    segments = [s for s in normalized_path.split("/") if s]
     if host.endswith("news.google.com"):
         if path in ("", "/", "/home", "/home/") or path.startswith("/home"):
+            return True
+    # 언론사/포털 루트 페이지는 기사 본문이 아닌 경우가 대부분.
+    if host and path in ("", "/") and not query:
+        return True
+    # 짧은 인덱스/섹션 경로도 기사 본문이 아닐 확률이 높다.
+    if segments and len(segments) <= 2:
+        last = segments[-1]
+        if last in {
+            "home",
+            "homepage",
+            "index",
+            "main",
+            "news",
+            "latest",
+            "breaking",
+            "section",
+            "sections",
+            "category",
+            "categories",
+        }:
             return True
     if any(hint in host for hint in _NON_ARTICLE_HOST_HINTS):
         return True
@@ -392,6 +426,13 @@ def looks_like_article_text(text: str, min_chars: int = 50) -> bool:
 
     lowered = t.lower()
     if any(m in lowered for m in _BAD_MARKERS):
+        return False
+    # 카테고리/헤드라인 목록 페이지가 본문으로 오인되는 경우 방지.
+    separator_hits = lowered.count(" - ")
+    listing_hint_hits = sum(1 for hint in _LISTING_HINTS if hint in lowered)
+    if separator_hits >= 4 and listing_hint_hits >= 2:
+        return False
+    if t.count("…") >= 3 and separator_hits >= 2:
         return False
 
     return True

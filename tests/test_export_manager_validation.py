@@ -57,6 +57,27 @@ def test_validate_digest_rejects_outdated_item(monkeypatch) -> None:
     assert error == "ERROR: OUTDATED_ITEM"
 
 
+def test_detect_stale_incident_with_old_event_date() -> None:
+    base = em._parse_date_base("2026-02-11")
+    text = "정부는 2023년 11월 29일 발생한 침해 사고 조사 결과를 발표했다."
+    stale, event_date = em._detect_stale_incident(base, text)
+    assert stale is True
+    assert event_date is not None
+    assert event_date.year == 2023
+
+
+def test_collect_item_errors_flags_stale_incident() -> None:
+    item = _base_item(
+        date="2026-02-11",
+        publishedAt="2026-02-10T00:00:00+00:00",
+        title="쿠팡 개인정보 유출 조사 결과",
+        summary=["정부가 조사 결과를 발표했다."],
+    )
+    full_text = "정부는 2023년 11월 29일 발생한 침해 사고 조사 결과를 발표했다."
+    errors = em._collect_item_errors(item, full_text=full_text, summary_text=item["summary"][0])
+    assert "ERROR: STALE_INCIDENT_ITEM" in errors
+
+
 def test_validate_digest_requires_impact_signals_for_high_importance(monkeypatch) -> None:
     monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
     monkeypatch.setattr(em, "TOP_LIMIT", 10)
@@ -186,3 +207,48 @@ def test_export_downgrades_importance_without_impact_signals(monkeypatch, tmp_pa
     assert digest["items"][0]["importance"] == 2
     # impactSignals가 없으면 importance가 2로 다운그레이드됨
     # qualityReason은 AI 결과에 따라 다른 값이 설정될 수 있음
+
+
+def test_export_prefers_resolved_url_for_source_url(monkeypatch, tmp_path) -> None:
+    import datetime
+
+    now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+    date_str = now.strftime("%Y-%m-%dT%H:%M:%S+09:00")
+
+    monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
+    monkeypatch.setattr(em, "TOP_LIMIT", 5)
+    monkeypatch.setattr(em, "METRICS_JSON", str(tmp_path / "metrics.json"))
+    output_path = tmp_path / "digest.json"
+    item = {
+        "title": "정부 정책 발표",
+        "summary": "정부가 정책을 발표했다.",
+        "summaryRaw": "정부가 정책을 발표했다.",
+        "fullText": "정부가 정책을 발표했다. 적용 범위와 시행 시점을 설명했다. " * 5,
+        "topic": "정책",
+        "source": "source",
+        "sourceRaw": "source",
+        "link": "https://news.google.com/rss/articles/example",
+        "resolvedUrl": "https://example.com/news/real-article",
+        "publishedAtUtc": date_str,
+        "updatedAtUtc": date_str,
+        "impactSignals": ["policy"],
+        "dedupeKey": "정부-정책-발표",
+        "clusterKey": "정책/정부",
+        "score": 3.0,
+        "ai": {
+            "summary_lines": ["정부가 정책을 발표했다."],
+            "why_important": "정책 변화가 영향을 미친다.",
+            "importance_rationale": "근거: 정부가 정책을 발표했다.",
+            "importance_score": 3,
+            "impact_signals": ["policy"],
+            "impact_signals_evidence": {"policy": "정부가 정책을 발표했다."},
+            "quality_label": "ok",
+            "quality_reason": "",
+        },
+    }
+    digest = em.export_daily_digest_json(
+        [item],
+        str(output_path),
+        {"selection_criteria": "", "editor_note": "", "question": ""},
+    )
+    assert digest["items"][0]["sourceUrl"] == "https://example.com/news/real-article"

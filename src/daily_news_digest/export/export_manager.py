@@ -200,6 +200,60 @@ _ALIGNMENT_TRIGGERS = [
     "증설",
 ]
 
+_STALE_EVENT_MAX_DAYS = int(os.getenv("STALE_EVENT_MAX_DAYS", "90"))
+_INCIDENT_CONTEXT_KEYWORDS = (
+    "발생",
+    "발생한",
+    "침해",
+    "해킹",
+    "유출",
+    "사고",
+    "사건",
+    "누출",
+    "탈취",
+    "breach",
+    "incident",
+    "hack",
+    "happened",
+    "occurred",
+)
+_STALE_INCIDENT_TOPICAL_KEYWORDS = (
+    "침해",
+    "해킹",
+    "유출",
+    "사고",
+    "사건",
+    "누출",
+    "탈취",
+    "breach",
+    "incident",
+    "hack",
+    "leak",
+    "attack",
+)
+_NON_EVENT_DATE_CONTEXT_KEYWORDS = (
+    "분기",
+    "실적",
+    "매출",
+    "영업이익",
+    "순이익",
+    "컨센서스",
+    "가이던스",
+    "전망",
+    "forecast",
+    "earnings",
+    "quarter",
+    "fiscal",
+)
+_EXPLICIT_DATE_PATTERNS = (
+    re.compile(
+        r"(?P<year>(?:19|20)\d{2})\s*년\s*(?P<month>1[0-2]|0?[1-9])\s*월\s*(?P<day>3[01]|[12]?\d)\s*일?"
+    ),
+    re.compile(
+        r"(?P<year>(?:19|20)\d{2})\s*[./-]\s*(?P<month>1[0-2]|0?[1-9])\s*[./-]\s*(?P<day>3[01]|[12]?\d)"
+    ),
+)
+
 
 def _get_dedupe_engine() -> DedupeEngine:
     global _DEDUPE_ENGINE
@@ -348,6 +402,55 @@ def _parse_datetime(value: str) -> datetime.datetime | None:
 
 def _parse_date_base(value: str) -> datetime.datetime | None:
     return parse_date_base_utc(value, base_tz=_KST)
+
+
+def _iter_explicit_calendar_dates(text: str) -> list[tuple[datetime.datetime, int]]:
+    cleaned = clean_text(text or "")
+    if not cleaned:
+        return []
+    candidates: list[tuple[datetime.datetime, int]] = []
+    lowered = cleaned.lower()
+    for pattern in _EXPLICIT_DATE_PATTERNS:
+        for match in pattern.finditer(cleaned):
+            try:
+                year = int(match.group("year"))
+                month = int(match.group("month"))
+                day = int(match.group("day"))
+                dt = datetime.datetime(year, month, day, tzinfo=_KST).astimezone(datetime.timezone.utc)
+            except Exception:
+                continue
+            start = max(0, match.start() - 50)
+            end = min(len(cleaned), match.end() + 60)
+            context = lowered[start:end]
+            score = 0
+            if any(kw in context for kw in _INCIDENT_CONTEXT_KEYWORDS):
+                score += 2
+            if any(kw in context for kw in _NON_EVENT_DATE_CONTEXT_KEYWORDS):
+                score -= 2
+            if score > 0:
+                candidates.append((dt, score))
+    return candidates
+
+
+def _detect_stale_incident(
+    base_date: datetime.datetime | None,
+    text: str,
+) -> tuple[bool, datetime.datetime | None]:
+    if base_date is None:
+        return False, None
+    lowered = clean_text(text or "").lower()
+    if not lowered:
+        return False, None
+    if not any(kw in lowered for kw in _STALE_INCIDENT_TOPICAL_KEYWORDS):
+        return False, None
+    candidates = _iter_explicit_calendar_dates(lowered)
+    if not candidates:
+        return False, None
+    # 점수 우선, 동점이면 더 오래된 날짜를 사건일로 채택한다.
+    candidates.sort(key=lambda x: (-x[1], x[0]))
+    event_date = candidates[0][0]
+    age_days = (base_date - event_date).total_seconds() / 86400.0
+    return age_days > float(_STALE_EVENT_MAX_DAYS), event_date
 
 
 
@@ -591,11 +694,15 @@ def _collect_item_errors(
         diff_hours = abs((published_at - base_date).total_seconds()) / 3600.0
         if diff_hours > 72 and item.get("isCarriedOver") is not True:
             errors.append("ERROR: OUTDATED_ITEM")
+    incident_text = f"{title_text} {summary_clean} {source_text}".strip()
+    stale_incident, _ = _detect_stale_incident(base_date, incident_text)
+    if stale_incident and item.get("isCarriedOver") is not True:
+        errors.append("ERROR: STALE_INCIDENT_ITEM")
 
     return list(dict.fromkeys(errors))
 
 def classify_errors(errors: list[str]) -> dict[str, list[str]]:
-    s1 = {"ERROR: DUPLICATE_DEDUPE_KEY", "ERROR: OUTDATED_ITEM"}
+    s1 = {"ERROR: DUPLICATE_DEDUPE_KEY", "ERROR: OUTDATED_ITEM", "ERROR: STALE_INCIDENT_ITEM"}
     s2 = {
         "ERROR: INVALID_POLICY_LABEL",
         "ERROR: INVALID_SANCTIONS_LABEL",
@@ -718,6 +825,9 @@ def handle_hard_fails(item: dict, errors: list[str]) -> None:
     if "ERROR: OUTDATED_ITEM" in errors:
         item["status"] = "dropped"
         item["dropReason"] = "outdated"
+    if "ERROR: STALE_INCIDENT_ITEM" in errors:
+        item["status"] = "dropped"
+        item["dropReason"] = "stale_incident"
     if "ERROR: DUPLICATE_DEDUPE_KEY" in errors:
         item["status"] = "dropped"
         item["dropReason"] = "duplicate"
@@ -954,6 +1064,12 @@ def _validate_digest(digest: dict) -> tuple[bool, str]:
                 status = it.get("status")
                 if status in {"kept", "published"} and it.get("isCarriedOver") is not True:
                     return False, "ERROR: OUTDATED_ITEM"
+        summary_value = it.get("summary")
+        summary_text = " ".join(str(x) for x in summary_value) if isinstance(summary_value, list) else str(summary_value or "")
+        incident_text = f"{it.get('title') or ''} {summary_text}".strip()
+        stale_incident, _ = _detect_stale_incident(base_date, incident_text)
+        if stale_incident and it.get("isCarriedOver") is not True and it.get("status") in {"kept", "published"}:
+            return False, "ERROR: STALE_INCIDENT_ITEM"
         if it.get("qualityLabel") == "low_quality":
             if it.get("status") != "dropped" and not _low_quality_exception_ok(it):
                 return False, "ERROR: LOW_QUALITY_MISMATCH"
@@ -1090,6 +1206,8 @@ def export_daily_digest_json(
         metrics["total_in"] += 1
         title = (item.get("title") or "").strip()
         link = (item.get("link") or "").strip()
+        resolved_url = (item.get("resolvedUrl") or "").strip()
+        source_url = resolved_url or link
         summary = (item.get("summary") or "").strip()
         summary_raw = (item.get("summaryRaw") or "").strip()
         full_text = (item.get("fullText") or "").strip()
@@ -1108,6 +1226,12 @@ def export_daily_digest_json(
             diff_hours = abs((published_dt - base_dt).total_seconds()) / 3600.0
             if diff_hours > 72 and not is_carried_over:
                 drop_reason = drop_reason or "outdated"
+                status_value = "dropped"
+        if not drop_reason and not is_merged and not is_carried_over:
+            incident_text = f"{title} {summary_raw or summary} {full_text}".strip()
+            stale_incident, _ = _detect_stale_incident(base_dt, incident_text)
+            if stale_incident:
+                drop_reason = "stale_incident"
                 status_value = "dropped"
         full_text_len = len(clean_text(full_text))
         if full_text_len < 50 and not drop_reason and not is_merged:
@@ -1163,6 +1287,8 @@ def export_daily_digest_json(
                 return "요약이 제목 반복으로 편집 기준을 충족하지 못합니다."
             if reason.startswith("ai_low_quality:"):
                 return reason.split(":", 1)[1]
+            if reason == "stale_incident":
+                return "과거 사건 재보도라 오늘 기준 핵심 이슈에서 제외했습니다."
             return reason
 
         policy_drop_reason = ""
@@ -1289,7 +1415,7 @@ def export_daily_digest_json(
             "clusterKey": cluster_key,
             "matchedTo": item.get("matchedTo"),
             "sourceName": source_name,
-            "sourceUrl": link,
+            "sourceUrl": source_url,
             "publishedAt": published_at,
             "readTimeSec": read_time_sec,
             "status": status_value,
@@ -1437,6 +1563,7 @@ def export_daily_digest_json(
             "ERROR: LOW_QUALITY_MISMATCH",
             "ERROR: DUPLICATE_DEDUPE_KEY",
             "ERROR: OUTDATED_ITEM",
+            "ERROR: STALE_INCIDENT_ITEM",
         }:
             raise RuntimeError(error)
         existing = _load_existing_digest(output_path)

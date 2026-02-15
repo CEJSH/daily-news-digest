@@ -1,229 +1,42 @@
 {
-  "date": "2026-02-15",
+  "date": "2026-02-16",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-15T07:55:50.256697+09:00",
+  "lastUpdatedAt": "2026-02-16T07:58:35.571813+09:00",
   "items": [
     {
-      "id": "2026-02-15_1",
-      "date": "2026-02-15",
-      "category": "산업",
-      "title": "미국, 반도체 장비 불법 수출 자국 기업 및 한국 자회사에 벌금 부과",
-      "summary": [
-        "미국 상무부 산업안보국(BIS)은 어플라이드머티어리얼즈(AMAT)와 한국 자회사가 중국에 반도체 제조 장비를 불법 수출한 것과 관련해 합의했다고 발표했습니다.",
-        "이 두 회사는 총 2억 5,200만 달러(약 3,600억 원)의 벌금을 내야 하며, 이는 BIS가 지금까지 부과한 벌금 중 두 번째로 많은 금액입니다."
-      ],
-      "whyImportant": "이번 제재는 미국이 반도체 기술의 중국 유출을 막기 위해 수출 통제를 강화하고 있음을 보여줍니다.",
-      "importanceRationale": "근거: AMAT가 2021년과 2022년에 걸쳐 56차례 수출통제 규정을 위반하여 약 1억 2,600만 달러 상당의 장비를 불법 수출한 사실이 적발되었기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "\"반도체 장비, 中에 불법 수출\"…美, 자국 기업·韓 자회사 벌금 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 \"韓 거쳐 中 SMIC에 우회 판매\" 미국 반도체 장비 업체 어플라이드머티어리얼즈(AMAT)와 한국 자회사가 미국의 수출통제 규정을 어겨 막대한 벌금을 물게 됐다."
-        }
-      ],
-      "dedupeKey": "기업-미국-반도체-불법-자국-자회사-장비-한국",
-      "clusterKey": "한미_관세/장비",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021352341",
-      "publishedAt": "2026-02-13T06:41:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_2",
-      "date": "2026-02-15",
-      "category": "금융",
-      "title": "미국 관세로 인한 일본 자동차 기업의 타격",
-      "summary": [
-        "일본 주요 자동차 기업 7곳이 미국의 추가 관세 조치로 작년 4~12월 약 19조 8천억 원의 영향을 받은 것으로 니혼게이자이신문이 보도했습니다.",
-        "미국 관세 정책은 이 기간 일본 자동차 기업들의 영업이익을 약 30% 낮춘 것으로 추산됩니다."
-      ],
-      "whyImportant": "미국 관세 정책이 일본 자동차 산업의 수익성에 상당한 영향을 미치고 있음을 보여줍니다.",
-      "importanceRationale": "근거: 미국의 관세 정책으로 일본 자동차 기업의 영업이익이 30% 정도 감소했으며, 마쓰다와 닛산은 적자를 기록했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "닛케이는 미국 관세 정책이 이 기간 일본 자동차 기업들의 영업이익을 30% 정도 낮췄다고 추산했다."
-        }
-      ],
-      "dedupeKey": "7곳-관세-기업-미국-인한-일본-자동차-타격",
-      "clusterKey": "미일_실적/인한/정책/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1310304",
-      "publishedAt": "2026-02-13T05:04:09+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_3",
-      "date": "2026-02-15",
-      "category": "에너지",
-      "title": "프랑스, 원전 6기 신규 건설 및 태양광·풍력 발전 축소",
-      "summary": [
-        "프랑스는 원자력 에너지 확대를 위해 원자로 6기를 추가 건설하고 전기차 도입에 속도를 낼 예정입니다.",
-        "2035년까지 화석 에너지 의존도를 줄이기 위해 태양광 및 풍력 발전 시설 확충 계획은 축소되었습니다.",
-        "2035년 육상 풍력발전 용량 목표치는 기존 45GW에서 35~40GW로 하향 조정되었습니다."
-      ],
-      "whyImportant": "프랑스의 에너지 정책 변화는 유럽 에너지 시장의 장기적인 전력 공급원 구성에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 프랑스 정부는 신규 원자로 6기를 건설하여 2038년부터 가동할 계획이며, 2035년까지 화석 에너지 의존도를 줄이는 것을 목표로 하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "佛, 원전 6기 신규 건설…태양광·풍력 발전은 축소 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 신규 원자로, 2038년부터 가동 전기차는 판매 비중 확대 목표 전기차는 판매 비중 확대 목표 프랑스가 태양광과 풍력발전 시설 확충 계획을 당초 구상보다 축소했다."
-        }
-      ],
-      "dedupeKey": "6기-건설-발전-신규-원전-태양광-풍력-프랑스",
-      "clusterKey": "에너지/프랑스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021352371",
-      "publishedAt": "2026-02-13T06:43:16+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_4",
-      "date": "2026-02-15",
+      "id": "2026-02-16_1",
+      "date": "2026-02-16",
       "category": "기술",
-      "title": "샤오미 전기 SUV, 1월 중국 판매 1위… 테슬라 모델 Y의 두 배",
+      "title": "나바로, 트럼프 행정부가 메타와 같은 데이터 센터 건설업체에 비용 '내재화' 강요할 수 있다고 언급",
       "summary": [
-        "샤오미의 전기차 YU7 SUV가 1월 중국에서 37,869대 판매되어 테슬라 모델 Y를 제치고 판매 1위를 기록했습니다.",
-        "이는 테슬라 모델 Y의 판매량 16,845대의 두 배에 달하는 수치입니다.",
-        "샤오미는 2025년 여름부터 YU7을 판매하기 시작했으며, 가격 경쟁력을 통해 시장 점유율을 확대하고 있습니다."
+        "트럼프 행정부가 데이터 센터 건설업체에 비용을 부담하도록 강요할 수 있다고 나바로가 밝혔습니다.",
+        "이는 유틸리티 가격 상승에 대한 대응으로, 데이터 센터의 전력 사용 및 인프라 비용을 포함합니다.",
+        "PJM 지역 내 150억 달러 규모의 신규 발전 용량 구축을 기술 기업이 부담하도록 촉구하는 협약도 체결되었습니다."
       ],
-      "whyImportant": "샤오미의 전기차 판매 증가는 중국 전기차 시장의 경쟁 심화를 보여주는 중요한 지표입니다.",
-      "importanceRationale": "근거: 샤오미 YU7 SUV는 1월에 37,869대가 판매되어 테슬라 모델 Y를 앞섰으며, 이는 중국 전기차 시장의 경쟁 구도 변화를 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "The Xiaomi YU7 SUV ranked first in China by sales last month, with 37,869 units sold, twice as many as Tesla’s 16,845 Model Y vehicles, according to data from the China Passenger Car Association."
-        }
-      ],
-      "dedupeKey": "1위-suv-모델-샤오미-전기-중국-테슬라-판매",
-      "clusterKey": "샤오미/suv/판매",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/13/xiaomis-electric-suv-tops-china-sales-in-january-sells-twice-as-many-as-teslas-model-y.html",
-      "publishedAt": "2026-02-13T02:25:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_5",
-      "date": "2026-02-15",
-      "category": "금융",
-      "title": "폴더블폰 시장, '북 스타일' 비중 증가 전망…애플 경쟁 가세",
-      "summary": [
-        "올해 전 세계 폴더블 스마트폰 시장에서 '북 스타일' 폴더블폰 비중이 65%를 차지할 것으로 예상됩니다.",
-        "애플이 하반기에 첫 폴더블 스마트폰을 출시하며 시장 경쟁은 더욱 심화될 전망입니다."
-      ],
-      "whyImportant": "폴더블폰 시장의 경쟁 심화는 관련 부품 및 기술 개발에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 올해 북 스타일 폴더블폰 비중이 65%로 예상되고, 하반기 애플의 시장 진입으로 경쟁이 심화될 것으로 전망되기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "카운터포인트리서치는 “스타일(모양)을 중시하거나, 보급형 프리미엄 제품을 선호하는 ‘보완 수요’를 충족하기 위한 제품이며, 전체 시장 점유율은 점차 감소할 것으로 전망한다”고 말했다."
-        }
-      ],
-      "dedupeKey": "가세-경쟁-비중-스타일-시장-애플-증가-폴더블폰",
-      "clusterKey": "폴더블폰/스타일/비중",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1244966.html",
-      "publishedAt": "2026-02-13T04:44:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_6",
-      "date": "2026-02-15",
-      "category": "금융",
-      "title": "에르메스, 경쟁사 부진 속 매출 12% 증가",
-      "summary": [
-        "에르메스는 글로벌 명품 시장 침체 속에서도 연간 매출 160억 유로를 돌파하며 호실적을 기록했습니다.",
-        "북미 시장에서 12.4% 증가한 30억 7500만 유로의 매출을 올렸으며, 영업이익률은 41%에 달합니다.",
-        "에르메스는 올해 제품 가격을 5~6% 추가 인상할 방침입니다."
-      ],
-      "whyImportant": "에르메스의 실적은 명품 시장 내 차별화된 전략과 고가 정책이 경기 침체에도 불구하고 효과적임을 보여줍니다.",
-      "importanceRationale": "근거: 에르메스는 북미 시장에서 12.4% 매출 증가를 기록했으며, 영업이익률은 41%에 달해 경쟁사 LVMH와 케링그룹의 부진과 대조적인 모습을 보였습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "LVMH·케링 흔들릴 때 '나홀로 성장'…에르메스 매출 12% 껑충 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 연매출 160억유로 돌파 4분기 매출도 예상치 웃돌아 영업이익률은 41% 달해 지역 포트폴리오 재편 견고한 VVIP 초고가 전략 4분기 매출도 예상치 웃돌아 영업이익률은 41% 달해 지역 포트폴리오 재편 견고한 VVIP 초고가 전략 글로벌 명품 시장 침체에도 에르메스가 지난해 호실적을 올렸다."
-        },
-        {
-          "label": "security",
-          "evidence": "10월 초 멕시코시티 ‘몰리에르’ 매장을 대대적으로 리뉴얼했고, 11월에는 캐나다 밴쿠버 매장에서 ‘쁘띠 아쉬’ 이벤트를 진행하는 등 북미 전역에서 벌인 공격적인 출점과 마케팅 전략이 적중했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "에르메스는 인플레이션으로 인한 비용 상승분을 상쇄하기 위해 올해 제품 가격을 5~6% 추가 인상할 방침이다."
-        }
-      ],
-      "dedupeKey": "160억-30억-경쟁사-매출-부진-에르메스-올렸으며-증가",
-      "clusterKey": "실적/에르메스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602135073i",
-      "publishedAt": "2026-02-13T22:01:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-15_7",
-      "date": "2026-02-15",
-      "category": "금융",
-      "title": "금값·부동산 전망 등 풍성한 한국경제 콘텐츠",
-      "summary": [
-        "한국경제신문은 설 연휴 동안 반도체, 조선, AI 산업 흐름부터 부동산 정책 이슈까지 핵심 투자 정보를 제공합니다.",
-        "AI 인프라 투자, 휴머노이드 배터리, 자율주행 AI 모델 기술 등 분석 콘텐츠를 소개합니다.",
-        "주식 투자자와 주택 실수요자를 위한 정책 이슈 점검 및 최신 소비 트렌드 관련 기사도 제공합니다."
-      ],
-      "whyImportant": "설 연휴 기간 동안 투자 방향 설정 및 시장 변화에 대한 이해를 돕는 정보 제공이 중요합니다.",
-      "importanceRationale": "근거: 다양한 산업 분석과 투자 정보 외에도 주식·부동산 정책 이슈를 다루어 투자 결정에 영향을 줄 수 있기 때문입니다.",
+      "whyImportant": "데이터 센터의 전력 소비 및 비용 부담 문제가 심화될 경우, 관련 산업 전반에 걸쳐 비용 구조 및 투자 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: PJM 지역에 150억 달러 규모의 신규 발전 용량 구축을 기술 기업이 부담하도록 하는 협약이 체결되어 데이터 센터 관련 비용 부담에 대한 정책적 움직임이 나타났습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "부동산감독원이 설치된 이후 시장에 나타날 변화, 중국 양회와 북한 9차 당대회의 관전 포인트도 정리한다.‘한풀 꺾인 두쫀쿠 인기…스테디셀러 가능할까’ ‘아반떼부터 S클래스까지…2026 신차대전’ ‘거품 빠진 중고 시계 시장, 뜨는 4대 브랜드’ 등의 기사에서는 최신 소비 트렌드를 엿볼 수 있다."
+          "evidence": "Trump said last month on Truth Social that he had struck a deal with Microsoft “to ensure that Americans don’t ‘pick up the tab’ for their POWER consumption, in the form of paying higher Utility bills.” The president added that his administration was negotiating with other tech giants and that there would be “More to come soon!” Microsoft pledged last month not to raise utility costs near its data centers, and to replenish water used by the centers."
+        },
+        {
+          "label": "capex",
+          "evidence": "“That’s why President Trump asked governors across the Mid-Atlantic to come together and call upon PJM to allow America to build big reliable power plants again.” POLITICO last week reported on a draft compact that the White House wants tech companies to sign to ensure data centers don’t affect consumers’ utility bills."
         },
         {
           "label": "market-demand",
-          "evidence": "미국을 넘어 전 세계로 영토를 넓혀가는 해외 주식 투자 트렌드를 반영해 ‘AI 필수소재 독점…일본 주식 퀀텀점프’ ‘미국보다 잘나가…중국판 나스닥 지각변동’ 등의 기사도 게재한다.주식 투자자와 주택 실수요자가 알아야 할 정책 이슈도 짚어본다."
+          "evidence": "President Donald Trump’s trade and manufacturing adviser, Peter Navarro, said on Sunday that the White House may force data center builders to absorb their costs as voters continue to sour on the economy and utility prices soar."
         }
       ],
-      "dedupeKey": "금값-부동산-실수요자-연휴-자율주행-콘텐츠-풍성-휴머노이드",
-      "clusterKey": "투자/금값/정책",
+      "dedupeKey": "같은-건설업체-나바-데이터-메타-센터-트럼프-행정부",
+      "clusterKey": "나바/트럼프/행정부",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021351761",
-      "publishedAt": "2026-02-13T16:35:00+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/02/15/navarro-trump-data-centers-affordability.html",
+      "publishedAt": "2026-02-15T19:39:51+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -232,23 +45,58 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-15_8",
-      "date": "2026-02-15",
-      "category": "금융",
-      "title": "카리브해 적갈색 해조류, 역대 최고치 관측 전망",
+      "id": "2026-02-16_2",
+      "date": "2026-02-16",
+      "category": "기술",
+      "title": "트럼프 고문, 데이터센터 비용 내부화 강제 가능성 시사",
       "summary": [
-        "카리브해 휴양지에 해조류가 올해 역대 최고치를 기록할 것이라는 전망이 나왔습니다.",
-        "멕시코 해군과 국립지구관측연구소는 대서양 서부에서 멕시코 방향으로 이동 중인 해조류가 약 28만97t으로 추산된다고 밝혔습니다."
+        "트럼프 행정부의 나바로 고문은 메타 등 기술 기업에 데이터센터의 전기, 물 사용 비용을 직접 부담하게 할 수 있다고 밝혔습니다.",
+        "이는 AI 확산으로 데이터센터 전력 수요가 급증하면서 전기요금 상승에 대한 유권자 불만이 커진 데 따른 대응으로 풀이됩니다.",
+        "PJM 지역 내 약 150억 달러 규모의 신규 발전 설비 확충을 기술 기업이 재원 조달하도록 하는 협약도 추진 중입니다."
       ],
-      "whyImportant": "카리브해 지역의 환경 및 경제에 심각한 문제를 야기할 수 있는 해조류 문제에 대한 대비가 필요합니다.",
-      "importanceRationale": "근거: 멕시코 국립지구관측연구소는 해조류가 멕시코 카리브해 지역에 심각한 환경·경제적 문제를 야기했다고 설명하며, 6~7월에 최대치를 보일 수 있다고 전망했습니다.",
-      "impactSignals": [],
-      "dedupeKey": "28만97t-관측-서부-역대-적갈색-최고치-카리브해-해조류",
-      "clusterKey": "카리브해/적갈색/해조류",
+      "whyImportant": "데이터센터의 전력 소비 비용 부담 문제가 기업과 소비자 간의 비용 분담에 대한 정책 논쟁으로 이어질 수 있기 때문입니다.",
+      "importanceRationale": "근거: 트럼프 행정부가 PJM 지역 내 약 150억 달러 규모의 신규 발전 설비 확충을 기술 기업이 재원 조달하도록 하는 협약을 추진하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "트럼프 고문 “메타 등에 데이터센터 비용 내부화 강제” - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 나바로 백악관 무역·제조 고문 \"전기, 물 사용 비용 모두 내부화\" \"스스로 부담하는 강제 조치 추진할 것\" \"전기, 물 사용 비용 모두 내부화\" \"스스로 부담하는 강제 조치 추진할 것\" 피터 나바로 백악관 무역·제조업 고문이 메타 등 대형 기술기업의 데이터센터 건설과 관련해 전력·수도 등 유틸리티 비용을 기업이 직접 부담하도록 강제할 수 있다고 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI) 확산으로 데이터센터 전력 수요가 급증하는 가운데, 전기요금 상승에 대한 유권자들의 불만이 커지자 행정부가 대응에 나선 것으로 풀이된다."
+        }
+      ],
+      "dedupeKey": "150억-강제-고문-내부화-데이터센터-비용-트럼프-행정부",
+      "clusterKey": "설비투자/에너지/트럼프",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1310490",
-      "publishedAt": "2026-02-13T16:37:06+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602167422i",
+      "publishedAt": "2026-02-15T21:12:27+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-16_3",
+      "date": "2026-02-16",
+      "category": "금융",
+      "title": "오늘 귀성길 정체 가장 심해, 저녁 8시 해소 전망",
+      "summary": [
+        "설 연휴 둘째 날인 오늘 전국 고속도로 곳곳에서 귀성길 차량 정체가 이어지고 있습니다.",
+        "한국도로공사는 오늘 귀성 방향 정체가 가장 심하고 저녁 8시쯤 해소될 것으로 예상했습니다."
+      ],
+      "whyImportant": "교통 정체 정보는 귀성객들의 이동 시간 계획에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 한국도로공사가 닷새 연휴 중 오늘 귀성 방향 정체가 가장 심할 것으로 전망했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "8시-가장-귀성길-심해-오늘-저녁-정체-해소",
+      "clusterKey": "오늘/귀성길/정체",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0103_202602151446434029",
+      "publishedAt": "2026-02-15T05:46:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
@@ -257,29 +105,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-15_9",
-      "date": "2026-02-15",
-      "category": "정책",
-      "title": "국회 위증 혐의 쿠팡 로저스 대표, 66억 주식 보상 예정",
+      "id": "2026-02-16_4",
+      "date": "2026-02-16",
+      "category": "금융",
+      "title": "애플, 3월 저가형 맥북 출시 전망",
       "summary": [
-        "국회 청문회 위증 혐의로 수사 중인 해롤드 로저스 쿠팡 임시대표가 66억원 규모의 주식 보상을 받습니다.",
-        "쿠팡은 로저스 대표가 성과연동 주식 보상 조건을 충족하여 클래스A 보통주 26만9588주를 지급한다고 SEC에 공시했습니다.",
-        "'국회 위증 혐의' 쿠팡 로저스, 66억 주식 보상 받는다"
+        "애플이 다양한 색상의 저가형 맥북을 다음 달 출시할 예정이라고 보도되었습니다.",
+        "예상 가격은 699달러(약 101만 원) 선이며, 최저 599달러까지 낮출 수 있다는 전망도 있습니다.",
+        "이는 고객 저변 확대를 위한 전략으로 풀이됩니다."
       ],
-      "whyImportant": "경찰 수사 중인 임원의 대규모 주식 보상은 기업 경영 투명성 및 책임 경영에 대한 논란을 야기할 수 있습니다.",
-      "importanceRationale": "근거: 로저스 대표는 66억원 규모의 주식 보상을 받으며, 이는 2022년 3월과 2023년 4월에 부여된 물량에 대한 것입니다.",
+      "whyImportant": "애플의 저가형 맥북 출시는 노트북 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 3월 출시 예정인 저가형 맥북은 699달러(약 101만 원)로 예상되며, 이는 애플의 고객 저변 확대 전략의 일환입니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "업계에서는 쿠팡에 대해 정부의 집중 조사와 함께 추후 대규모 과징금 처분 가능성도 제기되고 있다."
+          "label": "market-demand",
+          "evidence": "\"편하게 가져가세요\"...황정음 '나눔'이 비판 받은 이유 최신뉴스AD 실버, 로즈 골드 등 고급스럽고 은은한 색감의 외장과 비싼 가격으로 유명한 애플의 노트북인 맥북이 조만간 좀 더 발랄한 색상으로 무장한 저가형으로 출시될 전망입니다."
         }
       ],
-      "dedupeKey": "66억-66억원-국회-대표-로저스-위증-주식-쿠팡",
-      "clusterKey": "법집행/국회",
+      "dedupeKey": "599달러-699달러-다양-다음-맥북-색상-애플-저가형",
+      "clusterKey": "애플/저가형/맥북",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021462447",
-      "publishedAt": "2026-02-14T03:30:03+00:00",
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202602160607097575",
+      "publishedAt": "2026-02-15T21:07:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -288,29 +136,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-15_10",
-      "date": "2026-02-15",
+      "id": "2026-02-16_5",
+      "date": "2026-02-16",
       "category": "정책",
-      "title": "유엔난민기구, 국회·정부와 아태 지역 난민 보호 협력 논의",
+      "title": "정청래, 개혁 입법 추진",
       "summary": [
-        "유엔난민기구(UNHCR)는 국회 및 정부와 아시아·태평양 지역 난민 보호 협력 방안을 논의했습니다.",
-        "전혜경 UNHCR 아태 지역 본부장은 한국 정부에 재정적·정책적 기여 확대를 요청했습니다.",
-        "6월 20일 '세계 난민의 날'을 기념하여 국회 토론회를 개최하는 방안도 검토 중입니다."
+        "정청래 더불어민주당 대표가 법왜곡죄, 재판소원법 등 개혁 법안을 타협 없이 처리하겠다고 밝혔습니다.",
+        "민주당은 2월 임시국회 내에 사법개혁안을 비롯한 법안을 처리할 예정입니다."
       ],
-      "whyImportant": "이번 논의는 아시아·태평양 지역 난민 보호에 대한 한국의 역할과 국제 협력 강화에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: UNHCR은 한국 정부에 아시아·태평양 지역의 인도적 위기에 대한 재정적·정책적 기여 확대를 요청했으며, 이는 정책 결정에 영향을 줄 수 있습니다.",
+      "whyImportant": "개혁 입법 추진은 향후 사법 및 검찰 시스템에 중대한 영향을 미칠 수 있는 결정입니다.",
+      "importanceRationale": "근거: 정청래 대표는 법왜곡죄, 재판소원법 등 개혁 법안을 2월 임시국회 내에 처리하겠다고 밝혀 정책 방향을 구체적으로 제시했습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "한국 정부는 1992년 12월 협약에 가입했고, 이듬해 3월 협약이 발효돼 국내법과 같은 효력이 생겼다."
+          "evidence": "박수현 민주당 수석대변인은 이날 회의 뒤 기자들과 만나 “내일(12일) 국회 본회의에서 150여건의 민생 법안 처리를 위해 여야 간 법안 처리를 조율하고 있다”며 “민주당은 그 이후 사법개혁안을 비롯한 (개혁) 법안을 2월 임시국회 내에 처리할 것”이라고 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "당내에서는 이재명 대통령이 민생 법안의 빠른 처리를 거듭 주문하는 가운데, 개혁 입법을 우선순위에 두는 것에 엇갈린 평가가 나온다."
         }
       ],
-      "dedupeKey": "국회-난민-보호-아태-유엔난민기구-정부-지역-협력",
-      "clusterKey": "유엔난민기구/국회/아태",
+      "dedupeKey": "개혁-더불어민주당-법왜곡죄-임시국회-입법-재판소원법-정청래-처리하겠다고",
+      "clusterKey": "정책/정청래",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1310338",
-      "publishedAt": "2026-02-13T05:57:26+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1244594.html",
+      "publishedAt": "2026-02-15T07:12:16+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -319,28 +170,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-15_11",
-      "date": "2026-02-15",
-      "category": "정책",
-      "title": "방송미디어통신심의위원회, 1기 위원 5인 추가 위촉",
+      "id": "2026-02-16_6",
+      "date": "2026-02-16",
+      "category": "에너지",
+      "title": "We Energies, 데이터 센터 에너지 비용 제안에 대한 승인 추진",
       "summary": [
-        "방송미디어통신심의위원회는 국회의장 및 과방위 추천 5인을 1기 위원으로 위촉했다고 밝혔습니다.",
-        "국회의장 추천으로는 김민정 교수와 최선영 객원교수가, 과방위 추천으로는 구종상 전 위원장, 김일곤 전 사장, 홍미애 전 센터장이 위촉되었습니다."
+        "We E gies는 위스콘신 데이터 센터 프로젝트 확장에 따라 기술 기업이 자체 에너지 인프라 비용을 지불하도록 하는 제안에 대해 위스콘신 공공 서비스 위원회의 승인을 추진합니다.",
+        "제안된 요금 변경은 데이터 센터와 같이 에너지 집약적인 고객에게 서비스를 제공하는 데 드는 실제 비용을 반영하고, 그들이 사용하는 전력이 서비스 조건으로 구축되도록 보장합니다."
       ],
-      "whyImportant": "방송미디어통신 심의위원회의 구성은 방송, 미디어, 통신 내용에 대한 심의 방향에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 방미심위 1기 위원 총 9명 중 8명이 위촉되었으며, 향후 국회의장 추천 1인이 추가 위촉될 예정입니다.",
+      "whyImportant": "데이터 센터 에너지 비용 부담에 대한 결정은 향후 유사한 대규모 에너지 소비 시설의 비용 분담 방식에 대한 선례를 만들 수 있습니다.",
+      "importanceRationale": "근거: We Energies는 데이터 센터가 자체 에너지 비용을 지불하도록 하는 제안을 추진하고 있으며, 이는 전기 요금 및 에너지 인프라 비용에 영향을 미칠 수 있기 때문입니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "향후 방송미디어통신위원회 설치 및 운영에 관한 법률에 따라 국회의장이 원내 교섭단체 대표 의원과 협의해 추천한 1인이 위촉될 예정이다."
+          "label": "capex",
+          "evidence": "Under our customer protection plan, data centers will pay their own way, covering both the power they use and the cost of any new generation or distribution built to serve them."
         }
       ],
-      "dedupeKey": "1기-5인-객원교수-과방위-국회의장-방송미디어통신심의위원회-위원-위촉",
-      "clusterKey": "1기/위원/5인",
+      "dedupeKey": "energies-gies-기업-데이터-비용-센터-에너지-위원회",
+      "clusterKey": "에너지/energies",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1310291",
-      "publishedAt": "2026-02-13T03:57:14+00:00",
+      "sourceName": "WBAY",
+      "sourceUrl": "https://www.wbay.com/2026/02/14/we-energies-seeks-approval-data-center-energy-cost-proposal/",
+      "publishedAt": "2026-02-14T04:22:06+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

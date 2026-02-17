@@ -1,33 +1,68 @@
 {
-  "date": "2026-02-17",
+  "date": "2026-02-18",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-17T08:01:58.726758+09:00",
+  "lastUpdatedAt": "2026-02-18T08:02:32.784658+09:00",
   "items": [
     {
-      "id": "2026-02-17_1",
-      "date": "2026-02-17",
+      "id": "2026-02-18_1",
+      "date": "2026-02-18",
       "category": "국제",
-      "title": "이란, 미국 제재 해제 시 핵 협상 양보 가능성 시사",
+      "title": "미국, 이란 700km 앞 해역에 항모 배치하며 협상 압박",
       "summary": [
-        "이란이 미국이 제재 해제 논의에 나선다면 핵 협상에서 양보할 용의가 있음을 밝혔습니다.",
-        "마지드 타흐트라반치 이란 외무부 차관은 미국이 진정성을 보인다면 60% 농축우라늄을 희석할 수 있다고 제안했습니다."
+        "미국이 이란 핵 협상을 앞두고 군사적·외교적 압박을 강화하고 있습니다.",
+        "미 해군 항공모함 전단이 이란에서 700km 떨어진 아라비아해 해역에서 포착되었습니다.",
+        "미국은 핵 프로그램, 미사일 체계 등 이란의 여러 문제를 포괄적으로 다루자는 입장입니다."
       ],
-      "whyImportant": "이란 핵 협상 관련 정책 변화 가능성을 시사합니다.",
-      "importanceRationale": "근거: 이란 외무부 차관이 미국 제재 해제 논의 시 핵 협상에서 양보할 용의가 있다고 언급했기 때문입니다.",
+      "whyImportant": "미국의 군사적 압박은 이란 핵 협상에 영향을 미치고, 중동 지역의 긴장을 고조시킬 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국 해군 항공모함 전단이 이란에서 700km 떨어진 해역에 배치되었으며, 최근 몇 주 동안 중동 지역에 도착한 미군 화물기 항공편은 250여 편에 이릅니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "리스크 및 정보 분석 업체 '시빌라인'의 최고경영자(CEO)인 군사정보 전문가 저스틴 크럼프는 중동에서 미군의 이번 군사적 대비가 올해 1월 니콜라스 마두로 베네수엘라 대통령 생포 작전 때나 작년 6월 이란 핵시설 공습 작전 때에 비해 \"심도와 지속가능성이 더 있다\"는 의견을 BBC에 밝혔다."
+        }
+      ],
+      "dedupeKey": "700km-미국-배치-압박-이란-항모-해역-협상",
+      "clusterKey": "관세/700km",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311135",
+      "publishedAt": "2026-02-17T06:51:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-18_2",
+      "date": "2026-02-18",
+      "category": "국제",
+      "title": "NYT, 트럼프 무역 정책 핵심 인물 그리어 USTR 대표 조명",
+      "summary": [
+        "뉴욕타임스는 제이미슨 그리어 미국무역대표부(USTR) 대표를 트럼프 대통령 무역 전쟁의 '조용한 설계자'로 평가했습니다.",
+        "그리어 대표는 관세 정책의 법적, 정책적 틀을 구축하는 데 기여했으며, 한국과의 협상에서 비관세 장벽을 담당하고 있습니다."
+      ],
+      "whyImportant": "그리어 대표의 역할 변화는 향후 미국의 통상 정책 방향에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 뉴욕타임스는 그리어 대표가 세계 경제 재편에 큰 영향력을 행사해왔다고 보도했으며, 한국과의 협상에서 비관세 장벽을 담당하고 있다는 점이 중요합니다.",
       "impactSignals": [
         {
           "label": "sanctions",
-          "evidence": "이란이 미국이 제재 해제 논의에 나선다면 핵 협상에서 양보할 용의가 있다는 뜻을 내비쳤습니다."
+          "evidence": "또 그리어 대표와 베선트 장관이 작년 5월 중국과 무역 전쟁 '휴전'을 선포한 직후에 상무부가 중국을 겨냥한 새로운 반도체 수출통제를 발표해 중국과의 관계가 다시 악화하자 그리어 대표가 발끈하기도 했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "그리어 대표는 한국과의 협상에서 비관세 장벽을 주로 담당하고 있는데 이 분야는 디지털 규제에 대한 미국 측의 문제 제기로 최근 다시 관심받고 있다."
         }
       ],
-      "dedupeKey": "나선다면-미국-보인다면-양보-외무부-이란-타흐트라반치-협상",
-      "clusterKey": "제재/해제/관세",
+      "dedupeKey": "nyt-ustr-그리어-무역-인물-정책-트럼프-핵심",
+      "clusterKey": "정책/nyt/관세",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1310944",
-      "publishedAt": "2026-02-16T04:12:00+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311064",
+      "publishedAt": "2026-02-16T23:00:43+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -36,103 +71,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-17_2",
-      "date": "2026-02-17",
-      "category": "에너지",
-      "title": "트럼프 행정부, 데이터 센터 건설사에 비용 내부화 요구 가능성 시사",
+      "id": "2026-02-18_3",
+      "date": "2026-02-18",
+      "category": "기술",
+      "title": "메타, 엔비디아와 AI 칩 수백만 개 규모의 데이터 센터 구축 계약 확대",
       "summary": [
-        "트럼프 행정부가 데이터 센터 건설사에 비용을 내부화하도록 강제할 수 있다고 나바로가 밝혔습니다.",
-        "이는 유틸리티 가격 상승에 대한 유권자들의 불만이 커지고 있는 상황에 따른 것입니다.",
-        "메타는 이미 에너지 사용에 대한 모든 비용을 지불하고 있다고 밝혔습니다."
+        "메타는 엔비디아의 새로운 독립형 CPU와 차세대 베라 루빈 시스템을 포함한 수백만 개의 칩을 AI 데이터 센터에 사용하기로 했습니다.",
+        "이번 계약에는 엔비디아의 네트워킹 기술인 스펙트럼-X 이더넷 스위치와 왓츠앱의 AI 기능에 사용될 보안 기능도 포함됩니다.",
+        "메타는 2028년까지 미국 내 데이터 센터 및 인프라 구축에 6천억 달러를 투자할 계획입니다."
       ],
-      "whyImportant": "데이터 센터의 전력 소비 증가는 전력망에 부담을 가중시키고 있으며, 관련 비용 부담 주체에 대한 논의는 계속될 것입니다.",
-      "importanceRationale": "근거: 트럼프 행정부가 데이터 센터의 전기 사용 비용뿐만 아니라 전력망에 미치는 영향, 물 사용 비용까지 내부화하도록 강제할 수 있다고 언급하여 정책 변화 가능성을 시사했습니다.",
+      "whyImportant": "이번 계약은 AI 인프라 구축 경쟁 심화와 함께 데이터 센터 투자를 확대하는 추세를 보여줍니다.",
+      "importanceRationale": "근거: 메타는 2028년까지 미국 내 데이터 센터 및 인프라에 6천억 달러를 투자할 계획이며, 30개의 데이터 센터 중 26개를 미국에 건설할 예정입니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "Trump said last month on Truth Social that he had struck a deal with Microsoft \"to ensure that Americans don't 'pick up the tab' for their POWER consumption, in the form of paying higher Utility bills.\" The president added that his administration was negotiating with other tech giants and that there would be \"More to come soon!\" Microsoft pledged last month not to raise utility costs near its data centers, and to replenish water used by the centers."
-        },
-        {
           "label": "capex",
-          "evidence": "\"That's why President Trump asked governors across the Mid-Atlantic to come together and call upon PJM to allow America to build big reliable power plants again.\" POLITICO last week reported on a draft compact that the White House wants tech companies to sign to ensure data centers don't affect consumers' utility bills."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "President Donald Trump's trade and manufacturing adviser, Peter Navarro, said on Sunday that the White House may force data center builders to absorb their costs as voters continue to sour on the economy and utility prices soar."
+          "evidence": "Meta will use millions of Nvidia chips in its artificial intelligence data centers, including Nvidia's new standalone CPUs and next-generation Vera Rubin systems, in a sweeping new deal announced Tuesday."
         }
       ],
-      "dedupeKey": "건설사-내부화-내부화하도록-데이터-비용-센터-트럼프-행정부",
-      "clusterKey": "트럼프/행정부/데이터",
+      "dedupeKey": "계약-구축-규모-데이터-메타-센터-수백-엔비디아",
+      "clusterKey": "메타/엔비디아/수백",
       "matchedTo": null,
       "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/15/navarro-trump-data-centers-affordability.html",
-      "publishedAt": "2026-02-15T19:39:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-17_3",
-      "date": "2026-02-17",
-      "category": "기술",
-      "title": "트럼프 고문, 메타 등에 데이터센터 비용 내부화 강제 시사",
-      "summary": [
-        "트럼프 행정부의 나바로 고문은 메타 등 데이터센터 건설 기업에 전기, 물 사용 비용을 직접 부담시키는 방안을 추진할 수 있다고 밝혔습니다.",
-        "이는 AI 확산으로 데이터센터 전력 수요가 급증하는 가운데 전기요금 상승에 대한 불만을 해소하기 위한 대응으로 풀이됩니다.",
-        "메타 측은 이미 에너지 사용 비용을 전액 부담하고 있다는 입장을 밝혔습니다."
-      ],
-      "whyImportant": "데이터센터의 전력 사용 비용 부담 주체에 대한 정책 변화 가능성은 관련 기업의 투자 및 운영 비용에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 나바로 고문은 데이터센터 건설 기업이 전력망 안정성에 미치는 영향, 물 사용 비용까지 내부화해야 한다고 언급하며 향후 비용을 스스로 부담하도록 강제하는 조치를 추진할 것이라고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "트럼프 고문 “메타 등에 데이터센터 비용 내부화 강제” - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 나바로 백악관 무역·제조 고문 \"전기, 물 사용 비용 모두 내부화\" \"스스로 부담하는 강제 조치 추진할 것\" \"전기, 물 사용 비용 모두 내부화\" \"스스로 부담하는 강제 조치 추진할 것\" 피터 나바로 백악관 무역·제조업 고문이 메타 등 대형 기술기업의 데이터센터 건설과 관련해 전력·수도 등 유틸리티 비용을 기업이 직접 부담하도록 강제할 수 있다고 밝혔다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "인공지능(AI) 확산으로 데이터센터 전력 수요가 급증하는 가운데, 전기요금 상승에 대한 유권자들의 불만이 커지자 행정부가 대응에 나선 것으로 풀이된다."
-        }
-      ],
-      "dedupeKey": "강제-고문-내부화-데이터센터-등에-메타-비용-트럼프",
-      "clusterKey": "에너지/트럼프",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602167422i",
-      "publishedAt": "2026-02-15T21:12:27+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-17_4",
-      "date": "2026-02-17",
-      "category": "기술",
-      "title": "블랙스톤, 인도 AI 인프라 구축에 최대 12억 달러 투자",
-      "summary": [
-        "인도의 AI 인프라 스타트업 Neysa는 미국 사모펀드 블랙스톤으로부터 투자를 유치했습니다.",
-        "블랙스톤은 Neysa에 최대 6억 달러의 지분 투자를 하고, GPU 용량 확장을 위해 6억 달러의 추가 부채 조달을 계획합니다.",
-        "인도 내 AI 컴퓨팅 수요 급증에 따라 Neysa는 맞춤형 GPU 기반 인프라를 제공할 예정입니다."
-      ],
-      "whyImportant": "이번 투자는 인도 내 AI 인프라 구축을 가속화하고, 데이터 주권 및 낮은 지연 시간을 요구하는 기업 및 정부 기관의 수요를 충족하는 데 기여할 수 있습니다.",
-      "importanceRationale": "근거: 블랙스톤은 향후 인도 내 GPU 배포량이 현재 6만 개 미만에서 2백만 개 이상으로 증가할 것으로 예상하며, Neysa에 최대 12억 달러를 투자하여 이러한 수요에 대응할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "The deal comes as demand for AI computing surges globally, creating supply constraints for specialized chips and data center capacity needed to train and run large models."
-        }
-      ],
-      "dedupeKey": "12억-구축-달러-블랙스톤-인도-인프라-최대-투자",
-      "clusterKey": "미인도_투자/블랙스톤/인수합병",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/02/15/blackstone-backs-neysa-in-up-to-1-2b-financing-as-india-pushes-to-build-domestic-ai-compute/",
-      "publishedAt": "2026-02-16T00:30:00+00:00",
+      "sourceUrl": "https://www.cnbc.com/2026/02/17/meta-nvidia-deal-ai-data-center-chips.html",
+      "publishedAt": "2026-02-17T21:15:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -141,89 +102,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-17_6",
-      "date": "2026-02-17",
-      "category": "금융",
-      "title": "지니언스, N²SF 보안 특수로 올해 영업이익 100억 원 전망",
+      "id": "2026-02-18_4",
+      "date": "2026-02-18",
+      "category": "기술",
+      "title": "메타 등 기술 기업, 사이버 보안 우려로 OpenClaw 사용 금지",
       "summary": [
-        "지니언스는 국가정보원의 국가 망 보안체계(N²SF) 시행에 따른 제로 트러스트 네트워크 액세스(ZTNA) 교체 수요 증가의 수혜 기업으로 거론됩니다.",
-        "한국IR협의회는 지니언스의 올해 매출을 601억 원, 영업이익을 115억 원으로 추정하며, 창사 이래 첫 연간 영업이익 100억 원을 넘을 것으로 예상했습니다."
+        "메타를 비롯한 일부 기술 기업들이 실험적인 AI 도구인 O Claw에 대한 보안 우려를 제기하며 사용을 금지했습니다.",
+        "O Claw는 사용자 컴퓨터를 제어하고 다른 앱과 상호 작용하여 작업을 지원할 수 있지만, 일부 사이버 보안 전문가들은 기업에 사용 통제를 촉구했습니다.",
+        "V e 연구팀은 O Claw의 결함을 식별하고 보안을 강화하기 위한 잠재적 수정 사항을 연구 중입니다."
       ],
-      "whyImportant": "공공기관의 보안 패러다임이 제로 트러스트 모델로 전환됨에 따라 관련 시장의 성장 가능성이 커지고 있습니다.",
-      "importanceRationale": "근거: N²SF 시행과 ZTNA 교체 수요 증가로 지니언스의 올해 영업이익이 100억 원을 넘을 것으로 예상되어 중요도는 3입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "한국IR협의회가 추정한 올해 지니언스의 연간 실적은 매출 601억원, 영업이익 115억원이다."
-        }
-      ],
-      "dedupeKey": "100억-601억-국가정보원-보안-영업이익-올해-지니언스-특수",
-      "clusterKey": "실적/지니언스",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=52445",
-      "publishedAt": "2026-02-16T05:39:35+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-17_7",
-      "date": "2026-02-17",
-      "category": "금융",
-      "title": "외국 증권사, 삼성전자 미래 전망: 메모리 재앙 시대 도래",
-      "summary": [
-        "모건 스탠리는 삼성전자의 올해 영업이익을 245조 원, 내년에는 317조 원으로 전망하며 엔비디아를 넘어설 것으로 예상했습니다.",
-        "노무라는 삼성전자 목표 주가를 29만 원으로 상향 조정하며 '왕의 귀환'을 언급했습니다.",
-        "전문가들은 AI 반도체 슈퍼사이클과 맞물려 메모리 재앙의 시대가 도래했다는 평가를 내리고 있습니다."
-      ],
-      "whyImportant": "삼성전자의 실적 전망은 국내 반도체 산업의 향후 방향성을 가늠하는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 모건 스탠리가 삼성전자의 올해 영업이익을 245조 원으로 예상하고, 노무라가 목표 주가를 29만 원으로 상향 조정한 것은 긍정적인 전망을 반영합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "모건 스탠리의 경우에는 1년 전 기억하실 거예요. 반도체에 겨울이 온다고 하면서 재 뿌렸던 그 증권사가 삼성전자의 올해 영업이익이 245조 원, 내년에는 매출이 아니에요. 영업이익이 317조 원이에요."
-        }
-      ],
-      "dedupeKey": "도래-메모리-미래-삼성전자-시대-외국-재앙-증권사",
-      "clusterKey": "실적/반도체/외국",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0134_202602161915234585",
-      "publishedAt": "2026-02-16T10:15:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-17_8",
-      "date": "2026-02-17",
-      "category": "정책",
-      "title": "현대엔지니어링, 하도급 대금 미지급 후 공정위 조사에 지급",
-      "summary": [
-        "현대엔지니어링이 하도급 업체에 대금 103억 8천만원을 미지급하여 공정거래위원회의 현장 조사를 받았습니다.",
-        "공정위는 조사 개시 1개월 이내에 대금 지급을 권고했고, 현대엔지니어링은 미지급 대금과 지연 이자를 지급했습니다."
-      ],
-      "whyImportant": "원청업체의 하도급 대금 미지급 관행에 대한 규제 당국의 개입이 강화될 수 있음을 시사합니다.",
-      "importanceRationale": "근거: 공정위가 현대엔지니어링의 하도급법 위반 혐의를 조사하여 1개월 이내에 103억 8천만원 지급을 권고한 것은 정책적 영향력을 보여줍니다.",
+      "whyImportant": "AI 도구의 보안 취약점은 기업의 데이터 유출 및 시스템 침해로 이어질 수 있어, 기업들은 AI 도구 사용에 대한 보안 정책을 강화해야 합니다.",
+      "importanceRationale": "근거: 여러 기술 기업들이 OpenClaw 사용을 금지하고 있으며, Valere는 60일 동안 OpenClaw의 보안 취약점을 조사할 예정입니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "현대엔지니어링은 하도급거래 공정화에 관한 법률(하도급법) 위반 혐의로 최근 공정위의 현장 조사를 받은 후 66개 하도급업체에 하도급 대금 원금 94억9천만과 지연 이자 8억9천만원 등 합계 103억8천만원을 지급했다."
+          "evidence": "A Meta executive says he recently told his team to keep OpenClaw off their regular work laptops or risk losing their jobs."
         }
       ],
-      "dedupeKey": "103억-8천만원-공정위-대금-미지급-지급-하도급-현대엔지니어링",
-      "clusterKey": "법집행/플랫폼규제/현대엔지니어링",
+      "dedupeKey": "openclaw-금지-기술-기업-메타-보안-사용-사이버",
+      "clusterKey": "메타/기술/기업",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311020",
-      "publishedAt": "2026-02-16T20:59:01+00:00",
+      "sourceName": "WIRED",
+      "sourceUrl": "https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/",
+      "publishedAt": "2026-02-17T20:10:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -232,36 +133,91 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-17_9",
-      "date": "2026-02-17",
-      "category": "금융",
-      "title": "AI 메모리 가격 급등으로 인한 전자제품 업계의 어려움 심화 전망",
+      "id": "2026-02-18_5",
+      "date": "2026-02-18",
+      "category": "정책",
+      "title": "22대 국회 법안 처리 건수, 21대보다 400건 이상 적어",
       "summary": [
-        "AI 데이터센터 구축 확대로 메모리 공급 부족과 가격 상승이 지속되면서 전자제품 기업들의 수익성 악화가 우려됩니다.",
-        "D램 부족으로 테슬라, 애플 등 주요 기업들의 생산 차질이 예상되며, 일부 D램 가격은 급등했습니다.",
-        "전문가들은 메모리 공급 부족이 단기적 문제가 아니며, 전자, 통신, 자동차 산업 전반에 걸쳐 지속될 것으로 전망합니다."
+        "22대 국회에서 현재까지 처리한 법안 건수가 21대 국회보다 400건 이상 적은 것으로 나타났습니다.",
+        "22대 국회의 법안 처리율은 23.9%로, 21대 국회의 30.2%보다 6.3%포인트 하락했습니다."
       ],
-      "whyImportant": "AI 메모리 공급 부족 및 가격 상승은 전자제품 업계 전반의 수익성에 영향을 미치고 장기적인 전략 변화를 야기할 수 있기 때문입니다.",
-      "importanceRationale": "근거: D램 가격이 12월부터 1월 사이 75% 급등했고, HBM 수요는 올해 전체 D램 웨이퍼 생산량의 23%를 차지할 전망이며, 알파벳과 아마존은 올해 최대 2000억달러의 자본 지출 계획을 발표했습니다.",
+      "whyImportant": "국회 법안 처리율 저하는 정책 결정 및 시행에 지연을 초래할 수 있습니다.",
+      "importanceRationale": "근거: 22대 국회에서 처리된 법안은 3,884건으로 21대 국회의 같은 기간 4,329건보다 445건 적으며, 처리율도 6.3%포인트 하락했습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "시스코시스템스는 최근 실적 전망에서 메모리 부족을 언급하며 기대 이하의 수익 전망치를 제시했고 이후 주가는 약 4년 만에 최대 낙폭을 기록했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "대만 컨설팅 업체 트렌드포스는 올해 HBM 수요가 전년 대비 70% 증가할 것으로 예상했다."
+          "label": "policy",
+          "evidence": "22대 국회에서 현재까지 처리한 법안 건수가 21대 국회보다 400건 이상 적은 것으로 나타났다."
         }
       ],
-      "dedupeKey": "가격-급등-메모리-심화-어려움-업계-인한-전자제품",
-      "clusterKey": "인한/전자제품/업계",
+      "dedupeKey": "21대보다-22대-400건-건수-국회-법안-이상-처리",
+      "clusterKey": "정책/22대",
       "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=654545",
-      "publishedAt": "2026-02-16T17:11:56+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311248",
+      "publishedAt": "2026-02-17T22:00:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-18_6",
+      "date": "2026-02-18",
+      "category": "국제",
+      "title": "미 국방부, BYD·알리바바·바이두 '중국군 지원 기업' 지정 후 철회",
+      "summary": [
+        "미국 국방부가 BYD, 알리바바, 바이두 등을 '중국군 지원 기업' 명단에 추가했다가 철회했습니다.",
+        "해당 명단 등재는 법적 효력은 없지만 투자자에게 부정적 신호를 줄 수 있습니다."
+      ],
+      "whyImportant": "미국 국방부의 명단 등재 및 철회는 관련 기업의 이미지와 투자 심리에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 명단 등재는 법적 효력은 없지만 투자자에게 부정적 신호를 줄 수 있으며, 기업 이미지 하락 등의 간접 효과가 발생할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "미국 국방부, '중국군 지원 기업'에 BYD·알리바바·바이두 지정했다가 철회 미국 국방부(전쟁부)가 중국 자동차기업 'BYD'와 전자상거래 플랫폼 '알리바바', 검색엔진 서비스 기업 '바이두' 등을 '중국군 지원 기업' 명단에 올렸다가 철회했다.현지시각 14일 블룸버그의 보도에 따르면 미국 국방부는 13일 '1260H' 명단에 BYD, 알리바바, 바이두 등을 새로 추가해 연방관보에 게재했다.미국 연방관보는 수 분 이후 세 기업이 포함된 1260H 명단을 '미발행' 상태로 전환했다.미국 국방부는 중국 군대를 지원하는 것으로 판단된 기업을 2021년부터 1260H에 등재하고 있다.현재까지 명단에 오른 기업은 130여 곳이다.명단 등재만으로 법적 효력이 발생하는 것은 아니지만 투자자들에게 부정적 신호를 줄 수 있으며 기업 이미지 하락, 미국 국방부와 계약 제한 등의 간접 효과가 발생할 수 있다.실제로 관보 게재 이후 뉴욕증시에 상장된 알리바바, 바이두 등의 미국 예탁증서(ADR"
+        }
+      ],
+      "dedupeKey": "byd-국방부-기업-바이두-알리바바-중국군-지원-지정",
+      "clusterKey": "국방부/byd/알리바바",
+      "matchedTo": null,
+      "sourceName": "비즈니스포스트",
+      "sourceUrl": "https://www.businesspost.co.kr/BP?command=sub&sub=1",
+      "publishedAt": "2026-02-15T02:47:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-18_7",
+      "date": "2026-02-18",
+      "category": "국제",
+      "title": "트럼프, 이란 협상 결렬 시 이스라엘의 이란 공격 지지",
+      "summary": [
+        "트럼프 전 대통령이 이란과의 협상 결렬 시 이스라엘의 이란 공격을 지지할 것이라고 밝혔습니다.",
+        "또한 트럼프는 네타냐후와 이란의 대중국 석유 수출 차단에 합의했다고 합니다."
+      ],
+      "whyImportant": "이는 중동 지역의 안보 환경에 중대한 영향을 미칠 수 있는 사안입니다.",
+      "importanceRationale": "근거: 트럼프 전 대통령의 발언과 네타냐후와의 합의는 이란의 석유 수출과 관련된 정책에 영향을 줄 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "\"모두의 대통령 다짐\" \"트럼프, 이란 협상 결렬 시 이스라엘 대이란 공격 지지\" \"트럼프, 이란 협상 결렬 시 이스라엘 대이란 공격 지지\" 장동혁, 李대통령 '주택 6채' 기사 언급에 \"불효자는 운다\" 장동혁, 李대통령 '주택 6채' 기사 언급에 \"불효자는 운다\" 與, 野 부동산 공세에 \"'주택 6채' 장동혁 입장부터 밝혀야\" 與, 野 부동산 공세에 \"'주택 6채' 장동혁 입장부터 밝혀야\" 李대통령, 장동혁에 \"다주택자 특혜 유지해야 한다고 보나\" 李대통령, 장동혁에 \"다주택자 특혜 유지해야 한다고 보나\" 우원식 \"韓, 도약의 한 해 되길…국회가 책임·역할\" 우원식 \"韓, 도약의 한 해 되길…국회가 책임·역할\" 유승민 \"경기지사 불출마…국힘, 정상적인 상황 아냐\" 유승민 \"경기지사 불출마…국힘, 정상적인 상황 아냐\" 액시오스 \"트럼프-네타냐후, 이란 대중국 석유수출 차단 동의\" 액시오스 \"트럼프-네타냐후, 이란 대중국 석유수출 차단 동의\" 이정현 국힘 공관위원장 \"지선서 미래형 지역 리더 발굴에 역점\" 이정현 국힘 공관위원장 \"지선서 미래형 지역 리더 발굴에 역점\" 민주 \"사법개혁은 정의 실현\"…국힘 \"李대통령 방탄\" 민주 \"사법개혁은 정의 실현\"…국힘 \"李대통령 방탄\" 李대통령, 쇼트트랙銀 황대헌에 \"자랑스럽다\" 李대통령, 쇼트트랙銀 황대헌에 \"자랑스럽다\" 서울시장 여론조사, 정원오 44% vs 오세훈 31% 서울시장 여론조사, 정원오 44% vs 오세훈 31% 美 국토안보부 예산안 처리 무산…이민정책 갈등 속 ‘부분 셧다운’ 돌입 美 국토안보부 예산안 처리 무산…이민정책 갈등 속 ‘부분 셧다운’ 돌입 與 \"헌재 '재판소원은 합헌' 명확히 해…국힘, 입법방해 말라\" 與 \"헌재 '재판소원은 합헌' 명확히 해…국힘, 입법방해 말라\" '단전·단수 지시' 이상민, 1심 징역 7년 불복해 항소 '단전·단수 지시' 이상민, 1심 징역 7년 불복해 항소 처음처음12345678910다음다음다음끝끝"
+        }
+      ],
+      "dedupeKey": "결렬-공격-대중국-이란-이스라엘-지지-트럼프-협상",
+      "clusterKey": "이스라엘이란_관세/트럼프",
+      "matchedTo": null,
+      "sourceName": "매일",
+      "sourceUrl": "https://www.m-i.kr/news/articleList.html?sc_section_code=S1N1&view_type=tm",
+      "publishedAt": "2026-02-16T07:26:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

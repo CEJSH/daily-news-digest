@@ -1,21 +1,21 @@
 {
-  "date": "2026-02-19",
+  "date": "2026-02-20",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-19T08:04:22.550469+09:00",
+  "lastUpdatedAt": "2026-02-20T08:04:46.412127+09:00",
   "items": [
     {
-      "id": "2026-02-19_1",
-      "date": "2026-02-19",
+      "id": "2026-02-20_1",
+      "date": "2026-02-20",
       "category": "산업",
       "title": "마이크론, 아이다호 공장에서 내년 중반부터 HBM 생산 시작",
       "summary": [
-        "마이크론은 아이다호주 보이시에 건설 중인 신규 공장에서 내년 중반부터 고대역폭메모리(HBM) 생산을 시작합니다.",
-        "500억 달러를 투자하여 팹 두 곳을 건설 중이며, 첫 번째 팹은 내년 중반 D램 생산을 시작하고 전체 라인은 2028년 말 완전 가동될 예정입니다."
+        "마이크론은 아이다호주 보이시에 건설 중인 신규 공장에서 내년 중반부터 고대역폭메모리(HBM) 생산을 시작할 예정입니다.",
+        "500억 달러가 투입된 이 공장의 첫 번째 팹은 내년 중반 D램 생산을 시작하며, 전체 라인은 2028년 말 완전 가동될 예정입니다."
       ],
       "whyImportant": "이번 투자는 HBM 공급 부족 상황에서 마이크론의 생산 능력 확대를 의미합니다.",
-      "importanceRationale": "근거: 마이크론은 500억 달러를 투자하여 아이다호 공장에서 내년 중반부터 HBM 생산을 시작하며, 이는 2000억 달러 규모의 미국 내 생산 거점 확보 프로젝트의 일부입니다.",
+      "importanceRationale": "근거: 마이크론은 아이다호 공장에 500억 달러를 투자하여 내년 중반부터 HBM 생산을 시작할 예정이며, 이는 2000억 달러 규모의 미국 내 생산 거점 확보 프로젝트의 일부입니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -23,7 +23,7 @@
         }
       ],
       "dedupeKey": "hbm-공장-내년-마이크론-생산-시작-아이다호-중반",
-      "clusterKey": "투자/마이크론",
+      "clusterKey": "마이크론/아이다호/공장",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://www.hankyung.com/article/2026021896291",
@@ -36,99 +36,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-19_2",
-      "date": "2026-02-19",
-      "category": "국제",
-      "title": "미국, 이란 700km 앞 해역에 항모 배치하며 협상 압박",
+      "id": "2026-02-20_2",
+      "date": "2026-02-20",
+      "category": "금융",
+      "title": "코스닥 부실 기업 신속 퇴출 관리단 가동",
       "summary": [
-        "미국이 이란 핵 협상을 앞두고 군사적·외교적 압박을 강화하고 있습니다.",
-        "미 해군 항공모함전단이 이란에서 700km 떨어진 아라비아해 해역에서 포착되었습니다.",
-        "미국은 핵 프로그램, 미사일 체계 등 이란의 여러 문제에 대한 포괄적인 협상을 요구하고 있습니다."
+        "한국거래소는 코스닥 시장의 체질 개선을 위해 상장폐지 기준을 강화할 예정입니다.",
+        "개선 기간이 끝나기 전 조기 퇴출 방안과 통합 상장실질심사 시스템을 도입하여 한계기업을 빠르게 퇴출할 방침입니다.",
+        "이를 위해 상장폐지 집중관리단을 구성하여 이달부터 내년 6월까지 집중 관리 기간을 운영합니다."
       ],
-      "whyImportant": "미국의 군사적 압박은 이란 핵 협상에 영향을 미치고, 중동 지역의 긴장을 고조시킬 수 있습니다.",
-      "importanceRationale": "근거: 미국 해군 항공모함전단이 이란에서 700km 떨어진 해역에 배치되었고, 최근 몇 주 동안 중동 지역에 도착한 미군 화물기 항공편은 250여 편에 이릅니다.",
+      "whyImportant": "이번 조치는 코스닥 시장의 신뢰도를 높이고 투자자 보호를 강화하는 데 기여할 수 있습니다.",
+      "importanceRationale": "근거: 한국거래소는 이달부터 내년 6월까지 '상장폐지 집중관리단'을 운영하여 코스닥 시장의 부실 기업 퇴출을 가속화할 계획입니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "리스크 및 정보 분석 업체 '시빌라인'의 최고경영자(CEO)인 군사정보 전문가 저스틴 크럼프는 중동에서 미군의 이번 군사적 대비가 올해 1월 니콜라스 마두로 베네수엘라 대통령 생포 작전 때나 작년 6월 이란 핵시설 공습 작전 때에 비해 \"심도와 지속가능성이 더 있다\"는 의견을 BBC에 밝혔다."
+          "label": "market-demand",
+          "evidence": "앞으로 지배주주가 동일한 여러 기업에서 동시에 상장폐지 사유가 발생하면 통합·일괄 심사를 통해 더 신속하게 퇴출 여부가 가려진다."
         }
       ],
-      "dedupeKey": "700km-미국-배치-압박-이란-항모-해역-협상",
-      "clusterKey": "관세/700km",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311135",
-      "publishedAt": "2026-02-17T06:51:24+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-19_3",
-      "date": "2026-02-19",
-      "category": "기술",
-      "title": "메타, 엔비디아와 AI 칩 계약 확대: 데이터 센터 구축에 수백만 개 칩 사용",
-      "summary": [
-        "메타가 엔비디아의 새로운 독립형 CPU와 차세대 베라 루빈 시스템을 포함한 수백만 개의 칩을 AI 데이터 센터에 사용하기로 했습니다.",
-        "이번 계약은 메타가 2028년까지 미국 내 데이터 센터 및 인프라에 6천억 달러를 투자하겠다는 약속의 일환입니다.",
-        "메타는 엔비디아의 네트워킹 기술과 보안 기능도 활용할 예정입니다."
-      ],
-      "whyImportant": "이번 계약은 AI 인프라 구축 경쟁 심화와 함께 데이터 센터 투자의 중요성을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 메타는 2028년까지 미국 내 데이터 센터 및 인프라에 6천억 달러를 투자할 계획이며, 26개의 데이터 센터를 미국에 건설할 예정입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "Meta will use millions of Nvidia chips in its artificial intelligence data centers, including Nvidia's new standalone CPUs and next-generation Vera Rubin systems, in a sweeping new deal announced Tuesday."
-        }
-      ],
-      "dedupeKey": "계약-구축-데이터-메타-센터-수백-엔비디아-확대",
-      "clusterKey": "메타/엔비디아/계약",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/17/meta-nvidia-deal-ai-data-center-chips.html",
-      "publishedAt": "2026-02-17T21:15:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-19_4",
-      "date": "2026-02-19",
-      "category": "정책",
-      "title": "김미애 의원, 소상공인·장애인 봉사로 입법 아이디어 얻어",
-      "summary": [
-        "김미애 의원은 소상공인 및 장애인을 위한 현장 봉사를 통해 법안 발의 아이디어를 얻는다고 밝혔습니다.",
-        "살해·유기 위험에 놓인 영아 500명을 '위기임신 보호출산제' 입법으로 보호했습니다.",
-        "최근 설 연휴에는 명절 휴가비와 세비를 합한 1400만원을 기부했습니다."
-      ],
-      "whyImportant": "김미애 의원의 활동은 사회적 약자를 위한 정책 수립에 실질적인 도움이 될 수 있다는 점을 시사합니다.",
-      "importanceRationale": "근거: '위기 임신 보호출산제'를 통해 500명이 넘는 아이를 살렸고, 설 연휴에 1400만원을 기부한 사실에서 중요성을 확인할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "infra",
-          "evidence": "500명 영아 살린 김미애 “소상공인·장애인 봉사서 입법 아이디어” - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 5년째 소상공인·장애인 봉사, 세비 일부·명절땐 휴가비 전액 기부 살해·유기 위험 영아 500명 '위기임신 보호출산제' 입법으로 지켜 고1부터 버스비없어 방직공의 삶, 국선변호사…재선땐 부산 최다 득표율 살해·유기 위험 영아 500명 '위기임신 보호출산제' 입법으로 지켜 고1부터 버스비없어 방직공의 삶, 국선변호사…재선땐 부산 최다 득표율 \"직접 소상공인이 돼 장사도 해보고 장애인과 하루를 지내다 보면, 법을 어떻게 만들어야 세상을 더 따뜻하게 할지 혜안을 얻게 됩니다.\" 김미애 국민의힘 의원(부산 해운대을)은 18일 한국경제신문과의 인터뷰에서 최근 30회를 맞은 소상공인 및 장애인을 위한 현장 봉사의 의미를 이같이 설명했다."
-        },
-        {
-          "label": "policy",
-          "evidence": "김 의원은 지난해 일명 '블랙컨슈머'로 불리는 악성 소비자의 허위 후기 게시, 별점 테러 등을 방지한 전자상거래법 개정안을 대표 발의했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "방직공장에서 여공의 삶을 살다 잡화점 직원 등을 거쳐 몇 년간 모은 돈으로 작은 식당을 운영하기도 했다."
-        }
-      ],
-      "dedupeKey": "1400만원-김미애-봉사-소상공인-아이디어-의원-입법-장애인",
-      "clusterKey": "정책/김미애",
+      "dedupeKey": "가동-관리단-기업-부실-코스닥-퇴출-한계기업-한국거래소",
+      "clusterKey": "코스닥/부실/기업",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602189311i",
-      "publishedAt": "2026-02-18T05:55:38+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026021919781",
+      "publishedAt": "2026-02-19T08:28:07+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -137,29 +67,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-19_5",
-      "date": "2026-02-19",
-      "category": "기술",
-      "title": "미국 기술 기업, 중국 정부 보조금에 대해 '약간 우려'해야 한다고 마이크로소프트 브래드 스미스 언급",
+      "id": "2026-02-20_3",
+      "date": "2026-02-20",
+      "category": "정책",
+      "title": "당정, 쿠팡 개인정보 유출 축소 공시 문제 제기",
       "summary": [
-        "마이크로소프트의 브래드 스미스 사장은 중국 AI 기업들이 정부로부터 받는 보조금에 대해 미국 기술 기업들이 우려해야 한다고 밝혔습니다.",
-        "중국은 인공지능 개발 경쟁에서 정부 지원을 통해 화웨이, ZTE와 같은 기업을 성장시킨 바 있습니다.",
-        "중국은 84억 달러 규모의 국가 AI 펀드를 조성하고, 컴퓨팅 비용 절감을 위한 바우처를 제공하는 등 AI 기업을 지원하고 있습니다."
+        "더불어민주당과 정부는 쿠팡이 미국 증권거래위원회에 개인정보 유출 규모를 축소 공시한 점을 지적하며 시정을 요구했습니다.",
+        "개인정보보호위원회는 과징금을, 공정거래위원회는 과태료 및 시정조치를 검토 중입니다.",
+        "쿠팡은 이달 중 보안 사고 관련 재발 방지 대책을 제출할 예정입니다."
       ],
-      "whyImportant": "중국의 정부 지원을 받는 AI 기술 기업의 성장은 미국 기술 기업에게 경쟁 압력으로 작용할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 중국 정부는 84억 달러 규모의 AI 펀드를 조성하고, 에너지 바우처를 제공하는 등 자국 기업을 지원하고 있으며, 이는 미국 기업과의 경쟁에 영향을 미칠 수 있습니다.",
+      "whyImportant": "개인정보 유출 문제에 대한 정부의 대응과 기업의 책임 강화에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 쿠팡 코리아는 3천300만 건의 개인정보 유출을 인정했지만, 미국 본사는 3천300건만 유출됐다고 공시하여 정부가 시정을 요구하고 있기 때문입니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "Chinese AI companies have been supported by their government with measures such as a multi-billion-dollar national investment fund and vouchers for cheaper energy for their computing needs."
+          "evidence": "아울러 이번 사태에 대해 개보위에서는 과징금, 공정위에는 과태료와 시정조치 등의 제재를 검토 중이다."
         }
       ],
-      "dedupeKey": "기술-기업-마이크로소프트-미국-보조금-약간-정부-중국",
-      "clusterKey": "미중/기술/기업/보조금",
+      "dedupeKey": "개인정보-당정-문제-유출-제기-증권거래위원회-축소-쿠팡",
+      "clusterKey": "당정/쿠팡/개인정보",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/18/microsoft-president-brad-smith-chinese-ai-subsidies.html",
-      "publishedAt": "2026-02-18T16:25:04+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311870",
+      "publishedAt": "2026-02-19T08:45:38+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -168,97 +98,154 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-19_6",
-      "date": "2026-02-19",
-      "category": "금융",
-      "title": "씨에스윈드, 미국·유럽 풍력 업황 턴어라운드 전망",
+      "id": "2026-02-20_4",
+      "date": "2026-02-20",
+      "category": "기술",
+      "title": "OpenAI, 인도에 100MW AI 데이터 센터 용량 확보 및 1GW 목표",
       "summary": [
-        "키움증권은 씨에스윈드의 올해 매출은 감소하나 영업이익은 증가할 것으로 전망했습니다.",
-        "지난해 4분기 타워 신규 수주는 6억 2천만 달러로, 이 중 약 60%가 미국 수주로 파악됩니다."
+        "O AI는 인도의 Tata 그룹과 협력하여 100MW 규모의 AI 데이터 센터 용량을 확보하고, 1GW까지 확장할 계획입니다.",
+        "이번 협력은 O AI의 '인도를 위한 O AI' 이니셔티브의 일환이며, Tata 그룹의 H Vault 데이터 센터 사업의 첫 번째 고객이 됩니다.",
+        "Tata 그룹은 ChatGPT E ise를 전사적으로 도입하고, O AI의 도구를 통해 AI 기반 소프트웨어 개발을 표준화할 예정입니다."
       ],
-      "whyImportant": "씨에스윈드의 미국과 유럽 시장에서의 풍력 업황 개선은 관련 산업 전반에 걸쳐 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 키움증권은 씨에스윈드의 타워 부문 매출과 영업이익이 각각 20%와 84% 늘어날 것으로 전망하며, 6억 2천만 달러 규모의 신규 수주를 확보했습니다.",
+      "whyImportant": "OpenAI의 인도 데이터 센터 투자는 데이터 주권 및 보안 요구 사항을 충족하며, 인도 내 AI 인프라 구축에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: OpenAI는 Tata 그룹과 협력하여 초기 100MW에서 시작해 장기적으로 1GW까지 확장할 계획이며, 이는 인도 내 AI 인프라 투자 규모를 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "OpenAI has partnered with India’s Tata Group to secure 100 megawatts of AI-ready data center capacity in the country, with plans to scale to 1 gigawatt."
+        }
+      ],
+      "dedupeKey": "100mw-1gw-openai-데이터-센터-용량-인도-확보",
+      "clusterKey": "openai/100mw/데이터",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+      "publishedAt": "2026-02-19T05:34:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_5",
+      "date": "2026-02-20",
+      "category": "에너지",
+      "title": "소프트뱅크, 미국에 대규모 가스 발전소 건설 위해 330억 달러 투자",
+      "summary": [
+        "소프트뱅크의 자회사인 SB E gy가 오하이오-켄터키 국경에 9.2기가와트 규모의 천연가스 발전소를 건설할 예정입니다.",
+        "이 발전소는 약 750만 가구에 전력을 공급할 수 있으며, 건설 비용은 330억 달러에 달할 것으로 예상됩니다."
+      ],
+      "whyImportant": "미국 최대 규모의 발전소 건설은 에너지 시장과 데이터 센터 전력 공급에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 330억 달러 규모의 투자는 미국 내 최대 발전소 건설을 목표로 하며, 이는 에너지 산업 전반에 걸쳐 상당한 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "With a price tag of $33 billion, the project would be more expensive than recent natural gas-fired power plants, which have skyrocketed in cost, Bloomberg notes."
+        }
+      ],
+      "dedupeKey": "330억-가스-건설-달러-미국-발전소-소프트뱅크-투자",
+      "clusterKey": "투자/에너지/소프트뱅크",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/19/softbank-to-spend-an-eye-popping-33b-to-build-huge-u-s-gas-power-plant/",
+      "publishedAt": "2026-02-19T16:27:58+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_6",
+      "date": "2026-02-20",
+      "category": "기술",
+      "title": "올트먼 오픈AI CEO, AI 기술 규제 및 국제조정기구 필요성 강조",
+      "summary": [
+        "샘 올트먼 오픈AI CEO는 AI 기술의 시급한 규제 필요성을 언급하며 국제조정기구 설립을 제안했습니다.",
+        "그는 AI 기술이 특정 기업이나 국가에 집중될 경우 위험을 초래할 수 있다고 경고했습니다.",
+        "인도에서 열린 AI 임팩트 정상회의에서 여러 전문가들은 AI로 인한 문제에 대한 강력한 조치를 촉구했습니다."
+      ],
+      "whyImportant": "AI 기술 규제 논의는 기술 발전 방향과 관련된 중요한 결정 사항입니다.",
+      "importanceRationale": "근거: 올트먼 CEO는 국제원자력기구와 유사한 AI 국제조정기구의 필요성을 언급하며 규제에 대한 논의를 촉구했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "그러면서 \"다른 강력한 기술과 마찬가지로 당연히 규제가 시급하게 필요하다\"고 덧붙였습니다."
+        }
+      ],
+      "dedupeKey": "ceo-국제조정기구-규제-기술-기업이나-오픈ai-올트먼-필요성",
+      "clusterKey": "정책/올트먼",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202602191839172902",
+      "publishedAt": "2026-02-19T09:39:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_7",
+      "date": "2026-02-20",
+      "category": "금융",
+      "title": "RFHIC 목표주가 상향 조정, 코스닥 내 실적 우량주로 평가",
+      "summary": [
+        "KB증권은 RFHIC의 목표주가를 5만원에서 7만5000원으로 상향 조정했습니다.",
+        "RFHIC는 레이시온 캐나다와 506억원 규모의 고출력 전력증폭기 공급 계약을 체결했습니다.",
+        "1분기 매출액과 영업이익은 전년 동기 대비 각각 93%, 193% 증가할 것으로 예상됩니다."
+      ],
+      "whyImportant": "RFHIC의 방산 부문 성장과 실적 개선은 향후 기업 가치 상승에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: KB증권은 RFHIC의 2026년 방산 부문 매출 비중이 66%에 달할 것으로 전망하며, 1분기 매출액이 615억원으로 예상되어 실적 개선 기대감을 높였습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "키움증권은 씨에스윈드의 올해 매출을 전년보다 5% 감소한 2조9322억원, 영업이익은 6% 증가한 3432억원으로 추정했다."
+          "evidence": "KB증권은 1분기 RFHIC의 매출액은 615억원, 영업이익은 110억원으로 각각 전년 동기 대비 93%, 193% 급증할 것으로 예상했다."
         }
       ],
-      "dedupeKey": "6억-미국-씨에스윈드-업황-유럽-키움증권-턴어라운드-풍력",
-      "clusterKey": "실적/씨에스윈드",
+      "dedupeKey": "506억원-5만원-7만5000원-rfhic-목표주-상향-조정-코스닥",
+      "clusterKey": "실적/rfhic",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021900736",
-      "publishedAt": "2026-02-18T22:39:18+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026022026576",
+      "publishedAt": "2026-02-19T22:42:05+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_8",
+      "date": "2026-02-20",
+      "category": "정책",
+      "title": "공정위, 쿠팡 영업정지 어렵다고 밝혀",
+      "summary": [
+        "공정거래위원회는 쿠팡의 개인정보 유출과 관련해 영업정지 조치가 어렵다고 더불어민주당에 보고했습니다.",
+        "민주당은 쿠팡 측에 재발 방지 대책을 요구하고, 미국 정치권에 유출 규모에 대한 정보가 제대로 전달되도록 조치할 예정입니다."
+      ],
+      "whyImportant": "이번 결정은 향후 유사한 개인정보 유출 사고 발생 시 정부 제재의 기준을 설정하는 데 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 공정위는 전자상거래법 제11조 2항에 따라 개인정보 도용이 확인되지 않아 영업정지 가능성을 고려하지 않고 있다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이시은 기자 see@hankyung.com 김남근 민주당 의원은 이날 을지로위원회 쿠팡 개인정보 유출 대책 간담회가 끝난 뒤 기자들을 만나 \"개인정보보호위원회는 과징금, 공정위는 과태료나 시정조치 제재를 진행 중\"이라며 \"영업정지에 대해선 전자상거래법상 개인정보 도용이 확인되지 않아 (정부 측에서) 가능성을 고려하지 않고 있다고 했다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "개인정보-공정거래위원회-공정위-미국-밝혀-어렵다고-영업정지-쿠팡",
+      "clusterKey": "플랫폼규제/쿠팡",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602191739i",
+      "publishedAt": "2026-02-19T08:45:23+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-19_7",
-      "date": "2026-02-19",
-      "category": "정책",
-      "title": "금융위, 조각투자 장외거래소 예비인가 기준 발표",
-      "summary": [
-        "금융위원회는 조각투자 장외거래소 예비인가 결과를 발표하며 심사 기준을 상세히 공개했습니다.",
-        "자기자본, 사업 계획, 지배 구조 등을 평가했으며, 샌드박스 운영 경험만으로는 부족하다는 점을 강조했습니다.",
-        "토큰증권(STO) 유통은 별도 인가 체계로 관리될 예정입니다."
-      ],
-      "whyImportant": "이번 금융위의 결정은 향후 조각투자 시장의 발전 방향과 토큰증권 시장의 규제 방향에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 금융위는 조각투자 장외거래소 예비인가 심사에서 자기자본, 사업계획, 지배구조를 중점적으로 평가했으며, 향후 STO 유통은 별도 인가 심사가 필요하다고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "\"인가는 별도, 샌드박스 경험이 통과증 아냐\" 우선 13일 금융위가 배포한 자료는 기존 샌드박스 유통과 이번 장외거래소 인가를 분명히 구분합니다."
-        }
-      ],
-      "dedupeKey": "금융위-금융위원회-기준-예비인-자기자본-장외거래소-조각투자-토큰증권",
-      "clusterKey": "금융/조각투자",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602188729i",
-      "publishedAt": "2026-02-18T01:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-19_8",
-      "date": "2026-02-19",
-      "category": "에너지",
-      "title": "데이터 센터 확장에 따른 전기 요금 인상 우려 증가",
-      "summary": [
-        "AI 모델을 구동하는 데이터 센터의 확장에 따라 미국 내에서 전기 요금 인상에 대한 반발이 커지고 있습니다.",
-        "MIT 연구에 따르면 데이터 센터는 2030년까지 전 세계 에너지 수요의 최대 21%를 차지할 것으로 예상됩니다.",
-        "일부 주에서는 데이터 센터 건설 일시 중단, 요금 인상 비용 부담, 자체 전원 사용 의무화 법안이 발의되었습니다."
-      ],
-      "whyImportant": "데이터 센터의 에너지 소비 증가는 장기적으로 전기 요금 인상 및 에너지 정책에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: MIT는 데이터 센터가 2030년까지 전 세계 에너지 수요의 최대 21%를 차지할 것으로 추정했으며, 일부 주에서는 데이터 센터 건설 규제 법안이 발의되었습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "A handful of state-level lawmakers on both sides of the aisle have introduced legislation forcing temporary bans on construction, mandating tech companies pay for increased utility prices or mandating they are built with their own power sources."
-        },
-        {
-          "label": "capex",
-          "evidence": "Data centers were already a flashpoint in last year’s election and will remain in the spotlight moving forward as the industry invests trillions to ramp up capacity."
-        }
-      ],
-      "dedupeKey": "데이터-따른-센터-요금-인상-전기-증가-확장",
-      "clusterKey": "정책/에너지/데이터",
-      "matchedTo": null,
-      "sourceName": "The",
-      "sourceUrl": "https://foxbaltimore.com/news/nation-world/data-center-backlash-driven-over-concerns-about-increases-to-electricity-bills-artificial-intelligence-politics-midterms-affordability",
-      "publishedAt": "2026-02-18T19:47:52+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

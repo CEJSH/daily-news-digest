@@ -1,33 +1,68 @@
 {
-  "date": "2026-02-20",
+  "date": "2026-02-21",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-20T08:04:46.412127+09:00",
+  "lastUpdatedAt": "2026-02-21T07:59:45.202819+09:00",
   "items": [
     {
-      "id": "2026-02-20_1",
-      "date": "2026-02-20",
-      "category": "산업",
-      "title": "마이크론, 아이다호 공장에서 내년 중반부터 HBM 생산 시작",
+      "id": "2026-02-21_1",
+      "date": "2026-02-21",
+      "category": "국제",
+      "title": "'상호관세 위법' 판결에도 500조 대미 투자 재협상 어려울 전망",
       "summary": [
-        "마이크론은 아이다호주 보이시에 건설 중인 신규 공장에서 내년 중반부터 고대역폭메모리(HBM) 생산을 시작할 예정입니다.",
-        "500억 달러가 투입된 이 공장의 첫 번째 팹은 내년 중반 D램 생산을 시작하며, 전체 라인은 2028년 말 완전 가동될 예정입니다."
+        "미국 연방대법원의 상호관세 위법 판결에도 불구하고, 한국의 대미 통상 환경은 크게 달라지지 않을 것이라는 전망이 나옵니다.",
+        "트럼프 행정부가 대체 관세 카드를 통해 자동차 등 핵심 산업에 고율 관세를 부과할 수 있기 때문입니다.",
+        "전문가들은 이미 약속된 500조 원 규모의 대미 투자 합의를 뒤집기는 어려울 것으로 보고 있습니다."
       ],
-      "whyImportant": "이번 투자는 HBM 공급 부족 상황에서 마이크론의 생산 능력 확대를 의미합니다.",
-      "importanceRationale": "근거: 마이크론은 아이다호 공장에 500억 달러를 투자하여 내년 중반부터 HBM 생산을 시작할 예정이며, 이는 2000억 달러 규모의 미국 내 생산 거점 확보 프로젝트의 일부입니다.",
+      "whyImportant": "미국의 무역 정책 변화 가능성은 한국의 대미 수출 전략 및 투자 결정에 지속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 행정부가 대체 관세 부과 가능성을 시사하며, 이미 약속된 500조 원 규모의 대미 투자 합의 재협상이 어려울 것이라는 전망이 있습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "마이크론은 500억달러를 투입해 팹 두 곳을 건설 중이며, 첫 번째 팹은 내년 중반 D램 생산을 시작한다."
+          "label": "earnings",
+          "evidence": "장 원장은 \"트럼프 대통령의 협상 스타일과 전반적인 한미 간 협상 분위기를 보면, 이번 대법원 판결로 미국 정부의 압박 수위가 다소 완화되더라도 이미 합의된 투자에 대해 재논의가 이뤄지기는 현실적으로 어려워 보인다\"고 말했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "이후 양국은 지난해 11월 '한미 전략적 투자에 관한 양해각서(MOU)'를 체결하고 MOU 이행을 위한 법안이 한국 국회에 제출되는 달의 1일 자로 관세 인하 조치를 소급 적용하기로 했다."
         }
       ],
-      "dedupeKey": "hbm-공장-내년-마이크론-생산-시작-아이다호-중반",
-      "clusterKey": "마이크론/아이다호/공장",
+      "dedupeKey": "500조-대미-상호관세-어려울-위법-재협상-투자-판결",
+      "clusterKey": "한미_투자/상호관세/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1312438",
+      "publishedAt": "2026-02-20T15:30:05+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-21_2",
+      "date": "2026-02-21",
+      "category": "국제",
+      "title": "미국 관세 위법 판결에 대한 청와대 검토",
+      "summary": [
+        "미국 연방대법원의 트럼프 행정부 상호관세 위법 판결에 대해 청와대가 한미 관세 협상에 미칠 영향을 검토 중입니다.",
+        "청와대는 국제비상경제권한법(IEEPA) 대체 수단 동원 가능성에 주목하고, 국익에 부합하는 방향으로 대응 방안을 검토할 예정입니다."
+      ],
+      "whyImportant": "미국 관세 정책의 변화는 한미 무역 관계에 중대한 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국 연방대법원 판결 이후 청와대가 관세 협상에 미칠 파장을 실시간으로 검토하고 있으며, 3500억 달러 투자 약속이 걸린 관세 협상에 대한 분석을 진행 중입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "구체적으로 트럼프 행정부가 IEEPA 이외 어떤 법률을 적용해 관세를 부과할 수 있는지, 해당 법이 규정하는 권한은 어디까지인지 등을 분석한 것으로 보인다."
+        }
+      ],
+      "dedupeKey": "관세-동원-미국-연방대법원-위법-청와대-판결-행정부",
+      "clusterKey": "한미_관세/위법",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021896291",
-      "publishedAt": "2026-02-18T08:28:50+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202602214881i",
+      "publishedAt": "2026-02-20T16:05:12+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -36,60 +71,64 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-20_2",
-      "date": "2026-02-20",
-      "category": "금융",
-      "title": "코스닥 부실 기업 신속 퇴출 관리단 가동",
+      "id": "2026-02-21_3",
+      "date": "2026-02-21",
+      "category": "기술",
+      "title": "미국 대법원 결정이 애플과 33억 달러 관세에 미치는 영향",
       "summary": [
-        "한국거래소는 코스닥 시장의 체질 개선을 위해 상장폐지 기준을 강화할 예정입니다.",
-        "개선 기간이 끝나기 전 조기 퇴출 방안과 통합 상장실질심사 시스템을 도입하여 한계기업을 빠르게 퇴출할 방침입니다.",
-        "이를 위해 상장폐지 집중관리단을 구성하여 이달부터 내년 6월까지 집중 관리 기간을 운영합니다."
+        "미국 대법원의 관세 관련 결정으로 애플은 분기당 약 10억 달러의 관세 부담을 줄일 수 있을 것으로 예상됩니다.",
+        "이번 결정은 트럼프 전 대통령이 부과한 관세에 대한 주요 반박이며, 애플은 작년부터 약 33억 달러의 관세를 납부했습니다.",
+        "애플은 생산 비용 절감과 마진 유지를 기대하며, 중국 외 지역으로의 생산 이전 압박도 줄어들 수 있습니다."
       ],
-      "whyImportant": "이번 조치는 코스닥 시장의 신뢰도를 높이고 투자자 보호를 강화하는 데 기여할 수 있습니다.",
-      "importanceRationale": "근거: 한국거래소는 이달부터 내년 6월까지 '상장폐지 집중관리단'을 운영하여 코스닥 시장의 부실 기업 퇴출을 가속화할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "앞으로 지배주주가 동일한 여러 기업에서 동시에 상장폐지 사유가 발생하면 통합·일괄 심사를 통해 더 신속하게 퇴출 여부가 가려진다."
-        }
-      ],
-      "dedupeKey": "가동-관리단-기업-부실-코스닥-퇴출-한계기업-한국거래소",
-      "clusterKey": "코스닥/부실/기업",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026021919781",
-      "publishedAt": "2026-02-19T08:28:07+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-20_3",
-      "date": "2026-02-20",
-      "category": "정책",
-      "title": "당정, 쿠팡 개인정보 유출 축소 공시 문제 제기",
-      "summary": [
-        "더불어민주당과 정부는 쿠팡이 미국 증권거래위원회에 개인정보 유출 규모를 축소 공시한 점을 지적하며 시정을 요구했습니다.",
-        "개인정보보호위원회는 과징금을, 공정거래위원회는 과태료 및 시정조치를 검토 중입니다.",
-        "쿠팡은 이달 중 보안 사고 관련 재발 방지 대책을 제출할 예정입니다."
-      ],
-      "whyImportant": "개인정보 유출 문제에 대한 정부의 대응과 기업의 책임 강화에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 쿠팡 코리아는 3천300만 건의 개인정보 유출을 인정했지만, 미국 본사는 3천300건만 유출됐다고 공시하여 정부가 시정을 요구하고 있기 때문입니다.",
+      "whyImportant": "이번 대법원 결정은 애플의 생산 전략과 비용 구조에 장기적인 영향을 미칠 수 있는 중요한 변화입니다.",
+      "importanceRationale": "근거: 트럼프 전 대통령이 부과한 관세가 철회됨에 따라 애플은 33억 달러의 관세 부담을 줄이고, 미국 정부는 수입업자에게 1,750억 달러 이상의 환급금을 지급해야 할 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "아울러 이번 사태에 대해 개보위에서는 과징금, 공정위에는 과태료와 시정조치 등의 제재를 검토 중이다."
+          "evidence": "government could owe more than $175 billion in refunds to importers after the Supreme Court ruled in a 6-3 decision that tariffs unilaterally imposed by Trump are illegal."
         }
       ],
-      "dedupeKey": "개인정보-당정-문제-유출-제기-증권거래위원회-축소-쿠팡",
-      "clusterKey": "당정/쿠팡/개인정보",
+      "dedupeKey": "33억-관세-달러-대법원-미국-미치-애플-영향",
+      "clusterKey": "미중_관세/대법원",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/02/20/supreme-court-tariff-decision-apple-trump-cook-iphone.html",
+      "publishedAt": "2026-02-20T20:23:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-21_4",
+      "date": "2026-02-21",
+      "category": "기술",
+      "title": "미국 관세 위법 판결, 애플에 미치는 영향",
+      "summary": [
+        "미국 대법원의 국가별 상호 관세 위법 판결로 인해 애플은 비용 부담을 덜게 되었습니다.",
+        "애플은 이미 납부한 관세 환급 절차에 참여할지 여부에 대한 질문에 답변을 거부했습니다.",
+        "이번 판결 이후 애플의 주가는 소폭 상승했습니다."
+      ],
+      "whyImportant": "이번 판결은 애플의 공급망 전략 및 재무적 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 애플은 지난해 4분기에만 약 2조 원의 관세로 수익에 타격을 입었으며, 트럼프 행정부의 관세 정책에 대응해 공급망을 이전하려는 노력을 기울였습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "동시에 팀 쿡 애플 최고경영자(CEO)는 미국 내 제조업 등에 4년간 6천억 달러를 투자하겠다고 발표하고, 트럼프 대통령에게 '메이드 인 USA'라고 적힌 유리 기념패를 순금 받침대와 함께 선물하는 등 환심을 사기 위한 노력도 벌였다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "소프트웨어나 핵심 부품·장비를 주로 판매하는 다른 거대 기술기업들과 달리 애플은 완제품 하드웨어 제조사인 데다, 미국 내 별다른 제조시설 없이 대부분 제품을 중국 등에서 완성해 들여오기 때문에 그간 관세 부담이 컸다."
+        }
+      ],
+      "dedupeKey": "관세-대법원-미국-미치-애플-영향-위법-판결",
+      "clusterKey": "관세/위법",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311870",
-      "publishedAt": "2026-02-19T08:45:38+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1312462",
+      "publishedAt": "2026-02-20T18:11:42+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -98,17 +137,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-20_4",
-      "date": "2026-02-20",
+      "id": "2026-02-21_5",
+      "date": "2026-02-21",
       "category": "기술",
       "title": "OpenAI, 인도에 100MW AI 데이터 센터 용량 확보 및 1GW 목표",
       "summary": [
-        "O AI는 인도의 Tata 그룹과 협력하여 100MW 규모의 AI 데이터 센터 용량을 확보하고, 1GW까지 확장할 계획입니다.",
-        "이번 협력은 O AI의 '인도를 위한 O AI' 이니셔티브의 일환이며, Tata 그룹의 H Vault 데이터 센터 사업의 첫 번째 고객이 됩니다.",
+        "O AI는 인도 Tata 그룹과 협력하여 100MW 규모의 AI 데이터 센터 용량을 확보하고, 1GW까지 확장할 계획입니다.",
+        "이번 협력은 O AI의 '인도를 위한 O AI' 이니셔티브의 일환으로, 인도 내 기업 및 인프라 투자를 확대하기 위함입니다.",
         "Tata 그룹은 ChatGPT E ise를 전사적으로 도입하고, O AI의 도구를 통해 AI 기반 소프트웨어 개발을 표준화할 예정입니다."
       ],
-      "whyImportant": "OpenAI의 인도 데이터 센터 투자는 데이터 주권 및 보안 요구 사항을 충족하며, 인도 내 AI 인프라 구축에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: OpenAI는 Tata 그룹과 협력하여 초기 100MW에서 시작해 장기적으로 1GW까지 확장할 계획이며, 이는 인도 내 AI 인프라 투자 규모를 보여줍니다.",
+      "whyImportant": "OpenAI의 인도 데이터 센터 투자는 데이터 주권 및 보안 요구 사항을 충족하며 인도 내 AI 시장 확장에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: OpenAI는 Tata 그룹과 협력하여 100MW의 데이터 센터 용량을 확보하고, 향후 1GW까지 확장할 계획을 가지고 있습니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -116,7 +155,7 @@
         }
       ],
       "dedupeKey": "100mw-1gw-openai-데이터-센터-용량-인도-확보",
-      "clusterKey": "openai/100mw/데이터",
+      "clusterKey": "투자/openai",
       "matchedTo": null,
       "sourceName": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
@@ -129,59 +168,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-20_5",
-      "date": "2026-02-20",
-      "category": "에너지",
-      "title": "소프트뱅크, 미국에 대규모 가스 발전소 건설 위해 330억 달러 투자",
-      "summary": [
-        "소프트뱅크의 자회사인 SB E gy가 오하이오-켄터키 국경에 9.2기가와트 규모의 천연가스 발전소를 건설할 예정입니다.",
-        "이 발전소는 약 750만 가구에 전력을 공급할 수 있으며, 건설 비용은 330억 달러에 달할 것으로 예상됩니다."
-      ],
-      "whyImportant": "미국 최대 규모의 발전소 건설은 에너지 시장과 데이터 센터 전력 공급에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 330억 달러 규모의 투자는 미국 내 최대 발전소 건설을 목표로 하며, 이는 에너지 산업 전반에 걸쳐 상당한 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "With a price tag of $33 billion, the project would be more expensive than recent natural gas-fired power plants, which have skyrocketed in cost, Bloomberg notes."
-        }
-      ],
-      "dedupeKey": "330억-가스-건설-달러-미국-발전소-소프트뱅크-투자",
-      "clusterKey": "투자/에너지/소프트뱅크",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/02/19/softbank-to-spend-an-eye-popping-33b-to-build-huge-u-s-gas-power-plant/",
-      "publishedAt": "2026-02-19T16:27:58+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-20_6",
-      "date": "2026-02-20",
+      "id": "2026-02-21_6",
+      "date": "2026-02-21",
       "category": "기술",
-      "title": "올트먼 오픈AI CEO, AI 기술 규제 및 국제조정기구 필요성 강조",
+      "title": "테슬라-웨이모 로보택시 원격 지원 프로그램 상세 내용 공개",
       "summary": [
-        "샘 올트먼 오픈AI CEO는 AI 기술의 시급한 규제 필요성을 언급하며 국제조정기구 설립을 제안했습니다.",
-        "그는 AI 기술이 특정 기업이나 국가에 집중될 경우 위험을 초래할 수 있다고 경고했습니다.",
-        "인도에서 열린 AI 임팩트 정상회의에서 여러 전문가들은 AI로 인한 문제에 대한 강력한 조치를 촉구했습니다."
+        "웨이모와 테슬라가 로보택시의 소프트웨어 오류 발생 시 원격 지원 프로그램 운영에 대한 세부 정보를 공개했습니다.",
+        "웨이모는 6개 도시에서 로보택시 서비스를 운영 중이며, 3,000대의 로보택시를 70명의 상담원이 지원합니다."
       ],
-      "whyImportant": "AI 기술 규제 논의는 기술 발전 방향과 관련된 중요한 결정 사항입니다.",
-      "importanceRationale": "근거: 올트먼 CEO는 국제원자력기구와 유사한 AI 국제조정기구의 필요성을 언급하며 규제에 대한 논의를 촉구했습니다.",
+      "whyImportant": "자율주행차의 안전 운행에 있어 원격 지원 인력의 역할이 중요하기 때문입니다.",
+      "importanceRationale": "근거: 웨이모는 6개 도시에서 로보택시 서비스를 운영하고 있으며, 향후 10개 이상의 도시로 확장할 계획을 가지고 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "그러면서 \"다른 강력한 기술과 마찬가지로 당연히 규제가 시급하게 필요하다\"고 덧붙였습니다."
+          "evidence": "The company says a highly trained US-based team handles the most complex remote interactions, including collisions, contacts with law enforcement and riders, and interactions with regulatory agencies."
+        },
+        {
+          "label": "infra",
+          "evidence": "See, for example, a December power outage in San Francisco that killed stop lights around the city, stranding confused Waymos in several intersections."
         }
       ],
-      "dedupeKey": "ceo-국제조정기구-규제-기술-기업이나-오픈ai-올트먼-필요성",
-      "clusterKey": "정책/올트먼",
+      "dedupeKey": "내용-로보택시-상세-원격-웨이모-지원-테슬라-프로그램",
+      "clusterKey": "테슬라/웨이모/로보택시",
       "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202602191839172902",
-      "publishedAt": "2026-02-19T09:39:00+00:00",
+      "sourceName": "WIRED",
+      "sourceUrl": "https://www.wired.com/story/government-docs-reveal-new-details-about-tesla-and-waymo-robotaxi-programs/",
+      "publishedAt": "2026-02-20T21:53:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -190,29 +202,120 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-20_7",
-      "date": "2026-02-20",
-      "category": "금융",
-      "title": "RFHIC 목표주가 상향 조정, 코스닥 내 실적 우량주로 평가",
+      "id": "2026-02-21_7",
+      "date": "2026-02-21",
+      "category": "기술",
+      "title": "아마존, 월마트 제치고 연간 매출 세계 1위 달성",
       "summary": [
-        "KB증권은 RFHIC의 목표주가를 5만원에서 7만5000원으로 상향 조정했습니다.",
-        "RFHIC는 레이시온 캐나다와 506억원 규모의 고출력 전력증폭기 공급 계약을 체결했습니다.",
-        "1분기 매출액과 영업이익은 전년 동기 대비 각각 93%, 193% 증가할 것으로 예상됩니다."
+        "아마존이 연간 매출 기준으로 월마트를 처음으로 넘어섰습니다.",
+        "아마존의 작년 매출은 7169억 달러로, 월마트의 7132억 달러보다 37억 달러 많습니다.",
+        "다만, 유통 부문만 놓고 보면 월마트가 여전히 1위이며, 올해 순위가 바뀔 수 있다는 전망도 있습니다."
       ],
-      "whyImportant": "RFHIC의 방산 부문 성장과 실적 개선은 향후 기업 가치 상승에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: KB증권은 RFHIC의 2026년 방산 부문 매출 비중이 66%에 달할 것으로 전망하며, 1분기 매출액이 615억원으로 예상되어 실적 개선 기대감을 높였습니다.",
+      "whyImportant": "아마존의 매출 1위 등극은 유통 시장의 경쟁 심화와 클라우드 서비스의 중요성을 보여주는 사건입니다.",
+      "importanceRationale": "근거: 아마존이 월마트를 넘어선 것은 처음이며, 이는 아마존웹서비스(AWS) 매출을 제외하면 유통 부문에서 월마트가 여전히 1위라는 점과 함께 유통 시장의 경쟁 구도를 보여줍니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "KB증권은 1분기 RFHIC의 매출액은 615억원, 영업이익은 110억원으로 각각 전년 동기 대비 93%, 193% 급증할 것으로 예상했다."
+          "evidence": "지난 5일 아마존이 발표한 지난해 매출 7169억달러보다 37억달러 적은 수치다."
         }
       ],
-      "dedupeKey": "506억원-5만원-7만5000원-rfhic-목표주-상향-조정-코스닥",
-      "clusterKey": "실적/rfhic",
+      "dedupeKey": "1위-달성-매출-세계-아마존-연간-월마트-제치고",
+      "clusterKey": "실적/아마존",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026022026576",
-      "publishedAt": "2026-02-19T22:42:05+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026022044761",
+      "publishedAt": "2026-02-20T09:00:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-21_8",
+      "date": "2026-02-21",
+      "category": "에너지",
+      "title": "국내 원전주 강세, 미국 진출 기대감",
+      "summary": [
+        "인공지능 데이터센터 전력 수요 증가와 한미 원전 협력 기대감으로 국내 원자력발전 관련주가 강세를 보이고 있습니다.",
+        "미국은 2050년까지 원전 용량을 현재의 100GW에서 400GW로 확대할 계획이며, 신규 원전 인허가 기간을 단축하는 등 규제 완화를 진행 중입니다."
+      ],
+      "whyImportant": "미국의 원전 확대 정책과 규제 완화는 국내 원전 기업에게 새로운 시장 기회를 제공할 수 있습니다.",
+      "importanceRationale": "근거: 미국이 2050년까지 원전 용량을 400GW로 확대할 계획이고, 원전 인허가 기간을 최대 18개월로 단축하는 등 규제 완화를 진행하고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "미국을 중심으로 AI 데이터센터가 늘어나면서 급증하는 전력 수요를 원전으로 대응할 것이란 예상이 나온다."
+        }
+      ],
+      "dedupeKey": "100gw-강세-국내-기대감-데이터센터-미국-원전주-진출",
+      "clusterKey": "한미_정책/에너지/국내",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022027616",
+      "publishedAt": "2026-02-19T23:49:15+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-21_9",
+      "date": "2026-02-21",
+      "category": "정책",
+      "title": "일본 외무상, 국회 외교 연설에서 독도 영유권 주장",
+      "summary": [
+        "일본 외무상이 외교 연설에서 13년째 독도가 일본 땅이라는 주장을 반복했습니다.",
+        "모테기 도시미쓰 외무상은 한국을 중요한 이웃 국가로 언급하며 긴밀히 소통하겠다고 밝혔습니다."
+      ],
+      "whyImportant": "일본 정부의 지속적인 독도 영유권 주장은 한일 관계에 장기적인 외교적 긴장을 유발할 수 있습니다.",
+      "importanceRationale": "근거: 일본 외무상이 13년 연속으로 독도 영유권 주장을 반복하고 있으며, 이는 한일 관계의 미래 지향적 발전에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "그러면서 전략적 상호 관계를 포괄적으로 추진해 건설적이고 안정적인 관계를 구축한다는 방침에는 변함이 없으며 \"의사소통이 중요하다\"고 덧붙였다."
+        }
+      ],
+      "dedupeKey": "13년째-국회-독도-연설-영유권-외교-외무상-일본",
+      "clusterKey": "한일/외무상/국회/외교",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1312303",
+      "publishedAt": "2026-02-20T06:40:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-21_10",
+      "date": "2026-02-21",
+      "category": "정책",
+      "title": "자사주 소각 의무화 법안, 국회 법사소위 통과",
+      "summary": [
+        "자사주 소각 의무화를 골자로 하는 상법 개정안이 국회 법사소위를 통과했습니다.",
+        "비자발적 취득 자사주도 소각 대상에 포함되나, 이사회 의결로 소각 절차를 간소화했습니다.",
+        "여당은 이달 중 본회의 처리를 목표로 하고 있습니다."
+      ],
+      "whyImportant": "자사주 소각 의무화는 기업의 자본 운영 및 주주 가치에 중대한 영향을 미칠 수 있는 정책 결정입니다.",
+      "importanceRationale": "근거: 3차 상법 개정안이 국회 법사소위를 통과했으며, 이달 중 본회의 처리가 예고되어 정책 시행 가능성이 높습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "자사주 소각 의무화를 골자로 하는 3차 상법 개정안이 20일 국회 통과 ‘7부 능선’을 넘었다."
+        }
+      ],
+      "dedupeKey": "국회-법사소위-법안-비자발적-소각-의무화-자사주-통과",
+      "clusterKey": "정책/자사주",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022044991",
+      "publishedAt": "2026-02-20T08:51:45+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -221,31 +324,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-20_8",
-      "date": "2026-02-20",
-      "category": "정책",
-      "title": "공정위, 쿠팡 영업정지 어렵다고 밝혀",
+      "id": "2026-02-21_11",
+      "date": "2026-02-21",
+      "category": "기술",
+      "title": "메타와 애플, 아동 안전 및 개인 정보 보호 관련 심각한 문제에 직면",
       "summary": [
-        "공정거래위원회는 쿠팡의 개인정보 유출과 관련해 영업정지 조치가 어렵다고 더불어민주당에 보고했습니다.",
-        "민주당은 쿠팡 측에 재발 방지 대책을 요구하고, 미국 정치권에 유출 규모에 대한 정보가 제대로 전달되도록 조치할 예정입니다."
+        "메타의 마크 저커버그와 애플의 팀 쿡 CEO는 아동 안전 및 개인 정보 보호 문제로 법적 공방에 직면했습니다.",
+        "뉴멕시코 소송에서 메타 내부 메시지는 암호화로 인해 아동 성 학대 자료 보고가 감소할 것이라는 우려를 보여줍니다.",
+        "웨스트버지니아는 아동 성 학대 자료 처리와 관련하여 애플을 제소했습니다."
       ],
-      "whyImportant": "이번 결정은 향후 유사한 개인정보 유출 사고 발생 시 정부 제재의 기준을 설정하는 데 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 공정위는 전자상거래법 제11조 2항에 따라 개인정보 도용이 확인되지 않아 영업정지 가능성을 고려하지 않고 있다고 밝혔습니다.",
+      "whyImportant": "이번 소송 결과는 향후 기술 기업의 제품 개발 및 개인 정보 보호 정책에 큰 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 법원이 기업에 전례 없는 제품 변경을 강요할 수 있으며, 이는 수십억 명에게 영향을 미칠 수 있기 때문입니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "이시은 기자 see@hankyung.com 김남근 민주당 의원은 이날 을지로위원회 쿠팡 개인정보 유출 대책 간담회가 끝난 뒤 기자들을 만나 \"개인정보보호위원회는 과징금, 공정위는 과태료나 시정조치 제재를 진행 중\"이라며 \"영업정지에 대해선 전자상거래법상 개인정보 도용이 확인되지 않아 (정부 측에서) 가능성을 고려하지 않고 있다고 했다\"고 말했다."
+          "evidence": "If the companies are found liable in their respective cases, the courts could force unprecedented product changes affecting billions of people."
         }
       ],
-      "dedupeKey": "개인정보-공정거래위원회-공정위-미국-밝혀-어렵다고-영업정지-쿠팡",
-      "clusterKey": "플랫폼규제/쿠팡",
+      "dedupeKey": "개인-메타-보호-심각-아동-안전-애플-정보",
+      "clusterKey": "메타/애플/아동",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602191739i",
-      "publishedAt": "2026-02-19T08:45:23+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/02/20/meta-apple-child-safety-zuckerberg-cook.html",
+      "publishedAt": "2026-02-20T13:04:33+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

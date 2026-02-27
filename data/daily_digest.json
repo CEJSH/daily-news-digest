@@ -1,21 +1,173 @@
 {
-  "date": "2026-02-27",
+  "date": "2026-02-28",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-02-27T08:04:36.927961+09:00",
+  "lastUpdatedAt": "2026-02-28T07:56:08.897743+09:00",
   "items": [
     {
-      "id": "2026-02-27_1",
-      "date": "2026-02-27",
+      "id": "2026-02-28_1",
+      "date": "2026-02-28",
+      "category": "국제",
+      "title": "중국, '트럼프 협상력 약화' 판단 및 EU와 밀착",
+      "summary": [
+        "중국은 미국 연방대법원의 펜타닐 관세 무효화 판결 후 미국과의 무역 협상에 나설 의지를 밝혔습니다.",
+        "미국이 대중 추가 관세를 강행할 경우 필요한 조치를 취하겠다는 입장입니다.",
+        "한편 중국은 일본의 방산 관련 기업에 대한 수출 통제를 강화하며 안보 갈등을 경제 제재와 연동시키고 있습니다."
+      ],
+      "whyImportant": "미중 관계의 변화와 중국의 대외 전략 변화를 보여주는 사례로, 향후 국제 무역 질서 및 안보 환경에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국이 미국의 관세 압박에 맞서 EU와의 협력을 강화하고, 일본에 대해서는 수출 통제 조치를 취하는 등, 경제 및 안보 분야에서 전략적 움직임을 보이고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "중국 상무부는 미쓰비시와 가와사키, IHI 계열 등 방산 관련 기업·기관 20곳을 수출통제 관리 명단에 올리고, 이중용도 품목의 대일 수출을 전면 금지했습니다."
+        }
+      ],
+      "dedupeKey": "미국-밀착-약화-연방대법원-중국-트럼프-판단-협상력",
+      "clusterKey": "미중_제재/트럼프/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315994",
+      "publishedAt": "2026-02-27T08:14:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_2",
+      "date": "2026-02-28",
+      "category": "정책",
+      "title": "금융위, 이수스페셜티 방문하여 이차전지 산업 생태계 확대 논의",
+      "summary": [
+        "권대영 금융위원회 부위원장은 울산·경남 지역에서 '국민성장펀드·지방우대금융 지역간담회'를 개최했습니다.",
+        "이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 역할을 강조했습니다."
+      ],
+      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여주는 사례입니다.",
+      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의한 사실에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "금융위-금융위원회-부위원장-산업-생태계-이수스페셜티-이차전지-확대",
+      "clusterKey": "금융/이수스페셜티",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315882",
+      "publishedAt": "2026-02-27T05:00:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_3",
+      "date": "2026-02-28",
+      "category": "국제",
+      "title": "미국-이란 핵 협상 긍정적 마무리…재협상 예정",
+      "summary": [
+        "이란 외무장관은 이번 협상이 양국이 진행해 온 가장 진지한 협상 중 하나라고 평가했습니다.",
+        "다음 협상은 일주일도 채 남지 않은 시점에 다시 열릴 예정입니다."
+      ],
+      "whyImportant": "미국과 이란의 핵 협상 재개는 국제 관계 및 안보에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 일주일 내에 재협상이 예정되어 있어, 단기적으로 정책 변화 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "이란 측이 미국의 제재 해제를 분명히 요구했으며, 미국은 테헤란의 상당한 양보가 있어야만 제재가 해제될 것이라고 오랫동안 주장해 왔다”고 설명했습니다."
+        }
+      ],
+      "dedupeKey": "긍정적-마무리-미국-양국-외무장관-이란-재협상-협상",
+      "clusterKey": "관세/긍정적",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602279050i",
+      "publishedAt": "2026-02-27T00:50:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_4",
+      "date": "2026-02-28",
+      "category": "기술",
+      "title": "정부, 구글 지도 데이터 반출 조건부 허가",
+      "summary": [
+        "정부가 구글 등 미국 빅테크 기업의 고정밀 지도 국외 반출을 조건부로 허가했습니다.",
+        "국가안보 우려에도 불구하고 허가 결정은 미국의 관세 인상 압박에 대한 지렛대 활용으로 해석됩니다.",
+        "군사기지 등 안보 시설 위치를 가리는 등의 보안 조건이 부과되었습니다."
+      ],
+      "whyImportant": "이번 결정은 미국의 통상 압박에 대한 한국 정부의 정책적 대응을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 미국 무역대표부가 한국의 비관세 장벽 철폐를 압박하고, 새로운 관세 정책을 준비하는 상황에서 정부가 대미 협상 리스크를 줄이기 위해 지도 반출을 허용한 것입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "정부 관계자는 “우리가 국익을 훼손하지 않으면서도 미국에 내놓을 수 있는 ‘카드’를 고심했다”며 “구글의 데이터센터 국내 설치를 받아내지는 못했지만, 우리 안보상 우려를 줄일 수 있는 여러 조건과 안전 장치를 달았고 지속적 위반이 발견되면 다시 철회하는 조항도 넣었다”고 말했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "국내 서버에서 보안 처리가 완료된 데이터를 정부 검토·확인을 거친 데이터만 반출하고, 보안이 필수적인 군사기지나 각종 안보시설의 위치는 가리고, 등고선 등 민감한 데이터는 제외한다는 등의 조건을 달았다."
+        }
+      ],
+      "dedupeKey": "구글-데이터-미국-반출-정부-조건부-지도-허가",
+      "clusterKey": "관세/구글",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1246982.html",
+      "publishedAt": "2026-02-27T08:53:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_5",
+      "date": "2026-02-28",
+      "category": "금융",
+      "title": "반도체 호황 속 심화되는 K자형 양극화",
+      "summary": [
+        "한국은행은 올해 경제 성장률을 2%로 예측했지만, 반도체에 편중된 성장으로 K자형 양극화가 심화되고 있습니다.",
+        "IT 부문을 제외하면 성장률은 1.4%로 낮아지며, 주식 시장 활황의 혜택이 소득 계층별로 불균등하게 분배되고 있습니다.",
+        "작년 4분기 소득 5분위 배율은 통계 개편 이후 처음으로 악화되었습니다."
+      ],
+      "whyImportant": "반도체 산업 호황에도 불구하고 소득 불균형 심화는 장기적인 경제 건전성에 부정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 한국은행은 올해 경제 성장률을 2%로 예측했지만, 반도체 제외 시 1.4%로 낮아지고 소득 5분위 배율이 2019년 이후 처음으로 악화되어 양극화 심화가 나타났습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "지방 부동산경기 부진 등으로 건설투자 회복은 여전히 늦어지고 있습니다."
+        }
+      ],
+      "dedupeKey": "5분위-k자형-반도체-심화-양극화-제외하면-한국은행-호황",
+      "clusterKey": "호황/심화/k자형",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0102_202602280546369529",
+      "publishedAt": "2026-02-27T20:46:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_7",
+      "date": "2026-02-28",
       "category": "국제",
       "title": "미국, 러시아·이란 연계 스위스 은행 제재 추진",
       "summary": [
         "미국 재무부 금융범죄단속네트워크는 러시아 및 이란과 연계된 스위스 엠배어 상업은행의 미국 금융 시스템 접근을 차단하는 규정을 제안했습니다.",
-        "엠배어 은행은 러시아 자금 세탁과 연계된 금융 부패를 용이하게 하고, 이란 연계 외국 테러 조직을 위해 자금을 세탁한 혐의를 받고 있습니다."
+        "엠배어 은행은 러시아 자금 세탁과 연계된 금융 부패를 용이하게 하고, 이란의 테러 조직을 위해 자금을 세탁한 혐의를 받고 있습니다."
       ],
       "whyImportant": "이번 제재 추진은 미국의 금융 시스템 보호와 국가 안보를 강화하는 데 중요한 의미를 가집니다.",
-      "importanceRationale": "근거: 엠배어 은행이 이란 및 러시아와 연계된 불법 행위자들을 위해 1억 달러 이상을 미국 금융 시스템을 통해 흘려보낸 혐의가 있어 중요도 4로 판단합니다.",
+      "importanceRationale": "근거: 엠배어 은행이 이란 및 러시아와 연계된 불법 행위자들을 위해 1억 달러 이상을 미국 금융 시스템을 통해 흘려보냈다는 점에서 중요성이 있습니다.",
       "impactSignals": [
         {
           "label": "sanctions",
@@ -36,220 +188,63 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-27_2",
-      "date": "2026-02-27",
-      "category": "금융",
-      "title": "쿠팡, 개인정보 유출로 4분기 실적 부진",
+      "id": "2026-02-28_8",
+      "date": "2026-02-28",
+      "category": "국제",
+      "title": "미국, 일부 국가에 15% 관세 인상 가능성 시사",
       "summary": [
-        "쿠팡은 연간 최대 매출을 기록했지만, 4분기 개인정보 유출 사태로 영업이익이 크게 감소했습니다.",
-        "4분기 매출은 전년 동기 대비 증가했지만, 직전 분기 대비 감소했으며 활성 고객 수도 줄었습니다.",
-        "쿠팡 측은 개인정보 유출 사고가 12월 매출 증가율 등에 부정적 영향을 미쳤다고 밝혔습니다."
+        "미국이 일부 국가에 대해 글로벌 관세를 15%로 인상할 가능성이 제기되고 있습니다.",
+        "미국무역대표부(USTR) 대표는 추가 포고문 서명 예정이라고 밝혔습니다.",
+        "무역법 예외 조항을 통해 미국은 무역 흑자 국가에 더 높은 관세율을 부과할 수 있습니다."
       ],
-      "whyImportant": "개인정보 유출과 같은 보안 문제가 기업의 실적에 직접적인 영향을 미칠 수 있음을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 쿠팡의 4분기 영업이익이 전년 동기 대비 97% 감소했으며, 개인정보 3300만 건 유출이 매출에 부정적 영향을 미쳤다고 언급되어 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "쿠팡의 4분기 매출은 12조8103억원(88억3500만달러)으로 전년 동기 대비 11% 증가했으며, 영업이익은 115억원(800만달러)에 그쳐 전년 동기 대비 97% 감소했다."
-        }
-      ],
-      "dedupeKey": "개인정보-미쳤다고-부진-실적-연간-영업이익-유출-쿠팡",
-      "clusterKey": "실적/쿠팡",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602278430i",
-      "publishedAt": "2026-02-26T22:12:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-27_3",
-      "date": "2026-02-27",
-      "category": "기술",
-      "title": "엔비디아, 매출 308조 원으로 역대 최대 실적 기록...데이터센터가 성장 견인",
-      "summary": [
-        "엔비디아가 AI 반도체 수요 증가로 2026 회계연도에 사상 최대 매출인 308조 원을 달성했습니다.",
-        "데이터센터 부문 매출이 전체 매출의 약 90%를 차지하며 성장을 주도했습니다.",
-        "블랙웰 기반 칩 공급 확대로 수익성도 개선될 것으로 예상됩니다."
-      ],
-      "whyImportant": "엔비디아의 실적은 AI 반도체 시장의 성장과 데이터센터 수요 증가 추세를 보여주는 중요한 지표입니다.",
-      "importanceRationale": "근거: 엔비디아의 데이터센터 연간 매출은 276조 5500억 원으로 전체 매출의 약 90%를 차지하며, 챗GPT 등장 이후 데이터센터 매출이 약 13배 성장했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "엔비디아는 25일(현지시간) 2026회계연도 일반회계기준(GAAP) 연간 매출이 2159억3800만달러(약 308조2500억원)으로 엔비디아 창사 이래 역대 최고 매출을 달성했다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "308조-데이터센터-매출-실적-엔비디아-역대-원으-최대",
-      "clusterKey": "실적/엔비디아",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=52757",
-      "publishedAt": "2026-02-25T23:42:50+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-27_4",
-      "date": "2026-02-27",
-      "category": "기술",
-      "title": "미국 의회, 반도체 수출 제한 추진으로 엔비디아와 백악관에 맞서",
-      "summary": [
-        "미국 공화당 의원들이 중국에 대한 첨단 반도체 판매 제한을 추진하고 있습니다.",
-        "하원 외교위원회는 중국 등 적대국에 대한 첨단 반도체 판매를 의회가 검토하고 차단할 수 있도록 하는 법안을 추진 중입니다.",
-        "이 법안은 중국 군대에 혜택을 줄 수 있는 방식으로 첨단 반도체 라이선스를 금지합니다."
-      ],
-      "whyImportant": "미국 반도체 기업의 대중국 수출 전략 및 미국의 기술 경쟁력 유지에 중요한 영향을 미칠 수 있는 결정입니다.",
-      "importanceRationale": "근거: 하원 외교위원회가 첨단 반도체 판매를 의회가 검토하고 차단할 수 있도록 하는 법안을 추진하고 있으며, 이는 중국 군대에 혜택을 줄 수 있는 방식으로 첨단 반도체 라이선스를 금지하는 내용을 포함합니다.",
+      "whyImportant": "미국의 관세 정책 변경은 국제 무역 관계 및 관련 산업에 영향을 미칠 수 있는 결정입니다.",
+      "importanceRationale": "근거: 미국무역대표부 대표가 15% 관세 인상을 위해 추가 포고문에 서명할 예정이라고 언급하여 정책 변경 가능성을 시사했습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "He said while Congress has no right to interfere with chips being sold for video games and other commercial purposes, “when it blends into the world of now, it’s real war, real weapon systems, real casualties at the highest level of all militaries, yeah, we’re going to have a say.” Mast added that Huang “might not like it, but that’s what’s going to take place.” Nvidia said in a statement to CNBC the likelihood of China’s military using American chips was low as “it makes no sense for the Chinese military to depend on American technology.” The company added that the “administration’s critics are unintentionally promoting the interests of foreign competitors — America should always want its industry to compete for vetted and approved commercial businesses, and thereby protecting national security, creating American jobs, and keeping America’s lead in AI.” Mast, a supporter of Trump’s, said the committee was in sync with the White House, and the bill codified provisions in a recent Commerce Department regulation that permitted the sale of advanced chips to China."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "“Anybody watching this should laugh.” In the latest salvo, the House Foreign Affairs Committee advanced legislation that would allow Congress 30 days to review and block sales of advanced chips to adversarial countries — similar to the power Congress has with arms and weapons sales."
+          "evidence": "해당 법안은 ‘대규모 또는 지속적인 국제수지 흑자를 기록하는 한 국가 또는 여러 국가에 대한 조치가 효과적이라고 판단하는 경우 다른 모든 국가를 해당 조치에서 면제할 수 있다’는 단서 조항을 뒀다."
         }
       ],
-      "dedupeKey": "맞서-미국-반도체-백악관-수출-엔비디아-의회-제한",
-      "clusterKey": "미중_정책/의회",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/26/congress-pushes-back-on-nvidia-white-house-with-chip-export-limits.html",
-      "publishedAt": "2026-02-26T13:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-27_5",
-      "date": "2026-02-27",
-      "category": "국제",
-      "title": "미국, 글로벌 관세 일부 국가 15% 인상 시사",
-      "summary": [
-        "미국이 글로벌 관세를 일부 국가에 대해 15%로 인상할 가능성을 시사했습니다.",
-        "SK증권은 부동산 매도 자금의 대규모 증시 유입은 어렵다고 진단했습니다.",
-        "정부의 추가 부동산 매수 억제 신호로 대기 자금이 주식 시장으로 방향을 틀고 있다는 분석입니다."
-      ],
-      "whyImportant": "미국의 관세 인상 결정은 국제 무역 관계 및 관련 산업에 중대한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국의 관세 정책 변화 가능성이 언급되었으나, 구체적인 시행 시기나 대상 국가에 대한 정보가 부족하여 중요도 점수는 2점입니다.",
-      "impactSignals": [],
-      "dedupeKey": "sk증권-관세-국가-글로벌-미국-인상-일부-정부",
-      "clusterKey": "투자/글로벌/관세",
+      "dedupeKey": "ustr-관세-국가-글로벌-미국-미국무역대표부-인상-일부",
+      "clusterKey": "관세/일부",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/koreamarket/",
+      "sourceUrl": "https://www.hankyung.com/article/2026022677951",
       "publishedAt": "2026-02-26T08:30:40+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-27_6",
-      "date": "2026-02-27",
-      "category": "국제",
-      "title": "미국-이란 최종 담판 전운, 트럼프 관세 구상 변화 가능성",
-      "summary": [
-        "미국이 이란과의 핵 협상을 앞두고 이란산 원유 운송 선박과 무기 조달 네트워크에 대한 고강도 제재를 발표했습니다.",
-        "트럼프 행정부의 글로벌 관세 부과 구상에 변화가 생길 수 있다는 전망이 제기되고 있습니다."
-      ],
-      "whyImportant": "미국과 이란의 핵 협상 결과와 미국의 관세 정책 변화는 국제 관계 및 무역 환경에 중대한 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 미국이 이란 제재 대상에 30여 곳을 지정하여 수출로를 차단하려 하고, 트럼프 행정부의 관세 정책에 변화 가능성이 제기되어 정책적 불확실성이 커지고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "재무부와 국무부는 이란산 원유와 석유제품을 운송해 온 다수의 그림자 선단 선박과 소유주, 운영자를 제재한다고 발표했는데요."
-        }
-      ],
-      "dedupeKey": "관세-구상-담판-미국-이란-전운-최종-트럼프",
-      "clusterKey": "제재/최종/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315009",
-      "publishedAt": "2026-02-25T22:47:49+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
       "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-02-27_7",
-      "date": "2026-02-27",
-      "category": "국제",
-      "title": "이란, 미국 핵협상 앞두고 타결 가능성 시사",
+      "id": "2026-02-28_9",
+      "date": "2026-02-28",
+      "category": "기술",
+      "title": "국토부, 건설공제조합에 시정 권고",
       "summary": [
-        "이란은 미국과의 핵협상을 앞두고 '역사적 합의'가 가시권에 있다고 밝혔습니다.",
-        "이란 외무장관은 상호 우려 해소 및 이익 달성을 위한 합의 가능성을 언급하며 외교를 강조했습니다.",
-        "이란은 핵무기 개발은 하지 않겠지만 평화적 핵기술 권리는 포기하지 않겠다고 덧붙였습니다."
+        "국토교통부는 건설공제조합 운영위원회의 문제성 발언에 대해 법률 검토 및 재발 방지 대책 마련을 권고했습니다.",
+        "국토부는 특정 개인의 부적절한 언행이 기관 전체의 신뢰와 품격에 직결된다고 지적했습니다."
       ],
-      "whyImportant": "이란 핵 협상의 결과는 국제 관계 및 중동 지역의 안보 환경에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 이란이 미국과의 핵협상을 통해 '역사적 합의' 가능성을 언급한 것은 중대한 외교적 움직임이며, 이는 향후 국제 관계에 영향을 줄 수 있습니다.",
+      "whyImportant": "이번 시정 권고는 건설공제조합 운영의 투명성과 공정성을 강화하는 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 국토부가 건설공제조합 운영위의 문제점에 대해 법률 검토 및 재발 방지 대책 마련을 권고한 것은 건설업계에 영향을 미칠 수 있습니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "파테메 모하제라니 이란 정부 대변인 \"학생들에게 항의할 권리가 있지만 '레드라인'(넘어서는 안 될 선)을 이해해야 한다\"며 \"국기는 반드시 보호해야 할 선 중 하나\"라고 강조했다."
-        },
-        {
-          "label": "security",
-          "evidence": "이란 외무부는 전날 \"설령 제한적일지라도 어떠한 공격도 침략 행위로 간주할 것\"이라고 경고한 바 있다."
-        }
-      ],
-      "dedupeKey": "미국-않겠다고-앞두고-외무장관-이란-타결-포기하지-핵협상",
-      "clusterKey": "관세/핵협상",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1314365",
-      "publishedAt": "2026-02-24T23:58:41+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-02-27_8",
-      "date": "2026-02-27",
-      "category": "국제",
-      "title": "이란 핵 협상 진전 주장에 유가 약세",
-      "summary": [
-        "이란이 미국과의 핵 협상에서 진전이 있다고 주장하며 국제 유가가 하락했습니다.",
-        "4월 인도분 서부텍사스산원유(WTI)는 배럴당 65.63달러에 거래되었습니다."
-      ],
-      "whyImportant": "이란 핵 협상 결과는 국제 에너지 시장의 변동성을 야기할 수 있습니다.",
-      "importanceRationale": "근거: 이란 핵 협상 진전 기대감으로 유가 투자자들이 매도 우위를 보였으며, 이는 시장에 직접적인 영향을 미치기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "한편 도널드 트럼프 미국 대통령은 전날 이란 공격과 관련해 군 내부에서 신중론이 나온다는 보도에 대해 “가짜뉴스”라고 비난하며 “결정은 내가 내린다”고 즉각 반박했다."
+          "evidence": "'갑질 의혹' 건설공제조합…국토부, 시정권고 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 부동산 프리즘 운영위 내 각종 모욕·욕설 반복 연임 김상수 위원장 '뒷말' 나와 운영위 내 각종 모욕·욕설 반복 연임 김상수 위원장 '뒷말' 나와 국내 최대 건설 전문 금융기관인 건설공제조합이 이른바 ‘갑질 의혹’으로 논란을 빚고 있다."
         },
         {
           "label": "market-demand",
-          "evidence": "이란 \"핵 협상 진전\" 주장에…유가 이틀 연속 약세 [오늘의 유가] - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 국제 유가가 이틀 연속 약세를 보였다."
+          "evidence": "국토부는 문제 발언에 대해 공식적인 법률 검토를 하라고 건설공제조합에 주문했다."
         }
       ],
-      "dedupeKey": "63달러-미국-서부텍사스산원유-약세-유가-이란-진전-협상",
-      "clusterKey": "관세/진전",
+      "dedupeKey": "건설공제조합-국토교통부-국토부-권고-문제성-시정-운영위원회-직결된다고",
+      "clusterKey": "국토부/건설공제조합/시정",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602253249i",
-      "publishedAt": "2026-02-25T00:49:58+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026022675541",
+      "publishedAt": "2026-02-26T07:26:22+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -258,29 +253,58 @@
       "isBriefing": false
     },
     {
-      "id": "2026-02-27_9",
-      "date": "2026-02-27",
+      "id": "2026-02-28_10",
+      "date": "2026-02-28",
       "category": "금융",
-      "title": "IMF, 올해 미국 금리 1회 인하 전망",
+      "title": "투자 유치 시 타임라인 제시 필수",
       "summary": [
-        "IMF는 올해 미국 성장률을 2.4%로 전망하며, 연말 금리는 3.25~3.50%가 될 것으로 예상했습니다.",
-        "이는 연준이 현재 금리에서 0.25%포인트 인하할 것으로 본 것입니다.",
-        "또한, IMF는 관세로 인한 불확실성이 활동 둔화를 가져올 수 있다고 분석했습니다."
+        "한국투자파트너스 황만순 대표는 투자 유치를 위해 투자금 사용 계획 타임라인 제시가 중요하다고 강조했습니다.",
+        "에이티넘인베스트먼트는 매년 700억~1000억원 정도를 바이오에 투자하는 전략을 사용 중이라고 밝혔습니다."
       ],
-      "whyImportant": "IMF의 미국 금리 인하 전망은 향후 경제 정책 방향 설정에 중요한 참고 자료가 될 수 있습니다.",
-      "importanceRationale": "근거: IMF가 올해 미국 금리를 1회 인하할 것으로 예상하며, 연말 금리를 구체적인 수치(3.25~3.50%)로 제시했기 때문입니다.",
+      "whyImportant": "벤처캐피탈의 투자 전략 변화는 관련 기업의 자금 조달 계획에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 에이티넘인베스트먼트가 매년 700억~1000억원 규모로 바이오 투자를 지속하고 있다는 점에서 중요도 3으로 판단됩니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "#IMF #연준 #기준금리 #금리인하 #관세 #이민단속 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)"
+          "evidence": "최현희 한국산업은행 벤처투자2실장은 “주요 선진국이 자국의 바이오 산업을 전략적으로 육성하고 있고, 국내에서도 바이오 투자 규모가 점점 커질 것”이라며 “해외 투자자들은 어떤 기업에 투자할 때 ‘저 기업이 자기 나라에서 기관 투자를 받는 데 성공했는지’를 중요하게 보기 때문에 국내에서 먼저 투자를 받고 해외로 나가는 게 좋다”고 조언했다."
         }
       ],
-      "dedupeKey": "1회-imf-금리-미국-불확실성-성장률-올해-인하",
-      "clusterKey": "관세/imf",
+      "dedupeKey": "1000억원-700억-유치-제시-타임라인-투자-필수-한국투자파트너스",
+      "clusterKey": "투자/유치",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315629",
-      "publishedAt": "2026-02-26T21:01:57+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022704561",
+      "publishedAt": "2026-02-27T08:12:22+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-28_11",
+      "date": "2026-02-28",
+      "category": "기술",
+      "title": "미국 증시 강세, 저평가된 국내 소재 섹터 주목 필요",
+      "summary": [
+        "미국 증시에서 에너지, 소재, 산업재 등 블루칼라 업종이 강세를 보이는 가운데, 국내 저평가된 소재 섹터에 대한 관심이 필요하다는 분석이 나왔습니다.",
+        "한국투자증권은 한국 주식시장에서 IT 외 업종에 대한 투자 아이디어 탐색 수요가 있는 상황에서, 미국 대비 한국 소재 업종의 상대적 성과 차이에 주목해야 한다고 밝혔습니다."
+      ],
+      "whyImportant": "국내 증시에서 저평가된 소재 섹터가 새로운 투자 대안으로 부상할 가능성을 시사합니다.",
+      "importanceRationale": "근거: 한국투자증권은 올해 이익이 성장하면서도 PBR이 1배 미만인 기업은 성장과 밸류에이션 측면에서 대안이 될 수 있다고 분석했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "염 연구원은 \"한국 주식시장에서 IT는 여전히 중요하지만, IT 이외의 업종에 대한 아이디어를 탐색하는 수요가 있는 상황에서 미국 대비 한국 소재 업종의 상대적인 성과가 차이난단 점에 주목해야 한다\"며 \"올해 이익이 성장하면서도 주가순자산비율(PBR)이 1배 미만인 기업은 성장과 밸류에이션 측면에서 대안이 될"
+        }
+      ],
+      "dedupeKey": "강세-국내-미국-섹터-소재-저평-주목-증시",
+      "clusterKey": "한미_투자/금융/증시",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/koreamarket/",
+      "publishedAt": "2026-02-26T23:29:20+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

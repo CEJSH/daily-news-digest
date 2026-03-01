@@ -1,33 +1,33 @@
 {
-  "date": "2026-03-01",
+  "date": "2026-03-02",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-01T07:51:59.137764+09:00",
+  "lastUpdatedAt": "2026-03-02T07:54:14.703891+09:00",
   "items": [
     {
-      "id": "2026-03-01_2",
-      "date": "2026-03-01",
-      "category": "금융",
-      "title": "이란의 호르무즈 해협 봉쇄로 유가 전망치 변동",
+      "id": "2026-03-02_1",
+      "date": "2026-03-02",
+      "category": "산업",
+      "title": "삼성 평택공장, HBM 전진기지 역할 및 메모리·파운드리 시너지 확대",
       "summary": [
-        "미국과 이스라엘의 이란 공격에 이란이 호르무즈 해협 봉쇄를 단행하여 유가 전망치가 크게 변동하고 있습니다.",
-        "바클레이즈는 주요 공급망 차단 시 브렌트유가 배럴당 80달러에 이를 것으로 전망했으며, SEB는 호르무즈 해협 봉쇄 시 배럴당 150달러까지 예상했습니다."
+        "삼성전자는 평택캠퍼스 생산능력 확충에 속도를 내고 있으며, 2028년 가동 예정인 P5 공사는 다음 달부터 작업자를 늘려 설비 공사에 들어갈 예정입니다.",
+        "평택 P4·P5는 AI 반도체 수요 확대에 대응하고 HBM 등 차세대 메모리 제품의 공급 대응력을 강화하기 위한 핵심 인프라로 구축될 예정입니다."
       ],
-      "whyImportant": "호르무즈 해협 봉쇄는 전 세계 원유 공급에 큰 영향을 미쳐 에너지 시장의 변동성을 확대시킬 수 있기 때문입니다.",
-      "importanceRationale": "근거: 호르무즈 해협은 전 세계 원유 공급량의 20%를 처리하는 핵심 지점이며, 이란은 1월 기준 하루 319만 배럴의 원유를 생산했습니다.",
+      "whyImportant": "삼성전자의 평택캠퍼스 확장은 AI 반도체 시장의 수요에 대응하고 차세대 메모리 기술 경쟁력을 강화하는 데 중요한 역할을 할 것입니다.",
+      "importanceRationale": "근거: 삼성전자는 2028년 가동 예정인 P5 공사에 대한 투자를 확대하고 있으며, 평택 P4·P5를 통해 HBM 등 차세대 메모리 제품의 공급 대응력을 강화할 계획입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "트레이딩뉴스는 공습이 시작되기 전인 지난 27일 브렌트유가 2.45%, WTI가 2.78% 급등한 것을 언급하면서 이를 \"경험 많은 원자재 트레이더들이 실시간으로 전쟁 프리미엄을 반영한 결과\"라고 설명했다."
+          "label": "capex",
+          "evidence": "오는 2028년 가동 예정인 삼성전자 평택 P5(5공장)는 다음 달부터 작업자를 기존보다 1만여명가량 늘리고, 철골 공사에 이어 클린룸 등 팹(공장) 구축을 위한 핵심 설비 공사에 들어가는 것으로 알려졌다."
         }
       ],
-      "dedupeKey": "80달러-변동-봉쇄-유가-이란-전망치-해협-호르무즈",
-      "clusterKey": "이스라엘이란/호르무즈/해협/봉쇄",
+      "dedupeKey": "hbm-메모리-삼성-시너지-역할-전진기지-파운드리-평택공장",
+      "clusterKey": "설비투자/반도체/삼성",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603011731i",
-      "publishedAt": "2026-02-28T19:55:52+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1316791",
+      "publishedAt": "2026-03-01T21:07:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -36,18 +36,43 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-01_3",
-      "date": "2026-03-01",
-      "category": "정책",
-      "title": "금융위, 이수스페셜티 방문하여 국민성장펀드 승인 논의",
+      "id": "2026-03-02_2",
+      "date": "2026-03-02",
+      "category": "국제",
+      "title": "미국, 이란 공격에 대한 정보 유출 가능성",
       "summary": [
-        "권대영 금융위원회 부위원장이 울산·경남 지역에서 지역벤처기업의 의견을 청취했습니다.",
-        "이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의했습니다."
+        "폴리마켓에서 6개의 계정이 2월 28일까지 미국의 이란 공격에 베팅하여 약 100만 달러의 이익을 얻었습니다.",
+        "이 계정들은 모두 2월에 새로 생성되었으며, 미국의 공격 시기에 대한 베팅만 했습니다."
       ],
-      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여줍니다.",
-      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 육성을 바란다고 언급했습니다.",
+      "whyImportant": "정보 유출은 시장 조작 및 불공정 거래를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 6개 계정이 미국 공격 시기에 대한 베팅으로 100만 달러의 이익을 얻었다는 점에서 정보 유출 가능성이 제기됩니다.",
       "impactSignals": [],
-      "dedupeKey": "국민성장펀드-금융위-금융위원회-부위원장-이수스페셜티-이수스페셜티케미컬-이차전지-지역벤처기업",
+      "dedupeKey": "6개-공격-미국-생성되었으며-유출-이란-정보-폴리마켓",
+      "clusterKey": "공격/정보/유출",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech",
+      "publishedAt": "2026-02-28T02:19:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_3",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "금융위, 이수스페셜티 방문하여 이차전지 산업 생태계 확대 논의",
+      "summary": [
+        "권대영 금융위원회 부위원장은 울산·경남 지역에서 '국민성장펀드·지방우대금융 지역간담회'를 개최했습니다.",
+        "이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 역할을 강조하며 산업 생태계 육성을 논의했습니다."
+      ],
+      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여주는 행보입니다.",
+      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의한 사실에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "금융위-금융위원회-부위원장-산업-생태계-이수스페셜티-이차전지-확대",
       "clusterKey": "금융/이수스페셜티",
       "matchedTo": null,
       "sourceName": "연합",
@@ -61,29 +86,94 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-01_4",
-      "date": "2026-03-01",
-      "category": "기술",
-      "title": "OpenAI, 아마존, 엔비디아, 소프트뱅크로부터 1,100억 달러 자금 조달 발표",
+      "id": "2026-03-02_4",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "조국혁신당, 서명옥 의원 윤리특위 제소 방침",
       "summary": [
-        "O AI는 금요일 아마존, 엔비디아, 소프트뱅크의 지원을 받아 1,100억 달러의 자금 조달을 발표했습니다.",
-        "이번 투자를 통해 O AI의 기업 가치는 7,300억 달러로 상승했습니다.",
-        "O AI는 또한 아마존 웹 서비스와의 기존 계약을 8년 동안 1,000억 달러로 확대한다고 밝혔습니다."
+        "조국혁신당은 서명옥 국민의힘 의원이 이해민 혁신당 사무총장을 손팻말로 폭행했다며 국회 윤리특별위원회에 제소할 것이라고 밝혔습니다.",
+        "혁신당은 서 의원이 '초상권 침해'라고 말한 뒤 손팻말을 휘둘렀다고 주장하며, 관련 영상 증거를 확보하여 윤리특위 제소 후 형사 고소 및 민사적 대응을 진행할 예정입니다."
       ],
-      "whyImportant": "이번 대규모 자금 조달은 AI 분야 경쟁 심화 속에서 OpenAI의 시장 지배력 유지 및 기술 개발에 중요한 역할을 할 것입니다.",
-      "importanceRationale": "근거: OpenAI는 2030년까지 총 컴퓨팅 비용으로 약 6,000억 달러를 목표로 하고 있으며, 2030년 총 수익은 2,800억 달러 이상으로 예상됩니다.",
+      "whyImportant": "국회 내 의원 간 물리적 충돌은 향후 정치적 갈등 심화 및 의회 기능 저하로 이어질 수 있어 중요합니다.",
+      "importanceRationale": "근거: 국회 본회의장에서 발생한 폭행 사건으로, 혁신당은 윤리특위 제소 및 형사 고소 등의 법적 대응을 예고하고 있어 정치적 파장이 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "사건은 이날 국민의힘 소속 의원 수십명이 재판소원제 도입법(헌법재판소법 개정안) 필리버스터(무제한 토론) 종결에 항의하는 국민의힘 의원들이 ‘사법 파괴 즉각 철회 ’등이 적힌 손팻말과 펼침막을 들고 시위를 벌이던 도중 벌어졌다."
+        },
+        {
+          "label": "security",
+          "evidence": "혁신당이 공개한 영상에는 서 의원이 “초상권 침해예요”라고 말한 뒤 손팻말을 위에서 아래로 휘두르는 장면이 담겼다."
+        }
+      ],
+      "dedupeKey": "국민의힘-방침-서명옥-윤리특별위원회-윤리특위-의원-제소-조국혁신당",
+      "clusterKey": "조국혁신당/서명옥/의원",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1247006.html",
+      "publishedAt": "2026-02-28T07:20:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_5",
+      "date": "2026-03-02",
+      "category": "금융",
+      "title": "미국·이란 충돌에 따른 코스피 영향 전망",
+      "summary": [
+        "증권가는 이번 주 코스피지수가 최고 6800선까지 오를 것으로 전망했습니다.",
+        "미국의 이란 공습과 3차 상법 개정안 효과, 수출 실적 등이 주요 이유입니다.",
+        "전문가들은 삼성전자와 SK하이닉스 등 대형 반도체주 비중 유지를 조언했습니다."
+      ],
+      "whyImportant": "미국과 이란의 지정학적 갈등이 국내 증시에 미치는 영향에 대한 투자 전략 수립에 참고할 수 있습니다.",
+      "importanceRationale": "근거: NH투자증권은 이번 주 코스피 예상 등락 범위를 5800~6800선으로 제시했으며, 2월 1~20일 수출액은 전년 대비 23.5% 증가했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "나 연구원은 \"올해 코스피 당기순이익 컨센서스 457조원 중 삼성전자와 SK하이닉스가 257조6000억원을 차지해 비중이 56%에 달한다\"며 \"두 종목 주가가 빠르게 상승하고 있지만, 코스피 순이익의 절반 이상을 좌우하는 반도체 어닝이 확대되는 구간에서는 주도주인 대형 반도체 비중을 유지할 필요가 있다\"고 분석했다."
+        }
+      ],
+      "dedupeKey": "6800선-따른-미국-영향-이란-증권-충돌-코스피",
+      "clusterKey": "실적/충돌",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022812336",
+      "publishedAt": "2026-02-28T23:00:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_6",
+      "date": "2026-03-02",
+      "category": "에너지",
+      "title": "삼성, HBM4E '전력망' 대수술",
+      "summary": [
+        "삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하여 HBM 내부 전력망을 분산하는 조직 개편을 시도합니다.",
+        "이를 통해 IR 드롭을 줄여 전압 마진을 개선하고 칩 자체의 신뢰성을 높일 수 있다고 합니다.",
+        "삼성전자는 자동 배선 배치 툴을 활용해 개발 시간을 단축했다고 밝혔습니다."
+      ],
+      "whyImportant": "HBM 업계에서 전력 문제는 칩 성능과 신뢰성에 중요한 영향을 미치므로, 삼성전자의 전력망 개선 노력은 차세대 HBM 경쟁력 확보에 중요합니다.",
+      "importanceRationale": "근거: 삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하고, 자동 배선 배치 툴을 활용해 개발 시간을 2.5주로 단축했다고 밝혔습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "“AI is going to happen everywhere. It’s transforming the whole economy, and the world needs a lot of collective computing power to meet the demand.”"
+          "evidence": "특히 올해 간판 제품인 HBM4는 엔비디아에 초도 양산품 출하를 경쟁사를 따돌리고 가장 먼저 해내면서 기세를 올리고 있습니다.오늘 이야기는 삼성의 HBM4의 다음 세대 제품인 HBM4E에 관한 이야기입니다."
         }
       ],
-      "dedupeKey": "100억-openai-달러-소프트뱅크-아마존-엔비디아-자금-조달",
-      "clusterKey": "투자/openai",
+      "dedupeKey": "hbm4e-공급망-내부-대수술-삼성-삼성전자-전력-전력망",
+      "clusterKey": "에너지/삼성",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html",
-      "publishedAt": "2026-02-27T13:31:11+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602281130i",
+      "publishedAt": "2026-02-28T04:02:47+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -92,143 +182,62 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-01_5",
-      "date": "2026-03-01",
-      "category": "국제",
-      "title": "국방부 장관, Anthropic을 공급망 위험으로 지정",
+      "id": "2026-03-02_7",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "금융위, 이란 사태 관련 시장 안정 조치 준비",
       "summary": [
-        "제프리 엡스타인과 4 의 연관성이 있습니다.",
-        "B ess I 는 최근 공개된 파일에서 법무부와 FBI가 4 , T-Mobile, AT&T에 소환장을 보내 출처를 조사한 방법을 보여주는 문서가 있다고 보도합니다."
+        "금융위원회는 이란 사태로 인한 중동 지정학적 긴장 고조에 따라 필요시 100조 원+α 규모의 시장안정조치를 시행할 수 있다고 밝혔습니다.",
+        "금융위는 '비상대응 금융시장반'을 즉각 가동하여 금융시장 상황을 24시간 모니터링할 것을 지시했습니다."
       ],
-      "whyImportant": "이번 조사는 법 집행 기관이 온라인 플랫폼을 통해 유출되는 정보의 출처를 추적하는 데 있어 중요한 선례를 남길 수 있습니다.",
-      "importanceRationale": "근거: 법무부와 FBI가 4chan, T-Mobile, AT&T를 조사한 것은 여러 기관에 영향을 미치는 중요한 사안입니다.",
-      "impactSignals": [],
-      "dedupeKey": "anthropic-공급망-국방부-법무부-위험-장관-지정-출처",
-      "clusterKey": "법집행/국방부",
-      "matchedTo": null,
-      "sourceName": "The",
-      "sourceUrl": "https://www.theverge.com/tech",
-      "publishedAt": "2026-02-28T02:19:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-01_6",
-      "date": "2026-03-01",
-      "category": "산업",
-      "title": "퀄컴, 인텔 수석부사장 케빈 오버클리 영입",
-      "summary": [
-        "퀄컴이 인텔 파운드리 수석부사장이었던 케빈 오버클리를 글로벌 운영·공급망 수석부사장으로 영입했습니다.",
-        "오버클리 부사장은 퀄컴의 전 세계 반도체 운영 전반을 담당하며, 아카시 팔키왈라 CFO 겸 COO에게 직접 보고할 예정입니다."
-      ],
-      "whyImportant": "퀄컴의 공급망 관리 및 반도체 운영 역량 강화에 기여할 수 있는 주요 인력 이동입니다.",
-      "importanceRationale": "근거: 퀄컴은 오버클리 부사장의 영입으로 고성능 저전력 컴퓨팅, AI, 연결 기술 등 공급 제품의 글로벌 운영을 강화할 것으로 기대하고 있습니다.",
+      "whyImportant": "금융 시장의 잠재적 변동성에 대응하기 위한 정부의 선제적 조치라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 금융위가 필요시 '100조원+α' 규모의 시장안정프로그램을 시행할 것을 지시한 것은 시장 안정에 대한 의지를 보여줍니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "이후 IBM에서 분사한 주문형 반도체(ASIC) 설계 기업 아베라 세미컨덕터의 최고경영자(CEO)를 맡아, 마벨 테크놀로지와 합병을 성사시켰다."
+          "label": "policy",
+          "evidence": "금융위 \"이란 사태 긴장 고조…필요 시 100조＋α 시장안정 조치\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 긴급 시장점검회의…'비상대응 금융시장반' 즉각 가동 아야톨라 세예드 알리 하메네이 이란 최고지도자가 미국과 이스라엘의 공격으로 사망하며 중동 지정학적 긴장이 고조된 가운데, 금융당국이 필요 시 100조원 규모 시장안정프로그램을 즉각 시행할 수 있다고 밝혔다."
         },
         {
-          "label": "capex",
-          "evidence": "마벨에서는 1500명 규모 엔지니어 팀을 이끌며 데이터센터용 서버 프로세서와 인공지능(AI)용 반도체 개발을 지휘했다."
+          "label": "market-demand",
+          "evidence": "다음 날인 2일은 국내 금융시장이 휴장인 가운데 아시아, 유럽, 미국 등 글로벌 시장 동향을 면밀히 모니터링하라고 주문했다."
         }
       ],
-      "dedupeKey": "수석부사장-수석부사장이었던-영입-오버클리-인텔-케빈-퀄컴-파운드리",
-      "clusterKey": "반도체/퀄컴",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=52858",
-      "publishedAt": "2026-02-27T08:06:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-01_7",
-      "date": "2026-03-01",
-      "category": "국제",
-      "title": "중국, '트럼프 협상력 약화' 판단 및 EU와 밀착",
-      "summary": [
-        "미국 연방대법원의 펜타닐 관세 무효화 판결 후 중국이 미국과의 6차 무역회담을 제안했습니다.",
-        "중국은 일본 방산 기업에 대한 수출 통제 조치를 발표하고, 독일과는 경제·무역 협력 강화를 논의했습니다."
-      ],
-      "whyImportant": "미국과 중국 간의 무역 협상 및 중국의 대외 전략 변화는 국제 경제 및 안보 환경에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 중국이 미국의 관세 압박에 대응하여 EU와의 협력을 강화하고 일본에 대한 수출 통제를 시행하는 등, 정책 변화가 나타나고 있기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "중국 상무부는 미쓰비시와 가와사키, IHI 계열 등 방산 관련 기업·기관 20곳을 수출통제 관리 명단에 올리고, 이중용도 품목의 대일 수출을 전면 금지했습니다."
-        }
-      ],
-      "dedupeKey": "미국-밀착-약화-연방대법원-중국-트럼프-판단-협상력",
-      "clusterKey": "미중_관세/트럼프",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315994",
-      "publishedAt": "2026-02-27T08:14:24+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-01_8",
-      "date": "2026-03-01",
-      "category": "에너지",
-      "title": "일본, 후쿠시마 사고 15년…원전 재가동 찬성 우세",
-      "summary": [
-        "아사히신문 여론조사 결과, 일본인 절반 이상이 원전 재가동에 찬성하는 것으로 나타났습니다.",
-        "2023년부터 찬성 비율이 반대보다 높아졌으며, 남성과 18~29세의 찬성 비율이 특히 높았습니다."
-      ],
-      "whyImportant": "원전 재가동에 대한 여론 변화는 향후 일본 에너지 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 아사히신문 여론조사에서 응답자 51%가 원전 재가동에 찬성했으며, 이는 2023년부터 찬성 비율이 높아진 결과입니다.",
-      "impactSignals": [],
-      "dedupeKey": "29세-사고-우세-원전-일본-재가동-찬성-후쿠시마",
-      "clusterKey": "후쿠시마/사고/재가동",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1316166",
-      "publishedAt": "2026-02-28T05:20:43+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-01_9",
-      "date": "2026-03-01",
-      "category": "기술",
-      "title": "엔비디아 주가 급락, 월가의 우려",
-      "summary": [
-        "엔비디아의 4분기 실적은 월가 기대를 상회했으나, 주가는 5% 폭락했습니다.",
-        "데이터센터 매출의 하이퍼스케일러 의존도가 높아, 이들의 자본 지출 둔화 가능성이 제기됩니다.",
-        "소프트웨어 업종으로 자금 유입이 관측되며, 하드웨어와 소프트웨어 수익률 격차 축소 가능성이 거론됩니다."
-      ],
-      "whyImportant": "하이퍼스케일러의 자본 지출 변화는 엔비디아를 포함한 AI 반도체 산업 전반에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 엔비디아 데이터센터 매출의 절반이 아마존, 마이크로소프트 등에 의존하며, 이들의 자본지출 증가율 둔화가 예상되어 중요도 3으로 판단합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "어제 장 마감 뒤 4분기 실적을 발표한 엔비디아, 세일즈포스, 스노우플레이크는 모두 월가 기대를 크게 넘는 좋은 매출, 이익을 공개했죠."
-        }
-      ],
-      "dedupeKey": "급락-데이터센터-소프트웨어-엔비디아-월가-주가-하드웨어-하이퍼스케일러",
-      "clusterKey": "실적/엔비디아/투자",
+      "dedupeKey": "금융위-금융위원회-사태-시장-안정-이란-조치-준비",
+      "clusterKey": "금융/사태",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602278403i",
-      "publishedAt": "2026-02-26T23:29:20+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026030123666",
+      "publishedAt": "2026-03-01T07:18:29+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_8",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "아동수당법 국회 본회의 통과",
+      "summary": [
+        "국회 본회의에서 아동수당법이 통과되었습니다.",
+        "아동수당법은 2030년까지 지급 연령을 만 8세 미만에서 만 13세 미만으로 상향하는 내용을 담고 있습니다."
+      ],
+      "whyImportant": "아동수당 지급 연령 확대는 향후 아동 복지 정책 및 관련 예산에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 아동수당법은 2030년까지 지급 연령을 만 13세 미만으로 상향하는 내용을 담고 있어 정책 변화의 시행 시점이 명시되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "아동수당법, 국회 본회의 통과 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 국민투표법도 함께 처리 국민투표법과 아동수당법이 1일 국회 본회의 문턱을 넘어섰다."
+        }
+      ],
+      "dedupeKey": "13세-8세-국회-본회-아동수당법-연령-지급-통과",
+      "clusterKey": "아동수당법/국회/본회",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030127681",
+      "publishedAt": "2026-03-01T12:00:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

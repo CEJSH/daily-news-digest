@@ -1,33 +1,64 @@
 {
-  "date": "2026-03-02",
+  "date": "2026-03-03",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-02T07:54:14.703891+09:00",
+  "lastUpdatedAt": "2026-03-03T07:58:38.544448+09:00",
   "items": [
     {
-      "id": "2026-03-02_1",
-      "date": "2026-03-02",
-      "category": "산업",
-      "title": "삼성 평택공장, HBM 전진기지 역할 및 메모리·파운드리 시너지 확대",
+      "id": "2026-03-03_1",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "아마존 UAE 데이터센터 공격으로 서비스 중단",
       "summary": [
-        "삼성전자는 평택캠퍼스 생산능력 확충에 속도를 내고 있으며, 2028년 가동 예정인 P5 공사는 다음 달부터 작업자를 늘려 설비 공사에 들어갈 예정입니다.",
-        "평택 P4·P5는 AI 반도체 수요 확대에 대응하고 HBM 등 차세대 메모리 제품의 공급 대응력을 강화하기 위한 핵심 인프라로 구축될 예정입니다."
+        "아마존의 아랍에미리트(UAE) 데이터센터가 공격을 받아 클라우드 서비스가 중단되었습니다.",
+        "이번 사태로 UAE와 바레인에서 AWS 서비스가 중단되었으며, 금융 기관들이 영향을 받았습니다.",
+        "미국-이란 군사 충돌로 데이터센터 가동이 중단된 첫 사례일 가능성이 제기됩니다."
       ],
-      "whyImportant": "삼성전자의 평택캠퍼스 확장은 AI 반도체 시장의 수요에 대응하고 차세대 메모리 기술 경쟁력을 강화하는 데 중요한 역할을 할 것입니다.",
-      "importanceRationale": "근거: 삼성전자는 2028년 가동 예정인 P5 공사에 대한 투자를 확대하고 있으며, 평택 P4·P5를 통해 HBM 등 차세대 메모리 제품의 공급 대응력을 강화할 계획입니다.",
+      "whyImportant": "이번 사건은 중동 지역 데이터센터에 대한 물리적 공격 가능성을 보여주며, 향후 유사 사례 발생 시 서비스 연속성에 대한 우려를 야기할 수 있습니다.",
+      "importanceRationale": "근거: UAE 아마존 데이터센터 공격으로 AWS 서비스가 중단되었고, 이는 미국-이란 군사 충돌과 연관되었을 가능성이 있으며, 중동 국가들의 장기 계획에 불확실성을 초래할 수 있다고 언급되었습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "오는 2028년 가동 예정인 삼성전자 평택 P5(5공장)는 다음 달부터 작업자를 기존보다 1만여명가량 늘리고, 철골 공사에 이어 클린룸 등 팹(공장) 구축을 위한 핵심 설비 공사에 들어가는 것으로 알려졌다."
+          "label": "security",
+          "evidence": "아마존의 데이터센터가 공격을 받아 서비스 중단 사태가 벌어졌다."
         }
       ],
-      "dedupeKey": "hbm-메모리-삼성-시너지-역할-전진기지-파운드리-평택공장",
-      "clusterKey": "설비투자/반도체/삼성",
+      "dedupeKey": "uae-공격-데이터센터-미국-서비스-아랍에미리트-아마존-클라우드",
+      "clusterKey": "클라우드/아마존",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603024213i",
+      "publishedAt": "2026-03-02T15:34:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_2",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르 LNG 시설 가동 중단으로 천연가스 가격 급등",
+      "summary": [
+        "이란의 드론 공격으로 카타르 최대 액화천연가스 생산기지 가동이 중단되었습니다.",
+        "네덜란드 TTF 거래소에서 천연가스 선물 가격이 46% 폭등했습니다."
+      ],
+      "whyImportant": "카타르는 세계 2위 LNG 수출국으로, 이번 사태가 장기화될 경우 에너지 시장에 큰 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 카타르 LNG 시설 가동 중단으로 네덜란드 TTF 거래소에서 천연가스 선물 가격이 46% 폭등하여 에너지 시장에 미치는 영향이 큽니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이란의 드론 공격으로 카타르 최대 액화천연가스 생산기지인 라스라판 시설 가동이 중단되면서 국제 천연가스 가격이 급등했습니다."
+        }
+      ],
+      "dedupeKey": "lng-가격-가동-급등-시설-액화천연가스-천연가스-카타르",
+      "clusterKey": "에너지/카타르",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1316791",
-      "publishedAt": "2026-03-01T21:07:01+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317288",
+      "publishedAt": "2026-03-02T20:40:26+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -36,144 +67,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-02_2",
-      "date": "2026-03-02",
-      "category": "국제",
-      "title": "미국, 이란 공격에 대한 정보 유출 가능성",
+      "id": "2026-03-03_3",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르, 이란 드론 공격에 세계 최대 LNG 시설 생산 중단",
       "summary": [
-        "폴리마켓에서 6개의 계정이 2월 28일까지 미국의 이란 공격에 베팅하여 약 100만 달러의 이익을 얻었습니다.",
-        "이 계정들은 모두 2월에 새로 생성되었으며, 미국의 공격 시기에 대한 베팅만 했습니다."
+        "이란의 드론 공격으로 카타르가 세계 최대 LNG 생산 시설 가동을 중단했습니다.",
+        "유럽 가스 가격이 4년 만에 최대 폭으로 급등했습니다.",
+        "사우디 정유 시설도 드론 공격으로 폐쇄됐으나 현재 상황은 통제되고 있습니다."
       ],
-      "whyImportant": "정보 유출은 시장 조작 및 불공정 거래를 야기할 수 있습니다.",
-      "importanceRationale": "근거: 6개 계정이 미국 공격 시기에 대한 베팅으로 100만 달러의 이익을 얻었다는 점에서 정보 유출 가능성이 제기됩니다.",
-      "impactSignals": [],
-      "dedupeKey": "6개-공격-미국-생성되었으며-유출-이란-정보-폴리마켓",
-      "clusterKey": "공격/정보/유출",
-      "matchedTo": null,
-      "sourceName": "The",
-      "sourceUrl": "https://www.theverge.com/tech",
-      "publishedAt": "2026-02-28T02:19:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-02_3",
-      "date": "2026-03-02",
-      "category": "정책",
-      "title": "금융위, 이수스페셜티 방문하여 이차전지 산업 생태계 확대 논의",
-      "summary": [
-        "권대영 금융위원회 부위원장은 울산·경남 지역에서 '국민성장펀드·지방우대금융 지역간담회'를 개최했습니다.",
-        "이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 역할을 강조하며 산업 생태계 육성을 논의했습니다."
-      ],
-      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여주는 행보입니다.",
-      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의한 사실에서 중요성을 확인할 수 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "금융위-금융위원회-부위원장-산업-생태계-이수스페셜티-이차전지-확대",
-      "clusterKey": "금융/이수스페셜티",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315882",
-      "publishedAt": "2026-02-27T05:00:26+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-02_4",
-      "date": "2026-03-02",
-      "category": "정책",
-      "title": "조국혁신당, 서명옥 의원 윤리특위 제소 방침",
-      "summary": [
-        "조국혁신당은 서명옥 국민의힘 의원이 이해민 혁신당 사무총장을 손팻말로 폭행했다며 국회 윤리특별위원회에 제소할 것이라고 밝혔습니다.",
-        "혁신당은 서 의원이 '초상권 침해'라고 말한 뒤 손팻말을 휘둘렀다고 주장하며, 관련 영상 증거를 확보하여 윤리특위 제소 후 형사 고소 및 민사적 대응을 진행할 예정입니다."
-      ],
-      "whyImportant": "국회 내 의원 간 물리적 충돌은 향후 정치적 갈등 심화 및 의회 기능 저하로 이어질 수 있어 중요합니다.",
-      "importanceRationale": "근거: 국회 본회의장에서 발생한 폭행 사건으로, 혁신당은 윤리특위 제소 및 형사 고소 등의 법적 대응을 예고하고 있어 정치적 파장이 예상됩니다.",
+      "whyImportant": "중동 지역의 지정학적 불안정이 에너지 공급망에 미치는 영향을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 이란의 드론 공격으로 카타르 LNG 생산이 중단되고 유럽 가스 가격이 45% 이상 급등하여 에너지 시장에 미치는 영향이 큽니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "사건은 이날 국민의힘 소속 의원 수십명이 재판소원제 도입법(헌법재판소법 개정안) 필리버스터(무제한 토론) 종결에 항의하는 국민의힘 의원들이 ‘사법 파괴 즉각 철회 ’등이 적힌 손팻말과 펼침막을 들고 시위를 벌이던 도중 벌어졌다."
+          "label": "market-demand",
+          "evidence": "이에 따라 이 날 유럽 가스 가격이 45% 이상 급등, 약 4년만에 가장 큰 폭으로 상승했다."
         },
         {
           "label": "security",
-          "evidence": "혁신당이 공개한 영상에는 서 의원이 “초상권 침해예요”라고 말한 뒤 손팻말을 위에서 아래로 휘두르는 장면이 담겼다."
+          "evidence": "카타르, 이란 드론 공격에 세계최대 LNG 시설 생산 중단"
         }
       ],
-      "dedupeKey": "국민의힘-방침-서명옥-윤리특별위원회-윤리특위-의원-제소-조국혁신당",
-      "clusterKey": "조국혁신당/서명옥/의원",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1247006.html",
-      "publishedAt": "2026-02-28T07:20:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-02_5",
-      "date": "2026-03-02",
-      "category": "금융",
-      "title": "미국·이란 충돌에 따른 코스피 영향 전망",
-      "summary": [
-        "증권가는 이번 주 코스피지수가 최고 6800선까지 오를 것으로 전망했습니다.",
-        "미국의 이란 공습과 3차 상법 개정안 효과, 수출 실적 등이 주요 이유입니다.",
-        "전문가들은 삼성전자와 SK하이닉스 등 대형 반도체주 비중 유지를 조언했습니다."
-      ],
-      "whyImportant": "미국과 이란의 지정학적 갈등이 국내 증시에 미치는 영향에 대한 투자 전략 수립에 참고할 수 있습니다.",
-      "importanceRationale": "근거: NH투자증권은 이번 주 코스피 예상 등락 범위를 5800~6800선으로 제시했으며, 2월 1~20일 수출액은 전년 대비 23.5% 증가했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "나 연구원은 \"올해 코스피 당기순이익 컨센서스 457조원 중 삼성전자와 SK하이닉스가 257조6000억원을 차지해 비중이 56%에 달한다\"며 \"두 종목 주가가 빠르게 상승하고 있지만, 코스피 순이익의 절반 이상을 좌우하는 반도체 어닝이 확대되는 구간에서는 주도주인 대형 반도체 비중을 유지할 필요가 있다\"고 분석했다."
-        }
-      ],
-      "dedupeKey": "6800선-따른-미국-영향-이란-증권-충돌-코스피",
-      "clusterKey": "실적/충돌",
+      "dedupeKey": "lng-공격-드론-세계-시설-이란-최대-카타르",
+      "clusterKey": "카타르/드론/공격",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026022812336",
-      "publishedAt": "2026-02-28T23:00:04+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-02_6",
-      "date": "2026-03-02",
-      "category": "에너지",
-      "title": "삼성, HBM4E '전력망' 대수술",
-      "summary": [
-        "삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하여 HBM 내부 전력망을 분산하는 조직 개편을 시도합니다.",
-        "이를 통해 IR 드롭을 줄여 전압 마진을 개선하고 칩 자체의 신뢰성을 높일 수 있다고 합니다.",
-        "삼성전자는 자동 배선 배치 툴을 활용해 개발 시간을 단축했다고 밝혔습니다."
-      ],
-      "whyImportant": "HBM 업계에서 전력 문제는 칩 성능과 신뢰성에 중요한 영향을 미치므로, 삼성전자의 전력망 개선 노력은 차세대 HBM 경쟁력 확보에 중요합니다.",
-      "importanceRationale": "근거: 삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하고, 자동 배선 배치 툴을 활용해 개발 시간을 2.5주로 단축했다고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "특히 올해 간판 제품인 HBM4는 엔비디아에 초도 양산품 출하를 경쟁사를 따돌리고 가장 먼저 해내면서 기세를 올리고 있습니다.오늘 이야기는 삼성의 HBM4의 다음 세대 제품인 HBM4E에 관한 이야기입니다."
-        }
-      ],
-      "dedupeKey": "hbm4e-공급망-내부-대수술-삼성-삼성전자-전력-전력망",
-      "clusterKey": "에너지/삼성",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202602281130i",
-      "publishedAt": "2026-02-28T04:02:47+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202603024168i",
+      "publishedAt": "2026-03-02T13:38:20+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -182,32 +102,94 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-02_7",
-      "date": "2026-03-02",
-      "category": "정책",
-      "title": "금융위, 이란 사태 관련 시장 안정 조치 준비",
+      "id": "2026-03-03_5",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르 LNG 시설 생산 중단으로 유럽·아시아 가스 가격 급등",
       "summary": [
-        "금융위원회는 이란 사태로 인한 중동 지정학적 긴장 고조에 따라 필요시 100조 원+α 규모의 시장안정조치를 시행할 수 있다고 밝혔습니다.",
-        "금융위는 '비상대응 금융시장반'을 즉각 가동하여 금융시장 상황을 24시간 모니터링할 것을 지시했습니다."
+        "카타르 국영 에너지 기업의 세계 최대 LNG 수출 시설이 이란 드론 공격으로 생산을 중단했습니다.",
+        "유럽 가스 벤치마크 가격이 한때 46% 폭등하며 에너지 위기 이후 최대 상승폭을 기록했습니다.",
+        "글로벌 연료 수송의 핵심 통로인 호르무즈 해협을 통과하는 LNG 운반선 운항도 중단되었습니다."
       ],
-      "whyImportant": "금융 시장의 잠재적 변동성에 대응하기 위한 정부의 선제적 조치라는 점에서 중요합니다.",
-      "importanceRationale": "근거: 금융위가 필요시 '100조원+α' 규모의 시장안정프로그램을 시행할 것을 지시한 것은 시장 안정에 대한 의지를 보여줍니다.",
+      "whyImportant": "카타르 LNG 시설의 생산 중단은 전 세계 가스 공급망에 차질을 초래하여 에너지 시장의 불안정을 심화시킬 수 있습니다.",
+      "importanceRationale": "근거: 카타르 라스라판 시설은 전 세계 LNG 공급의 약 5분의 1을 차지하며, 호르무즈 해협은 전 세계 LNG의 약 20%가 통과하는 핵심 통로이기 때문입니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "금융위 \"이란 사태 긴장 고조…필요 시 100조＋α 시장안정 조치\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 긴급 시장점검회의…'비상대응 금융시장반' 즉각 가동 아야톨라 세예드 알리 하메네이 이란 최고지도자가 미국과 이스라엘의 공격으로 사망하며 중동 지정학적 긴장이 고조된 가운데, 금융당국이 필요 시 100조원 규모 시장안정프로그램을 즉각 시행할 수 있다고 밝혔다."
+          "label": "market-demand",
+          "evidence": "카타르 국영 에너지기업의 세계 최대 액화천연가스(LNG) 수출 시설이 이란의 드론 공격으로 생산을 중단하면서 유럽과 아시아 가스 가격이 급등하고 글로벌 에너지 시장이 크게 흔들릴 것이라는 우려가 번지고 있다."
+        },
+        {
+          "label": "security",
+          "evidence": "카타르에너지는 라스라판 시설이 이란이 발사한 드론 2기의 공격 대상이 돼서 LNG 생산을 중단했다고 발표했다."
+        }
+      ],
+      "dedupeKey": "lng-가격-가스-생산-시설-아시아-유럽-카타르",
+      "clusterKey": "에너지/카타르",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=655560",
+      "publishedAt": "2026-03-02T16:30:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_6",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "Apple, M4 프로세서로 업그레이드된 새로운 iPad Air 출시",
+      "summary": [
+        "Apple은 M4 프로세서로 구동되는 새로운 iPad A 를 발표했습니다.",
+        "새로운 iPad A 는 Wi-Fi 7, Bluetooth 6, T ead로 무선 연결이 향상되었습니다.",
+        "M4를 탑재한 새로운 iPad A 는 M3를 탑재한 iPad A 보다 최대 30% 더 빠릅니다."
+      ],
+      "whyImportant": "Apple의 새로운 iPad Air 출시로 태블릿 시장에서의 경쟁이 심화될 수 있습니다.",
+      "importanceRationale": "근거: M4 프로세서를 탑재한 새로운 iPad Air는 M3 모델보다 최대 30% 더 빠르며, Wi-Fi 7, Bluetooth 6 등의 연결성을 제공합니다.",
+      "impactSignals": [],
+      "dedupeKey": "air-apple-bluetooth-ead-ipad-구동-업그레이드-프로세서",
+      "clusterKey": "apple/프로세서/업그레이드",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech/886433/apple-ipad-air-2026-launch-price-specs-availability",
+      "publishedAt": "2026-03-02T14:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_7",
+      "date": "2026-03-03",
+      "category": "금융",
+      "title": "중국 AI 기업 미니맥스, 작년 매출 159% 증가",
+      "summary": [
+        "중국 AI 스타트업 미니맥스의 작년 매출이 전년 대비 159% 급증했습니다.",
+        "매출은 7천900만 달러를 기록했지만, 연구·개발 비용 증가로 손실 규모도 302% 증가했습니다.",
+        "미니맥스는 200개 국가 및 지역에서 2억 3천600만 명 이상의 사용자를 보유하고 있습니다."
+      ],
+      "whyImportant": "미니맥스의 성장은 중국 AI 산업의 발전과 글로벌 시장 경쟁 심화를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 미니맥스의 매출이 159% 증가한 7천900만 달러를 기록했으며, 200개 국가 및 지역에서 2억 3천600만 명 이상의 사용자를 확보했다는 점에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "미니맥스는 이날 발표를 통해 작년 매출이 전년 동기 대비 159% 증가한 7천900만달러(약 1천156억원)를 기록해 블룸버그 예상치인 7천139만달러(약 1천45억원)를 상회했다."
         },
         {
           "label": "market-demand",
-          "evidence": "다음 날인 2일은 국내 금융시장이 휴장인 가운데 아시아, 유럽, 미국 등 글로벌 시장 동향을 면밀히 모니터링하라고 주문했다."
+          "evidence": "미니맥스 주가는 올해 1월 초 기업공개(IPO) 이후 성장하는 중국 AI 기업에 대한 투자 수요에 힘입어 4배 이상 급등했다."
         }
       ],
-      "dedupeKey": "금융위-금융위원회-사태-시장-안정-이란-조치-준비",
-      "clusterKey": "금융/사태",
+      "dedupeKey": "200개-7천900-기업-매출-미니맥스-작년-중국-증가",
+      "clusterKey": "실적/기업",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030123666",
-      "publishedAt": "2026-03-01T07:18:29+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317241",
+      "publishedAt": "2026-03-02T12:50:39+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -216,28 +198,135 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-02_8",
-      "date": "2026-03-02",
-      "category": "정책",
-      "title": "아동수당법 국회 본회의 통과",
+      "id": "2026-03-03_8",
+      "date": "2026-03-03",
+      "category": "국제",
+      "title": "기술 노동자들이 미국 국방부에 Anthropic의 공급망 위험 지정 철회를 촉구합니다",
       "summary": [
-        "국회 본회의에서 아동수당법이 통과되었습니다.",
-        "아동수당법은 2030년까지 지급 연령을 만 8세 미만에서 만 13세 미만으로 상향하는 내용을 담고 있습니다."
+        "수백 명의 기술 노동자들이 국방부에 A opic을 '공급망 위험'으로 지정한 것을 철회할 것을 촉구하는 공개 서한에 서명했습니다.",
+        "이 서한은 또한 의회에 미국 기술 회사에 대한 이러한 특별 권한 사용이 적절한지 조사할 것을 요구합니다.",
+        "이는 A opic이 군에 AI 시스템에 대한 무제한 액세스를 제공하는 것을 거부한 후 발생했습니다."
       ],
-      "whyImportant": "아동수당 지급 연령 확대는 향후 아동 복지 정책 및 관련 예산에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 아동수당법은 2030년까지 지급 연령을 만 13세 미만으로 상향하는 내용을 담고 있어 정책 변화의 시행 시점이 명시되어 있습니다.",
+      "whyImportant": "이번 사태는 정부가 기술 계약 조건에 대한 이견을 이유로 기업에 불이익을 줄 수 있다는 선례를 남길 수 있어 중요합니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 Anthropic을 공격한 직후 OpenAI가 국방부의 기밀 환경에 모델을 배포하기로 합의한 것은 정부의 압박 가능성을 시사합니다.",
       "impactSignals": [
         {
+          "label": "market-demand",
+          "evidence": "Hundreds of tech workers have signed an open letter urging the Department of Defense to withdraw its designation of Anthropic as a “supply-chain risk.” The letter also calls on Congress to step in and “examine whether the use of these extraordinary authorities against an American technology company is appropriate.” The letter includes signatories from major technology and venture capital firms, including OpenAI, Slack, IBM, Cursor, Salesforce Ventures, and more."
+        },
+        {
+          "label": "security",
+          "evidence": "Boaz Barak, an OpenAI researcher, wrote in a social media post on Monday that blocking governments from using AI to do mass domestic surveillance is also his “personal red line” and “it should be all of ours.” Moments after Trump publicly attacked Anthropic, OpenAI announced it had reached a deal of its own for its models to be deployed in the DOD’s classified environments."
+        },
+        {
           "label": "policy",
-          "evidence": "아동수당법, 국회 본회의 통과 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 국민투표법도 함께 처리 국민투표법과 아동수당법이 1일 국회 본회의 문턱을 넘어섰다."
+          "evidence": "The DOD said it had no plans to do either of those things but that it didn’t believe it should be limited by the rules of a vendor."
         }
       ],
-      "dedupeKey": "13세-8세-국회-본회-아동수당법-연령-지급-통과",
-      "clusterKey": "아동수당법/국회/본회",
+      "dedupeKey": "anthropic-공급망-국방부-기술-노동자들-미국-위험-지정",
+      "clusterKey": "기술/국방부/anthropic",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/",
+      "publishedAt": "2026-03-02T17:18:34+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_9",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "정부, 중동 체류자 1.7만 명 육로 대피 계획 수립",
+      "summary": [
+        "정부는 아랍에미리트(UAE) 등 중동 7개국에 특별여행주의보를 발령했습니다.",
+        "외교부는 중동 현지에 체류 중인 1만 7천 명을 위한 육로 대피 계획을 수립 중입니다.",
+        "국내 해운사에는 호르무즈 해협 운항 자제를 권고했습니다."
+      ],
+      "whyImportant": "정부의 이번 조치는 중동 지역의 긴장 고조에 따른 국민 안전 확보를 위한 결정입니다.",
+      "importanceRationale": "근거: 중동 7개국에 특별여행주의보를 발령하고, 현지 체류 중인 1만 7천 명의 국민을 위한 육로 대피 계획을 수립하는 등 정부의 구체적인 대응책이 제시되었습니다.",
+      "impactSignals": [],
+      "dedupeKey": "7개국-7만-대피-수립-육로-정부-중동-체류자",
+      "clusterKey": "체류자/7만/육로",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030127681",
-      "publishedAt": "2026-03-01T12:00:01+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026030240731",
+      "publishedAt": "2026-03-02T11:32:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_10",
+      "date": "2026-03-03",
+      "category": "정책",
+      "title": "국회 외통위, 미국의 이란 공습 관련 긴급 현안 질의 예정",
+      "summary": [
+        "국회 외교통일위원회가 미국의 이란 공습과 관련해 긴급 현안 질의를 6일에 진행합니다.",
+        "중동 정세 불안정이 국내외 경제, 외교, 안보에 미칠 영향과 정부 대응책이 논의될 예정입니다."
+      ],
+      "whyImportant": "이번 긴급 현안 질의는 중동 지역의 지정학적 리스크가 국내 경제 및 외교 안보에 미치는 영향을 점검하고 정부의 대응책을 논의하는 데 중요한 계기가 될 것입니다.",
+      "importanceRationale": "근거: 6일에 예정된 긴급 현안 질의에서 중동 정세 불안정이 국내외 경제에 미칠 영향과 정부 대응책이 다뤄질 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "현안 질의에서는 이란 공습 사태가 불러온 중동 정세의 불안정이 유가와 환율을 비롯한 국내외 경제와 우리 정부의 외교 노선, 안보 지형에 미칠 영향과 정부의 대응책 등이 다뤄질 것으로 예상됩니다."
+        },
+        {
+          "label": "capex",
+          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정영빈(jyb21@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "공습-국회-미국-외교통일위원회-외통위-이란-질의-현안",
+      "clusterKey": "미중동/국회/외통위/공습",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317100",
+      "publishedAt": "2026-03-02T06:09:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_11",
+      "date": "2026-03-03",
+      "category": "정책",
+      "title": "국회 청원 제도 개선 요구",
+      "summary": [
+        "국회에 계류 중인 청원 270건 중 90%에 달하는 243건이 법정 심사 기한을 넘긴 채 표류하고 있습니다.",
+        "21대 국회 청원 폐기율은 83%로 역대 최고치를 기록했으며, 본회의를 통과해 채택된 청원은 단 한 건도 없습니다."
+      ],
+      "whyImportant": "국회 청원 제도의 실효성 문제가 제기됨에 따라 제도 개선 논의가 필요합니다.",
+      "importanceRationale": "근거: 21대 국회에서 청원 폐기율이 83%를 기록하며 제도 개선의 필요성이 제기되었고, 270건 중 243건이 심사 기한을 넘겨 표류하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "이후 20대 국회 당시 문희상 국회의장 직속 국회 혁신자문위원회의 권고를 바탕으로 2019년 4월 국회법이 개정됐고, 이듬해인 2020년 1월 국회청원심사규칙 개정을 통해 온라인 기반의 전자청원(국민동의 청원) 제도가 본격 도입됐다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "현행 국회법 제125조 5항은 청원이 회부된 날로부터 90일 이내에 심사 결과를 보고하고, 특별한 사유가 있을 경우 60일 범위에서 한 차례만 기간을 연장할 수 있도록 규정하고 있다.이 같은 구조적 맹점의 결과는 수치로 나타났다."
+        },
+        {
+          "label": "policy",
+          "evidence": "이 기간 본회의를 통과해 채택된 청원은 단 한 건도 없었다.감소세를 보이던 청원 건수는 개원 후 22개월이 된 22대 국회 들어 279건으로 급증했다."
+        }
+      ],
+      "dedupeKey": "21대-243건-270건-개선-계류-국회-제도-청원",
+      "clusterKey": "국회/청원/제도",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030234667",
+      "publishedAt": "2026-03-02T07:41:17+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

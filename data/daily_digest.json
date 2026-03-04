@@ -1,42 +1,33 @@
 {
-  "date": "2026-03-04",
+  "date": "2026-03-05",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-04T07:57:25.503744+09:00",
+  "lastUpdatedAt": "2026-03-05T08:02:15.959320+09:00",
   "items": [
     {
-      "id": "2026-03-04_1",
-      "date": "2026-03-04",
-      "category": "산업",
-      "title": "호르무즈 해협 의존도가 높은 품목에 대한 수입 다변화 대비",
+      "id": "2026-03-05_1",
+      "date": "2026-03-05",
+      "category": "에너지",
+      "title": "이란의 호르무즈 해협 봉쇄, LNG 가격 상승 우려",
       "summary": [
-        "산업통상부는 호르무즈 해협 봉쇄 가능성에 대비해 에너지·소부장 제품의 수입선 다변화를 지원하기로 했습니다.",
-        "반도체 검사 장비는 미국 수입으로 대체하고, 정밀화학제품은 국내 생산 및 수급 대체 방안을 마련할 예정입니다.",
-        "수입 나프타의 경우 업계와 협의하여 수출 물량의 국내 전환 등을 추진합니다."
+        "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄로 액화천연가스(LNG) 가격 상승 우려가 커지고 있습니다.",
+        "호르무즈 해협은 LNG 수송의 주요 통로이므로, 봉쇄 시 LNG 가격에 영향을 줄 수 있습니다."
       ],
-      "whyImportant": "호르무즈 해협 봉쇄 시 발생할 수 있는 국내 산업 공급망 차질에 선제적으로 대응하기 위한 정부 차원의 대비책이라는 점에서 중요합니다.",
-      "importanceRationale": "근거: 호르무즈 해협 이용 비중이 높은 수입 나프타(54%)와 반도체 측정·검사기기 등 14개 품목에 대한 공급망 차질 방지 대책을 포함하고 있습니다.",
+      "whyImportant": "호르무즈 해협 봉쇄는 에너지 수급에 중요한 영향을 미칠 수 있는 지정학적 리스크 요인입니다.",
+      "importanceRationale": "근거: 이란의 호르무즈 해협 봉쇄가 LNG 가격 상승 우려를 야기한다는 내용으로, 에너지 시장에 미치는 잠재적 영향을 시사합니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "산업부 '3차 실물경제 점검회의'…김정관, 필리핀서 화상 참여·주재 석유·가스 비축량 208일분…\"만일 사태 대비해 추가 공급선 확보\" 반도체 검사기기, 美 수입 가능…정밀화학제품, 국내생산·수급대체 가능 (서울=연합뉴스) 김동규 기자 = 미국과 이스라엘의 공격을 받은 이란이 주요 해상 수송로인 호르무즈 해협 봉쇄 카드를 꺼내면서 반도체 장비 및 수입 납사(나프타) 등 호르무즈 해협 이용 비중이 높은 한국의 수입 품목에 대한 수급 우려가 커지고 있다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "구체적으로 반도체 제조용 검사부품·장비는 미국으로부터 대체 수입이 가능하고, 브롬 등 일부 정밀화학제품도 국내 생산, 재고 활용, 수급 대체 등을 통해 공급망 영향을 최소화할 수 있는 만큼 정부가 맞춤형 대응을 지원하기로 했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "플랜트의 경우 현재 우리 기업 건설 현장의 피해는 없는 것으로 파악됐다."
+          "evidence": "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄 영향으로 액화천연가스(LNG) 가격 상승 우려가 커지고 있다."
         }
       ],
-      "dedupeKey": "높은-다변화-대비-수입-의존-품목-해협-호르무즈",
-      "clusterKey": "관세/호르무즈",
+      "dedupeKey": "lng-가격-미국-봉쇄-상승-이란-해협-호르무즈",
+      "clusterKey": "이스라엘이란/호르무즈/해협/봉쇄",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317853",
-      "publishedAt": "2026-03-03T08:25:51+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318436",
+      "publishedAt": "2026-03-04T05:30:21+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -45,341 +36,67 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-04_2",
-      "date": "2026-03-04",
-      "category": "국제",
-      "title": "한-싱가포르, 통상 및 원전 협력 강화 합의",
-      "summary": [
-        "한국과 싱가포르는 자유무역협정(FTA) 개선 협상 개시 합의 공동선언문을 교환했습니다.",
-        "양국은 공급망, 그린 경제, 소형모듈원자로(SMR) 분야에서 협력을 강화할 예정입니다.",
-        "싱가포르는 AI 데이터 센터 확대를 위해 SMR 관련 예산을 약 5조 원 편성했습니다."
-      ],
-      "whyImportant": "이번 협력 강화는 국내 기업의 아세안 시장 진출 기반을 조성하고, 한국의 차세대 원전 기술을 홍보하는 데 기여할 수 있습니다.",
-      "importanceRationale": "근거: 싱가포르가 AI 데이터 센터 확대를 위해 SMR 관련 예산을 약 5조 원 편성했다는 점에서 에너지 인프라 협력의 중요성을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "싱가포르 정부는 지난해 인공지능(AI) 데이터 센터 확대, 탄소중립 등 에너지 수요 확대 및 전환 과제에 효율적으로 대응하기 위해 싱가포르 미래에너지 정책 펀드에 약 5조원 규모의 SMR 관련 예산을 편성한 바 있다."
-        }
-      ],
-      "dedupeKey": "강화-센터-싱가포르-양국-원전-통상-한국-협력",
-      "clusterKey": "관세/에너지/싱가포르",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030236027",
-      "publishedAt": "2026-03-02T06:04:03+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_3",
-      "date": "2026-03-04",
+      "id": "2026-03-05_2",
+      "date": "2026-03-05",
       "category": "기술",
-      "title": "아마존 중동 데이터센터, 이란 공격으로 인프라 손상",
+      "title": "이란, 아마존 바레인 데이터 센터를 미국 군대 지원 이유로 공격",
       "summary": [
-        "아마존웹서비스(AWS)의 중동 데이터센터 3곳이 드론 공격으로 피해를 입었습니다.",
-        "아랍에미리트(UAE)의 두 개 시설이 직접 타격을 받았고, 바레인 시설 한 곳도 손상되었습니다.",
-        "전력 공급 중단 및 침수 피해가 발생했으며, 복구 작업이 길어질 것으로 예상됩니다."
+        "이란 혁명수비대가 아마존의 바레인 데이터 센터를 미국 군대 지원을 이유로 공격했다고 이란 국영 언론이 밝혔습니다.",
+        "아마존은 바레인 데이터 센터가 드론 공격으로 손상되었으며, 아랍에미리트의 데이터 센터 두 곳도 드론의 직접적인 공격을 받았다고 밝혔습니다.",
+        "A 's B data geted by I t of U.S."
       ],
-      "whyImportant": "이번 공격은 미국 기업의 데이터센터 운영에 차질을 초래한 첫 사례로, 향후 빅테크 기업의 중동 지역 확장 속도에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 로이터 통신은 이번 공격이 미국 기업 데이터센터 운영에 차질을 빚은 첫 사례라고 보도했으며, MS의 UAE 총투자 규모가 150억 달러로 확대될 계획인 상황에서 발생했습니다.",
+      "whyImportant": "데이터 센터 공격은 지정학적 리스크가 기업의 IT 인프라에 미치는 직접적인 영향을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 아마존의 바레인 데이터 센터는 정부의 중요한 워크로드를 호스팅하고 있으며, 이번 공격으로 인해 일부 AWS 애플리케이션에서 오류율 상승 및 가용성 저하가 발생했습니다.",
       "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "아마존 중동 데이터센터, 이란 공격으로 인프라 손상"
-        }
-      ],
-      "dedupeKey": "3곳-공격-데이터센터-손상-아마존-이란-인프라-중동",
-      "clusterKey": "클라우드/아마존",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030368647",
-      "publishedAt": "2026-03-03T12:32:21+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_4",
-      "date": "2026-03-04",
-      "category": "에너지",
-      "title": "걸프 지역 에너지 시설, 이란 드론 공격으로 LNG·유가 급등",
-      "summary": [
-        "이란이 걸프 국가들의 에너지 시설을 드론으로 공격하여 액화천연가스(LNG)와 국제 유가가 폭등했습니다.",
-        "사우디아라비아 최대 정유 시설과 카타르의 LNG 생산 시설이 공격을 받았으며, 이로 인해 유럽과 아시아에서 천연가스 선물 가격이 급등했습니다.",
-        "카타르는 이란에서 접근하던 전투기를 격추하고 미사일과 드론을 요격하는 등 군사적 대응에 나섰습니다."
-      ],
-      "whyImportant": "에너지 시설 공격은 에너지 가격 상승을 유발하여 세계 경제에 부담을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 이란의 공격으로 브렌트유가 장중 13% 폭등하고, 유럽 천연가스 선물 가격이 50%, 아시아는 40% 가량 치솟는 등 에너지 시장에 직접적인 영향을 미쳤습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "현지 시간 2일 사우디아라비아 최대 정유 시설인 라스타누라 정유 시설에 접근하던 이란 드론 2대가 요격됐습니다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "LNG 시설 가동 중단 여파로 천연가스 선물 가격이 유럽은 50%, 아시아는 40% 가량 치솟았습니다."
-        }
-      ],
-      "dedupeKey": "lng-걸프-공격-드론-시설-에너지-이란-지역",
-      "clusterKey": "에너지/걸프",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202603031105417326",
-      "publishedAt": "2026-03-03T00:00:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_5",
-      "date": "2026-03-04",
-      "category": "에너지",
-      "title": "카타르 LNG 시설 생산 중단으로 유럽·아시아 가스 가격 급등",
-      "summary": [
-        "카타르 국영 에너지 기업의 세계 최대 LNG 수출 시설이 이란 드론 공격으로 생산을 중단했습니다.",
-        "유럽 가스 벤치마크 선물 가격은 한때 46% 폭등했으며, 글로벌 에너지 시장의 혼란 우려가 커지고 있습니다."
-      ],
-      "whyImportant": "카타르 LNG 시설의 생산 중단은 전 세계 가스 공급에 차질을 초래하여 에너지 시장 전반에 걸쳐 가격 상승 압력을 가중시킬 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르 라스라판 시설은 전 세계 LNG 공급의 약 5분의 1을 차지하며, 가동 중단으로 유럽 가스 가격이 한때 46% 상승했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "카타르 국영 에너지기업의 세계 최대 액화천연가스(LNG) 수출 시설이 이란의 드론 공격으로 생산을 중단하면서 유럽과 아시아 가스 가격이 급등하고 글로벌 에너지 시장이 크게 흔들릴 것이라는 우려가 번지고 있다."
-        },
-        {
-          "label": "capex",
-          "evidence": "카타르에너지는 향후 몇 주 안에 미국에서 골든패스 시설 확장 프로젝트를 가동할 예정이지만 해당 시설은 내년에나 생산 능력에 완전히 도달할 것으로 예상된다."
-        }
-      ],
-      "dedupeKey": "lng-가격-가스-생산-시설-아시아-유럽-카타르",
-      "clusterKey": "에너지/카타르",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=655560",
-      "publishedAt": "2026-03-02T16:30:44+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_6",
-      "date": "2026-03-04",
-      "category": "금융",
-      "title": "버크셔 해서웨이, 4분기 실적 부진으로 주가 5% 가까이 하락",
-      "summary": [
-        "버크셔 해서웨이는 4분기 영업이익이 크게 감소했다고 발표했으며, 이에 따라 주가가 하락했습니다.",
-        "새 CEO인 그렉 아벨은 주주들에게 보낸 첫 서한에서 즉각적인 전략 변화에 대한 신호를 거의 주지 않았습니다.",
-        "회사는 2025년을 3,700억 달러 이상의 현금 및 국채 보유액으로 마감했습니다."
-      ],
-      "whyImportant": "버크셔 해서웨이의 실적 부진과 새로운 CEO의 전략적 방향은 투자자와 시장에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 4분기 영업이익이 전년 대비 29% 이상 감소한 102억 달러를 기록했으며, 보험 사업의 수익이 54% 감소한 15.6억 달러를 기록했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "The stock’s decline came after Berkshire posted operating earnings of $10.2 billion for the fourth quarter, down more than 29% from $14.56 billion a year earlier."
-        }
-      ],
-      "dedupeKey": "700억-가까-버크셔-부진-실적-주가-하락-해서웨",
-      "clusterKey": "실적/버크셔",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/02/berkshire-hathaway-shares-drop-4percent-after-poor-fourth-quarter-results.html",
-      "publishedAt": "2026-03-02T17:53:39+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_7",
-      "date": "2026-03-04",
-      "category": "정책",
-      "title": "금융위, 중동 불안정 관련 13.3조 원 규모 자금 지원",
-      "summary": [
-        "금융위원회가 중동 지역 불안정에 대응하여 13.3조 원 규모의 자금 지원을 결정했습니다.",
-        "금융위는 가짜 뉴스 및 시세 조종 행위에 대해 무관용 원칙으로 엄단할 것이라고 밝혔습니다."
-      ],
-      "whyImportant": "이번 금융위원회의 결정은 중동 불안정으로 인한 국내 금융 시장의 변동성을 최소화하고 투자자들을 보호하는 데 중요한 역할을 할 것입니다.",
-      "importanceRationale": "근거: 금융위원회가 13.3조 원 규모의 자금 지원을 결정한 것은 국내 금융 시장에 미치는 잠재적 영향을 고려한 조치이기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "스타링크→로켓→데이터센터 선순환 [스페이스X를 움직이는 세 가지 축] 발품 넘어 ‘AI품’…‘낮본밤부’ [스페셜 리포트] 무술·댄스에 음료 주문·주유까지 척척 [생생中國] 거란·몽골·청의 명성에 도전한 그들 [한순구의 ‘게임이론으로 보는 경영’] 본업보다 부업?"
-        },
         {
           "label": "policy",
-          "evidence": "‘투자 귀재’ 넷마블·SKT 인니 찍고 泰로…카뱅, 물오른 글로벌 전략 동학개미라면…차이나테크주 주시하라 대출 규제에 없어서 못 파는 중저가 신축 “이곳은 인간이 들어올 수 없는 성역입니다” [AI 딥다이브] 아파트 시대 끝?"
-        },
-        {
-          "label": "earnings",
-          "evidence": "다시 주목받는 꼬마빌딩 [감평사의 부동산 현장진단] 삼성전자 ‘영업이익 300조’ 시나리오 K푸드 열풍에도 웃지 못하는 CJ제일제당"
-        }
-      ],
-      "dedupeKey": "3조-규모-금융위-금융위원회-불안정-자금-중동-지원",
-      "clusterKey": "투자/금융/불안정",
-      "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://news.mk.co.kr/v2/economy/",
-      "publishedAt": "2026-03-03T01:05:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_8",
-      "date": "2026-03-04",
-      "category": "국제",
-      "title": "기술 노동자들이 미국 국방부와 의회에 Anthropic의 공급망 위험 지정을 철회할 것을 촉구합니다",
-      "summary": [
-        "수백 명의 기술 노동자들이 국방부에 A opic을 '공급망 위험'으로 지정한 것을 철회할 것을 촉구하는 공개 서한에 서명했습니다.",
-        "이 서한은 또한 의회에 개입하여 미국 기술 회사에 대한 이러한 특별 권한 사용이 적절한지 조사할 것을 요구합니다.",
-        "A opic은 군에 AI 시스템에 대한 무제한 액세스를 제공하는 것을 거부한 후 국방부와 분쟁을 겪었습니다."
-      ],
-      "whyImportant": "이번 사태는 정부가 기술 계약 조건에 대한 이견을 이유로 기업에 불이익을 줄 수 있다는 선례를 남길 수 있어 중요합니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 Anthropic을 공격한 직후 OpenAI가 국방부의 기밀 환경에 모델을 배포하기로 합의한 점, 그리고 Anthropic이 공급망 위험 지정에 법적으로 대응하겠다고 밝힌 점에서 업계 전반에 걸쳐 정책적 파장이 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "Hundreds of tech workers have signed an open letter urging the Department of Defense to withdraw its designation of Anthropic as a “supply-chain risk.” The letter also calls on Congress to step in and “examine whether the use of these extraordinary authorities against an American technology company is appropriate.” The letter includes signatories from major technology and venture capital firms, including OpenAI, Slack, IBM, Cursor, Salesforce Ventures, and more."
+          "evidence": "Earlier this week, Amazon instructed all of its corporate employees in the Middle East to work remotely and “follow local government guidelines” amid escalating instability in the region."
         },
         {
           "label": "security",
-          "evidence": "Boaz Barak, an OpenAI researcher, wrote in a social media post on Monday that blocking governments from using AI to do mass domestic surveillance is also his “personal red line” and “it should be all of ours.” Moments after Trump publicly attacked Anthropic, OpenAI announced it had reached a deal of its own for its models to be deployed in the DOD’s classified environments."
-        },
-        {
-          "label": "policy",
-          "evidence": "The DOD said it had no plans to do either of those things but that it didn’t believe it should be limited by the rules of a vendor."
-        }
-      ],
-      "dedupeKey": "anthropic-공급망-국방부-기술-노동자들-미국-위험-의회",
-      "clusterKey": "기술/국방부/의회",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/",
-      "publishedAt": "2026-03-02T17:18:34+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_9",
-      "date": "2026-03-04",
-      "category": "에너지",
-      "title": "카타르 가스 시설 셧다운으로 LNG 가격 급등",
-      "summary": [
-        "이란의 공격으로 카타르 LNG 시설이 가동 중단되면서 유럽 LNG 가격이 하루 만에 50% 이상 급등했습니다.",
-        "사우디 정유 시설도 일부 가동 중단되면서 국제 유가 상승을 부추기고 있습니다.",
-        "국내 철강·화학 공장의 가동 중단 우려가 제기되고 있으며, 정부는 절전 시나리오를 검토 중입니다."
-      ],
-      "whyImportant": "중동 지역 에너지 시설 공격은 글로벌 에너지 공급망 불안정을 심화시켜 국내 산업 전반에 걸쳐 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르 LNG 생산 시설의 가동 중단으로 유럽 LNG 가격이 50% 이상 급등했으며, 국내 철강·화학 공장 가동 중단 우려와 정부의 절전 시나리오 검토 가능성이 제기되었습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "세계 액화천연가스(LNG) 생산량의 20%를 차지하는 카타르의 주요 LNG 시설이 공격받으면서 유럽 지역 LNG 가격은 하루 새 50% 이상 급등했다."
-        }
-      ],
-      "dedupeKey": "lng-가격-가스-급등-셧다운-시설-일부-카타르",
-      "clusterKey": "카타르/가스/시설",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030365891",
-      "publishedAt": "2026-03-03T08:39:49+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_10",
-      "date": "2026-03-04",
-      "category": "에너지",
-      "title": "카타르 LNG 시설 가동 중단으로 유럽 가스 가격 급등",
-      "summary": [
-        "이란의 드론 공격으로 카타르가 세계 최대 LNG 수출 플랜트 가동을 중단했습니다.",
-        "유럽 천연가스 벤치마크 선물 가격은 장중 최대 50% 가까이 급등했습니다.",
-        "글로벌 보험사들은 걸프 해역 진입 선박에 대한 전쟁 위험 보장을 중단할 예정입니다."
-      ],
-      "whyImportant": "카타르 LNG 시설 중단은 유럽 가스 가격 급등을 초래하여 에너지 시장에 상당한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 카타르 LNG 생산 중단으로 유럽 천연가스 가격이 50% 가까이 상승했으며, 이는 2022년 러시아의 우크라이나 침공 이후 최대 상승폭입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "세계 최대 LNG 공급업체로 꼽히는 카타르 국영 회사 카타르에너지(QE)는 2일(현지시간) 카타르 북부 라스라판의 플랜트에 이란의 드론 공격이 가해진 직후 성명을 내고 LNG 생산이 중단됐다고 밝혔다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "유럽 천연가스 벤치마크 선물 가격은 장중 최대 50% 가까이 치솟으며 2022년 2월 러시아의 우크라이나 침공 이후 약 4년 만에 가장 큰 하루 상승폭을 기록했다."
-        }
-      ],
-      "dedupeKey": "lng-가격-가동-가스-급등-시설-유럽-카타르",
-      "clusterKey": "에너지/카타르",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317253",
-      "publishedAt": "2026-03-02T14:41:29+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_11",
-      "date": "2026-03-04",
-      "category": "금융",
-      "title": "유럽, 중동발 에너지 위기 직면 및 금리 인상 전망",
-      "summary": [
-        "미국·이스라엘과 이란의 무력 충돌로 유럽 에너지 위기 재발 우려가 커지고 있으며, 물가 상승 전망에 금리 인상 관측이 나옵니다.",
-        "유럽 가스거래 허브에서 천연가스 가격이 2거래일 만에 두 배로 폭등했으며, ECB의 금리 인상 가능성이 제기되고 있습니다."
-      ],
-      "whyImportant": "에너지 가격 급등은 유럽 경제의 불확실성을 높이고, 통화 정책 방향에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 호르무즈 해협 봉쇄 시 국제유가가 50% 넘게 오를 수 있다는 ECB의 전망과, 천연가스 가격이 2일 만에 배로 뛰었다는 점이 근거입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "필리프 레인 유럽중앙은행(ECB) 수석이코노미스트는 3일(현지시간) 영국 일간지 파이낸셜타임스(FT) 인터뷰에서 \"에너지 가격 급등은 단기적으로 물가에 상방 압력을 가한다\"며 \"이같은 분쟁이 경제활동에도 부정적 영향을 미칠 것\"이라고 말했다."
-        },
-        {
-          "label": "security",
-          "evidence": "최근 이란이 미국과 이스라엘에 맞서 주요 원유 수송로인 호르무즈 해협을 봉쇄하겠다고 위협하면서 에너지 위기 우려가 다시 커졌다."
+          "evidence": "The attack in Bahrain was launched “to identify the role of these centers in supporting the enemy’s military and intelligence activities,” Iran’s Fars News Agency said on Telegram."
         },
         {
           "label": "infra",
-          "evidence": "블룸버그는 \"앞으로 4주 안에 유럽 경제가 위기를 맞을지, 회복 과정의 일시적 장애에 그칠지 결정될 것\"이라고 봤다."
+          "evidence": "In addition to structural damage, the data centers also experienced power disruptions and some water damage after firefighters worked to put out sparks and fire."
         }
       ],
-      "dedupeKey": "2거래일-금리-에너지-위기-유럽-인상-중동발-직면",
-      "clusterKey": "이스라엘이란/에너지/중동발",
+      "dedupeKey": "군대-데이터-미국-바레인-센터-아마존-이란-지원",
+      "clusterKey": "아마존/바레인/데이터",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318007",
-      "publishedAt": "2026-03-03T16:23:05+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/04/amazon-bahrain-data-centers-targeted-iran-drone-strike.html",
+      "publishedAt": "2026-03-04T22:07:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-05_3",
+      "date": "2026-03-05",
+      "category": "에너지",
+      "title": "이란 공격으로 카타르 LNG 생산 중단, 미국 가스株 수혜",
+      "summary": [
+        "이란의 공격으로 카타르의 액화천연가스(LNG) 생산이 중단되어 글로벌 에너지 시장에 충격을 주고 있습니다.",
+        "카타르 생산 중단 소식에 미국 LNG 기업 셰니에르에너지 주가는 약 7%, 벤처글로벌은 24%가량 급등했습니다."
+      ],
+      "whyImportant": "카타르의 LNG 생산 중단은 글로벌 에너지 공급망에 영향을 미쳐, 에너지 시장의 변동성을 키울 수 있습니다.",
+      "importanceRationale": "근거: 카타르는 세계 2위 LNG 수출국으로 글로벌 공급의 약 20%를 차지하며, 이란 공격으로 생산이 중단되어 미국 LNG 기업 주가가 급등했습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "카타르는 지난 3일 이란이 핵심 LNG 시설 두 곳을 공격한 이후 LNG 생산을 중단했다."
+        }
+      ],
+      "dedupeKey": "lng-가스-공격-미국-생산-수혜-이란-카타르",
+      "clusterKey": "에너지/공격",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030491871",
+      "publishedAt": "2026-03-04T08:26:38+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -388,49 +105,23 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-04_12",
-      "date": "2026-03-04",
-      "category": "기술",
-      "title": "정부, 중동 체류자 1.7만 명 육로 대피 계획 수립",
+      "id": "2026-03-05_4",
+      "date": "2026-03-05",
+      "category": "국제",
+      "title": "더불어민주당, 재계와 간담회 개최 예정",
       "summary": [
-        "정부는 아랍에미리트 등 중동 7개국에 특별여행주의보를 발령했습니다.",
-        "외교부는 중동 현지에 체류 중인 1만 7천 명을 위한 육로 대피 계획을 수립 중입니다.",
-        "정부는 국내 해운사에 호르무즈 해협 운항 자제를 권고했습니다."
+        "더불어민주당은 5일 재계와 간담회를 열어 중동 정세 및 대미 관세 협상 관련 업계 의견을 청취할 예정입니다.",
+        "간담회에는 한국경제인협회, 무역협회, 코트라, 삼성전자, SK, 현대차, LG, 한화오션, GS칼텍스 등이 참석합니다."
       ],
-      "whyImportant": "중동 지역의 지정학적 불안정성이 높아짐에 따라, 정부의 신속한 대피 계획 수립 및 여행 경보 발령은 국민 안전 확보에 중요한 조치입니다.",
-      "importanceRationale": "근거: 중동 7개국에 특별여행주의보가 발령되었고, 최소 1만 7천 명의 체류자를 위한 육로 대피 계획이 수립 중이며, 해운사에 호르무즈 해협 운항 자제가 권고되었습니다.",
+      "whyImportant": "이번 간담회는 중동 정세 불안에 따른 경제적 영향을 최소화하기 위한 정책 논의의 시작점이 될 수 있습니다.",
+      "importanceRationale": "근거: 민주당은 수출입 기업을 위한 긴급 금융·물류 지원 대책 마련을 통해 산업 보호에 만전을 기할 것이라고 밝혔습니다.",
       "impactSignals": [],
-      "dedupeKey": "7개국-7만-대피-수립-육로-정부-중동-체류자",
-      "clusterKey": "체류자/7만/육로",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030240731",
-      "publishedAt": "2026-03-02T11:32:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-04_13",
-      "date": "2026-03-04",
-      "category": "정책",
-      "title": "국회, 지하통로 윤석열 전 대통령 사진 철거",
-      "summary": [
-        "국회 본관과 의원회관을 잇는 지하통로에 있던 윤석열 전 대통령의 사진이 철거되었습니다.",
-        "국회의장실은 이번 결정이 12·3 비상계엄 당시 윤 전 대통령의 행위에 대한 위헌·위법성 확인에 따른 것이라고 밝혔습니다."
-      ],
-      "whyImportant": "이번 결정은 과거 대통령의 행위에 대한 평가와 그에 따른 상징적 조치가 기관의 결정으로 이어진 사례입니다.",
-      "importanceRationale": "근거: 국회의장 결정에 따라 윤석열 전 대통령의 사진이 철거되었으며, 이는 12·3 비상계엄 당시 행위에 대한 위헌·위법성 판단에 근거합니다.",
-      "impactSignals": [],
-      "dedupeKey": "국회-국회의장실-대통령-사진-윤석열-의원회관-지하통-철거",
-      "clusterKey": "국회/지하통/윤석열",
+      "dedupeKey": "gs칼텍스-간담회-더불어민주당-무역협회-삼성전자-재계-한국경제인협회-한화오션",
+      "clusterKey": "관세/더불어민주당",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317800",
-      "publishedAt": "2026-03-03T07:28:08+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318607",
+      "publishedAt": "2026-03-04T09:15:58+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
@@ -439,32 +130,134 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-04_14",
-      "date": "2026-03-04",
-      "category": "정책",
-      "title": "공정거래위원회 경인사무소 출범, 수도권 사건 과부하 해소 기대",
+      "id": "2026-03-05_5",
+      "date": "2026-03-05",
+      "category": "에너지",
+      "title": "일본, 미국 데이터센터용 소형 원전 투자 추진",
       "summary": [
-        "공정거래위원회는 3일 경인사무소를 개소하여 본격적인 업무를 시작했습니다.",
-        "경기와 인천 지역 사건을 담당하며, 서울사무소의 업무 부하를 줄여 사건 처리 기간 단축 및 피해 구제 실효성을 높일 것으로 기대됩니다."
+        "일본이 미국의 AI 데이터센터용 소형 원전 투자 2차 사업의 유력 후보로 고려 중이라고 교도통신이 보도했습니다.",
+        "이번 투자는 AI 개발로 증가하는 전력 수요를 충족하기 위한 것입니다.",
+        "아카자와 료세이 경제산업상은 미국 상무부 장관과 대미 투자 2차 사업 등을 논의할 예정입니다."
       ],
-      "whyImportant": "공정위 경인사무소 출범은 수도권 지역의 불공정 행위 조사 및 처리에 속도를 높여 공정한 시장 환경 조성에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 경인사무소는 경기·인천 사건을 담당하며, 공정위는 서울사무소 업무 부하 감소를 통해 사건 처리 기간 단축을 기대하고 있어 중요도는 3입니다.",
+      "whyImportant": "AI 데이터센터 전력 공급망 확보 경쟁에 영향을 줄 수 있는 투자 결정입니다.",
+      "importanceRationale": "근거: 일본의 대미 투자 2차 사업 규모는 5500억 달러이며, 여기에는 AI 데이터센터용 소형 원전이 포함될 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "미국과 일본이 작년 관세 협상 당시 합의한 일본의 5천500억 달러(약 798조원) 대미 투자 2차 사업의 유력 후보 중 하나에 인공지능(AI) 데이터센터용 소형 원전이 포함됐다고 교도통신이 4일 보도했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "소식통에 따르면 이번 사업은 AI 개발로 수요가 왕성한 전력을 공급하려는 것이다."
+        }
+      ],
+      "dedupeKey": "2차-데이터센터용-미국-상무부-소형-원전-일본-투자",
+      "clusterKey": "미일_투자/에너지/소형",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318617",
+      "publishedAt": "2026-03-04T09:32:17+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-05_6",
+      "date": "2026-03-05",
+      "category": "에너지",
+      "title": "중동 불안정으로 인한 국내 기업의 프로젝트 차질 우려",
+      "summary": [
+        "이란의 공격으로 중동 지역 인프라 시설에 대한 건설 차질 가능성이 제기되고 있습니다.",
+        "삼성 등 주요 기업들은 긴급 회의를 열어 물류비 및 유가 폭등에 대한 대응책을 논의하고 있습니다.",
+        "중동에 진출한 148개 한국 기업의 프로젝트에 차질이 발생할 수 있다는 우려가 커지고 있습니다."
+      ],
+      "whyImportant": "중동 지역의 지정학적 리스크는 국내 기업의 해외 프로젝트 및 수출에 중대한 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 148개 한국 기업이 진출한 중동 프로젝트 규모가 100조 원을 넘을 것으로 추산되며, 지난해 한국의 대중동 수출액은 약 20조 원에 달합니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이란, 인프라 시설 무차별 공격 원전·플랜트 건설 차질 가능성"
+        }
+      ],
+      "dedupeKey": "148개-국내-기업-불안정-인한-중동-차질-프로젝트",
+      "clusterKey": "불안정/인한/국내",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030366481",
+      "publishedAt": "2026-03-03T08:54:56+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-05_7",
+      "date": "2026-03-05",
+      "category": "에너지",
+      "title": "트럼프, 중간 선거 앞두고 AI 데이터 센터 문제 직면",
+      "summary": [
+        "트럼프 대통령은 AI 데이터 센터에 자체 전력 공급을 약속하는 서약에 서명하도록 주요 기술 기업들을 백악관으로 불러들였습니다.",
+        "이는 미국 전역에서 전기 요금 상승에 대한 불만이 커지고 있는 가운데 이루어졌습니다.",
+        "그러나 이 합의는 구체적이고 구속력 있는 약속을 담고 있지는 않은 것으로 보입니다."
+      ],
+      "whyImportant": "데이터 센터 전력 문제는 향후 데이터 센터 구축 및 전력망 운영에 대한 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 골드만삭스 보고서에 따르면 데이터 센터 수요 증가로 인해 전기 요금이 2026년까지 6%, 2028년에 3% 추가 상승할 것으로 예상되어 정책적 중요성이 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "50명 규모로 경기·인천 사건 담당…'인력 대폭 증원' 李대통령 주문 속 출범 (세종=연합뉴스) 이세원 기자 = 공정거래위원회는 3일 경인사무소를 개소하고 본격적으로 업무를 시작했다."
+          "evidence": "Electricity prices are forecast to rise 6% through 2026 and another 3% in 2028 as data center demand grows more rapidly than power supply, according to a Goldman Sachs report published last month."
+        },
+        {
+          "label": "policy",
+          "evidence": "Decentralized rules The rules governing the electric grid are decentralized across all 50 states, each with their own public utility commissions and different laws."
+        }
+      ],
+      "dedupeKey": "데이터-문제-선거-센터-앞두고-중간-직면-트럼프",
+      "clusterKey": "관세/에너지/트럼프",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/04/trump-faces-an-ai-data-center-power-dilemma-ahead-of-midterms.html",
+      "publishedAt": "2026-03-04T15:55:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-05_8",
+      "date": "2026-03-05",
+      "category": "기술",
+      "title": "엔비디아 CEO, 300억 달러 규모의 OpenAI 투자 '마지막일 수도'",
+      "summary": [
+        "엔비디아의 젠슨 황 CEO는 최근 O AI에 대한 300억 달러 투자가 올해 말 예상되는 IPO 전에 마지막 투자가 될 수 있다고 밝혔습니다.",
+        "엔비디아는 O AI의 경쟁사인 A opic에 대한 100억 달러 투자도 마지막 투자가 될 가능성이 높다고 언급했습니다.",
+        "O AI는 엔비디아의 V a R 시스템에서 AI 데이터 센터를 위한 3기가와트의 추론 용량과 2기가와트의 훈련 용량을 확보했습니다."
+      ],
+      "whyImportant": "엔비디아의 투자 전략 변화는 AI 인프라 시장의 경쟁 구도 및 투자 트렌드에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 OpenAI에 300억 달러를 투자했지만, 향후 1,000억 달러 규모의 인프라 투자는 없을 수 있다고 언급하여 투자 전략 변화를 시사했기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "The chipmaker disclosed in a quarterly filing in November that the previously announced $100 billion deal may not come to fruition, and the Wall Street Journal reported in January that the agreement was “on ice.” Nvidia included similar language in its quarterly filing in February, which noted that there was “no assurance” that the company will enter into an “investment and partnership agreement with OpenAI or that a transaction will be completed.” The chipmaker’s $30 billion investment in OpenAI was unveiled as part of a $110 billion funding round that the startup announced on Friday."
         },
         {
           "label": "capex",
-          "evidence": "경인사무소는 총괄과, 가맹유통소비자과, 건설하도급과, 제조하도급과 등 4개과 50명 규모로 구성됐으며 경기 안양시 동안구에 사무실을 마련했다."
+          "evidence": "As part of the agreement, OpenAI secured 3 gigawatts of dedicated inference capacity and 2 gigawatts of training capacity on Nvidia’s Vera Rubin systems for AI data centers, OpenAI said Friday."
         }
       ],
-      "dedupeKey": "경인사무소-공정거래위원회-과부하-기대-사건-서울사무소-수도권-해소",
-      "clusterKey": "경인사무소/출범/수도권",
+      "dedupeKey": "300억-ceo-openai-규모-달러-마지막일-엔비디아-투자",
+      "clusterKey": "투자/엔비디아/상장",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317705",
-      "publishedAt": "2026-03-03T06:00:01+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/04/nvidia-huang-openai-investment.html",
+      "publishedAt": "2026-03-04T18:42:35+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

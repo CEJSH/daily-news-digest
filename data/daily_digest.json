@@ -1,21 +1,21 @@
 {
-  "date": "2026-03-05",
+  "date": "2026-03-06",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-05T08:02:15.959320+09:00",
+  "lastUpdatedAt": "2026-03-06T08:43:32.343908+09:00",
   "items": [
     {
-      "id": "2026-03-05_1",
-      "date": "2026-03-05",
+      "id": "2026-03-06_1",
+      "date": "2026-03-06",
       "category": "에너지",
       "title": "이란의 호르무즈 해협 봉쇄, LNG 가격 상승 우려",
       "summary": [
-        "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄로 액화천연가스(LNG) 가격 상승 우려가 커지고 있습니다.",
-        "호르무즈 해협은 LNG 수송의 주요 통로이므로, 봉쇄 시 LNG 가격에 영향을 줄 수 있습니다."
+        "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄로 LNG 가격 상승 우려가 커지고 있습니다.",
+        "호르무즈 해협은 LNG 수송의 주요 통로입니다."
       ],
-      "whyImportant": "호르무즈 해협 봉쇄는 에너지 수급에 중요한 영향을 미칠 수 있는 지정학적 리스크 요인입니다.",
-      "importanceRationale": "근거: 이란의 호르무즈 해협 봉쇄가 LNG 가격 상승 우려를 야기한다는 내용으로, 에너지 시장에 미치는 잠재적 영향을 시사합니다.",
+      "whyImportant": "호르무즈 해협 봉쇄는 세계 에너지 시장에 큰 영향을 미칠 수 있는 지정학적 리스크입니다.",
+      "importanceRationale": "근거: 이란의 호르무즈 해협 봉쇄는 액화천연가스(LNG) 가격 상승 우려를 야기하며, 이는 에너지 시장 전반에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "security",
@@ -36,62 +36,23 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-05_2",
-      "date": "2026-03-05",
-      "category": "기술",
-      "title": "이란, 아마존 바레인 데이터 센터를 미국 군대 지원 이유로 공격",
-      "summary": [
-        "이란 혁명수비대가 아마존의 바레인 데이터 센터를 미국 군대 지원을 이유로 공격했다고 이란 국영 언론이 밝혔습니다.",
-        "아마존은 바레인 데이터 센터가 드론 공격으로 손상되었으며, 아랍에미리트의 데이터 센터 두 곳도 드론의 직접적인 공격을 받았다고 밝혔습니다.",
-        "A 's B data geted by I t of U.S."
-      ],
-      "whyImportant": "데이터 센터 공격은 지정학적 리스크가 기업의 IT 인프라에 미치는 직접적인 영향을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 아마존의 바레인 데이터 센터는 정부의 중요한 워크로드를 호스팅하고 있으며, 이번 공격으로 인해 일부 AWS 애플리케이션에서 오류율 상승 및 가용성 저하가 발생했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Earlier this week, Amazon instructed all of its corporate employees in the Middle East to work remotely and “follow local government guidelines” amid escalating instability in the region."
-        },
-        {
-          "label": "security",
-          "evidence": "The attack in Bahrain was launched “to identify the role of these centers in supporting the enemy’s military and intelligence activities,” Iran’s Fars News Agency said on Telegram."
-        },
-        {
-          "label": "infra",
-          "evidence": "In addition to structural damage, the data centers also experienced power disruptions and some water damage after firefighters worked to put out sparks and fire."
-        }
-      ],
-      "dedupeKey": "군대-데이터-미국-바레인-센터-아마존-이란-지원",
-      "clusterKey": "아마존/바레인/데이터",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/04/amazon-bahrain-data-centers-targeted-iran-drone-strike.html",
-      "publishedAt": "2026-03-04T22:07:07+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-05_3",
-      "date": "2026-03-05",
+      "id": "2026-03-06_2",
+      "date": "2026-03-06",
       "category": "에너지",
-      "title": "이란 공격으로 카타르 LNG 생산 중단, 미국 가스株 수혜",
+      "title": "이란 공격으로 카타르 LNG 생산 중단, 미국 가스株 반사이익",
       "summary": [
-        "이란의 공격으로 카타르의 액화천연가스(LNG) 생산이 중단되어 글로벌 에너지 시장에 충격을 주고 있습니다.",
-        "카타르 생산 중단 소식에 미국 LNG 기업 셰니에르에너지 주가는 약 7%, 벤처글로벌은 24%가량 급등했습니다."
+        "이란의 공격으로 카타르의 액화천연가스(LNG) 생산이 중단되어 글로벌 에너지 시장에 충격이 발생했습니다.",
+        "카타르 생산 중단으로 미국 LNG 기업의 주가가 급등했으며, 셰니에르에너지 주가는 이번 주 약 7%, 벤처글로벌은 24%가량 상승했습니다."
       ],
-      "whyImportant": "카타르의 LNG 생산 중단은 글로벌 에너지 공급망에 영향을 미쳐, 에너지 시장의 변동성을 키울 수 있습니다.",
-      "importanceRationale": "근거: 카타르는 세계 2위 LNG 수출국으로 글로벌 공급의 약 20%를 차지하며, 이란 공격으로 생산이 중단되어 미국 LNG 기업 주가가 급등했습니다.",
+      "whyImportant": "카타르 LNG 생산 중단은 글로벌 에너지 공급망에 영향을 미치며, 미국의 LNG 수출 경쟁력 강화로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 카타르는 세계 2위 LNG 수출국으로 글로벌 공급의 약 20%를 차지하며, 생산 중단으로 미국 LNG 기업 주가가 상승(7%, 24%)했습니다.",
       "impactSignals": [
         {
           "label": "security",
           "evidence": "카타르는 지난 3일 이란이 핵심 LNG 시설 두 곳을 공격한 이후 LNG 생산을 중단했다."
         }
       ],
-      "dedupeKey": "lng-가스-공격-미국-생산-수혜-이란-카타르",
+      "dedupeKey": "lng-가스-공격-미국-반사이익-생산-이란-카타르",
       "clusterKey": "에너지/공격",
       "matchedTo": null,
       "sourceName": "한국경제",
@@ -105,99 +66,8 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-05_4",
-      "date": "2026-03-05",
-      "category": "국제",
-      "title": "더불어민주당, 재계와 간담회 개최 예정",
-      "summary": [
-        "더불어민주당은 5일 재계와 간담회를 열어 중동 정세 및 대미 관세 협상 관련 업계 의견을 청취할 예정입니다.",
-        "간담회에는 한국경제인협회, 무역협회, 코트라, 삼성전자, SK, 현대차, LG, 한화오션, GS칼텍스 등이 참석합니다."
-      ],
-      "whyImportant": "이번 간담회는 중동 정세 불안에 따른 경제적 영향을 최소화하기 위한 정책 논의의 시작점이 될 수 있습니다.",
-      "importanceRationale": "근거: 민주당은 수출입 기업을 위한 긴급 금융·물류 지원 대책 마련을 통해 산업 보호에 만전을 기할 것이라고 밝혔습니다.",
-      "impactSignals": [],
-      "dedupeKey": "gs칼텍스-간담회-더불어민주당-무역협회-삼성전자-재계-한국경제인협회-한화오션",
-      "clusterKey": "관세/더불어민주당",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318607",
-      "publishedAt": "2026-03-04T09:15:58+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-05_5",
-      "date": "2026-03-05",
-      "category": "에너지",
-      "title": "일본, 미국 데이터센터용 소형 원전 투자 추진",
-      "summary": [
-        "일본이 미국의 AI 데이터센터용 소형 원전 투자 2차 사업의 유력 후보로 고려 중이라고 교도통신이 보도했습니다.",
-        "이번 투자는 AI 개발로 증가하는 전력 수요를 충족하기 위한 것입니다.",
-        "아카자와 료세이 경제산업상은 미국 상무부 장관과 대미 투자 2차 사업 등을 논의할 예정입니다."
-      ],
-      "whyImportant": "AI 데이터센터 전력 공급망 확보 경쟁에 영향을 줄 수 있는 투자 결정입니다.",
-      "importanceRationale": "근거: 일본의 대미 투자 2차 사업 규모는 5500억 달러이며, 여기에는 AI 데이터센터용 소형 원전이 포함될 가능성이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "미국과 일본이 작년 관세 협상 당시 합의한 일본의 5천500억 달러(약 798조원) 대미 투자 2차 사업의 유력 후보 중 하나에 인공지능(AI) 데이터센터용 소형 원전이 포함됐다고 교도통신이 4일 보도했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "소식통에 따르면 이번 사업은 AI 개발로 수요가 왕성한 전력을 공급하려는 것이다."
-        }
-      ],
-      "dedupeKey": "2차-데이터센터용-미국-상무부-소형-원전-일본-투자",
-      "clusterKey": "미일_투자/에너지/소형",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318617",
-      "publishedAt": "2026-03-04T09:32:17+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-05_6",
-      "date": "2026-03-05",
-      "category": "에너지",
-      "title": "중동 불안정으로 인한 국내 기업의 프로젝트 차질 우려",
-      "summary": [
-        "이란의 공격으로 중동 지역 인프라 시설에 대한 건설 차질 가능성이 제기되고 있습니다.",
-        "삼성 등 주요 기업들은 긴급 회의를 열어 물류비 및 유가 폭등에 대한 대응책을 논의하고 있습니다.",
-        "중동에 진출한 148개 한국 기업의 프로젝트에 차질이 발생할 수 있다는 우려가 커지고 있습니다."
-      ],
-      "whyImportant": "중동 지역의 지정학적 리스크는 국내 기업의 해외 프로젝트 및 수출에 중대한 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 148개 한국 기업이 진출한 중동 프로젝트 규모가 100조 원을 넘을 것으로 추산되며, 지난해 한국의 대중동 수출액은 약 20조 원에 달합니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "이란, 인프라 시설 무차별 공격 원전·플랜트 건설 차질 가능성"
-        }
-      ],
-      "dedupeKey": "148개-국내-기업-불안정-인한-중동-차질-프로젝트",
-      "clusterKey": "불안정/인한/국내",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030366481",
-      "publishedAt": "2026-03-03T08:54:56+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-05_7",
-      "date": "2026-03-05",
+      "id": "2026-03-06_3",
+      "date": "2026-03-06",
       "category": "에너지",
       "title": "트럼프, 중간 선거 앞두고 AI 데이터 센터 문제 직면",
       "summary": [
@@ -205,16 +75,12 @@
         "이는 미국 전역에서 전기 요금 상승에 대한 불만이 커지고 있는 가운데 이루어졌습니다.",
         "그러나 이 합의는 구체적이고 구속력 있는 약속을 담고 있지는 않은 것으로 보입니다."
       ],
-      "whyImportant": "데이터 센터 전력 문제는 향후 데이터 센터 구축 및 전력망 운영에 대한 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 골드만삭스 보고서에 따르면 데이터 센터 수요 증가로 인해 전기 요금이 2026년까지 6%, 2028년에 3% 추가 상승할 것으로 예상되어 정책적 중요성이 있습니다.",
+      "whyImportant": "데이터 센터 전력 문제는 향후 데이터 센터 구축 및 전력 공급망에 대한 정책 결정에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국 전역에서 데이터 센터에 대한 반대가 커지고 있으며, 골드만삭스 보고서에 따르면 전기 요금은 2026년까지 6% 상승할 것으로 예상됩니다.",
       "impactSignals": [
         {
           "label": "market-demand",
           "evidence": "Electricity prices are forecast to rise 6% through 2026 and another 3% in 2028 as data center demand grows more rapidly than power supply, according to a Goldman Sachs report published last month."
-        },
-        {
-          "label": "policy",
-          "evidence": "Decentralized rules The rules governing the electric grid are decentralized across all 50 states, each with their own public utility commissions and different laws."
         }
       ],
       "dedupeKey": "데이터-문제-선거-센터-앞두고-중간-직면-트럼프",
@@ -231,33 +97,261 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-05_8",
-      "date": "2026-03-05",
-      "category": "기술",
-      "title": "엔비디아 CEO, 300억 달러 규모의 OpenAI 투자 '마지막일 수도'",
+      "id": "2026-03-06_4",
+      "date": "2026-03-06",
+      "category": "에너지",
+      "title": "신한울 1호기 계획예방정비 92일 기록",
       "summary": [
-        "엔비디아의 젠슨 황 CEO는 최근 O AI에 대한 300억 달러 투자가 올해 말 예상되는 IPO 전에 마지막 투자가 될 수 있다고 밝혔습니다.",
-        "엔비디아는 O AI의 경쟁사인 A opic에 대한 100억 달러 투자도 마지막 투자가 될 가능성이 높다고 언급했습니다.",
-        "O AI는 엔비디아의 V a R 시스템에서 AI 데이터 센터를 위한 3기가와트의 추론 용량과 2기가와트의 훈련 용량을 확보했습니다."
+        "신한울 1호기 원자력발전소는 1년 6개월 가동 후 3개월의 계획예방정비를 진행합니다.",
+        "이 기간 동안 연료 인출, 핵심 설비 점검, 안전성 평가 등이 이루어집니다.",
+        "2026년 3월 7일 KBS 1TV에서 신한울1호기 계획예방정비 92일의 기록이 방송될 예정입니다."
       ],
-      "whyImportant": "엔비디아의 투자 전략 변화는 AI 인프라 시장의 경쟁 구도 및 투자 트렌드에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 엔비디아가 OpenAI에 300억 달러를 투자했지만, 향후 1,000억 달러 규모의 인프라 투자는 없을 수 있다고 언급하여 투자 전략 변화를 시사했기 때문입니다.",
+      "whyImportant": "원자력 발전소의 안전 운전을 위한 계획예방정비는 안정적인 전력 공급에 필수적인 과정입니다.",
+      "importanceRationale": "근거: 신한울1호기는 시간당 1,400MW의 전력을 생산하는 대형 원전으로, 경상북도 연간 전력 소비량의 약 1/4을 책임지기 때문에 계획예방정비가 중요합니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "The chipmaker disclosed in a quarterly filing in November that the previously announced $100 billion deal may not come to fruition, and the Wall Street Journal reported in January that the agreement was “on ice.” Nvidia included similar language in its quarterly filing in February, which noted that there was “no assurance” that the company will enter into an “investment and partnership agreement with OpenAI or that a transaction will be completed.” The chipmaker’s $30 billion investment in OpenAI was unveiled as part of a $110 billion funding round that the startup announced on Friday."
+          "label": "capex",
+          "evidence": "92 일의 기록 , 신한울 1 호기 계획예방정비 국가 보안 시설의 심부가 열린다 !"
+        }
+      ],
+      "dedupeKey": "1호기-3개월-6개월-계획예방정비-기록-신한울-신한울1호기-원자력발전소",
+      "clusterKey": "설비투자/신한울",
+      "matchedTo": null,
+      "sourceName": "MyloveKBS",
+      "sourceUrl": "https://mylovekbs.kbs.co.kr/index.html?source=mylovekbs&sname=mylovekbs&stype=magazine&contents_id=70000000403445",
+      "publishedAt": "2026-03-05T13:55:30+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_5",
+      "date": "2026-03-06",
+      "category": "금융",
+      "title": "에이유브랜즈, 중국 매출 증가로 실적 개선 전망",
+      "summary": [
+        "하나증권은 중국 오프라인 매장 확대와 수출 비중 상승에 힘입어 에이유브랜즈의 실적 개선을 전망했습니다.",
+        "2025년에는 중국 플래그십 매장이 13개로 늘어나고, 올해 수출 비중이 50%를 넘어설 가능성이 있다고 분석했습니다."
+      ],
+      "whyImportant": "중국 시장에서의 확장과 수출 증가는 에이유브랜즈의 장기적인 성장 동력이 될 수 있습니다.",
+      "importanceRationale": "근거: 2025년 중국 플래그십 매장 수가 13개로 증가하고, 올해 수출 비중이 50%를 넘어설 가능성이 있다는 분석에 기반합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "진영기 한경닷컴 기자 young71@hankyung.com 박찬솔 하나증권 연구원은 6일 보고서를 내고 \"지난해 4분기 매출이 전년 대비 크게 늘었지만, 판관비 증가로 영업이익률에 대한 시장 기대가 낮아지며 주가가 하락했다\"며 \"그러나 플래그십 매장 확대에 따른 고정비 증가가 매출 확대 속도를 감안하면 부담스러운 수준은 아니다\"라고 분석했다."
         },
         {
           "label": "capex",
-          "evidence": "As part of the agreement, OpenAI secured 3 gigawatts of dedicated inference capacity and 2 gigawatts of training capacity on Nvidia’s Vera Rubin systems for AI data centers, OpenAI said Friday."
+          "evidence": "그는 \"지난해 3분기부터 시작된 중국 티몰 판매량 증가도 중요한 포인트\"라며 \"현재 중국 온라인 매출이 월 5억원 수준까지 확대됐고, 오프라인 중심 성장에 더해 온라인 확대가 수익성 개선에 기여할 수 있다\"고 설명했다."
         }
       ],
-      "dedupeKey": "300억-ceo-openai-규모-달러-마지막일-엔비디아-투자",
+      "dedupeKey": "13개-개선-매출-실적-에이유브랜즈-중국-증가-하나증권",
+      "clusterKey": "실적/에이유브랜즈",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030627506",
+      "publishedAt": "2026-03-05T23:24:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_6",
+      "date": "2026-03-06",
+      "category": "기술",
+      "title": "엔비디아 CEO, 300억 달러의 OpenAI 투자 '마지막일 수도'",
+      "summary": [
+        "엔비디아의 젠슨 황 CEO는 최근 O AI에 대한 300억 달러 투자가 올해 말 상장 전 마지막 투자가 될 수 있다고 밝혔습니다.",
+        "또한, 엔비디아는 O AI의 경쟁사인 A opic에 대한 100억 달러 투자도 마지막이 될 가능성이 높다고 언급했습니다.",
+        "O AI는 엔비디아의 V a R 시스템에서 3기가와트의 추론 용량과 2기가와트의 훈련 용량을 확보했습니다."
+      ],
+      "whyImportant": "엔비디아의 투자 전략 변화는 AI 인프라 시장의 경쟁 구도와 투자 트렌드에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 엔비디아가 OpenAI에 대한 1,000억 달러 규모의 인프라 투자 계획을 철회하고, 300억 달러 투자가 마지막이 될 수 있다고 언급했기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "The chipmaker disclosed in a quarterly filing in November that the previously announced $100 billion deal may not come to fruition, and the Wall Street Journal reported in January that the agreement was \"on ice.\" Nvidia included similar language in its quarterly filing in February, which noted that there was \"no assurance\" that the company will enter into an \"investment and partnership agreement with OpenAI or that a transaction will be completed.\" The chipmaker's $30 billion investment in OpenAI was unveiled as part of a $110 billion funding round that the startup announced on Friday."
+        },
+        {
+          "label": "capex",
+          "evidence": "As part of the agreement, OpenAI secured 3 gigawatts of dedicated inference capacity and 2 gigawatts of training capacity on Nvidia's Vera Rubin systems for AI data centers, OpenAI said Friday."
+        }
+      ],
+      "dedupeKey": "300억-ceo-openai-달러-마지막일-수도-엔비디아-투자",
       "clusterKey": "투자/엔비디아/상장",
       "matchedTo": null,
       "sourceName": "CNBC",
       "sourceUrl": "https://www.cnbc.com/2026/03/04/nvidia-huang-openai-investment.html",
       "publishedAt": "2026-03-04T18:42:35+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_7",
+      "date": "2026-03-06",
+      "category": "금융",
+      "title": "원익QnC, 목표 주가 상향 조정",
+      "summary": [
+        "신한투자증권은 IT 업황 개선에 따라 원익Q C의 목표 주가를 3만원에서 4만5000원으로 상향 조정했습니다.",
+        "2026년 원익Q C의 연간 연결 기준 영업이익은 전년 동기 대비 65% 증가한 981억원으로 전망됩니다."
+      ],
+      "whyImportant": "반도체 업황 개선에 따른 소재·부품 업체들의 실적 재평가 가능성을 시사합니다.",
+      "importanceRationale": "근거: 2026년 원익QnC의 영업이익이 전년 대비 65% 늘어날 것으로 예상되어, 반도체 소재·부품 업체의 실적 개선에 대한 기대감을 반영합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "쿼츠(석영유리), 세정, 세라믹 등 제품 판매량이 늘었고, 자회사 실적도 개선된 덕"
+        },
+        {
+          "label": "earnings",
+          "evidence": "지난해 4분기 원익QnC의 영업이익은 184억원으로 추정치를 85% 웃돌았다"
+        }
+      ],
+      "dedupeKey": "3만원-4만5000원-981억원-목표-상향-원익qnc-조정-주가",
+      "clusterKey": "실적/원익qnc",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030626236",
+      "publishedAt": "2026-03-05T22:54:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_8",
+      "date": "2026-03-06",
+      "category": "금융",
+      "title": "CJ대한통운, 택배 점유율 및 영업이익 증가 전망",
+      "summary": [
+        "한국투자증권은 CJ대한통운의 택배 시장 점유율 상승과 이익 개선을 긍정적으로 평가하며 목표주가와 투자의견을 유지했습니다.",
+        "올해 택배 부문 영업이익은 전년 대비 24% 개선될 것으로 예상되며, 경쟁사 대비 영업이익률 격차도 확대될 전망입니다."
+      ],
+      "whyImportant": "CJ대한통운의 실적 개선은 택배 시장의 경쟁 구도 변화와 물류 자동화 투자 효과를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 올해 택배 부문 영업이익이 전년 대비 24% 개선될 것으로 예상되어 중요도 3으로 평가합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "이에 따라 올해 택배 부문 영업이익은 전년 대비 24% 개선되고, 영업이익률은 경쟁사 대비 3배 이상 격차를 벌려나갈 것이라고 내다봤다."
+        }
+      ],
+      "dedupeKey": "cj대한통운-영업이익-영업이익률-점유율-증가-택배-투자의견-한국투자증권",
+      "clusterKey": "실적/cj대한통운",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030626676",
+      "publishedAt": "2026-03-05T23:29:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_9",
+      "date": "2026-03-06",
+      "category": "금융",
+      "title": "코스피 폭락 후 반등 전망",
+      "summary": [
+        "미국-이란 전쟁 여파로 코스피가 역대 최대 하락폭을 기록하며 투자 심리가 위축되었습니다.",
+        "증권가에서는 기업 실적 등 펀더멘털이 탄탄하여 추가 하락보다는 반등 가능성에 무게를 두고 있습니다."
+      ],
+      "whyImportant": "증시 변동성 확대 가능성 속에서 투자 전략 수립에 참고 자료가 될 수 있습니다.",
+      "importanceRationale": "근거: 코스피가 12.06% 급락했지만, 증권가는 반도체 기업 이익 모멘텀이 탄탄하고 심리·수급 요인에 따른 단기 급락으로 분석하여 추가 조정 폭이 제한적일 것으로 예상합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "하지만 증권가는 기업 실적 등 증시 펀더멘털이 탄탄하다는 점에 비춰 추가 하락보다는 반등 가능성에 무게를 뒀다."
+        }
+      ],
+      "dedupeKey": "기업-미국-반등-증권-코스피-펀더멘털-폭락-하락보다",
+      "clusterKey": "실적/코스피/투자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030488856",
+      "publishedAt": "2026-03-04T13:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_10",
+      "date": "2026-03-06",
+      "category": "정책",
+      "title": "금융위원회, 증시 변동성 확대에 대응",
+      "summary": [
+        "금융위원회는 국내 증시 변동성이 커짐에 따라 긴급 시장점검회의를 개최했습니다.",
+        "금융위원회는 증시의 추세적 하락 가능성은 낮다고 판단하고 시장 교란 행위에 대해 엄단할 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "금융위원회의 시장 대응은 투자 심리 안정 및 시장 질서 유지에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 금융위원회가 시장 변동성에 대한 대응 방안을 논의했다는 점에서 정책적 중요성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "금융위 \"증시 추세적 하락 가능성 낮아…시장 교란행위 엄단\" 미국과 이란의 전쟁이 격화하며 국내 증시 변동성이 커진 가운데 금융위원회는 긴급 시장점검회의를 열고, 대응 방안을 논의했다.금융위원회는 4일 오후 3시 이억원 금융위원장 주재로 금융감독원, 금융시장 전문가들과 함께 ..."
+        }
+      ],
+      "dedupeKey": "것이라고-국내-금융위원회-대응-변동성-시장점검회-증시-확대",
+      "clusterKey": "증시/변동성/대응",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030523956",
+      "publishedAt": "2026-03-05T14:26:40+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-06_11",
+      "date": "2026-03-06",
+      "category": "정책",
+      "title": "금융위, 중동 상황 대응 및 수출 기업 유동성 점검",
+      "summary": [
+        "금융위원회는 중동 상황으로 피해가 우려되는 수출기업에 대한 금융지원 체계를 점검했습니다.",
+        "정책금융기관들은 피해 기업을 대상으로 13조3천억원 규모의 금융지원 프로그램을 운영합니다.",
+        "금융감독원은 시장 전문가 간담회를 통해 투자자에게 정확한 정보 제공을 당부했습니다."
+      ],
+      "whyImportant": "중동 상황에 따른 불확실성에 대응하여 수출 기업의 유동성 확보를 지원하고 투자 심리 안정을 도모하는 데 중요합니다.",
+      "importanceRationale": "근거: 정책금융기관이 13조3천억원 규모의 금융지원 프로그램을 운영하고 만기 연장을 실시하여 기업 유동성 확보에 기여할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "전문가들은 최근 중동 상황과 코스피 급등에 따른 차익실현 수요가 맞물리며 변동성이 커졌고, 단기적으로는 유가·환율 등 거시지표와 주가의 변동성 확대가 불가피한 상황이라고 진단했다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "그러나 그동안의 국내 증시 강세가 기업의 견고한 실적과 정부의 주주 친화적 정책에 근거했던 만큼, 지수가 하방 지지선을 확인한 후 반등할 가능성이 크다고 관측했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "금융감독원도 이날 중동 상황에 따른 국내 증시상황 점검을 위해 주요 증권사 리서치센터장 등 시장전문가들을 불러 간담회를 열었다."
+        }
+      ],
+      "dedupeKey": "13조3천억원-금융위-기업-대응-상황-수출-유동성-중동",
+      "clusterKey": "금융/상황",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1319022",
+      "publishedAt": "2026-03-05T02:29:37+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

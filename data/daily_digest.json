@@ -1,63 +1,34 @@
 {
-  "date": "2026-03-06",
+  "date": "2026-03-07",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-06T08:43:32.343908+09:00",
+  "lastUpdatedAt": "2026-03-07T08:00:03.018982+09:00",
   "items": [
     {
-      "id": "2026-03-06_1",
-      "date": "2026-03-06",
-      "category": "에너지",
-      "title": "이란의 호르무즈 해협 봉쇄, LNG 가격 상승 우려",
+      "id": "2026-03-07_1",
+      "date": "2026-03-07",
+      "category": "국제",
+      "title": "이란 대통령, 중재 시도 언급…트럼프는 무조건 항복 외 합의 불가",
       "summary": [
-        "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄로 LNG 가격 상승 우려가 커지고 있습니다.",
-        "호르무즈 해협은 LNG 수송의 주요 통로입니다."
+        "마수드 페제시키안 이란 대통령은 미국·이스라엘과 이란 사이의 전쟁 종식을 위한 국제사회 중재가 시작됐다고 밝혔습니다.",
+        "도널드 트럼프 미국 대통령은 이란과의 합의는 '무조건 항복' 외에는 없을 것이라고 강조하며 전쟁 지속 의지를 보였습니다.",
+        "이란과 이스라엘 간의 공습이 계속되는 가운데, 중동 내 미국의 우방국에 대한 이란의 보복 공습도 이어지고 있습니다."
       ],
-      "whyImportant": "호르무즈 해협 봉쇄는 세계 에너지 시장에 큰 영향을 미칠 수 있는 지정학적 리스크입니다.",
-      "importanceRationale": "근거: 이란의 호르무즈 해협 봉쇄는 액화천연가스(LNG) 가격 상승 우려를 야기하며, 이는 에너지 시장 전반에 영향을 줄 수 있습니다.",
+      "whyImportant": "이번 분쟁은 국제 사회의 중재 노력에도 불구하고 당사국들의 강경한 입장으로 인해 단기간에 해결되기 어려울 수 있으며, 중동 지역의 불안정을 심화시킬 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 '무조건 항복' 외에는 합의가 없다고 못 박았고, 이란과 이스라엘 간 공습이 계속되고 있으며, 아랍에미리트에 미사일 205발과 드론 1184대가 날아오는 등 중동 내 긴장이 고조되고 있기 때문입니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "미국과 이스라엘의 공습을 받은 이란의 호르무즈 해협 봉쇄 영향으로 액화천연가스(LNG) 가격 상승 우려가 커지고 있다."
+          "evidence": "아제르바이잔은 최근 이란군 드론 공격으로 민간인 4명이 다친 데 대한 항의로, 이날 이란 주재 외교관 전원을 철수시킨다고 밝혔다."
         }
       ],
-      "dedupeKey": "lng-가격-미국-봉쇄-상승-이란-해협-호르무즈",
-      "clusterKey": "이스라엘이란/호르무즈/해협/봉쇄",
+      "dedupeKey": "대통령-무조건-불가-시도-이란-중재-트럼프-항복",
+      "clusterKey": "이스라엘이란_관세/대통령",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1318436",
-      "publishedAt": "2026-03-04T05:30:21+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_2",
-      "date": "2026-03-06",
-      "category": "에너지",
-      "title": "이란 공격으로 카타르 LNG 생산 중단, 미국 가스株 반사이익",
-      "summary": [
-        "이란의 공격으로 카타르의 액화천연가스(LNG) 생산이 중단되어 글로벌 에너지 시장에 충격이 발생했습니다.",
-        "카타르 생산 중단으로 미국 LNG 기업의 주가가 급등했으며, 셰니에르에너지 주가는 이번 주 약 7%, 벤처글로벌은 24%가량 상승했습니다."
-      ],
-      "whyImportant": "카타르 LNG 생산 중단은 글로벌 에너지 공급망에 영향을 미치며, 미국의 LNG 수출 경쟁력 강화로 이어질 수 있습니다.",
-      "importanceRationale": "근거: 카타르는 세계 2위 LNG 수출국으로 글로벌 공급의 약 20%를 차지하며, 생산 중단으로 미국 LNG 기업 주가가 상승(7%, 24%)했습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "카타르는 지난 3일 이란이 핵심 LNG 시설 두 곳을 공격한 이후 LNG 생산을 중단했다."
-        }
-      ],
-      "dedupeKey": "lng-가스-공격-미국-반사이익-생산-이란-카타르",
-      "clusterKey": "에너지/공격",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030491871",
-      "publishedAt": "2026-03-04T08:26:38+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/international_general/1248110.html",
+      "publishedAt": "2026-03-06T14:42:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -66,56 +37,25 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-06_3",
-      "date": "2026-03-06",
+      "id": "2026-03-07_2",
+      "date": "2026-03-07",
       "category": "에너지",
-      "title": "트럼프, 중간 선거 앞두고 AI 데이터 센터 문제 직면",
+      "title": "신한울1호기 계획예방정비 92일 기록",
       "summary": [
-        "트럼프 대통령은 AI 데이터 센터에 자체 전력 공급을 약속하는 서약에 서명하도록 주요 기술 기업들을 백악관으로 불러들였습니다.",
-        "이는 미국 전역에서 전기 요금 상승에 대한 불만이 커지고 있는 가운데 이루어졌습니다.",
-        "그러나 이 합의는 구체적이고 구속력 있는 약속을 담고 있지는 않은 것으로 보입니다."
+        "2022년 첫 가동을 시작한 신한울1호기 원자력발전소는 경상북도 연간 전력 소비량의 약 1/4을 책임집니다.",
+        "1년 6개월 가동 후 3개월 재정비 주기를 따르는 신한울1호기 발전소는 계획예방정비가 진행됩니다.",
+        "원자로가 정지된 상태에서 연료 인출, 핵심 설비 분해 및 조립, 설비 점검, 안전성 평가 등이 진행됩니다."
       ],
-      "whyImportant": "데이터 센터 전력 문제는 향후 데이터 센터 구축 및 전력 공급망에 대한 정책 결정에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 미국 전역에서 데이터 센터에 대한 반대가 커지고 있으며, 골드만삭스 보고서에 따르면 전기 요금은 2026년까지 6% 상승할 것으로 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "Electricity prices are forecast to rise 6% through 2026 and another 3% in 2028 as data center demand grows more rapidly than power supply, according to a Goldman Sachs report published last month."
-        }
-      ],
-      "dedupeKey": "데이터-문제-선거-센터-앞두고-중간-직면-트럼프",
-      "clusterKey": "관세/에너지/트럼프",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/04/trump-faces-an-ai-data-center-power-dilemma-ahead-of-midterms.html",
-      "publishedAt": "2026-03-04T15:55:11+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_4",
-      "date": "2026-03-06",
-      "category": "에너지",
-      "title": "신한울 1호기 계획예방정비 92일 기록",
-      "summary": [
-        "신한울 1호기 원자력발전소는 1년 6개월 가동 후 3개월의 계획예방정비를 진행합니다.",
-        "이 기간 동안 연료 인출, 핵심 설비 점검, 안전성 평가 등이 이루어집니다.",
-        "2026년 3월 7일 KBS 1TV에서 신한울1호기 계획예방정비 92일의 기록이 방송될 예정입니다."
-      ],
-      "whyImportant": "원자력 발전소의 안전 운전을 위한 계획예방정비는 안정적인 전력 공급에 필수적인 과정입니다.",
-      "importanceRationale": "근거: 신한울1호기는 시간당 1,400MW의 전력을 생산하는 대형 원전으로, 경상북도 연간 전력 소비량의 약 1/4을 책임지기 때문에 계획예방정비가 중요합니다.",
+      "whyImportant": "신한울1호기 계획예방정비는 안정적인 전력 공급과 원자로 안전성 유지를 위해 필수적인 과정입니다.",
+      "importanceRationale": "근거: 신한울1호기는 시간당 1,400MW의 전력을 생산하는 대형 원전이며, 통상 1년 6개월 가동 후 3개월 재정비 운전 주기를 가집니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "92 일의 기록 , 신한울 1 호기 계획예방정비 국가 보안 시설의 심부가 열린다 !"
+          "evidence": "본문영역 상세페이지 92일의 기록, 신한울1호기 계획예방정비 국가 보안 시설의 심부가 열린다!"
         }
       ],
-      "dedupeKey": "1호기-3개월-6개월-계획예방정비-기록-신한울-신한울1호기-원자력발전소",
-      "clusterKey": "설비투자/신한울",
+      "dedupeKey": "3개월-4을-6개월-가동-계획예방정비-기록-신한울1호기-원자력발전소",
+      "clusterKey": "설비투자/신한울1호기",
       "matchedTo": null,
       "sourceName": "MyloveKBS",
       "sourceUrl": "https://mylovekbs.kbs.co.kr/index.html?source=mylovekbs&sname=mylovekbs&stype=magazine&contents_id=70000000403445",
@@ -128,179 +68,55 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-06_5",
-      "date": "2026-03-06",
-      "category": "금융",
-      "title": "에이유브랜즈, 중국 매출 증가로 실적 개선 전망",
-      "summary": [
-        "하나증권은 중국 오프라인 매장 확대와 수출 비중 상승에 힘입어 에이유브랜즈의 실적 개선을 전망했습니다.",
-        "2025년에는 중국 플래그십 매장이 13개로 늘어나고, 올해 수출 비중이 50%를 넘어설 가능성이 있다고 분석했습니다."
-      ],
-      "whyImportant": "중국 시장에서의 확장과 수출 증가는 에이유브랜즈의 장기적인 성장 동력이 될 수 있습니다.",
-      "importanceRationale": "근거: 2025년 중국 플래그십 매장 수가 13개로 증가하고, 올해 수출 비중이 50%를 넘어설 가능성이 있다는 분석에 기반합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "진영기 한경닷컴 기자 young71@hankyung.com 박찬솔 하나증권 연구원은 6일 보고서를 내고 \"지난해 4분기 매출이 전년 대비 크게 늘었지만, 판관비 증가로 영업이익률에 대한 시장 기대가 낮아지며 주가가 하락했다\"며 \"그러나 플래그십 매장 확대에 따른 고정비 증가가 매출 확대 속도를 감안하면 부담스러운 수준은 아니다\"라고 분석했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "그는 \"지난해 3분기부터 시작된 중국 티몰 판매량 증가도 중요한 포인트\"라며 \"현재 중국 온라인 매출이 월 5억원 수준까지 확대됐고, 오프라인 중심 성장에 더해 온라인 확대가 수익성 개선에 기여할 수 있다\"고 설명했다."
-        }
-      ],
-      "dedupeKey": "13개-개선-매출-실적-에이유브랜즈-중국-증가-하나증권",
-      "clusterKey": "실적/에이유브랜즈",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030627506",
-      "publishedAt": "2026-03-05T23:24:26+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_6",
-      "date": "2026-03-06",
+      "id": "2026-03-07_3",
+      "date": "2026-03-07",
       "category": "기술",
-      "title": "엔비디아 CEO, 300억 달러의 OpenAI 투자 '마지막일 수도'",
+      "title": "미국, AI 칩 수출 새 규제 검토 및 외국 기업의 미국 투자 조건 저울질",
       "summary": [
-        "엔비디아의 젠슨 황 CEO는 최근 O AI에 대한 300억 달러 투자가 올해 말 상장 전 마지막 투자가 될 수 있다고 밝혔습니다.",
-        "또한, 엔비디아는 O AI의 경쟁사인 A opic에 대한 100억 달러 투자도 마지막이 될 가능성이 높다고 언급했습니다.",
-        "O AI는 엔비디아의 V a R 시스템에서 3기가와트의 추론 용량과 2기가와트의 훈련 용량을 확보했습니다."
+        "미국 정부가 AI 반도체 수입 외국 기업에 미국 내 투자를 조건으로 부과하는 방안을 검토 중입니다.",
+        "상무부는 칩 수입 기업에 보안 관련 보증을 요구하고, 소규모 칩 설치에도 수출 허가를 받도록 하는 방안을 논의 중입니다.",
+        "엔비디아는 중국 수출용 H200 칩 생산을 중단하고 차세대 칩 생산으로 전환했습니다."
       ],
-      "whyImportant": "엔비디아의 투자 전략 변화는 AI 인프라 시장의 경쟁 구도와 투자 트렌드에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 엔비디아가 OpenAI에 대한 1,000억 달러 규모의 인프라 투자 계획을 철회하고, 300억 달러 투자가 마지막이 될 수 있다고 언급했기 때문입니다.",
+      "whyImportant": "미국의 AI 칩 수출 규제는 반도체 공급망과 기술 주도권 경쟁에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 상무부가 AI 칩 수출 관련 새 규제 체계를 논의 중이며, 엔비디아가 중국 수출용 H200 칩 생산을 중단하는 등 변화가 나타나고 있기 때문입니다.",
       "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "The chipmaker disclosed in a quarterly filing in November that the previously announced $100 billion deal may not come to fruition, and the Wall Street Journal reported in January that the agreement was \"on ice.\" Nvidia included similar language in its quarterly filing in February, which noted that there was \"no assurance\" that the company will enter into an \"investment and partnership agreement with OpenAI or that a transaction will be completed.\" The chipmaker's $30 billion investment in OpenAI was unveiled as part of a $110 billion funding round that the startup announced on Friday."
-        },
         {
           "label": "capex",
-          "evidence": "As part of the agreement, OpenAI secured 3 gigawatts of dedicated inference capacity and 2 gigawatts of training capacity on Nvidia's Vera Rubin systems for AI data centers, OpenAI said Friday."
-        }
-      ],
-      "dedupeKey": "300억-ceo-openai-달러-마지막일-수도-엔비디아-투자",
-      "clusterKey": "투자/엔비디아/상장",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/04/nvidia-huang-openai-investment.html",
-      "publishedAt": "2026-03-04T18:42:35+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_7",
-      "date": "2026-03-06",
-      "category": "금융",
-      "title": "원익QnC, 목표 주가 상향 조정",
-      "summary": [
-        "신한투자증권은 IT 업황 개선에 따라 원익Q C의 목표 주가를 3만원에서 4만5000원으로 상향 조정했습니다.",
-        "2026년 원익Q C의 연간 연결 기준 영업이익은 전년 동기 대비 65% 증가한 981억원으로 전망됩니다."
-      ],
-      "whyImportant": "반도체 업황 개선에 따른 소재·부품 업체들의 실적 재평가 가능성을 시사합니다.",
-      "importanceRationale": "근거: 2026년 원익QnC의 영업이익이 전년 대비 65% 늘어날 것으로 예상되어, 반도체 소재·부품 업체의 실적 개선에 대한 기대감을 반영합니다.",
-      "impactSignals": [
+          "evidence": "\"엔비디아, 中수출용 H200 생산중단…생산설비 '베라루빈' 전환\" (샌프란시스코=연합뉴스) 권영전 특파원 = 미국 정부가 인공지능(AI) 반도체를 수입하는 외국 기업에 미국 내 투자를 조건으로 부과하는 방안을 검토하고 있는 것으로 나타났다."
+        },
         {
           "label": "market-demand",
-          "evidence": "쿼츠(석영유리), 세정, 세라믹 등 제품 판매량이 늘었고, 자회사 실적도 개선된 덕"
+          "evidence": "엔비디아는 현재 H200 칩 재고 25만 개를 보유하고 있어 향후 중국에 반도체를 판매할 수 있게 되면 일단 기존 재고를 소진해 대응할 수 있을 것이라고 소식통은 전했다."
         },
         {
-          "label": "earnings",
-          "evidence": "지난해 4분기 원익QnC의 영업이익은 184억원으로 추정치를 85% 웃돌았다"
+          "label": "policy",
+          "evidence": "이는 H200 칩에 대한 미국의 대(對)중국 수출 승인이 늦어지고 있는 데다 중국의 잠재적 규제 가능성이 부상했기 때문으로 풀이된다."
         }
       ],
-      "dedupeKey": "3만원-4만5000원-981억원-목표-상향-원익qnc-조정-주가",
-      "clusterKey": "실적/원익qnc",
+      "dedupeKey": "규제-기업-미국-수출-외국-저울질-조건-투자",
+      "clusterKey": "미중_투자/수출/정책",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030626236",
-      "publishedAt": "2026-03-05T22:54:06+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1319570",
+      "publishedAt": "2026-03-05T23:33:45+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-06_8",
-      "date": "2026-03-06",
-      "category": "금융",
-      "title": "CJ대한통운, 택배 점유율 및 영업이익 증가 전망",
-      "summary": [
-        "한국투자증권은 CJ대한통운의 택배 시장 점유율 상승과 이익 개선을 긍정적으로 평가하며 목표주가와 투자의견을 유지했습니다.",
-        "올해 택배 부문 영업이익은 전년 대비 24% 개선될 것으로 예상되며, 경쟁사 대비 영업이익률 격차도 확대될 전망입니다."
-      ],
-      "whyImportant": "CJ대한통운의 실적 개선은 택배 시장의 경쟁 구도 변화와 물류 자동화 투자 효과를 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 올해 택배 부문 영업이익이 전년 대비 24% 개선될 것으로 예상되어 중요도 3으로 평가합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "이에 따라 올해 택배 부문 영업이익은 전년 대비 24% 개선되고, 영업이익률은 경쟁사 대비 3배 이상 격차를 벌려나갈 것이라고 내다봤다."
-        }
-      ],
-      "dedupeKey": "cj대한통운-영업이익-영업이익률-점유율-증가-택배-투자의견-한국투자증권",
-      "clusterKey": "실적/cj대한통운",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030626676",
-      "publishedAt": "2026-03-05T23:29:11+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_9",
-      "date": "2026-03-06",
-      "category": "금융",
-      "title": "코스피 폭락 후 반등 전망",
-      "summary": [
-        "미국-이란 전쟁 여파로 코스피가 역대 최대 하락폭을 기록하며 투자 심리가 위축되었습니다.",
-        "증권가에서는 기업 실적 등 펀더멘털이 탄탄하여 추가 하락보다는 반등 가능성에 무게를 두고 있습니다."
-      ],
-      "whyImportant": "증시 변동성 확대 가능성 속에서 투자 전략 수립에 참고 자료가 될 수 있습니다.",
-      "importanceRationale": "근거: 코스피가 12.06% 급락했지만, 증권가는 반도체 기업 이익 모멘텀이 탄탄하고 심리·수급 요인에 따른 단기 급락으로 분석하여 추가 조정 폭이 제한적일 것으로 예상합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "하지만 증권가는 기업 실적 등 증시 펀더멘털이 탄탄하다는 점에 비춰 추가 하락보다는 반등 가능성에 무게를 뒀다."
-        }
-      ],
-      "dedupeKey": "기업-미국-반등-증권-코스피-펀더멘털-폭락-하락보다",
-      "clusterKey": "실적/코스피/투자",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030488856",
-      "publishedAt": "2026-03-04T13:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-06_10",
-      "date": "2026-03-06",
+      "id": "2026-03-07_4",
+      "date": "2026-03-07",
       "category": "정책",
       "title": "금융위원회, 증시 변동성 확대에 대응",
       "summary": [
         "금융위원회는 국내 증시 변동성이 커짐에 따라 긴급 시장점검회의를 개최했습니다.",
         "금융위원회는 증시의 추세적 하락 가능성은 낮다고 판단하고 시장 교란 행위에 대해 엄단할 것이라고 밝혔습니다."
       ],
-      "whyImportant": "금융위원회의 시장 대응은 투자 심리 안정 및 시장 질서 유지에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 금융위원회가 시장 변동성에 대한 대응 방안을 논의했다는 점에서 정책적 중요성이 있습니다.",
+      "whyImportant": "금융위원회의 대응은 시장 안정화에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융위원회가 시장 변동성에 대한 대응 방안을 논의하고 시장 교란 행위에 대한 엄단을 밝힘으로써 시장에 미치는 영향이 있을 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -321,40 +137,162 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-06_11",
-      "date": "2026-03-06",
+      "id": "2026-03-07_5",
+      "date": "2026-03-07",
       "category": "정책",
-      "title": "금융위, 중동 상황 대응 및 수출 기업 유동성 점검",
+      "title": "정부, 검찰개혁 2단계 입법 준비 착수",
       "summary": [
-        "금융위원회는 중동 상황으로 피해가 우려되는 수출기업에 대한 금융지원 체계를 점검했습니다.",
-        "정책금융기관들은 피해 기업을 대상으로 13조3천억원 규모의 금융지원 프로그램을 운영합니다.",
-        "금융감독원은 시장 전문가 간담회를 통해 투자자에게 정확한 정보 제공을 당부했습니다."
+        "정부는 형사소송법 개정안을 상반기 내 마련하고 6월 이후 입법예고를 목표로 하고 있습니다.",
+        "2단계 입법의 핵심 쟁점은 검찰의 보완수사권 폐지 여부 등입니다."
       ],
-      "whyImportant": "중동 상황에 따른 불확실성에 대응하여 수출 기업의 유동성 확보를 지원하고 투자 심리 안정을 도모하는 데 중요합니다.",
-      "importanceRationale": "근거: 정책금융기관이 13조3천억원 규모의 금융지원 프로그램을 운영하고 만기 연장을 실시하여 기업 유동성 확보에 기여할 수 있습니다.",
+      "whyImportant": "검찰 개혁 관련 법안은 향후 검찰의 권한 범위와 수사 방식에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 정부는 상반기 내 형사소송법 개정안을 마련하고 6월 이후 입법예고를 목표로 하고 있어 정책 결정에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "전문가들은 최근 중동 상황과 코스피 급등에 따른 차익실현 수요가 맞물리며 변동성이 커졌고, 단기적으로는 유가·환율 등 거시지표와 주가의 변동성 확대가 불가피한 상황이라고 진단했다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "그러나 그동안의 국내 증시 강세가 기업의 견고한 실적과 정부의 주주 친화적 정책에 근거했던 만큼, 지수가 하방 지지선을 확인한 후 반등할 가능성이 크다고 관측했다."
-        },
-        {
           "label": "policy",
-          "evidence": "금융감독원도 이날 중동 상황에 따른 국내 증시상황 점검을 위해 주요 증권사 리서치센터장 등 시장전문가들을 불러 간담회를 열었다."
+          "evidence": "허란 기자 why@hankyung.com 국무총리실 산하 검찰개혁추진단의 노혜원 부단장은 6일 정부서울청사에서 브리핑을 열어 “관계 부처 및 당정 협의를 거쳐 중수청·공소청법 등 1단계 입법안이 당론으로 확정돼 국회에 제출됐다”며 “후속 입법 준비를 차질 없이 진행하겠다”고 밝혔다."
         }
       ],
-      "dedupeKey": "13조3천억원-금융위-기업-대응-상황-수출-유동성-중동",
-      "clusterKey": "금융/상황",
+      "dedupeKey": "2단계-검찰개혁-여부-입법-입법예고-정부-준비-형사소송법",
+      "clusterKey": "법집행/검찰개혁",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1319022",
-      "publishedAt": "2026-03-05T02:29:37+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030645311",
+      "publishedAt": "2026-03-06T08:37:27+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-07_6",
+      "date": "2026-03-07",
+      "category": "금융",
+      "title": "백악관, 이란 군사작전 목표 4~6주 내 달성 전망",
+      "summary": [
+        "백악관은 대이란 군사작전이 순조롭게 진행 중이며 4~6주 안에 목표가 완료될 것으로 전망했습니다.",
+        "트럼프 대통령은 이란과의 합의는 '무조건 항복' 외에는 없을 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "이번 군사작전의 진행 상황과 결과는 향후 미국과 이란 관계에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 백악관은 군사작전 목표가 4~6주 내 완료될 것으로 전망했으며, 트럼프 대통령은 '무조건 항복'을 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "레빗 대변인은 트럼프 대통령이 이날 \"이란과의 합의는 '무조건 항복' 외에는 없을 것\"이라고 밝힌 것을 두고는 \"이란이 더 이상 미국에 위협이 되지 않고 '장대한 분노' 작전 목표가 완전히 달성됐다고 판단하는 시점이 되면 그때 이란은 스스로 항복을 선언하든 안 하든 무조건적인 항복 상태에 놓인다는 것\"이라고 설명했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "캐롤라인 레빗 백악관 대변인은 이날 백악관에서 기자들과 만나 이같이 밝힌 뒤 이란의 차기 지도자 선출과 관련, \"우리 정보기관과 미국 정부가 검토하는 인물이 여러 명 있는 것으로 안다\"며 \"그 이상은 언급하지 않겠다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "6주-것이라고-군사작전-달성-목표-백악관-순조롭게-이란",
+      "clusterKey": "관세/백악관",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320051",
+      "publishedAt": "2026-03-06T19:01:18+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-07_7",
+      "date": "2026-03-07",
+      "category": "기술",
+      "title": "AWS·MS·구글, 앤트로픽 AI 계속 제공 예정",
+      "summary": [
+        "미 국방부가 '공급망 위험' 기업으로 지정한 앤트로픽의 AI 모델을 3대 클라우드 기업이 계속 제공할 방침입니다.",
+        "아마존, 구글, MS는 국방부 관련 부문을 제외하고 앤트로픽과의 협력을 이어갈 것이라고 밝혔습니다.",
+        "이들 기업은 앤트로픽에 대규모 투자를 진행한 바 있습니다."
+      ],
+      "whyImportant": "클라우드 서비스 제공에 있어 AI 모델의 공급망 안정성 및 정부 규제가 중요한 고려 사항임을 시사합니다.",
+      "importanceRationale": "근거: 3대 클라우드 기업이 앤트로픽에 총 80억 달러, 30억 달러, 50억 달러를 투자했으며, 국방부의 공급망 위험 지정에도 협력을 유지하기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "앤트로픽이 국방부를 비롯한 정부 기관에 진출하게 된 것도 AWS를 통해서였다."
+        }
+      ],
+      "dedupeKey": "3대-aws-구글-국방부-기업-앤트로픽-제공-클라우드",
+      "clusterKey": "투자/클라우드/구글",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320063",
+      "publishedAt": "2026-03-06T21:08:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-07_8",
+      "date": "2026-03-07",
+      "category": "기술",
+      "title": "MS, '공급망 위험' 지정에도 앤트로픽 AI 고객 제공 지속",
+      "summary": [
+        "마이크로소프트(MS)는 미국 국방부의 '공급망 위험' 기업으로 지정된 앤트로픽의 AI 모델을 고객에게 계속 제공할 방침입니다.",
+        "MS는 법률 검토 결과 국방부 외 고객은 앤트로픽과 협력을 이어갈 수 있다고 밝혔습니다.",
+        "이는 거대 기술기업 중 공급망 위험 기업 지정 후에도 앤트로픽과 관계를 유지하겠다고 밝힌 첫 사례입니다."
+      ],
+      "whyImportant": "이번 결정은 공급망 위험 지정에도 불구하고 특정 조건 하에 AI 기술 협력이 지속될 수 있음을 시사합니다.",
+      "importanceRationale": "근거: MS는 앤트로픽에 50억 달러를 투자하고 300억 달러 상당의 MS '애저' 클라우드 서비스를 구매하는 전략적 동반관계를 맺은 바 있어, 이번 결정은 MS의 투자 및 전략적 관계 유지 의지를 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "MS는 지난해 11월 앤트로픽에 50억 달러를 투자하고, 앤트로픽은 300억 달러 상당의 MS '애저' 클라우드 서비스를 구매하는 내용의 전략적 동반관계를 맺은 바 있다."
+        }
+      ],
+      "dedupeKey": "고객-공급망-기술기업-앤트로픽-위험-제공-지속-지정",
+      "clusterKey": "위험/지정/앤트로픽",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320046",
+      "publishedAt": "2026-03-06T18:10:23+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-07_9",
+      "date": "2026-03-07",
+      "category": "기술",
+      "title": "미국, AI 칩 수출 시 허가제 추진…공급망 통제 강화",
+      "summary": [
+        "미국 정부가 엔비디아 등 미국 기업의 AI 가속기 칩 수출 시 정부 사전 허가를 받도록 하는 방안을 검토 중입니다.",
+        "이는 중국 등 40여 개국에 적용되는 수출 규제 대상을 전 세계로 확대하는 것이 핵심입니다.",
+        "미국 정부는 AI 칩 공급망 흐름을 추적하여 중국의 AI 기술력 제한을 목표로 합니다."
+      ],
+      "whyImportant": "미국의 AI 칩 수출 통제는 글로벌 AI 생태계에 대한 영향력을 행사하고, 관련 산업의 공급망 재편을 가속화할 수 있습니다.",
+      "importanceRationale": "근거: 미국 정부가 엔비디아 GPU GB300 1000개 이하 도입 시 간단 심사, 20만 개 이상 초대형 프로젝트는 국가 간 협상을 요구할 수 있어 중요도 4 부여합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "美, AI칩 '전세계 수출 허가제' 추진 엔비디아·AMD 판매 통제 글로벌 AI 생태계 장악 포석 이미지 크게보기 ADVERTISEMENT 데이터센터 필수인 '가속기 칩'…엔비디아·AMD, 시장 90% 차지 한 국가서 20만개 이상 수입 땐 정부가 직접 美와 협상 나서야 ◇각국 정부도 미국 승인 받아야 ADVERTISEMENT ◇GPU 개수 따라 심사 강도 달라져 ADVERTISEMENT ◇중국의 ‘우회 사용’ 제한할 수 있어 ADVERTISEMENT 미국 정부가 엔비디아 등이 생산하는 인공지능(AI) 칩 수출을 통제하는 방안을 검토하고 있다."
+        },
+        {
+          "label": "policy",
+          "evidence": "20만 개 이상 GPU가 들어가는 초대형 프로젝트는 국가 간 협상이 이뤄져야 할 가능성이 크다.이 제도가 시행되면 미국 정부는 구매 기업과 최종 사용자, 데이터센터 위치 등을 파악할 수 있다.미국 정부가 인공지능(AI) 칩 수출을 통제하는 방법은 ‘AI 수출 지도’를 만드는 것이다."
+        }
+      ],
+      "dedupeKey": "강화-공급망-기업-미국-수출-정부-통제-허가제",
+      "clusterKey": "미중_정책/수출",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030644791",
+      "publishedAt": "2026-03-06T09:06:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

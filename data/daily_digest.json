@@ -1,125 +1,34 @@
 {
-  "date": "2026-03-09",
+  "date": "2026-03-10",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-09T07:53:42.100092+09:00",
+  "lastUpdatedAt": "2026-03-10T07:58:49.536484+09:00",
   "items": [
     {
-      "id": "2026-03-09_1",
-      "date": "2026-03-09",
-      "category": "금융",
-      "title": "GS건설, 도안자이 센텀리체 분양으로 주택 실적 부진 만회 시도",
+      "id": "2026-03-10_1",
+      "date": "2026-03-10",
+      "category": "산업",
+      "title": "중국 정부 수출 통제 여파로 텅스텐 가격 1년 새 6배 상승",
       "summary": [
-        "GS건설이 4월 대전 도안신도시에 2293세대 규모의 '도안자이 센텀리체'를 분양하며, 이 중 1780세대를 일반에 공급합니다.",
-        "이는 GS건설의 주택 부문 실적 부진을 개선하기 위한 전략으로, 2024년 건축주택사업본부 매출이 18.1% 감소했습니다."
+        "중국 내 흑색 텅스텐 정광 평균 가격이 1년 전보다 551.06% 급등했습니다.",
+        "로이터는 텅스텐 가격이 사상 최고 수준이라며, 중국의 수출 통제를 배경으로 분석했습니다.",
+        "중국은 작년 2월 텅스텐 수출 통제 조치를 발표하고 수출 업체에 허가를 받도록 했습니다."
       ],
-      "whyImportant": "이번 분양은 GS건설의 주택 사업 실적 회복 가능성을 가늠하는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: GS건설의 2024년 건축주택사업본부 매출이 18.1% 감소한 상황에서, 수요가 높은 지역의 대규모 분양을 통해 매출 감소분을 상쇄하려는 전략입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "건축주택사업본부 매출은 2024년 9조5110억원에서 지난해 7조7869억원으로 18.1% 줄었다."
-        }
-      ],
-      "dedupeKey": "gs건설-도안자-만회-부진-분양-센텀리체-실적-주택",
-      "clusterKey": "실적/gs건설",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656087",
-      "publishedAt": "2026-03-08T11:34:43+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-09_2",
-      "date": "2026-03-09",
-      "category": "에너지",
-      "title": "외국인 투자자, 차익 실현 속 건설주 매수한 배경은 원전 모멘텀",
-      "summary": [
-        "DB증권에 따르면 이란 사태 전후 외국인 투자자의 매도세 속에서도 건설주에는 자금 유입이 있었다고 밝혔습니다.",
-        "외국인은 대우건설, 삼성E&A, 현대건설 등 원전 테마 건설주를 집중 매수했습니다."
-      ],
-      "whyImportant": "원전 관련 건설주에 대한 외국인 투자자들의 관심은 향후 에너지 정책 및 관련 산업에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 3~6일 동안 대우건설 시가총액의 1.20%에 해당하는 금액을 외국인이 순매수했으며, 삼성E&A(0.73%)와 현대건설(0.64%)에도 자금이 몰렸습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "강 연구원은 외국인이 원전 산업에 투자하는 콘셉트로 건설주를 사들인 배경을 △이란 사태로 유가가 상승할 때 대안적 에너지로 부상할 수 있다는 점 △인공지능(AI) 시대에 대규모 에너지가 필요하다는 인식 △한국의 원전 관련 기업 상당수가 순수 건설 분야에도 강점이 있어 중동 지역 분쟁이 마무리된 뒤 재건 수주를 받을 수 있다는 점 등을 꼽았다."
-        }
-      ],
-      "dedupeKey": "건설주-매수-배경-실현-외국인-원전-차익-투자자",
-      "clusterKey": "투자/외국인",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030971136",
-      "publishedAt": "2026-03-08T22:42:13+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-09_3",
-      "date": "2026-03-09",
-      "category": "에너지",
-      "title": "신한울1호기 계획예방정비 92일 기록",
-      "summary": [
-        "2022년 첫 가동을 시작한 신한울1호기 원자력발전소는 경상북도 연간 전력 소비량의 약 1/4을 책임집니다.",
-        "1년 6개월 가동 후 3개월 재정비 주기를 따르는 신한울1호기 발전소는 안정적 전력 공급을 위한 계획예방정비가 진행됩니다.",
-        "원자로가 정지된 상태에서 연료 인출, 핵심 설비 점검 등을 진행하며 1,500명 이상의 인력이 투입됩니다."
-      ],
-      "whyImportant": "신한울1호기의 계획예방정비는 안정적인 전력 공급과 원전 안전성 유지를 위해 필수적인 과정입니다.",
-      "importanceRationale": "근거: 신한울1호기는 시간당 1,400MW의 전력을 생산하는 대형 원전으로, 1년 6개월 가동 후 3개월 재정비 주기를 가집니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "본문영역 상세페이지 92일의 기록, 신한울1호기 계획예방정비 국가 보안 시설의 심부가 열린다!"
-        }
-      ],
-      "dedupeKey": "3개월-4을-500명-6개월-계획예방정비-기록-신한울1호기-원자력발전소",
-      "clusterKey": "설비투자/신한울1호기",
-      "matchedTo": null,
-      "sourceName": "MyloveKBS",
-      "sourceUrl": "https://mylovekbs.kbs.co.kr/index.html?source=mylovekbs&sname=mylovekbs&stype=magazine&contents_id=70000000403445",
-      "publishedAt": "2026-03-07T16:25:45+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-09_4",
-      "date": "2026-03-09",
-      "category": "금융",
-      "title": "일본, 2040년 반도체 매출 40조엔 목표",
-      "summary": [
-        "일본 정부가 2040년까지 자국산 반도체 매출을 40조엔으로 늘리는 목표를 설정했습니다.",
-        "AI 및 데이터센터 수요에 대응하여 최첨단 반도체 연구개발 거점을 마련할 계획입니다.",
-        "라피더스는 캐논을 첫 고객 후보로 확보하여 2나노 이미지 처리용 반도체를 공동 개발할 예정입니다."
-      ],
-      "whyImportant": "일본의 반도체 산업 부활 노력은 장기적으로 글로벌 반도체 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 일본 정부는 2040년까지 반도체 매출 40조엔 달성을 목표로, 라피더스에 올해 2500억엔을 출자하는 등 적극적인 지원 정책을 추진하고 있습니다.",
+      "whyImportant": "중국의 텅스텐 수출 통제는 제조업 전반의 기초 소재 가격 상승을 유발하여 산업에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국의 텅스텐 수출 통제 조치와 채굴 쿼터 6.5% 감소로 텅스텐 가격이 급등했으며, 이는 제조업의 기초 소재 가격에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "당초 통신기기 등에 쓰이는 6나노 반도체를 생산할 계획이었지만, AI 반도체 수요가 늘자 더 미세한 고성능 제품을 제조하기로 방향을 바꿨다."
+          "evidence": "로이터통신은 지난 1월 텅스텐 가격이 사상 최고 수준을 기록했다며 재고 부족과 산업용 수요, 중국의 수출 통제 등을 그 배경으로 분석했다."
         }
       ],
-      "dedupeKey": "2나노-40조엔-데이터센터-매출-목표-반도체-일본-정부",
-      "clusterKey": "실적/40조엔",
+      "dedupeKey": "6배-가격-수출-여파-정부-중국-텅스텐-통제",
+      "clusterKey": "수출/통제/여파",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030866381",
-      "publishedAt": "2026-03-08T09:22:52+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026030991411",
+      "publishedAt": "2026-03-09T08:52:52+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -128,29 +37,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-09_5",
-      "date": "2026-03-09",
-      "category": "금융",
-      "title": "파라다이스, 춘절 효과로 카지노 매출 급증 및 하얏트 재개관 앞두고 탄력",
+      "id": "2026-03-10_2",
+      "date": "2026-03-10",
+      "category": "국제",
+      "title": "멕시코, 캐나다와 5월부터 USMCA 무역 협상 예정",
       "summary": [
-        "파라다이스의 지난달 카지노 매출액은 895억원으로 전년 동기 대비 24.4% 증가했습니다.",
-        "1~2월 누계 카지노 매출은 1812억원으로 전년 동기 대비 26.1% 증가했습니다.",
-        "하얏트 리젠시 인천 파라다이스시티가 이달 중 재개관할 예정입니다."
+        "멕시코 정부가 미국에 이어 캐나다와 USMCA 공동 검토를 위한 협상을 5월 초부터 개시할 예정입니다.",
+        "멕시코는 USMCA 협정이 현재 형태로 유지되는 것을 지지하며, 기업 및 주 정부도 같은 입장을 강력히 희망하고 있습니다."
       ],
-      "whyImportant": "파라다이스의 카지노 매출 증가는 국내 관광 산업 및 관련 기업 실적에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 2월 카지노 매출액이 전년 동기 대비 24.4% 증가했으며, 1~2월 누계 매출은 26.1% 증가하여 실적 개선을 보였습니다.",
+      "whyImportant": "USMCA 재검토 및 협상 결과는 북미 지역의 무역 관계 및 공급망에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 멕시코는 5월 초부터 캐나다와 협정 검토 논의에 들어갈 예정이며, 멕시코 기업과 32개 주 정부의 80% 가까이가 USMCA 협정 유지를 찬성했습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "파라다이스의 지난달 카지노 매출액은 895억원으로 전년 동기보다 24.4% 뛰었다."
+          "label": "policy",
+          "evidence": "USMCA는 기존 북미자유무역협정(NAFTA)을 대체해 2018년 9월 30일 타결된 것으로, 일부 수정을 거쳐 2020년 7월 1일 발효됐다."
         }
       ],
-      "dedupeKey": "1812억원-895억원-매출-춘절-카지노-파라다이스-하얏트-효과",
-      "clusterKey": "실적/파라다이스",
+      "dedupeKey": "usmca-기업-멕시코-무역-미국-정부-캐나다-협상",
+      "clusterKey": "관세/멕시코",
       "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656085",
-      "publishedAt": "2026-03-08T09:19:28+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1321275",
+      "publishedAt": "2026-03-09T19:10:49+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -159,29 +67,223 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-09_6",
-      "date": "2026-03-09",
-      "category": "금융",
-      "title": "강스템바이오텍, CDMO 고객사 임상 진입으로 실적 연결 기대",
+      "id": "2026-03-10_3",
+      "date": "2026-03-10",
+      "category": "정책",
+      "title": "넷플릭스·유튜브, AI 활용 가이드라인 선도",
       "summary": [
-        "강스템바이오텍의 CDMO 위탁사가 임상 1/2a상에 진입하여 CDMO 사업이 실적과 연결될 가능성이 커졌습니다.",
-        "2025년 마일스톤 부재로 매출이 급감한 상황에서 임상 투약 연동형 공급 매출이 새로운 변수로 떠올랐습니다.",
-        "회사는 2026년 공급 매출 발생 가능성을 높게 보고 있습니다."
+        "정보통신정책연구원은 영상 빅테크 기업들의 AI 활용 가이드라인을 분석했습니다.",
+        "넷플릭스는 제작 파트너에게 AI 활용 기준을 제시하고, 유튜브는 AI 생성 콘텐츠 공지를 의무화했습니다."
       ],
-      "whyImportant": "CDMO 사업의 임상 연동형 매출 구조 구체화는 강스템바이오텍의 실적 안정성에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 2025년 매출이 53.9% 감소한 상황에서 2026년 공급 매출 발생 가능성이 제기되어 실적 개선의 기대감이 나타나고 있습니다.",
+      "whyImportant": "AI 기술이 영상 제작 환경 전반으로 확산됨에 따라, 플랫폼 차원의 자율적 기준 마련이 중요해지고 있습니다.",
+      "importanceRationale": "근거: 넷플릭스는 작년 8월 제작 파트너에게 AI 활용 가이드라인을 배포했고, 유튜브는 작년 5월부터 AI 생성 콘텐츠 공지를 의무화했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "넷플릭스는 지난해 8월 제작 파트너와 공급사를 대상으로 '생성형 AI 활용 가이드라인'을 배포하며 콘텐츠 제작 단계에서 AI 활용 기준을 제시했다."
+        }
+      ],
+      "dedupeKey": "가이드라인-넷플릭스-빅테크-선도-영상-유튜브-정보통신정책연구원-활용",
+      "clusterKey": "정책/넷플릭스",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320890",
+      "publishedAt": "2026-03-09T02:18:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_4",
+      "date": "2026-03-10",
+      "category": "기술",
+      "title": "마이크로소프트, AI 기반 Office 고급 요금제 출시로 매출 증대 시도",
+      "summary": [
+        "마이크로소프트가 기업용 Copilot AI 추가 기능 판매를 위해 Office 생산성 제품군에 AI를 추가하고 업그레이드된 버전을 65% 더 비싸게 판매합니다.",
+        "새로운 최상위 번들인 M osoft 365 E7은 월 사용자당 99달러이며, E7에는 30달러 상당의 Copilot, 12달러 상당의 E a ID 도구, 새로운 15달러 상당의 A t 365 제품이 포함됩니다."
+      ],
+      "whyImportant": "이번 고급 요금제 출시는 기업 생산성 소프트웨어 시장에서 AI 기반 서비스의 중요성이 더욱 커지고 있음을 시사합니다.",
+      "importanceRationale": "근거: Microsoft는 데이터 센터 인프라에 1,000억 달러 이상을 투자했으며, 새로운 Microsoft 365 E7 요금제는 기존 E5 요금제보다 65% 비쌉니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "강스템바이오텍의 위탁개발생산(CDMO) 위탁사가 임상1/2a상에 진입하면서 CDMO 사업이 실적과 연결되는 구조가 구체화됐다."
+          "evidence": "But E5 was created pre the agentic world.\" Growing productivity revenue remains a high priority for Microsoft, alongside expanding its cloud business."
+        },
+        {
+          "label": "policy",
+          "evidence": "Microsoft has sunk more than $100 billion in the past year into data center infrastructure, including Nvidia chips that can power AI models."
         }
       ],
-      "dedupeKey": "cdmo-강스템바이오텍-고객사-기대-실적-연결-임상-진입",
-      "clusterKey": "실적/cdmo",
+      "dedupeKey": "office-고급-기반-마이크로소프트-매출-시도-요금제-증대",
+      "clusterKey": "실적/마이크로소프트",
       "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656036",
-      "publishedAt": "2026-03-08T03:00:00+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/09/microsoft-office-365-e7-copilot-ai.html",
+      "publishedAt": "2026-03-09T13:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_5",
+      "date": "2026-03-10",
+      "category": "기술",
+      "title": "애플 M5 Max 칩, 3년 전 노트북 사용자에게 큰 업그레이드 체감",
+      "summary": [
+        "애플의 새로운 M5 Max 칩은 이전 모델 대비 SSD 읽기/쓰기 속도가 크게 향상되었습니다.",
+        "M5 Max MacBook P o의 4TB SSD는 읽기 속도 13.6GB/s, 쓰기 속도 17.8GB/s를 기록했습니다.",
+        "이는 M4 Max 모델 대비 읽기 속도 86%, 쓰기 속도 123% 향상된 수치입니다."
+      ],
+      "whyImportant": "M5 Max 칩의 성능 향상은 구형 노트북 사용자에게 실질적인 작업 효율성 증가를 가져올 수 있습니다.",
+      "importanceRationale": "근거: M5 Max는 M2 Max 대비 싱글 코어 성능이 55% 향상되었고, GPU 렌더링 성능은 64% 향상되었으며, Premiere Pro 4K 내보내기 시간은 30% 단축되었습니다.",
+      "impactSignals": [],
+      "dedupeKey": "4tb-6gb-max-노트북-사용자-애플-업그레이드-체감",
+      "clusterKey": "애플/max/노트북",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/gadgets/891508/apple-macbook-pro-air-2026-m5-max-benchmark-comparisons-m4-m3-m2-m1",
+      "publishedAt": "2026-03-09T20:00:33+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_6",
+      "date": "2026-03-10",
+      "category": "금융",
+      "title": "HPE, AI 수요 증가로 실적 전망 상향",
+      "summary": [
+        "HPE는 AI 서버 및 데이터센터 네트워크 장비 수요 증가를 반영하여 실적 전망을 상향 조정했습니다.",
+        "데이터센터 스위칭 장비 주문은 전년 대비 40% 증가했으며, 라우팅 장비 주문도 20%대 중반 증가했습니다.",
+        "올해 네트워크 사업 매출 성장률 전망치는 기존 65~70%에서 68~73%로 상향 조정되었습니다."
+      ],
+      "whyImportant": "AI 인프라 수요 증가는 데이터센터 네트워크 장비 시장의 성장을 가속화할 수 있는 중요한 지표입니다.",
+      "importanceRationale": "근거: HPE는 데이터센터 스위칭 장비 주문이 전년 대비 40% 증가했다고 밝혔으며, 네트워크 사업 매출 성장률 전망치를 68~73%로 상향 조정했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "AI 서버와 데이터센터 네트워크 장비 수요 증가를 반영해 실적 전망을 상향 조정한 영향이다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "HPE는 특히 기업용 AI 서버 시장에서 강한 수요를 확인하고 있다."
+        }
+      ],
+      "dedupeKey": "hpe-네트워크-데이터센터-상향-서버-수요-실적-증가",
+      "clusterKey": "실적/hpe",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603109714i",
+      "publishedAt": "2026-03-09T21:19:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_7",
+      "date": "2026-03-10",
+      "category": "금융",
+      "title": "주 4.5일제 도입 후 매출 80% 증가",
+      "summary": [
+        "경기도가 전국 최초로 주 4.5일제 시범사업을 시작했으며, 참여 기업에서 매출이 증가하는 효과가 나타났습니다.",
+        "한 참여 기업은 주 4.5일제 도입 후 매출이 80% 증가했다고 밝혔습니다.",
+        "경기도는 올해 관련 예산을 두 배 가까이 늘려 150억 원으로 책정하고 지원 대상을 확대할 예정입니다."
+      ],
+      "whyImportant": "주 4.5일제 도입이 기업 생산성 및 고용 환경에 미치는 영향에 대한 정책적 논의를 촉발할 수 있습니다.",
+      "importanceRationale": "근거: 한 기업은 주 4.5일제 도입 후 매출이 80% 증가했으며, 경기도는 관련 예산을 150억 원으로 늘릴 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "이 기업은 주 4.5일제 도입 이후 매출이 80% 증가했습니다."
+        }
+      ],
+      "dedupeKey": "150억-5일제-기업-도입-매출-전국-증가-지원",
+      "clusterKey": "실적/5일제",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0115_202603100255304233",
+      "publishedAt": "2026-03-09T17:55:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_8",
+      "date": "2026-03-10",
+      "category": "에너지",
+      "title": "유가 100달러에도 2분기 전기요금은 동결될 전망",
+      "summary": [
+        "중동 사태로 국제유가와 가스 가격이 폭등했지만, 연료비 반영 시차로 2분기 전기요금은 동결될 가능성이 큽니다.",
+        "국제 에너지 가격 급등은 하반기 요금 산정 시기에 반영될 수 있으며, 한전의 수익성 악화도 우려됩니다.",
+        "WTI유는 2022년 7월 이후 처음으로 100달러를 돌파했고, LNG 가격도 급등했습니다."
+      ],
+      "whyImportant": "에너지 가격 변동은 한전의 재정에 영향을 미치고 장기적으로 전기 요금 인상 압력으로 이어질 수 있기 때문입니다.",
+      "importanceRationale": "근거: 국제유가가 10% 상승하면 한전의 전력조달비용이 약 1조 5천억원 증가하고, 유가가 배럴당 1달러 오를 때마다 한전의 연간 영업이익이 약 5천억원 감소할 것으로 추정됩니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "중동 사태에 국제유가·가스값 폭등에도 연료비 반영 3∼5개월 시차 장기화 땐 전기요금 인상 압력 확대…한전 수익성 악화 우려 (서울=연합뉴스) 신창용 기자 = 미국·이란 전쟁의 여파로 글로벌 에너지 가격이 요동치고 있지만 올해 2분기 전기요금은 동결될 가능성이 크다는 관측이 나온다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "메리츠증권은 유가가 배럴당 1달러 오를 때마다 한전의 연간 영업이익이 약 5천억원 감소할 것으로 추정했다."
+        }
+      ],
+      "dedupeKey": "100달러-wti유-국제유-동결-사태-유가-전기요금-중동",
+      "clusterKey": "에너지/유가",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320869",
+      "publishedAt": "2026-03-09T02:02:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-10_9",
+      "date": "2026-03-10",
+      "category": "기술",
+      "title": "과기정통부·행안부, 범정부 AI 전환 본격 지원",
+      "summary": [
+        "과학기술정보통신부와 행정안전부는 정부 기관의 인공지능 전환 사업 지원 설명회를 개최했습니다.",
+        "33개 정부·공공기관을 대상으로 AI 전환 지원센터를 소개하고 운영 방안을 안내할 예정입니다."
+      ],
+      "whyImportant": "정부 기관의 AI 도입 및 활용 확대를 위한 정책적 지원이 본격화될 것으로 예상됩니다.",
+      "importanceRationale": "근거: 45개 정부 기관으로부터 AX 컨설팅 과제 수요를 접수 중이며, AX 자문단을 운영하여 컨설팅을 진행할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "과기정통부와 행안부는 45개 정부 기관으로부터 AX 컨설팅 과제 수요를 접수 중이며, AX 전문기업, 분야별 전문가 등으로 구성된 AX 자문단을 운영, 컨설팅을 진행할 계획이다."
+        },
+        {
+          "label": "policy",
+          "evidence": "과기정통부는 정부 기관을 대상으로 AX 과제 기획부터 AI 학습 데이터 구축, AI 모델·인프라 활용, AI 안전·신뢰에 관한 규제 컨설팅 등을 진행한다."
+        }
+      ],
+      "dedupeKey": "과기정통부-과학기술정보통신부-범정부-전환-지원-지원센터-행안부-행정안전부",
+      "clusterKey": "과기정통부/행안부/범정부",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320442",
+      "publishedAt": "2026-03-08T03:00:11+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

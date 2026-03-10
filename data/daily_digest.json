@@ -1,59 +1,28 @@
 {
-  "date": "2026-03-10",
+  "date": "2026-03-11",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-10T07:58:49.536484+09:00",
+  "lastUpdatedAt": "2026-03-11T07:58:20.898635+09:00",
   "items": [
     {
-      "id": "2026-03-10_1",
-      "date": "2026-03-10",
-      "category": "산업",
-      "title": "중국 정부 수출 통제 여파로 텅스텐 가격 1년 새 6배 상승",
-      "summary": [
-        "중국 내 흑색 텅스텐 정광 평균 가격이 1년 전보다 551.06% 급등했습니다.",
-        "로이터는 텅스텐 가격이 사상 최고 수준이라며, 중국의 수출 통제를 배경으로 분석했습니다.",
-        "중국은 작년 2월 텅스텐 수출 통제 조치를 발표하고 수출 업체에 허가를 받도록 했습니다."
-      ],
-      "whyImportant": "중국의 텅스텐 수출 통제는 제조업 전반의 기초 소재 가격 상승을 유발하여 산업에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 중국의 텅스텐 수출 통제 조치와 채굴 쿼터 6.5% 감소로 텅스텐 가격이 급등했으며, 이는 제조업의 기초 소재 가격에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "로이터통신은 지난 1월 텅스텐 가격이 사상 최고 수준을 기록했다며 재고 부족과 산업용 수요, 중국의 수출 통제 등을 그 배경으로 분석했다."
-        }
-      ],
-      "dedupeKey": "6배-가격-수출-여파-정부-중국-텅스텐-통제",
-      "clusterKey": "수출/통제/여파",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026030991411",
-      "publishedAt": "2026-03-09T08:52:52+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-10_2",
-      "date": "2026-03-10",
+      "id": "2026-03-11_1",
+      "date": "2026-03-11",
       "category": "국제",
-      "title": "멕시코, 캐나다와 5월부터 USMCA 무역 협상 예정",
+      "title": "멕시코, 미국에 이어 캐나다와 무역 협상 예정",
       "summary": [
         "멕시코 정부가 미국에 이어 캐나다와 USMCA 공동 검토를 위한 협상을 5월 초부터 개시할 예정입니다.",
         "멕시코는 USMCA 협정이 현재 형태로 유지되는 것을 지지하며, 기업 및 주 정부도 같은 입장을 강력히 희망하고 있습니다."
       ],
-      "whyImportant": "USMCA 재검토 및 협상 결과는 북미 지역의 무역 관계 및 공급망에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 멕시코는 5월 초부터 캐나다와 협정 검토 논의에 들어갈 예정이며, 멕시코 기업과 32개 주 정부의 80% 가까이가 USMCA 협정 유지를 찬성했습니다.",
+      "whyImportant": "USMCA 재검토는 북미 무역 관계의 미래 방향을 결정하는 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 멕시코는 5월 초부터 캐나다와 협정 검토 논의에 들어갈 예정이며, 30개 부문별 단체와 32개 주 정부를 대상으로 의견을 수렴한 결과 80% 가까이가 USMCA 협정 유지를 찬성했습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "USMCA는 기존 북미자유무역협정(NAFTA)을 대체해 2018년 9월 30일 타결된 것으로, 일부 수정을 거쳐 2020년 7월 1일 발효됐다."
         }
       ],
-      "dedupeKey": "usmca-기업-멕시코-무역-미국-정부-캐나다-협상",
+      "dedupeKey": "기업-멕시코-무역-미국-이어-정부-캐나다-협상",
       "clusterKey": "관세/멕시코",
       "matchedTo": null,
       "sourceName": "연합",
@@ -67,23 +36,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-10_3",
-      "date": "2026-03-10",
+      "id": "2026-03-11_2",
+      "date": "2026-03-11",
       "category": "정책",
       "title": "넷플릭스·유튜브, AI 활용 가이드라인 선도",
       "summary": [
         "정보통신정책연구원은 영상 빅테크 기업들의 AI 활용 가이드라인을 분석했습니다.",
-        "넷플릭스는 제작 파트너에게 AI 활용 기준을 제시하고, 유튜브는 AI 생성 콘텐츠 공지를 의무화했습니다."
+        "넷플릭스는 제작 파트너에게 AI 활용 가이드라인을 배포하여 저작권 보호 등 5가지 핵심 원칙을 제시했습니다.",
+        "유튜브는 AI 생성 콘텐츠에 대한 AI 사용 여부 공지를 의무화하고 있습니다."
       ],
-      "whyImportant": "AI 기술이 영상 제작 환경 전반으로 확산됨에 따라, 플랫폼 차원의 자율적 기준 마련이 중요해지고 있습니다.",
-      "importanceRationale": "근거: 넷플릭스는 작년 8월 제작 파트너에게 AI 활용 가이드라인을 배포했고, 유튜브는 작년 5월부터 AI 생성 콘텐츠 공지를 의무화했습니다.",
+      "whyImportant": "AI 기술이 영상 제작 환경 전반으로 확산됨에 따라 콘텐츠 산업의 새로운 관리 방식으로 플랫폼 차원의 자율적 기준 마련이 중요해지고 있습니다.",
+      "importanceRationale": "근거: 넷플릭스는 작년 8월 제작 파트너에게 '생성형 AI 활용 가이드라인'을 배포했고, 유튜브는 작년 5월부터 AI 생성 콘텐츠에 AI 사용 여부 공지를 의무화했습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "넷플릭스는 지난해 8월 제작 파트너와 공급사를 대상으로 '생성형 AI 활용 가이드라인'을 배포하며 콘텐츠 제작 단계에서 AI 활용 기준을 제시했다."
         }
       ],
-      "dedupeKey": "가이드라인-넷플릭스-빅테크-선도-영상-유튜브-정보통신정책연구원-활용",
+      "dedupeKey": "5가지-가이드라인-넷플릭스-선도-여부-유튜브-정보통신정책연구원-활용",
       "clusterKey": "정책/넷플릭스",
       "matchedTo": null,
       "sourceName": "연합",
@@ -97,124 +67,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-10_4",
-      "date": "2026-03-10",
-      "category": "기술",
-      "title": "마이크로소프트, AI 기반 Office 고급 요금제 출시로 매출 증대 시도",
+      "id": "2026-03-11_3",
+      "date": "2026-03-11",
+      "category": "국제",
+      "title": "미 전문가들, 이란 전쟁의 연쇄 충격 경고",
       "summary": [
-        "마이크로소프트가 기업용 Copilot AI 추가 기능 판매를 위해 Office 생산성 제품군에 AI를 추가하고 업그레이드된 버전을 65% 더 비싸게 판매합니다.",
-        "새로운 최상위 번들인 M osoft 365 E7은 월 사용자당 99달러이며, E7에는 30달러 상당의 Copilot, 12달러 상당의 E a ID 도구, 새로운 15달러 상당의 A t 365 제품이 포함됩니다."
+        "미국 전문가들은 이란 전쟁이 핵 확산, 한반도 안보, 세계 경제에 연쇄적인 충격을 줄 수 있다고 경고했습니다.",
+        "특히, LNG 수급 차질과 AI 데이터센터 공격으로 인한 반도체 수요 위축 가능성을 지적했습니다."
       ],
-      "whyImportant": "이번 고급 요금제 출시는 기업 생산성 소프트웨어 시장에서 AI 기반 서비스의 중요성이 더욱 커지고 있음을 시사합니다.",
-      "importanceRationale": "근거: Microsoft는 데이터 센터 인프라에 1,000억 달러 이상을 투자했으며, 새로운 Microsoft 365 E7 요금제는 기존 E5 요금제보다 65% 비쌉니다.",
+      "whyImportant": "이란 전쟁은 에너지 수급 및 반도체 산업에 영향을 미쳐 한국 경제에 중장기적인 불확실성을 야기할 수 있습니다.",
+      "importanceRationale": "근거: 전문가들은 LNG가 한국 전력 생산의 25%를 차지하며, AI 데이터센터의 HBM 수요 위축 가능성을 언급했습니다.",
       "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "But E5 was created pre the agentic world.\" Growing productivity revenue remains a high priority for Microsoft, alongside expanding its cloud business."
-        },
-        {
-          "label": "policy",
-          "evidence": "Microsoft has sunk more than $100 billion in the past year into data center infrastructure, including Nvidia chips that can power AI models."
-        }
-      ],
-      "dedupeKey": "office-고급-기반-마이크로소프트-매출-시도-요금제-증대",
-      "clusterKey": "실적/마이크로소프트",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/09/microsoft-office-365-e7-copilot-ai.html",
-      "publishedAt": "2026-03-09T13:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-10_5",
-      "date": "2026-03-10",
-      "category": "기술",
-      "title": "애플 M5 Max 칩, 3년 전 노트북 사용자에게 큰 업그레이드 체감",
-      "summary": [
-        "애플의 새로운 M5 Max 칩은 이전 모델 대비 SSD 읽기/쓰기 속도가 크게 향상되었습니다.",
-        "M5 Max MacBook P o의 4TB SSD는 읽기 속도 13.6GB/s, 쓰기 속도 17.8GB/s를 기록했습니다.",
-        "이는 M4 Max 모델 대비 읽기 속도 86%, 쓰기 속도 123% 향상된 수치입니다."
-      ],
-      "whyImportant": "M5 Max 칩의 성능 향상은 구형 노트북 사용자에게 실질적인 작업 효율성 증가를 가져올 수 있습니다.",
-      "importanceRationale": "근거: M5 Max는 M2 Max 대비 싱글 코어 성능이 55% 향상되었고, GPU 렌더링 성능은 64% 향상되었으며, Premiere Pro 4K 내보내기 시간은 30% 단축되었습니다.",
-      "impactSignals": [],
-      "dedupeKey": "4tb-6gb-max-노트북-사용자-애플-업그레이드-체감",
-      "clusterKey": "애플/max/노트북",
-      "matchedTo": null,
-      "sourceName": "The",
-      "sourceUrl": "https://www.theverge.com/gadgets/891508/apple-macbook-pro-air-2026-m5-max-benchmark-comparisons-m4-m3-m2-m1",
-      "publishedAt": "2026-03-09T20:00:33+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-10_6",
-      "date": "2026-03-10",
-      "category": "금융",
-      "title": "HPE, AI 수요 증가로 실적 전망 상향",
-      "summary": [
-        "HPE는 AI 서버 및 데이터센터 네트워크 장비 수요 증가를 반영하여 실적 전망을 상향 조정했습니다.",
-        "데이터센터 스위칭 장비 주문은 전년 대비 40% 증가했으며, 라우팅 장비 주문도 20%대 중반 증가했습니다.",
-        "올해 네트워크 사업 매출 성장률 전망치는 기존 65~70%에서 68~73%로 상향 조정되었습니다."
-      ],
-      "whyImportant": "AI 인프라 수요 증가는 데이터센터 네트워크 장비 시장의 성장을 가속화할 수 있는 중요한 지표입니다.",
-      "importanceRationale": "근거: HPE는 데이터센터 스위칭 장비 주문이 전년 대비 40% 증가했다고 밝혔으며, 네트워크 사업 매출 성장률 전망치를 68~73%로 상향 조정했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "AI 서버와 데이터센터 네트워크 장비 수요 증가를 반영해 실적 전망을 상향 조정한 영향이다."
-        },
         {
           "label": "market-demand",
-          "evidence": "HPE는 특히 기업용 AI 서버 시장에서 강한 수요를 확인하고 있다."
+          "evidence": "이 지역의 인공지능 인프라 구축이 지연되거나 재검토될 경우, 삼성전자와 에스케이하이닉스의 고대역폭메모리(HBM) 수요에 직접적인 타격을 줄 수 있다"
         }
       ],
-      "dedupeKey": "hpe-네트워크-데이터센터-상향-서버-수요-실적-증가",
-      "clusterKey": "실적/hpe",
+      "dedupeKey": "데이터센터-미국-연쇄-연쇄적인-이란-전문가들-전쟁-충격",
+      "clusterKey": "전문가들/전쟁/연쇄",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603109714i",
-      "publishedAt": "2026-03-09T21:19:37+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-10_7",
-      "date": "2026-03-10",
-      "category": "금융",
-      "title": "주 4.5일제 도입 후 매출 80% 증가",
-      "summary": [
-        "경기도가 전국 최초로 주 4.5일제 시범사업을 시작했으며, 참여 기업에서 매출이 증가하는 효과가 나타났습니다.",
-        "한 참여 기업은 주 4.5일제 도입 후 매출이 80% 증가했다고 밝혔습니다.",
-        "경기도는 올해 관련 예산을 두 배 가까이 늘려 150억 원으로 책정하고 지원 대상을 확대할 예정입니다."
-      ],
-      "whyImportant": "주 4.5일제 도입이 기업 생산성 및 고용 환경에 미치는 영향에 대한 정책적 논의를 촉발할 수 있습니다.",
-      "importanceRationale": "근거: 한 기업은 주 4.5일제 도입 후 매출이 80% 증가했으며, 경기도는 관련 예산을 150억 원으로 늘릴 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "이 기업은 주 4.5일제 도입 이후 매출이 80% 증가했습니다."
-        }
-      ],
-      "dedupeKey": "150억-5일제-기업-도입-매출-전국-증가-지원",
-      "clusterKey": "실적/5일제",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0115_202603100255304233",
-      "publishedAt": "2026-03-09T17:55:00+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1248512.html",
+      "publishedAt": "2026-03-10T05:47:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -223,17 +97,114 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-10_8",
-      "date": "2026-03-10",
-      "category": "에너지",
-      "title": "유가 100달러에도 2분기 전기요금은 동결될 전망",
+      "id": "2026-03-11_4",
+      "date": "2026-03-11",
+      "category": "기술",
+      "title": "TSMC, 메모리 가격 급등 속 1·2월 매출 증가율 30%에 그쳐",
       "summary": [
-        "중동 사태로 국제유가와 가스 가격이 폭등했지만, 연료비 반영 시차로 2분기 전기요금은 동결될 가능성이 큽니다.",
-        "국제 에너지 가격 급등은 하반기 요금 산정 시기에 반영될 수 있으며, 한전의 수익성 악화도 우려됩니다.",
-        "WTI유는 2022년 7월 이후 처음으로 100달러를 돌파했고, LNG 가격도 급등했습니다."
+        "TSMC의 올해 1월과 2월 매출이 30% 증가했지만, 이는 분석가 예상치인 33%에는 미치지 못하는 수치입니다.",
+        "메모리 가격 급등으로 스마트폰과 PC용 칩 수요 성장세가 부진해진 것이 원인으로 분석됩니다.",
+        "TSMC는 하반기 엔비디아, AMD, 구글 등의 최신 칩 판매를 기대하고 있습니다."
       ],
-      "whyImportant": "에너지 가격 변동은 한전의 재정에 영향을 미치고 장기적으로 전기 요금 인상 압력으로 이어질 수 있기 때문입니다.",
-      "importanceRationale": "근거: 국제유가가 10% 상승하면 한전의 전력조달비용이 약 1조 5천억원 증가하고, 유가가 배럴당 1달러 오를 때마다 한전의 연간 영업이익이 약 5천억원 감소할 것으로 추정됩니다.",
+      "whyImportant": "TSMC의 매출 부진은 메모리 가격 변동이 IT 수요에 미치는 영향과 AI 칩 외 다른 반도체 시장의 변화를 보여줍니다.",
+      "importanceRationale": "근거: TSMC의 1~2월 매출 증가율이 30%로 분석가 예상치인 33%에 미치지 못했으며, 이는 메모리 가격 급등에 따른 스마트폰, PC 수요 약화 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이는 AI칩 수요는 여전하지만, 메모리 가격 급등으로 고급 스마트폰과 PC 용 칩수요 성장세가 부진해진 것을 시사하는 것으로 풀이됐다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "10일(현지시간) 블룸버그는 TSMC의 올해 1월과 2월 매출이 30% 증가했다고 발표했다."
+        }
+      ],
+      "dedupeKey": "tsmc-가격-그쳐-급등-매출-메모리-예상치인-증가율",
+      "clusterKey": "실적/반도체/증가율",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603112313i",
+      "publishedAt": "2026-03-10T15:31:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_5",
+      "date": "2026-03-11",
+      "category": "금융",
+      "title": "쿠팡 투자사, USTR 청원 철회…미국 301조 조사 전망",
+      "summary": [
+        "쿠팡의 미국 투자사들이 한국 정부의 쿠팡 대응에 대한 미 무역대표부(USTR) 청원을 철회했습니다.",
+        "이는 트럼프 행정부의 불공정 무역 관행 조사 방침과 중복될 가능성 때문입니다.",
+        "미국은 곧 한국에 대한 무역법 301조 조사를 시작할 것으로 예상됩니다."
+      ],
+      "whyImportant": "미국의 무역법 301조 조사는 한국에 대한 무역 제재로 이어질 수 있어 국내 경제에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 미국 무역법 301조는 외국 정부의 불공정 행위가 미국 무역을 제한할 경우 관세 부과 등 보복 조치를 취할 수 있도록 규정하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "실제로 지난 3일 USTR은 한국 정부가 디지털 서비스 관련 법률과 정책 면에서 미국 기업을 차별하지 않기로 약속했다고 밝혔습니다."
+        }
+      ],
+      "dedupeKey": "301조-ustr-무역대표부-미국-청원-쿠팡-투자사-한국",
+      "clusterKey": "한미_법집행/쿠팡/관세",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202603102257012655",
+      "publishedAt": "2026-03-10T13:57:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_6",
+      "date": "2026-03-11",
+      "category": "정책",
+      "title": "생협 연합회, 주무 부처 중기부 이관 촉구",
+      "summary": [
+        "국내 5대 생협 연합회가 주무 부처를 공정거래위원회에서 중소벤처기업부로 변경하는 법 개정을 촉구하고 있습니다.",
+        "현재 생협법 개정안은 국회 정무위원회에 회부되었으나 소위 심사 일정이 잡히지 않고 있습니다.",
+        "생협 측은 주무부처 변경 시 자금 및 판로 지원 등 경영 개선이 가능할 것으로 기대하고 있습니다."
+      ],
+      "whyImportant": "생협 주무 부처 이관 문제는 향후 관련 정책 방향 및 생협의 경영 환경에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 생협들은 매출 감소와 적자 확대로 어려움을 겪고 있으며, 주무부처 변경 시 기업 육성 정책을 활용하여 경영 개선을 기대하고 있어 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "국내 5대 생협(소비자생활협동조합) 연합회가 생협 주무부처를 공정거래위원회에서 중소벤처기업부로 변경하는 법 개정을 촉구하는 캠페인을 하고 있다."
+        }
+      ],
+      "dedupeKey": "공정거래위원회-부처-생협-연합회-이관-주무-중기부-중소벤처기업부",
+      "clusterKey": "투자/생협",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1248627.html",
+      "publishedAt": "2026-03-10T08:17:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_7",
+      "date": "2026-03-11",
+      "category": "에너지",
+      "title": "국제 유가 급등, 2분기 전기요금 동결 전망",
+      "summary": [
+        "중동 사태로 국제 유가와 가스 가격이 폭등했지만, 연료비 반영 시차로 2분기 전기요금은 동결될 가능성이 큽니다.",
+        "국제 연료 가격은 발전 연료비에 반영되기까지 시차가 있으며, 정부의 물가 관리 기조도 동결 가능성에 영향을 미칩니다.",
+        "사태가 장기화되면 하반기 전기요금 인상 압박이 커지고 한전 수익성 악화가 우려됩니다."
+      ],
+      "whyImportant": "에너지 가격 변동은 한전의 재정 건전성과 장기적인 전기요금 정책에 영향을 미칠 수 있는 중요한 요인입니다.",
+      "importanceRationale": "근거: 국제 유가가 2022년 7월 이후 처음으로 배럴당 100달러를 돌파했고, LNG 가격도 50%가량 치솟아 국내 전력 생산의 약 26.8%를 차지하는 LNG 발전 비용 상승으로 이어질 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -244,46 +215,12 @@
           "evidence": "메리츠증권은 유가가 배럴당 1달러 오를 때마다 한전의 연간 영업이익이 약 5천억원 감소할 것으로 추정했다."
         }
       ],
-      "dedupeKey": "100달러-wti유-국제유-동결-사태-유가-전기요금-중동",
-      "clusterKey": "에너지/유가",
+      "dedupeKey": "국제-급등-동결-반영되기-유가-장기화되면-전기요금-정부",
+      "clusterKey": "국제/유가/2분기",
       "matchedTo": null,
       "sourceName": "연합",
       "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320869",
       "publishedAt": "2026-03-09T02:02:25+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-10_9",
-      "date": "2026-03-10",
-      "category": "기술",
-      "title": "과기정통부·행안부, 범정부 AI 전환 본격 지원",
-      "summary": [
-        "과학기술정보통신부와 행정안전부는 정부 기관의 인공지능 전환 사업 지원 설명회를 개최했습니다.",
-        "33개 정부·공공기관을 대상으로 AI 전환 지원센터를 소개하고 운영 방안을 안내할 예정입니다."
-      ],
-      "whyImportant": "정부 기관의 AI 도입 및 활용 확대를 위한 정책적 지원이 본격화될 것으로 예상됩니다.",
-      "importanceRationale": "근거: 45개 정부 기관으로부터 AX 컨설팅 과제 수요를 접수 중이며, AX 자문단을 운영하여 컨설팅을 진행할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "과기정통부와 행안부는 45개 정부 기관으로부터 AX 컨설팅 과제 수요를 접수 중이며, AX 전문기업, 분야별 전문가 등으로 구성된 AX 자문단을 운영, 컨설팅을 진행할 계획이다."
-        },
-        {
-          "label": "policy",
-          "evidence": "과기정통부는 정부 기관을 대상으로 AX 과제 기획부터 AI 학습 데이터 구축, AI 모델·인프라 활용, AI 안전·신뢰에 관한 규제 컨설팅 등을 진행한다."
-        }
-      ],
-      "dedupeKey": "과기정통부-과학기술정보통신부-범정부-전환-지원-지원센터-행안부-행정안전부",
-      "clusterKey": "과기정통부/행안부/범정부",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320442",
-      "publishedAt": "2026-03-08T03:00:11+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

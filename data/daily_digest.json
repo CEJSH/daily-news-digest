@@ -1,169 +1,34 @@
 {
-  "date": "2026-03-16",
+  "date": "2026-03-17",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-16T07:58:58.680128+09:00",
+  "lastUpdatedAt": "2026-03-17T08:01:47.381732+09:00",
   "items": [
     {
-      "id": "2026-03-16_1",
-      "date": "2026-03-16",
-      "category": "금융",
-      "title": "월가, 이란전 장기화에 긴장 및 젠슨 황 메시지 주목",
+      "id": "2026-03-17_1",
+      "date": "2026-03-17",
+      "category": "산업",
+      "title": "중국 화훙, 7나노 공정 개발로 반도체 자립 가속화",
       "summary": [
-        "뉴욕 증시는 미국-이란 전쟁 추이에 따라 변동성을 보일 것으로 예상됩니다.",
-        "17~18일 FOMC와 엔비디아 GTC 콘퍼런스 등 주요 이벤트도 예정되어 있습니다.",
-        "상하이 증시는 중국의 통화정책 방향과 정책 집행 속도에 주목할 전망입니다."
+        "중국 2위 파운드리 업체 화훙반도체가 7나노 공정 기술을 개발하고 도입 준비에 들어갔습니다.",
+        "화훙은 상하이 공장에서 관련 공정 도입을 준비 중이며, 이는 중국 내 두 번째 사례입니다.",
+        "미국의 제재 속에서 화훙의 7나노 공정 개발은 반도체 자립도 제고의 이정표로 평가될 수 있습니다."
       ],
-      "whyImportant": "미국과 이란의 관계 및 엔비디아의 AI 시장 전망이 투자 심리에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 16~19일 엔비디아 GTC 콘퍼런스에서 젠슨 황 CEO의 기조연설이 예정되어 있으며, 그의 발언이 AI 분야에 대한 시장의 안도감을 줄 수 있다고 언급되었습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "16일 발표되는 1~2월 소매 판매 및 고정자산투자 지표는 연초 경기 회복의 강도를 확인하는 잣대가 될 것으로 전망된다."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "월가에선 오는 17~18일 열린 FOMC에서 금리가 동결되리라는 것을 기정사실로 보고 있다."
-        }
-      ],
-      "dedupeKey": "긴장-메시지-미국-월가-이란전-장기화-젠슨-주목",
-      "clusterKey": "미중_정책/월가",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603151644i",
-      "publishedAt": "2026-03-15T03:02:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-16_2",
-      "date": "2026-03-16",
-      "category": "에너지",
-      "title": "도쿄전력 원전 발전 중단, 상업 운전 연기 전망",
-      "summary": [
-        "도쿄전력이 14년 만에 재가동한 가시와자키 원전 6호기의 발전과 송전을 중단합니다.",
-        "발전기에서 누전 경보음이 울려 원인 조사에 착수했으며, 상업 운전은 연기될 것으로 예상됩니다."
-      ],
-      "whyImportant": "원전 재가동은 에너지 정책 및 공급 안정성에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 14년 만에 재가동한 원전의 발전 중단으로 인해 상업 운전이 연기될 것으로 전망되어 에너지 공급 계획에 차질이 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "infra",
-          "evidence": "누전으로 경보음 울려…1월에도 제어봉 작업 도중 경보 (도쿄=연합뉴스) 박상현 특파원 = 일본 도쿄전력이 14년 만에 재가동한 혼슈 중부 니가타현 가시와자키·가리와 원자력발전소(이하 가시와자키 원전) 6호기의 발전과 송전을 중단한다."
-        }
-      ],
-      "dedupeKey": "6호기-가시와자키-도쿄전력-만에-발전-상업-운전-원전",
-      "clusterKey": "법집행/도쿄전력",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323914",
-      "publishedAt": "2026-03-14T01:39:42+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-16_3",
-      "date": "2026-03-16",
-      "category": "국제",
-      "title": "미국의 무역법 301조 조사로 인도-미국 무역 협정 보류 전망",
-      "summary": [
-        "인도가 미국의 무역법 301조 조사 대상에 포함되면서 양국 간 1단계 무역 협정이 보류될 것으로 예상됩니다.",
-        "인도 소식통은 미국의 조사가 압박 전술이며, 미국의 관세 정책 변화를 관망할 것이라고 밝혔습니다.",
-        "미국은 인도에 부과한 국가별 관세를 낮추고 러시아산 원유 수입 제재 관세를 철회하기로 했었습니다."
-      ],
-      "whyImportant": "미국의 무역 정책 변화가 인도와의 무역 관계에 영향을 미치고, 이는 양국 경제에 장기적인 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 미국의 무역법 301조 조사가 인도와의 무역 협상에 직접적인 영향을 미치고 있으며, 이는 16개국을 대상으로 하는 조사이므로 중요도는 3입니다.",
+      "whyImportant": "화훙의 7나노 공정 개발은 미국의 제재 속에서 중국의 반도체 자립을 가속화하는 데 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 화훙이 연말까지 월 수천 장 규모의 7나노 웨이퍼 생산 능력을 확보하는 것을 목표로 하고 있어, 중국의 반도체 기술 자립에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "sanctions",
-          "evidence": "그는 트럼프 대통령이 인도가 러시아산 원유 수입을 중단하기로 합의했다고 밝힌 후 인도에 부과하던 제재성 관세 25%를 철회했지만, 인도는 단지 원유 공급 기반을 다각화하겠다고만 언급했다고 강조했다."
+          "evidence": "미국 제재로 첨단 장비 접근이 제한된 중국 업계 현실을 감안하면, 화훙의 7나노 공정 개발은 의미 있는 기술 진전이자 반도체 자립도 제고의 이정표로 평가될 수 있다고 로이터는 설명했다."
         }
       ],
-      "dedupeKey": "1단계-301조-무역-무역법-미국-양국-인도-협정",
-      "clusterKey": "미인도_법집행/무역법/정책/제재",
+      "dedupeKey": "7나노-가속화-개발-공정-반도체-자립-중국-화훙",
+      "clusterKey": "미중_제재/반도체/화훙",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323995",
-      "publishedAt": "2026-03-14T06:35:55+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-16_4",
-      "date": "2026-03-16",
-      "category": "금융",
-      "title": "일본은행, 다음 주 회의에서 금리 동결 전망",
-      "summary": [
-        "일본은행은 다음 주 금융정책결정회의에서 기준금리를 동결할 것으로 예상됩니다.",
-        "중동 정세 불안으로 인한 에너지 가격 상승이 동결 결정에 영향을 미칠 것으로 보입니다.",
-        "미쓰이스미토모 신탁은행은 5년 만기 정기예금 금리를 1.0%로 인상할 예정입니다."
-      ],
-      "whyImportant": "일본은행의 금리 정책은 엔화 가치 및 일본 경제 전반에 영향을 미치므로 중요합니다.",
-      "importanceRationale": "근거: 일본은행이 다음 회의에서 금리 동결을 고려하는 이유는 중동 정세 불안정 때문이며, 미쓰이스미토모 신탁은행은 5년 만기 정기예금 금리를 1.0%로 인상할 예정입니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "미쓰이스미토모신탁은행은 5년 만기 정기예금 금리 1.0%로 인상 방침 (서울=연합뉴스) 이도연 기자 = 중동 지역 긴장 고조로 금융시장 등에 불확실성이 커지는 가운데 일본 중앙은행인 일본은행이 내주 기준금리를 동결할 것으로 전망된다고 니혼게이자이신문(닛케이)과 요미우리신문 등이 14일 보도했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "우에다 가즈오 일본은행 총재는 지난 4일 일본 중의원(하원)에서 중동 사태와 관련해 \"원유 등 에너지 가격과 국제 금융시장에 미치는 영향 등을 통해 세계 경제와 우리나라(일본) 경제에 큰 영향을 줄 가능성이 있다\"고 말했다."
-        }
-      ],
-      "dedupeKey": "금리-금융정책결정회-기준금리-다음-동결-미쓰이스미토모-신탁은행-일본은행",
-      "clusterKey": "금융/다음",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323916",
-      "publishedAt": "2026-03-14T01:48:48+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-16_5",
-      "date": "2026-03-16",
-      "category": "에너지",
-      "title": "일본, 7년 만에 LNG선 건조 추진",
-      "summary": [
-        "일본 정부가 2019년 이후 중단된 LNG 운반선 건조를 재개할 계획입니다.",
-        "이는 경제 안보 강화 정책의 일환으로, 국토교통성이 전문가 회의를 통해 협의를 시작합니다.",
-        "향후 10년간 민관이 조선업에 1조엔을 투자할 예정입니다."
-      ],
-      "whyImportant": "LNG 운반선 건조 재개는 에너지 안보 강화에 기여할 수 있는 중요한 결정입니다.",
-      "importanceRationale": "근거: 일본 정부는 향후 10년간 민관이 조선업에 1조엔을 투자하여 LNG 운반선 건조를 재개할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "규슈 나가사키 거점 활용…설비 투자·인재 확보는 과제 (도쿄=연합뉴스) 박상현 특파원 = 일본 정부가 민간과 함께 2019년 이후 자국 내에서 만들어지지 않은 액화천연가스(LNG) 운반선 건조를 추진한다고 교도통신이 14일 보도했다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "다만 교도통신은 일본이 7년 동안 LNG 운반선을 건조한 실적이 없어서 추가 설비 투자와 인재 확보가 과제가 될 것이라고 짚었다."
-        }
-      ],
-      "dedupeKey": "10년간-1조엔-lng선-건조-국토교통성-만에-일본-정부",
-      "clusterKey": "정책/만에/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324005",
-      "publishedAt": "2026-03-14T07:38:26+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324877",
+      "publishedAt": "2026-03-16T09:05:57+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -172,33 +37,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-16_6",
-      "date": "2026-03-16",
-      "category": "기술",
-      "title": "중동발 악재 속 변동성 장세 지속 전망",
+      "id": "2026-03-17_2",
+      "date": "2026-03-17",
+      "category": "국제",
+      "title": "이란, 미국과 협상 불필요 주장 및 제3국 안전 통행 제공",
       "summary": [
-        "증권가에서는 중동 분쟁으로 국내 증시의 변동성 장세가 이어질 것으로 전망합니다.",
-        "엔비디아 연례 행사와 마이크론 실적 발표를 통해 반도체 수요를 확인할 수 있을 것으로 예상됩니다.",
-        "NH투자증권은 이번 주 코스피지수 예상 범위를 5300~5900선으로 제시했습니다."
+        "이란 외무장관은 미국과의 협상 필요성을 부인하며 장기전을 불사하겠다는 입장을 밝혔습니다.",
+        "호르무즈 해협 봉쇄와 관련, 미국과 이스라엘을 제외한 국가에는 안전한 항행을 보장한다고 주장했습니다."
       ],
-      "whyImportant": "변동성이 커진 장세 속에서 투자 전략 수립에 참고할 만한 정보입니다.",
-      "importanceRationale": "근거: NH투자증권은 이번 주 코스피지수 예상 범위를 5300~5900선으로 제시하며, 엔비디아와 마이크론 이벤트가 긍정적 요인이 될 수 있다고 언급했습니다.",
+      "whyImportant": "이란의 강경한 입장은 중동 지역의 긴장 완화에 부정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이란 외무장관은 미국과의 대화 필요성을 부인하며, 호르무즈 해협에서 미국과 이스라엘을 제외한 국가에 안전한 항행을 보장한다고 밝혔기 때문입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "다만 이번주 예정된 엔비디아의 연례 행사와 마이크론 실적을 통해 메모리 반도체의 강한 수요가 재차 확인되면 삼성전자·SK하이닉스가 상승 탄력을 받으며 증시를 밀어 올릴 수 있다는 관측도 나온다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "18일 발표되는 메모리 반도체 업체 마이크론의 실적은 증시 상승을 이끌 기대 요인으로 지목된다."
+          "label": "policy",
+          "evidence": "ADVERTISEMENT ADVERTISEMENT ADVERTISEMENT ADVERTISEMENT 아바스 아라그치 이란 외무장관은 15일(현지시간) 미국과 협상할 이유가 없다며 장기전을 불사하겠다는 각오를 보였다.전 세계 원유 수송량의 20%가 지나는 호르무즈 해협 봉쇄와 관련해서는 미국과 이스라엘을 제외한 나머지 나라들의 경우 통과를 요청하면 안전한 항행을 보장하고 있다고 주장했다.아라그치 장관은 이날 미국 CBS방송 '페이스 더 네이션'과의 인터뷰에서 \"우리는 결코 휴전을 요청하지 않았고, 심지어 협상조차 요청한 적이 없다\"라며 이같이 말했다.그는 \"단지 도널드 트럼프 미국 대통령이 재미있어하기 때문에 사람들이 죽어 나가고 있다.이것은 트럼프 대통령과 미국이 선택한 전쟁\"이라며 \"우리는 계속해서 자위권을 행사할 것\"이라고 밝혔다.그러면서 \"얼마나 오래 걸리든 우리 스스로를 지킬 준비가 돼 있다.트럼프 대통령이 '승리할 수 없는 불법 전쟁'이라는 점을 깨달을 때까지 계속해서 방어할 것\"이라고 거듭 강조했다.특히 전쟁 종식을 위한 미국과의 대화 가능성과 관련해 아라그치 장관은 \"우리는 미국과 대화해야 할 어떤 이유도 찾지 못하고 있다.왜냐면 우리가 그들과 대화 중일 때 그들은 우리를 공격하기로 결정했고, 이것이 벌써 두 번째이기 때문\"이라며 핵협상 진행 도중 이뤄진 미국의 공습을 비판했다.이어 \"우리는 미국과의 대화에서 좋은 경험을 한 적이 없다\"면서 \"우리가 다시 대화로 돌아가서 좋을 게 뭐가 있나\"라고 반문했다.이란 핵프로그램에 관해서도 아라그치 장관은 400㎏ 이상의 농축 우라늄이 여전히 국제원자력기구(IAEA)의 감독 하에 있다며 \"지금 진행 중인 (핵 관련) 협상은 아무것도 없다.모든 것은 미래에 달려있다\"라고 전했다.이번 인터뷰는 트럼프 대통령이 최근 여러 차례 '이란이 협상을 원하고 있다'고 언급한 직후에 이뤄졌다.아라그치 장관은 트럼프 대통령의 이런 주장을 부인한 것이다.또한, 아라그치 장관은 호르무즈 해협 통과를 요청하는 제3국들에는 안전한 통행을 보장하고 있다면서 구체적으로 어떤 나라들이 해협 통과를 요청했는지는 밝히지 않았다.그는 \"우리는 통행 안전을 보장하고 있다.이 해협을 막지 않았기 때문\"이라면서 선박들이 \"미국의 침공 때문에 스스로 (호르무즈 해협에) 오지 않고 있는 것\"이라고 주장했다.호르무즈 해협 통과를 원하는 나라들과의 대화에 열려 있다는 아라그치 장관의 언급과 관련해, 인도 정부도 이란과의 협상을 통한 최근 자국 가스 운반선 2척의 해협 통과를 외교 성과의 사례로 언급했다.수브라마냠 자이샨카르 인도 외교장관은 이날 영국 파이낸셜타임스(FT)와의 인터뷰에서 \"지금 그들(이란)과의 대화에 관여하고 있고, 이러한 대화가 일부 결과를 도출했다\"고 말했다.자이샨카르 장관은 \"우리가 논리적으로 설득하고 조율해서 해결책을 마련한 것은 그렇게 하지 않은 것보다 확실히 더 나은 결과였다\"면서 \"이와 같은 일이 다른 나라 사람들의 참여를 이끌어낼 수 있다면 세상이 나아질 것이라고 생각한다\"고 강조했다.유럽에서도 프랑스와 이탈리아가 에너지 운송 문제에 관해 이란과 대화를 시작한 가운데, 자이샨카르 장관은 16일 벨기에 브뤼셀에서 열리는 유럽연합(EU) 외교장관 회의에 참석해 자국의 협상 경험을 공유할 전망이다./연합뉴스"
         }
       ],
-      "dedupeKey": "5900선-nh투자증권-변동성-악재-장세-중동발-증권-지속",
-      "clusterKey": "실적/중동발",
+      "dedupeKey": "미국-불필요-안전-이란-제3국-제공-통행-협상",
+      "clusterKey": "이스라엘이란_관세/불필요",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026031392256",
-      "publishedAt": "2026-03-14T23:00:06+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202603163250Y",
+      "publishedAt": "2026-03-16T02:14:53+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -207,67 +67,264 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-16_7",
-      "date": "2026-03-16",
-      "category": "금융",
-      "title": "삼성전자 목표 주가 상향 조정",
+      "id": "2026-03-17_3",
+      "date": "2026-03-17",
+      "category": "정책",
+      "title": "정부, 3개월간 비축유 단계적 방출 추진",
       "summary": [
-        "하나증권은 삼성전자의 목표 주가를 25만원에서 30만원으로 상향 조정했습니다.",
-        "이는 메모리 반도체 가격 상승을 반영한 연간 영업이익 추정치 상향에 따른 것입니다."
+        "정부는 국제 유가 상승에 대응하여 3개월 동안 비축유를 단계적으로 방출할 계획입니다.",
+        "3월 말까지 중동 사태 관련 추가경정예산안을 국회에 제출할 예정입니다.",
+        "석탄과 원전 발전량을 확대하고, 석유화학 산단 지역을 '산업위기 특별대응 지역'으로 격상하는 방안을 검토합니다."
       ],
-      "whyImportant": "삼성전자의 목표 주가 상향은 메모리 반도체 시장의 긍정적 전망을 반영합니다.",
-      "importanceRationale": "근거: 하나증권은 메모리 반도체 가격 상승을 반영하여 삼성전자의 연간 영업이익 추정치를 229조원으로 상향 조정했습니다.",
+      "whyImportant": "이번 조치는 국제 유가 변동에 따른 국내 경제 및 산업의 충격을 완화하고 에너지 수급 안정성을 확보하는 데 중요한 의미를 가집니다.",
+      "importanceRationale": "근거: 정부는 3월 말까지 추가경정예산안을 국회에 제출하고, 향후 3개월 동안 2246만 배럴의 원유를 단계적으로 방출할 예정입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "\"삼성전자, 메모리 가격 상승·주주환원 기대…목표가 30만원\"-하나 하나증권은 13일 삼성전자의 목표주가를 25만원에서 30만원으로 높였다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "메모리 반도체 가격 상승을 반영해 연간 영업이익 추정치를 229조원으로 상향 조정하면서다."
+          "label": "sanctions",
+          "evidence": "안 의원은 “나프타 등 필요 물량의 25%가 중동발인데 수급 차질을 빚고 있고, 가격도 급등했다”며 “산업부와 협의해 나프타의 경우 국내 생산 물량의 수출을 전년 수준으로 동결하고 대체 수입선을 발굴하겠다”고 했다."
         }
       ],
-      "dedupeKey": "25만원-30만원-목표-삼성전자-상향-조정-주가-하나증권",
-      "clusterKey": "실적/반도체/삼성전자",
+      "dedupeKey": "3개월-3개월간-단계적-방출-비축유-석유화학-정부-추가경정예산안",
+      "clusterKey": "3개월간/비축유/단계적",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026031397616",
-      "publishedAt": "2026-03-14T06:33:52+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1249626.html",
+      "publishedAt": "2026-03-16T13:02:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-16_8",
-      "date": "2026-03-16",
-      "category": "금융",
-      "title": "트럼프, 북미 대화에 깊은 관심 표명",
+      "id": "2026-03-17_4",
+      "date": "2026-03-17",
+      "category": "정책",
+      "title": "송언석, 호르무즈 파병 시 국회 동의 절차 준수 강조",
       "summary": [
-        "트럼프 대통령이 김정은 위원장과의 대화 의지를 재차 표명하며 방중 계기 성사 가능성이 주목됩니다.",
-        "김 총리와의 면담에서 트럼프 대통령은 김 위원장과의 관계를 언급하며 대화 의사를 밝혔습니다.",
-        "트럼프 대통령은 북미 대화를 진전시키기 위한 조언을 듣고 보좌관에게 지시를 내렸다고 합니다."
+        "송언석 국민의힘 원내대표는 호르무즈 해협 파병 문제에 대한 국회 논의와 동의 절차 준수를 정부에 촉구했습니다.",
+        "그는 아덴만 청해부대의 호르무즈 해협 이동 배치 역시 국회 동의가 필요한 군사행동이라고 주장했습니다."
       ],
-      "whyImportant": "북미 관계는 한반도 및 동북아시아 안보에 중대한 영향을 미치므로, 관련 대화 재개 가능성은 주목할 필요가 있습니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 방중을 앞두고 북미 대화에 대한 의지를 적극적으로 보였다는 점에서 의미가 있으며, 과거 판문점 회동의 전례를 고려할 때 '판문점 회동 시즌2'가 전개될 가능성을 배제할 수 없다는 분석이 있습니다.",
+      "whyImportant": "호르무즈 해협 파병 결정은 외교 및 안보에 중대한 영향을 미칠 수 있는 사안입니다.",
+      "importanceRationale": "근거: 송언석 원내대표는 파병이 전투 개입 가능성이 큰 지역에 파병하는 중대한 결정이므로 국회 동의가 필수라고 언급했습니다.",
       "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "다만, 김 위원장은 지난달 노동당 9차 대회에서 미국이 북한을 '핵보유국'으로 인정하고 적대시 정책을 철회한다면 미국과 \"좋게 지내지 못할 이유가 없다\"며 \"조미(북미) 관계의 전망성은 미국 측의 태도에 전적으로 달려있다\"고 밝히는 등 북미 대화에 대해선 여전히 가능성을 닫아놓지 않고 있다."
-        },
         {
           "label": "security",
-          "evidence": "일각에서는 올해 들어 트럼프 대통령이 베네수엘라와 이란을 상대로 군사공격에 나서 상대국 최고 지도자를 압송 또는 제거한 것을 목도한 김 위원장이 '보험' 차원에서라도 트럼프 대통령과의 대화 채널을 복구하는 데 관심을 가질 가능성을 배제할 수 없다고 보기도 한다."
+          "evidence": "앞서 트럼프 대통령은 지난 14일(현지시각) 소셜미디어 트루스소셜을 통해 “이란의 호르무즈 해협 봉쇄 시도로 영향을 받은 많은 국가, 특히 관련국들이 해협의 개방과 안전을 유지하기 위해 미국과 협력하여 군함을 파견할 것”이라며 한국, 일본, 중국, 영국, 프랑스 등 5개국을 언급했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "송 원내대표는 이날 국회에서 열린 최고위원회 회의에서 도널드 트럼프 미국 대통령의 호르무즈 해협 군함 파견 요청과 관련해 “이 문제는 우리 군의 전투 개입 가능성이 큰 지역에 파병하는 중대한 결정”이라며 “반드시 헌법과 법률에 따라 국회의 동의가 필수인 사안”이라고 말했다."
         }
       ],
-      "dedupeKey": "관심-깊은-내렸다고-대화-북미-진전시키기-트럼프-표명",
-      "clusterKey": "관세/트럼프",
+      "dedupeKey": "국회-동의-송언석-절차-정부-준수-파병-호르무즈",
+      "clusterKey": "송언석/호르무즈/파병",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1249476.html",
+      "publishedAt": "2026-03-16T00:39:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_5",
+      "date": "2026-03-17",
+      "category": "국제",
+      "title": "미중, 파리에서 경제·무역 고위급 회담 시작",
+      "summary": [
+        "미국과 중국이 프랑스 파리에서 고위급 회담을 시작했습니다.",
+        "이번 회담은 양국 정상회담을 앞두고 경제, 무역 협상을 진행합니다.",
+        "관세, 희토류, 첨단기술 수출 통제 등 주요 무역 현안이 논의될 예정입니다."
+      ],
+      "whyImportant": "미중 고위급 회담은 양국 간 무역 협상과 관련된 주요 현안을 논의하고 향후 관계 설정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이달 말 미중 정상회담을 앞두고 관세, 희토류, 첨단기술 수출 통제 등 주요 무역 협상과 관련된 논의가 진행될 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "양국은 관세와 희토류, 첨단기술 수출통제, 미국산 농산물 구매 문제 등 주요 무역 협상과 관련된 논의를 진행할 계획이다."
+        }
+      ],
+      "dedupeKey": "경제-고위급-무역-미국-미중-시작-중국-파리",
+      "clusterKey": "미중_관세/파리",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323915",
-      "publishedAt": "2026-03-14T01:45:04+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324332",
+      "publishedAt": "2026-03-15T09:35:36+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_6",
+      "date": "2026-03-17",
+      "category": "국제",
+      "title": "미국 중재 우크라이나 평화협상 지연 가능성",
+      "summary": [
+        "미국의 중재로 진행되던 우크라이나 평화협상이 미국의 관심 부족으로 인해 지연될 가능성이 있습니다.",
+        "러시아는 유가 상승과 제재 완화로 전쟁 자금 확보에 숨통이 트인 상황입니다.",
+        "미국은 러시아산 원유 제재를 완화하고, 우크라이나에 대한 무기 공급도 지연시키고 있습니다."
+      ],
+      "whyImportant": "미국 정책 변화는 우크라이나 전쟁의 장기화 및 국제 관계에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 러시아산 원유 제재를 완화하고 우크라이나에 대한 무기 공급을 지연시키는 등 정책 변화가 나타나고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "여기 더해 미국은 유가 상승에 대처한다는 명분을 앞세워 지난 12일 러시아산 원유에 대한 제재를 중단·완화하기로 했다."
+        }
+      ],
+      "dedupeKey": "러시아산-미국-우크라이나-중재-지연-지연시키고-진행되던-평화협상",
+      "clusterKey": "투자/중재/제재",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031523617",
+      "publishedAt": "2026-03-15T12:05:40+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_7",
+      "date": "2026-03-17",
+      "category": "기술",
+      "title": "Nebius, 메타와 270억 달러 규모의 AI 인프라 계약 체결 후 14% 급등",
+      "summary": [
+        "메타는 네덜란드 클라우드 제공업체 Nebius의 AI 인프라에 최대 270억 달러를 투자하는 장기 계약을 체결했습니다.",
+        "Nebius는 향후 5년간 엔비디아의 최신 AI 전문 칩을 대규모로 배치할 예정이며, 메타는 추가 컴퓨팅 용량 구매도 약속했습니다.",
+        "이 계약 발표 후 Nebius의 주가는 14% 상승했습니다."
+      ],
+      "whyImportant": "이번 계약은 AI 클라우드 컴퓨팅 분야에서 Nebius의 입지를 강화하고, AI 인프라 구축 경쟁을 가속화할 수 있기 때문에 중요합니다.",
+      "importanceRationale": "근거: 메타는 Nebius의 AI 인프라에 최대 270억 달러를 투자하고, Nebius 주가는 14% 상승했으며, AI 관련 자본 지출은 올해 1,150억~1,350억 달러에 달할 것으로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Citi said Monday it was initiating coverage of Nebius with a buy/high risk rating, which it noted was supported by a \"differentiated view on AI datacenter [total addressable market] growth, margin improvement and NBIS's capital-efficient scaling.\" Meta is part of a group of hyperscalers planning huge spending as they race to build out infrastructure to power the AI boom."
+        },
+        {
+          "label": "policy",
+          "evidence": "Over the next five years, Nebius will provide $12 billion of dedicated capacity across a number of locations, including on what the company says will be one of the first large-scale deployments of Nvidia's latest AI-specialist Vera Rubin chips."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "The company has seen its share price increase more than 400% since listing in New York in 2024."
+        }
+      ],
+      "dedupeKey": "270억-nebius-계약-규모-급등-달러-메타-인프라",
+      "clusterKey": "투자/nebius",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/16/meta-nebius-ai-infrastructure.html",
+      "publishedAt": "2026-03-16T11:29:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_8",
+      "date": "2026-03-17",
+      "category": "금융",
+      "title": "AI 거품 신호 시 주가 및 실적 변동 가능성",
+      "summary": [
+        "금융투자업계는 AI 거품 현실화 여부를 중장기 국내 증시의 최대 위험 변수로 꼽고 있습니다.",
+        "삼성전자와 SK하이닉스가 유가증권시장 시총에서 차지하는 비중은 39.5%에 달합니다."
+      ],
+      "whyImportant": "AI 투자 지속 불가능 신호 발생 시 국내 증시 여러 업종의 실적이 흔들릴 수 있다는 점이 중요합니다.",
+      "importanceRationale": "근거: 삼성전자와 SK하이닉스가 유가증권시장 시총에서 차지하는 비중이 39.5%에 달해 AI 투자 변동에 따른 국내 증시 영향이 클 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "만일 빅테크 등의 AI 투자가 지속가능하지 않다는 신호가 나온다면 실적이 흔들릴 수 있다”고 했다."
+        }
+      ],
+      "dedupeKey": "거품-금융투자업계-변동-삼성전자-신호-실적-여부-주가",
+      "clusterKey": "실적/금융/거품",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031648061",
+      "publishedAt": "2026-03-16T08:43:36+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_9",
+      "date": "2026-03-17",
+      "category": "금융",
+      "title": "중기부, 소상공인 정책 '혁신 성장·재도약'에 방점",
+      "summary": [
+        "중소벤처기업부는 소상공인 정책 목표를 '혁신 성장과 재도약'으로 정하고 정책을 추진한다고 밝혔습니다.",
+        "AI 활용 교육, 스마트 기술 보급, 온라인 판로 확대 등을 통해 소상공인의 경쟁력 강화를 지원할 예정입니다.",
+        "위기 소상공인 지원을 강화하고, 소상공인 정책자금 지원 방식을 개선할 계획입니다."
+      ],
+      "whyImportant": "소상공인 지원 정책의 변화는 관련 산업 전반에 걸쳐 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중기부는 AI 활용 교육을 최대 7만 2천명 규모로 실시하고, 스마트 기술을 1만 6천곳에 보급할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "플랫폼 협업 분야를 식품·홈리빙·패션·뷰티 등 4대 분야로 재편하고, 소상공인의 역량 수준과 성장 가능성에 따라 기초컨설팅 단계의 3천500개사에는 온오프라인 교육과 플랫폼사별 온라인 기획전 등을, 브랜드 정립 단계의 700개사에는 판로촉진 비용과 플랫폼사별 특화 마케팅 프로그램 등을 각각 지원한다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "AI·상생협력으로 성장 지원…위기 소상공인 재도전 지원 강화 (서울=연합뉴스) 구정모 기자 = 중소벤처기업부는 올해 소상공인 정책 목표를 '혁신 성장과 재도약'으로 정하고 소상공인의 매출 확대와 재도전 지원, 정책 지원체계 개선 등을 중심으로 정책을 추진하겠다고 16일 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "다음 달 11일부터 5월 10일까지 열리는 '동행축제'는 지방정부와 유통기업, 전통시장, 소상공인이 함께 참여하는 모두의 행사로 추진하고 전국 50개 지역축제와 연계한 판매 행사도 진행할 계획이다."
+        }
+      ],
+      "dedupeKey": "방점-성장-소상공인-재도약-정책-중기부-중소벤처기업부-혁신",
+      "clusterKey": "정책/중기부",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324723",
+      "publishedAt": "2026-03-16T04:30:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-17_10",
+      "date": "2026-03-17",
+      "category": "국제",
+      "title": "미중 정상회담, 중동 위기로 인한 변수 발생",
+      "summary": [
+        "미국이 중국에 호르무즈 해협 군함 파견을 요구하며 미중 정상회담 연기 가능성을 거론했습니다.",
+        "중국은 미국이 중동 위기를 협상 지렛대로 활용하는 것에 부담을 느끼는 것으로 보입니다.",
+        "미중 무역 협상에는 핵심 광물 공급 문제도 의제로 올랐습니다."
+      ],
+      "whyImportant": "미중 관계는 국제 정치 및 경제에 큰 영향을 미치므로, 양국 간의 협상 변동은 관련 산업과 정책 결정에 중요한 고려 사항입니다.",
+      "importanceRationale": "근거: 미국이 중국에 군함 파견을 요구하며 정상회담 연기 가능성을 언급하여 미중 관계에 영향을 줄 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "[영상취재 임임락] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 배삼진(baesj@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "미국-미중-발생-변수-위기-인한-정상회담-중동",
+      "clusterKey": "미중_관세/위기",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324790",
+      "publishedAt": "2026-03-16T06:39:37+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

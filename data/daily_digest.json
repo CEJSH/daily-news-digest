@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-18",
+  "date": "2026-03-19",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-18T08:05:16.483359+09:00",
+  "lastUpdatedAt": "2026-03-19T08:01:40.143591+09:00",
   "items": [
     {
-      "id": "2026-03-18_1",
-      "date": "2026-03-18",
-      "category": "산업",
-      "title": "중국 화훙, 7나노 공정 개발로 반도체 자립 가속화",
+      "id": "2026-03-19_1",
+      "date": "2026-03-19",
+      "category": "기술",
+      "title": "테슬라, LG에너지솔루션 배터리 셀 43억 달러 규모 구매 계약",
       "summary": [
-        "중국 2위 파운드리 업체 화훙반도체가 7나노 공정 기술을 개발하고 도입을 준비 중입니다.",
-        "화훙의 7나노 공정 확보는 중국 내 두 번째 사례이며, 미국 제재 속에서 반도체 자립도를 높이는 데 기여할 것으로 보입니다.",
-        "화훙은 올해 말까지 월 수천 장 규모의 7나노 웨이퍼 생산 능력을 확보하는 것을 목표로 하고 있습니다."
+        "테슬라가 LG에너지솔루션과 43억 달러 규모의 배터리 셀 구매 계약을 체결했습니다.",
+        "해당 배터리 셀은 LG에너지솔루션의 미시간주 랜싱 공장에서 생산되어 테슬라 에너지 저장 시스템에 사용될 예정입니다.",
+        "테슬라의 에너지 부문 매출은 작년에 27% 증가한 128억 달러를 기록했습니다."
       ],
-      "whyImportant": "화훙의 7나노 공정 개발은 미국의 제재 속에서 중국의 반도체 자립을 가속화하는 데 중요한 역할을 할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 화훙이 7나노 공정을 확보할 경우 중국에서 두 번째 업체가 되며, 올해 말까지 월 수천 장 규모의 웨이퍼 생산 능력을 목표로 하고 있습니다.",
+      "whyImportant": "이번 계약은 데이터 센터 증가로 인한 전력 수요 증가에 대응하기 위한 테슬라의 에너지 사업 투자를 보여줍니다.",
+      "importanceRationale": "근거: 테슬라는 LG에너지솔루션으로부터 43억 달러 규모의 배터리 셀을 구매하고, 에너지 부문 매출이 27% 증가한 128억 달러를 기록했습니다.",
       "impactSignals": [
         {
-          "label": "sanctions",
-          "evidence": "미국 제재로 첨단 장비 접근이 제한된 중국 업계 현실을 감안하면, 화훙의 7나노 공정 개발은 의미 있는 기술 진전이자 반도체 자립도 제고의 이정표로 평가될 수 있다고 로이터는 설명했다."
+          "label": "market-demand",
+          "evidence": "While Tesla still makes most of its revenue from EVs, the company is investing in its more rapidly growing energy business, as data centers drive up electricity demand."
         }
       ],
-      "dedupeKey": "7나노-가속화-개발-공정-반도체-자립-중국-화훙",
-      "clusterKey": "미중_제재/반도체/화훙",
+      "dedupeKey": "43억-lg에너지솔루션-계약-구매-규모-달러-배터리-테슬라",
+      "clusterKey": "실적/테슬라",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324877",
-      "publishedAt": "2026-03-16T09:05:57+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/17/tesla-to-buy-4-point-3-billion-lg-energy-battery-cells-made-in-michigan.html",
+      "publishedAt": "2026-03-17T18:51:33+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -37,29 +37,60 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-18_2",
-      "date": "2026-03-18",
-      "category": "에너지",
-      "title": "구글, 데이터센터 전력 공급 계획 구체화",
+      "id": "2026-03-19_2",
+      "date": "2026-03-19",
+      "category": "기술",
+      "title": "엔비디아, 칩 사업에 버금가는 수십억 달러 규모의 네트워킹 사업 구축",
       "summary": [
-        "구글은 미시간주 디트로이트 외곽에 위치한 새로운 데이터센터에 전력을 공급하기 위해 미시간 유틸리티 DTE와 협력하여 2.7기가와트의 '새로운 자원'을 추가할 것이라고 밝혔습니다.",
-        "이 계획에는 1.6기가와트의 태양광 발전, 400메가와트의 4시간 에너지 저장, 50메가와트의 장기 에너지 저장, 300메가와트의 '추가 청정 자원'이 포함됩니다.",
-        "구글은 또한 유틸리티 요금을 절감하기 위한 1천만 달러 규모의 에너지 영향 기금을 조성할 것이라고 발표했습니다."
+        "엔비디아의 데이터 센터 네트워킹 사업이 빠르게 성장하여 회사의 두 번째로 큰 수익원이 되었습니다.",
+        "최근 분기에 110억 달러의 수익을 기록하며 전년 대비 267% 증가했고, 연간 310억 달러 이상의 수익을 올렸습니다.",
+        "이는 2020년 70억 달러에 인수한 멜라녹스(M ox)를 기반으로 합니다."
       ],
-      "whyImportant": "구글의 데이터센터 전력 공급 방식 변화는 향후 데이터센터 구축 및 운영에 대한 새로운 접근 방식을 제시할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 구글은 미시간 데이터센터에 2.7기가와트의 전력을 공급하기 위해 DTE와 협력하고 있으며, 이는 데이터센터 전력 공급에 대한 구글의 투자 규모를 보여줍니다.",
+      "whyImportant": "엔비디아의 네트워킹 사업 성장은 AI 데이터 센터 구축에 필요한 기술을 제공함으로써 AI 인프라 시장에서 중요한 역할을 할 수 있음을 시사합니다.",
+      "importanceRationale": "근거: 엔비디아의 네트워킹 사업은 최근 분기에 110억 달러의 수익을 기록하며 267% 성장했고, 연간 310억 달러 이상의 수익을 올렸다는 점에서 중요합니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "Google said it will work with Michigan utility DTE to add 2.7 gigawatts of “new resources” in suburban Detroit to power a new data center in the region."
+          "label": "earnings",
+          "evidence": "Last quarter, it reported $11 billion in revenue, a year-over-year increase of 267%, and brought in more than $31 billion for the full year, according to Nvidia’s most recent earnings."
         }
       ],
-      "dedupeKey": "400메가와트-6기가와트-7기가와트-공급-구글-구체화-데이터센터-전력",
-      "clusterKey": "에너지/구글",
+      "dedupeKey": "구축-규모-네트워킹-달러-버금-사업-수십억-엔비디아",
+      "clusterKey": "인수합병/엔비디아",
       "matchedTo": null,
       "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/17/googles-data-center-power-playbook-comes-into-focus/",
-      "publishedAt": "2026-03-17T16:46:02+00:00",
+      "sourceUrl": "https://techcrunch.com/2026/03/18/nvidia-networking-division-building-a-multibillion-dollar-behemoth-to-rival-its-chips-business/",
+      "publishedAt": "2026-03-18T20:01:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-19_3",
+      "date": "2026-03-19",
+      "category": "금융",
+      "title": "미국 연준, 기준금리 동결 및 올해 물가 전망 상향",
+      "summary": [
+        "미국 연방준비제도(Fed)는 기준금리를 연 3.50~3.75%로 동결했습니다.",
+        "올해 개인소비지출(PCE) 물가상승률 전망치는 2.7%로 상향 조정되었습니다.",
+        "올해 실질 국내총생산(GDP) 증가율 전망치는 2.4%로 소폭 상향되었습니다."
+      ],
+      "whyImportant": "미국 연준의 금리 동결과 물가 전망 상향은 향후 통화정책의 불확실성을 높이고, 고금리 장기화 가능성을 시사합니다.",
+      "importanceRationale": "근거: Fed 위원들의 중간값 기준 올해 PCE 물가상승률 전망이 2.7%로 상향되었고, 올해 말 정책금리 중간값은 3.4%로 유지되어 고금리 장기화 가능성이 제기됩니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "Fed, 기준금리 동결 속 ‘물가 상향’…올해 인플레 2.7% 전망 [Fed워치] - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 기준금리 연 3.50~3.75%로 유지 올해 말 기준금리 중간값 3.4%로 유지 PCE 상승률 전망 2.7%로 상향 조정 성장률 전망치도 2.3%에서 2.4%로 올해 말 기준금리 중간값 3.4%로 유지 PCE 상승률 전망 2.7%로 상향 조정 성장률 전망치도 2.3%에서 2.4%로 미국 중앙은행(Fed)이 기준금리를 동결한 가운데, 올해 인플레이션 전망치를 상향 조정하며 긴축 기조 장기화를 시사했다."
+        }
+      ],
+      "dedupeKey": "기준금리-동결-물가-미국-상향-연방준비제-연준-올해",
+      "clusterKey": "연준/기준금리/동결",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603190961i",
+      "publishedAt": "2026-03-18T18:13:44+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -68,33 +99,106 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-18_3",
-      "date": "2026-03-18",
+      "id": "2026-03-19_4",
+      "date": "2026-03-19",
       "category": "기술",
-      "title": "엔비디아, 중국향 H200 공급 재개 절차 돌입",
+      "title": "달바글로벌, 유럽 아마존 뷰티 카테고리 상위권 진입",
       "summary": [
-        "엔비디아가 중국 고객을 대상으로 H200 AI 반도체 공급 재개 절차에 들어갔습니다.",
-        "젠슨 황 CEO는 중국 고객으로부터 구매 주문을 받았으며, 생산 재개를 진행 중이라고 밝혔습니다.",
-        "미국 정부의 첨단 기술 수출 규제 완화 가능성이 시사된 점도 영향을 미친 것으로 보입니다."
+        "달바글로벌은 아마존 '스프링 딜' 기간 동안 유럽 주요 국가 뷰티 카테고리에서 다수 제품이 상위권에 올랐다고 밝혔습니다.",
+        "2025년 연간 매출은 5198억원, 영업이익은 1011억원으로 전년 대비 각각 68%, 69% 증가했습니다."
       ],
-      "whyImportant": "이번 조치는 글로벌 AI 반도체 시장의 긴장 완화 신호로 해석될 수 있으며, 엔비디아의 매출 구조에도 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 엔비디아가 중국 고객으로부터 H200 구매 주문을 받았으며, 트럼프 대통령이 첨단 기술 수출 규제 일부 완화를 시사했습니다.",
+      "whyImportant": "달바글로벌의 유럽 시장에서의 성과는 향후 해외 시장 확장 전략 및 실적에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 4분기 해외매출은 전년 동기 대비 125% 증가했으며, 연간 해외매출도 3261억원으로 전년보다 131% 늘어나는 등 해외 사업이 실적 성장을 견인했습니다.",
       "impactSignals": [
         {
+          "label": "earnings",
+          "evidence": "올해 목표와 관련해서는 “북미지역 오프라인 점포 수를 약 3000개까지 확대하고 해당 권역의 오프라인 매출 비중을 25% 수준까지 끌어올릴 계획”이라며 “전사 매출 7000억원, 영업이익률 21% 달성을 위해 해외 유통망 확대와 브랜드 고도화에 집중하겠다”고 밝혔다."
+        },
+        {
           "label": "market-demand",
-          "evidence": "젠슨 황 엔비디아 최고경영자(CEO)는 17일(현지시간) 미국 새너제이 시그니아 매리어트 호텔에서 개최된 글로벌 기자간담회에서 “중국 고객들로부터 구매 주문을 받았다”라며 “H200 칩 생산 재개를 진행 중”이라고 밝혔다."
+          "evidence": "달바글로벌 관계자는 “스페인에서의 판매 흐름이 독일과 이탈리아, 이후 캐나다와 호주·미국 등으로 확산되는 패턴”이라며 “연내 유럽 주요 신규 오프라인채널을 확대해 매출 비중을 늘리고 수익성도 점진적으로 개선할 것”이라고 말했다."
         },
         {
           "label": "policy",
-          "evidence": "미국과 중국 양국의 규제로 1년 가까이 막혀 있던 거래가 다시 열리면서 글로벌 AI 반도체 시장의 긴장이 완화되는 신호로 해석된다."
+          "evidence": "20일 금융감독원 전자공시시스템에 따르면 달바글로벌의 2025년 연간 매출은 5198억원, 영업이익은 1011억원으로 집계됐다."
         }
       ],
-      "dedupeKey": "h200-공급-돌입-미국-엔비디아-절차-중국-중국향",
-      "clusterKey": "미중_정책/엔비디아",
+      "dedupeKey": "1011억원-5198억원-달바글로벌-뷰티-상위권-아마존-유럽-카테고리",
+      "clusterKey": "실적/달바글로벌",
       "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://www.mk.co.kr/news/it/11990915",
-      "publishedAt": "2026-03-17T20:09:02+00:00",
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=657006",
+      "publishedAt": "2026-03-18T08:01:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-19_5",
+      "date": "2026-03-19",
+      "category": "기술",
+      "title": "엔비디아 CEO, OpenClaw를 '차세대 ChatGPT'로 극찬 후 중국 AI 주식 급등",
+      "summary": [
+        "엔비디아 CEO 젠슨 황의 긍정적인 발언 이후 중국 인공지능 주식이 급등했습니다.",
+        "황 CEO는 O Claw가 AI 에이전트의 혁신적인 단계라고 평가했습니다.",
+        "홍콩에서 M iMax와 K owledge Atlas T ology는 각각 22%와 14% 급등했습니다."
+      ],
+      "whyImportant": "중국 AI 시장의 성장과 기술 경쟁 심화를 시사합니다.",
+      "importanceRationale": "근거: 엔비디아 CEO의 발언 후 중국 AI 기업들의 주가가 급등했으며, Moody's는 중국의 빠른 인공지능 도입을 세계 선도 AI 시장으로서의 입지를 강화한다고 평가했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "SenseTime, which has pivoted from facial recognition surveillance to AI software platforms and recently integrated one of its AI assistants with OpenClaw, saw shares gain 2.43%."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "Other tech stocks in Asia also rose after Huang said he expects purchase orders between Blackwell and Vera Rubin to reach $1 trillion through 2027."
+        }
+      ],
+      "dedupeKey": "ceo-chatgpt-openclaw-극찬-엔비디아-주식-중국-차세대",
+      "clusterKey": "엔비디아/ceo/openclaw",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/18/china-ai-zhipu-minimax-after-nvidia-jensen-huang-openclaw-comments.html",
+      "publishedAt": "2026-03-18T07:27:10+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-19_6",
+      "date": "2026-03-19",
+      "category": "기술",
+      "title": "앤디 재시 아마존 CEO, 10년 뒤 AWS 매출 6천억 달러 전망",
+      "summary": [
+        "앤디 재시 아마존 CEO는 10년 뒤 AWS 매출이 6000억 달러에 이를 수 있다고 전망했습니다.",
+        "이는 기존 전망치 3000억 달러에서 2배 상향된 수치이며, AI 수요 증가를 반영한 것입니다.",
+        "아마존은 AI 인프라 투자 확대로 인해 대규모 채권 발행을 결정했습니다."
+      ],
+      "whyImportant": "아마존의 AWS 매출 전망 상향은 AI 인프라 시장의 성장 가능성을 시사하며, 빅테크 기업들의 투자 방향을 가늠하는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 앤디 재시 CEO는 10년 뒤 AWS 매출을 6000억 달러로 전망하며, 이는 기존 전망치인 3000억 달러에서 2배 상향된 수치입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "앤디 재시(Andy Jassy) 아마존 최고경영자(CEO)는 최근 사내 전체 회의에서 AI가 AWS(Amazon Web Services)의 매출을 크게 끌어올릴 것으로 언급하면서 10년 뒤인 2036년 AWS 매출이 6000억달러(약 890조원)에 이를 수 있다고 말했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "아마존의 올해 2000억 달러 설비 투자 비용은 AI, 자체 칩 '트레이니엄(Trainium)'과 인퍼런시아(·Inferentia), 로보틱스, 저궤도 위성(LEO) '카이퍼(Kuiper)' 전반에 적용된다."
+        }
+      ],
+      "dedupeKey": "6천억-aws-ceo-달러-매출-아마존-앤디-재시",
+      "clusterKey": "실적/앤디/투자",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53740",
+      "publishedAt": "2026-03-18T07:23:59+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -103,21 +207,52 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-18_4",
-      "date": "2026-03-18",
+      "id": "2026-03-19_7",
+      "date": "2026-03-19",
       "category": "기술",
-      "title": "엔비디아, 중국으로부터 주문 받아 제조 재개",
+      "title": "마이크론, HBM4 1분기 출하 공식화…엔비디아 베라 루빈용",
       "summary": [
-        "엔비디아의 젠슨 황 CEO는 중국 고객에게 H200 프로세서를 공급하기 위해 제조를 재개한다고 밝혔습니다.",
-        "중국은 한때 엔비디아 데이터 센터 수익의 1/5을 차지했지만, 수출 제한으로 인해 어려움을 겪었습니다.",
-        "미국 정부는 소량의 H200 제품 판매를 승인했지만 아직 수익은 발생하지 않았다고 엔비디아는 밝혔습니다."
+        "마이크론이 엔비디아 '베라 루빈'용 HBM4 12단 36GB 모델을 올해 1분기부터 출하한다고 밝혔습니다.",
+        "초당 11기가비트 이상의 핀당 입출력 속도를 달성했으며, 이전 세대인 HBM3E 대비 대역폭은 2.3배 향상되었습니다.",
+        "또한, 엔비디아 베라 루빈 NVL72 시스템용 SOCAMM2의 고객사도 엔비디아임을 밝혔습니다."
       ],
-      "whyImportant": "엔비디아의 중국 시장 재진입은 반도체 공급망 및 시장 수요에 영향을 미칠 수 있는 중요한 변화입니다.",
-      "importanceRationale": "근거: 엔비디아가 중국 데이터 센터 수익의 1/5을 차지했던 시장에 H200 프로세서 판매를 재개하며, 이는 엔비디아의 실적 및 향후 전망에 영향을 줄 수 있습니다.",
+      "whyImportant": "마이크론의 HBM4 출하는 차세대 AI 연산 플랫폼의 성능 향상에 기여하고, 고대역폭 메모리 시장 경쟁 심화를 예고합니다.",
+      "importanceRationale": "근거: 마이크론은 엔비디아 베라 루빈용 HBM4 12단 36GB 모델을 1분기부터 출하하며, 이는 이전 세대 대비 대역폭이 2.3배 향상된 성능을 제공합니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "\"We have received purchase orders, and we're in the process of restarting our manufacturing,\" Huang told reporters at the company's GTC conference in San Jose, California."
+          "evidence": "마이크론이 올해 1분기부터 엔비디아용 6세대 고대역폭메모리(HBM4)를 출하한다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "36gb-hbm4-공식화-루빈용-마이크론-베라-엔비디아-출하",
+      "clusterKey": "반도체/마이크론",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53619",
+      "publishedAt": "2026-03-17T02:52:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-19_8",
+      "date": "2026-03-19",
+      "category": "기술",
+      "title": "엔비디아, 중국으로부터 주문 받아 제조 재개",
+      "summary": [
+        "엔비디아의 젠슨 황 CEO는 중국 고객에게 H200 프로세서를 제공하기 위해 제조를 재개한다고 밝혔습니다.",
+        "중국은 한때 엔비디아 데이터 센터 수익의 1/5을 차지했지만, 수출 제한으로 인해 어려움을 겪었습니다.",
+        "미국 정부는 소량의 H200 제품 판매를 승인했지만 아직 수익은 발생하지 않았다고 합니다."
+      ],
+      "whyImportant": "엔비디아의 중국 시장 재진입은 반도체 공급망 및 시장 수요에 중요한 변화를 의미할 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 중국 데이터 센터 수익의 1/5을 차지했던 시장에 H200 프로세서 판매를 재개하며, 이는 엔비디아의 실적 및 시장 전략에 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "“We have received purchase orders, and we’re in the process of restarting our manufacturing,” Huang told reporters at the company’s GTC conference in San Jose, California."
         }
       ],
       "dedupeKey": "5을-h200-받아-센터-엔비디아-제조-주문-중국",
@@ -134,33 +269,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-18_5",
-      "date": "2026-03-18",
+      "id": "2026-03-19_9",
+      "date": "2026-03-19",
       "category": "금융",
-      "title": "넷마블, 중화권에서 '뱀피르' 성공으로 아시아 매출 확대 추진",
+      "title": "CJ올리브영, 작년 매출 5조 8천335억원 기록",
       "summary": [
-        "넷마블의 MMORPG '뱀피르'가 중화권 시장에서 초기 성공을 거두며 아시아 지역 수익 창출의 발판을 마련했습니다.",
-        "글로벌 서비스 일주일 만에 동시접속자 수 12만 명을 돌파했으며, 대만에서는 사전 다운로드만으로 앱스토어 인기 1위를 달성했습니다.",
-        "중화권 흥행은 넷마블의 글로벌 매출 구조 불균형을 개선할 것으로 전망됩니다."
+        "CJ올리브영은 작년 매출이 5조 8천335억원으로 전년 대비 21.8% 증가했습니다.",
+        "영업이익은 7천447억원으로 22.5% 늘었으며, 외국인 관광객 수요 급증이 주요 요인으로 분석됩니다."
       ],
-      "whyImportant": "넷마블의 중화권 시장 성공은 특정 지역에 편중된 매출 구조를 다변화하고, 글로벌 시장에서의 경쟁력을 강화하는 데 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 넷마블 매출의 절반 이상이 북미와 한국에서 발생했지만, '뱀피르'의 중화권 성공으로 글로벌 매출 구조의 불균형이 개선될 전망입니다.",
+      "whyImportant": "CJ올리브영의 실적 증가는 K뷰티 산업의 성장과 외국인 관광객 유치에 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: CJ올리브영의 작년 매출은 5조 8천335억원으로 21.8% 증가했으며, 영업이익은 7천447억원으로 22.5% 증가했습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "북미, 한국 중심의 매출 구조에서 상대적으로 약세였던 아시아 지역에서 수익 창출 계기를 마련했다는 평가가 나온다."
+          "evidence": "CJ올리브영이 지난해 거둔 매출이 5조8천억원을 웃돌아 22%의 외형성장을 이뤘다."
         },
         {
-          "label": "capex",
-          "evidence": "이용자 유입이 늘면서 서버도 기존 10개에서 12개를 추가 증설해 현재 22개로 확대됐다."
+          "label": "market-demand",
+          "evidence": "CJ올리브영은 실적 성장의 주요 요인으로 외국인 관광객 수요 급증을 꼽았다."
         }
       ],
-      "dedupeKey": "1위-넷마블-매출-뱀피르-성공-아시아-중화권-확대",
-      "clusterKey": "실적/넷마블",
+      "dedupeKey": "5조-7천447억원-8천335억원-cj올리브영-기록-매출-영업이익-작년",
+      "clusterKey": "실적/cj올리브영",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53666",
-      "publishedAt": "2026-03-17T08:29:19+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326170",
+      "publishedAt": "2026-03-18T10:46:19+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -169,127 +303,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-18_6",
-      "date": "2026-03-18",
+      "id": "2026-03-19_10",
+      "date": "2026-03-19",
       "category": "금융",
-      "title": "효성중공업, 전력망 호황에 힘입어 영업이익 106% 급성장",
+      "title": "S-Oil, 상반기 영업이익 2.5조원 전망",
       "summary": [
-        "효성중공업은 북미 시장에서 역대 최대 실적을 기록했으며, 데이터센터 투자 증가로 실적 상승세가 이어질 전망입니다.",
-        "향후 2년간 현지 변압기 생산 거점 확대를 위해 2억 달러 이상을 투자할 계획입니다.",
-        "지난해 연결 기준 매출은 5조 9685억원, 영업이익은 7470억원으로 크게 증가했습니다."
+        "유안타증권은 S-Oil의 목표주가를 13만1000원으로 상향하고 투자의견 '매수'를 유지했습니다.",
+        "올해 상반기 영업이익은 2조5000억원에 달할 것으로 예상됩니다.",
+        "샤힌 프로젝트 완공과 호르무즈 해협 통제 영향으로 정유 부문 실적이 개선될 전망입니다."
       ],
-      "whyImportant": "AI 데이터센터 확대로 인한 전력망 투자 수요 증가에 따라 전력기기 시장의 성장이 예상됩니다.",
-      "importanceRationale": "근거: 효성중공업은 북미 변압기 생산 확대를 위해 2억 달러(약 2900억원) 이상을 투자할 계획이며, 미국 자회사의 2025년 합산 매출은 1조 4879억원으로 예상됩니다.",
+      "whyImportant": "S-Oil의 실적 개선은 국내 정유 및 석유화학 산업 전반에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 유안타증권은 S-Oil의 올해 매출과 영업이익이 각각 20.73%, 627.67% 증가할 것으로 추정하며, 상반기 영업이익은 2조5000억원에 달할 것으로 전망했습니다.",
       "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "효성 하이코가 생산을 담당하고 하이코아메리카가 현지 유틸리티 고객사를 대상으로 판매와 설치를 맡는다 북미에서는 노후 송전망 교체와 AI 데이터센터 전력 수요 증가가 맞물리면서 변압기 수요가 빠르게 늘고 있다."
-        },
-        {
-          "label": "capex",
-          "evidence": "효성중공업 관계자는 \"북미 공장 증설은 초고압 변압기 생산 확대를 위한 투자\"라며 \"데이터센터 확대로 커지는 전력망 전반의 투자 수요에 전력기기가 들어간다\"고 말했다."
-        },
         {
           "label": "earnings",
-          "evidence": "미국 자회사인 효성 하이코(HICO)와 하이코아메리카의 2025년 합산 매출은 1조4879억원으로 9293억원 대비 약 60.1% 증가했다."
+          "evidence": "유안타증권은 19일 S-Oil에 대해 \"올해 상반기에만 2조5000억원에 달하는 영업이익을 거둘 수 있을 것\"이라며 목표주가를 기존 11만원에서 13만1000원으로 상향하고 투자의견 '매수'를 유지했다."
         }
       ],
-      "dedupeKey": "7470억원-9685억원-급성장-영업이익-전력망-호황-효성중공업-힘입어",
-      "clusterKey": "실적/효성중공업/투자",
+      "dedupeKey": "13만1000원-2조5000억원-5조원-oil-상반기-영업이익-유안타증권-투자의견",
+      "clusterKey": "실적/oil",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53552",
-      "publishedAt": "2026-03-17T02:36:58+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-18_7",
-      "date": "2026-03-18",
-      "category": "정책",
-      "title": "수사권 확대 시행령 꼼수 차단: 민주당, 검사 직무 범위 법률 명시 추진",
-      "summary": [
-        "더불어민주당은 검사의 직무 범위를 시행령이 아닌 법률로만 정하도록 법안을 수정하여 검사의 우회적인 수사권 확보 가능성을 차단했다고 밝혔습니다.",
-        "또한, 신설되는 중대범죄수사청이 공소청의 하부조직으로 작동하여 검사가 수사권을 우회적으로 확보할 수 있다는 우려를 해소하기 위해 관련 구조를 수정했습니다."
-      ],
-      "whyImportant": "검찰의 수사 권한 범위를 명확히 함으로써 향후 검찰 개혁 및 관련 법 집행에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 윤석열 정부에서 시행령 개정을 통해 검사의 직접수사 범위를 확대한 사례를 방지하고, 특사경에 대한 검사의 수사 지휘 조항 삭제를 정부에 지시하는 등 정책 변화가 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "김 의원은 먼저 “검사의 직무에 관한 규정에서 시행령으로 직무 범위가 확장되고, 이를 통해 수사권을 확보할 가능성을 차단하기 위해 법률에 의해서만 검사의 직무범위를 정하도록 수정했다”고 했다."
-        }
-      ],
-      "dedupeKey": "검사-꼼수-민주당-수사권-시행령-직무-차단-확대",
-      "clusterKey": "정책/수사권",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1249677.html",
-      "publishedAt": "2026-03-17T04:18:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-18_8",
-      "date": "2026-03-18",
-      "category": "정책",
-      "title": "검사 수사 개입 원천 차단하는 중대범죄수사청법 수정 발표",
-      "summary": [
-        "더불어민주당은 공소청 검사의 수사 개입 가능성을 차단하는 중대범죄수사청·공소청 설치법안을 수정 발표했습니다.",
-        "수정안은 검찰총장의 권한을 각급 공소청장으로 분산하고, 특별사법경찰관에 대한 공소청 검사의 지휘·감독 권한을 삭제했습니다."
-      ],
-      "whyImportant": "이번 수정은 향후 검찰의 수사 기능 복구 여지를 없애고, 검찰의 직접 수사 범위를 법률로만 정하도록 하여 검찰 권한을 제한하는 데 중요한 의미를 가집니다.",
-      "importanceRationale": "근거: 윤석열 정부에서 시행령 개정으로 검사 수사 범위를 확대한 것을 막고, 법률로만 검사 직무 범위를 정하도록 하여 중요도 4로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "더불어민주당이 두 달여에 걸친 당·정·청 간 줄다리기를 통해 17일 수정 발표한 중대범죄수사청(중수청)·공소청 설치법안은 공소청 검사의 수사 개입 가능성을 이중·삼중으로 차단하는데 주안점을 뒀다."
-        }
-      ],
-      "dedupeKey": "개입-검사-공소청-수정-원천-중대범죄수사청-중대범죄수사청법-차단",
-      "clusterKey": "법집행/검사",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1249773.html",
-      "publishedAt": "2026-03-17T13:29:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-18_9",
-      "date": "2026-03-18",
-      "category": "국제",
-      "title": "미중 파리 협상, 소규모 성과 가능성 제기",
-      "summary": [
-        "미중 고위급 무역 협상이 파리에서 진행 중이며, 양측은 '작은 성과' 수준의 합의를 볼 가능성이 있습니다.",
-        "중국은 미국산 구매를 늘리고 양측이 무역 휴전 연장을 확인하는 정도가 가능할 수 있다는 전문가 평가가 있습니다."
-      ],
-      "whyImportant": "미중 무역 관계의 향방은 글로벌 경제에 지속적인 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 이달 말 미중 정상회담을 앞두고 파리에서 협상이 진행 중이며, 중국의 미국산 구매 확대 가능성이 논의되는 등 무역 관계에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "중국 대외경제무역대학 자오중슈 원장은 중국일보 인터뷰에서 과거 무역전쟁 과정에서 중국의 '레드라인'이 이미 알려졌고 레드라인에 대한 도전은 중국의 결연한 투쟁에 직면할 것이라면서도, 이를 지키면 협력 확대가 가능하다고 봤다."
-        }
-      ],
-      "dedupeKey": "고위급-미중-성과-소규모-제기-중국-파리-협상",
-      "clusterKey": "미중_관세/파리",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324705",
-      "publishedAt": "2026-03-16T03:10:07+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031911196",
+      "publishedAt": "2026-03-18T22:44:02+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

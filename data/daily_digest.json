@@ -1,300 +1,125 @@
 {
-  "date": "2026-03-19",
+  "date": "2026-03-20",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-19T08:01:40.143591+09:00",
+  "lastUpdatedAt": "2026-03-20T08:00:31.566425+09:00",
   "items": [
     {
-      "id": "2026-03-19_1",
-      "date": "2026-03-19",
+      "id": "2026-03-20_1",
+      "date": "2026-03-20",
       "category": "기술",
-      "title": "테슬라, LG에너지솔루션 배터리 셀 43억 달러 규모 구매 계약",
+      "title": "SKT, 과기부·산업부 출신 전격 영입…AI 규제·데이터센터 전면전",
       "summary": [
-        "테슬라가 LG에너지솔루션과 43억 달러 규모의 배터리 셀 구매 계약을 체결했습니다.",
-        "해당 배터리 셀은 LG에너지솔루션의 미시간주 랜싱 공장에서 생산되어 테슬라 에너지 저장 시스템에 사용될 예정입니다.",
-        "테슬라의 에너지 부문 매출은 작년에 27% 증가한 128억 달러를 기록했습니다."
+        "SKT가 과학기술정보통신부와 산업통상자원부 출신 인사를 영입했습니다.",
+        "이는 AI 규제 및 데이터센터 관련 사업 확장에 대비하기 위한 것으로 보입니다."
       ],
-      "whyImportant": "이번 계약은 데이터 센터 증가로 인한 전력 수요 증가에 대응하기 위한 테슬라의 에너지 사업 투자를 보여줍니다.",
-      "importanceRationale": "근거: 테슬라는 LG에너지솔루션으로부터 43억 달러 규모의 배터리 셀을 구매하고, 에너지 부문 매출이 27% 증가한 128억 달러를 기록했습니다.",
+      "whyImportant": "SKT의 정부 부처 출신 인사 영입은 향후 AI 규제 및 데이터센터 관련 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: SKT가 AI 규제 및 데이터센터 사업 확장을 위해 정부 부처 출신 인사를 영입한 것은 정책 변화에 선제적으로 대응하려는 움직임으로 해석될 수 있습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "While Tesla still makes most of its revenue from EVs, the company is investing in its more rapidly growing energy business, as data centers drive up electricity demand."
+          "label": "capex",
+          "evidence": "- 주태영[선물] 국내/해외 파생 경력 20년![선물옵션+주식 동시 진행] - 정재훈 기업 탐방을 통한 종목 발굴/시장의 변화에 따른 투자 전략 - 예병군 눈으로 보이지 않는 가치에 투자하라!"
         }
       ],
-      "dedupeKey": "43억-lg에너지솔루션-계약-구매-규모-달러-배터리-테슬라",
-      "clusterKey": "실적/테슬라",
+      "dedupeKey": "skt-과기부-과학기술정보통신부-규제-데이터센터-산업부-영입-출신",
+      "clusterKey": "정책/skt",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/17/tesla-to-buy-4-point-3-billion-lg-energy-battery-cells-made-in-michigan.html",
-      "publishedAt": "2026-03-17T18:51:33+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://tv.edaily.co.kr/TvLive/",
+      "publishedAt": "2026-03-19T01:01:21+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-19_2",
-      "date": "2026-03-19",
+      "id": "2026-03-20_2",
+      "date": "2026-03-20",
       "category": "기술",
-      "title": "엔비디아, 칩 사업에 버금가는 수십억 달러 규모의 네트워킹 사업 구축",
+      "title": "애플워치, 미국 재수입 금지 위기 모면",
       "summary": [
-        "엔비디아의 데이터 센터 네트워킹 사업이 빠르게 성장하여 회사의 두 번째로 큰 수익원이 되었습니다.",
-        "최근 분기에 110억 달러의 수익을 기록하며 전년 대비 267% 증가했고, 연간 310억 달러 이상의 수익을 올렸습니다.",
-        "이는 2020년 70억 달러에 인수한 멜라녹스(M ox)를 기반으로 합니다."
+        "미국 국제무역위원회(ITC)는 현재 판매 중인 애플워치가 마시모의 혈중산소 측정 특허를 침해하지 않았다는 예비 결정을 내렸습니다.",
+        "미국 연방순회항소법원은 과거 버전 애플워치에 대한 수입 금지 결정을 유지했습니다."
       ],
-      "whyImportant": "엔비디아의 네트워킹 사업 성장은 AI 데이터 센터 구축에 필요한 기술을 제공함으로써 AI 인프라 시장에서 중요한 역할을 할 수 있음을 시사합니다.",
-      "importanceRationale": "근거: 엔비디아의 네트워킹 사업은 최근 분기에 110억 달러의 수익을 기록하며 267% 성장했고, 연간 310억 달러 이상의 수익을 올렸다는 점에서 중요합니다.",
+      "whyImportant": "이번 결정은 애플워치의 미국 시장 접근성에 영향을 미치며, 향후 특허 분쟁의 방향을 결정할 수 있습니다.",
+      "importanceRationale": "근거: ITC의 예비 결정으로 애플워치의 신규 수입 금지 조치가 현재 단계에서 받아들여지지 않게 되었고, 이는 애플의 미국 시장 판매에 직접적인 영향을 미칩니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "미국 국제무역위원회(ITC) 행정판사는 현재 판매 중인 애플워치가 의료기술 업체 마시모의 혈중산소 측정 특허를 침해하지 않는다는 예비 결정을 내렸다고 로이터 통신이 19일(현지시간) 보도했다."
+        }
+      ],
+      "dedupeKey": "국제무역위원회-금지-모면-미국-애플워치-연방순회항소법원-위기-재수입",
+      "clusterKey": "애플워치/재수입/금지",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326955",
+      "publishedAt": "2026-03-19T21:37:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_3",
+      "date": "2026-03-20",
+      "category": "정책",
+      "title": "소상공인 대출 공급 2조 원으로 확대 추진",
+      "summary": [
+        "금융위원회가 중동발 지정학적 리스크와 경기 둔화에 대응하기 위해 소상공인 금융 지원 확대를 검토 중입니다.",
+        "기업은행을 통해 공급되는 소상공인 희망드림 대출 한도를 1조 원에서 2조 원으로 확대하는 방안이 논의되고 있습니다.",
+        "정책서민금융 이용자 대상 이자 환급 방안과 신용보증기금 특례보증 공급 확대도 함께 추진됩니다."
+      ],
+      "whyImportant": "이번 소상공인 금융 지원 확대는 중동 리스크와 경기 둔화에 대한 정부의 정책적 대응이라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 소상공인 희망드림 대출 한도를 1조 원에서 2조 원으로 확대하는 방안이 검토되는 등 정책 지원 규모가 명시되어 있습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "Last quarter, it reported $11 billion in revenue, a year-over-year increase of 267%, and brought in more than $31 billion for the full year, according to Nvidia’s most recent earnings."
+          "evidence": "지원 대상도 매출 감소나 고용 축소 등 기존의 경영 애로 소상공인에서 유가 및 물류비 상승으로 피해를 본 업체까지 넓히는 방향이다."
         }
       ],
-      "dedupeKey": "구축-규모-네트워킹-달러-버금-사업-수십억-엔비디아",
-      "clusterKey": "인수합병/엔비디아",
+      "dedupeKey": "2조-공급-금융위원회-기업은행-대출-소상공인-원으-확대",
+      "clusterKey": "금융/소상공인",
       "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/18/nvidia-networking-division-building-a-multibillion-dollar-behemoth-to-rival-its-chips-business/",
-      "publishedAt": "2026-03-18T20:01:19+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603192167i",
+      "publishedAt": "2026-03-19T04:11:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-19_3",
-      "date": "2026-03-19",
+      "id": "2026-03-20_4",
+      "date": "2026-03-20",
       "category": "금융",
-      "title": "미국 연준, 기준금리 동결 및 올해 물가 전망 상향",
+      "title": "ECB, 금리 동결 및 올해 물가 전망 2.6%로 상향",
       "summary": [
-        "미국 연방준비제도(Fed)는 기준금리를 연 3.50~3.75%로 동결했습니다.",
-        "올해 개인소비지출(PCE) 물가상승률 전망치는 2.7%로 상향 조정되었습니다.",
-        "올해 실질 국내총생산(GDP) 증가율 전망치는 2.4%로 소폭 상향되었습니다."
+        "유럽중앙은행(ECB)은 19일 예금금리를 포함한 3대 정책 금리를 동결했습니다.",
+        "올해 유로존 소비자물가 상승률 전망치를 기존 1.9％에서 2.6％로 대폭 상향 조정했습니다.",
+        "중동 전쟁으로 인해 전망이 불확실해졌으며, 인플레이션에 상방 위험이 있다고 밝혔습니다."
       ],
-      "whyImportant": "미국 연준의 금리 동결과 물가 전망 상향은 향후 통화정책의 불확실성을 높이고, 고금리 장기화 가능성을 시사합니다.",
-      "importanceRationale": "근거: Fed 위원들의 중간값 기준 올해 PCE 물가상승률 전망이 2.7%로 상향되었고, 올해 말 정책금리 중간값은 3.4%로 유지되어 고금리 장기화 가능성이 제기됩니다.",
+      "whyImportant": "ECB의 금리 정책 및 물가 전망 변경은 유로존 경제는 물론, 세계 경제에 간접적인 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: ECB는 올해 유로존 소비자물가 상승률 전망치를 2.6%로 상향 조정했으며, 최악의 시나리오에서 물가 상승률은 4.4％로 추산됩니다.",
       "impactSignals": [
         {
           "label": "sanctions",
-          "evidence": "Fed, 기준금리 동결 속 ‘물가 상향’…올해 인플레 2.7% 전망 [Fed워치] - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 기준금리 연 3.50~3.75%로 유지 올해 말 기준금리 중간값 3.4%로 유지 PCE 상승률 전망 2.7%로 상향 조정 성장률 전망치도 2.3%에서 2.4%로 올해 말 기준금리 중간값 3.4%로 유지 PCE 상승률 전망 2.7%로 상향 조정 성장률 전망치도 2.3%에서 2.4%로 미국 중앙은행(Fed)이 기준금리를 동결한 가운데, 올해 인플레이션 전망치를 상향 조정하며 긴축 기조 장기화를 시사했다."
+          "evidence": "\"단기적으로 인플레 영향…이후는 전쟁 강도·기간에 달려\" \"에너지 가격 최악 시나리오서 올해 물가상승률 4.4％\" (베를린=연합뉴스) 김계연 특파원 = 유럽중앙은행(ECB)이 19일(현지시간) 예금금리를 비롯한 3대 정책금리를 모두 동결했다."
         }
       ],
-      "dedupeKey": "기준금리-동결-물가-미국-상향-연방준비제-연준-올해",
-      "clusterKey": "연준/기준금리/동결",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603190961i",
-      "publishedAt": "2026-03-18T18:13:44+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_4",
-      "date": "2026-03-19",
-      "category": "기술",
-      "title": "달바글로벌, 유럽 아마존 뷰티 카테고리 상위권 진입",
-      "summary": [
-        "달바글로벌은 아마존 '스프링 딜' 기간 동안 유럽 주요 국가 뷰티 카테고리에서 다수 제품이 상위권에 올랐다고 밝혔습니다.",
-        "2025년 연간 매출은 5198억원, 영업이익은 1011억원으로 전년 대비 각각 68%, 69% 증가했습니다."
-      ],
-      "whyImportant": "달바글로벌의 유럽 시장에서의 성과는 향후 해외 시장 확장 전략 및 실적에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 4분기 해외매출은 전년 동기 대비 125% 증가했으며, 연간 해외매출도 3261억원으로 전년보다 131% 늘어나는 등 해외 사업이 실적 성장을 견인했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "올해 목표와 관련해서는 “북미지역 오프라인 점포 수를 약 3000개까지 확대하고 해당 권역의 오프라인 매출 비중을 25% 수준까지 끌어올릴 계획”이라며 “전사 매출 7000억원, 영업이익률 21% 달성을 위해 해외 유통망 확대와 브랜드 고도화에 집중하겠다”고 밝혔다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "달바글로벌 관계자는 “스페인에서의 판매 흐름이 독일과 이탈리아, 이후 캐나다와 호주·미국 등으로 확산되는 패턴”이라며 “연내 유럽 주요 신규 오프라인채널을 확대해 매출 비중을 늘리고 수익성도 점진적으로 개선할 것”이라고 말했다."
-        },
-        {
-          "label": "policy",
-          "evidence": "20일 금융감독원 전자공시시스템에 따르면 달바글로벌의 2025년 연간 매출은 5198억원, 영업이익은 1011억원으로 집계됐다."
-        }
-      ],
-      "dedupeKey": "1011억원-5198억원-달바글로벌-뷰티-상위권-아마존-유럽-카테고리",
-      "clusterKey": "실적/달바글로벌",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=657006",
-      "publishedAt": "2026-03-18T08:01:38+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_5",
-      "date": "2026-03-19",
-      "category": "기술",
-      "title": "엔비디아 CEO, OpenClaw를 '차세대 ChatGPT'로 극찬 후 중국 AI 주식 급등",
-      "summary": [
-        "엔비디아 CEO 젠슨 황의 긍정적인 발언 이후 중국 인공지능 주식이 급등했습니다.",
-        "황 CEO는 O Claw가 AI 에이전트의 혁신적인 단계라고 평가했습니다.",
-        "홍콩에서 M iMax와 K owledge Atlas T ology는 각각 22%와 14% 급등했습니다."
-      ],
-      "whyImportant": "중국 AI 시장의 성장과 기술 경쟁 심화를 시사합니다.",
-      "importanceRationale": "근거: 엔비디아 CEO의 발언 후 중국 AI 기업들의 주가가 급등했으며, Moody's는 중국의 빠른 인공지능 도입을 세계 선도 AI 시장으로서의 입지를 강화한다고 평가했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "SenseTime, which has pivoted from facial recognition surveillance to AI software platforms and recently integrated one of its AI assistants with OpenClaw, saw shares gain 2.43%."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "Other tech stocks in Asia also rose after Huang said he expects purchase orders between Blackwell and Vera Rubin to reach $1 trillion through 2027."
-        }
-      ],
-      "dedupeKey": "ceo-chatgpt-openclaw-극찬-엔비디아-주식-중국-차세대",
-      "clusterKey": "엔비디아/ceo/openclaw",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/18/china-ai-zhipu-minimax-after-nvidia-jensen-huang-openclaw-comments.html",
-      "publishedAt": "2026-03-18T07:27:10+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_6",
-      "date": "2026-03-19",
-      "category": "기술",
-      "title": "앤디 재시 아마존 CEO, 10년 뒤 AWS 매출 6천억 달러 전망",
-      "summary": [
-        "앤디 재시 아마존 CEO는 10년 뒤 AWS 매출이 6000억 달러에 이를 수 있다고 전망했습니다.",
-        "이는 기존 전망치 3000억 달러에서 2배 상향된 수치이며, AI 수요 증가를 반영한 것입니다.",
-        "아마존은 AI 인프라 투자 확대로 인해 대규모 채권 발행을 결정했습니다."
-      ],
-      "whyImportant": "아마존의 AWS 매출 전망 상향은 AI 인프라 시장의 성장 가능성을 시사하며, 빅테크 기업들의 투자 방향을 가늠하는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 앤디 재시 CEO는 10년 뒤 AWS 매출을 6000억 달러로 전망하며, 이는 기존 전망치인 3000억 달러에서 2배 상향된 수치입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "앤디 재시(Andy Jassy) 아마존 최고경영자(CEO)는 최근 사내 전체 회의에서 AI가 AWS(Amazon Web Services)의 매출을 크게 끌어올릴 것으로 언급하면서 10년 뒤인 2036년 AWS 매출이 6000억달러(약 890조원)에 이를 수 있다고 말했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "아마존의 올해 2000억 달러 설비 투자 비용은 AI, 자체 칩 '트레이니엄(Trainium)'과 인퍼런시아(·Inferentia), 로보틱스, 저궤도 위성(LEO) '카이퍼(Kuiper)' 전반에 적용된다."
-        }
-      ],
-      "dedupeKey": "6천억-aws-ceo-달러-매출-아마존-앤디-재시",
-      "clusterKey": "실적/앤디/투자",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53740",
-      "publishedAt": "2026-03-18T07:23:59+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_7",
-      "date": "2026-03-19",
-      "category": "기술",
-      "title": "마이크론, HBM4 1분기 출하 공식화…엔비디아 베라 루빈용",
-      "summary": [
-        "마이크론이 엔비디아 '베라 루빈'용 HBM4 12단 36GB 모델을 올해 1분기부터 출하한다고 밝혔습니다.",
-        "초당 11기가비트 이상의 핀당 입출력 속도를 달성했으며, 이전 세대인 HBM3E 대비 대역폭은 2.3배 향상되었습니다.",
-        "또한, 엔비디아 베라 루빈 NVL72 시스템용 SOCAMM2의 고객사도 엔비디아임을 밝혔습니다."
-      ],
-      "whyImportant": "마이크론의 HBM4 출하는 차세대 AI 연산 플랫폼의 성능 향상에 기여하고, 고대역폭 메모리 시장 경쟁 심화를 예고합니다.",
-      "importanceRationale": "근거: 마이크론은 엔비디아 베라 루빈용 HBM4 12단 36GB 모델을 1분기부터 출하하며, 이는 이전 세대 대비 대역폭이 2.3배 향상된 성능을 제공합니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "마이크론이 올해 1분기부터 엔비디아용 6세대 고대역폭메모리(HBM4)를 출하한다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "36gb-hbm4-공식화-루빈용-마이크론-베라-엔비디아-출하",
-      "clusterKey": "반도체/마이크론",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=53619",
-      "publishedAt": "2026-03-17T02:52:53+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_8",
-      "date": "2026-03-19",
-      "category": "기술",
-      "title": "엔비디아, 중국으로부터 주문 받아 제조 재개",
-      "summary": [
-        "엔비디아의 젠슨 황 CEO는 중국 고객에게 H200 프로세서를 제공하기 위해 제조를 재개한다고 밝혔습니다.",
-        "중국은 한때 엔비디아 데이터 센터 수익의 1/5을 차지했지만, 수출 제한으로 인해 어려움을 겪었습니다.",
-        "미국 정부는 소량의 H200 제품 판매를 승인했지만 아직 수익은 발생하지 않았다고 합니다."
-      ],
-      "whyImportant": "엔비디아의 중국 시장 재진입은 반도체 공급망 및 시장 수요에 중요한 변화를 의미할 수 있습니다.",
-      "importanceRationale": "근거: 엔비디아가 중국 데이터 센터 수익의 1/5을 차지했던 시장에 H200 프로세서 판매를 재개하며, 이는 엔비디아의 실적 및 시장 전략에 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "“We have received purchase orders, and we’re in the process of restarting our manufacturing,” Huang told reporters at the company’s GTC conference in San Jose, California."
-        }
-      ],
-      "dedupeKey": "5을-h200-받아-센터-엔비디아-제조-주문-중국",
-      "clusterKey": "미중/엔비디아/주문/받아",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/17/nvidia-ceo-jensen-huang-says-chipmaker-has-received-orders-from-china.html",
-      "publishedAt": "2026-03-17T21:31:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-19_9",
-      "date": "2026-03-19",
-      "category": "금융",
-      "title": "CJ올리브영, 작년 매출 5조 8천335억원 기록",
-      "summary": [
-        "CJ올리브영은 작년 매출이 5조 8천335억원으로 전년 대비 21.8% 증가했습니다.",
-        "영업이익은 7천447억원으로 22.5% 늘었으며, 외국인 관광객 수요 급증이 주요 요인으로 분석됩니다."
-      ],
-      "whyImportant": "CJ올리브영의 실적 증가는 K뷰티 산업의 성장과 외국인 관광객 유치에 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: CJ올리브영의 작년 매출은 5조 8천335억원으로 21.8% 증가했으며, 영업이익은 7천447억원으로 22.5% 증가했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "CJ올리브영이 지난해 거둔 매출이 5조8천억원을 웃돌아 22%의 외형성장을 이뤘다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "CJ올리브영은 실적 성장의 주요 요인으로 외국인 관광객 수요 급증을 꼽았다."
-        }
-      ],
-      "dedupeKey": "5조-7천447억원-8천335억원-cj올리브영-기록-매출-영업이익-작년",
-      "clusterKey": "실적/cj올리브영",
+      "dedupeKey": "3대-ecb-금리-동결-물가-상향-올해-유럽중앙은행",
+      "clusterKey": "정책/ecb",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326170",
-      "publishedAt": "2026-03-18T10:46:19+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326861",
+      "publishedAt": "2026-03-19T15:27:30+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -303,29 +128,220 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-19_10",
-      "date": "2026-03-19",
-      "category": "금융",
-      "title": "S-Oil, 상반기 영업이익 2.5조원 전망",
+      "id": "2026-03-20_5",
+      "date": "2026-03-20",
+      "category": "기술",
+      "title": "올해 파운드리 매출 300조 원대 전망",
       "summary": [
-        "유안타증권은 S-Oil의 목표주가를 13만1000원으로 상향하고 투자의견 '매수'를 유지했습니다.",
-        "올해 상반기 영업이익은 2조5000억원에 달할 것으로 예상됩니다.",
-        "샤힌 프로젝트 완공과 호르무즈 해협 통제 영향으로 정유 부문 실적이 개선될 전망입니다."
+        "트렌드포스는 AI 칩 개발 확대로 올해 파운드리 매출이 300조 원을 넘을 수 있다고 분석했습니다.",
+        "TSMC는 32% 성장률을 기록할 것으로 예상되며, 삼성 파운드리도 4·5나노급 공정 주문이 증가했습니다.",
+        "TSMC는 이미 4·5나노 이하 공정 가격을 인상했으며, 삼성 또한 가격 인상 방침을 알렸습니다."
       ],
-      "whyImportant": "S-Oil의 실적 개선은 국내 정유 및 석유화학 산업 전반에 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 유안타증권은 S-Oil의 올해 매출과 영업이익이 각각 20.73%, 627.67% 증가할 것으로 추정하며, 상반기 영업이익은 2조5000억원에 달할 것으로 전망했습니다.",
+      "whyImportant": "파운드리 산업의 성장과 가격 인상 추세는 반도체 공급망 및 관련 산업에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 트렌드포스는 올해 글로벌 파운드리 매출이 전년 대비 24.8% 증가한 약 328조 원에 이를 것으로 예상했으며, TSMC는 이미 가격을 인상했고 삼성도 인상 방침을 알렸습니다.",
       "impactSignals": [
         {
+          "label": "market-demand",
+          "evidence": "트렌드포스는 \"올해 TSMC는 4·5나노 이하 전 공정의 파운드리 가격을 인상했고, 주문 가시성이 내년까지 이어지고 있어 추가 가격 인상 가능성도 있다\"며 \"삼성 또한 지난해 4분기 고객사들에 4·5나노 파운드리 서비스 가격 인상 방침을 알렸다\"고 밝혔다."
+        },
+        {
           "label": "earnings",
-          "evidence": "유안타증권은 19일 S-Oil에 대해 \"올해 상반기에만 2조5000억원에 달하는 영업이익을 거둘 수 있을 것\"이라며 목표주가를 기존 11만원에서 13만1000원으로 상향하고 투자의견 '매수'를 유지했다."
+          "evidence": "이에 따라 글로벌 파운드리 매출은 전년 대비 24.8% 증가한 약 2천188억달러(약 328조원)에 이를 것으로 예상된다."
         }
       ],
-      "dedupeKey": "13만1000원-2조5000억원-5조원-oil-상반기-영업이익-유안타증권-투자의견",
-      "clusterKey": "실적/oil",
+      "dedupeKey": "300조-5나노-5나노급-매출-올해-원대-트렌드포스-파운드리",
+      "clusterKey": "실적/반도체/올해",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026031911196",
-      "publishedAt": "2026-03-18T22:44:02+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326713",
+      "publishedAt": "2026-03-19T07:43:17+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_6",
+      "date": "2026-03-20",
+      "category": "금융",
+      "title": "ECB, 금리 동결 및 인플레이션 전망 대폭 상향",
+      "summary": [
+        "유럽중앙은행(ECB)은 예금금리를 포함한 3대 정책 금리를 동결했습니다.",
+        "유로존의 올해 물가 상승률 전망치는 1.9%에서 2.6%로 상향 조정되었고, 경제 성장률 전망치는 1.0%에서 0.9%로 하향 조정되었습니다."
+      ],
+      "whyImportant": "ECB의 금리 정책과 경제 전망 변경은 유로존 경제 상황에 대한 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: ECB가 유로존의 올해 물가 상승률 전망치를 2.6%로 상향 조정하고 경제 성장률 전망치를 0.9%로 낮춘 것은 통화 정책 결정에 영향을 미칠 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "올해 물가상승률 관측 1.9％→2.6％…성장 전망은 낮춰 (베를린=연합뉴스) 김계연 특파원 = 유럽중앙은행(ECB)이 19일(현지시간) 예금금리를 비롯한 3대 정책금리를 모두 동결했다."
+        }
+      ],
+      "dedupeKey": "3대-ecb-금리-동결-상향-예금금리-유럽중앙은행-인플레이션",
+      "clusterKey": "정책/ecb",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326843",
+      "publishedAt": "2026-03-19T13:39:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_7",
+      "date": "2026-03-20",
+      "category": "금융",
+      "title": "씨티, 한국 성장률 전망 0.1%p 하향 조정…7월 금리 인상 예상",
+      "summary": [
+        "씨티는 유가 상승 및 인플레이션 우려로 한국의 올해 성장률 전망치를 2.2%로 0.1%p 하향 조정했습니다.",
+        "한국은행이 7월과 10월에 기준금리를 각각 0.25%p씩 인상할 것으로 예상했습니다."
+      ],
+      "whyImportant": "금리 인상 및 성장률 전망 조정은 향후 경제 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 씨티는 올해 소비자물가 상승률을 2.6%로 전망하며, 한국은행이 7월과 10월에 기준금리를 인상할 것으로 예상했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "\"4∼9월 물가상승률 3%대…한은 기준금리 7월·10월 올릴 듯\" (서울=연합뉴스) 임지우 기자 = 중동 전쟁 여파로 유가가 치솟고 인플레이션 우려가 커지면서 한국은행이 오는 7월부터 기준금리를 인상할 것이라는 전망이 나왔다."
+        }
+      ],
+      "dedupeKey": "금리-성장률-씨티-인상-조정-하향-한국-한국은행",
+      "clusterKey": "씨티/성장률/하향",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326778",
+      "publishedAt": "2026-03-19T09:49:41+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_8",
+      "date": "2026-03-20",
+      "category": "정책",
+      "title": "국회 의정 활동 일정",
+      "summary": [
+        "국회에서는 국회경비대 특별승진 임용식과 국회 개방 버스킹 콘서트가 예정되어 있습니다.",
+        "본회의와 상임위원회, 그리고 여러 의원실에서 다양한 주제의 세미나와 간담회가 개최될 예정입니다."
+      ],
+      "whyImportant": "국회의 다양한 의정 활동은 정책 결정 과정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 여러 의원실에서 한국거래소의 주식시장 거래시간 연장, 유가 급등 대책, 인공지능 윤리, 산단열 탈탄소화 등 다양한 주제로 간담회와 토론회를 개최합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "▲ 국회의장 2026년 국회경비대 특별승진 임용식(11:00 국회 경비대 하모니홀) 국회 개방 버스킹 콘서트 (12:10 국회 강변서재) ▲ 본회의 및 상임위원회 본회의(00:00 본회의장) 윤석열정권정치검찰조작기소의혹사건 진상규명국정조사특별위원회(11:00 본관 319호) ▲ 의원실 세미나 김승원 의원실, 한국거래소의 주식시장 거래시간 연장에 대한 이해관계자 간담회(09:00 의원회관 제3간담회의실) 정진욱 의원실 등, (유가급등에 따른 대책 마련을 위한) 정유업체 4사 공개 간담회(11:00 의원회관 제7간담회의실) 김현 의원실 등, 인공지능 기본법 시행 이후의 인공지능 윤리 논의(13:30 의원회관 제2간담회의실) 박해철 의원실 등, 산단열 탈탄소화 실현 방안 토론회(14:00 의원회관 신관 제2세미나실) 김문수 의원실, 순천 RE100 국가산업단지 유치 국회 세미나(14:00 의원회관 제9간담회의실) 서미화 의원실 등, 장애인 참정권 보장을 위한 토론회: 제 9회 전국동시 지방선거(15:00 의원회관 신관 제3세미나실) 조계원 의원실 등, 전남 화학산업 소부장 특화단지 유치 포럼(15:00 의원회관 제2소회의실) ▲ 소통관 기자회견 최혁진 의원, [장애인 등에 대한 특수교육법 관련 기자회견](10:20) 전용기 의원, [더불어민주당 국민소통위원회 민주파출소 정례브리핑](13:20) (서울=연합뉴스)"
+        }
+      ],
+      "dedupeKey": "국회-국회경비대-상임위원회-의정-일정-임용식-특별승진-활동",
+      "clusterKey": "국회/의정/활동",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326965",
+      "publishedAt": "2026-03-19T22:00:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_9",
+      "date": "2026-03-20",
+      "category": "정책",
+      "title": "공소청법 국회 본회의 상정…여야, 필리버스터 대결",
+      "summary": [
+        "공소청·중대범죄수사청 설치법이 국회에서 더불어민주당 주도로 처리될 예정입니다.",
+        "국민의힘은 이에 맞서 필리버스터에 돌입했으며, 민주당은 3박 4일간 법안을 처리할 것으로 보입니다.",
+        "공소청법은 검찰의 특별사법경찰관리에 대한 지휘·감독권 폐지 등을 골자로 합니다."
+      ],
+      "whyImportant": "공소청법은 검찰의 권한을 제한하고 수사-기소 분리 원칙을 확립하는 데 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 공소청법은 검찰의 특별사법경찰관리에 대한 지휘·감독권을 폐지하고 검사의 직무 권한을 법률로 제한하는 내용을 골자로 하며, 10월 2일부터 시행될 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "국회의 이날 본회의에는 민주당과 정부, 청와대가 최종 조율한 공소청법안이 상정됐다."
+        }
+      ],
+      "dedupeKey": "공소청법-국회-대결-본회-상정-여야-중대범죄수사청-필리버스터",
+      "clusterKey": "법집행/공소청법/정책",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326727",
+      "publishedAt": "2026-03-19T08:06:57+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_10",
+      "date": "2026-03-20",
+      "category": "정책",
+      "title": "당정, 중소기업·소상공인 유가 부담 완화 위한 추경 지원 논의",
+      "summary": [
+        "당정과 정부는 유가로 인한 중소기업과 소상공인의 부담 완화를 위한 추가경정예산안 편성을 논의했습니다.",
+        "IBK기업은행에 예산을 지원하여 소상공인 금리 부담을 낮추는 방안도 거론되었습니다.",
+        "주가 조작 처벌 강화 및 통신사기 무과실 배상 등 입법도 추진될 예정입니다."
+      ],
+      "whyImportant": "이번 추경 논의는 중소기업과 소상공인의 경제적 부담을 완화하고 금융 시장의 안정성을 확보하는 데 중요한 결정점이 될 수 있습니다.",
+      "importanceRationale": "근거: 중동 사태로 인한 유가 상승에 대응하여 중소기업과 소상공인 지원을 위한 추경 편성을 논의했으며, IBK기업은행에 대한 예산 지원 방안이 거론되었습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "정부가 중동 사태를 계기로 추가경정예산안 편성에 공식 착수한 가운데 유가로 인한 중소기업과 소상공인의 부담을 완화하기 위한 지원이 필요하다고 당정이 의견을 모았다."
+        }
+      ],
+      "dedupeKey": "당정-부담-소상공인-완화-위한-유가-중소기업-지원",
+      "clusterKey": "당정/중소기업/소상공인",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326791",
+      "publishedAt": "2026-03-19T10:09:59+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-20_11",
+      "date": "2026-03-20",
+      "category": "정책",
+      "title": "금융위원장, 중동 사태 관련 시장 변동성 확대 및 가짜뉴스 엄정 대응",
+      "summary": [
+        "이억원 금융위원장은 중동 사태로 금융시장 변동성이 최대화되고 있다고 밝혔습니다.",
+        "피해 기업, 소상공인, 서민 금융 지원 확대를 추경에 반영하도록 노력하겠다고 언급했습니다.",
+        "가짜뉴스 및 시세조종 등 시장 불안 행위에 엄정 대응하고 시장 안정 프로그램을 적극 운영할 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "금융위원장의 발언은 중동 사태로 인한 시장 불안정에 대한 정부의 대응 의지를 보여주는 것으로, 향후 정책 결정에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 금융위원장이 '중동 상황에 따른 피해 기업·소상공인·서민 등의 부담을 경감하고 금융 지원을 확대하는 프로그램을 마련하여 추경에 반영할 수 있도록 노력하겠다'고 밝혔기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이 위원장은 신용정보법과 서민금융법 개정안, 통신사기피해환급법, 전자금융거래법 개정안, 자본시장법 개정안 등 정무위 소관 법안들을 거론한 뒤 \"시급한 민생 지원과 신용도 규모 확산, 보이스피싱 및 전자 금융 사고 예방과 근절을 위한 법과 함께 자본시장을 더욱 촘촘히 하고 현재의 성장세를 지속 가능하게 하기 위한 법들\"이라고 강조했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "정무위 소속 민주당 간사인 강준현 의원은 \"최근 중동 정세 불안으로 국제유가와 금융 시장이 요동치고 있다."
+        }
+      ],
+      "dedupeKey": "금융위원장-대응-변동성-사태-시장-엄정-중동-확대",
+      "clusterKey": "금융위원장/사태/변동성",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326358",
+      "publishedAt": "2026-03-18T23:59:29+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

@@ -1,29 +1,29 @@
 {
-  "date": "2026-03-21",
+  "date": "2026-03-22",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-21T08:00:13.683110+09:00",
+  "lastUpdatedAt": "2026-03-22T07:54:53.648676+09:00",
   "items": [
     {
-      "id": "2026-03-21_1",
-      "date": "2026-03-21",
+      "id": "2026-03-22_1",
+      "date": "2026-03-22",
       "category": "국제",
-      "title": "Trivy 스캐너, 공급망 공격으로 손상",
+      "title": "Trivy 스캐너, 공급망 공격으로 인해 손상",
       "summary": [
-        "Aqua S ity의 T ivy 취약점 스캐너가 공급망 공격으로 인해 거의 모든 버전이 손상되었습니다.",
-        "해커는 훔친 자격 증명을 사용하여 악성 종속성을 사용하도록 강제로 푸시했습니다.",
-        "보안 회사들은 멀웨어가 개발 파이프라인을 철저히 탐색하여 GitHub 토큰, 클라우드 자격 증명 등을 공격자 제어 서버로 전송한다고 밝혔습니다."
+        "해커들이 Aqua S ity의 T ivy 취약점 스캐너의 거의 모든 버전을 손상시켰습니다.",
+        "이번 공격은 개발자와 그들을 사용하는 조직에 광범위한 영향을 미칠 수 있습니다.",
+        "보안 회사들은 75개의 손상된 ivy- 태그에서 악성코드가 개발 파이프라인을 철저히 탐색한다고 밝혔습니다."
       ],
-      "whyImportant": "이번 공격은 개발 파이프라인의 보안 취약점을 보여주며, 공급망 보안의 중요성을 강조합니다.",
-      "importanceRationale": "근거: 75개의 손상된 trivy-action 태그에서 멀웨어가 트리거되어 개발 파이프라인을 탐색하고 데이터를 공격자 서버로 전송하는 행위가 확인되었기 때문에 중요도 4로 판단됩니다.",
+      "whyImportant": "소프트웨어 개발 공급망의 보안 취약점은 광범위한 피해를 초래할 수 있어 중요합니다.",
+      "importanceRationale": "근거: 이번 공격으로 인해 75개의 trivy-action 태그가 손상되었고, 개발 파이프라인 내의 GitHub 토큰, 클라우드 자격 증명 등이 유출될 위험이 있습니다.",
       "impactSignals": [
         {
           "label": "security",
           "evidence": "Hackers have compromised virtually all versions of Aqua Security’s widely used Trivy vulnerability scanner in an ongoing supply chain attack that could have wide-ranging consequences for developers and the organizations that use them."
         }
       ],
-      "dedupeKey": "aqua-trivy-공격-공급망-사용하도록-손상-스캐너-파이프라인",
+      "dedupeKey": "75개-aqua-trivy-공격-공급망-손상-스캐너-인해",
       "clusterKey": "trivy/스캐너/공격",
       "matchedTo": null,
       "sourceName": "Ars",
@@ -37,64 +37,63 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-21_2",
-      "date": "2026-03-21",
-      "category": "기술",
-      "title": "OpenAI, 온라인 쇼핑 첫 시도에서 어려움 겪고 다음 단계 준비 중",
+      "id": "2026-03-22_2",
+      "date": "2026-03-22",
+      "category": "금융",
+      "title": "미국 연준, 금리 동결 유지 및 추가 인상 가능성 시사",
       "summary": [
-        "O AI가 ChatGPT 내에서 직접 구매가 가능한 I t Checkout 기능을 앱 형태로 전환하고 있습니다.",
-        "이는 거래 활성화의 어려움과 사용자 경험 통제 필요성 때문으로 분석됩니다.",
-        "경쟁사인 구글은 실시간 상품 데이터 로딩, 장바구니 기능, 멤버십 연동 등 쇼핑 에이전트 플랫폼 업데이트를 발표했습니다."
+        "미국 연방준비제도는 기준금리를 동결하고 올해 추가 금리 인하 전망을 유지했습니다.",
+        "그러나 물가 상승률 전망치를 상향 조정하고 전쟁 장기화 시 금리 인상 가능성을 언급했습니다.",
+        "이에 따라 시장에서는 연준의 금리 인하 기대감이 줄어들고 있습니다."
       ],
-      "whyImportant": "AI 기반 상거래 전략 변화는 향후 온라인 쇼핑 환경과 기술 경쟁에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: OpenAI의 전략 변화와 구글의 쇼핑 에이전트 플랫폼 업데이트는 AI 기반 상거래 분야의 경쟁 심화를 시사하며, 이는 여러 기업의 온라인 쇼핑 전략에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Perplexity called Amazon's lawsuit a \"bald attempt\" to block shoppers from using Comet because AI agents \"don't have eyeballs to see the pervasive advertising Amazon bombards its users with and cannot be upsold to buy more products.\" Amazon continues to invest in its own tools, like its Rufus shopping chatbot and \"Buy for Me\" agent."
-        },
-        {
-          "label": "capex",
-          "evidence": "OpenAI, while racing to keep pace with rivals such as Google and Anthropic, released a flurry of new offerings and experiences last year in an effort to expand its market share and build out new revenue streams."
-        }
-      ],
-      "dedupeKey": "openai-겪고-다음-단계-쇼핑-시도-어려움-온라인",
-      "clusterKey": "openai/온라인/쇼핑",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/20/open-ai-agentic-shopping-etsy-shopify-walmart-amazon.html",
-      "publishedAt": "2026-03-20T17:18:25+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-21_3",
-      "date": "2026-03-21",
-      "category": "에너지",
-      "title": "정부의 대미 투자 본격화, 원전 관련 건설주 주목",
-      "summary": [
-        "한국 정부가 3500억 달러 규모의 대미 투자를 본격화하며 원전이 1호 투자 프로젝트로 거론되고 있습니다.",
-        "미국은 AI 데이터센터 확대로 전력 수요가 폭증하여 원전 확대에 나서고 있습니다.",
-        "정부의 대미 투자 계획 가시화로 국내 건설사의 미국 원전 시장 진출 기대감이 커지고 있습니다."
-      ],
-      "whyImportant": "미국 원전 시장 진출은 국내 건설사에게 새로운 성장 동력이 될 수 있습니다.",
-      "importanceRationale": "근거: 정부가 3500억 달러 규모의 대미 투자를 본격화하고, 원전을 1호 투자 프로젝트로 검토 중이라는 내용이 있습니다.",
+      "whyImportant": "미국 연준의 금리 결정은 국내 금리 정책 및 환율에 영향을 미쳐 경제 전반에 중요한 영향을 미칩니다.",
+      "importanceRationale": "근거: 연준이 물가 상승률 전망치를 2.7%로 높여 잡고, 파월 의장이 금리 인상 가능성을 언급함에 따라 시장의 금리 인하 기대감이 줄어들고, 이는 국내 금리 정책에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "세계 최대 원전 운영국인 미국은 최근 인공지능(AI) 데이터센터 확대 등 폭증하는 전력 수요에 대응하기 위해 원전을 늘리고 있다."
+          "evidence": "미·이스라엘과 이란 간 전쟁으로 인한 에너지 가격 급등에 대해서는 “전반적인 인플레이션을 끌어올리겠지만, 이것이 경제에 미칠 잠재적 영향의 범위와 지속 기간을 파악하기에는 아직 이르다”는 말로 ‘전망의 불확실성’을 강조했다."
+        },
+        {
+          "label": "sanctions",
+          "evidence": "미국 연방준비제도(Fed)가 18일(현지시각) 연방공개시장위원회(FOMC) 회의에서 연 3.50∼3.75%인 현 기준금리를 동결했다."
         }
       ],
-      "dedupeKey": "3500억-건설주-대미-데이터센터-원전-정부-주목-투자",
-      "clusterKey": "한미_투자/에너지/대미",
+      "dedupeKey": "금리-기준금리-동결-미국-연방준비제-연준-인상-줄어들고",
+      "clusterKey": "연준/금리/동결",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026031932731",
-      "publishedAt": "2026-03-19T08:26:15+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1250088.html",
+      "publishedAt": "2026-03-19T05:06:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-22_3",
+      "date": "2026-03-22",
+      "category": "금융",
+      "title": "카타르 LNG 시설 피격, 생산 및 수급 전망",
+      "summary": [
+        "카타르에너지(QE)는 LNG 시설 피격으로 한국과의 장기 공급 계약에 대해 수년간 불가항력을 선언할 수 있다고 밝혔습니다.",
+        "이번 피격으로 LNG 수출 용량의 17%가 손상되었으며, 복구에는 3~5년이 걸릴 것으로 예상됩니다."
+      ],
+      "whyImportant": "LNG 공급 차질은 에너지 시장 전반에 걸쳐 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: LNG 수출 용량의 17% 손실 및 3~5년의 복구 기간 전망은 에너지 수급에 상당한 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "yoon2@yna.co.kr (서울=연합뉴스) 이재윤 기자 = 카타르 국영 에너지 기업 카타르에너지(QE)가 주요 액화천연가스(LNG) 시설 피격으로 한국 등과 맺은 장기 공급계약에 대해 수년간 '불가항력' 선언을 할 수 있다고 19일(현지시간) 밝혔다."
+        }
+      ],
+      "dedupeKey": "lng-생산-수급-시설-카타르-카타르에너지-피격-한국",
+      "clusterKey": "카타르/시설/피격",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327005",
+      "publishedAt": "2026-03-19T23:35:02+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -103,17 +102,114 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-21_4",
-      "date": "2026-03-21",
+      "id": "2026-03-22_4",
+      "date": "2026-03-22",
+      "category": "기술",
+      "title": "구글 검색, AI를 사용하여 헤드라인 변경",
+      "summary": [
+        "구글 검색이 AI를 사용하여 뉴스 헤드라인을 자체 생성된 것으로 대체하기 시작했습니다.",
+        "이는 구글 디스커버 뉴스 피드에서 유사한 변경을 한 후 전통적인 검색 결과에서도 나타나고 있습니다.",
+        "구글은 이 실험이 '소규모'이며 아직 전체 출시가 승인되지 않았다고 밝혔습니다."
+      ],
+      "whyImportant": "구글 검색 결과의 헤드라인 변경은 뉴스 콘텐츠 제공 방식에 중대한 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 구글은 사용자 만족도를 높이기 위해 이 실험을 진행 중이며, 이는 뉴스 출판물뿐 아니라 전반적인 콘텐츠 제목 개선을 목표로 합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "(Disclosure: Vox Media, The Verge’s parent company, has filed a lawsuit against Google, seeking damages from its illegal ad tech monopoly.) The good news, for now, is that these changed headlines seem to be few and far between, and they’re not yet the kind of tripe we’ve seen in Google Discover."
+        }
+      ],
+      "dedupeKey": "검색-구글-대체하기-디스커버-변경-사용-전통적인-헤드라인",
+      "clusterKey": "구글/검색/사용",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech/896490/google-replace-news-headlines-in-search-canary-coal-mine-experiment",
+      "publishedAt": "2026-03-20T14:30:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-22_5",
+      "date": "2026-03-22",
+      "category": "에너지",
+      "title": "LNG 시설 피격에 따른 에너지 기업의 반사이익",
+      "summary": [
+        "미국과 이란 간 전쟁으로 카타르 LNG 시설이 피격되면서 LNG 수급 불안정이 심화될 것이라는 전망이 나왔습니다.",
+        "이에 따라 해상 풍력, 태양광, LPG 등 대체 에너지 관련 기업들의 주가가 강세를 보였습니다.",
+        "카타르에너지 CEO는 피격 복구에 3~5년이 걸릴 것이라고 언급하며, LNG 장기 공급 계약에 불가항력을 선언할 수 있다고 밝혔습니다."
+      ],
+      "whyImportant": "에너지 시설 피격으로 인한 공급망 불안정은 장기적인 에너지 가격 상승과 대체 에너지원 수요 증가를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 카타르 LNG 생산량 감소는 연간 1280만t에 달하며, 복구에 3~5년이 소요될 수 있다는 점은 에너지 시장에 장기적인 영향을 미칠 수 있음을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "LNG 시설 피격 반사이익 \"전쟁 끝나도 고유가 지속\" 해상 풍력 SK오션플랜트 上 태양광 한화솔루션·OCI 상승 글로벌 에너지 시설 보유 포스코인터·LX인터 강세"
+        }
+      ],
+      "dedupeKey": "lng-기업-따른-미국-반사이익-시설-에너지-피격",
+      "clusterKey": "에너지/시설",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026032057721",
+      "publishedAt": "2026-03-20T12:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-22_6",
+      "date": "2026-03-22",
+      "category": "기술",
+      "title": "OpenAI, 완전 자동화된 연구자 개발에 집중",
+      "summary": [
+        "O AI는 AI 연구의 새로운 목표로 완전 자동화된 에이전트 기반 시스템인 'AI 연구자' 개발에 모든 자원을 투입할 예정입니다.",
+        "2028년까지 인간이 감당하기 어려운 복잡한 문제를 해결할 수 있는 AI 연구 시스템을 선보일 계획입니다.",
+        "9월까지 특정 연구 문제를 스스로 해결할 수 있는 '자율 AI 연구 인턴' 시스템을 구축할 예정입니다."
+      ],
+      "whyImportant": "AI 연구 자동화는 과학, 비즈니스, 정책 등 다양한 분야에서 혁신을 가속화할 수 있는 잠재력을 가지고 있습니다.",
+      "importanceRationale": "근거: OpenAI는 2028년까지 완전 자동화된 AI 연구 시스템을 출시할 계획이며, 이는 AI 연구 및 개발에 상당한 자본 투자가 이루어지고 있음을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "OpenAI plans to build “an autonomous AI research intern”—a system that can take on a small number of specific research problems by itself—by September."
+        },
+        {
+          "label": "security",
+          "evidence": "AI tools have already been used to come up with novel cyberattacks."
+        }
+      ],
+      "dedupeKey": "openai-개발-에이전트-연구자-완전-자동화-자원-집중",
+      "clusterKey": "openai/완전/자동화",
+      "matchedTo": null,
+      "sourceName": "MIT",
+      "sourceUrl": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
+      "publishedAt": "2026-03-20T11:57:16+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-22_7",
+      "date": "2026-03-22",
       "category": "에너지",
       "title": "카타르, 이란 공격으로 한국 등에 LNG 공급 불가항력 선언 가능성",
       "summary": [
-        "카타르가 이란 공격으로 에너지 생산 시설이 손상되어 한국을 포함한 여러 나라와의 LNG 장기 공급 계약에 대해 불가항력을 선언할 수 있다고 밝혔습니다.",
+        "카타르가 이란의 공격으로 에너지 생산 시설이 손상되어 한국을 포함한 여러 나라와의 LNG 장기 공급 계약에 대해 불가항력을 선언할 수 있다고 밝혔습니다.",
         "카타르에너지 CEO는 최대 5년간 불가항력을 선언해야 할 수도 있다고 언급했습니다.",
-        "라스라판 산업단지 피격으로 카타르 에너지 전체 수출 능력의 17%를 담당하는 시설이 피해를 입었습니다."
+        "이번 피격으로 카타르에너지 전체 수출 능력의 17%를 담당하는 시설이 피해를 입었으며, 복구에 3~5년이 소요될 것으로 예상됩니다."
       ],
       "whyImportant": "카타르의 LNG 공급 차질은 한국을 포함한 세계 에너지 수급에 장기적인 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르에너지 전체 수출 능력의 17%를 담당하는 시설이 피해를 입었으며, 복구에 3~5년이 소요될 것으로 예상되어 중요도 4로 판단됩니다.",
+      "importanceRationale": "근거: 카타르에너지 수출 능력의 17%를 담당하는 시설이 피해를 입었고, 복구에 3~5년이 소요될 것으로 예상되어 장기적인 에너지 수급에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "security",
@@ -125,7 +221,7 @@
       "matchedTo": null,
       "sourceName": "한겨레",
       "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1250213.html",
-      "publishedAt": "2026-03-19T14:13:46+00:00",
+      "publishedAt": "2026-03-21T11:32:40+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -134,52 +230,25 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-21_5",
-      "date": "2026-03-21",
-      "category": "금융",
-      "title": "페덱스, 10~12월 분기 실적 예상치 상회",
-      "summary": [
-        "페덱스는 2025회계연도 3분기 매출 240억 달러, 영업이익 16억 8000만 달러를 기록했습니다.",
-        "AI를 이용한 물류 효율성 증대와 비용 절감으로 수송 비용을 10억 달러 절감했습니다.",
-        "매출 증가율 가이던스는 6~6.5%로 전망되어 시장 예상치 5.6%보다 높습니다."
-      ],
-      "whyImportant": "페덱스의 실적 호조와 AI 기반 효율성 증대는 물류 산업 전반의 기술 도입 및 투자에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 페덱스는 AI를 활용해 수송 비용을 10억 달러 절감했으며, 매출 증가율 가이던스를 6~6.5%로 제시하여 시장 예상치를 상회했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "페덱스의 2025회계연도 3분기 매출은 240억달러(약 36조원), 영업이익은 16억8000만달러를 기록했다."
-        }
-      ],
-      "dedupeKey": "16억-2025회계연-240억-분기-상회-실적-예상치-페덱스",
-      "clusterKey": "실적/페덱스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603205096i",
-      "publishedAt": "2026-03-20T04:42:10+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-21_6",
-      "date": "2026-03-21",
+      "id": "2026-03-22_8",
+      "date": "2026-03-22",
       "category": "에너지",
       "title": "카타르 LNG 시설 피해, 장기 계약 불이행 우려",
       "summary": [
-        "이란 공격으로 카타르 LNG 시설이 파괴되어, 한국 등과 맺은 장기 수출 계약에 대해 최장 5년 불가항력 선언 가능성이 제기되었습니다.",
-        "카타르 LNG 수출 용량의 17%가 손실되어 연간 생산량이 1,280만 톤 감소할 것으로 예상됩니다.",
-        "장기 계약 물량 부족 시 현물 LNG를 비싸게 수입해야 하므로 국내 가스비 급등이 불가피할 수 있습니다."
+        "이란 공격으로 카타르 LNG 수출 시설이 파괴되어, 한국 등과의 장기 계약에 최장 5년 불가항력 선언 가능성이 제기되었습니다.",
+        "카타르의 LNG 생산량은 연간 1,280만 톤 감소할 것으로 예상되며, 시설 복구에는 3~5년이 소요될 전망입니다.",
+        "장기 계약 물량 부족 시 현물 LNG 수입으로 국내 가스비 급등이 불가피할 수 있습니다."
       ],
-      "whyImportant": "카타르 LNG 시설 피해로 인한 공급 차질은 국내 가스 요금 인상 및 관련 산업 전반의 수급 불안으로 이어질 수 있어 중요합니다.",
-      "importanceRationale": "근거: 카타르의 LNG 수출 용량 17% 손실과 3~5년의 복구 기간 예상은 국내 LNG 수입량의 14%를 차지하는 카타르 물량 확보에 차질을 빚어 가스요금 인상으로 이어질 수 있기 때문입니다.",
+      "whyImportant": "카타르 LNG 시설 피해로 인한 공급 차질은 국내 가스 요금 인상 및 석유화학, 첨단산업 전반의 수급 불안을 야기할 수 있어 중요합니다.",
+      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17%가 소실되었고, 한국 수입 물량의 14%를 차지하는 카타르와의 장기 계약 불이행 시 국내 가스비 급등이 예상됩니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "벌써 미국산 가스 확보전에 불이 붙었고 유럽과 아시아 국가들이 물량 확보에 공격적으로 나설 경우, LNG 조달 경쟁은 더욱 치열해질 거로 보입니다."
+          "evidence": "[마이크 무시오 / FBB 캐피털 파트너스 사장 : 수십억 달러 규모의 생산 및 정제 시설과 수십억 달러 규모의 수년간에 걸친 보수 공사가 석유 공급망에 영향을 미치는 것도 결코 좋은 일이 아닙니다.] 더군다나 이번 공격으로 LNG뿐만 아니라 LPG 등의 부산물 수출도 연쇄적으로 줄 것으로 보여 글로벌 석유화학과 첨단산업 전반에 걸쳐 수급 불안이 우려됩니다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "당장은 재고로 버틸 수 있다지만 길어질 경우 비싼 현물 LNG를 사와야 해서 국내 가스비 급등이 불가피할 거로 보입니다."
         }
       ],
       "dedupeKey": "lng-계약-불이행-시설-장기-카타르-피해-한국",
@@ -196,28 +265,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-21_7",
-      "date": "2026-03-21",
+      "id": "2026-03-22_9",
+      "date": "2026-03-22",
       "category": "에너지",
-      "title": "카타르 LNG 시설 연일 피격…아람코 방향에서도 폭발",
+      "title": "이란의 카타르 LNG 시설 공격으로 신흥국 비상, 미국·러시아는 반사이익 확대",
       "summary": [
-        "이스라엘이 이란 최대 가스전을 공습하자 이란은 카타르 LNG 허브에 미사일 공격을 가했습니다.",
-        "사우디 아람코 시설 방향에서도 폭발이 발생했으며, 아랍에미리트 가스 처리 시설 운영도 중단되었습니다."
+        "이란의 카타르 액화천연가스(LNG) 시설 공격으로 아시아 신흥국 경제에 타격이 예상됩니다.",
+        "카타르에너지 CEO는 수출 용량의 17% 피해와 복구에 3~5년이 걸릴 것으로 전망했습니다.",
+        "미국과 러시아는 각각 안정적인 가격 유지와 중국 수출 확대 기회를 얻을 것으로 보입니다."
       ],
-      "whyImportant": "중동 지역 에너지 시설 공격은 세계 에너지 공급에 차질을 초래할 수 있는 중요한 문제입니다.",
-      "importanceRationale": "근거: 이란이 전 세계 LNG 공급량의 20%를 차지하는 카타르 라스라판 산업단지를 공격하여 에너지 시장에 상당한 영향을 미칠 수 있습니다.",
+      "whyImportant": "에너지 공급망 불안정은 신흥국 경제에 직접적인 영향을 미치며, 장기적인 에너지 전략 재검토를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17% 피해와 3~5년 복구 기간은 산업 전반에 걸쳐 상당한 영향을 미칠 수 있으며, 특히 아시아 신흥국에 공급 부족 문제를 야기할 수 있습니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "호르무즈 해협을 지나는 유조선의 안전한 통항을 확보하기 위해 이란 연안에 지상군을 배치하는 방안과, 앞서 미군의 폭격으로 '군사 시설'이 파괴된 하르그섬을 미군이 점령하는 방안 등이 거론되며 호르무즈 일대를 둘러싼 긴장감도 높아지고 있습니다."
+          "evidence": "이란의 카타르 액화천연가스(LNG) 시설에 대한 연이은 공격 여파가 아시아 신흥국 경제로 확산하고 있다."
         }
       ],
-      "dedupeKey": "lng-방향-시설-아람코-연일-카타르-폭발-피격",
-      "clusterKey": "이스라엘이란/카타르/시설/연일",
+      "dedupeKey": "lng-공격-미국-반사이익-시설-신흥국-이란-카타르",
+      "clusterKey": "미중/카타르/시설/공격",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326794",
-      "publishedAt": "2026-03-19T10:11:07+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1250363.html",
+      "publishedAt": "2026-03-20T08:35:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -226,82 +296,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-21_8",
-      "date": "2026-03-21",
-      "category": "에너지",
-      "title": "트럼프, 카타르 LNG 공격 중단 시 이란 가스전 추가 공격 없을 것",
-      "summary": [
-        "트럼프 대통령은 이란이 카타르를 공격하지 않으면 이란 사우스 파르스 가스전에 대한 이스라엘의 추가 공격은 없을 것이라고 밝혔습니다.",
-        "이는 이스라엘의 이란 가스전 공격 후 이란이 카타르를 보복 공격하자 트럼프 대통령이 직접 진화에 나선 것으로 풀이됩니다.",
-        "트럼프 대통령 발언 후 국제유가는 상승폭을 줄이고 미국 주가지수 선물은 상승했습니다."
-      ],
-      "whyImportant": "에너지 시설 공격 자제 촉구는 중동 지역의 지정학적 긴장 완화에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 트럼프 대통령의 발언 이후 국제유가가 상승폭을 줄이고 미국 주가지수 선물은 상승하여 시장에 즉각적인 영향을 미쳤습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "이란 가스전 공격에 \"미국은 몰랐다…이란, 또 카타르 때리면 가스전 날릴 것\" 트럼프 발언 후 국제유가 일부 상승 폭 반납…미 주가 선물 상승"
-        },
-        {
-          "label": "market-demand",
-          "evidence": "트럼프 대통령의 발언 이후 급등하던 국제유가는 상승 폭을 줄였고, 미국 주가지수 선물은 상승했다고 블룸버그통신이 보도했다."
-        }
-      ],
-      "dedupeKey": "lng-가스전-공격-미국-없을-이란-카타르-트럼프",
-      "clusterKey": "이스라엘이란/트럼프/카타르/공격",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326661",
-      "publishedAt": "2026-03-19T06:18:31+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-21_9",
-      "date": "2026-03-21",
-      "category": "에너지",
-      "title": "이란, 사우디 정유소 공격 및 카타르 LNG 시설 화재 발생",
-      "summary": [
-        "이란이 사우디아라비아 홍해변 얀부의 아람코-엑손모빌 합작 정유 시설을 드론으로 공격했습니다.",
-        "카타르 라스라판 산업단지 내 LNG 시설에서 발생한 대규모 화재는 진압되었으나, 여러 시설이 피격되어 심각한 피해가 발생했습니다."
-      ],
-      "whyImportant": "에너지 인프라 공격은 에너지 공급망에 대한 잠재적 위협을 증가시키고 지정학적 긴장을 고조시킬 수 있습니다.",
-      "importanceRationale": "근거: 이란의 공격이 사우디 영토 내 에너지 시설까지 미치고, 카타르 LNG 시설에 심각한 피해가 발생했다는 점에서 중요도 4로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "사우디 서부 홍해 연안에 있는 얀부의 아람코-엑손모빌 합작정유시설(SAMREF·삼레프)이 드론의 공습을 받았다."
-        }
-      ],
-      "dedupeKey": "lng-공격-사우디-시설-이란-정유소-카타르-화재",
-      "clusterKey": "사우디/정유소/공격",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1326777",
-      "publishedAt": "2026-03-19T09:45:49+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-21_10",
-      "date": "2026-03-21",
+      "id": "2026-03-22_10",
+      "date": "2026-03-22",
       "category": "에너지",
       "title": "정부, 카타르 LNG 수입 중단 대비 대응 계획 마련",
       "summary": [
-        "정부는 카타르 LNG 시설 피격으로 인한 공급 차질에 대비해 수입이 완전히 끊기는 상황을 가정한 대응 계획을 마련했습니다.",
+        "정부는 카타르 LNG 시설 피격으로 인한 국내 LNG 공급 차질 우려에 대비해, 수입이 완전히 끊기는 상황을 가정한 대응 계획을 마련했습니다.",
         "정부는 LNG 수급 관리에 문제가 없다는 입장이지만, 국제 LNG 가격 인상에 따른 국내 경제 영향을 최소화하기 위한 대책을 마련 중입니다.",
         "카타르 LNG 수입 비중은 현재 15%에서 내년 8%로 감소할 예정이며, 정부는 장기 계약 종료에 따른 대체 공급선을 확보할 계획입니다."
       ],
-      "whyImportant": "카타르 LNG 시설 피격은 국제 LNG 가격 상승을 유발하여 국내 에너지 시장에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17% 손상으로 최대 5년간 불가항력 선언 가능성이 제기되었고, 한국의 카타르 LNG 수입 비중은 내년에 8% 수준으로 감소할 예정입니다.",
+      "whyImportant": "카타르 LNG 시설의 손상은 국제 LNG 시장의 변동성을 키워 국내 에너지 가격에 영향을 줄 수 있기 때문입니다.",
+      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17% 손상으로 최대 5년간 불가항력 선언 가능성이 제기되었으며, 이는 한국 LNG 수입의 15%를 차지하는 카타르산 LNG 수급에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -314,6 +319,45 @@
       "sourceName": "연합",
       "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327191",
       "publishedAt": "2026-03-20T02:55:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-22_11",
+      "date": "2026-03-22",
+      "category": "에너지",
+      "title": "LNG 수급, 연말까지는 문제없으나 전쟁 장기화 시 산업계 부담 증가 예상",
+      "summary": [
+        "정부는 카타르 LNG 시설 피격에도 연말까지 수급 차질은 없을 것이라고 밝혔습니다.",
+        "그러나 중동 불안이 장기화되면 LNG 공급 차질 및 전기·가스요금 부담이 커질 수 있다는 우려가 제기됩니다.",
+        "카타르산 LNG 수입 비중은 점차 낮아지고 있으며, 미국 등 대체 수입처를 확보하고 있습니다."
+      ],
+      "whyImportant": "중동 불안정 지속 시 에너지 공급망 차질 및 비용 상승으로 이어져 산업 전반에 걸쳐 부담이 가중될 수 있기 때문입니다.",
+      "importanceRationale": "근거: 호르무즈 해협이 1년간 폐쇄될 경우 글로벌 LNG 공급이 약 15% 감소할 수 있다는 옥스포드 에너지 연구소의 추정치가 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "한 철강사 관계자는 “산업용 전기요금이 최근에 급격하게 오르면서 에너지 비용이 주재료인 고철이나 철광석 다음으로 높은 수준이 됐다”라며 “액화천연가스 가격이 급등하면 전기요금 상승과 철강재 수요 부진이 겹쳐 수익성이 더 악화할 수 있다”고 우려했다."
+        },
+        {
+          "label": "security",
+          "evidence": "한국신용평가는 최근 발간한 보고서에서 호르무즈 해협 봉쇄가 지속되면 카타르, 아랍에미리트(UAE) 등 중동 지역에서는 액화천연가스 저장시설 포화로 인해 천연가스 생산 중단이 장기화할 수 있다고 짚었다."
+        },
+        {
+          "label": "capex",
+          "evidence": "앞서 19일(현지시각) 카타르 국영 에너지 기업 카타르에너지(QE)는 주요 액화천연가스 시설 피격으로 한국 등과 맺은 장기 공급계약에 대해 최장 5년간의 ‘불가항력’ 선언을 할 수 있다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "lng-문제없으나-부담-산업계-수급-연말-장기화-전쟁",
+      "clusterKey": "미중동/에너지/수급",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1250369.html",
+      "publishedAt": "2026-03-20T08:50:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

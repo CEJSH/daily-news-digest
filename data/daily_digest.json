@@ -1,99 +1,34 @@
 {
-  "date": "2026-03-22",
+  "date": "2026-03-23",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-22T07:54:53.648676+09:00",
+  "lastUpdatedAt": "2026-03-23T07:59:22.661512+09:00",
   "items": [
     {
-      "id": "2026-03-22_1",
-      "date": "2026-03-22",
-      "category": "국제",
-      "title": "Trivy 스캐너, 공급망 공격으로 인해 손상",
+      "id": "2026-03-23_1",
+      "date": "2026-03-23",
+      "category": "에너지",
+      "title": "대만, AI 수요 증가로 원전 재가동 준비",
       "summary": [
-        "해커들이 Aqua S ity의 T ivy 취약점 스캐너의 거의 모든 버전을 손상시켰습니다.",
-        "이번 공격은 개발자와 그들을 사용하는 조직에 광범위한 영향을 미칠 수 있습니다.",
-        "보안 회사들은 75개의 손상된 ivy- 태그에서 악성코드가 개발 파이프라인을 철저히 탐색한다고 밝혔습니다."
+        "대만 민진당 정부가 AI 전력 수요 증가와 에너지 안보 우려로 원자력발전소 재가동 절차에 착수했습니다.",
+        "라이칭더 총통은 제2, 제3핵발전소 재가동 준비를 밝혔으며, 이달 말 재가동 계획이 원자력안전위원회로 이송될 예정입니다.",
+        "대만은 석유와 천연가스 비축량을 확보하고 있으며, 에너지 공급 불안에 대비하고 있습니다."
       ],
-      "whyImportant": "소프트웨어 개발 공급망의 보안 취약점은 광범위한 피해를 초래할 수 있어 중요합니다.",
-      "importanceRationale": "근거: 이번 공격으로 인해 75개의 trivy-action 태그가 손상되었고, 개발 파이프라인 내의 GitHub 토큰, 클라우드 자격 증명 등이 유출될 위험이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "Hackers have compromised virtually all versions of Aqua Security’s widely used Trivy vulnerability scanner in an ongoing supply chain attack that could have wide-ranging consequences for developers and the organizations that use them."
-        }
-      ],
-      "dedupeKey": "75개-aqua-trivy-공격-공급망-손상-스캐너-인해",
-      "clusterKey": "trivy/스캐너/공격",
-      "matchedTo": null,
-      "sourceName": "Ars",
-      "sourceUrl": "https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/",
-      "publishedAt": "2026-03-20T20:50:46+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-22_2",
-      "date": "2026-03-22",
-      "category": "금융",
-      "title": "미국 연준, 금리 동결 유지 및 추가 인상 가능성 시사",
-      "summary": [
-        "미국 연방준비제도는 기준금리를 동결하고 올해 추가 금리 인하 전망을 유지했습니다.",
-        "그러나 물가 상승률 전망치를 상향 조정하고 전쟁 장기화 시 금리 인상 가능성을 언급했습니다.",
-        "이에 따라 시장에서는 연준의 금리 인하 기대감이 줄어들고 있습니다."
-      ],
-      "whyImportant": "미국 연준의 금리 결정은 국내 금리 정책 및 환율에 영향을 미쳐 경제 전반에 중요한 영향을 미칩니다.",
-      "importanceRationale": "근거: 연준이 물가 상승률 전망치를 2.7%로 높여 잡고, 파월 의장이 금리 인상 가능성을 언급함에 따라 시장의 금리 인하 기대감이 줄어들고, 이는 국내 금리 정책에 영향을 줄 수 있습니다.",
+      "whyImportant": "대만의 원전 재가동 결정은 에너지 정책 변화를 의미하며, 향후 에너지 안보 및 AI 산업 발전에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 라이칭더 총통이 직접 제2, 제3핵발전소 재가동 준비를 밝혔고, 이달 말 재가동 계획이 원자력안전위원회로 이송될 예정이므로 중요도 3으로 판단합니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "미·이스라엘과 이란 간 전쟁으로 인한 에너지 가격 급등에 대해서는 “전반적인 인플레이션을 끌어올리겠지만, 이것이 경제에 미칠 잠재적 영향의 범위와 지속 기간을 파악하기에는 아직 이르다”는 말로 ‘전망의 불확실성’을 강조했다."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "미국 연방준비제도(Fed)가 18일(현지시각) 연방공개시장위원회(FOMC) 회의에서 연 3.50∼3.75%인 현 기준금리를 동결했다."
+          "evidence": "인공지능(AI) 전력 수요가 급증한 데다 라이 총통 취임 이후 중국의 압박이 더 커지면서 대만 내에선 에너지 안보 우려가 커졌다."
         }
       ],
-      "dedupeKey": "금리-기준금리-동결-미국-연방준비제-연준-인상-줄어들고",
-      "clusterKey": "연준/금리/동결",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1250088.html",
-      "publishedAt": "2026-03-19T05:06:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-22_3",
-      "date": "2026-03-22",
-      "category": "금융",
-      "title": "카타르 LNG 시설 피격, 생산 및 수급 전망",
-      "summary": [
-        "카타르에너지(QE)는 LNG 시설 피격으로 한국과의 장기 공급 계약에 대해 수년간 불가항력을 선언할 수 있다고 밝혔습니다.",
-        "이번 피격으로 LNG 수출 용량의 17%가 손상되었으며, 복구에는 3~5년이 걸릴 것으로 예상됩니다."
-      ],
-      "whyImportant": "LNG 공급 차질은 에너지 시장 전반에 걸쳐 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: LNG 수출 용량의 17% 손실 및 3~5년의 복구 기간 전망은 에너지 수급에 상당한 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "yoon2@yna.co.kr (서울=연합뉴스) 이재윤 기자 = 카타르 국영 에너지 기업 카타르에너지(QE)가 주요 액화천연가스(LNG) 시설 피격으로 한국 등과 맺은 장기 공급계약에 대해 수년간 '불가항력' 선언을 할 수 있다고 19일(현지시간) 밝혔다."
-        }
-      ],
-      "dedupeKey": "lng-생산-수급-시설-카타르-카타르에너지-피격-한국",
-      "clusterKey": "카타르/시설/피격",
+      "dedupeKey": "대만-수요-원자력안전위원회-원전-재가동-제3핵발전소-준비-증가",
+      "clusterKey": "에너지/재가동",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327005",
-      "publishedAt": "2026-03-19T23:35:02+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327834",
+      "publishedAt": "2026-03-22T08:13:24+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -102,29 +37,93 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-22_4",
-      "date": "2026-03-22",
-      "category": "기술",
-      "title": "구글 검색, AI를 사용하여 헤드라인 변경",
+      "id": "2026-03-23_2",
+      "date": "2026-03-23",
+      "category": "금융",
+      "title": "이재용 회장, 중국발전포럼 참석 후 중국 주요 기업 회동 전망",
       "summary": [
-        "구글 검색이 AI를 사용하여 뉴스 헤드라인을 자체 생성된 것으로 대체하기 시작했습니다.",
-        "이는 구글 디스커버 뉴스 피드에서 유사한 변경을 한 후 전통적인 검색 결과에서도 나타나고 있습니다.",
-        "구글은 이 실험이 '소규모'이며 아직 전체 출시가 승인되지 않았다고 밝혔습니다."
+        "이재용 삼성전자 회장이 중국발전포럼 참석 후 중국 주요 거래처들을 만날 것으로 예상됩니다.",
+        "작년에는 포럼 후 샤오미, BYD 본사를 방문하여 사업 협력을 논의했습니다."
       ],
-      "whyImportant": "구글 검색 결과의 헤드라인 변경은 뉴스 콘텐츠 제공 방식에 중대한 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 구글은 사용자 만족도를 높이기 위해 이 실험을 진행 중이며, 이는 뉴스 출판물뿐 아니라 전반적인 콘텐츠 제목 개선을 목표로 합니다.",
+      "whyImportant": "이 회장의 중국 내 주요 기업들과의 회동은 삼성전자의 사업 협력 및 투자 유치에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이 회장이 중국발전포럼 참석 후 샤오미, BYD 등 주요 파트너사들을 만날 것으로 예상되며, 이는 삼성전자의 사업 협력 논의와 관련될 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "2000년 창설된 CDF는 매년 중국이 세계 주요 재계 인사를 초청, 경제 현안을 논의하며 투자 유치를 모색하는 행사다."
+        }
+      ],
+      "dedupeKey": "기업-이재용-주요-중국-중국발전포럼-참석-회동-회장",
+      "clusterKey": "이재용/회장/중국발전포럼",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327748",
+      "publishedAt": "2026-03-22T02:00:55+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-23_3",
+      "date": "2026-03-23",
+      "category": "금융",
+      "title": "대법원, 실적 연동 성과급은 임금 아님",
+      "summary": [
+        "대법원은 LX글라스 근로자들이 회사를 상대로 낸 임금 소송에서, 당기순이익에 연동된 경영성과급은 임금으로 볼 수 없다고 판결했습니다.",
+        "2016년 단체협약에 따라 당기순이익 30억 원 이상 발생 시 성과급을 지급했으나, 퇴직연금 부담금 산정 시에는 제외되었습니다."
+      ],
+      "whyImportant": "이번 판결은 실적 연동 성과급의 임금 인정 여부에 대한 중요한 법적 판단 기준을 제시합니다.",
+      "importanceRationale": "근거: 대법원은 당기순이익이 회사의 자본, 지출 규모, 시장 상황 등 여러 요인에 의해 결정된다는 점을 근거로 성과급의 임금성을 부정했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "당기순이익에 연동해 지급하는 경영성과급은 임금으로 볼 수 없다는 대법원 판단이 또 나왔다."
+        }
+      ],
+      "dedupeKey": "30억-대법원-성과급-실적-아님-연동-임금-회사",
+      "clusterKey": "실적/대법원",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026032281491",
+      "publishedAt": "2026-03-22T09:03:13+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-23_4",
+      "date": "2026-03-23",
+      "category": "금융",
+      "title": "국민의힘 대구시장 후보 공천 과정에서 내홍 발생",
+      "summary": [
+        "국민의힘이 대구시장 후보 공천에서 주호영, 이진숙 후보를 컷오프하여 반발이 일고 있습니다.",
+        "장동혁 대표는 '시민 공천'을 통해 공정성을 확보하겠다고 밝혔습니다.",
+        "[뉴스+] 대구시장 누가 될까?"
+      ],
+      "whyImportant": "공천 과정에서의 갈등은 향후 선거 결과 및 당내 역학 관계에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 국민의힘 대구시장 후보 공천 과정에서 중진 컷오프와 내정설이 불거지며 당내 갈등이 심화되고 있으며, 이는 지역 민심에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "(Disclosure: Vox Media, The Verge’s parent company, has filed a lawsuit against Google, seeking damages from its illegal ad tech monopoly.) The good news, for now, is that these changed headlines seem to be few and far between, and they’re not yet the kind of tripe we’ve seen in Google Discover."
+          "evidence": "석원 2026년 03월 21일 - 중대범죄수사청법, 민주당 주도로 국회 본회의 통과 6대 범죄 수사를 담당할 중대범죄수사청 설치 법안이 여당인 더불어민주당 주도로 국회 본회의를 통과했습니다.국회는 24시간에 걸친 국민의힘의 필리버스터 끝에 중수청법을 재석 167명 가운데 찬성 166표, 반대 1표로 통과시켰으며, 국민의힘은 표결에 참여하지 않았습니다.본회의 문턱을 넘은 법안에 따르면 부패와 마약..."
+        },
+        {
+          "label": "earnings",
+          "evidence": "이진숙 \"나만큼 실적 낸 사람 있으면 나와봐⋯내가 겁나나 봐!\" 국민의힘이 대구시장 공천 신청자 9명을 대상으로 공천 심사에 돌입했습니다."
         }
       ],
-      "dedupeKey": "검색-구글-대체하기-디스커버-변경-사용-전통적인-헤드라인",
-      "clusterKey": "구글/검색/사용",
+      "dedupeKey": "공천-과정-국민의힘-내홍-대구시장-발생-확보하겠다고-후보",
+      "clusterKey": "국민의힘/대구시장/후보",
       "matchedTo": null,
-      "sourceName": "The",
-      "sourceUrl": "https://www.theverge.com/tech/896490/google-replace-news-headlines-in-search-canary-coal-mine-experiment",
-      "publishedAt": "2026-03-20T14:30:00+00:00",
+      "sourceName": "대구MBC",
+      "sourceUrl": "https://dgmbc.com/Politics",
+      "publishedAt": "2026-03-22T05:00:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -133,29 +132,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-22_5",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "LNG 시설 피격에 따른 에너지 기업의 반사이익",
+      "id": "2026-03-23_6",
+      "date": "2026-03-23",
+      "category": "정책",
+      "title": "전쟁 추경 25조 원 규모, 다음 달 10일 국회 처리 목표",
       "summary": [
-        "미국과 이란 간 전쟁으로 카타르 LNG 시설이 피격되면서 LNG 수급 불안정이 심화될 것이라는 전망이 나왔습니다.",
-        "이에 따라 해상 풍력, 태양광, LPG 등 대체 에너지 관련 기업들의 주가가 강세를 보였습니다.",
-        "카타르에너지 CEO는 피격 복구에 3~5년이 걸릴 것이라고 언급하며, LNG 장기 공급 계약에 불가항력을 선언할 수 있다고 밝혔습니다."
+        "더불어민주당과 정부, 청와대는 중동 사태 대응을 위한 추가경정예산을 25조 원 규모로 추진하기로 했습니다.",
+        "추경 재원은 예상되는 초과 세수로 마련하며, 다음 달 10일까지 국회에서 처리하는 것을 목표로 하고 있습니다.",
+        "추경은 고유가로 어려움을 겪는 소상공인과 농업인 유류비 경감, 중동 전쟁 피해 수출기업 지원 등에 사용될 예정입니다."
       ],
-      "whyImportant": "에너지 시설 피격으로 인한 공급망 불안정은 장기적인 에너지 가격 상승과 대체 에너지원 수요 증가를 야기할 수 있습니다.",
-      "importanceRationale": "근거: 카타르 LNG 생산량 감소는 연간 1280만t에 달하며, 복구에 3~5년이 소요될 수 있다는 점은 에너지 시장에 장기적인 영향을 미칠 수 있음을 시사합니다.",
+      "whyImportant": "이번 추경은 고유가, 고환율, 고물가에 대한 선제적 대응과 취약계층 및 청년 일자리 지원을 목표로 하여 경제적 불확실성에 대응하는 정부의 정책 방향을 보여줍니다.",
+      "importanceRationale": "근거: 25조 원 규모의 추경은 고유가 대응, 취약계층 지원, 청년 일자리 사업 등을 포함하며, 다음 달 10일까지 국회 처리를 목표로 하고 있어 정책적 중요성이 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "LNG 시설 피격 반사이익 \"전쟁 끝나도 고유가 지속\" 해상 풍력 SK오션플랜트 上 태양광 한화솔루션·OCI 상승 글로벌 에너지 시설 보유 포스코인터·LX인터 강세"
+          "evidence": "추경은 고유가로 어려움을 겪는 소상공인과 농업인 등의 유류비를 경감하고 중동 전쟁으로 피해를 본 수출기업을 지원하는 데 쓰일 것”이라며 “직접적이고 차등적인 지원을 통해 취약계층과 지방 등 어려운 부분에 더 많이 지원하기로 의견을 같이했다”고 설명했다."
         }
       ],
-      "dedupeKey": "lng-기업-따른-미국-반사이익-시설-에너지-피격",
-      "clusterKey": "에너지/시설",
+      "dedupeKey": "25조-국회-규모-다음-목표-전쟁-처리-추경",
+      "clusterKey": "전쟁/추경/25조",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026032057721",
-      "publishedAt": "2026-03-20T12:00:01+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026032283041",
+      "publishedAt": "2026-03-22T11:11:36+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -164,33 +163,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-22_6",
-      "date": "2026-03-22",
-      "category": "기술",
-      "title": "OpenAI, 완전 자동화된 연구자 개발에 집중",
+      "id": "2026-03-23_7",
+      "date": "2026-03-23",
+      "category": "정책",
+      "title": "정청래, 국회 후반기 상임위원장 민주당 100% 단독 선출 주장",
       "summary": [
-        "O AI는 AI 연구의 새로운 목표로 완전 자동화된 에이전트 기반 시스템인 'AI 연구자' 개발에 모든 자원을 투입할 예정입니다.",
-        "2028년까지 인간이 감당하기 어려운 복잡한 문제를 해결할 수 있는 AI 연구 시스템을 선보일 계획입니다.",
-        "9월까지 특정 연구 문제를 스스로 해결할 수 있는 '자율 AI 연구 인턴' 시스템을 구축할 예정입니다."
+        "정청래 더불어민주당 대표는 후반기 상임위원회를 민주당이 100% 맡아 책임지겠다고 밝혔습니다.",
+        "국민의힘이 국정 운영에 협조하지 않고 민생 법안 처리가 지연되고 있다는 이유를 들었습니다."
       ],
-      "whyImportant": "AI 연구 자동화는 과학, 비즈니스, 정책 등 다양한 분야에서 혁신을 가속화할 수 있는 잠재력을 가지고 있습니다.",
-      "importanceRationale": "근거: OpenAI는 2028년까지 완전 자동화된 AI 연구 시스템을 출시할 계획이며, 이는 AI 연구 및 개발에 상당한 자본 투자가 이루어지고 있음을 시사합니다.",
+      "whyImportant": "국회 상임위원장 단독 선출 주장은 향후 국회 운영에 상당한 갈등을 야기할 수 있는 사안입니다.",
+      "importanceRationale": "근거: 민주당 대표가 후반기 상임위원회를 100% 맡겠다고 발언한 것은 정책 결정 과정에 영향을 미칠 수 있습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "OpenAI plans to build “an autonomous AI research intern”—a system that can take on a small number of specific research problems by itself—by September."
-        },
-        {
-          "label": "security",
-          "evidence": "AI tools have already been used to come up with novel cyberattacks."
+          "label": "policy",
+          "evidence": "ADVERTISEMENT 이어 \"처리할 민생법안이 산적해 있는데 저쪽(국민의힘)에서 위원장을 맡은 위원회가 가동되지 않고 있다\"며 \"국민의힘이 좋아하는 미국처럼 우리도 미국식으로 해야겠다."
         }
       ],
-      "dedupeKey": "openai-개발-에이전트-연구자-완전-자동화-자원-집중",
-      "clusterKey": "openai/완전/자동화",
+      "dedupeKey": "국회-단독-민주당-상임위원장-상임위원회-선출-정청래-후반기",
+      "clusterKey": "정책/정청래",
       "matchedTo": null,
-      "sourceName": "MIT",
-      "sourceUrl": "https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
-      "publishedAt": "2026-03-20T11:57:16+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026032280117",
+      "publishedAt": "2026-03-22T08:01:32+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -199,126 +193,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-22_7",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "카타르, 이란 공격으로 한국 등에 LNG 공급 불가항력 선언 가능성",
+      "id": "2026-03-23_8",
+      "date": "2026-03-23",
+      "category": "정책",
+      "title": "국민의힘, '조작 기소 국정조사'에 대한 비판",
       "summary": [
-        "카타르가 이란의 공격으로 에너지 생산 시설이 손상되어 한국을 포함한 여러 나라와의 LNG 장기 공급 계약에 대해 불가항력을 선언할 수 있다고 밝혔습니다.",
-        "카타르에너지 CEO는 최대 5년간 불가항력을 선언해야 할 수도 있다고 언급했습니다.",
-        "이번 피격으로 카타르에너지 전체 수출 능력의 17%를 담당하는 시설이 피해를 입었으며, 복구에 3~5년이 소요될 것으로 예상됩니다."
+        "국민의힘은 '윤석열 정권 시절 검찰의 조작 기소 의혹' 국정조사에 대해 헌정 오점이 될 것이라고 비판했습니다.",
+        "또한, 공소청 및 중수청법 통과에 대해 범죄 대응 약화 및 수사 공정성 문제를 제기했습니다."
       ],
-      "whyImportant": "카타르의 LNG 공급 차질은 한국을 포함한 세계 에너지 수급에 장기적인 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르에너지 수출 능력의 17%를 담당하는 시설이 피해를 입었고, 복구에 3~5년이 소요될 것으로 예상되어 장기적인 에너지 수급에 영향을 줄 수 있습니다.",
+      "whyImportant": "국정조사 및 관련 법안 통과에 대한 정치적 논쟁은 향후 사법 시스템 및 정치 지형에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 국정조사 계획서의 국회 본회의 의결을 앞두고, 공소청과 중대범죄수사청 신설 법안이 국회 본회의를 통과한 것에 대한 비판이 담겨 있습니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "이란의 공격으로 인해 에너지 생산 시설이 손상된 카타르가 한국을 포함한 여러 나라와 맺은 액화천연가스(LNG) 장기 공급 계약에 대해 ‘불가항력’(Force Majeure)을 선언할 수 있다고 19일(현지시각) 밝혔다."
+          "label": "policy",
+          "evidence": "국민의힘은 22일 이른바 '윤석열 정권 시절 검찰의 이른바 조작기소 의혹에 관한 국정조사' 계획서의 국회 본회의 의결을 앞두고 \"대통령의 범죄 혐의를 입법 권력으로 지우려 하는 이 시도는 대한민국을 '입법 독재 국가'로 전락시키는 전대미문의 헌정 오점이 될 것\"이라고 비판했다."
         }
       ],
-      "dedupeKey": "lng-공격-공급-등에-불가항력-이란-카타르-한국",
-      "clusterKey": "에너지/카타르",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1250213.html",
-      "publishedAt": "2026-03-21T11:32:40+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-22_8",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "카타르 LNG 시설 피해, 장기 계약 불이행 우려",
-      "summary": [
-        "이란 공격으로 카타르 LNG 수출 시설이 파괴되어, 한국 등과의 장기 계약에 최장 5년 불가항력 선언 가능성이 제기되었습니다.",
-        "카타르의 LNG 생산량은 연간 1,280만 톤 감소할 것으로 예상되며, 시설 복구에는 3~5년이 소요될 전망입니다.",
-        "장기 계약 물량 부족 시 현물 LNG 수입으로 국내 가스비 급등이 불가피할 수 있습니다."
-      ],
-      "whyImportant": "카타르 LNG 시설 피해로 인한 공급 차질은 국내 가스 요금 인상 및 석유화학, 첨단산업 전반의 수급 불안을 야기할 수 있어 중요합니다.",
-      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17%가 소실되었고, 한국 수입 물량의 14%를 차지하는 카타르와의 장기 계약 불이행 시 국내 가스비 급등이 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "[마이크 무시오 / FBB 캐피털 파트너스 사장 : 수십억 달러 규모의 생산 및 정제 시설과 수십억 달러 규모의 수년간에 걸친 보수 공사가 석유 공급망에 영향을 미치는 것도 결코 좋은 일이 아닙니다.] 더군다나 이번 공격으로 LNG뿐만 아니라 LPG 등의 부산물 수출도 연쇄적으로 줄 것으로 보여 글로벌 석유화학과 첨단산업 전반에 걸쳐 수급 불안이 우려됩니다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "당장은 재고로 버틸 수 있다지만 길어질 경우 비싼 현물 LNG를 사와야 해서 국내 가스비 급등이 불가피할 거로 보입니다."
-        }
-      ],
-      "dedupeKey": "lng-계약-불이행-시설-장기-카타르-피해-한국",
-      "clusterKey": "카타르/시설/피해",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202603201600581974",
-      "publishedAt": "2026-03-20T00:00:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-22_9",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "이란의 카타르 LNG 시설 공격으로 신흥국 비상, 미국·러시아는 반사이익 확대",
-      "summary": [
-        "이란의 카타르 액화천연가스(LNG) 시설 공격으로 아시아 신흥국 경제에 타격이 예상됩니다.",
-        "카타르에너지 CEO는 수출 용량의 17% 피해와 복구에 3~5년이 걸릴 것으로 전망했습니다.",
-        "미국과 러시아는 각각 안정적인 가격 유지와 중국 수출 확대 기회를 얻을 것으로 보입니다."
-      ],
-      "whyImportant": "에너지 공급망 불안정은 신흥국 경제에 직접적인 영향을 미치며, 장기적인 에너지 전략 재검토를 야기할 수 있습니다.",
-      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17% 피해와 3~5년 복구 기간은 산업 전반에 걸쳐 상당한 영향을 미칠 수 있으며, 특히 아시아 신흥국에 공급 부족 문제를 야기할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "이란의 카타르 액화천연가스(LNG) 시설에 대한 연이은 공격 여파가 아시아 신흥국 경제로 확산하고 있다."
-        }
-      ],
-      "dedupeKey": "lng-공격-미국-반사이익-시설-신흥국-이란-카타르",
-      "clusterKey": "미중/카타르/시설/공격",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1250363.html",
-      "publishedAt": "2026-03-20T08:35:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-22_10",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "정부, 카타르 LNG 수입 중단 대비 대응 계획 마련",
-      "summary": [
-        "정부는 카타르 LNG 시설 피격으로 인한 국내 LNG 공급 차질 우려에 대비해, 수입이 완전히 끊기는 상황을 가정한 대응 계획을 마련했습니다.",
-        "정부는 LNG 수급 관리에 문제가 없다는 입장이지만, 국제 LNG 가격 인상에 따른 국내 경제 영향을 최소화하기 위한 대책을 마련 중입니다.",
-        "카타르 LNG 수입 비중은 현재 15%에서 내년 8%로 감소할 예정이며, 정부는 장기 계약 종료에 따른 대체 공급선을 확보할 계획입니다."
-      ],
-      "whyImportant": "카타르 LNG 시설의 손상은 국제 LNG 시장의 변동성을 키워 국내 에너지 가격에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 카타르 LNG 수출 용량의 17% 손상으로 최대 5년간 불가항력 선언 가능성이 제기되었으며, 이는 한국 LNG 수입의 15%를 차지하는 카타르산 LNG 수급에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "세계 LNG 수출의 20%를 차지하는 카타르가 불가항력을 선언하면 대체 물량 확보 경쟁이 벌어져 셀러(수요자) 위주 시장이 될 가능성이 높다"
-        }
-      ],
-      "dedupeKey": "lng-대비-대응-마련-수입-입장이지-정부-카타르",
-      "clusterKey": "카타르/수입/중단",
+      "dedupeKey": "것이라고-공소청-국민의힘-국정조사-윤석열-정권-조작-중수청법",
+      "clusterKey": "법집행/국민의힘",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327191",
-      "publishedAt": "2026-03-20T02:55:37+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1327755",
+      "publishedAt": "2026-03-22T02:11:04+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -327,40 +223,87 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-22_11",
-      "date": "2026-03-22",
-      "category": "에너지",
-      "title": "LNG 수급, 연말까지는 문제없으나 전쟁 장기화 시 산업계 부담 증가 예상",
+      "id": "2026-03-23_9",
+      "date": "2026-03-23",
+      "category": "금융",
+      "title": "유가, 장기적으로 높은 수준 전망",
       "summary": [
-        "정부는 카타르 LNG 시설 피격에도 연말까지 수급 차질은 없을 것이라고 밝혔습니다.",
-        "그러나 중동 불안이 장기화되면 LNG 공급 차질 및 전기·가스요금 부담이 커질 수 있다는 우려가 제기됩니다.",
-        "카타르산 LNG 수입 비중은 점차 낮아지고 있으며, 미국 등 대체 수입처를 확보하고 있습니다."
+        "중동 전쟁 불확실성 확대로 유가가 장기적으로 높은 수준을 유지할 것이라는 전망이 나왔습니다.",
+        "호르무즈 해협의 군사적 긴장과 에너지 인프라 손상으로 에너지 가격 상승이 예상됩니다."
       ],
-      "whyImportant": "중동 불안정 지속 시 에너지 공급망 차질 및 비용 상승으로 이어져 산업 전반에 걸쳐 부담이 가중될 수 있기 때문입니다.",
-      "importanceRationale": "근거: 호르무즈 해협이 1년간 폐쇄될 경우 글로벌 LNG 공급이 약 15% 감소할 수 있다는 옥스포드 에너지 연구소의 추정치가 있습니다.",
+      "whyImportant": "유가 상승은 에너지 비용 증가를 통해 산업 전반에 걸쳐 장기적인 경제적 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 울프 리서치는 중동 지역 에너지 인프라의 영구적 손상과 지정학적 불확실성으로 시장 참가자들이 에너지 가격 상승을 예상한다고 밝혔습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "한 철강사 관계자는 “산업용 전기요금이 최근에 급격하게 오르면서 에너지 비용이 주재료인 고철이나 철광석 다음으로 높은 수준이 됐다”라며 “액화천연가스 가격이 급등하면 전기요금 상승과 철강재 수요 부진이 겹쳐 수익성이 더 악화할 수 있다”고 우려했다."
-        },
-        {
-          "label": "security",
-          "evidence": "한국신용평가는 최근 발간한 보고서에서 호르무즈 해협 봉쇄가 지속되면 카타르, 아랍에미리트(UAE) 등 중동 지역에서는 액화천연가스 저장시설 포화로 인해 천연가스 생산 중단이 장기화할 수 있다고 짚었다."
-        },
-        {
-          "label": "capex",
-          "evidence": "앞서 19일(현지시각) 카타르 국영 에너지 기업 카타르에너지(QE)는 주요 액화천연가스 시설 피격으로 한국 등과 맺은 장기 공급계약에 대해 최장 5년간의 ‘불가항력’ 선언을 할 수 있다고 밝혔다."
+          "evidence": "그는 중동 지역 에너지 인프라의 영구적 손상과 지정학적 불확실성으로 시장 참가자들이 에너지 가격 상승을 예상한다고 설명했다."
         }
       ],
-      "dedupeKey": "lng-문제없으나-부담-산업계-수급-연말-장기화-전쟁",
-      "clusterKey": "미중동/에너지/수급",
+      "dedupeKey": "높은-불확실성-수준-유가-장기적-전쟁-중동-호르무즈",
+      "clusterKey": "유가/장기적/높은",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1250369.html",
-      "publishedAt": "2026-03-20T08:50:00+00:00",
+      "sourceName": "연합인포맥스",
+      "sourceUrl": "https://news.einfomax.co.kr/news/articleView.html?idxno=4405152",
+      "publishedAt": "2026-03-22T00:53:17+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-23_10",
+      "date": "2026-03-23",
+      "category": "금융",
+      "title": "디다(SEHK:2559)의 수익 감소, 연간 EPS 28.1% 하락세 강화",
+      "summary": [
+        "디다(Dida, SEHK:2559)의 수익 감소는 연간 주당순이익(EPS)이 28.1% 감소하는 약세 추세를 강화합니다.",
+        "웹사이트는 악성 봇으로부터 보호하기 위해 보안 서비스를 사용하고 있습니다."
+      ],
+      "whyImportant": "수익 감소와 EPS 하락은 투자 결정에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: EPS가 28.1% 감소하는 약세 추세가 강화되었다는 점에서 중요도 3으로 판단됩니다.",
+      "impactSignals": [],
+      "dedupeKey": "eps-sehk-감소-강화-디다-수익-연간-하락세",
+      "clusterKey": "디다/sehk/수익",
+      "matchedTo": null,
+      "sourceName": "simplywall",
+      "sourceUrl": "https://simplywall.st/portfolio/demo",
+      "publishedAt": "2026-03-22T22:07:56+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-23_11",
+      "date": "2026-03-23",
+      "category": "정책",
+      "title": "AI가 영상 제작 환경을 변화시키는 가운데 플랫폼별 가이드라인 수준은?",
+      "summary": [
+        "AI 기술 발전으로 영상 콘텐츠 제작 환경이 변화하면서 저작권 및 투명성 문제가 핵심 쟁점으로 부상했습니다.",
+        "넷플릭스는 제작 단계 중심의 가이드라인을 도입한 반면, 유튜브는 유통 단계에서 AI 콘텐츠 통제에 집중하고 있습니다.",
+        "플랫폼들은 신뢰 가능한 AI 콘텐츠 생태계 구축을 목표로 규제 경쟁을 벌이고 있습니다."
+      ],
+      "whyImportant": "AI 콘텐츠에 대한 플랫폼의 규제 방식은 향후 국가 차원의 법·제도 마련에 중요한 기준점이 될 수 있습니다.",
+      "importanceRationale": "근거: 넷플릭스는 2025년 발표된 가이드라인을 통해 AI 활용 기준을 체계화했으며, 유튜브는 2025년부터 진정성 없는 콘텐츠에 대한 수익 창출을 제한할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "넷플릭스는 생성형 AI 활용에 대한 선제적 대응으로 제작 단계 중심의 가이드라인을 도입했다."
+        }
+      ],
+      "dedupeKey": "가운데-가이드라인-변화시키-수준-영상-제작-플랫폼별-환경",
+      "clusterKey": "정책/영상",
+      "matchedTo": null,
+      "sourceName": "디지털포용",
+      "sourceUrl": "https://www.dginclusion.com/news/articleView.html?idxno=1510",
+      "publishedAt": "2026-03-22T22:16:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

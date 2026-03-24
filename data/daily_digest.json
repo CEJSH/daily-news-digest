@@ -1,33 +1,34 @@
 {
-  "date": "2026-03-24",
+  "date": "2026-03-25",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-24T08:04:01.634136+09:00",
+  "lastUpdatedAt": "2026-03-25T08:03:34.609590+09:00",
   "items": [
     {
-      "id": "2026-03-24_1",
-      "date": "2026-03-24",
-      "category": "금융",
-      "title": "미국, 이스라엘에 호르무즈 해협 군사 작전 장기화 전망 전달",
+      "id": "2026-03-25_1",
+      "date": "2026-03-25",
+      "category": "기술",
+      "title": "아마존, 이란 분쟁으로 중동 AWS 서비스 추가 중단 직면",
       "summary": [
-        "미국 백악관 관계자들이 이스라엘 측에 호르무즈 해협 봉쇄 해제를 위한 군사 작전이 몇 주간 장기화될 수 있다고 전달했습니다.",
-        "미국은 호르무즈 해협 작전이 예상보다 오래 걸릴 것으로 보고 있으며, 전반적인 전쟁 기간도 늘어날 것으로 예상합니다."
+        "아마존 웹 서비스는 중동 분쟁으로 인해 바레인에서 서비스 중단을 다시 겪고 있다고 밝혔습니다.",
+        "드론 활동으로 인한 이번 중단에 대해 현지 당국과 협력하여 복구 노력을 기울이고 있습니다.",
+        "AWS는 고객에게 애플리케이션을 대체 AWS 리전으로 마이그레이션할 것을 권고했습니다."
       ],
-      "whyImportant": "호르무즈 해협 봉쇄 및 군사 작전의 장기화는 전 세계 석유 물동량에 영향을 미쳐 경제적 불확실성을 증가시킬 수 있습니다.",
-      "importanceRationale": "근거: 전 세계 석유 물동량의 20%가 통과하는 호르무즈 해협 봉쇄 해제를 위한 군사 작전이 수 주에 걸쳐 진행될 것으로 예상되기 때문입니다.",
+      "whyImportant": "중동 지역의 지정학적 불안정이 데이터 센터 운영 및 클라우드 서비스 제공에 지속적인 위험을 초래할 수 있음을 시사합니다.",
+      "importanceRationale": "근거: AWS 시설이 드론 공격을 받아 물리적 손상을 입었고, 이로 인해 UAE에서 앱 및 디지털 서비스 중단이 발생했다는 점에서 중요도 3으로 판단됩니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "미국 백악관 관계자들이 이스라엘 쪽에 호르무즈 해협 봉쇄를 풀기 위한 군사 작전이 몇 주간에 걸쳐 장기화될 수 있다는 입장을 전달했다고 이스라엘 채널12 방송이 22일(현지시각) 보도했다."
+          "evidence": "In the UAE, two AWS facilities were directly struck by drones."
         }
       ],
-      "dedupeKey": "군사-미국-이스라엘-작전-장기화-전달-해협-호르무즈",
-      "clusterKey": "호르무즈/해협/군사",
+      "dedupeKey": "aws-당국-분쟁-서비스-아마존-이란-중동-직면",
+      "clusterKey": "아마존/분쟁/서비스",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/international/america/1250567.html",
-      "publishedAt": "2026-03-23T01:21:00+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/24/amazon-aws-disruption-in-bahrain-iran.html",
+      "publishedAt": "2026-03-24T07:57:18+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -36,17 +37,117 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-24_2",
-      "date": "2026-03-24",
+      "id": "2026-03-25_2",
+      "date": "2026-03-25",
+      "category": "금융",
+      "title": "미래에셋증권, 사상 최대 실적 바탕으로 역대급 주주 환원 결정",
+      "summary": [
+        "미래에셋증권은 지난해 사상 최대 실적을 바탕으로 6347억원 규모의 주주 환원을 단행했습니다.",
+        "여기에는 현금 배당, 주식 배당, 자사주 소각 등이 포함됩니다.",
+        "또한, AI 핵심 인력에게 파격적인 스톡옵션을 부여하고 박현주 GSO에 대한 보상 체계 마련 제안도 있었습니다."
+      ],
+      "whyImportant": "미래에셋증권의 대규모 주주 환원 결정은 투자 전략 및 기업 가치에 대한 중요한 시사점을 제공합니다.",
+      "importanceRationale": "근거: 미래에셋증권은 작년 당기순이익의 약 40%에 달하는 6347억원 규모의 주주환원을 결정했으며, 이는 투자 및 기업 가치에 영향을 미칠 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "최대 실적 미래에셋證 역대급 주주환원 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 배당·자사주 소각 등 6400억원 작년 순이익 40% 달하는 규모 AI 인력 1인당 20억 스톡옵션 주주들 \"경영성과 보상안 필요\" 작년 순이익 40% 달하는 규모 AI 인력 1인당 20억 스톡옵션 주주들 \"경영성과 보상안 필요\" 미래에셋증권이 총 6347억원 규모의 역대 최대 규모 주주환원을 단행했다."
+        }
+      ],
+      "dedupeKey": "6347억원-미래에셋증권-바탕-사상-실적-역대급-최대-환원",
+      "clusterKey": "실적/미래에셋증권",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026032436511",
+      "publishedAt": "2026-03-24T08:20:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-25_3",
+      "date": "2026-03-25",
+      "category": "기술",
+      "title": "인권위, 북한군 포로 입국 권고 의결 실패",
+      "summary": [
+        "국가인권위원회가 우크라이나에 억류된 북한군 포로의 대한민국 입국을 위한 인도적 조치 권고안 의결에 실패했습니다.",
+        "외교부가 적극적인 조치를 하겠다는 공문을 보내 현재 상황을 파악 후 의결해야 한다는 의견이 있었습니다."
+      ],
+      "whyImportant": "이번 결정은 향후 북한군 포로 문제에 대한 정부와 관련 기관의 대응 방향에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 인권위가 외교부의 공문을 언급하며 추가 확인 절차를 이유로 권고안 의결을 보류하여, 향후 정책 결정에 영향을 줄 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이 위원은 권고 주문안으로 “외교부 장관, 통일부 장관, 국방부 장관, 국정원장에게 (북한군 포로의) 조기 석방 및 신속한 대한민국 입국 보호에 필요한 인도적 협의를 추진할 것을 권고한다”라는 내용을 제시했다."
+        }
+      ],
+      "dedupeKey": "국가인권위원회-권고-북한군-실패-의결-인권위-입국-포로",
+      "clusterKey": "인권위/북한군/포로",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1250722.html",
+      "publishedAt": "2026-03-23T11:23:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-25_4",
+      "date": "2026-03-25",
+      "category": "에너지",
+      "title": "중동 전쟁 격화로 해상·항공 운임 급등",
+      "summary": [
+        "중동 전쟁 격화로 유조선 운임이 78.3％, LNG선 운임은 4배까지 급등했습니다.",
+        "컨테이너선 운임도 상승세를 보이며 수출 기업의 물류비 부담이 커지고 있습니다.",
+        "항공 화물 운임 역시 상승세를 이어가고 있습니다."
+      ],
+      "whyImportant": "중동 지역 불안정으로 인한 운임 상승은 국내 수출 기업의 비용 부담을 가중시키고, 에너지 수급에도 영향을 줄 수 있어 중요합니다.",
+      "importanceRationale": "근거: 유조선 운임이 전쟁 발발 직전 대비 78.3％ 급등했고, LNG선 운임은 4배 상승했으며, 중동 노선 컨테이너 운임은 2.5배 수준으로 올라 국내 산업계의 운송 차질 및 물류비 상승 부담이 커지고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "최고운 한국투자증권 연구원은 \"(중동 전쟁으로) 호르무즈 해협뿐만 아니라 하늘길도 막혀버린 만큼 물류대란 수혜는 항공화물 시장으로도 이어질 전망\"이라고 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "아시아발 고부가가치 화물 수요가 반영되는 싱가포르발 운임 지표도 362로 한 주 사이 4.6% 올랐고, 전년 동기 대비 54.7% 상승했다."
+        },
+        {
+          "label": "security",
+          "evidence": "발틱해운거래소에 따르면 유조선 운임지수(WS)는 지난 20일 중동∼중국 노선 초대형 유조선(VLCC)을 기준으로 400.6을 기록했다."
+        }
+      ],
+      "dedupeKey": "4배-격화-급등-운임-전쟁-중동-항공-해상",
+      "clusterKey": "전쟁/격화/해상",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328668",
+      "publishedAt": "2026-03-24T01:45:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-25_5",
+      "date": "2026-03-25",
       "category": "에너지",
       "title": "이란, UAE 바라카 원전 공격 표적 언급",
       "summary": [
-        "이란 매체들이 UAE 아부다비의 바라카 원자력발전소를 이란군의 공격 표적으로 언급했습니다.",
-        "걸프 지역 발전소와 두바이 태양광 발전소, 카타르 담수화 시설 등도 표적으로 거론되었습니다.",
+        "이란 매체가 UAE 아부다비의 바라카 원자력발전소를 이란군의 공격 표적으로 언급했습니다.",
+        "걸프 지역 발전소 외 두바이 태양광 발전소, 카타르 담수화 시설 등도 표적으로 거론되었습니다.",
         "이란은 '이란의 전력 인프라 공격 시 중동 전체가 암흑으로 빠질 것'이라고 경고했습니다."
       ],
-      "whyImportant": "중동 지역의 지정학적 긴장 고조와 잠재적 에너지 인프라 공격 위협은 국제적 안보 및 에너지 시장에 중대한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 이란 매체가 UAE 바라카 원전을 포함한 걸프 지역의 여러 발전소를 공격 표적으로 언급하며 긴장도를 높이고 있어 중요도 3으로 판단됩니다.",
+      "whyImportant": "중동 지역의 지정학적 긴장 고조는 에너지 인프라에 대한 잠재적 위협을 증가시켜, 에너지 시장 및 관련 산업에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 이란 매체가 UAE 바라카 원전을 포함한 걸프 지역 10개 발전소를 공격 대상으로 언급하며 긴장도를 높이고 있어 중요도 3으로 판단됩니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -71,16 +172,47 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-24_3",
-      "date": "2026-03-24",
+      "id": "2026-03-25_6",
+      "date": "2026-03-25",
+      "category": "금융",
+      "title": "500대 기업 영업이익 24% 증가, 반도체 제외 시 7% 성장",
+      "summary": [
+        "지난해 국내 500대 상장사 영업이익이 24% 증가했으나, SK하이닉스와 삼성전자를 제외하면 7% 성장에 그쳤습니다.",
+        "두 회사의 영업이익은 전체 증가액의 78.7%를 차지하며 높은 성장세를 보였습니다.",
+        "기아는 영업이익이 가장 크게 감소했으며, 현대차와 삼성SDI도 감소세를 보였습니다."
+      ],
+      "whyImportant": "반도체 산업의 실적이 전체 기업 실적에 미치는 영향이 크다는 것을 보여주는 지표입니다.",
+      "importanceRationale": "근거: SK하이닉스와 삼성전자의 영업이익 증가액이 전체 조사 대상 기업의 지난해 영업이익 증가액 중 78.7%를 차지한다는 점에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "지난해 국내 500대 상장사의 영업이익이 급증했지만, SK하이닉스와 삼성전자 등 '반도체 투 톱'을 제외한 성장 폭은 제한적인 것으로 나타났다."
+        }
+      ],
+      "dedupeKey": "500대-기업-반도체-성장-영업이익-제외-증가-회사",
+      "clusterKey": "실적/500대",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329122",
+      "publishedAt": "2026-03-24T21:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-25_7",
+      "date": "2026-03-25",
       "category": "에너지",
       "title": "LNG 가격 상승 우려, 가스 공급 위기",
       "summary": [
         "이란이 카타르 LNG 시설 피격으로 국내 LNG 공급 차질 우려가 커지고 있습니다.",
         "산업통상부는 카타르산 LNG의 전면 중단 가능성에 대비해 추가 물량을 확보했다고 밝혔습니다."
       ],
-      "whyImportant": "LNG 공급 차질은 에너지 가격 상승과 수급 불안정으로 이어질 수 있는 중요한 문제입니다.",
-      "importanceRationale": "근거: 산업통상부가 LNG 추가 물량을 확보했지만, 장기적인 수급 압박 가능성이 있어 에너지 가격 상승 우려가 존재합니다.",
+      "whyImportant": "LNG 공급 차질은 에너지 가격 상승과 장기적인 수급 불안으로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 산업통상부가 카타르산 LNG의 전면 중단 가능성을 염두에 두고 추가 물량을 확보한 상황이며, 연말까지는 충분한 물량이 있다고 판단됩니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -96,57 +228,6 @@
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-24_4",
-      "date": "2026-03-24",
-      "category": "금융",
-      "title": "인슐린 치료, 주사 대신 ‘먹는 약’으로 가능해질 전망",
-      "summary": [
-        "심장마비의 전조 증상으로 왼쪽 어깨 결림, 턱 통증, 명치의 답답함 등이 있습니다.",
-        "심장마비 시 아스피린을 씹어 복용하면 약효가 더 빠르게 나타날 수 있습니다.",
-        "심장 세포가 생존할 수 있는 시간은 30분으로, 즉시 병원에 가야 합니다."
-      ],
-      "whyImportant": "심장마비 발생 시 빠른 대처가 중요하다는 점을 강조하고 있습니다.",
-      "importanceRationale": "근거: 심장 세포 생존 시간은 30분으로 매우 짧기 때문에, 심장마비 의심 증상 발생 시 즉시 대처해야 함을 알립니다.",
-      "impactSignals": [],
-      "dedupeKey": "30분-가능해질-대신-먹는-으로-인슐린-주사-치료",
-      "clusterKey": "인슐린/치료/주사",
-      "matchedTo": null,
-      "sourceName": "조선",
-      "sourceUrl": "https://health.chosun.com/site/data/html_dir/2026/03/09/2026030901749.html",
-      "publishedAt": "2026-03-23T04:52:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-24_5",
-      "date": "2026-03-24",
-      "category": "기술",
-      "title": "심장마비 전조 증상과 응급 대처법",
-      "summary": [
-        "흉부외과 전문의는 심장마비 의심 증상으로 왼쪽 어깨 결림, 턱 통증, 명치의 답답함을 언급했습니다.",
-        "심장 세포 생존 가능 시간은 30분으로, 응급 시 아스피린을 씹어 삼키는 것이 초기 대응에 도움이 될 수 있습니다."
-      ],
-      "whyImportant": "심장마비는 빠른 대처가 중요하므로, 전조 증상을 인지하고 응급 대처법을 숙지하는 것이 중요합니다.",
-      "importanceRationale": "근거: 심장 세포가 생존할 수 있는 시간은 단 30분이며, 아스피린을 씹어 복용하면 약효가 더 빨리 나타난다는 내용이 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "30분-대처법-심장마비-아스피린-응급-전조-증상-흉부외",
-      "clusterKey": "심장마비/전조/증상",
-      "matchedTo": null,
-      "sourceName": "조선",
-      "sourceUrl": "https://health.chosun.com/site/data/html_dir/2026/03/09/2026030901749.html",
-      "publishedAt": "2026-03-23T02:36:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

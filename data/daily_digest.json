@@ -1,34 +1,34 @@
 {
-  "date": "2026-03-25",
+  "date": "2026-03-26",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-25T08:03:34.609590+09:00",
+  "lastUpdatedAt": "2026-03-26T08:06:41.665851+09:00",
   "items": [
     {
-      "id": "2026-03-25_1",
-      "date": "2026-03-25",
+      "id": "2026-03-26_1",
+      "date": "2026-03-26",
       "category": "기술",
-      "title": "아마존, 이란 분쟁으로 중동 AWS 서비스 추가 중단 직면",
+      "title": "메타, AI 경쟁력 강화를 위해 주요 임원에게 주식 옵션 부여",
       "summary": [
-        "아마존 웹 서비스는 중동 분쟁으로 인해 바레인에서 서비스 중단을 다시 겪고 있다고 밝혔습니다.",
-        "드론 활동으로 인한 이번 중단에 대해 현지 당국과 협력하여 복구 노력을 기울이고 있습니다.",
-        "AWS는 고객에게 애플리케이션을 대체 AWS 리전으로 마이그레이션할 것을 권고했습니다."
+        "메타가 인공지능 분야에서의 경쟁력 강화를 위해 주요 임원들에게 주식 옵션을 부여했습니다.",
+        "이번 주식 옵션은 CFO 수잔 리, 기술 책임자 앤드류 보스워스 등을 포함하며, 목표 달성 시 단기적 이익을 얻을 수 있습니다.",
+        "메타는 올해 최대 1,350억 달러를 자본 지출에 투입할 계획입니다."
       ],
-      "whyImportant": "중동 지역의 지정학적 불안정이 데이터 센터 운영 및 클라우드 서비스 제공에 지속적인 위험을 초래할 수 있음을 시사합니다.",
-      "importanceRationale": "근거: AWS 시설이 드론 공격을 받아 물리적 손상을 입었고, 이로 인해 UAE에서 앱 및 디지털 서비스 중단이 발생했다는 점에서 중요도 3으로 판단됩니다.",
+      "whyImportant": "이번 주식 옵션 부여는 메타가 AI 분야에서 경쟁력을 확보하기 위한 적극적인 투자 전략의 일환으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 메타는 AI 시장에서 경쟁 우위를 확보하기 위해 주요 임원들에게 주식 옵션을 부여하고, 올해 최대 1,350억 달러의 자본 지출을 계획하고 있습니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "In the UAE, two AWS facilities were directly struck by drones."
+          "label": "policy",
+          "evidence": "While OpenAI, Anthropic and Google have rolled out popular AI models and features, Meta has struggled to find a consistent strategy even as it plans to shell out up to $135 billion this year in capital expenditures."
         }
       ],
-      "dedupeKey": "aws-당국-분쟁-서비스-아마존-이란-중동-직면",
-      "clusterKey": "아마존/분쟁/서비스",
+      "dedupeKey": "강화-경쟁력-메타-부여-옵션-임원-주식-주요",
+      "clusterKey": "메타/경쟁력/주요",
       "matchedTo": null,
       "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/24/amazon-aws-disruption-in-bahrain-iran.html",
-      "publishedAt": "2026-03-24T07:57:18+00:00",
+      "sourceUrl": "https://www.cnbc.com/2026/03/24/meta-offers-stock-awards-options-for-executives-aggressive-timing.html",
+      "publishedAt": "2026-03-25T02:44:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -37,29 +37,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-25_2",
-      "date": "2026-03-25",
-      "category": "금융",
-      "title": "미래에셋증권, 사상 최대 실적 바탕으로 역대급 주주 환원 결정",
+      "id": "2026-03-26_2",
+      "date": "2026-03-26",
+      "category": "기술",
+      "title": "MS, 텍사스 '스타게이트 데이터센터' 확보",
       "summary": [
-        "미래에셋증권은 지난해 사상 최대 실적을 바탕으로 6347억원 규모의 주주 환원을 단행했습니다.",
-        "여기에는 현금 배당, 주식 배당, 자사주 소각 등이 포함됩니다.",
-        "또한, AI 핵심 인력에게 파격적인 스톡옵션을 부여하고 박현주 GSO에 대한 보상 체계 마련 제안도 있었습니다."
+        "마이크로소프트(MS)가 텍사스주 애빌린에 건설 중인 700MW 규모의 AI 데이터센터를 임대하는 계약을 체결했습니다.",
+        "해당 부지는 원래 오픈AI와 오라클의 초대형 AI 인프라 프로젝트 '스타게이트'의 일부로 활용될 예정이었습니다.",
+        "MS는 올해 서버 임대에 500억 달러를 투입하여 데이터센터를 공격적으로 확보하고 있습니다."
       ],
-      "whyImportant": "미래에셋증권의 대규모 주주 환원 결정은 투자 전략 및 기업 가치에 대한 중요한 시사점을 제공합니다.",
-      "importanceRationale": "근거: 미래에셋증권은 작년 당기순이익의 약 40%에 달하는 6347억원 규모의 주주환원을 결정했으며, 이는 투자 및 기업 가치에 영향을 미칠 수 있습니다.",
+      "whyImportant": "데이터센터 확보 경쟁 심화와 AI 인프라 투자의 중요성을 보여주는 사례입니다.",
+      "importanceRationale": "근거: MS가 700MW 규모 데이터센터 임대 계약을 체결하고, 올해 서버 임대에 500억 달러를 투자하는 것은 AI 인프라 투자의 중요성을 시사합니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "최대 실적 미래에셋證 역대급 주주환원 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 배당·자사주 소각 등 6400억원 작년 순이익 40% 달하는 규모 AI 인력 1인당 20억 스톡옵션 주주들 \"경영성과 보상안 필요\" 작년 순이익 40% 달하는 규모 AI 인력 1인당 20억 스톡옵션 주주들 \"경영성과 보상안 필요\" 미래에셋증권이 총 6347억원 규모의 역대 최대 규모 주주환원을 단행했다."
+          "label": "capex",
+          "evidence": "MS는 올 들어 서버 임대에 500억달러를 투입, 클라우드 고객의 수요와 자체 AI 툴과 프로그램 개발을 위한 데이터센터를 공격적으로 확보하고 있다."
         }
       ],
-      "dedupeKey": "6347억원-미래에셋증권-바탕-사상-실적-역대급-최대-환원",
-      "clusterKey": "실적/미래에셋증권",
+      "dedupeKey": "500억-700mw-데이터센터-마이크로소프트-스타게이트-일부-텍사스-확보",
+      "clusterKey": "텍사스/스타게이트/확보",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026032436511",
-      "publishedAt": "2026-03-24T08:20:48+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202603255921i",
+      "publishedAt": "2026-03-25T06:37:29+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -68,28 +68,64 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-25_3",
-      "date": "2026-03-25",
-      "category": "기술",
-      "title": "인권위, 북한군 포로 입국 권고 의결 실패",
+      "id": "2026-03-26_3",
+      "date": "2026-03-26",
+      "category": "금융",
+      "title": "펄어비스 '붉은사막', 출시 초반 흥행으로 올해 매출 4200억원 전망",
       "summary": [
-        "국가인권위원회가 우크라이나에 억류된 북한군 포로의 대한민국 입국을 위한 인도적 조치 권고안 의결에 실패했습니다.",
-        "외교부가 적극적인 조치를 하겠다는 공문을 보내 현재 상황을 파악 후 의결해야 한다는 의견이 있었습니다."
+        "펄어비스의 '붉은사막'이 출시 4일 만에 글로벌 판매 300만 장을 넘었습니다.",
+        "NH투자증권은 붉은사막의 올해 판매량 추정치를 최대 526만 장으로 상향 조정했습니다.",
+        "이에 따라 올해 매출액은 최대 4200억 원에 달할 것으로 예상됩니다."
       ],
-      "whyImportant": "이번 결정은 향후 북한군 포로 문제에 대한 정부와 관련 기관의 대응 방향에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 인권위가 외교부의 공문을 언급하며 추가 확인 절차를 이유로 권고안 의결을 보류하여, 향후 정책 결정에 영향을 줄 수 있기 때문입니다.",
+      "whyImportant": "붉은사막의 초반 흥행은 펄어비스의 실적 개선과 게임 산업 전반에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: NH투자증권은 붉은사막의 올해 판매량 추정치를 526만 장으로 상향 조정했으며, 이는 매출액 4200억 원에 달하는 규모입니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "이 위원은 권고 주문안으로 “외교부 장관, 통일부 장관, 국방부 장관, 국정원장에게 (북한군 포로의) 조기 석방 및 신속한 대한민국 입국 보호에 필요한 인도적 협의를 추진할 것을 권고한다”라는 내용을 제시했다."
+          "evidence": "펄어비스의 ‘붉은사막’이 출시 4일 만에 글로벌 판매 300만장을 넘기며 파란을 일으켰다."
         }
       ],
-      "dedupeKey": "국가인권위원회-권고-북한군-실패-의결-인권위-입국-포로",
-      "clusterKey": "인권위/북한군/포로",
+      "dedupeKey": "4200억원-nh투자증권-매출-붉은사막-올해-초반-펄어비스-흥행",
+      "clusterKey": "실적/펄어비스",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1250722.html",
-      "publishedAt": "2026-03-23T11:23:00+00:00",
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54053",
+      "publishedAt": "2026-03-25T05:26:45+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-26_4",
+      "date": "2026-03-26",
+      "category": "금융",
+      "title": "영림원소프트랩, 작년 매출 798억 원 기록",
+      "summary": [
+        "영림원소프트랩은 작년 연결 기준 매출액 약 798억 원, 영업이익 42억 원을 기록했습니다.",
+        "이는 전년 대비 매출은 27.7%, 순이익은 94.4% 증가한 수치입니다.",
+        "ERP 구축 수요 확대와 클라우드 사업 성장이 실적 개선의 원인이라고 회사는 밝혔습니다."
+      ],
+      "whyImportant": "영림원소프트랩의 실적 증가는 ERP 및 클라우드 시장의 성장과 기업의 디지털 전환 수요를 반영합니다.",
+      "importanceRationale": "근거: 매출이 전년 대비 27.7% 증가하고 순이익은 94.4% 증가한 것은 ERP 구축 수요 확대와 클라우드 사업 성장 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "영림원소프트랩은 지난해 연결기준 매출액 약 798억원과 영업이익 42억원, 당기순이익 63억원을 기록했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "회사는 이번 실적이 ERP 구축 수요 확대와 클라우드 사업 성장에 따른 결과라고 밝혔다."
+        }
+      ],
+      "dedupeKey": "42억-798억-기록-매출-영림원소프트랩-영업이익-작년-회사",
+      "clusterKey": "실적/영림원소프트랩",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54067",
+      "publishedAt": "2026-03-25T07:18:48+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -98,17 +134,145 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-25_4",
-      "date": "2026-03-25",
+      "id": "2026-03-26_5",
+      "date": "2026-03-26",
+      "category": "에너지",
+      "title": "Arbor Energy, 전력망에 로켓 터빈 기술 도입 위해 10억 달러 규모 주문 확보",
+      "summary": [
+        "에너지 스타트업 A E gy는 데이터 센터 및 산업 사용자를 위한 전력 프로젝트를 지원하는 G idM ket에 최대 5기가와트 규모의 모듈형 터빈을 판매했다고 발표했습니다.",
+        "이번 계약은 A 의 H 터빈 200대에 해당하며, 첫 번째 터빈은 2028년에 전력망에 연결될 예정입니다.",
+        "H 터빈은 원래 우주 비행을 위해 개발된 고성능 엔진 기술인 로켓 터보 기계 기술을 기반으로 합니다."
+      ],
+      "whyImportant": "데이터 센터 수요 증가에 따라 전력 인프라 기술 경쟁이 심화될 수 있음을 시사합니다.",
+      "importanceRationale": "근거: Arbor Energy가 GridMarket으로부터 최대 5기가와트 규모의 터빈 주문을 확보했으며, 이는 향후 전력 시장에 영향을 미칠 수 있는 대규모 계약입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Arbor’s initial designs intended for Halcyon to subsist on a vegetarian diet — the power plant would ingest organic material like crop waste and wood scraps from farms and timber operations, which would be turned into syngas — a combustible gas mixture — and burned in the presence of pure oxygen."
+        },
+        {
+          "label": "policy",
+          "evidence": "Neither company disclosed the exact price of the deal, though Hartwig said that Arbor has seen a “willingness to pay upwards of $100 per megawatt-hour.” A person familiar with the deal told TechCrunch that the total is in the single-digit billions of dollars."
+        }
+      ],
+      "dedupeKey": "10억-arbor-energy-기술-도입-로켓-전력망-터빈",
+      "clusterKey": "에너지/arbor",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/25/arbor-energy-just-landed-a-billion-dollar-order-to-bring-rocket-turbine-tech-to-the-power-grid/",
+      "publishedAt": "2026-03-25T14:17:46+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-26_6",
+      "date": "2026-03-26",
+      "category": "기술",
+      "title": "정부, 재택근무 의무화 검토 안 함…개인 선택 강조",
+      "summary": [
+        "정부는 재택근무 의무화를 검토하지 않고 있으며, 연료 부족 우려 속에서 개인의 선택을 강조하고 있습니다.",
+        "SBS 강령은 편집의 독립성과 진실성을 보장하기 위한 원칙과 정책을 규정합니다."
+      ],
+      "whyImportant": "정부의 재택근무 관련 정책 방향은 기업의 업무 방식 및 에너지 소비에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 정부의 정책 결정에 대한 내용이므로 중요도는 3입니다.",
+      "impactSignals": [],
+      "dedupeKey": "개인-검토하지-보장하기-선택-않고-의무화-재택근무-정부",
+      "clusterKey": "정책/재택근무",
+      "matchedTo": null,
+      "sourceName": "SBS",
+      "sourceUrl": "https://www.sbs.com.au/audio",
+      "publishedAt": "2026-03-24T03:41:21+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-26_7",
+      "date": "2026-03-26",
+      "category": "에너지",
+      "title": "방글라데시, 에너지난에 첫 원전 1호기 가동 서둘러",
+      "summary": [
+        "방글라데시가 중동 전쟁으로 인한 에너지난 극복을 위해 첫 원자력발전소 1호기 가동을 서두르기로 했습니다.",
+        "다음 달 7일 핵연료를 장전하고 6월까지 가동률을 30%까지 끌어올릴 계획입니다."
+      ],
+      "whyImportant": "에너지 수급 불안정성이 심화되는 상황에서, 방글라데시의 원전 가동은 에너지 정책의 중요한 전환점이 될 수 있습니다.",
+      "importanceRationale": "근거: 방글라데시는 가스 발전으로 전력 수요의 절반을 충족해 왔으나, 호르무즈 해협 봉쇄로 가스 조달에 어려움을 겪어 1.2기가와트 규모의 원전 1호기 가동을 서두르고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이런 가운데 방글라데시 당국은 전날 항공기 운항에 쓰이는 제트 연료의 리터당 가격을 202.29 타카(약 2천470원)로 약 80% 인상했다."
+        }
+      ],
+      "dedupeKey": "1호기-가동-방글라데시-서두르기-서둘러-에너지난-원자력발전소-원전",
+      "clusterKey": "방글라데시/에너지난/1호기",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329317",
+      "publishedAt": "2026-03-25T01:53:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-26_8",
+      "date": "2026-03-26",
+      "category": "에너지",
+      "title": "카타르, LNG 공급 불가항력 선언…에너지 비상 체계 가동",
+      "summary": [
+        "카타르가 한국을 포함한 주요 수입국에 LNG 장기 공급 물량에 대한 불가항력을 선언했습니다.",
+        "이란 공격으로 가스 시설이 파손되었기 때문이며, 한국은 카타르에서 LNG 수입량의 약 15%를 차지합니다."
+      ],
+      "whyImportant": "LNG 공급 차질은 국내 에너지 수급 및 요금에 장기적으로 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 한국 LNG 수입량의 약 15%를 차지하는 카타르의 공급 중단은 국내 에너지 시장에 직접적인 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "또 한 명의 컷오프가 된 이진숙 전 방통위원장, 연이틀 자신의 컷오프에 대한 반발 기자회견을 열고 자신에 대한 컷오프 재고 요청에 나섰는데요."
+        },
+        {
+          "label": "capex",
+          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김유동(kimpd@yna.co.kr)"
+        },
+        {
+          "label": "security",
+          "evidence": "이란의 공격으로 가스 시설이 크게 파손됐기 때문인데요."
+        }
+      ],
+      "dedupeKey": "lng-공급-불가항력-비상-선언-에너지-체계-카타르",
+      "clusterKey": "에너지/카타르",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329346",
+      "publishedAt": "2026-03-25T02:07:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-26_9",
+      "date": "2026-03-26",
       "category": "에너지",
       "title": "중동 전쟁 격화로 해상·항공 운임 급등",
       "summary": [
-        "중동 전쟁 격화로 유조선 운임이 78.3％, LNG선 운임은 4배까지 급등했습니다.",
-        "컨테이너선 운임도 상승세를 보이며 수출 기업의 물류비 부담이 커지고 있습니다.",
-        "항공 화물 운임 역시 상승세를 이어가고 있습니다."
+        "중동 전쟁의 격화로 유조선 운임이 78.3％, LNG선 운임은 4배까지 급등했습니다.",
+        "컨테이너선 운임도 상승세를 보이는 가운데, 항공 화물 운임 역시 가파르게 오르고 있습니다.",
+        "물류비 상승으로 국내 수출 기업의 부담이 커지고 있다는 우려가 제기됩니다."
       ],
-      "whyImportant": "중동 지역 불안정으로 인한 운임 상승은 국내 수출 기업의 비용 부담을 가중시키고, 에너지 수급에도 영향을 줄 수 있어 중요합니다.",
-      "importanceRationale": "근거: 유조선 운임이 전쟁 발발 직전 대비 78.3％ 급등했고, LNG선 운임은 4배 상승했으며, 중동 노선 컨테이너 운임은 2.5배 수준으로 올라 국내 산업계의 운송 차질 및 물류비 상승 부담이 커지고 있습니다.",
+      "whyImportant": "중동 지역 불안정으로 인한 물류비 상승은 국내 수출 기업의 경쟁력 약화로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 유조선 운임이 전쟁 발발 직전 대비 78.3％ 급등하고, LNG선 운임은 4배 상승하는 등 해상 운임이 급등하여 국내 수출 기업에 부담을 주고 있기 때문입니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -132,102 +296,6 @@
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-25_5",
-      "date": "2026-03-25",
-      "category": "에너지",
-      "title": "이란, UAE 바라카 원전 공격 표적 언급",
-      "summary": [
-        "이란 매체가 UAE 아부다비의 바라카 원자력발전소를 이란군의 공격 표적으로 언급했습니다.",
-        "걸프 지역 발전소 외 두바이 태양광 발전소, 카타르 담수화 시설 등도 표적으로 거론되었습니다.",
-        "이란은 '이란의 전력 인프라 공격 시 중동 전체가 암흑으로 빠질 것'이라고 경고했습니다."
-      ],
-      "whyImportant": "중동 지역의 지정학적 긴장 고조는 에너지 인프라에 대한 잠재적 위협을 증가시켜, 에너지 시장 및 관련 산업에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 이란 매체가 UAE 바라카 원전을 포함한 걸프 지역 10개 발전소를 공격 대상으로 언급하며 긴장도를 높이고 있어 중요도 3으로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "기자 : 김예린 오디오 : AI 더빙 제작 : 이준흠 #이란 #이스라엘 #원전 #UAE #바라카 #미사일 #카타르 #전력인프라 #중동 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)"
-        },
-        {
-          "label": "security",
-          "evidence": "또 '중동 내 큰 발전소의 80%가 페르시아만 해안에 세워졌고 이란에서 이 해안까지 거리는 50㎞가 채 안 된다'며 이들 전력 인프라 모두가 이란의 조준경 안에 있다는 뜻'이라고 위협했습니다."
-        }
-      ],
-      "dedupeKey": "uae-공격-바라카-아부다비-원자력발전소-원전-이란-표적",
-      "clusterKey": "에너지/uae",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328348",
-      "publishedAt": "2026-03-23T08:35:59+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-25_6",
-      "date": "2026-03-25",
-      "category": "금융",
-      "title": "500대 기업 영업이익 24% 증가, 반도체 제외 시 7% 성장",
-      "summary": [
-        "지난해 국내 500대 상장사 영업이익이 24% 증가했으나, SK하이닉스와 삼성전자를 제외하면 7% 성장에 그쳤습니다.",
-        "두 회사의 영업이익은 전체 증가액의 78.7%를 차지하며 높은 성장세를 보였습니다.",
-        "기아는 영업이익이 가장 크게 감소했으며, 현대차와 삼성SDI도 감소세를 보였습니다."
-      ],
-      "whyImportant": "반도체 산업의 실적이 전체 기업 실적에 미치는 영향이 크다는 것을 보여주는 지표입니다.",
-      "importanceRationale": "근거: SK하이닉스와 삼성전자의 영업이익 증가액이 전체 조사 대상 기업의 지난해 영업이익 증가액 중 78.7%를 차지한다는 점에서 중요성을 확인할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "지난해 국내 500대 상장사의 영업이익이 급증했지만, SK하이닉스와 삼성전자 등 '반도체 투 톱'을 제외한 성장 폭은 제한적인 것으로 나타났다."
-        }
-      ],
-      "dedupeKey": "500대-기업-반도체-성장-영업이익-제외-증가-회사",
-      "clusterKey": "실적/500대",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329122",
-      "publishedAt": "2026-03-24T21:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-25_7",
-      "date": "2026-03-25",
-      "category": "에너지",
-      "title": "LNG 가격 상승 우려, 가스 공급 위기",
-      "summary": [
-        "이란이 카타르 LNG 시설 피격으로 국내 LNG 공급 차질 우려가 커지고 있습니다.",
-        "산업통상부는 카타르산 LNG의 전면 중단 가능성에 대비해 추가 물량을 확보했다고 밝혔습니다."
-      ],
-      "whyImportant": "LNG 공급 차질은 에너지 가격 상승과 장기적인 수급 불안으로 이어질 수 있습니다.",
-      "importanceRationale": "근거: 산업통상부가 카타르산 LNG의 전면 중단 가능성을 염두에 두고 추가 물량을 확보한 상황이며, 연말까지는 충분한 물량이 있다고 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "연말까지는 충분한 물량이 있다고 판단되지만, 에너지 가격 상승과 장기적으로 수급 압박 가능성이 있어 그 부분을 잘 살피고 있다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "lng-가격-가스-공급-산업통상부-상승-위기-카타르산",
-      "clusterKey": "가스/위기/카타르",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328245",
-      "publishedAt": "2026-03-23T05:46:49+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

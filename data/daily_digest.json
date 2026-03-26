@@ -1,96 +1,38 @@
 {
-  "date": "2026-03-26",
+  "date": "2026-03-27",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-26T08:06:41.665851+09:00",
+  "lastUpdatedAt": "2026-03-27T08:00:58.400163+09:00",
   "items": [
     {
-      "id": "2026-03-26_1",
-      "date": "2026-03-26",
-      "category": "기술",
-      "title": "메타, AI 경쟁력 강화를 위해 주요 임원에게 주식 옵션 부여",
+      "id": "2026-03-27_1",
+      "date": "2026-03-27",
+      "category": "산업",
+      "title": "정부, 유류세 추가 인하 및 나프타 수출 통제",
       "summary": [
-        "메타가 인공지능 분야에서의 경쟁력 강화를 위해 주요 임원들에게 주식 옵션을 부여했습니다.",
-        "이번 주식 옵션은 CFO 수잔 리, 기술 책임자 앤드류 보스워스 등을 포함하며, 목표 달성 시 단기적 이익을 얻을 수 있습니다.",
-        "메타는 올해 최대 1,350억 달러를 자본 지출에 투입할 계획입니다."
+        "정부는 국제유가 상승에 따른 국민 부담을 줄이기 위해 유류세를 추가 인하하기로 했습니다.",
+        "휘발유는 리터당 65원, 경유는 87원이 추가 인하되며, 5월 31일까지 적용됩니다.",
+        "또한, 나프타 수급 안정을 위해 수출 통제 등 긴급 수급 조정 조치를 시행할 예정입니다."
       ],
-      "whyImportant": "이번 주식 옵션 부여는 메타가 AI 분야에서 경쟁력을 확보하기 위한 적극적인 투자 전략의 일환으로 해석될 수 있습니다.",
-      "importanceRationale": "근거: 메타는 AI 시장에서 경쟁 우위를 확보하기 위해 주요 임원들에게 주식 옵션을 부여하고, 올해 최대 1,350억 달러의 자본 지출을 계획하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "While OpenAI, Anthropic and Google have rolled out popular AI models and features, Meta has struggled to find a consistent strategy even as it plans to shell out up to $135 billion this year in capital expenditures."
-        }
-      ],
-      "dedupeKey": "강화-경쟁력-메타-부여-옵션-임원-주식-주요",
-      "clusterKey": "메타/경쟁력/주요",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/24/meta-offers-stock-awards-options-for-executives-aggressive-timing.html",
-      "publishedAt": "2026-03-25T02:44:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-26_2",
-      "date": "2026-03-26",
-      "category": "기술",
-      "title": "MS, 텍사스 '스타게이트 데이터센터' 확보",
-      "summary": [
-        "마이크로소프트(MS)가 텍사스주 애빌린에 건설 중인 700MW 규모의 AI 데이터센터를 임대하는 계약을 체결했습니다.",
-        "해당 부지는 원래 오픈AI와 오라클의 초대형 AI 인프라 프로젝트 '스타게이트'의 일부로 활용될 예정이었습니다.",
-        "MS는 올해 서버 임대에 500억 달러를 투입하여 데이터센터를 공격적으로 확보하고 있습니다."
-      ],
-      "whyImportant": "데이터센터 확보 경쟁 심화와 AI 인프라 투자의 중요성을 보여주는 사례입니다.",
-      "importanceRationale": "근거: MS가 700MW 규모 데이터센터 임대 계약을 체결하고, 올해 서버 임대에 500억 달러를 투자하는 것은 AI 인프라 투자의 중요성을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "MS는 올 들어 서버 임대에 500억달러를 투입, 클라우드 고객의 수요와 자체 AI 툴과 프로그램 개발을 위한 데이터센터를 공격적으로 확보하고 있다."
-        }
-      ],
-      "dedupeKey": "500억-700mw-데이터센터-마이크로소프트-스타게이트-일부-텍사스-확보",
-      "clusterKey": "텍사스/스타게이트/확보",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603255921i",
-      "publishedAt": "2026-03-25T06:37:29+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-26_3",
-      "date": "2026-03-26",
-      "category": "금융",
-      "title": "펄어비스 '붉은사막', 출시 초반 흥행으로 올해 매출 4200억원 전망",
-      "summary": [
-        "펄어비스의 '붉은사막'이 출시 4일 만에 글로벌 판매 300만 장을 넘었습니다.",
-        "NH투자증권은 붉은사막의 올해 판매량 추정치를 최대 526만 장으로 상향 조정했습니다.",
-        "이에 따라 올해 매출액은 최대 4200억 원에 달할 것으로 예상됩니다."
-      ],
-      "whyImportant": "붉은사막의 초반 흥행은 펄어비스의 실적 개선과 게임 산업 전반에 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: NH투자증권은 붉은사막의 올해 판매량 추정치를 526만 장으로 상향 조정했으며, 이는 매출액 4200억 원에 달하는 규모입니다.",
+      "whyImportant": "이번 조치는 유가 변동에 민감한 국내 산업과 소비자 부담에 직접적인 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 정부는 3월 27일부터 유류세를 추가 인하하고, 나프타 수출 통제 조치를 시행하여 국내 수급 안정화를 도모할 계획입니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "펄어비스의 ‘붉은사막’이 출시 4일 만에 글로벌 판매 300만장을 넘기며 파란을 일으켰다."
+          "evidence": "YTN 김호준 (hojkim@ytn.co.kr) ※ '당신의 제보가 뉴스가 됩니다' [카카오톡] YTN 검색해 채널 추가 [전화] 02-398-8585 [메일] social@ytn.co.kr [저작권자(c) YTN 무단전재, 재배포 및 AI 데이터 활용 금지] 국제유가 상승에 따라 석유제품 최고가격이 일부 올라갈 전망인 가운데 정부가 국민부담을 최소화 하기 위해 유류세를 추가 인하하기로 했습니다."
+        },
+        {
+          "label": "sanctions",
+          "evidence": "[기자] 네, 정부는 수급 비상이 걸린 나프타 수출통제 등 긴급 수급조정 조치를 내일 0시부터 시행합니다."
         }
       ],
-      "dedupeKey": "4200억원-nh투자증권-매출-붉은사막-올해-초반-펄어비스-흥행",
-      "clusterKey": "실적/펄어비스",
+      "dedupeKey": "65원-87원-나프타-수출-유류세-인하-정부-통제",
+      "clusterKey": "유류세/인하/나프타",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54053",
-      "publishedAt": "2026-03-25T05:26:45+00:00",
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0102_202603261535355774",
+      "publishedAt": "2026-03-26T06:35:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -99,33 +41,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-26_4",
-      "date": "2026-03-26",
-      "category": "금융",
-      "title": "영림원소프트랩, 작년 매출 798억 원 기록",
+      "id": "2026-03-27_2",
+      "date": "2026-03-27",
+      "category": "국제",
+      "title": "국제 유가, 이란 전쟁 종전 협상 기대감에 2% 하락",
       "summary": [
-        "영림원소프트랩은 작년 연결 기준 매출액 약 798억 원, 영업이익 42억 원을 기록했습니다.",
-        "이는 전년 대비 매출은 27.7%, 순이익은 94.4% 증가한 수치입니다.",
-        "ERP 구축 수요 확대와 클라우드 사업 성장이 실적 개선의 원인이라고 회사는 밝혔습니다."
+        "미국이 이란 전쟁 종결을 위한 협상을 진행 중이라는 기대감에 국제 유가가 하락했습니다.",
+        "5월 인도분 브렌트유 선물 종가는 배럴당 102.22달러로 2.2% 하락했습니다."
       ],
-      "whyImportant": "영림원소프트랩의 실적 증가는 ERP 및 클라우드 시장의 성장과 기업의 디지털 전환 수요를 반영합니다.",
-      "importanceRationale": "근거: 매출이 전년 대비 27.7% 증가하고 순이익은 94.4% 증가한 것은 ERP 구축 수요 확대와 클라우드 사업 성장 때문입니다.",
+      "whyImportant": "국제 유가 변동은 에너지 시장 전반에 영향을 미치고, 관련 산업 및 소비자 물가에 파급 효과를 미칠 수 있습니다.",
+      "importanceRationale": "근거: 5월 인도분 브렌트유 선물 가격이 2.2% 하락한 것은 단기적인 시장 변화를 보여주지만, 협상 진행 여부에 따라 유가 변동성이 커질 수 있습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "영림원소프트랩은 지난해 연결기준 매출액 약 798억원과 영업이익 42억원, 당기순이익 63억원을 기록했다."
-        },
-        {
           "label": "market-demand",
-          "evidence": "회사는 이번 실적이 ERP 구축 수요 확대와 클라우드 사업 성장에 따른 결과라고 밝혔다."
+          "evidence": "미국이 이란 전쟁을 끝내기 위해 협상을 이어가고 있다는 기대감에 국제유가가 내림세를 이어갔습니다."
         }
       ],
-      "dedupeKey": "42억-798억-기록-매출-영림원소프트랩-영업이익-작년-회사",
-      "clusterKey": "실적/영림원소프트랩",
+      "dedupeKey": "국제-기대감-유가-이란-전쟁-종전-하락-협상",
+      "clusterKey": "관세/국제",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54067",
-      "publishedAt": "2026-03-25T07:18:48+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330017",
+      "publishedAt": "2026-03-26T02:48:24+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -134,106 +71,47 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-26_5",
-      "date": "2026-03-26",
-      "category": "에너지",
-      "title": "Arbor Energy, 전력망에 로켓 터빈 기술 도입 위해 10억 달러 규모 주문 확보",
+      "id": "2026-03-27_3",
+      "date": "2026-03-27",
+      "category": "기술",
+      "title": "메타, 서부 텍사스 AI 데이터 센터 투자 100억 달러로 확대",
       "summary": [
-        "에너지 스타트업 A E gy는 데이터 센터 및 산업 사용자를 위한 전력 프로젝트를 지원하는 G idM ket에 최대 5기가와트 규모의 모듈형 터빈을 판매했다고 발표했습니다.",
-        "이번 계약은 A 의 H 터빈 200대에 해당하며, 첫 번째 터빈은 2028년에 전력망에 연결될 예정입니다.",
-        "H 터빈은 원래 우주 비행을 위해 개발된 고성능 엔진 기술인 로켓 터보 기계 기술을 기반으로 합니다."
+        "메타는 서부 텍사스에 건설 중인 AI 데이터 센터에 대한 투자 규모를 100억 달러로 확대한다고 발표했습니다.",
+        "이 데이터 센터는 2028년 가동 시 1기가와트의 용량을 목표로 하며, 300개의 새로운 일자리를 창출할 것으로 예상됩니다.",
+        "메타는 또한 5,000 메가와트 이상의 청정 전력을 추가하고, 물 부족 문제 해결을 위해 노력할 것이라고 밝혔습니다."
       ],
-      "whyImportant": "데이터 센터 수요 증가에 따라 전력 인프라 기술 경쟁이 심화될 수 있음을 시사합니다.",
-      "importanceRationale": "근거: Arbor Energy가 GridMarket으로부터 최대 5기가와트 규모의 터빈 주문을 확보했으며, 이는 향후 전력 시장에 영향을 미칠 수 있는 대규모 계약입니다.",
+      "whyImportant": "AI 인프라 투자는 장기적으로 컴퓨팅 자원에 대한 수요 증가에 대응하고, 관련 기술 경쟁력을 강화하는 데 중요한 역할을 할 것입니다.",
+      "importanceRationale": "근거: 메타는 AI 데이터 센터에 대한 투자를 100억 달러로 확대하고, 2028년까지 1기가와트 용량을 목표로 하는 등 대규모 투자를 진행하고 있습니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "Arbor’s initial designs intended for Halcyon to subsist on a vegetarian diet — the power plant would ingest organic material like crop waste and wood scraps from farms and timber operations, which would be turned into syngas — a combustible gas mixture — and burned in the presence of pure oxygen."
-        },
-        {
-          "label": "policy",
-          "evidence": "Neither company disclosed the exact price of the deal, though Hartwig said that Arbor has seen a “willingness to pay upwards of $100 per megawatt-hour.” A person familiar with the deal told TechCrunch that the total is in the single-digit billions of dollars."
+          "evidence": "Meta is boosting its spending commitment on a forthcoming AI data center in West Texas by more than sixfold to $10 billion, with an aim to reach 1 gigawatt of capacity by the time the facility comes online in 2028, the company said on Thursday."
         }
       ],
-      "dedupeKey": "10억-arbor-energy-기술-도입-로켓-전력망-터빈",
-      "clusterKey": "에너지/arbor",
+      "dedupeKey": "100억-달러-데이터-메타-서부-센터-텍사스-투자",
+      "clusterKey": "투자/메타",
       "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/25/arbor-energy-just-landed-a-billion-dollar-order-to-bring-rocket-turbine-tech-to-the-power-grid/",
-      "publishedAt": "2026-03-25T14:17:46+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/26/meta-to-spend-10-billion-on-ai-data-center-in-el-paso-1gw-by-2028.html",
+      "publishedAt": "2026-03-26T19:00:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-26_6",
-      "date": "2026-03-26",
-      "category": "기술",
-      "title": "정부, 재택근무 의무화 검토 안 함…개인 선택 강조",
-      "summary": [
-        "정부는 재택근무 의무화를 검토하지 않고 있으며, 연료 부족 우려 속에서 개인의 선택을 강조하고 있습니다.",
-        "SBS 강령은 편집의 독립성과 진실성을 보장하기 위한 원칙과 정책을 규정합니다."
-      ],
-      "whyImportant": "정부의 재택근무 관련 정책 방향은 기업의 업무 방식 및 에너지 소비에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 정부의 정책 결정에 대한 내용이므로 중요도는 3입니다.",
-      "impactSignals": [],
-      "dedupeKey": "개인-검토하지-보장하기-선택-않고-의무화-재택근무-정부",
-      "clusterKey": "정책/재택근무",
-      "matchedTo": null,
-      "sourceName": "SBS",
-      "sourceUrl": "https://www.sbs.com.au/audio",
-      "publishedAt": "2026-03-24T03:41:21+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-26_7",
-      "date": "2026-03-26",
+      "id": "2026-03-27_4",
+      "date": "2026-03-27",
       "category": "에너지",
-      "title": "방글라데시, 에너지난에 첫 원전 1호기 가동 서둘러",
+      "title": "카타르, LNG 공급 중단…비상체계 가동 지시",
       "summary": [
-        "방글라데시가 중동 전쟁으로 인한 에너지난 극복을 위해 첫 원자력발전소 1호기 가동을 서두르기로 했습니다.",
-        "다음 달 7일 핵연료를 장전하고 6월까지 가동률을 30%까지 끌어올릴 계획입니다."
-      ],
-      "whyImportant": "에너지 수급 불안정성이 심화되는 상황에서, 방글라데시의 원전 가동은 에너지 정책의 중요한 전환점이 될 수 있습니다.",
-      "importanceRationale": "근거: 방글라데시는 가스 발전으로 전력 수요의 절반을 충족해 왔으나, 호르무즈 해협 봉쇄로 가스 조달에 어려움을 겪어 1.2기가와트 규모의 원전 1호기 가동을 서두르고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "이런 가운데 방글라데시 당국은 전날 항공기 운항에 쓰이는 제트 연료의 리터당 가격을 202.29 타카(약 2천470원)로 약 80% 인상했다."
-        }
-      ],
-      "dedupeKey": "1호기-가동-방글라데시-서두르기-서둘러-에너지난-원자력발전소-원전",
-      "clusterKey": "방글라데시/에너지난/1호기",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329317",
-      "publishedAt": "2026-03-25T01:53:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-26_8",
-      "date": "2026-03-26",
-      "category": "에너지",
-      "title": "카타르, LNG 공급 불가항력 선언…에너지 비상 체계 가동",
-      "summary": [
-        "카타르가 한국을 포함한 주요 수입국에 LNG 장기 공급 물량에 대한 불가항력을 선언했습니다.",
+        "카타르가 한국을 포함한 주요 수입국과의 LNG 장기 공급 계약에 대해 불가항력을 선언했습니다.",
         "이란 공격으로 가스 시설이 파손되었기 때문이며, 한국은 카타르에서 LNG 수입량의 약 15%를 차지합니다."
       ],
       "whyImportant": "LNG 공급 차질은 국내 에너지 수급 및 요금에 장기적으로 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 한국 LNG 수입량의 약 15%를 차지하는 카타르의 공급 중단은 국내 에너지 시장에 직접적인 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 한국 LNG 수입량의 약 15%를 카타르에 의존하고 있어 공급 중단 사태가 장기화될 경우 국내 가스 및 전기 요금에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -248,8 +126,8 @@
           "evidence": "이란의 공격으로 가스 시설이 크게 파손됐기 때문인데요."
         }
       ],
-      "dedupeKey": "lng-공급-불가항력-비상-선언-에너지-체계-카타르",
-      "clusterKey": "에너지/카타르",
+      "dedupeKey": "lng-가동-공급-불가항력-비상체계-수입국-카타르-한국",
+      "clusterKey": "카타르/중단/비상체계",
       "matchedTo": null,
       "sourceName": "연합",
       "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329346",
@@ -262,37 +140,151 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-26_9",
-      "date": "2026-03-26",
-      "category": "에너지",
-      "title": "중동 전쟁 격화로 해상·항공 운임 급등",
+      "id": "2026-03-27_5",
+      "date": "2026-03-27",
+      "category": "정책",
+      "title": "금융위, 토큰증권에 퍼블릭 블록체인 도입 신중해야",
       "summary": [
-        "중동 전쟁의 격화로 유조선 운임이 78.3％, LNG선 운임은 4배까지 급등했습니다.",
-        "컨테이너선 운임도 상승세를 보이는 가운데, 항공 화물 운임 역시 가파르게 오르고 있습니다.",
-        "물류비 상승으로 국내 수출 기업의 부담이 커지고 있다는 우려가 제기됩니다."
+        "토큰증권법 시행을 앞두고 제도 정비 필요성이 제기되었으며, 시장 확대를 위해 규제 완화와 제도적 유연성이 필요하다는 의견이 나왔습니다.",
+        "금융위원회는 토큰증권에 퍼블릭 블록체인 도입 시 거버넌스 측면에서 추가 검토가 필요하다는 입장을 밝혔습니다.",
+        "토큰증권 시장 활성화를 위한 기초자산 영역 확대에는 공감했습니다."
       ],
-      "whyImportant": "중동 지역 불안정으로 인한 물류비 상승은 국내 수출 기업의 경쟁력 약화로 이어질 수 있습니다.",
-      "importanceRationale": "근거: 유조선 운임이 전쟁 발발 직전 대비 78.3％ 급등하고, LNG선 운임은 4배 상승하는 등 해상 운임이 급등하여 국내 수출 기업에 부담을 주고 있기 때문입니다.",
+      "whyImportant": "토큰증권 시장의 제도적 기반 마련과 관련된 정책 방향에 영향을 줄 수 있기 때문입니다.",
+      "importanceRationale": "근거: 토큰증권법이 내년 1월 시행 예정인 가운데, 금융위가 퍼블릭 블록체인 도입에 신중한 입장을 밝히고 기초자산 확대에는 공감하여 정책 방향에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "최고운 한국투자증권 연구원은 \"(중동 전쟁으로) 호르무즈 해협뿐만 아니라 하늘길도 막혀버린 만큼 물류대란 수혜는 항공화물 시장으로도 이어질 전망\"이라고 밝혔다."
+          "label": "policy",
+          "evidence": "첫 발 디딘 '토큰증권'…금융위 \"퍼블릭 블록체인 도입 신중해야\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 '토큰증권 제도적 과제' 세미나 토큰증권법, 내년 1월 시행 업계 \"시장 확대 위해 규제 완화해야\" 금융위 \"퍼블릭 블록체인 도입은 신중\" 토큰증권법, 내년 1월 시행 업계 \"시장 확대 위해 규제 완화해야\" 금융위 \"퍼블릭 블록체인 도입은 신중\" 토큰증권(STO)법이 본격 시행되기 전 관련 제도 정비가 필요하다는 제언이 나왔다."
         },
         {
-          "label": "market-demand",
-          "evidence": "아시아발 고부가가치 화물 수요가 반영되는 싱가포르발 운임 지표도 362로 한 주 사이 4.6% 올랐고, 전년 동기 대비 54.7% 상승했다."
-        },
-        {
-          "label": "security",
-          "evidence": "발틱해운거래소에 따르면 유조선 운임지수(WS)는 지난 20일 중동∼중국 노선 초대형 유조선(VLCC)을 기준으로 400.6을 기록했다."
+          "label": "earnings",
+          "evidence": "이어 \"분산원장 기반에서 거래가 진행되다 보면 동일한 거래 기록이 여러 곳에 저장되는데, 기록에서 차이가 발생할 경우 어느 장부가 기준이 될 것인지 등 문제가 생길 수 있다\"라며 \"거래와 결제를 어떻게 처리할지 등 현실적인 문제들도 함께 논의될 필요가 있다\"고 덧붙였다."
         }
       ],
-      "dedupeKey": "4배-격화-급등-운임-전쟁-중동-항공-해상",
-      "clusterKey": "전쟁/격화/해상",
+      "dedupeKey": "금융위-금융위원회-도입-블록체인-신중해야-토큰증권-토큰증권법-퍼블릭",
+      "clusterKey": "정책/금융/퍼블릭",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603269101g",
+      "publishedAt": "2026-03-26T07:38:36+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-27_6",
+      "date": "2026-03-27",
+      "category": "기술",
+      "title": "전자책 할인 행사 정보",
+      "summary": [
+        "아마존의 봄맞이 세일 기간 동안 다양한 전자책 리더기를 할인된 가격으로 구매할 수 있습니다.",
+        "특히 코보 리브라 컬러와 같은 인기 모델을 저렴하게 구매할 기회입니다."
+      ],
+      "whyImportant": "전자책 시장의 수요 변화를 파악하는 데 참고 자료가 될 수 있습니다.",
+      "importanceRationale": "근거: 아마존의 봄맞이 세일에서 여러 전자책 리더기를 할인 판매한다는 내용이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "There are several great e-readers available at prices lower than you'd usually find them."
+        }
+      ],
+      "dedupeKey": "봄맞-세일-아마존-저렴하게-전자책-정보-할인-행사",
+      "clusterKey": "전자책/할인/행사",
+      "matchedTo": null,
+      "sourceName": "WIRED",
+      "sourceUrl": "https://www.wired.com/story/e-reader-deals-amazon-spring-sale/",
+      "publishedAt": "2026-03-26T17:25:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-27_7",
+      "date": "2026-03-27",
+      "category": "에너지",
+      "title": "정부, 카타르 LNG 불가항력 선언에도 수급 차질 없을 것",
+      "summary": [
+        "카타르가 LNG 공급 불가항력을 선언할 예정이나, 정부는 직접적인 피해는 없을 것이라고 밝혔습니다.",
+        "다만, 중동 사태 장기화로 LNG 가격이 상승하여 난방 요금 인상 가능성이 제기됩니다.",
+        "정부는 이미 올해 수입 물량 계산에서 카타르를 제외하고 대체 수입처를 발굴했다고 밝혔습니다."
+      ],
+      "whyImportant": "카타르의 LNG 공급 차질은 장기적으로 에너지 시장의 불안정성을 야기하고 가격 변동을 심화시킬 수 있기 때문입니다.",
+      "importanceRationale": "근거: 카타르에너지의 연간 생산량 1280만톤 규모 설비 가동 중단으로 최대 5년까지 설비 복구에 걸릴 수 있으며, 이는 세계 LNG 해상 교역량의 20% 안팎을 차지하는 규모입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "세계 엘엔지 해상 교역량의 20% 안팎을 차지하는 카타르가 불가항력을 선언하면서 장기적으로 엘엔지 시장이 요동치고 가격도 불안정해질 것으로 보인다."
+        }
+      ],
+      "dedupeKey": "lng-불가항력-선언-수급-없을-정부-차질-카타르",
+      "clusterKey": "카타르/불가항력/선언",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1251096.html",
+      "publishedAt": "2026-03-25T14:19:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-27_8",
+      "date": "2026-03-27",
+      "category": "금융",
+      "title": "OECD, 올해 한국 성장률 전망치 1.7%로 하향 조정",
+      "summary": [
+        "OECD는 올해 한국 경제 성장률 전망치를 2.1%에서 1.7%로 낮췄습니다.",
+        "물가 상승률 전망치는 1.8%에서 2.7%로 상향 조정했습니다.",
+        "내년 한국 성장률 전망치는 2.1%, 물가 상승률은 2.0%로 유지했습니다."
+      ],
+      "whyImportant": "OECD의 한국 경제 성장률 전망치 하향 조정은 향후 경제 정책 결정에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: OECD가 올해 한국 경제 성장률 전망치를 1.7%로 하향 조정한 것은 정부와 한국은행 전망치인 2.0%보다 낮은 수준이며, 이는 경제에 충격을 줄 수 있다고 판단했기 때문입니다.",
+      "impactSignals": [],
+      "dedupeKey": "oecd-경제-성장률-올해-전망치-조정-하향-한국",
+      "clusterKey": "oecd/올해/성장률",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328668",
-      "publishedAt": "2026-03-24T01:45:14+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330284",
+      "publishedAt": "2026-03-26T10:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-27_9",
+      "date": "2026-03-27",
+      "category": "에너지",
+      "title": "카타르, LNG 공급 '불가항력' 선언…국제 유가 '요동'",
+      "summary": [
+        "카타르 국영 에너지 기업이 한국 등 4개국과의 LNG 장기 공급 계약에 대해 '불가항력'을 선언했습니다.",
+        "이란의 공격으로 주요 가스 시설이 심각한 피해를 입어 계약을 지킬 수 없다는 입장입니다.",
+        "우리나라 전체 LNG 수입량 중 카타르산이 약 15%를 차지해 국내 경제에 미치는 영향이 우려됩니다."
+      ],
+      "whyImportant": "카타르의 LNG 공급 차질은 국내 가스 요금 상승 압력으로 이어질 수 있어 중요합니다.",
+      "importanceRationale": "근거: 카타르산 LNG가 우리나라 전체 수입량의 약 15%를 차지하며, LNG 부족분을 현물 시장에서 채워야 할 경우 가정용 가스요금 상승 압력을 받을 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "카타르에너지는 이란의 공격으로 전 세계 LNG 공급량의 20%를 차지하는 주요 가스시설이 심각한 피해를 입어 계약을 지킬 수 없다는 입장입니다."
+        }
+      ],
+      "dedupeKey": "4개국-lng-공급-국제-불가항력-선언-유가-카타르",
+      "clusterKey": "에너지/카타르",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1329575",
+      "publishedAt": "2026-03-25T08:53:39+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,

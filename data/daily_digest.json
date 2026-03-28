@@ -1,43 +1,44 @@
 {
-  "date": "2026-03-28",
+  "date": "2026-03-29",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-28T08:05:22.266879+09:00",
+  "lastUpdatedAt": "2026-03-29T08:00:48.451516+09:00",
   "items": [
     {
-      "id": "2026-03-28_1",
-      "date": "2026-03-28",
-      "category": "국제",
-      "title": "국제 유가, 이란 전쟁 종전 협상 기대감에 2% 하락",
+      "id": "2026-03-29_1",
+      "date": "2026-03-29",
+      "category": "정책",
+      "title": "바이오시밀러 가이드라인, 수출 생태계 촉진 기대",
       "summary": [
-        "미국이 이란 전쟁 종전을 위한 협상을 진행 중이라는 기대감에 국제 유가가 하락했습니다.",
-        "5월 인도분 브렌트유 선물 종가는 배럴당 102.22달러로 2.2% 하락했습니다."
+        "한국바이오의약품협회는 식약처의 '동등생물의약품 비교 유효성 임상시험 수행 결정 시 고려 사항' 가이드라인을 환영했습니다.",
+        "협회는 이 가이드라인이 바이오시밀러 개발 비용과 기간 절감을 통해 수출 경쟁력 강화에 기여할 것으로 평가했습니다.",
+        "미국과 유럽 시장에서 바이오시밀러 개발 기회가 큰 것으로 분석됩니다."
       ],
-      "whyImportant": "국제 유가 변동은 에너지 시장 전반에 걸쳐 가격 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 5월 인도분 브렌트유 선물 가격이 2.2% 하락한 것은 단기적인 시장 수요 변화를 반영합니다.",
+      "whyImportant": "이번 가이드라인은 국내 바이오시밀러 기업의 글로벌 시장 진출 속도를 높여 수출 생태계 강화에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국은 2025~2034년 사이 특허 만료 예정인 바이오의약품 중 90%에 대한 바이오시밀러 파이프라인이 전무하며, 유럽 역시 유사한 상황으로 분석됩니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "미국이 이란 전쟁을 끝내기 위해 협상을 이어가고 있다는 기대감에 국제유가가 내림세를 이어갔습니다."
+          "label": "policy",
+          "evidence": "이번 가이드라인은 국내외 바이오시밀러 시장이 급성장하는 시점에 발표된 것으로, 개발 비용·기간 절감을 통한 수출 경쟁력 강화에 결정적으로 기여할 중요한 규제 혁신이라고 협회는 평가했다."
         }
       ],
-      "dedupeKey": "국제-기대감-유가-이란-전쟁-종전-하락-협상",
-      "clusterKey": "관세/국제",
+      "dedupeKey": "가이드라인-기대-바이오시밀러-생태계-수출-식약처-촉진-한국바이오의약품협회",
+      "clusterKey": "정책/헬스케어/수출",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330017",
-      "publishedAt": "2026-03-26T02:48:24+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330664",
+      "publishedAt": "2026-03-27T04:00:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-28_2",
-      "date": "2026-03-28",
+      "id": "2026-03-29_2",
+      "date": "2026-03-29",
       "category": "기술",
       "title": "메타, 데이터센터 가동 위해 가스발전소 7곳 추가 건설",
       "summary": [
@@ -46,7 +47,7 @@
         "일반 고객들은 향후 20년간 총 4조원의 전기요금을 절감할 수 있을 것으로 예상됩니다."
       ],
       "whyImportant": "이번 투자는 AI 개발 경쟁 심화 속에서 데이터센터 전력 확보의 중요성을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 메타는 5.2GW 규모의 천연가스 발전소 7곳 건설 비용을 부담하고, 향후 20년간 일반 고객들은 총 4조원의 전기요금을 절감할 수 있습니다.",
+      "importanceRationale": "근거: 메타는 5.2GW 규모의 천연가스 발전소 7곳 건설 비용을 부담하고, 향후 20년간 일반 고객들의 전기요금을 4조원 절감할 것으로 예상됩니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -67,125 +68,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-28_3",
-      "date": "2026-03-28",
-      "category": "기술",
-      "title": "엡스타인 피해자들, 개인 정보 공개 혐의로 구글과 트럼프 행정부 고소",
-      "summary": [
-        "제프리 엡스타인 성범죄 피해자들이 구글과 트럼프 행정부를 상대로 집단 소송을 제기했습니다.",
-        "소송은 구글의 AI 기능이 피해자들의 개인 정보를 공개하고, 정부가 이를 삭제하지 않아 발생한 피해에 대한 것입니다.",
-        "피해자들은 신상 공개로 인해 신변의 위협을 느끼고 있다고 주장합니다."
-      ],
-      "whyImportant": "이번 소송은 AI가 생성한 콘텐츠의 책임 소재와 인터넷 기업의 면책 조항에 대한 논쟁을 불러일으킬 수 있습니다.",
-      "importanceRationale": "근거: 소송은 구글의 AI 모드가 피해자들의 개인 정보를 공개했다고 주장하며, 이는 통신품위법 230조에 대한 재검토를 촉구할 수 있는 계기가 될 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "The lawsuit from Epstein survivors alleges Google “intentionally,” through its design, fueled harassment by hosting information about the victims, and said its AI Mode feature “is not a neutral search index.” The complaint comes after two jury verdicts this week — both against Meta and one involving Google’s YouTube — concluded that the online platforms are failing to adequately police their sites for content that’s causing real-life harm."
-        },
-        {
-          "label": "security",
-          "evidence": "“Strangers call them, email them, threaten their physical safety, and accuse them of conspiring with Epstein when they are, in reality, Epstein’s victims.” The complaint was filed by an Epstein victim who used the pseudonym Jane Doe."
-        }
-      ],
-      "dedupeKey": "개인-고소-구글-엡스타인-정보-트럼프-피해자들-행정부",
-      "clusterKey": "엡스타인/피해자들/개인",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/27/jeffrey-epstein-victims-sue-trump-administration-google.html",
-      "publishedAt": "2026-03-27T17:44:50+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-28_4",
-      "date": "2026-03-28",
-      "category": "정책",
-      "title": "금융위, 토큰증권 퍼블릭 블록체인 도입에 신중 입장",
-      "summary": [
-        "토큰증권법 시행을 앞두고 제도 정비 필요성이 제기되었으며, 시장 확대를 위해 규제 완화와 제도적 유연성이 요구됩니다.",
-        "금융위원회는 토큰증권에 퍼블릭 블록체인 도입에 신중해야 한다는 입장을 밝혔습니다.",
-        "토큰증권 시장 활성화를 위한 기초자산 영역 확대에는 공감했습니다."
-      ],
-      "whyImportant": "토큰증권 시장의 제도적 기반 마련과 관련된 정책 방향에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 토큰증권법이 내년 1월 시행 예정인 가운데, 금융위가 퍼블릭 블록체인 도입에 신중한 입장을 밝히면서 향후 정책 방향에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "첫 발 디딘 '토큰증권'…금융위 \"퍼블릭 블록체인 도입 신중해야\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 '토큰증권 제도적 과제' 세미나 토큰증권법, 내년 1월 시행 업계 \"시장 확대 위해 규제 완화해야\" 금융위 \"퍼블릭 블록체인 도입은 신중\" 토큰증권법, 내년 1월 시행 업계 \"시장 확대 위해 규제 완화해야\" 금융위 \"퍼블릭 블록체인 도입은 신중\" 토큰증권(STO)법이 본격 시행되기 전 관련 제도 정비가 필요하다는 제언이 나왔다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "이어 \"분산원장 기반에서 거래가 진행되다 보면 동일한 거래 기록이 여러 곳에 저장되는데, 기록에서 차이가 발생할 경우 어느 장부가 기준이 될 것인지 등 문제가 생길 수 있다\"라며 \"거래와 결제를 어떻게 처리할지 등 현실적인 문제들도 함께 논의될 필요가 있다\"고 덧붙였다."
-        }
-      ],
-      "dedupeKey": "금융위-금융위원회-도입-블록체인-신중-토큰증권-토큰증권법-퍼블릭",
-      "clusterKey": "정책/금융/퍼블릭",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603269101g",
-      "publishedAt": "2026-03-26T07:38:36+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-28_5",
-      "date": "2026-03-28",
-      "category": "금융",
-      "title": "삼에스코리아, 올해 손익분기점 달성 및 내년 매출 신기록 목표",
-      "summary": [
-        "반도체 웨이퍼 캐리어와 공조 시험장비 주력 회사인 삼에스코리아가 올해 손익분기점 달성을 목표로 한다고 밝혔습니다.",
-        "내년에는 최대 매출 기록을 세우겠다는 경영 목표를 주주 대상 기업설명회에서 공유했습니다.",
-        "지난해 한국웨이퍼홀딩스가 최대주주가 된 이후 첫 공개 설명회였습니다."
-      ],
-      "whyImportant": "삼에스코리아의 실적 개선 목표는 반도체 웨이퍼 캐리어 및 공조 시험장비 산업의 회복 가능성을 시사합니다.",
-      "importanceRationale": "근거: 삼에스코리아는 내년에 최대 매출 기록을 세우겠다고 밝혔으며, 이는 2023년 4월~2024년 3월에 달성한 436억원보다 높은 매출을 의미합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "이날 정 대표는 \"올해 전 경영진 시절 추락한 수익성을 손익분기점 수준으로 회복하겠다\"면서 \"조직 슬림화, 고객 관계 정상화, 캐파 증설 등 다양한 활동을 펼쳐 내년에는 최대 매출 기록을 세우겠다\"고 했다."
-        }
-      ],
-      "dedupeKey": "내년-달성-매출-목표-삼에스코리아-손익분기점-신기록-올해",
-      "clusterKey": "실적/삼에스코리아",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54226",
-      "publishedAt": "2026-03-27T07:24:54+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-28_6",
-      "date": "2026-03-28",
+      "id": "2026-03-29_3",
+      "date": "2026-03-29",
       "category": "금융",
       "title": "중국 시야테크 상장, 설비 투자 확대…선익시스템 '훈풍'",
       "summary": [
-        "중국 올레도스 패널 업체 시야테크놀로지가 상하이 증권거래소에 상장하여 약 4500억원을 조달했습니다.",
-        "시야테크는 조달 자금을 바탕으로 제2 공장을 건설하고 생산능력을 확대할 예정입니다.",
-        "선익시스템은 시야테크로부터 올레도스 증착 장비 수주가 증가하고 있습니다."
+        "중국 올레도스 패널 업체 시야테크놀로지가 상하이 증권 거래소에 상장하여 약 4500억원을 조달했습니다.",
+        "시야테크는 조달 자금을 바탕으로 설비 투자를 확대할 예정이며, 선익시스템이 수혜를 입고 있습니다.",
+        "선익시스템은 시야테크로부터 올해 누적 600억원 이상의 마이크로 OLED 증착 장비 수주를 확보했습니다."
       ],
-      "whyImportant": "시야테크의 설비 투자 확대는 XR 기기용 디스플레이 시장 성장에 따른 장비 수요 증가를 의미합니다.",
-      "importanceRationale": "근거: 시야테크는 상장으로 확보한 자금으로 제2 공장을 건설하여 생산능력을 월 1만 8000장 수준으로 확대할 계획이며, 선익시스템은 올해 누적 수주 규모가 600억원을 넘습니다.",
+      "whyImportant": "시야테크의 설비 투자 확대는 XR 기기 시장 성장에 따른 OLEDoS 디스플레이 수요 증가에 대응하기 위한 것으로 보입니다.",
+      "importanceRationale": "근거: 시야테크는 상장으로 확보한 자금으로 생산 능력을 월 1만 8000장 수준으로 확대할 예정이며, 선익시스템은 2026년까지 마이크로 OLED 증착 장비 공급 계약을 체결했습니다.",
       "impactSignals": [
         {
           "label": "capex",
           "evidence": "회사는 상하이에 제2 공장을 건설 중이며, 완공 시 생산능력은 월 1만8000장 수준으로 확대된다."
         }
       ],
-      "dedupeKey": "4500억원-상장-선익시스템-설비-시야테크-중국-투자-확대",
+      "dedupeKey": "4500억원-600억원-상장-선익시스템-설비-시야테크-중국-투자",
       "clusterKey": "설비투자/시야테크/투자/상장",
       "matchedTo": null,
       "sourceName": "디일렉",
@@ -199,24 +99,24 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-28_7",
-      "date": "2026-03-28",
+      "id": "2026-03-29_4",
+      "date": "2026-03-29",
       "category": "에너지",
-      "title": "대만, 원전 재가동 찬성 여론 우세",
+      "title": "대만 원전 재가동 찬성 여론 우세, 집권당 탈원전 정책 논란",
       "summary": [
         "대만에서 급증하는 전력 수요에 대응하기 위해 원자력발전소 재가동 계획에 대한 찬성 여론이 우세하다는 조사 결과가 나왔습니다.",
-        "라이칭더 총통은 제2, 제3 원전의 재가동 준비 절차가 진행 중이며, 이달 말 원자력안전위원회로 이송될 것이라고 밝혔습니다."
+        "라이칭더 총통은 제2, 제3 원전 재가동 준비 절차에 들어갔으며, 이달 말 원자력안전위원회로 이송될 것이라고 밝혔습니다."
       ],
-      "whyImportant": "원전 재가동 논의는 향후 대만 에너지 정책 방향에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 라이칭더 총통이 원전 재가동 준비 절차를 언급하며, 이달 말 원자력안전위원회 심사 예정으로, 정책 결정 가능성이 있습니다.",
+      "whyImportant": "원전 재가동 논의는 향후 대만 에너지 정책 방향과 전력 공급 안정성에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 라이칭더 총통이 직접 원전 재가동 준비 절차를 언급하며, 이달 말 원자력안전위원회 심사 예정으로, 정책 결정에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
           "evidence": "대만 네티즌들은 '전력인프라는 안정적이고 믿을 수 있어야 한다', '완벽한 발전시스템이 없는 상황에서 원전이 최고의 선택은 아니지만 수요에 가장 적합한 발전방식이다', '완공 상태에서 사용하지 않기로 봉인한 제4 원전을 가동하자', '원전 재가동 이전에 민진당이 먼저 사과해야 한다' 등의 의견을 내놨다."
         }
       ],
-      "dedupeKey": "대만-여론-우세-원자력안전위원회-원전-재가동-제2-찬성",
-      "clusterKey": "법집행/에너지/재가동",
+      "dedupeKey": "대만-여론-우세-원전-재가동-집권당-찬성-탈원전",
+      "clusterKey": "법집행/에너지/재가동/정책",
       "matchedTo": null,
       "sourceName": "연합",
       "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330705",
@@ -229,28 +129,215 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-28_8",
-      "date": "2026-03-28",
-      "category": "기술",
-      "title": "테슬라 인도 데이터, 주식 시장 촉매제 될 수 있다고 Deepwater의 Gene Munster가 언급",
+      "id": "2026-03-29_5",
+      "date": "2026-03-29",
+      "category": "금융",
+      "title": "정유업계, 1분기 실적 개선 전망에도 어려움 호소",
       "summary": [
-        "D Asset M t의 G e M 는 테슬라 인도 데이터가 주식 시장의 촉매제가 될 수 있다고 밝혔습니다.",
-        "그는 주식 시장의 매도세 중단 시점과 매도세의 원인 등에 대해 논의했습니다."
+        "정유업계는 유가 급등에 따른 회계상 이익 증가에도 불구하고 실질적인 실적 개선은 불투명하다고 주장합니다.",
+        "중동 사태로 인한 운임비 상승, 정제마진 감소, 최고가격제 손실 등이 수익성 악화 요인으로 작용하고 있습니다.",
+        "정부의 수출 물량 제한 조치 또한 어려움을 가중시키고 있습니다."
       ],
-      "whyImportant": "테슬라의 인도 데이터는 주식 시장 투자 심리에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 기사는 테슬라의 인도 데이터가 주식 시장의 촉매제가 될 수 있다고 언급하여 투자 심리에 영향을 줄 수 있음을 시사합니다.",
+      "whyImportant": "정유업계의 실적 부진은 에너지 가격 변동성 확대와 정부 정책의 영향으로 인해 산업 전반에 걸쳐 불확실성을 증가시킬 수 있습니다.",
+      "importanceRationale": "근거: 정부의 석유 최고가격제 시행과 수출 물량 제한 조치는 정유사의 수익성 확보에 직접적인 영향을 미치며, 이는 산업 전반의 공급망 및 가격 결정에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "정부는 지난 13일부터 석유 최고가격제를 시행하며 정유사가 지난해 같은 기간보다 더 많은 석유 제품을 수출하지 못하도록 했다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "국내 정유업계가 1분기 실적 개선 전망에도 난색을 표하고 있다."
+        }
+      ],
+      "dedupeKey": "개선-불투명하다고-실적-실질적인-어려움-정부-정유업계-호소",
+      "clusterKey": "실적/정유업계",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331065",
+      "publishedAt": "2026-03-28T21:01:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_6",
+      "date": "2026-03-29",
+      "category": "금융",
+      "title": "안형준 데이터처장, \"새 인구추계, 2022년 낙관 전망 상회할 것\"",
+      "summary": [
+        "안형준 국가데이터처장은 올해 발표할 장래인구추계에서 인구 경로가 기존 낙관 시나리오보다 개선될 것으로 전망했습니다.",
+        "또한, 한국 경제의 경기 '정점'을 조만간 공표할 예정이며, AI 고용 충격 가능성도 언급했습니다.",
+        "소비자물가 통계에 집값 반영은 신중해야 하며, 스마트워치가 새로 포함될 예정입니다."
+      ],
+      "whyImportant": "인구 변화, 경기 변동, AI 고용 영향 등 주요 경제 지표에 대한 데이터처의 평가는 향후 정책 결정에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 안형준 데이터처장은 2022년 기준 추계의 고위 시나리오보다 출생이 더 높게 나올 것이라고 언급하며, 올해 인구 추계를 다시 한다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "그는 \"선행지수에는 현재 상황이 좋은 주가 등 금융 지수가 반영되지만, 동행지수는 부진한 건설 관련 지수 등으로 산출해 우리 경제의 구조적인 문제가 반영돼 그런(디커플링) 특성이 나타나고 있다\"며 \"지난달 전문가들과 테스트했는데, 일단 현재를 유지해야 한다는 것이 전문가들의 결론\"이라고 부연했다."
+        }
+      ],
+      "dedupeKey": "국가데이터처장-낙관-데이터처장-상회할-안형준-인구추계-장래인구추계-한국",
+      "clusterKey": "안형준/데이터처장/인구추계",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331067",
+      "publishedAt": "2026-03-28T21:01:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_7",
+      "date": "2026-03-29",
+      "category": "에너지",
+      "title": "일본, 유가 상승으로 전기요금 인상 및 가격 할증제 도입",
+      "summary": [
+        "일본 주요 전력회사들이 다음 달 일제히 전기요금을 약 3,760원 정도 인상할 예정입니다.",
+        "화학기업 도레이는 나프타 가격 급등으로 탄소섬유 등 일부 제품에 가격 할증료를 부과할 계획입니다."
+      ],
+      "whyImportant": "유가 상승은 에너지 비용 증가를 통해 산업 전반의 가격 인상으로 이어져 경제에 광범위한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 일본 내각부는 자원 가격 상승이 자국 경제에 약 85조~141조원의 악영향을 미칠 수 있다고 전망했습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "watch now Tesla deliveries data could be a catalyst for equity markets, says Deepwater’s Gene Munster Gene Munster, Deepwater Asset Management, joins ‘Power Lunch’ to discuss when the selloff in equities stops, the cause of the market selloff and much more."
+          "evidence": "日정부 \"자원 가격 상승, 경제에 85조∼141조원 악영향\" (도쿄=연합뉴스) 박상현 특파원 = 중동 정세 악화에 따른 유가 상승이 일본 경제 전반에 영향을 미치는 가운데 일본 주요 전력회사들이 내달 일제히 전기요금을 올린다고 니혼게이자이신문(닛케이)이 28일 보도했다."
+        },
+        {
+          "label": "security",
+          "evidence": "하지만 신문은 호르무즈 해협 봉쇄가 장기화하면 연료 가격이 급등해 6월께 전기요금이 더 오를 가능성이 크다고 분석했다."
         }
       ],
-      "dedupeKey": "deepwater-gene-munster-데이터-시장-인도-주식-테슬라",
-      "clusterKey": "테슬라/데이터/촉매제",
+      "dedupeKey": "760원-가격-상승-유가-인상-일본-전기요금-할증제",
+      "clusterKey": "에너지/유가",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/video/2026/03/27/tesla-deliveries-data-could-be-a-catalyst-for-equity-markets-says-deepwaters-gene-munster.html",
-      "publishedAt": "2026-03-27T18:41:21+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330958",
+      "publishedAt": "2026-03-28T01:36:39+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_8",
+      "date": "2026-03-29",
+      "category": "산업",
+      "title": "김용범, '수출 통제 확대론' 경계",
+      "summary": [
+        "김용범 청와대 정책실장은 나프타 수출 제한과 관련, 추가적인 수출 제한 품목 확대에 신중해야 한다고 밝혔습니다.",
+        "수출 통제는 국내 문제 해결과 동시에 국제 문제를 야기하며, 전략적 파트너와의 신뢰 유지가 중요하다고 강조했습니다."
+      ],
+      "whyImportant": "수출 통제 확대는 글로벌 공급망에 영향을 미쳐 장기적으로 경제적 불확실성을 증가시킬 수 있기 때문입니다.",
+      "importanceRationale": "근거: 김 실장은 “나프타를 지키려다 리튬과 에너지라는 더 큰 흐름을 잃는다면, 그것이야말로 소탐대실”이라고 언급하여 수출 통제의 파급력을 경계했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "경계-김용범-수출-신중해야-정책실장-추가적인-통제-확대론",
+      "clusterKey": "김용범/수출/통제",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1251532.html",
+      "publishedAt": "2026-03-28T05:56:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_9",
+      "date": "2026-03-29",
+      "category": "금융",
+      "title": "OECD, 한국 성장 전망 하향 조정…중동 리스크 영향",
+      "summary": [
+        "OECD는 한국의 올해 성장률 전망치를 2.1%에서 1.7%로 하향 조정했습니다.",
+        "이는 중동 리스크로 인한 국제유가 상승과 공급망 차질에 따른 것으로 분석됩니다.",
+        "다른 기관들도 한국 성장률 전망치를 잇따라 낮출 것으로 예상됩니다."
+      ],
+      "whyImportant": "성장률 하향 조정은 국내 경제의 불확실성을 증가시키고, 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: OECD가 한국의 성장률 전망치를 0.4%포인트 하향 조정한 것은 대외 의존도가 높고 중동 의존적인 에너지 수급 구조 때문이며, 다른 기관들도 전망치를 조정할 것으로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "국제유가가 지금처럼 배럴당 100달러를 웃도는 상황이 지속되면 우리나라 경제성장률이 연간 0.5%포인트 이상 하락할 수 있다는 분석(우리금융경영연구소)도 나온다."
+        }
+      ],
+      "dedupeKey": "oecd-리스크-성장-영향-조정-중동-하향-한국",
+      "clusterKey": "oecd/하향/조정",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331056",
+      "publishedAt": "2026-03-28T20:47:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_10",
+      "date": "2026-03-29",
+      "category": "정책",
+      "title": "금융위, 경영 위기 소상공인 원스톱 지원…기관 간 칸막이 해소",
+      "summary": [
+        "금융위원회가 중소벤처기업부 등과 경영 위기에 처한 소상공인에게 원스톱 지원을 제공합니다.",
+        "소상공인에게 상권 분석 서비스와 맞춤형 정책 정보를 선제적으로 제공할 예정입니다.",
+        "전국 50개 서민금융통합지원센터에서 복합 지원을 강화할 계획입니다."
+      ],
+      "whyImportant": "이번 조치는 소상공인이 복잡한 지원 정책을 몰라 지원을 받지 못하는 사례를 줄이고, 경제 활력을 불어넣는 데 기여할 수 있습니다.",
+      "importanceRationale": "근거: 31일부터 연간 10만~20만 명의 소상공인에게 맞춤형 정책 정보를 제공하고, 전국 50개 센터에서 복합 지원을 강화합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이억원 금융위원장은 \"행정 공급자 중심 방식에서 정책 수요자 중심으로 서비스를 바꿨다\"며 \"복합지원의 금융-고용-복지에 걸친 연계망이 경제적 활력을 불어넣기를 기대한다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "경영-금융위-기관-소상공인-원스톱-위기-지원-칸막",
+      "clusterKey": "정책/금융/경영",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330709",
+      "publishedAt": "2026-03-27T06:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-29_11",
+      "date": "2026-03-29",
+      "category": "정책",
+      "title": "추경 심사 일정, 여야 대립",
+      "summary": [
+        "정부가 31일께 25조원 규모의 추가경정 예산안을 국회에 제출할 예정인 가운데, 여야가 심사 일정을 놓고 대립하고 있습니다.",
+        "더불어민주당은 다음 달 9일까지 추경안 처리를 주장하는 반면, 국민의힘은 대정부질문이 먼저라는 입장을 고수하고 있습니다."
+      ],
+      "whyImportant": "이번 추경안 심사 일정 합의는 향후 정부의 경제 정책 추진에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 여야가 추경 심사 일정을 놓고 대립하며, 민주당은 다음 달 9일 처리를 주장하고 국민의힘은 대정부질문을 먼저 해야 한다고 맞서고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "민주당은 추경안이 31일 국무회의 의결 후 국회에 제출되면 신속한 심사를 거쳐 내달 9일 본회의에서 처리한다는 방침을 세웠다."
+        }
+      ],
+      "dedupeKey": "25조원-31일께-대립-심사-여야-일정-정부-추경",
+      "clusterKey": "추경/심사/일정",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330630",
+      "publishedAt": "2026-03-27T02:59:21+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

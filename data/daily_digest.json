@@ -1,153 +1,63 @@
 {
-  "date": "2026-03-30",
+  "date": "2026-03-31",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-03-30T08:03:08.523639+09:00",
+  "lastUpdatedAt": "2026-03-31T08:08:01.142307+09:00",
   "items": [
     {
-      "id": "2026-03-30_1",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "OECD, 한국 성장 전망 1.7%로 하향 조정…고유가 장기화 우려",
+      "id": "2026-03-31_1",
+      "date": "2026-03-31",
+      "category": "기술",
+      "title": "데이터 센터 지출 증가로 알파벳, 메타, 마이크로소프트 주가 하락",
       "summary": [
-        "OECD는 한국의 올해 경제 성장률 전망치를 기존 2.1%에서 1.7%로 낮췄습니다.",
-        "고유가 장기화 시 한국 경제가 구조적으로 취약해질 수 있다고 판단했습니다.",
-        "유가 배럴당 100달러 지속 시 한국 경제성장률이 연간 0.5%포인트 이상 하락할 수 있다는 분석도 있습니다."
+        "CNBC의 보도에 따르면, 마이크로소프트, 알파벳, 메타가 대규모 데이터 센터 계약을 체결하면서 빅테크 기업의 AI 지출에 대한 월가의 불안감이 심화되고 있습니다.",
+        "이는 하이퍼스케일러들이 O AI와 A opic이 자체적으로 지원할 수 없는 구축 자금을 지원하고 있음을 보여줍니다."
       ],
-      "whyImportant": "경제 성장률 전망치 하향 조정은 국내 경제의 불확실성이 커지고 있음을 시사합니다.",
-      "importanceRationale": "근거: OECD는 한국의 성장률 전망치를 2.1%에서 1.7%로 0.4%포인트 낮췄으며, 유가 급등 시 경제성장률이 연간 0.5%포인트 이상 하락할 수 있다는 분석이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "특히 최근 원-달러 환율이 1500원을 넘어서면서 고유가·고환율에 따른 물가 상승→금리 인상→경기 위축 경로뿐 아니라 무역수지 악화, 금융시장 불안 등 경제 전반에 충격을 줄 수 있다는 우려도 나온다."
-        }
-      ],
-      "dedupeKey": "100달러-oecd-고유-성장-장기화-조정-하향-한국",
-      "clusterKey": "oecd/하향/조정",
+      "whyImportant": "데이터 센터 투자는 AI 기술 경쟁 심화와 관련 인프라 수요 증가를 반영합니다.",
+      "importanceRationale": "근거: 여러 빅테크 기업의 데이터 센터 투자는 AI 기술 경쟁 심화에 따른 인프라 투자의 중요성을 시사합니다.",
+      "impactSignals": [],
+      "dedupeKey": "데이터-마이크로소프트-메타-센터-알파벳-주가-증가-지출",
+      "clusterKey": "투자/데이터",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1251653.html",
-      "publishedAt": "2026-03-29T13:11:00+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/video/2026/03/30/alphabet-meta-microsoft-all-down-as-data-center-spending-rises.html",
+      "publishedAt": "2026-03-30T16:09:45+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_2",
-      "date": "2026-03-30",
+      "id": "2026-03-31_2",
+      "date": "2026-03-31",
       "category": "금융",
-      "title": "중동 전쟁 장기화 전망 속 정치권의 지방선거 대비",
+      "title": "스타클라우드, 우주 데이터 센터 구축 위해 1억 7천만 달러 시리즈 A 투자 유치",
       "summary": [
-        "중동 전쟁이 장기화될 것이라는 전망이 나오는 가운데, 정치권은 지방선거 준비에 속도를 내고 있습니다.",
-        "미국은 지상 작전 가능성을 검토 중이며, 이란은 호르무즈 해협 통제권을 요구하는 등 협상이 난항을 겪고 있습니다."
+        "스타클라우드가 벤치마크와 EQT 벤처스가 주도하는 시리즈 A 투자 라운드에서 1억 7천만 달러를 유치했습니다.",
+        "이로써 기업 가치는 11억 달러로 평가받았으며, 2025년 11월에는 엔비디아 H100 GPU를 탑재한 첫 위성을 발사했습니다.",
+        "스타클라우드는 스페이스X의 스타십을 이용해 데이터 센터 우주선을 개발할 예정입니다."
       ],
-      "whyImportant": "중동 지역의 불안정은 국제 유가 변동 및 세계 물동량에 영향을 미쳐 경제적 불확실성을 증대시킬 수 있습니다.",
-      "importanceRationale": "근거: 홍해 봉쇄 시 세계 물동량의 약 13~15%에 영향을 미칠 수 있다는 언급은 지정학적 리스크가 경제에 미치는 파급력을 시사합니다.",
+      "whyImportant": "우주 데이터 센터는 지구 자원 및 정치적 제약으로 인한 어려움을 극복하고 새로운 컴퓨팅 인프라를 제공할 가능성이 있습니다.",
+      "importanceRationale": "근거: 스타클라우드는 2025년 11월에 첫 위성을 발사했으며, 향후 스페이스X의 스타십을 이용한 데이터 센터 우주선 개발을 계획하고 있어 산업적 파급력이 예상됩니다.",
       "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "[앵커] 사실 두 분께서는 국내 정치 전문가이신데 이렇게 중동의 이야기를 하고 있는 이유가 우리나라에도 여러 방면을 통해서 영향을 주고 있기 때문이 아닌가 생각이 드는데 그런데 안보 환경 변화에도 당연히 영향을 주고 있지 않겠습니까?"
-        },
-        {
-          "label": "security",
-          "evidence": "그렇다고 한다면 일각에서 협상을 진행을 하고 일각에서는 공격적인 지상군 투입에 대한 전략적인 수단을 공개를 하면서 협상의 지렛대로 삼을 가능성이 높지 않을까 생각이 드는 것이고요."
-        },
-        {
-          "label": "infra",
-          "evidence": "지속적으로 혹시라도 정전이나 휴전이 된 이후에도 호르무즈 해협에 대한 주도권, 봉쇄 여부는 우리가 갖고 있다고 하는 지속적인 영향권을 유지하기 위해서 이름을 갖고 얘기를 하는데요."
-        },
-        {
-          "label": "earnings",
-          "evidence": "그렇지만 현실적으로 봤을 때 이란이 이를 준수하지 않을 경우에 어떠한 제한조치를 취할 것인가."
-        }
-      ],
-      "dedupeKey": "대비-미국-장기화-전쟁-정치권-중동-지방선거-호르무즈",
-      "clusterKey": "미중동_관세/전쟁",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0101_202603292325574345",
-      "publishedAt": "2026-03-29T14:25:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_3",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "미국 정부, 러시아 유조선의 쿠바행 용인",
-      "summary": [
-        "미국 해안경비대가 러시아 유조선 '아나톨리 콜로드킨'호의 쿠바 해안 접근을 허용하고 있습니다.",
-        "이 유조선은 약 75만 배럴의 원유를 싣고 있으며, 이달 말 쿠바 마탄자스 석유 터미널에 도착할 것으로 예상됩니다."
-      ],
-      "whyImportant": "미국의 결정은 러시아와의 잠재적 마찰을 피하고 쿠바의 에너지 공급 상황에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 해안경비대가 러시아 유조선의 쿠바 해안 접근을 허용하고 있으며, 이는 쿠바의 에너지 수입에 영향을 줄 수 있기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "NYT \"미 해안경비대, 러 유조선 봉쇄 안해…해안 접근중\" (뉴욕=연합뉴스) 이지헌 특파원 = 원유를 담은 러시아 유조선이 미 해안경비대의 용인 아래 쿠바 항구에 도착할 것으로 예상한다고 미 뉴욕타임스(NYT)가 사안에 관해 브리핑받은 미 관리를 인용해 29일(현지시간) 보도했다."
-        },
-        {
-          "label": "infra",
-          "evidence": "쿠바는 최근 몇 달간 석유 공급이 끊기면서 수 시간에서 며칠씩 순환 정전을 실시해왔으며, 지난 16일에는 국가 전력 시스템의 가동이 일시 중단된 바 있다."
-        }
-      ],
-      "dedupeKey": "러시아-미국-아나톨리-용인-유조선-정부-쿠바행-해안경비대",
-      "clusterKey": "유조선/쿠바행/용인",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331343",
-      "publishedAt": "2026-03-29T22:27:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_4",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "호르무즈 해협 둘러싼 미국-이란 갈등 심화",
-      "summary": [
-        "미국과 이란의 갈등이 한 달 넘게 지속되며 장기전 양상으로 접어들고 있습니다.",
-        "이란은 호르무즈 해협 봉쇄를, 미국은 군사적 압박을 통해 협상 우위를 점하려 하고 있습니다.",
-        "미국은 지상전 가능성을 언급하며 이란을 압박하고 있지만, 내부적으로 전략 혼선을 보이고 있습니다."
-      ],
-      "whyImportant": "호르무즈 해협을 둘러싼 갈등은 국제 유가 및 세계 경제에 지속적인 영향을 미칠 수 있는 지정학적 리스크입니다.",
-      "importanceRationale": "근거: 이란이 호르무즈 해협 봉쇄를 시도하고, 미국이 지상전 가능성을 언급하는 등 갈등이 고조되면서 국제 유가 시장에 영향을 미치고 있기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "트럼프 대통령이 호르무즈 해협 봉쇄가 완전히 풀리게 되면 이곳 지명을 '트럼프 해협' 또는 '아메리카 해협'으로 바꾸는 방안을 검토하고 있다는 보도가 나왔습니다."
-        },
         {
           "label": "capex",
-          "evidence": "핵시설 해체와 호르무즈 해협 통행 등 미국이 제시한 15개 항을 받지 않은 이란은 호르무즈에 대한 합법적 주권 행사 등 5개 조건을 역 제시했는데요."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "이란이 직간접적으로 국제 유가 시장을 쥐고 흔들면서 미국과의 협상에서 우위를 점하기 위한 시도를 이어가고 있습니다."
+          "evidence": "Or consider that SpaceX’s Starlink communications network, the largest satellite network in orbit with 10,000 spacecraft, produces something around 200 megawatts of energy, while data centers with more than 25 gigawatts of power are currently under construction in the U.S., according to Cushman and Wakefield."
         },
         {
           "label": "policy",
-          "evidence": "최근엔 태국과 파키스탄, 인도네시아와 협상하고 해협 통과를 허용했습니다."
+          "evidence": "Starcloud’s latest funding round values the space compute company at $1.1 billion, making it one of the fastest startups to reach unicorn status after graduating from Y Combinator."
         }
       ],
-      "dedupeKey": "갈등-둘러싼-미국-심화-이란-접어들고-해협-호르무즈",
-      "clusterKey": "관세/호르무즈",
+      "dedupeKey": "1억-7천-구축-달러-데이터-센터-스타클라우드-우주",
+      "clusterKey": "투자/우주",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331261",
-      "publishedAt": "2026-03-29T09:38:37+00:00",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/",
+      "publishedAt": "2026-03-30T11:00:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -156,25 +66,25 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_5",
-      "date": "2026-03-30",
+      "id": "2026-03-31_3",
+      "date": "2026-03-31",
       "category": "기술",
-      "title": "메타의 법정 패소, AI 연구 및 소비자 안전에 잠재적 문제 야기",
+      "title": "메타의 법원 패소, AI 연구 및 소비자 안전에 잠재적 문제 야기",
       "summary": [
         "메타 내부 연구 결과가 법정에서 불리하게 작용하면서, AI 연구의 지속 여부에 대한 기업들의 고민이 깊어지고 있습니다.",
         "최근 메타는 자사 플랫폼의 유해성에 대한 인지 부족으로 두 건의 재판에서 패소했습니다.",
         "내부 연구 결과가 공개되면서 기업 평판에 부정적인 영향을 미칠 수 있다는 점이 드러났습니다."
       ],
-      "whyImportant": "이번 사례는 기업의 내부 연구가 잠재적으로 법적 책임으로 이어질 수 있음을 보여주며, AI 기술 개발 및 안전 연구에 대한 기업의 접근 방식에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 메타의 법정 패소는 기업 내부 연구 결과가 공개되었을 때 기업에 불리하게 작용할 수 있음을 보여주며, 이는 OpenAI 및 Anthropic과 같은 AI 기업들이 사용자에게 미치는 영향 연구에 대한 투자를 재고하게 만들 수 있기 때문에 중요도 3입니다.",
+      "whyImportant": "이번 사건은 기업의 내부 연구가 잠재적으로 법적 책임으로 이어질 수 있음을 시사하며, AI 기술 개발 및 안전 연구에 대한 기업의 접근 방식에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 메타의 패소는 2건의 재판에서 발생했으며, 이는 기업 내부 연구 결과가 기업의 공개적 입장과 상반될 때 발생할 수 있는 위험을 보여줍니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "Meta's defense teams argued that certain research was old, taken out of context and misleading, presenting a flawed view of how the company operates and how it views safety."
         }
       ],
-      "dedupeKey": "메타-문제-법정-소비자-안전-연구-잠재적-패소",
-      "clusterKey": "메타/법정/패소",
+      "dedupeKey": "메타-문제-법원-소비자-안전-연구-잠재적-패소",
+      "clusterKey": "메타/법원/패소",
       "matchedTo": null,
       "sourceName": "CNBC",
       "sourceUrl": "https://www.cnbc.com/2026/03/29/metas-court-losses-spell-trouble-for-ai-research-consumer-safety.html",
@@ -187,63 +97,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_6",
-      "date": "2026-03-30",
-      "category": "정책",
-      "title": "택시 노동자, 기본급 보장 요구하며 고공 농성",
+      "id": "2026-03-31_4",
+      "date": "2026-03-31",
+      "category": "기술",
+      "title": "TSMC 전력 공급 문제, 대만 10개월 만에 원전 재가동",
       "summary": [
-        "택시 노동자가 택시발전법 개정안 폐기를 요구하며 국회 국토위원장 지역구 사무실 앞에서 고공 농성에 돌입했습니다.",
-        "개정안은 법인택시 기사 노동시간을 주 40시간 이상으로 정하는 규정의 전국 시행 시기를 유예하고 예외를 두는 내용을 담고 있습니다."
+        "대만이 TSMC 등 반도체 기업의 전력 수요 폭증과 LNG 조달 문제로 인해 10개월 만에 원전 재가동을 추진합니다.",
+        "TSMC는 대만 전체 전력 소비량의 9%를 차지하며, 생산 라인 중단 시 사업 신뢰도에 타격을 받을 수 있다는 우려가 제기됩니다.",
+        "라이칭더 대만 총통은 원전 재가동 조건을 갖췄다고 밝혔으며, 대만전력공사는 원자력안전위원회에 마안산 원전 재가동 제안서를 제출했습니다."
       ],
-      "whyImportant": "택시발전법 개정 논의는 택시 노동자의 노동 조건 및 최저임금 보장과 관련된 중요한 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 택시발전법 개정안은 전국 시행 시기를 2028년으로 유예하고, 특정 조건 하에 예외를 두는 내용을 담고 있어 택시 노동자들의 노동 환경에 직접적인 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "택시 노동자 고영기씨가 29일 택시발전법 개정안 폐기를 요구하기 위해 국회 국토교통위원장인 맹성규 더불어민주당 의원의 인천 지역구 사무실 앞에서 고공농성에 들어갔다."
-        }
-      ],
-      "dedupeKey": "40시간-고공-기본급-노동자-농성-보장-전국-택시",
-      "clusterKey": "고용/택시",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/labor/1251645.html",
-      "publishedAt": "2026-03-29T13:11:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_7",
-      "date": "2026-03-30",
-      "category": "에너지",
-      "title": "일본, 유가 상승으로 전기요금 인상 및 가격 할증제 도입",
-      "summary": [
-        "일본 주요 전력회사들이 4월부터 일반 가정 전기요금을 일제히 인상할 예정입니다.",
-        "화학기업 도레이는 나프타 가격 급등에 따라 탄소섬유 등 일부 제품에 할증료를 부과하는 제도를 도입합니다.",
-        "일본 내각부는 자원 가격 상승이 자국 경제에 최대 141조원의 악영향을 미칠 수 있다고 전망했습니다."
-      ],
-      "whyImportant": "유가 상승에 따른 에너지 비용 증가는 기업의 생산 비용 증가와 소비자 물가 상승으로 이어져 경제 전반에 걸쳐 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 일본 대형 전력회사 10곳이 4월 전기요금을 인상하고, 도레이는 일부 제품에 할증료를 부과하며, 일본 내각부는 자원 가격 상승이 최대 141조원의 악영향을 미칠 수 있다고 전망했습니다.",
+      "whyImportant": "대만의 원전 재가동 결정은 반도체 산업의 안정적인 전력 공급 확보에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: TSMC가 대만 전체 전력 소비량의 9%를 차지하고, AI 서버 조립 사업 확대로 전력 소모량이 증가함에 따라 대만 정부가 원전 재가동을 결정했습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "日정부 \"자원 가격 상승, 경제에 85조∼141조원 악영향\" (도쿄=연합뉴스) 박상현 특파원 = 중동 정세 악화에 따른 유가 상승이 일본 경제 전반에 영향을 미치는 가운데 일본 주요 전력회사들이 내달 일제히 전기요금을 올린다고 니혼게이자이신문(닛케이)이 28일 보도했다."
-        },
-        {
-          "label": "security",
-          "evidence": "하지만 신문은 호르무즈 해협 봉쇄가 장기화하면 연료 가격이 급등해 6월께 전기요금이 더 오를 가능성이 크다고 분석했다."
+          "evidence": "일차적 원인은 파운드리(반도체 수탁 생산) 업체 TSMC와 인공지능(AI) 서버 기업 폭스콘 등을 중심으로 한 전력 수요 폭증에 있다."
         }
       ],
-      "dedupeKey": "141조원-가격-상승-유가-인상-일본-전기요금-할증제",
-      "clusterKey": "에너지/유가",
+      "dedupeKey": "10개월-tsmc-공급-대만-만에-문제-원전-전력",
+      "clusterKey": "반도체/문제/에너지",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1330958",
-      "publishedAt": "2026-03-28T01:36:39+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026033064241",
+      "publishedAt": "2026-03-30T08:24:04+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -252,29 +128,64 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_8",
-      "date": "2026-03-30",
-      "category": "산업",
-      "title": "석유화학 제품 추가 수출 통제 우려",
+      "id": "2026-03-31_5",
+      "date": "2026-03-31",
+      "category": "금융",
+      "title": "LS전선, 전력망·AI 수요에 '역대 최대 실적' 기록",
       "summary": [
-        "정치권에서 나프타뿐 아니라 석유화학제품까지 수출을 금지해야 한다는 요구가 나오고 있습니다.",
-        "정부는 검토 중이나, 복잡한 공급망 속에서 수출 통제에 신중해야 한다는 지적도 있습니다.",
-        "산업통상부는 추가 수출 금지 등 여러 선택지를 열어놓고 검토 중이라고 밝혔습니다."
+        "LS전선은 글로벌 전력망 투자 확대와 AI 인프라 수요 증가로 지난해 역대 최대 실적을 기록했습니다.",
+        "2025년 연결 기준 매출 7조5882억원, 영업이익 2798억원을 기록하며 각각 최대치를 경신했습니다.",
+        "수주 잔액은 약 7조6300억원으로 전년 대비 22% 증가하며 역대 최대 규모를 기록했습니다."
       ],
-      "whyImportant": "석유화학 제품 수출 통제는 국내 산업 생태계에 영향을 미치고, 교역 상대국과의 관계에도 영향을 줄 수 있는 중요한 결정입니다.",
-      "importanceRationale": "근거: 산업통상부는 추가 수출 금지 등 여러 선택지를 검토 중이며, 호주와 LNG 수입 관계 등 교역 상대국과의 신뢰 문제를 고려해야 한다고 언급했습니다.",
+      "whyImportant": "LS전선의 실적 증가는 전력망 투자 확대와 AI 인프라 수요 증가에 따른 것으로, 관련 산업 성장에 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: LS전선은 2025년 매출 7조5882억원, 영업이익 2798억원을 기록했으며, 수주 잔액은 전년 대비 22% 증가한 7조6300억원을 기록했습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "포장재·용기 등을 만드는 중소 플라스틱 제조업체들이 원료 공급 부족과 가격 급등 압박을 호소하자, 석유화학제품에 대한 추가 수출 금지 검토를 정부에 요구한 것이다."
+          "evidence": "LS전선이 글로벌 전력망 투자 확대와 인공지능(AI) 인프라 수요 증가에 힘입어 지난해 역대 최대 실적을 기록했다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "LS전선은 2025년 연결 기준 매출 7조5천882억원, 영업이익 2천798억원을 기록했다고 30일 밝혔다."
         }
       ],
-      "dedupeKey": "나프타뿐-산업통상부-석유화학-석유화학제품-수출-정부-제품-통제",
-      "clusterKey": "석유화학/제품/수출",
+      "dedupeKey": "2798억원-7조5882억원-7조6300억원-ls전선-수요-역대-전력망-최대",
+      "clusterKey": "실적/ls전선/투자",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1251593.html",
-      "publishedAt": "2026-03-29T12:02:00+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331395",
+      "publishedAt": "2026-03-30T00:16:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-31_6",
+      "date": "2026-03-31",
+      "category": "정책",
+      "title": "국회 일정: 본회의, 상임위, 의원실 세미나 및 기자회견",
+      "summary": [
+        "국회 본회의와 여러 상임위원회가 예정되어 있습니다.",
+        "다수의 의원실에서 AI 윤리, 스텔라데이지호, 주택 공급, 치매 돌봄, 에너지 취약 계층 지원 등 다양한 주제로 세미나를 개최합니다.",
+        "여러 의원들이 현안 관련 기자회견을 진행할 예정입니다."
+      ],
+      "whyImportant": "국회에서 논의되는 다양한 정책과 현안들이 향후 법안 및 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 여러 의원실에서 다양한 주제의 세미나를 개최하고, 여러 현안에 대한 기자회견이 예정되어 있어 정책 방향에 대한 논의가 활발히 이루어질 것으로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이인선 의원실 등, AI 윤리 정책의 미래와 AI 기본법 개정 방향(10:00 의원회관 제8간담회의실)"
+        }
+      ],
+      "dedupeKey": "국회-기자회견-본회-상임위-상임위원회-세미나-의원실-일정",
+      "clusterKey": "국회/일정/본회",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331918",
+      "publishedAt": "2026-03-30T22:00:03+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -283,24 +194,23 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_9",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "미국-이란 대면 협상 전망 불투명",
+      "id": "2026-03-31_7",
+      "date": "2026-03-31",
+      "category": "정책",
+      "title": "몽골 차기 총리 후보로 30대 우츠랄 국회의장 지명",
       "summary": [
-        "미국과 이란의 첫 대면 회담 소식은 아직 들리지 않고 있습니다.",
-        "양측 입장이 첨예하게 엇갈려 당장 접점을 찾기 어려울 것이란 분석이 나옵니다.",
-        "전쟁 장기화가 양측에 부담인 만큼 중재국을 통해 돌파구를 모색할 것이란 관측도 있습니다."
+        "몽골 집권당인 몽골인민당은 신임 총리 후보로 당 대표이자 국회의장인 냠오소르 우츠랄을 지명했습니다.",
+        "우츠랄 대표는 디지털개발부 장관과 경제개발부 장관 등을 지냈으며, 의회 승인을 거쳐 총리로 임명될 예정입니다."
       ],
-      "whyImportant": "미국과 이란의 협상 여부는 중동 지역의 긴장 완화 및 국제 관계에 중요한 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 미국이 중동에 해군과 해병대 3,500명을 추가 배치하고, 이란은 100만 명 이상의 병력을 결집시키는 등 양국 간 긴장이 고조되고 있습니다.",
+      "whyImportant": "몽골의 정치적 혼란이 이어지는 가운데 차기 총리 지명은 향후 몽골 정책 방향에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 몽골인민당이 새 총리 후보를 지명했으며, 이는 2016년 의회 의원으로 처음 선출된 우츠랄 대표의 정치적 입지를 강화하는 계기가 될 수 있습니다.",
       "impactSignals": [],
-      "dedupeKey": "대면-미국-불투명-소식-이란-중재국-첨예하게-협상",
-      "clusterKey": "관세/대면",
+      "dedupeKey": "30대-국회의장-몽골-우츠랄-지명-차기-총리-후보",
+      "clusterKey": "몽골/차기/총리",
       "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202603291848463772",
-      "publishedAt": "2026-03-29T09:48:00+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331595",
+      "publishedAt": "2026-03-30T03:08:36+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 2,
@@ -309,122 +219,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-03-30_10",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "미국-이란, 군사적 긴장 속 물밑 협상 진행",
+      "id": "2026-03-31_8",
+      "date": "2026-03-31",
+      "category": "정책",
+      "title": "정청래, 차량 5부제 동참 후 대중교통 이용",
       "summary": [
-        "미국과 이란이 중재국을 통해 종전안을 주고받으며 물밑 협상을 진행 중입니다.",
-        "미 해병대 병력의 중동 추가 배치와 후티 반군의 참전으로 군사적 긴장이 고조되고 있습니다.",
-        "이번 주가 확전과 협상을 가를 중대한 고비가 될 수 있다는 전망이 나옵니다."
+        "정청래 더불어민주당 대표가 고유가 대응책인 공공부문 차량 5부제에 동참했습니다.",
+        "정 대표는 지하철과 버스 등 대중교통을 이용해 국회로 출근했습니다."
       ],
-      "whyImportant": "미국과 이란 간의 협상 및 군사적 긴장 고조는 중동 지역의 안정을 위협하고 국제 유가 변동에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 이번 주가 확전과 협상을 가를 중대 고비가 될 수 있다는 전망과 미 해병대 병력의 중동 추가 배치 등 군사적 긴장 고조로 인해 중요도 4점을 부여합니다.",
+      "whyImportant": "공공부문 차량 5부제 동참은 에너지 정책에 대한 공공 부문의 노력을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 정청래 대표가 공공부문 차량 5부제에 동참하여 대중교통을 이용한 것은 정책 시행의 한 사례입니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "예멘의 친이란 무장세력 후티 반군도 전날 참전하면서 호르무즈해협에 이어 홍해 항로의 안전까지 위협받고 있다."
+          "label": "market-demand",
+          "evidence": "승객들과 담소…'만원버스'에 \"배차 늘려야겠다\" (서울=연합뉴스) 서혜림 기자 = 더불어민주당 정청래 대표가 30일 중동 사태 장기화에 따른 고유가 대응책인 공공부문 차량 5부제에 동참했다."
         }
       ],
-      "dedupeKey": "군사적-긴장-물밑-미국-이란-중재국-진행-협상",
-      "clusterKey": "미중동_관세/군사적",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1251619.html",
-      "publishedAt": "2026-03-29T11:05:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_11",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "고려대, 다중 소속 학자 논문 실적 논란",
-      "summary": [
-        "고려대학교가 다중 소속 학자의 논문 실적으로 대학 평가 지표를 올리고 있다는 비판이 제기되고 있습니다.",
-        "2주에 한 편꼴로 논문을 발표하는 파키스탄 출신 경제학자가 고려대 객원교수로 임용되어 논문 실적에 기여하고 있습니다.",
-        "그러나 연구 진실성 논란과 국내 연구진과의 공동 저술 부족 등의 문제가 제기되고 있습니다."
-      ],
-      "whyImportant": "대학의 연구 실적 평가 방식과 학문적 진실성에 대한 논의를 촉발할 수 있는 사안입니다.",
-      "importanceRationale": "근거: 고려대의 2중 표기 논문이 2023년 20.2%에서 지난해 31.3%로, 3중 표기 논문은 3.0%에서 9.7%로 급증했다는 점에서 중요도 3으로 판단했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "그의 방대한 피인용 수치 중 150여 회는 고려대의 실적으로 흡수됐다."
-        }
-      ],
-      "dedupeKey": "고려대-고려대학교-논란-논문-다중-소속-실적-학자",
-      "clusterKey": "실적/고려대",
+      "dedupeKey": "5부제-대응책인-대중교통-더불어민주당-동참-이용-정청래-차량",
+      "clusterKey": "정청래/차량/5부제",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331306",
-      "publishedAt": "2026-03-29T20:55:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_12",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "외식업체 매출 증가에도 수익성 악화, 2024년 영업이익률 8.7%",
-      "summary": [
-        "2024년 외식업체 영업이익률이 8.7%로 하락했으며, 매출액은 소폭 증가했으나 증가율은 둔화되었습니다.",
-        "인건비와 식재료비 증가가 주요 원인이며, 무인 주문기 도입이 늘고 프랜차이즈 쏠림 현상이 심화되고 있습니다.",
-        "농식품부는 푸드테크 도입과 디지털 전환 지원 등을 통해 외식산업 경쟁력 강화를 계획하고 있습니다."
-      ],
-      "whyImportant": "외식업체의 수익성 악화는 고물가 시대에 소비 트렌드 변화와 인건비 상승 등 복합적인 요인이 작용한 결과로, 관련 산업 전반에 걸쳐 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 2024년 외식업체 영업이익률이 8.7%로 하락했고, 무인 주문기 도입률은 2021년 대비 약 3배 수준인 13%로 증가하여 외식업계의 변화를 보여줍니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "지난 2024년 기준 외식업체 영업이익률이 8.7%로 전년 보다 하락한 것으로 나타났다."
-        }
-      ],
-      "dedupeKey": "농식품부-매출-수익성-악화-영업이익률-외식업체-증가-지원",
-      "clusterKey": "실적/외식업체",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331160",
-      "publishedAt": "2026-03-29T02:00:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-03-30_13",
-      "date": "2026-03-30",
-      "category": "금융",
-      "title": "롯데칠성, 해외 시장에서 반전 모색",
-      "summary": [
-        "롯데칠성음료는 국내 시장 침체로 매출이 감소했지만, 해외 매출은 증가했습니다.",
-        "특히 미얀마 법인은 최대 실적을 기록했으며, 필리핀 법인도 수익성이 개선되었습니다.",
-        "롯데칠성은 해외 시장 공략을 통해 실적 개선을 추진할 계획입니다."
-      ],
-      "whyImportant": "롯데칠성의 해외 시장 공략 강화는 장기적인 성장 동력 확보에 중요한 결정입니다.",
-      "importanceRationale": "근거: 롯데칠성 글로벌 사업 매출은 전년 대비 9.5% 증가한 1조5344억 원이며, 영업이익은 42% 급증한 673억 원으로 해외 사업 비중이 확대되고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "지난해 롯데칠성 글로벌 사업 매출은 1조5344억원으로 전년 대비 9.5% 늘었고, 영업이익은 673억원으로 42% 급증했다."
-        }
-      ],
-      "dedupeKey": "국내-롯데칠성-롯데칠성음료-모색-반전-시장-침체-해외",
-      "clusterKey": "실적/롯데칠성",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026032940611",
-      "publishedAt": "2026-03-29T08:50:38+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1331402",
+      "publishedAt": "2026-03-30T00:27:22+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

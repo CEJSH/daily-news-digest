@@ -1,265 +1,142 @@
 {
-  "date": "2026-04-01",
+  "date": "2026-04-02",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-01T08:03:07.593421+09:00",
+  "lastUpdatedAt": "2026-04-02T08:09:41.609987+09:00",
   "items": [
     {
-      "id": "2026-04-01_1",
-      "date": "2026-04-01",
+      "id": "2026-04-02_1",
+      "date": "2026-04-02",
       "category": "국제",
-      "title": "미국, 이란과의 협상 실패 대비",
+      "title": "국제 유가, 휴전 협상 기대감에 하락",
       "summary": [
-        "미국은 이란과의 종전 협상을 진행하면서 협상 실패에 대비하고 있다고 밝혔습니다.",
-        "트럼프 대통령은 협상이 타결되지 않을 경우 이란의 발전소 등을 파괴하겠다고 위협했습니다."
+        "미국과 이란 간 휴전 협상 진전 기대감으로 국제 유가가 하락했습니다.",
+        "브렌트유 6월 인도분 선물 종가는 배럴당 101.16달러로 2.7% 하락했습니다.",
+        "트럼프 대통령은 이란의 휴전 요청을 주장했으나, 이란은 이를 부인했습니다."
       ],
-      "whyImportant": "미국과 이란 간의 협상 결과는 중동 지역의 안정을 포함한 국제 관계에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 이란과의 협상 타결 불발 시 이란의 주요 시설 파괴를 위협하며 정책적 불확실성을 높이고 있어 중요도 3으로 판단됩니다.",
+      "whyImportant": "미국과 이란 간의 휴전 협상 결과는 국제 에너지 시장의 변동성을 야기할 수 있어 중요합니다.",
+      "importanceRationale": "근거: 브렌트유 선물 종가가 2.7% 하락했으며, 트럼프 대통령의 발언과 이란의 부인 등 시장 변동성을 시사하는 내용이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "미국 자동차협회에 따르면 미 전국의 평균 휘발유 가격은 3월 31일 기준 갤런당 4달러를 돌파하며 2022년 8월 이후 가장 높은 수준을 기록했다."
+        }
+      ],
+      "dedupeKey": "16달러-국제-기대감-미국-유가-하락-협상-휴전",
+      "clusterKey": "관세/국제",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1333320",
+      "publishedAt": "2026-04-01T19:41:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_2",
+      "date": "2026-04-02",
+      "category": "국제",
+      "title": "주한 이란 대사, “미국과 중재자를 통해 메시지 교환, 협상은 아냐”",
+      "summary": [
+        "사이드 쿠제치 주한 이란 대사는 이란과 미국이 종전 협상을 진행 중이지 않다고 밝혔습니다.",
+        "다만, 중재자를 통해 양국 간 메시지 교환은 이루어지고 있다고 언급했습니다.",
+        "쿠제치 대사는 트럼프 대통령의 발언이 모순적이고 믿기 힘들다고 덧붙였습니다."
+      ],
+      "whyImportant": "미국과 이란 간의 관계는 국제 정치 및 경제에 중요한 영향을 미치기 때문입니다.",
+      "importanceRationale": "근거: 이란과 미국 간의 메시지 교환은 외교 채널을 통해 이루어지고 있으며, 이는 중동 전쟁 및 호르무즈 해협 봉쇄와 관련된 입장과 관련됩니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "ADVERTISEMENT 도널드 트럼프 대통령은 이날 오전 증시가 열리기 전 트루스소셜을 통해 이란과의 협상 타결이 이뤄지지 않을 경우 이란 발전소와 유정, 하르그섬, 담수화 시설을 모두 파괴하고 철수하겠다고 위협했다."
+          "evidence": "쿠제치 대사는 이날 오후 시민단체 서민민생대책위원회 주최로 여의도에서 열린 초청 토론회에서 이란과 미국, 이스라엘 사이의 중동 전쟁 및 호르무즈해협 봉쇄와 관련한 입장을 설명하면서 이같이 말했다."
         }
       ],
-      "dedupeKey": "대비-미국-실패-이란-종전-타결되지-파괴하겠다고-협상",
-      "clusterKey": "관세/실패",
+      "dedupeKey": "교환-대사-메시지-미국-이란-주한-중재자-협상",
+      "clusterKey": "관세/주한",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1333192",
+      "publishedAt": "2026-04-01T08:14:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_3",
+      "date": "2026-04-02",
+      "category": "국제",
+      "title": "USTR, 한미 FTA에도 한국 관세율 잘못 인용",
+      "summary": [
+        "미국 무역대표부(USTR)가 국별 무역장벽 보고서(NTE)에서 한국의 평균 최혜국(MFN) 실행 관세율을 13.4%로 잘못 인용했습니다.",
+        "이는 한미 FTA 체결로 인해 미국에는 적용되지 않는 수치이며, 한국 정부는 이미 수차례 오류를 지적했습니다."
+      ],
+      "whyImportant": "USTR의 잘못된 관세율 인용은 향후 무역 협상 및 무역법 301조 조사에서 한국에 불리하게 작용할 수 있습니다.",
+      "importanceRationale": "근거: USTR이 무역법 301조에 따른 조사 시 각국 관세율을 결정하는 근거로 NTE 보고서를 활용할 전망이므로 중요도는 3입니다.",
+      "impactSignals": [],
+      "dedupeKey": "fta-ustr-관세율-무역대표부-인용-잘못-한국-한미",
+      "clusterKey": "한미/ustr/fta/관세율",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202603306855i",
-      "publishedAt": "2026-03-30T15:01:13+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202604010307i",
+      "publishedAt": "2026-03-31T23:26:09+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-04-01_2",
-      "date": "2026-04-01",
+      "id": "2026-04-02_4",
+      "date": "2026-04-02",
       "category": "기술",
-      "title": "델타항공, 기내 와이파이 서비스에 아마존 Leo 활용",
+      "title": "구글, 양자 컴퓨터로 비트코인 해킹 가능성 제기",
       "summary": [
-        "델타항공은 2028년부터 아마존 Leo의 위성 와이파이를 500대의 항공기에 제공할 예정입니다.",
-        "이는 더 빠른 속도와 넓은 대역폭을 통해 승객들에게 향상된 기내 인터넷 서비스를 제공하기 위함입니다.",
-        "아마존 Leo는 약 3,200개의 저궤도 위성으로 구성된 네트워크를 구축할 계획입니다."
+        "구글은 양자 컴퓨터를 이용해 9분 만에 비트코인 보안을 뚫을 수 있다고 밝혔습니다.",
+        "이는 암호화폐 보안에 대한 새로운 위협으로 작용할 수 있습니다."
       ],
-      "whyImportant": "기내 와이파이 서비스 경쟁 심화는 항공사들이 승객 유치를 위해 기술 투자를 확대하는 추세를 보여줍니다.",
-      "importanceRationale": "근거: 델타항공은 500대의 항공기에 아마존 Leo의 위성 와이파이를 도입하고, 아마존은 약 3,200개의 위성 네트워크를 구축할 계획입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "He said Amazon Leo is focused on building out its satellite constellations and has about 200 satellites in orbit and hundreds more manufactured for launching."
-        }
-      ],
-      "dedupeKey": "500대-leo-기내-델타항공-서비스-아마존-와이파-활용",
-      "clusterKey": "델타항공/기내/와이파",
+      "whyImportant": "양자 컴퓨터 기술 발전은 암호화폐를 포함한 디지털 보안 시스템 전반에 중대한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 구글이 양자 컴퓨터로 비트코인 보안을 9분 만에 뚫을 수 있다고 밝혀 디지털 보안 시스템에 영향을 미칠 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "9분-구글-비트코인-암호화폐-양자-제기-컴퓨터-해킹",
+      "clusterKey": "구글/양자/컴퓨터",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/31/delta-air-lines-amazon-leo-inflight-wi-fi.html",
-      "publishedAt": "2026-03-31T11:00:01+00:00",
+      "sourceName": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr/economy/",
+      "publishedAt": "2026-04-01T05:38:53+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-04-01_3",
-      "date": "2026-04-01",
-      "category": "국제",
-      "title": "미국-이란 협상과 중동 정세",
-      "summary": [
-        "트럼프 대통령이 이란 발전소 초토화 가능성을 언급하며, 미국과 이란의 협상 진행에 대한 의문이 제기되고 있습니다.",
-        "이란은 미국의 핵무기 포기 요구를 비판하며, 미군 완전 철수 등 9개 종전 조건을 역으로 제안했습니다.",
-        "이스라엘은 중동 내 군사력 유지를 위해 약 14조 원의 국방 예산 증액을 의결했습니다."
-      ],
-      "whyImportant": "미국과 이란의 협상 불확실성과 중동 내 긴장 고조는 국제 안보 및 에너지 시장에 지속적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 이스라엘이 14조 원의 국방 예산을 증액한 점, 이란이 NPT 탈퇴를 검토하는 점 등은 중동 지역의 긴장이 고조되고 있음을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "친이란 무장단체인 후티 반군이 중동 전쟁에 참전하면서 이스라엘을 향한 공격을 이어가고 있고, 거기에 이란이 오만과 쿠웨이트 등 주변국에 대한 공격을 확대하면서 인명 피해도 잇따르고 있습니다."
-        }
-      ],
-      "dedupeKey": "14조-9개-미국-이란-이스라엘-정세-중동-협상",
-      "clusterKey": "이스라엘이란_관세/정세",
-      "matchedTo": null,
-      "sourceName": "MBC",
-      "sourceUrl": "https://imnews.imbc.com/replay/2026/nw2500/article/6811380_36989.html",
-      "publishedAt": "2026-03-30T15:27:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-01_4",
-      "date": "2026-04-01",
-      "category": "국제",
-      "title": "북한 해커, Axios 오픈 소스 프로젝트를 악성 코드로 하이재킹",
-      "summary": [
-        "북한 해커로 추정되는 세력이 널리 사용되는 JavaS ipt 라이브러리인 Axios를 하이재킹하여 악성 코드를 배포했습니다.",
-        "보안 회사 StepS ity에 따르면, 이번 공격은 월요일에서 화요일로 넘어가는 새벽에 발견되어 약 3시간 만에 중단되었습니다.",
-        "Google은 이번 Axios 침해를 북한 해커의 소행으로 보고 있습니다."
-      ],
-      "whyImportant": "오픈 소스 공급망 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 피해를 초래할 수 있어 보안 관점에서 중요합니다.",
-      "importanceRationale": "근거: Axios는 매주 수천만 번 다운로드되는 널리 사용되는 라이브러리이며, 공격으로 인해 수백만 명의 개발자가 위험에 처할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "These kinds of widespread breaches are called supply chain attacks because they target software that allows hackers to then hack whoever downloaded the compromised software."
-        }
-      ],
-      "dedupeKey": "axios-북한-소스-악성-오픈-프로젝트-하이재킹-해커",
-      "clusterKey": "해커/axios/오픈",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/31/hacker-hijacks-axios-open-source-project-used-by-millions-to-push-malware/",
-      "publishedAt": "2026-03-31T16:01:11+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-01_5",
-      "date": "2026-04-01",
+      "id": "2026-04-02_5",
+      "date": "2026-04-02",
       "category": "기술",
-      "title": "AI 관련 우려 속에서 마이크로소프트, 2008년 이후 최악의 분기 마감",
-      "summary": [
-        "마이크로소프트 주가가 1분기에 23% 하락하며 2008년 금융 위기 이후 최악의 실적을 기록했습니다.",
-        "이는 AI 분야에서의 성장과 클라우드 AI 인프라 구축에 대한 투자자들의 우려 때문입니다.",
-        "Copilot의 사용자 확보 부진과 경쟁 심화 또한 영향을 미치고 있습니다."
-      ],
-      "whyImportant": "AI 경쟁 심화와 클라우드 인프라 투자 부담이 마이크로소프트의 장기적인 수익성에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 1분기에 주가가 23% 하락했으며, Copilot의 사용자 확보가 부진하다는 점이 마이크로소프트의 AI 전략에 대한 우려를 나타냅니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "In February, OpenAI announced a service called Frontier that the company said \"helps enterprises build, deploy, and manage AI agents that can do real work.\" Microsoft CEO Satya Nadella has been wearing a brave face, promoting the company's AI enhancements on social media."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "While Microsoft remains dominant in workplace productivity software and through its Windows operating system, the company is facing twin pressures to grow efficiently in AI while also building out its cloud AI infrastructure to support soaring demand."
-        },
-        {
-          "label": "earnings",
-          "evidence": "Microsoft has been trying to build a larger revenue base from productivity software with the Microsoft 365 Copilot AI add-on, but so far, just 3% of commercial Office customers have licenses for it."
-        },
-        {
-          "label": "policy",
-          "evidence": "Microsoft's commercial remaining performance obligations at Azure more than doubled in the December quarter from a year earlier to $625 billion."
-        }
-      ],
-      "dedupeKey": "마감-마이크로소프트-분기-속에서-이후-최악-클라우드-투자자들",
-      "clusterKey": "실적/속에서",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/03/31/microsofts-stock-closes-worst-quarter-since-2008-financial-crisis.html",
-      "publishedAt": "2026-03-31T20:19:29+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-01_6",
-      "date": "2026-04-01",
-      "category": "금융",
-      "title": "삼성전자·SK하이닉스 1분기 영업이익 70조 기대, 주주환원은 제자리",
-      "summary": [
-        "삼성전자와 SK하이닉스의 1분기 실적 기대감이 커지고 있으며, 최대 실적을 기록할 것이라는 예상이 나오고 있습니다.",
-        "증권사들은 삼성전자의 1분기 영업이익 전망값을 36조 5천억원, SK하이닉스는 30조 1천억원으로 예상합니다.",
-        "하지만 일각에서는 실적 급등에 비해 주주 환원 계획이 미흡하다는 지적도 제기되고 있습니다."
-      ],
-      "whyImportant": "반도체 업황 호조 속에서 삼성전자와 SK하이닉스의 실적은 관련 산업 투자 및 주주 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 증권사들은 삼성전자의 1분기 영업이익을 36조 5천억원으로 예상하며, SK하이닉스의 연간 영업이익은 163조 3천억원에 이를 것으로 전망하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "금융정보업체인 에프앤가이드가 집계한 증권사들의 1분기 영업이익 전망값 평균은 36조5천억원이다."
-        }
-      ],
-      "dedupeKey": "1천억원-5천억원-70조-sk하이닉스-기대-삼성전자-영업이익-주주환원",
-      "clusterKey": "실적/삼성전자",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1252052.html",
-      "publishedAt": "2026-03-31T22:26:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-01_7",
-      "date": "2026-04-01",
-      "category": "금융",
-      "title": "ScaleOps, AI 수요 속 컴퓨팅 효율성 개선 위해 1억 3천만 달러 투자 유치",
-      "summary": [
-        "AI 수요 증가에 따라 컴퓨팅 자원 관리의 중요성이 커지고 있는 가운데, ScaleOps가 1억 3천만 달러의 투자를 유치했습니다.",
-        "ScaleOps는 클라우드 및 AI 인프라 비용을 최대 80%까지 절감할 수 있는 소프트웨어를 개발하고 있습니다.",
-        "이번 시리즈 C 투자 라운드는 I sight P s가 주도했으며, 기존 투자자들도 참여했습니다."
-      ],
-      "whyImportant": "AI 워크로드 관리를 자동화하여 컴퓨팅 자원 효율성을 높이는 ScaleOps의 솔루션은 AI 인프라 시장에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: ScaleOps는 1억 3천만 달러의 투자를 유치했으며, 소프트웨어를 통해 클라우드 및 AI 인프라 비용을 최대 80%까지 절감할 수 있다고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "While tools like Kubernetes help run applications across large clusters of machines, they often rely on static configurations that struggle to keep up with fast-changing demand, leading to underused GPUs, performance issues, and costly inefficiencies."
-        },
-        {
-          "label": "infra",
-          "evidence": "While many companies have introduced automation tools, they often operate without full context, which can lead to performance issues and even downtime, limiting trust among teams running production environments, according to the CEO."
-        },
-        {
-          "label": "capex",
-          "evidence": "The startup, which builds software that automatically manages and reallocates computing resources in real time, has raised $130 million at an $800 million valuation, ScaleOps said Monday."
-        }
-      ],
-      "dedupeKey": "1억-3천-scaleops-개선-달러-수요-컴퓨팅-효율성",
-      "clusterKey": "투자/scaleops",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/",
-      "publishedAt": "2026-03-30T13:52:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-01_8",
-      "date": "2026-04-01",
-      "category": "기술",
-      "title": "엔비디아, 마벨에 20억 달러 투자 결정",
+      "title": "엔비디아, 마벨에 20억 달러 투자 발표 후 마벨 주가 13% 급등",
       "summary": [
         "엔비디아가 인공지능 수요 충족을 위해 마벨 테크놀로지에 20억 달러를 투자할 계획을 발표했습니다.",
-        "이번 투자는 마벨을 엔비디아의 AI 생태계에 통합하고, 양사는 실리콘 포토닉스 기술과 AI 중심 통신 인프라 분야에서 협력할 예정입니다."
+        "이번 투자는 마벨을 엔비디아의 AI 생태계에 통합하여 고객들이 인프라를 더 쉽게 구축할 수 있도록 합니다.",
+        "마벨은 AI 수요 급증에 따라 2027년까지 매출 성장이 가속화될 것으로 예상하며, 엔비디아의 투자가 성장을 가속화할 것으로 기대합니다."
       ],
-      "whyImportant": "이번 투자는 AI 반도체 시장 경쟁 심화 및 관련 기술 발전에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 엔비디아가 마벨에 20억 달러를 투자하여 AI 생태계를 확장하고, 실리콘 포토닉스 기술 협력을 통해 AI 반도체 시장에 영향을 줄 수 있습니다.",
+      "whyImportant": "이번 투자는 AI 반도체 시장에서 엔비디아의 영향력을 확대하고, 마벨의 성장 잠재력을 강화하는 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 마벨에 20억 달러를 투자하고, 시높시스, 코어위브 등 여러 기술 기업에 유사한 투자를 진행한 것은 AI 생태계 확장의 일환입니다.",
       "impactSignals": [
         {
           "label": "market-demand",
           "evidence": "Shares popped this month after the company issued robust guidance and called for accelerating revenue growth into 2027 as AI demand surges."
         }
       ],
-      "dedupeKey": "20억-달러-마벨-엔비디아-인공지능-테크놀로지-투자-포토닉스",
-      "clusterKey": "투자/엔비디아",
+      "dedupeKey": "20억-급등-달러-마벨-엔비디아-인공지능-주가-투자",
+      "clusterKey": "실적/엔비디아/투자",
       "matchedTo": null,
       "sourceName": "CNBC",
       "sourceUrl": "https://www.cnbc.com/2026/03/31/marvell-nvidia-stock-stake.html",
@@ -272,29 +149,147 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-01_9",
-      "date": "2026-04-01",
+      "id": "2026-04-02_6",
+      "date": "2026-04-02",
       "category": "기술",
-      "title": "정부, 위기 업종 사업 재편 직접 권고 가능",
+      "title": "AI 관련 우려로 인해 2008년 이후 최악의 분기를 마감한 마이크로소프트",
       "summary": [
-        "정부가 위기에 직면한 기업의 사업 재편을 권고할 수 있는 법적 근거가 마련되었습니다.",
-        "기업활력법 개정안이 국회 본회의를 통과하여 정부가 선제적으로 사업 재편을 이끌 수 있게 되었습니다.",
-        "자금 지원 대상에 상호출자제한집단을 추가하고, 사업 재편 지원 기간을 5년으로 연장합니다."
+        "마이크로소프트 주가가 1분기에 23% 하락하며 2008년 금융 위기 이후 최악의 실적을 기록했습니다.",
+        "AI 경쟁 심화와 클라우드 AI 인프라 구축 부담이 작용한 것으로 분석됩니다.",
+        "일부에서는 마이크로소프트의 펀더멘털과 주가 간 괴리가 크다는 분석도 제기되고 있습니다."
       ],
-      "whyImportant": "이번 개정으로 정부가 산업 위기에 선제적으로 대응하고 기업의 구조적 변화를 지원할 수 있게 됩니다.",
-      "importanceRationale": "근거: 기업활력법 개정안은 정부가 사업 재편 필요 업종을 선정하고 기업에 사업 재편을 권고할 수 있도록 하며, 지원 기간을 5년으로 연장하는 내용을 담고 있습니다.",
+      "whyImportant": "마이크로소프트의 AI 분야 성과는 향후 소프트웨어 산업 전반에 걸쳐 경쟁 구도와 시장 변화에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 마이크로소프트의 주가 하락은 1분기에 23%에 달하며, 이는 AI 경쟁 심화와 클라우드 인프라 구축 부담과 관련이 있습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "국회는 31일 본회의를 열어 '기업 활력 제고를 위한 특별법'(이하 기업활력법) 개정안을 통과시켰다."
+          "label": "market-demand",
+          "evidence": "While Microsoft remains dominant in workplace productivity software and through its Windows operating system, the company is facing twin pressures to grow efficiently in AI while also building out its cloud AI infrastructure to support soaring demand."
         }
       ],
-      "dedupeKey": "권고-기업-사업-업종-위기-재편-정부-직접",
-      "clusterKey": "투자/위기",
+      "dedupeKey": "마감-마이크로소프트-분기-이후-인해-일부-최악-클라우드",
+      "clusterKey": "실적/인해",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/31/microsofts-stock-closes-worst-quarter-since-2008-financial-crisis.html",
+      "publishedAt": "2026-03-31T20:19:29+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_7",
+      "date": "2026-04-02",
+      "category": "금융",
+      "title": "샤넬, '25백' 가격 3% 인상",
+      "summary": [
+        "샤넬이 '샤넬 25 백' 가격을 평균 3% 수준으로 인상했습니다.",
+        "이번 인상으로 스몰 사이즈 가격은 1000만원을 넘어섰습니다.",
+        "샤넬코리아는 지난해 매출 2조 원을 돌파하고 영업이익은 25% 증가했습니다."
+      ],
+      "whyImportant": "명품 브랜드의 가격 인상 전략과 실적의 연관성을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 샤넬코리아는 가격 인상 전략에 힘입어 지난해 매출 2조 원을 돌파하고 영업이익이 25% 증가하는 등 실적 성장을 기록했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "샤넬코리아는 지난해 사상 처음으로 매출 2조원을 돌파했다."
+        }
+      ],
+      "dedupeKey": "1000만원-25백-2조-가격-샤넬-샤넬코리아-영업이익-인상",
+      "clusterKey": "실적/샤넬",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026040231637",
+      "publishedAt": "2026-04-01T22:12:08+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_8",
+      "date": "2026-04-02",
+      "category": "금융",
+      "title": "삼성전자·SK하이닉스 1분기 영업이익 70조 기대, 주주환원은 제자리",
+      "summary": [
+        "삼성전자와 SK하이닉스의 1분기 실적 기대감이 커지고 있으며, 사상 최대 실적을 기록할 것으로 예상됩니다.",
+        "증권사들은 삼성전자의 1분기 영업이익 전망값을 평균 36조 5천억원, SK하이닉스는 30조 1천억원으로 예상합니다.",
+        "하지만 실적 급등에 비해 주주 환원 계획은 미흡하다는 지적도 제기되고 있습니다."
+      ],
+      "whyImportant": "반도체 업황 호조 속에서 삼성전자와 SK하이닉스의 실적 발표는 향후 투자 및 주주 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 증권사들은 삼성전자의 1분기 영업이익을 36조 5천억원으로 전망하며, SK하이닉스 역시 분기 기준 최대 이익을 기록할 것으로 예상되어 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "삼성전자와 에스케이(SK)하이닉스의 올해 1분기 실적 발표를 앞두고 시장의 기대감이 커지고 있다."
+        }
+      ],
+      "dedupeKey": "1천억원-5천억원-70조-sk하이닉스-기대-삼성전자-영업이익-주주환원",
+      "clusterKey": "실적/삼성전자",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1252052.html",
+      "publishedAt": "2026-04-01T00:17:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_9",
+      "date": "2026-04-02",
+      "category": "정책",
+      "title": "서영교, 국회 법제사법위원장 선출…5월 말까지 임기",
+      "summary": [
+        "서영교 더불어민주당 의원이 국회 법제사법위원장으로 선출되었습니다.",
+        "이번 보궐선거로 선출된 위원장들의 임기는 22대 국회 전반기가 끝나는 5월 말까지입니다."
+      ],
+      "whyImportant": "법제사법위원장 교체는 향후 법안 심의 및 통과 과정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 서영교 의원이 법사위원장으로 선출되었으며, 임기는 5월 말까지로 약 두 달간 수행합니다.",
+      "impactSignals": [],
+      "dedupeKey": "22대-국회-말까지-법제사법위원장-서영교-선출-의원-임기",
+      "clusterKey": "서영교/국회/법제사법위원장",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1251951.html",
+      "publishedAt": "2026-04-01T04:04:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-02_10",
+      "date": "2026-04-02",
+      "category": "에너지",
+      "title": "아오모리현, 재처리 공장 가동 전 원전 핵연료 반입 불허",
+      "summary": [
+        "아오모리현은 사용 후 핵연료 재처리 공장 완공 지연을 이유로 원자력 발전소의 핵연료 반입을 불허한다고 밝혔습니다.",
+        "현 내 롯카쇼무라 재처리공장 가동을 핵연료 반입 조건으로 내세우고 있습니다.",
+        "재처리공장은 1993년 착공 후 수십 년간 준공이 지연되고 있습니다."
+      ],
+      "whyImportant": "이는 일본의 원자력 정책 전반에 걸쳐 차질을 빚을 수 있는 사안입니다.",
+      "importanceRationale": "근거: 아오모리현의 핵연료 반입 불허는 일본 정부가 2040년까지 원전 비중을 20%로 늘리려는 목표 달성에 차질을 초래할 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "도쿄전력 등 일본 내 주요 전력회사가 출자한 업체인 니혼겐엔이 롯카쇼무라에 짓고 있는 재처리공장은 지난 1993년 착공됐다."
+        }
+      ],
+      "dedupeKey": "가동-공장-반입-불허-아오모리현-원전-재처리-핵연료",
+      "clusterKey": "에너지/아오모리현",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1332431",
-      "publishedAt": "2026-03-31T08:50:29+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1332803",
+      "publishedAt": "2026-04-01T01:20:59+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,

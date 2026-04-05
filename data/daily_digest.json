@@ -1,133 +1,33 @@
 {
-  "date": "2026-04-05",
+  "date": "2026-04-06",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-05T08:01:36.694408+09:00",
+  "lastUpdatedAt": "2026-04-06T08:03:20.046304+09:00",
   "items": [
     {
-      "id": "2026-04-05_1",
-      "date": "2026-04-05",
-      "category": "산업",
-      "title": "중국 반도체 기업, AI 붐과 미국 규제로 기록적인 매출 달성",
+      "id": "2026-04-06_1",
+      "date": "2026-04-06",
+      "category": "금융",
+      "title": "전쟁 장기화 우려에 휘발유 가격 상승",
       "summary": [
-        "중국 반도체 기업들이 AI 수요 증가와 미국의 수출 규제에 힘입어 작년에 기록적인 매출을 보고했습니다.",
-        "SMIC는 2025년 매출이 전년 대비 16% 증가한 93억 달러를 기록했으며, 화홍은 4분기 매출이 6억 5,990만 달러로 사상 최고치를 기록했습니다.",
-        "미국의 제재로 인해 HBM(고대역폭 메모리) 수출이 제한되면서 CXMT가 유일한 자국산 대안으로 부상하고 있습니다."
+        "미국과 이스라엘-이란 전쟁 장기화 전망 속에 국내 휘발유 가격이 지속적으로 상승하고 있습니다.",
+        "4일 오전 전국 주유소 휘발유 평균 가격은 리터당 1938.6원으로 전날 대비 6.8원 올랐습니다."
       ],
-      "whyImportant": "미국의 제재가 중국의 기술 자립을 가속화하고 있으며, 이는 장기적으로 글로벌 반도체 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: SMIC의 2025년 매출이 93억 달러를 기록하고, CXMT의 매출이 130% 증가하는 등 구체적인 수치를 통해 중국 반도체 산업의 성장세를 확인할 수 있습니다.",
+      "whyImportant": "전쟁 장기화에 따른 유가 상승은 소비자 물가에 영향을 미쳐 경제 전반에 부담을 줄 수 있습니다.",
+      "importanceRationale": "근거: 휘발유 가격이 전날 대비 6.8원 상승했으며, 국제 유가 변동이 2~3주 시차를 두고 국내 주유소 가격에 반영되므로 당분간 상승세가 이어질 가능성이 큽니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "export restrictions on China's tech sector over the last few years have added \"rocket fuel\" on chip demand, amplifying growth from other areas like electric vehicles and AI data centers, according to Paul Triolo, a partner at Albright Stonebridge Group."
-        },
-        {
-          "label": "policy",
-          "evidence": "ChangXin Memory Technologies (CXMT), one of China's leading memory players, saw a 130% year-on-year jump in revenue to more than 55 billion yuan ($8 billion), Bloomberg reported last week, citing people familiar with the matter."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "\"As demand remains high, Chinese semiconductor firms remain under huge pressure from US export controls, and domestic alternatives have become increasingly available in many subsectors, but not across the board,\" Triolo said."
+          "evidence": "국내 주유소 가격은 통상 국제유가 변동 이후 2~3주의 시차를 두고 반영되므로 당분간 상승세가 이어질 가능성이 크다."
         }
       ],
-      "dedupeKey": "규제-기록적인-기업-매출-미국-반도체-붐과-중국",
-      "clusterKey": "미중_실적/반도체/기업/정책",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/03/chinese-chip-firms-record-revenue-ai-boom-us-curbs.html",
-      "publishedAt": "2026-04-03T05:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_2",
-      "date": "2026-04-05",
-      "category": "에너지",
-      "title": "러시아, 공격받은 이란 부셰르 원전에서 전문가 추가 철수",
-      "summary": [
-        "러시아 국영 원전기업 로사톰은 이란 부셰르 원자력발전소에서 자국 전문인력 198명을 추가 철수했다고 밝혔습니다.",
-        "이번 인력 철수는 부셰르 원전이 공격받기 전에 계획되었으며, 지난 2월 말부터 직원들을 철수하고 있습니다."
-      ],
-      "whyImportant": "원전 공격 및 인력 철수는 향후 에너지 안보 및 국제 관계에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 부셰르 원전이 미국과 이스라엘의 공격을 받았고, 러시아가 전문 인력 198명을 추가 철수시킨다는 점에서 중요도 3으로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "러시아 국영 원전기업 로사톰은 미국·이스라엘의 공격을 받은 이란 부셰르 원자력발전소에서 자국 전문인력 198명이 추가 철수했다고 4일(현지시간) 밝혔다."
-        }
-      ],
-      "dedupeKey": "공격받-러시아-부셰르-원전-원전기업-이란-전문-철수",
-      "clusterKey": "공격받/부셰르/전문",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334790",
-      "publishedAt": "2026-04-04T15:37:38+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_3",
-      "date": "2026-04-05",
-      "category": "기술",
-      "title": "메타, 데이터 유출 후 Mercor와의 협력 일시 중단",
-      "summary": [
-        "메타는 데이터 계약 업체 M 에서 발생한 주요 보안 침해 사고로 인해 M 와의 모든 협력을 일시 중단했습니다.",
-        "O AI를 포함한 다른 주요 AI 연구소들도 M 와의 협력 관계를 재평가하고 있습니다.",
-        "이번 침해로 인해 AI 모델 훈련 데이터가 노출되었을 가능성이 제기되고 있습니다."
-      ],
-      "whyImportant": "AI 모델 훈련 데이터 유출은 경쟁사에게 핵심 정보를 노출시켜 AI 기술 경쟁에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: Mercor의 데이터 유출은 OpenAI, Anthropic 등 여러 AI 연구소에 영향을 미치며, 경쟁사에게 AI 모델 훈련 방식에 대한 핵심 정보를 노출할 수 있다는 점에서 중요도 3입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "Meta has paused all its work with the data contracting firm Mercor while it investigates a major security breach that impacted the startup, two sources confirmed to WIRED."
-        }
-      ],
-      "dedupeKey": "mercor-계약-데이터-메타-연구소들-유출-일시-협력",
-      "clusterKey": "메타/데이터/유출",
-      "matchedTo": null,
-      "sourceName": "WIRED",
-      "sourceUrl": "https://www.wired.com/story/meta-pauses-work-with-mercor-after-data-breach-puts-ai-industry-secrets-at-risk/",
-      "publishedAt": "2026-04-03T21:28:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_4",
-      "date": "2026-04-05",
-      "category": "기술",
-      "title": "이란, 아마존 클라우드 시설 공격 주장 및 중동 긴장 고조",
-      "summary": [
-        "이란 혁명수비대는 바레인 소재 아마존 클라우드 컴퓨팅 시설을 공격했다고 주장하며, 미국 기업을 겨냥한 첫 조치라고 밝혔습니다.",
-        "미국과 이스라엘은 이란의 민간 기반 시설을 공습했으며, 이란은 이에 맞서 보복을 예고하며 중동 전역의 긴장이 고조되고 있습니다."
-      ],
-      "whyImportant": "이번 사건은 미국과 이란 간의 사이버 및 물리적 공격이 민간 인프라를 대상으로 확대될 수 있음을 시사합니다.",
-      "importanceRationale": "근거: 이란 혁명수비대가 아마존 클라우드 시설을 공격했다고 주장하며 미국 기업을 표적으로 삼겠다고 선언하여, 공격 대상이 여러 기업으로 확대될 가능성이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "2일 이란 혁명수비대는 보복 차원으로 바레인에 있는 아마존 클라우드 컴퓨팅 시설을 공격했다고 밝히며 “미국과 이스라엘의 간첩 기업들을 겨냥한 첫번째 조치”라고 했다."
-        }
-      ],
-      "dedupeKey": "고조-공격-긴장-시설-아마존-이란-중동-클라우드",
-      "clusterKey": "이스라엘이란/아마존/시설/공격",
+      "dedupeKey": "6원-8원-가격-미국-상승-장기화-전쟁-휘발유",
+      "clusterKey": "이스라엘이란/전쟁/장기화/휘발유",
       "matchedTo": null,
       "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1252598.html",
-      "publishedAt": "2026-04-03T11:07:00+00:00",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1252647.html",
+      "publishedAt": "2026-04-04T02:15:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -136,33 +36,131 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-05_5",
-      "date": "2026-04-05",
-      "category": "에너지",
-      "title": "AI 기업, 데이터 센터 전력 공급 위해 대규모 천연 가스 발전소 건설",
+      "id": "2026-04-06_2",
+      "date": "2026-04-06",
+      "category": "정책",
+      "title": "국회 정보위, 국정원으로부터 중동전쟁 등 현안 보고 청취",
       "summary": [
-        "마이크로소프트, 셰브론, E e No. 1은 텍사스 서부에 최대 5GW의 전력을 생산할 수 있는 천연 가스 발전소를 건설할 예정입니다.",
-        "구글은 933MW 규모의 천연 가스 발전소를 건설하기 위해 C usoe와 협력하고 있으며, 메타는 루이지애나에 7개의 천연 가스 발전소를 추가하여 총 7.46GW의 용량을 확보했습니다.",
-        "AI ies e g al gas ts to data s."
+        "국회 정보위원회는 국가정보원으로부터 중동 사태 관련 현안 보고를 받습니다.",
+        "국정원의 직무 범위에 '경제안보'를 명시하는 국정원법 일부개정안도 심사될 예정입니다."
       ],
-      "whyImportant": "AI 데이터 센터 전력 확보 경쟁 심화는 천연 가스 가격 상승 및 공급망 문제로 이어져, 장기적으로 에너지 시장에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 2019년 대비 터빈 가격이 올해 말까지 195% 상승할 것으로 예상되며, 신규 주문은 2028년까지 불가능하고 터빈 배송에 6년이 걸리는 등 공급망 차질이 발생하고 있습니다.",
+      "whyImportant": "국정원의 직무 범위 확대는 국가 경제 안보 정책에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 국정원 직무 범위에 '경제안보'를 명시하는 국정원법 일부개정안이 여야 합의로 상정되어 심사될 예정이기 때문입니다.",
       "impactSignals": [
         {
+          "label": "policy",
+          "evidence": "국정원 직무범위에 '경제안보' 명시 법안, 여야 합의로 상정 (서울=연합뉴스) 김연정 기자 = 국회 정보위원회는 6일 오전 전체회의를 열어 국가정보원으로부터 미국과 이란 전쟁에 따른 이른바 '중동 사태'와 관련해 현안 보고를 받는다."
+        }
+      ],
+      "dedupeKey": "국가정보원-국정원-국회-정보위-정보위원회-중동전쟁-청취-현안",
+      "clusterKey": "국회/정보위/국정원",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1335080",
+      "publishedAt": "2026-04-05T20:00:10+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-06_3",
+      "date": "2026-04-06",
+      "category": "에너지",
+      "title": "미국-이스라엘, 이란 원전 공격으로 '재앙적 확전' 우려",
+      "summary": [
+        "미국과 이스라엘이 이란의 석유화학단지와 원자력발전소를 공격하여 중동 정세가 악화되고 있습니다.",
+        "이란 국영 통신은 이란 남서부 석유화학단지에서 최소 5명 부상, 남부 부셰르 원전단지에서 1명이 사망했다고 보도했습니다."
+      ],
+      "whyImportant": "이번 공격은 중동 지역의 긴장을 고조시키고 국제 유가 및 금융 시장의 변동성을 확대시킬 수 있어 중요합니다.",
+      "importanceRationale": "근거: 이란의 대응 수위에 따라 국제유가와 글로벌 금융시장 변동성 확대 가능성이 제기되었으며, 이는 광범위한 경제적 영향을 암시합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "그들의 무기 원료가 되는 철강 생산 능력의 70%를 파괴한 데 이어, 오늘 우리는 석유화학 공장을 타격했습니다.\" 현지시간 4일 오전 이란 남서부 석유화학단지에서 최소 5명이 다치고, 남부 부셰르 원전단지에서도 1명이 숨졌다고 이란 국영 통신이 보도했습니다."
+        },
+        {
+          "label": "security",
+          "evidence": "아바스 아라그치 이란 외무장관은 이날 SNS를 통해 \"이스라엘과 미국은 부셰르 원전을 이제 4번 공격했다\"며 \"방사능 낙진은 테헤란이 아니라 걸프 국가들의 수도에서 생명을 앗아갈 것\"이라고 경고했습니다."
+        },
+        {
           "label": "market-demand",
-          "evidence": "The scramble for natural gas has led to a shortage of turbines for the power plants, with prices likely to rise 195% by the end of this year relative to 2019 prices, according to Wood Mackenzie."
+          "evidence": "아랍 국가들이 특히 이집트를 중심으로 중재하려는 노력을, 고삐를 당기고 있는 것 같아요.\" 이란의 대응 수위에 따라 국제유가와 글로벌 금융시장 변동성도 한층 확대될 가능성이 제기됩니다."
+        }
+      ],
+      "dedupeKey": "공격-남서부-미국-원전-이란-이스라엘-재앙적-확전",
+      "clusterKey": "이스라엘이란/공격/재앙적/확전",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334983",
+      "publishedAt": "2026-04-05T06:15:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-06_4",
+      "date": "2026-04-06",
+      "category": "금융",
+      "title": "디지털 자산 시장 재편 전망",
+      "summary": [
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편될 것으로 예상됩니다.",
+        "신한투자증권은 디지털자산 전담팀을 유지하며 사업을 준비해 왔으며, 분산원장 기술 경쟁력 확보 및 조각투자 사업자들과의 계약을 통해 선점효과를 기대하고 있습니다."
+      ],
+      "whyImportant": "디지털 자산 관련 규제 변화는 금융 및 산업 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 디지털자산 시장이 재편될 것으로 예상되며, 신한투자증권은 수년간 디지털자산 전담팀을 유지하며 사업을 준비해 왔습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
+        }
+      ],
+      "dedupeKey": "디지털-디지털자산-디지털자산기본법-분산원장-시장-신한투자증권-자산-재편",
+      "clusterKey": "디지털/자산/재편",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-05T11:48:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-06_5",
+      "date": "2026-04-06",
+      "category": "에너지",
+      "title": "미국-이스라엘, 이란 석유 시설 및 부셰르 원전 공습",
+      "summary": [
+        "미국과 이스라엘이 이란의 석유화학단지와 원전을 동시에 공습하여 긴장이 고조되고 있습니다.",
+        "이란 당국에 따르면 마흐샤흐르 석유화학 단지와 반다르이맘 공습으로 최소 5명이 부상했습니다.",
+        "부셰르 원전도 공격받았으나 핵심 시설과 가동에는 영향이 없는 것으로 파악되었습니다."
+      ],
+      "whyImportant": "이번 공습은 중동 지역의 긴장을 더욱 고조시키고 국제 관계에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이란의 석유화학 단지와 원전이 공격받았으며, 이는 지역 안보에 직접적인 영향을 미칠 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "아바스 아라그치 이란 외무장관은 \"이스라엘과 미국은 부셰르 원전을 이제 4번 공격했다\"며 \"방사능 낙진은 테헤란이 아니라 걸프국가들의 수도에서 생명을 앗아갈 것\"이라고 경고했습니다."
         },
         {
           "label": "capex",
-          "evidence": "Microsoft said on Tuesday that it’s working with Chevron and Engine No. 1 to build a natural gas power plant in West Texas that could grow to produce 5 gigawatts of electricity."
+          "evidence": "#미국 #이스라엘 #이란 #공습 #원전 #석유화학단지 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 김수빈(soup@yna.co.kr)"
         }
       ],
-      "dedupeKey": "가스-공급-기업-데이터-발전소-센터-전력-천연",
-      "clusterKey": "기업/데이터/센터",
+      "dedupeKey": "공습-미국-부셰르-석유-시설-원전-이란-이스라엘",
+      "clusterKey": "이스라엘이란/석유/시설/부셰르",
       "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/04/03/ai-companies-are-building-huge-natural-gas-plants-to-power-data-centers-what-could-go-wrong/",
-      "publishedAt": "2026-04-03T19:48:22+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334857",
+      "publishedAt": "2026-04-04T23:36:46+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -171,39 +169,8 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-05_6",
-      "date": "2026-04-05",
-      "category": "기술",
-      "title": "아마존, 판매자에게 유류·물류 할증료 부과",
-      "summary": [
-        "아마존이 이란 전쟁으로 인한 고유가로 인해 플랫폼 입점 판매자에게 3.5%의 유류·물류 할증료를 부과합니다.",
-        "이번 할증료는 4월 중순부터 미국·캐나다 지역 판매자에게 적용될 예정입니다.",
-        "UPS, 페덱스, USPS도 유가 상승을 반영하여 할증료를 인상했습니다."
-      ],
-      "whyImportant": "이번 할증료 부과는 최종 소비자 가격 인상으로 이어져 시장 전반에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 아마존은 4월 중순부터 판매자에게 3.5%의 할증료를 부과하며, USPS도 소포마다 8%의 추가 요금을 부과하기로 결정했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "세계 최대 전자상거래 기업 아마존이 이란 전쟁이 촉발한 고유가 여파로 자사 플랫폼에 입점한 판매자에게 이번 달 중순부터 3.5%의 유류·물류 할증료를 부과한다고 월스트리트저널(WSJ)과 CNBC 방송이 현지 시간 2일 보도했습니다."
-        }
-      ],
-      "dedupeKey": "usps-물류-미국-부과-아마존-유류-판매자-할증료",
-      "clusterKey": "아마존/판매자/유류",
-      "matchedTo": null,
-      "sourceName": "연합뉴스",
-      "sourceUrl": "https://www.yonhapnewstv.co.kr/news/AKR20260403111736tzm",
-      "publishedAt": "2026-04-03T02:20:24+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_7",
-      "date": "2026-04-05",
+      "id": "2026-04-06_6",
+      "date": "2026-04-06",
       "category": "금융",
       "title": "수출 실적 2위에도 웃지 못하는 정유업계, 실적 변동성 확대 우려",
       "summary": [
@@ -233,84 +200,16 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-05_8",
-      "date": "2026-04-05",
-      "category": "금융",
-      "title": "UN, 호르무즈 해협 개방 결의안 표결 또 연기",
-      "summary": [
-        "호르무즈 해협 봉쇄 해제를 위한 유엔 결의안 표결이 다시 연기되었습니다.",
-        "안보리 이사국 회의는 다음 주로 연기되었으며, 정확한 날짜는 아직 발표되지 않았습니다."
-      ],
-      "whyImportant": "호르무즈 해협의 개방 여부는 국제 해상 운송 및 에너지 시장에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 안보리 결의안은 해협 통행을 위해 '필요한 모든 방어적 수단'을 사용할 수 있도록 허용하는 내용을 담고 있어 국제적 파급력이 예상되지만, 구체적인 시점 정보가 없어 중요도는 3입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "#유엔 #호르무즈 #연기 #안보리 #결의안 #무력개방 #표결 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)"
-        },
-        {
-          "label": "security",
-          "evidence": "호르무즈 해협 봉쇄를 풀기 위한 무력 방어를 허용하는 유엔 결의안 표결이 재차 연기됐다고 현지시간 3일 로이터통신이 보도했습니다."
-        }
-      ],
-      "dedupeKey": "개방-결의안-발표되지-연기되었으며-이사국-표결-해협-호르무즈",
-      "clusterKey": "호르무즈/해협/개방",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334716",
-      "publishedAt": "2026-04-04T04:06:28+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_9",
-      "date": "2026-04-05",
+      "id": "2026-04-06_7",
+      "date": "2026-04-06",
       "category": "정책",
-      "title": "국회, 쿠팡 출입기록 공개 거부 논란",
+      "title": "추경 예산안 심사, 여야 본격적인 줄다리기",
       "summary": [
-        "국회사무처가 과거 5대 재벌 등의 국회 출입기록을 공개했던 것과 달리 쿠팡의 출입기록 공개를 거부하고 있습니다.",
-        "사무처는 쿠팡 임직원에게 불이익이 발생할 우려가 있다는 이유를 들었지만, 과거 정보공개 결정과 배치된다는 지적이 나옵니다."
+        "26조 2천억원 규모의 추가경정예산안의 국회 처리 시한이 다가옴에 따라 여야 간의 예산안 심사 줄다리기가 본격화되고 있습니다.",
+        "국민의힘은 선거를 앞두고 현금 살포에 반대하며, 민주당은 경제 비상 상황에 대한 방치를 막아야 한다고 주장합니다."
       ],
-      "whyImportant": "이번 사안은 기업의 대관 활동 투명성과 국민의 알 권리 간의 균형에 대한 논쟁을 야기하며, 향후 유사 사례에 대한 정보 공개 기준 설정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 국회사무처가 쿠팡의 국회 출입기록 공개를 거부한 것은 과거 5대 재벌 그룹 등의 출입기록을 공개했던 사례와 대조되어 정보공개 기준의 일관성 문제가 제기되었기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "그러나 2023년 김남국 당시 의원의 가상자산 거래·보유 논란 당시, 이른바 '입법 로비' 의혹이 제기된 게임업체 '위메이드'의 출입 기록은 국회 상임위원회 의결을 거쳐 공개된 바 있다."
-        },
-        {
-          "label": "security",
-          "evidence": "그러자 국회사무처는 \"성명·주민등록번호 등 개인에 관한 사항으로 공개될 경우 사생활의 비밀 또는 자유를 침해할 우려가 있다\"며 응하지 않았다."
-        }
-      ],
-      "dedupeKey": "5대-거부-국회-국회사무처-논란-사무처-출입기록-쿠팡",
-      "clusterKey": "국회/쿠팡/출입기록",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334826",
-      "publishedAt": "2026-04-04T21:55:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-05_10",
-      "date": "2026-04-05",
-      "category": "정책",
-      "title": "추경 예산안 심사, 여야 대립 본격화",
-      "summary": [
-        "26조 2천억원 규모의 추가경정예산안의 국회 처리 시한이 다가옴에 따라 여야 간의 예산 심사 줄다리기가 본격화되고 있습니다.",
-        "국민의힘은 선거를 앞둔 현금 살포에 반대하며 고유가 피해지원금 등의 삭감을 주장하고, 민주당은 경제 비상 상황에 대한 방치를 막기 위해 원안 사수를 주장합니다."
-      ],
-      "whyImportant": "이번 추경안의 결정은 향후 경제 정책 방향과 우선순위에 대한 정부와 여야의 입장을 보여주는 중요한 지표가 될 것입니다.",
-      "importanceRationale": "근거: 26조 2천억원 규모의 추경안 처리 시한이 10일로 다가옴에 따라, 여야는 세부 사업을 놓고 대립하고 있어 정책 결정에 영향을 미칠 수 있습니다.",
+      "whyImportant": "이번 추경안 심사 결과는 향후 경제 정책 방향과 정부 예산 배분에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 여야는 26조 2천억원 규모의 추경안을 놓고 세부 사업에서 대립하고 있으며, 10일까지 처리하기로 합의했습니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -325,7 +224,7 @@
           "evidence": "이어 \"당장 지원이 필요한 곳이 많다\"며 \"정부안 그대로 빠르게 통과시켜야 한다\"고 했다."
         }
       ],
-      "dedupeKey": "26조-2천억원-대립-심사-여야-예산안-추가경정예산안-추경",
+      "dedupeKey": "26조-2천억원-심사-여야-예산안-줄다리기-추가경정예산안-추경",
       "clusterKey": "추경/예산안/심사",
       "matchedTo": null,
       "sourceName": "연합",
@@ -339,16 +238,16 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-05_11",
-      "date": "2026-04-05",
+      "id": "2026-04-06_8",
+      "date": "2026-04-06",
       "category": "정책",
       "title": "일본, 살상 무기 수출 시 국회 사후 통지 방침",
       "summary": [
-        "일본 정부가 살상 무기 수출 시 국가안전보장회의(NSC) 심사를 거쳐 결정하고, 국회에는 사후 통지하는 방안을 검토 중입니다.",
-        "이는 방위장비 이전 3원칙 운용지침 개정의 일환으로, 이달 중 개정 작업을 완료할 예정입니다."
+        "일본 정부가 살상 무기 수출을 원칙적으로 허용하기 위해 방위장비 이전 3원칙 운용지침을 개정할 방침입니다.",
+        "무기 수출 결정은 국가안전보장회의(NSC) 심사를 거쳐 이루어지며, 국회에는 사후에 통보될 예정입니다."
       ],
-      "whyImportant": "이번 결정은 일본의 방위 정책 변화를 보여주는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 일본 정부는 이달 중 방위장비 이전 3원칙 운용지침을 개정하여 살상무기 수출을 원칙적으로 허용할 방침입니다.",
+      "whyImportant": "이번 결정은 일본의 방위 정책에 중요한 변화를 가져올 수 있으며, 국제 안보 환경에도 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 일본 정부는 이달 중 방위장비 이전 3원칙 운용지침 개정을 완료하여 살상무기 수출을 원칙적으로 허용할 방침이며, 이는 2014년 이후 무기 수출 제한을 완화해온 흐름의 연장선상에 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -369,28 +268,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-05_12",
-      "date": "2026-04-05",
-      "category": "정책",
-      "title": "금융위, 강원도에서 국민성장펀드·지방우대금융 간담회 개최",
+      "id": "2026-04-06_9",
+      "date": "2026-04-06",
+      "category": "금융",
+      "title": "디지털 자산 시장의 제도권 편입과 산업 재편",
       "summary": [
-        "금융위원회는 강원도 춘천에서 국민성장펀드 및 지방우대금융 지역 간담회를 개최했습니다.",
-        "지방 첨단 산업 생태계 조성 및 투자 활성화 방안을 논의했습니다."
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장은 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
+        "글로벌 실물자산 토큰화 1위 기업인 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조했습니다."
       ],
-      "whyImportant": "이번 간담회는 지방의 첨단 산업 생태계 조성 및 투자 활성화에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 금융위는 강원도 에너지인프라 및 인공지능(AI) 데이터센터 등 첨단전략산업을 지원하겠다고 밝혔습니다.",
+      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 금융 및 산업 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 전체가 재편될 수 있다는 내용이 언급되어 있습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "(서울=연합뉴스) ▲ 금융위원회는 3일 강원도 춘천에서 '국민성장펀드·지방우대금융 지역간담회'를 열고 지방 첨단 산업 생태계 조성 및 투자 활성화 방안을 논의했다."
+          "label": "policy",
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
         }
       ],
-      "dedupeKey": "간담회-강원-국민성장펀드-금융위-금융위원회-지방우대금융-지역-춘천",
-      "clusterKey": "투자/금융/강원",
+      "dedupeKey": "1위-디지털-산업-시장-자산-재편-제도권-편입",
+      "clusterKey": "정책/디지털",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334182",
-      "publishedAt": "2026-04-03T01:34:38+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-05T22:57:55+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

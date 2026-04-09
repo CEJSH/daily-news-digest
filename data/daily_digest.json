@@ -1,33 +1,33 @@
 {
-  "date": "2026-04-09",
+  "date": "2026-04-10",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-09T08:20:23.476120+09:00",
+  "lastUpdatedAt": "2026-04-10T08:14:58.139991+09:00",
   "items": [
     {
-      "id": "2026-04-09_1",
-      "date": "2026-04-09",
+      "id": "2026-04-10_1",
+      "date": "2026-04-10",
       "category": "산업",
-      "title": "디지털 자산 기본법과 디지털 자산 시장 재편",
+      "title": "디지털 자산 기본법 제정과 시장 재편",
       "summary": [
         "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장은 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
-        "글로벌 실물자산 토큰화 1위 기업인 플룸네트워크는 RWA 토큰화가 자본시장의 핵심 의제라며 규제 개혁을 강조했습니다."
+        "글로벌 스테이블코인 선도 기업과 STO, RWA 프로젝트를 통해 새로운 질서의 주도권 향방을 가늠할 수 있습니다."
       ],
-      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 장기적으로 금융 및 산업 구조에 영향을 미칠 수 있는 중요한 변화입니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 재편될 것으로 예상되며, 플룸네트워크는 RWA 토큰화가 자본시장의 핵심 의제라고 밝혔습니다.",
+      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 금융, 산업, 기술 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 전체가 재편되는 역사적 전환점에 섰다는 내용이 언급되었습니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
         }
       ],
-      "dedupeKey": "1위-기본법-디지털-디지털자산-디지털자산기본법-시장-자산-재편",
-      "clusterKey": "정책/디지털",
+      "dedupeKey": "기본법-기업-디지털-디지털자산기본법-시장-자산-재편-제정",
+      "clusterKey": "디지털/자산/기본법",
       "matchedTo": null,
       "sourceName": "이데일리",
       "sourceUrl": "https://vaf.edaily.co.kr/2026/",
-      "publishedAt": "2026-04-07T11:20:02+00:00",
+      "publishedAt": "2026-04-09T02:37:40+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -36,8 +36,8 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-09_2",
-      "date": "2026-04-09",
+      "id": "2026-04-10_2",
+      "date": "2026-04-10",
       "category": "국제",
       "title": "중국, 미·이란 휴전 중재 외교 주력",
       "summary": [
@@ -45,7 +45,7 @@
         "중국은 이란 원유 수출의 80% 이상을 차지하는 최대 고객으로, 경제적 이해관계를 활용해 협상을 견인했다는 분석입니다."
       ],
       "whyImportant": "중국의 중동 지역에서의 영향력 확대 가능성을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 중국은 이란 원유 수출의 80% 이상을 차지하며, 에너지 공급망과 직결된 경제적 이해관계를 바탕으로 휴전 협상에 관여했습니다.",
+      "importanceRationale": "근거: 중국은 이란 원유 수출의 80% 이상을 차지하며, 경제적 영향력을 바탕으로 이란에 '자제와 유연한 대응'을 촉구했다고 NYT가 보도했습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -66,277 +66,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-09_3",
-      "date": "2026-04-09",
-      "category": "에너지",
-      "title": "카타르, 세계 최대 LNG 수출 시설 생산 재개 추진",
-      "summary": [
-        "카타르가 세계 최대 액화천연가스(LNG) 수출 시설의 생산 재개를 위해 엔지니어와 노동자를 동원 중입니다.",
-        "보안 상황 개선으로 제한적인 활동이 허용되었으며, LNG 시설은 재가동에 필요한 유지 보수 작업이 진행 중입니다.",
-        "라스 라판 가스전은 연간 7,700만 톤의 LNG를 생산할 수 있습니다."
-      ],
-      "whyImportant": "카타르 LNG 수출 시설의 생산 재개는 세계 가스 공급 안정에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 라스 라판 가스전은 연간 7,700만 톤의 LNG 생산 능력을 갖추고 있으며, 이전 중단으로 카타르 연간 가스 수출량의 17%가 중단될 위기에 처했었습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "\"카타르, 세계 최대 LNG 수출시설 생산재개 신속 진행\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 \"라스 라판 가스전 재가동에 필요한 유지보수 작업 중\" LNG의 짧은 수송 시한으로 호르무즈 통과 전제돼야 LNG의 짧은 수송 시한으로 호르무즈 통과 전제돼야 미국과 이란의 휴전으로 카타르가 세계 최대 액화천연가스(LNG) 수출 시설의 신속한 생산 재개를 위해 엔지니어와 노동자들을 동원중인 것으로 알려졌다."
-        },
-        {
-          "label": "security",
-          "evidence": "라스 라판 가스전은 3월 초 미사일 공격에 따른 일부 시설 손상과 호르무즈 해협 폐쇄로 가동을 중단, 전 세계적인 가스 공급 부족 사태를 초래했다."
-        }
-      ],
-      "dedupeKey": "lng-동원-생산-세계-수출-시설-최대-카타르",
-      "clusterKey": "카타르/세계/최대",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604088299i",
-      "publishedAt": "2026-04-08T13:16:48+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_4",
-      "date": "2026-04-09",
-      "category": "에너지",
-      "title": "대만, SMR 연구 착수…2035년 전력 생산 목표",
-      "summary": [
-        "대만 정부가 인공지능 전력 수요에 대응하여 소형모듈원자로(SMR) 연구에 착수했습니다.",
-        "국가원자력과학기술연구원은 3종류의 SMR 기술을 연구 중이며, 2035년부터 전력 생산을 목표로 하고 있습니다.",
-        "중장기 프로젝트에 약 472억원을 투입하여 SMR 기술 관련 안전 및 사용후핵연료 처리 문제를 점검할 계획입니다."
-      ],
-      "whyImportant": "대만의 SMR 연구 개발은 향후 에너지 안보 및 전력 공급에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 대만은 중장기 프로젝트에 약 472억원을 투입하여 SMR 기술을 연구하고, 2035년부터 전력 생산을 목표로 하고 있어 산업적 파급력이 예상됩니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "(타이베이=연합뉴스) 김철문 통신원 = '탈원전'을 추진해온 대만 정부가 인공지능(AI) 전력 수요 등에 대응해 원자력발전소 재가동에 이어 소형모듈원자로(SMR) 연구에 착수했다."
-        }
-      ],
-      "dedupeKey": "472억원-smr-국가원자력과학기술연구원-대만-목표-생산-연구-전력",
-      "clusterKey": "에너지/연구",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1335879",
-      "publishedAt": "2026-04-07T03:14:44+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_5",
-      "date": "2026-04-09",
-      "category": "에너지",
-      "title": "석유·가스 시설 복구 지연으로 에너지 가격 상승 지속 전망",
-      "summary": [
-        "사우디, UAE 등 주요 에너지 생산 시설 15곳이 타격을 입어 복구에 수년이 걸릴 것으로 예상됩니다.",
-        "카타르의 라스라판 LNG 단지는 LNG 생산에 큰 차질을 빚고 있으며, 사우디의 라스타누라 정유 시설은 가동을 중단했습니다."
-      ],
-      "whyImportant": "에너지 시설 피해 복구 지연은 장기적인 에너지 공급 불안정과 가격 상승을 초래할 수 있습니다.",
-      "importanceRationale": "근거: 40일 전쟁 동안 에너지 생산 시설 15곳이 타격받았고, 일부 시설 복구에 3~5년이 소요될 것으로 예상되어 에너지 시장에 장기적 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "현지에선 생산 시설 복구에 3~5년이 걸릴 것으로 보고 있다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "생산 시설 중단 여파는 국제 에너지 가격에 영향을 준다."
-        }
-      ],
-      "dedupeKey": "가격-가스-복구-상승-석유-시설-에너지-지연",
-      "clusterKey": "에너지/석유",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026040879781",
-      "publishedAt": "2026-04-08T08:43:39+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_6",
-      "date": "2026-04-09",
-      "category": "기술",
-      "title": "메타, 새로운 AI 모델 공개",
-      "summary": [
-        "메타가 새로운 AI 모델 Muse S k를 공개하며 AI 시장 경쟁에 본격적으로 뛰어들었습니다.",
-        "이 모델은 메타의 새로운 Muse 시리즈의 첫 번째 모델로, 복잡한 질문에 대한 추론 능력을 갖췄습니다.",
-        "메타는 AI 관련 자본 지출을 늘려 2026년에는 1,150억 달러에서 1,350억 달러 사이가 될 것으로 예상됩니다."
-      ],
-      "whyImportant": "메타의 AI 모델 개발 및 투자는 AI 기술 경쟁 심화와 시장 확대를 가속화할 수 있습니다.",
-      "importanceRationale": "근거: 메타는 AI 관련 자본 지출을 2026년까지 최대 1,350억 달러로 늘릴 예정이며, 이는 AI 시장의 경쟁 심화를 예고합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "In its latest earnings report, Meta said its AI-related capital expenditures in 2026 will be between $115 billion and $135 billion, or nearly twice its capex last year."
-        }
-      ],
-      "dedupeKey": "150억-350억-k를-muse-뛰어들었-메타-모델-시장",
-      "clusterKey": "투자/ai/메타",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
-      "publishedAt": "2026-04-08T16:01:28+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_7",
-      "date": "2026-04-09",
-      "category": "기술",
-      "title": "아마존, 구형 킨들에 대한 지원 중단",
-      "summary": [
-        "아마존은 2012년 이전 출시된 킨들 기기에 대한 지원을 5월 20일에 중단할 예정입니다.",
-        "해당 기기에서는 더 이상 킨들 스토어에 연결하여 새로운 전자책을 다운로드할 수 없게 됩니다.",
-        "USB 케이블을 통해 수동으로 문서를 다운로드하는 방법은 여전히 가능합니다."
-      ],
-      "whyImportant": "구형 기기에 대한 소프트웨어 지원 중단은 소비자에게 새로운 기기 구매를 강요하고 전자 폐기물을 증가시키는 문제가 있습니다.",
-      "importanceRationale": "근거: 2012년 이전 킨들 기기 지원 중단은 여러 사용자에게 영향을 미치며, 다른 기업들도 유사한 사례(Spotify Car Thing, Google Nest, Netflix)가 있어 파급력이 있습니다.",
-      "impactSignals": [],
-      "dedupeKey": "구형-기기-다운로드-다운로드할-아마존-이전-지원-킨들",
-      "clusterKey": "아마존/구형/킨들",
-      "matchedTo": null,
-      "sourceName": "WIRED",
-      "sourceUrl": "https://www.wired.com/story/amazon-pulls-support-for-perfectly-fine-older-kindles/",
-      "publishedAt": "2026-04-08T16:54:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_8",
-      "date": "2026-04-09",
-      "category": "기술",
-      "title": "AWS, Anthropic과 OpenAI에 대한 투자 갈등 해소",
-      "summary": [
-        "AWS의 CEO인 Matt G 은 A opic에 대한 80억 달러 투자를 포함한 오랜 파트너십 이후 O AI에 500억 달러를 투자한 것은 AWS가 처리하는 일반적인 이해 상충이라고 밝혔습니다.",
-        "AWS는 파트너와 경쟁하는 데 익숙하며, 경쟁 우위를 제공하지 않을 것을 약속했다고 설명했습니다.",
-        "AWS는 고객을 위해 O AI 모델을 확보하기 위한 투자가 생존과 관련된 문제였다고 덧붙였습니다."
-      ],
-      "whyImportant": "AWS의 AI 모델 회사에 대한 투자는 클라우드 서비스 시장에서의 경쟁 심화와 기술 개발 협력 관계를 동시에 추구하는 전략적 움직임을 보여줍니다.",
-      "importanceRationale": "근거: AWS가 OpenAI에 500억 달러를 투자한 것은 경쟁사인 Microsoft의 클라우드에서 이미 해당 모델을 사용할 수 있었기 때문이며, 이는 클라우드 시장에서의 경쟁 심화를 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "AWS CEO Matt Garman said Amazon’s recent $50 billion investment in OpenAI, after its long partnership including $8 billion of investment in Anthropic, is the type of conflict of interest the cloud giant is used to handling."
-        }
-      ],
-      "dedupeKey": "500억-80억-anthropic-aws-openai-갈등-투자-해소",
-      "clusterKey": "투자/anthropic",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/",
-      "publishedAt": "2026-04-08T20:09:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_9",
-      "date": "2026-04-09",
+      "id": "2026-04-10_3",
+      "date": "2026-04-10",
       "category": "금융",
-      "title": "셀트리온, 미국 보험 정책 변화로 인한 영향력 확대 전망",
+      "title": "엔씨소프트, 올해 매출 2조 5천억원 목표 달성 전망",
       "summary": [
-        "셀트리온은 미국 메디케어·메디케이드 서비스 센터(CMS)의 정책 발표로 자사 제품 처방 확대에 유리한 시장 환경이 조성되었다고 밝혔습니다.",
-        "보험사 부담금 증가, 환자 본인 부담금 상향 등으로 가격이 저렴한 바이오시밀러에 대한 선호도가 높아질 것으로 예상됩니다."
+        "엔씨소프트가 제시한 올해 매출 2조 5천억 원 달성이 가시화되고 있습니다.",
+        "아이온2의 시즌제 도입과 리니지 클래식의 실적, 저스트 플레이 인수 효과 등이 긍정적으로 작용하고 있습니다.",
+        "증권가에서는 아이온2의 연간 국내외 매출을 6천억~7천억 원으로 전망하고 있습니다."
       ],
-      "whyImportant": "미국 보험 정책 변화는 바이오시밀러 시장에 영향을 미쳐 셀트리온의 장기적인 수익성에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 2027년부터 보험사 부담금이 2.48% 증가하고, 환자 본인 부담금 상한도 내년 2400달러로 높아지는 정책 변화가 예상되기 때문입니다.",
+      "whyImportant": "엔씨소프트의 매출 목표 달성 여부는 향후 게임 업계의 실적 및 투자 전략에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 올해 엔씨소프트 매출 목표 2조 5천억 원은 아이온2의 연간 국내외 매출 6천억~7천억 원 전망과 리니지 클래식 및 저스트 플레이 매출을 합산한 결과입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "환자가 체감하는 비용 부담이 커지는 만큼, 가격이 저렴한 의약품에 대한 환자 선호도가 높아질 것으로 예상된다."
+          "label": "earnings",
+          "evidence": "엔씨가 제시한 올해 매출 2조5000억원이 가시권에 들어왔다."
         }
       ],
-      "dedupeKey": "미국-변화-보험-셀트리온-영향력-인한-정책-확대",
-      "clusterKey": "정책/셀트리온",
+      "dedupeKey": "2조-5천억원-달성-매출-목표-아이온2-엔씨소프트-올해",
+      "clusterKey": "실적/엔씨소프트/인수합병",
       "matchedTo": null,
       "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54808",
-      "publishedAt": "2026-04-08T12:47:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_10",
-      "date": "2026-04-09",
-      "category": "정책",
-      "title": "중동 7개국 대사, 국회 방문하여 중동산 원유 우선 공급 약속",
-      "summary": [
-        "중동 7개국 주한대사들이 국회 외교통일위원회를 찾아 한국에 중동산 원유를 최우선으로 공급하겠다고 밝혔습니다.",
-        "대사들은 또한 이란의 호르무즈 해협 공격에 대한 국제 사회의 규탄 동참을 요청했습니다."
-      ],
-      "whyImportant": "한국의 에너지 안보에 중요한 영향을 미칠 수 있는 약속입니다.",
-      "importanceRationale": "근거: 중동 7개국 대사들이 한국에 중동산 원유를 최우선으로 공급하겠다고 언급하여, 에너지 공급망 안정에 기여할 가능성이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "김 위원장은 7개국 대사가 “걸프협력회의와 요르단은 미국·이스라엘과 이란 간 전쟁의 당사국이 아닌데 이란의 일방적인 공격으로 공항, 항만, 주거지역, 산업단지 등 민간 시설이 큰 피해를 봤다”며 “이란이 호르무즈 해협 통행료를 받고, 선박을 공격하겠다고 하는 건 있을 수 없는 만행”이라고 비판했다고 전했다."
-        }
-      ],
-      "dedupeKey": "7개국-공급-국회-대사-우선-원유-중동-중동산",
-      "clusterKey": "7개국/대사/국회",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1253238.html",
-      "publishedAt": "2026-04-08T11:23:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-09_11",
-      "date": "2026-04-09",
-      "category": "기술",
-      "title": "AI 칩, 미국 생산 후에도 대만으로 재수송되는 이유",
-      "summary": [
-        "AI 칩의 필수 단계인 첨단 패키징이 아시아에서 주로 이루어져 공급 부족이 발생하고 있습니다.",
-        "TSMC는 애리조나에 2개의 새로운 공장 건설을 준비 중이며, 일론 머스크는 인텔에 맞춤형 칩 생산을 의뢰했습니다.",
-        "TSMC의 CoWoS 기술은 연간 80%의 성장률을 보이고 있으며, 엔비디아가 대부분의 용량을 확보했습니다."
-      ],
-      "whyImportant": "첨단 패키징 기술은 AI 반도체 성능 향상에 필수적이며, 공급망 재편에 중요한 영향을 미칩니다.",
-      "importanceRationale": "근거: TSMC의 CoWoS 기술은 연간 80%의 성장률을 보이며, 엔비디아가 대부분의 용량을 확보하여 첨단 패키징 수요가 급증하고 있음을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "It’s now taking center stage as Taiwan Semiconductor Manufacturing Co. prepares to break ground on two new plants in Arizona and Elon Musk taps Intel for his ambitious custom chip plans."
-        }
-      ],
-      "dedupeKey": "2개-대만-미국-생산-이루어져-이유-재수송-후에",
-      "clusterKey": "미대만/반도체/생산",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/08/tsmc-nvidia-advanced-packaging-intel.html",
-      "publishedAt": "2026-04-08T12:00:02+00:00",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54833",
+      "publishedAt": "2026-04-09T06:41:54+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -345,29 +97,60 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-09_12",
-      "date": "2026-04-09",
-      "category": "기술",
-      "title": "법무법인 세종, AI·디지털 경쟁법팀 출범",
+      "id": "2026-04-10_4",
+      "date": "2026-04-10",
+      "category": "금융",
+      "title": "동진쎄미켐, 미국 텍사스 거점에서 매출 1500억 원 기대",
       "summary": [
-        "법무법인 세종이 AI 및 디지털 시장의 경쟁법 이슈에 대응하기 위해 전문팀을 출범했습니다.",
-        "이는 대형 로펌 중 처음으로 경쟁법 중심으로 특화된 조직 구성입니다.",
-        "AI 반도체, 클라우드, 학습 데이터 등 관련 경쟁 이슈에 대한 자문을 제공할 예정입니다."
+        "동진쎄미켐이 삼성 파운드리 수주를 계기로 미국 텍사스 공장을 2분기부터 가동할 예정입니다.",
+        "텍사스 두 공장 완전 가동 시 연간 최대 1500억 원의 추가 매출을 확보할 수 있을 것으로 예상됩니다.",
+        "고순도 황산 공장은 TSMC를 주요 고객사로 확보하여 하반기부터 본격적인 공급이 이루어질 전망입니다."
       ],
-      "whyImportant": "AI 및 디지털 시장의 경쟁 심화와 규제 강화에 따라 기업들의 법적 리스크 관리 중요성이 커지고 있습니다.",
-      "importanceRationale": "근거: AI 및 디지털 시장에 대한 규제가 기존 경쟁법과 다른 기준으로 빠르게 재편되고 있어, 기업들이 경쟁법 리스크를 선제적으로 점검할 필요가 있다는 내용이 언급되었습니다.",
+      "whyImportant": "미국 내 반도체 공급망 구축에 기여하고, 동진쎄미켐의 매출 다변화에 중요한 역할을 할 수 있습니다.",
+      "importanceRationale": "근거: 동진쎄미켐은 텍사스 거점 설립에 2600억 원을 투자했으며, 두 공장 완전 가동 시 연간 최대 1500억 원의 추가 매출이 기대됩니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "세종, 대형로펌 최초 'AI·디지털 경쟁법팀' 출범…규제 대응 본격화 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 AI·플랫폼 경쟁 규제 확대 기업 리스크 관리 수요 증가 전방위 자문 체계 구축 기업 리스크 관리 수요 증가 전방위 자문 체계 구축 법무법인(유) 세종이 인공지능(AI)과 디지털 시장을 둘러싼 경쟁법 이슈에 대응하기 위해 전문 조직을 신설하며 규제 대응 체계를 강화했다."
+          "label": "earnings",
+          "evidence": "두 공장을 100% 가동할 경우 기대되는 연 매출은 공장당 700~800억원 수준이다."
         }
       ],
-      "dedupeKey": "경쟁법-경쟁법팀-대응하기-디지털-법무법인-세종-시장-클라우드",
-      "clusterKey": "법무법인/세종/디지털",
+      "dedupeKey": "1500억-거점-기대-동진쎄미켐-매출-미국-텍사스-파운드리",
+      "clusterKey": "실적/반도체/동진쎄미켐",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54843",
+      "publishedAt": "2026-04-09T08:06:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-10_5",
+      "date": "2026-04-10",
+      "category": "에너지",
+      "title": "이투에스, 인도에 원전 기술 수출 계약 체결",
+      "summary": [
+        "원전 제어시스템 기업 이투에스가 인도 BHEL과 여자시스템 기술수출 계약을 체결했습니다.",
+        "국내 원전 중소기업이 독자 기술로 인도에 직접 기술을 수출한 것은 이번이 처음입니다.",
+        "인도 정부는 2031~32년까지 원전 설비를 22.48GW로 확대할 계획입니다."
+      ],
+      "whyImportant": "이번 계약은 인도 전력 시장에서 국내 기업의 기술력을 인정받고, 향후 해외 수출 확대로 이어질 수 있는 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 인도 정부가 2031~32년까지 원전 설비를 22.48GW로 확대하겠다는 목표를 제시함에 따라, 이투에스의 기술 수출은 인도 시장 진출의 발판이 될 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "인도는 세계 최대급 전력 수요 시장 중 하나다."
+        }
+      ],
+      "dedupeKey": "48gw-계약-기술-수출-원전-이투에스-인도-중소기업",
+      "clusterKey": "설비투자/이투에스",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604074429i",
-      "publishedAt": "2026-04-07T05:12:16+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202604090768i",
+      "publishedAt": "2026-04-09T11:18:03+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -376,29 +159,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-09_13",
-      "date": "2026-04-09",
-      "category": "금융",
-      "title": "세계은행, 올해 중국 성장률 4.2% 전망",
+      "id": "2026-04-10_6",
+      "date": "2026-04-10",
+      "category": "에너지",
+      "title": "EU, 지난달 러시아산 LNG 수입량 사상 최대",
       "summary": [
-        "세계은행은 중국의 올해 경제성장률을 4.2%로 전망했습니다.",
-        "이는 내수 부진과 부동산 시장 침체, 외부 수요 약화에 따른 결과입니다.",
-        "동아시아·태평양 개발도상국의 전체 경제성장률도 둔화할 것으로 예상됩니다."
+        "유럽연합(EU) 회원국들의 지난달 러시아산 액화천연가스(LNG) 수입량이 사상 최대치를 기록했습니다.",
+        "올해 1분기 러시아산 LNG 수입량도 작년 동기 대비 20% 가까이 증가했습니다.",
+        "EU는 내년 1월부터 러시아산 LNG 수입을 전면 금지할 예정입니다."
       ],
-      "whyImportant": "중국의 경제 성장 둔화는 세계 경제에 영향을 미칠 수 있는 중요한 요인입니다.",
-      "importanceRationale": "근거: 세계은행은 중국 성장률이 2026년 4.2%까지 하락할 것으로 전망했으며, 이는 동아시아·태평양 개발도상국의 성장 둔화에도 영향을 미칩니다.",
+      "whyImportant": "EU의 러시아산 LNG 수입 금지 정책의 실효성에 대한 의문을 제기하고, 에너지 수급 전략의 변화 가능성을 시사합니다.",
+      "importanceRationale": "근거: EU의 러시아산 LNG 수입량이 사상 최대치를 기록했으며, 올해 1분기 수입량도 20% 가까이 증가하여, 내년 1월부터의 수입 금지 정책에 대한 논란의 소지가 있음을 지적합니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "세계은행은 8일(현지시간) 동아시아·태평양(EAP) 경제 전망 보고서에서 \"중국은 내수 부진과 부동산 시장 침체가 계속되며 외부 수요가 약화함에 따라 성장률이 2025년 5.0%에서 2026년 4.2%, 2027년 4.3%로 하락할 것으로 전망된다\"고 밝혔다."
+          "label": "security",
+          "evidence": "이란의 호르무즈 해협 봉쇄로 에너지 특수를 맞은 러시아는 최근 LNG가 당장 급한 남아시아 국가 등을 상대로 현물가 대비 40％ 할인가를 제시하며 시장을 넓히는 중인 걸로 알려졌다."
         }
       ],
-      "dedupeKey": "개발도상국-경제성장률-동아시아-성장률-세계은행-올해-외부-중국",
-      "clusterKey": "올해/성장률/경제성장률",
+      "dedupeKey": "lng-러시아산-사상-수입량-유럽연합-지난달-최대-회원국들",
+      "clusterKey": "지난달/러시아산/수입량",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1336685",
-      "publishedAt": "2026-04-08T14:52:59+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337297",
+      "publishedAt": "2026-04-09T14:13:55+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

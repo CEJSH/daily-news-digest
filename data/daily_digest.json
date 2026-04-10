@@ -1,29 +1,29 @@
 {
-  "date": "2026-04-10",
+  "date": "2026-04-11",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-10T08:14:58.139991+09:00",
+  "lastUpdatedAt": "2026-04-11T08:08:56.351566+09:00",
   "items": [
     {
-      "id": "2026-04-10_1",
-      "date": "2026-04-10",
+      "id": "2026-04-11_1",
+      "date": "2026-04-11",
       "category": "산업",
-      "title": "디지털 자산 기본법 제정과 시장 재편",
+      "title": "디지털 자산 기본법 논의 및 관련 투자",
       "summary": [
-        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장은 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
-        "글로벌 스테이블코인 선도 기업과 STO, RWA 프로젝트를 통해 새로운 질서의 주도권 향방을 가늠할 수 있습니다."
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
+        "글로벌 실물자산 토큰화 1위 기업인 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조했습니다."
       ],
-      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 금융, 산업, 기술 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 전체가 재편되는 역사적 전환점에 섰다는 내용이 언급되었습니다.",
+      "whyImportant": "디지털 자산 시장의 제도화 및 관련 규제 논의는 장기적으로 금융 및 기술 산업에 큰 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 재편이 예상되며, 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽았습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
+          "evidence": "본 포럼은 규제의 틀을 넘어 금융·산업·기술 전반에 몰아칠 구조적 변화의 실체를 입체적으로 조망하고자 합니다."
         }
       ],
-      "dedupeKey": "기본법-기업-디지털-디지털자산기본법-시장-자산-재편-제정",
-      "clusterKey": "디지털/자산/기본법",
+      "dedupeKey": "1위-기본법-디지털-디지털자산-디지털자산기본법-실물자산-자산-투자",
+      "clusterKey": "투자/디지털/정책",
       "matchedTo": null,
       "sourceName": "이데일리",
       "sourceUrl": "https://vaf.edaily.co.kr/2026/",
@@ -36,152 +36,189 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-10_2",
-      "date": "2026-04-10",
-      "category": "국제",
-      "title": "중국, 미·이란 휴전 중재 외교 주력",
-      "summary": [
-        "미국과 이란의 2주 휴전 합의에 중국의 중재 외교가 일정 역할을 했다는 분석이 나옵니다.",
-        "중국은 이란 원유 수출의 80% 이상을 차지하는 최대 고객으로, 경제적 이해관계를 활용해 협상을 견인했다는 분석입니다."
-      ],
-      "whyImportant": "중국의 중동 지역에서의 영향력 확대 가능성을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 중국은 이란 원유 수출의 80% 이상을 차지하며, 경제적 영향력을 바탕으로 이란에 '자제와 유연한 대응'을 촉구했다고 NYT가 보도했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "중국은 이란 원유 수출의 80% 이상을 차지하는 최대 고객이며 전쟁이 장기화할 경우 중국도 원유 수급 불안과 가격 상승 부담을 직접 떠안는 등 에너지 안보에 부담이 될 수 있다."
-        }
-      ],
-      "dedupeKey": "2주-미국-외교-이란-주력-중국-중재-휴전",
-      "clusterKey": "미중_관세/휴전",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1336606",
-      "publishedAt": "2026-04-08T08:50:19+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-10_3",
-      "date": "2026-04-10",
-      "category": "금융",
-      "title": "엔씨소프트, 올해 매출 2조 5천억원 목표 달성 전망",
-      "summary": [
-        "엔씨소프트가 제시한 올해 매출 2조 5천억 원 달성이 가시화되고 있습니다.",
-        "아이온2의 시즌제 도입과 리니지 클래식의 실적, 저스트 플레이 인수 효과 등이 긍정적으로 작용하고 있습니다.",
-        "증권가에서는 아이온2의 연간 국내외 매출을 6천억~7천억 원으로 전망하고 있습니다."
-      ],
-      "whyImportant": "엔씨소프트의 매출 목표 달성 여부는 향후 게임 업계의 실적 및 투자 전략에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 올해 엔씨소프트 매출 목표 2조 5천억 원은 아이온2의 연간 국내외 매출 6천억~7천억 원 전망과 리니지 클래식 및 저스트 플레이 매출을 합산한 결과입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "엔씨가 제시한 올해 매출 2조5000억원이 가시권에 들어왔다."
-        }
-      ],
-      "dedupeKey": "2조-5천억원-달성-매출-목표-아이온2-엔씨소프트-올해",
-      "clusterKey": "실적/엔씨소프트/인수합병",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54833",
-      "publishedAt": "2026-04-09T06:41:54+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-10_4",
-      "date": "2026-04-10",
-      "category": "금융",
-      "title": "동진쎄미켐, 미국 텍사스 거점에서 매출 1500억 원 기대",
-      "summary": [
-        "동진쎄미켐이 삼성 파운드리 수주를 계기로 미국 텍사스 공장을 2분기부터 가동할 예정입니다.",
-        "텍사스 두 공장 완전 가동 시 연간 최대 1500억 원의 추가 매출을 확보할 수 있을 것으로 예상됩니다.",
-        "고순도 황산 공장은 TSMC를 주요 고객사로 확보하여 하반기부터 본격적인 공급이 이루어질 전망입니다."
-      ],
-      "whyImportant": "미국 내 반도체 공급망 구축에 기여하고, 동진쎄미켐의 매출 다변화에 중요한 역할을 할 수 있습니다.",
-      "importanceRationale": "근거: 동진쎄미켐은 텍사스 거점 설립에 2600억 원을 투자했으며, 두 공장 완전 가동 시 연간 최대 1500억 원의 추가 매출이 기대됩니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "두 공장을 100% 가동할 경우 기대되는 연 매출은 공장당 700~800억원 수준이다."
-        }
-      ],
-      "dedupeKey": "1500억-거점-기대-동진쎄미켐-매출-미국-텍사스-파운드리",
-      "clusterKey": "실적/반도체/동진쎄미켐",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=54843",
-      "publishedAt": "2026-04-09T08:06:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-10_5",
-      "date": "2026-04-10",
+      "id": "2026-04-11_2",
+      "date": "2026-04-11",
       "category": "에너지",
-      "title": "이투에스, 인도에 원전 기술 수출 계약 체결",
+      "title": "중국, 핵 공격 대응 훈련 실시…동부 연안 원전 다수 위치",
       "summary": [
-        "원전 제어시스템 기업 이투에스가 인도 BHEL과 여자시스템 기술수출 계약을 체결했습니다.",
-        "국내 원전 중소기업이 독자 기술로 인도에 직접 기술을 수출한 것은 이번이 처음입니다.",
-        "인도 정부는 2031~32년까지 원전 설비를 22.48GW로 확대할 계획입니다."
+        "중국이 최근 핵 공격 대응 훈련을 실시했으며, 중국군 동부전구 해군 기지에서 진행되었습니다.",
+        "훈련은 핵 공격 상황을 가정하여 오염 탐지 및 제거, 방사성 물질 노출 검사 등을 포함했습니다.",
+        "동부전구는 대만과 충돌 가능성이 있는 지역을 담당하며, 해당 연안에는 다수의 중국 원전이 위치해 있습니다."
       ],
-      "whyImportant": "이번 계약은 인도 전력 시장에서 국내 기업의 기술력을 인정받고, 향후 해외 수출 확대로 이어질 수 있는 중요한 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: 인도 정부가 2031~32년까지 원전 설비를 22.48GW로 확대하겠다는 목표를 제시함에 따라, 이투에스의 기술 수출은 인도 시장 진출의 발판이 될 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "인도는 세계 최대급 전력 수요 시장 중 하나다."
-        }
-      ],
-      "dedupeKey": "48gw-계약-기술-수출-원전-이투에스-인도-중소기업",
-      "clusterKey": "설비투자/이투에스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604090768i",
-      "publishedAt": "2026-04-09T11:18:03+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-10_6",
-      "date": "2026-04-10",
-      "category": "에너지",
-      "title": "EU, 지난달 러시아산 LNG 수입량 사상 최대",
-      "summary": [
-        "유럽연합(EU) 회원국들의 지난달 러시아산 액화천연가스(LNG) 수입량이 사상 최대치를 기록했습니다.",
-        "올해 1분기 러시아산 LNG 수입량도 작년 동기 대비 20% 가까이 증가했습니다.",
-        "EU는 내년 1월부터 러시아산 LNG 수입을 전면 금지할 예정입니다."
-      ],
-      "whyImportant": "EU의 러시아산 LNG 수입 금지 정책의 실효성에 대한 의문을 제기하고, 에너지 수급 전략의 변화 가능성을 시사합니다.",
-      "importanceRationale": "근거: EU의 러시아산 LNG 수입량이 사상 최대치를 기록했으며, 올해 1분기 수입량도 20% 가까이 증가하여, 내년 1월부터의 수입 금지 정책에 대한 논란의 소지가 있음을 지적합니다.",
+      "whyImportant": "핵 공격 대응 훈련은 핵 관련 긴장이 고조되는 상황에서 잠재적 위협에 대한 대비 태세를 강화하는 데 중요합니다.",
+      "importanceRationale": "근거: 미국과 이스라엘이 이란 원자력발전소 인근을 타격하면서 핵 관련 긴장이 고조된 가운데, 중국이 핵 공격 대응 훈련을 실시한 것은 주목할 만합니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "이란의 호르무즈 해협 봉쇄로 에너지 특수를 맞은 러시아는 최근 LNG가 당장 급한 남아시아 국가 등을 상대로 현물가 대비 40％ 할인가를 제시하며 시장을 넓히는 중인 걸로 알려졌다."
+          "evidence": "훈련에서는 핵 공격을 받은 상황을 가정해 신속히 오염을 탐지·제거했으며, 탐지 작업을 위해 군인이 방사능 측정기를 활용하는 동시에 무인 헬리콥터도 동원됐다."
         }
       ],
-      "dedupeKey": "lng-러시아산-사상-수입량-유럽연합-지난달-최대-회원국들",
-      "clusterKey": "지난달/러시아산/수입량",
+      "dedupeKey": "공격-대응-동부-실시-연안-원전-중국-훈련",
+      "clusterKey": "중대만/공격/대응/훈련",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337297",
-      "publishedAt": "2026-04-09T14:13:55+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1336935",
+      "publishedAt": "2026-04-09T01:32:05+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-11_3",
+      "date": "2026-04-11",
+      "category": "에너지",
+      "title": "새울3호기, 착공 10년 만에 가동 시작…9월 상업운전 목표",
+      "summary": [
+        "울산 울주군에 위치한 새울 원전 3호기가 착공 10년 만에 가동을 시작합니다.",
+        "원자력안전위원회는 새울3호기에 대한 사용 전 검사 중 임계 전 검사를 완료했다고 밝혔습니다.",
+        "상업운전은 오는 9월 말 목표이며, 설비용량은 140만kW급입니다."
+      ],
+      "whyImportant": "새울3호기 가동은 국내 총 발전량과 울산 지역 전력 수요 충족에 기여할 것입니다.",
+      "importanceRationale": "근거: 새울3호기가 상업운전을 시작하면 국내 총발전량의 약 1.7%, 울산 전력 수요의 37%를 공급하게 됩니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "새울3호기와 함께 건설 중인 새울4호기까지 준공되면 부산과 울산 지역의 원전 개수는 총 10기(영구정지된 고리1호기 포함)다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "새울3호기가 상업운전을 시작하면, 국내 총발전량의 약 1.7%, 울산 전력 수요의 37%를 공급하게 된다."
+        }
+      ],
+      "dedupeKey": "가동-만에-목표-상업운전-새울3호기-시작-원자력안전위원회-착공",
+      "clusterKey": "새울3호기/착공/만에",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1253654.html",
+      "publishedAt": "2026-04-10T06:41:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-11_4",
+      "date": "2026-04-11",
+      "category": "기술",
+      "title": "디지털 자산 시장 재편과 규제 개혁 논의",
+      "summary": [
+        "디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편되는 전환점에 섰다는 분석이 나왔습니다.",
+        "글로벌 실물자산 토큰화 1위 기업은 규제 개혁을 강조하며 토큰화가 자본에 미치는 영향을 인터넷 혁명에 비유했습니다."
+      ],
+      "whyImportant": "디지털 자산 시장의 제도화 및 관련 규제 논의는 금융 및 산업 전반에 걸쳐 중요한 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 재편될 수 있으며, 토큰화가 자본에 미치는 영향이 인터넷 혁명과 같다는 언급이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "본 포럼은 규제의 틀을 넘어 금융·산업·기술 전반에 몰아칠 구조적 변화의 실체를 입체적으로 조망하고자 합니다."
+        }
+      ],
+      "dedupeKey": "1위-개혁-규제-기업-디지털-시장-자산-재편",
+      "clusterKey": "정책/디지털",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-10T04:57:33+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-11_5",
+      "date": "2026-04-11",
+      "category": "금융",
+      "title": "삼성전자·SK하이닉스, AI 수요 타고 2028년까지 성장 전망",
+      "summary": [
+        "반도체 애널리스트들은 AI 관련 서버 수요 증가로 삼성전자와 SK하이닉스의 주가가 상승할 것으로 전망했습니다.",
+        "내년 삼성전자와 SK하이닉스의 합산 매출은 1000조원을 넘어설 것으로 예상됩니다.",
+        "두 회사는 빅테크 기업들과 장기공급계약을 맺어 실적 호조가 예상됩니다."
+      ],
+      "whyImportant": "AI 수요 증가와 장기 공급 계약을 통해 메모리 반도체 산업의 구조적 변화가 예상됩니다.",
+      "importanceRationale": "근거: 내년 삼성전자와 SK하이닉스 합산 매출이 1000조원을 넘어설 것으로 예상되며, 빅테크와의 장기공급계약으로 안정적인 공급처를 확보했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI) 관련 서버 수요가 폭발적으로 늘어나며 메모리 슈퍼사이클이 계속되는 데다 빅테크와 장기공급계약(LTA)을 연이어 맺어 2~3년간 역대급 실적을 낼 것이란 이유에서다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "에픽AI에 따르면 내년 삼성전자와 SK하이닉스 합산 매출은 1000조원을 넘어설 것으로 전망된다."
+        }
+      ],
+      "dedupeKey": "1000조원-sk하이닉스-삼성전자-성장-수요-애널리스트들-타고-회사",
+      "clusterKey": "실적/삼성전자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041030951",
+      "publishedAt": "2026-04-10T21:00:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-11_6",
+      "date": "2026-04-11",
+      "category": "금융",
+      "title": "bhc, 매출 6천억 원 첫 돌파",
+      "summary": [
+        "bhc치킨 운영사 다이닝브랜즈그룹은 작년 영업이익이 1,645억 원으로 전년 대비 23% 증가했다고 밝혔습니다.",
+        "매출은 6,147억 원으로 19.9% 늘었으며, 국내 치킨 프랜차이즈 중 처음으로 6천억 원을 넘었습니다."
+      ],
+      "whyImportant": "bhc의 매출 증가는 국내 치킨 프랜차이즈 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: bhc치킨의 매출이 6천억 원을 넘긴 것은 국내 치킨 프랜차이즈 중 처음이며, 가맹점 연평균 매출도 전년 대비 20% 이상 증가했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "bhc치킨을 운영하는 다이닝브랜즈그룹은 지난해 별도재무제표 기준 영업이익이 1,645억 원으로 전년 대비 23% 늘었다고 오늘(10일) 공시했습니다."
+        }
+      ],
+      "dedupeKey": "147억-645억-6천억-bhc-bhc치킨-다이닝브랜즈그룹-돌파-매출",
+      "clusterKey": "실적/bhc",
+      "matchedTo": null,
+      "sourceName": "연합뉴스",
+      "sourceUrl": "https://www.yonhapnewstv.co.kr/news/AKR20260410180156ql5",
+      "publishedAt": "2026-04-10T09:11:56+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-11_7",
+      "date": "2026-04-11",
+      "category": "기술",
+      "title": "유조선 선주협회, 이란에 호르무즈 통행료 지불 말 것을 권고",
+      "summary": [
+        "국제유조선선주협회는 회원사들에 호르무즈 해협 통과를 위해 이란에 통행료를 지불하지 말 것을 권고했습니다.",
+        "이란 이슬람혁명수비대는 해협을 지나는 선박에 사전 허가를 요구하며, 최대 30억 원에 달하는 통행료를 징수하려 합니다."
+      ],
+      "whyImportant": "호르무즈 해협은 전 세계 석유·가스 물동량의 약 20%가 통과하는 핵심 해상로이므로, 통행료 문제는 에너지 가격에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 호르무즈 해협은 전 세계 석유·가스 물동량의 약 20%가 통과하는 핵심 해상로이며, 이란이 선박당 최대 약 30억 원의 통행료를 징수하려 합니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "현재 이란 이슬람혁명수비대(IRGC)는 해협을 지나는 선박들에 사전 허가를 받을 것을 요구하며, 이를 어길 시 \"표적이 돼 파괴될 것\"이라고 위협하고 있다."
+        }
+      ],
+      "dedupeKey": "것을-권고-선주협회-유조선-이란-지불-통행료-호르무즈",
+      "clusterKey": "유조선/선주협회/호르무즈",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337859",
+      "publishedAt": "2026-04-10T21:57:39+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

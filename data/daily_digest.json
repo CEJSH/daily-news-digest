@@ -1,64 +1,34 @@
 {
-  "date": "2026-04-11",
+  "date": "2026-04-12",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-11T08:08:56.351566+09:00",
+  "lastUpdatedAt": "2026-04-12T08:05:35.977773+09:00",
   "items": [
     {
-      "id": "2026-04-11_1",
-      "date": "2026-04-11",
-      "category": "산업",
-      "title": "디지털 자산 기본법 논의 및 관련 투자",
+      "id": "2026-04-12_1",
+      "date": "2026-04-12",
+      "category": "국제",
+      "title": "협상 변동성에 증시 혼조 및 유가 하락, 물가 '경보'",
       "summary": [
-        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
-        "글로벌 실물자산 토큰화 1위 기업인 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조했습니다."
+        "미국과 이란의 종전 협상을 앞두고 국제유가는 변동성 속에 소폭 하락했습니다.",
+        "뉴욕증시는 인플레이션 우려가 커지면서 혼조세로 마감했습니다.",
+        "소비자물가지수는 전월 대비 0.9% 상승하여 2022년 6월 이후 최대 상승폭을 기록했습니다."
       ],
-      "whyImportant": "디지털 자산 시장의 제도화 및 관련 규제 논의는 장기적으로 금융 및 기술 산업에 큰 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 재편이 예상되며, 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽았습니다.",
+      "whyImportant": "미국과 이란의 협상 결과 및 그에 따른 유가 변동이 세계 경제 성장률에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 아자이 방가 세계은행 총재는 휴전 협상이 지속적인 평화로 이어지지 않을 경우 전 세계 성장률이 0.2~0.3%p 하락할 것이라고 밝혔습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "본 포럼은 규제의 틀을 넘어 금융·산업·기술 전반에 몰아칠 구조적 변화의 실체를 입체적으로 조망하고자 합니다."
+          "label": "sanctions",
+          "evidence": "시장은 호르무즈 봉쇄가 언제 풀릴지 주시하면서도 미국이 현재 적용 중인 러시아산 원유 제재 면제 조치의 연장 여부에도 촉각을 곤두세우는 모습입니다."
         }
       ],
-      "dedupeKey": "1위-기본법-디지털-디지털자산-디지털자산기본법-실물자산-자산-투자",
-      "clusterKey": "투자/디지털/정책",
-      "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
-      "publishedAt": "2026-04-09T02:37:40+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-11_2",
-      "date": "2026-04-11",
-      "category": "에너지",
-      "title": "중국, 핵 공격 대응 훈련 실시…동부 연안 원전 다수 위치",
-      "summary": [
-        "중국이 최근 핵 공격 대응 훈련을 실시했으며, 중국군 동부전구 해군 기지에서 진행되었습니다.",
-        "훈련은 핵 공격 상황을 가정하여 오염 탐지 및 제거, 방사성 물질 노출 검사 등을 포함했습니다.",
-        "동부전구는 대만과 충돌 가능성이 있는 지역을 담당하며, 해당 연안에는 다수의 중국 원전이 위치해 있습니다."
-      ],
-      "whyImportant": "핵 공격 대응 훈련은 핵 관련 긴장이 고조되는 상황에서 잠재적 위협에 대한 대비 태세를 강화하는 데 중요합니다.",
-      "importanceRationale": "근거: 미국과 이스라엘이 이란 원자력발전소 인근을 타격하면서 핵 관련 긴장이 고조된 가운데, 중국이 핵 공격 대응 훈련을 실시한 것은 주목할 만합니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "훈련에서는 핵 공격을 받은 상황을 가정해 신속히 오염을 탐지·제거했으며, 탐지 작업을 위해 군인이 방사능 측정기를 활용하는 동시에 무인 헬리콥터도 동원됐다."
-        }
-      ],
-      "dedupeKey": "공격-대응-동부-실시-연안-원전-중국-훈련",
-      "clusterKey": "중대만/공격/대응/훈련",
+      "dedupeKey": "경보-물가-변동성-유가-증시-하락-협상-혼조",
+      "clusterKey": "관세/변동성",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1336935",
-      "publishedAt": "2026-04-09T01:32:05+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337930",
+      "publishedAt": "2026-04-11T04:21:06+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -67,59 +37,25 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-11_3",
-      "date": "2026-04-11",
-      "category": "에너지",
-      "title": "새울3호기, 착공 10년 만에 가동 시작…9월 상업운전 목표",
-      "summary": [
-        "울산 울주군에 위치한 새울 원전 3호기가 착공 10년 만에 가동을 시작합니다.",
-        "원자력안전위원회는 새울3호기에 대한 사용 전 검사 중 임계 전 검사를 완료했다고 밝혔습니다.",
-        "상업운전은 오는 9월 말 목표이며, 설비용량은 140만kW급입니다."
-      ],
-      "whyImportant": "새울3호기 가동은 국내 총 발전량과 울산 지역 전력 수요 충족에 기여할 것입니다.",
-      "importanceRationale": "근거: 새울3호기가 상업운전을 시작하면 국내 총발전량의 약 1.7%, 울산 전력 수요의 37%를 공급하게 됩니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "새울3호기와 함께 건설 중인 새울4호기까지 준공되면 부산과 울산 지역의 원전 개수는 총 10기(영구정지된 고리1호기 포함)다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "새울3호기가 상업운전을 시작하면, 국내 총발전량의 약 1.7%, 울산 전력 수요의 37%를 공급하게 된다."
-        }
-      ],
-      "dedupeKey": "가동-만에-목표-상업운전-새울3호기-시작-원자력안전위원회-착공",
-      "clusterKey": "새울3호기/착공/만에",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1253654.html",
-      "publishedAt": "2026-04-10T06:41:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-11_4",
-      "date": "2026-04-11",
+      "id": "2026-04-12_2",
+      "date": "2026-04-12",
       "category": "기술",
       "title": "디지털 자산 시장 재편과 규제 개혁 논의",
       "summary": [
         "디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편되는 전환점에 섰다는 분석이 나왔습니다.",
-        "글로벌 실물자산 토큰화 1위 기업은 규제 개혁을 강조하며 토큰화가 자본에 미치는 영향을 인터넷 혁명에 비유했습니다."
+        "글로벌 실물자산 토큰화 1위 기업은 규제 개혁을 강조했습니다.",
+        "일본 메타플래닛은 웹3 금융 인프라 생태계 지원을 위한 벤처 자회사를 신설하고 투자 이니셔티브를 공개했습니다."
       ],
-      "whyImportant": "디지털 자산 시장의 제도화 및 관련 규제 논의는 금융 및 산업 전반에 걸쳐 중요한 변화를 가져올 수 있기 때문입니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 재편될 수 있으며, 토큰화가 자본에 미치는 영향이 인터넷 혁명과 같다는 언급이 있습니다.",
+      "whyImportant": "디지털 자산 시장의 제도화와 기술 혁신이 금융 및 산업 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 산업 전체가 재편될 수 있으며, 여러 토큰화 자산에 대한 개념검증(PoC)을 거쳤다는 내용이 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "본 포럼은 규제의 틀을 넘어 금융·산업·기술 전반에 몰아칠 구조적 변화의 실체를 입체적으로 조망하고자 합니다."
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
         }
       ],
       "dedupeKey": "1위-개혁-규제-기업-디지털-시장-자산-재편",
-      "clusterKey": "정책/디지털",
+      "clusterKey": "투자/디지털/정책",
       "matchedTo": null,
       "sourceName": "이데일리",
       "sourceUrl": "https://vaf.edaily.co.kr/2026/",
@@ -132,33 +68,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-11_5",
-      "date": "2026-04-11",
-      "category": "금융",
-      "title": "삼성전자·SK하이닉스, AI 수요 타고 2028년까지 성장 전망",
+      "id": "2026-04-12_3",
+      "date": "2026-04-12",
+      "category": "기술",
+      "title": "TSMC, 1분기 매출 52조 원 기록…분기 기준 역대 최대",
       "summary": [
-        "반도체 애널리스트들은 AI 관련 서버 수요 증가로 삼성전자와 SK하이닉스의 주가가 상승할 것으로 전망했습니다.",
-        "내년 삼성전자와 SK하이닉스의 합산 매출은 1000조원을 넘어설 것으로 예상됩니다.",
-        "두 회사는 빅테크 기업들과 장기공급계약을 맺어 실적 호조가 예상됩니다."
+        "세계 최대 파운드리 기업 TSMC가 올해 1분기 매출 52조 원을 기록하며 분기 기준 역대 최대 실적을 달성했습니다.",
+        "이는 전년 동기 대비 35.1% 증가한 수치이며, 시장 전망치 또한 상회하는 수준입니다.",
+        "TSMC의 매출 상승은 인공지능 인프라 확장과 첨단 칩 미세 공정 실적에 따른 것으로 분석됩니다."
       ],
-      "whyImportant": "AI 수요 증가와 장기 공급 계약을 통해 메모리 반도체 산업의 구조적 변화가 예상됩니다.",
-      "importanceRationale": "근거: 내년 삼성전자와 SK하이닉스 합산 매출이 1000조원을 넘어설 것으로 예상되며, 빅테크와의 장기공급계약으로 안정적인 공급처를 확보했습니다.",
+      "whyImportant": "TSMC의 실적은 전 세계 인공지능 칩 수요와 파운드리 산업의 성장세를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: TSMC의 1분기 매출이 52조 원으로 역대 최대를 기록했으며, 이는 전년 동기 대비 35.1% 증가한 수치입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "인공지능(AI) 관련 서버 수요가 폭발적으로 늘어나며 메모리 슈퍼사이클이 계속되는 데다 빅테크와 장기공급계약(LTA)을 연이어 맺어 2~3년간 역대급 실적을 낼 것이란 이유에서다."
-        },
-        {
           "label": "earnings",
-          "evidence": "에픽AI에 따르면 내년 삼성전자와 SK하이닉스 합산 매출은 1000조원을 넘어설 것으로 전망된다."
+          "evidence": "티에스엠시는 10일(현지시각) 올 1분기 매출이 1조1341억대만달러(52조8604억원가량·연결 기준)로 전년 동기 대비 35.1% 늘었다고 밝혔다."
         }
       ],
-      "dedupeKey": "1000조원-sk하이닉스-삼성전자-성장-수요-애널리스트들-타고-회사",
-      "clusterKey": "실적/삼성전자",
+      "dedupeKey": "52조-tsmc-기록-기준-매출-분기-역대-최대",
+      "clusterKey": "실적/반도체/1분기",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026041030951",
-      "publishedAt": "2026-04-10T21:00:20+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1253672.html",
+      "publishedAt": "2026-04-10T08:18:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -167,28 +99,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-11_6",
-      "date": "2026-04-11",
-      "category": "금융",
-      "title": "bhc, 매출 6천억 원 첫 돌파",
+      "id": "2026-04-12_4",
+      "date": "2026-04-12",
+      "category": "국제",
+      "title": "미국-이란 종전 협상 앞두고 국제 유가 소폭 하락",
       "summary": [
-        "bhc치킨 운영사 다이닝브랜즈그룹은 작년 영업이익이 1,645억 원으로 전년 대비 23% 증가했다고 밝혔습니다.",
-        "매출은 6,147억 원으로 19.9% 늘었으며, 국내 치킨 프랜차이즈 중 처음으로 6천억 원을 넘었습니다."
+        "미국과 이란의 종전 협상을 앞두고 국제 유가가 소폭 하락했습니다.",
+        "브렌트유는 0.75%, 서부 텍사스산 원유(WTI)는 1.33% 하락했습니다."
       ],
-      "whyImportant": "bhc의 매출 증가는 국내 치킨 프랜차이즈 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: bhc치킨의 매출이 6천억 원을 넘긴 것은 국내 치킨 프랜차이즈 중 처음이며, 가맹점 연평균 매출도 전년 대비 20% 이상 증가했습니다.",
+      "whyImportant": "미국과 이란의 협상 결과에 따라 국제 에너지 시장의 변동성이 커질 수 있습니다.",
+      "importanceRationale": "근거: 11일 미-이란 종전협상 결과와 러시아산 원유 제재 면제 조치 연장 여부에 따라 시장이 주목하고 있기 때문입니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "bhc치킨을 운영하는 다이닝브랜즈그룹은 지난해 별도재무제표 기준 영업이익이 1,645억 원으로 전년 대비 23% 늘었다고 오늘(10일) 공시했습니다."
+          "label": "sanctions",
+          "evidence": "시장은 미국이 현재 적용 중인 러시아산 원유 제재 면제 조치의 연장 여부에도 촉각을 곤두세우고 있다."
         }
       ],
-      "dedupeKey": "147억-645억-6천억-bhc-bhc치킨-다이닝브랜즈그룹-돌파-매출",
-      "clusterKey": "실적/bhc",
+      "dedupeKey": "국제-미국-소폭-앞두고-유가-이란-종전-협상",
+      "clusterKey": "관세/종전",
       "matchedTo": null,
-      "sourceName": "연합뉴스",
-      "sourceUrl": "https://www.yonhapnewstv.co.kr/news/AKR20260410180156ql5",
-      "publishedAt": "2026-04-10T09:11:56+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337844",
+      "publishedAt": "2026-04-10T19:53:33+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -197,28 +129,90 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-11_7",
-      "date": "2026-04-11",
-      "category": "기술",
-      "title": "유조선 선주협회, 이란에 호르무즈 통행료 지불 말 것을 권고",
+      "id": "2026-04-12_5",
+      "date": "2026-04-12",
+      "category": "국제",
+      "title": "중국, 한중 FTA 후속 협상에서 긍정적 진전 발표",
       "summary": [
-        "국제유조선선주협회는 회원사들에 호르무즈 해협 통과를 위해 이란에 통행료를 지불하지 말 것을 권고했습니다.",
-        "이란 이슬람혁명수비대는 해협을 지나는 선박에 사전 허가를 요구하며, 최대 30억 원에 달하는 통행료를 징수하려 합니다."
+        "중국 상무부는 한중 FTA 제14차 후속 협상에서 국경 간 서비스 무역, 투자 등에 대해 심도 있는 논의를 진행했다고 밝혔습니다.",
+        "양측은 FTA 후속 협상을 가속 추진하는 것과 관련한 양국 정상의 공감대를 이행 중이라고 설명했습니다."
       ],
-      "whyImportant": "호르무즈 해협은 전 세계 석유·가스 물동량의 약 20%가 통과하는 핵심 해상로이므로, 통행료 문제는 에너지 가격에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 호르무즈 해협은 전 세계 석유·가스 물동량의 약 20%가 통과하는 핵심 해상로이며, 이란이 선박당 최대 약 30억 원의 통행료를 징수하려 합니다.",
+      "whyImportant": "이번 협상은 양국 기업을 위한 더욱 개방적인 서비스 무역 및 투자 환경 조성에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 중국 상무부는 FTA 후속 협상을 통해 양국 기업을 위한 더욱 개방적인 서비스 무역·투자 환경을 조성할 것이라고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "한국과 중국은 2015년 FTA를 체결한 뒤 '후속 협상을 위한 지침'에 따라 2018년 3월 서비스·투자 후속 협상을 개시한 뒤 10여차례에 걸친 공식 협상과 다수 회의를 통해 논의를 이어왔다."
+        }
+      ],
+      "dedupeKey": "fta-긍정적-제14차-중국-진전-한중-협상-후속",
+      "clusterKey": "한중_투자/fta/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337893",
+      "publishedAt": "2026-04-11T00:27:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-12_6",
+      "date": "2026-04-12",
+      "category": "기술",
+      "title": "샘 알트만 자택에 화염병 투척 시도 및 OpenAI 본사 방화 위협 발생",
+      "summary": [
+        "한 남성이 샘 알트만 O AI CEO의 자택에 화염병을 던지고 샌프란시스코 본사를 방화하겠다고 위협하여 체포되었습니다.",
+        "경찰은 알트만 자택 외부에서 화재가 발생한 후 AI 회사 사무실에서 방화 위협을 인지하고 용의자를 체포했습니다.",
+        "O AI는 이번 공격에 대해 신속한 경찰 대응에 감사를 표하며, 직원의 안전을 위해 지원을 아끼지 않겠다고 밝혔습니다."
+      ],
+      "whyImportant": "이번 사건은 AI 기술에 대한 우려와 비판이 고조되는 가운데 발생하여, 기술 산업 전반의 보안 및 리스크 관리 중요성을 부각합니다.",
+      "importanceRationale": "근거: OpenAI CEO 자택 공격 및 본사 방화 위협은 AI 산업에 대한 잠재적 위험을 보여주며, 특히 OpenAI와 같은 주요 기업에 대한 보안 강화 필요성을 시사합니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "현재 이란 이슬람혁명수비대(IRGC)는 해협을 지나는 선박들에 사전 허가를 받을 것을 요구하며, 이를 어길 시 \"표적이 돼 파괴될 것\"이라고 위협하고 있다."
+          "evidence": "A man was arrested for allegedly throwing a Molotov cocktail at OpenAI CEO Sam Altman’s home and then threatening to burn down the artificial intelligence company’s San Francisco headquarters on Friday, police said."
         }
       ],
-      "dedupeKey": "것을-권고-선주협회-유조선-이란-지불-통행료-호르무즈",
-      "clusterKey": "유조선/선주협회/호르무즈",
+      "dedupeKey": "openai-방화-본사-시도-알트-자택-투척-화염병",
+      "clusterKey": "알트/자택/화염병",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/10/sam-altman-house-hit-with-molotov-cocktail-openai-office-threatened.html",
+      "publishedAt": "2026-04-10T19:51:30+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-12_7",
+      "date": "2026-04-12",
+      "category": "정책",
+      "title": "26.2조 원 규모 '전쟁 추경' 예산안 국회 통과, 소득 하위 70%에 지원금 지급",
+      "summary": [
+        "중동 전쟁에 따른 민생 피해 지원을 위한 26조 2천억 원 규모의 추가경정예산안이 국회 본회의를 통과했습니다.",
+        "소득 하위 70%에 해당하는 3,256만 명에게 1인당 최소 10만 원에서 최대 60만 원의 고유가 피해 지원금이 지급될 예정입니다.",
+        "K-패스 환급 확대, 석유 최고가격제 지원, 나프타 수급 지원 예산도 포함되었습니다."
+      ],
+      "whyImportant": "이번 추경은 중동 전쟁 장기화에 따른 경제적 어려움을 완화하고, 취약 계층을 지원하는 데 중요한 역할을 할 수 있습니다.",
+      "importanceRationale": "근거: 소득 하위 70%에 해당하는 3,256만 명에게 지원금을 지급하는 사업(4조 8천억 원)이 포함되어 있어, 민생 안정에 기여할 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이재명 정부 두 번째 추경안…국회 제출 10일 만에 '고속' 심사 석유최고가격제 손실 보전·나프타 수급 지원…K-패스 환급 확대 (서울=연합뉴스) 서혜림 김유아 정연솔 기자 = 중동 전쟁에 따른 민생 피해 지원 등을 위한 추가경정예산안이 10일 국회 문턱을 넘었다."
+        }
+      ],
+      "dedupeKey": "2조-국회-규모-소득-예산안-전쟁-추경-통과",
+      "clusterKey": "2조/규모/전쟁",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337859",
-      "publishedAt": "2026-04-10T21:57:39+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337815",
+      "publishedAt": "2026-04-10T14:19:15+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

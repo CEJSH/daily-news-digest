@@ -1,126 +1,59 @@
 {
-  "date": "2026-04-12",
+  "date": "2026-04-13",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-12T08:05:35.977773+09:00",
+  "lastUpdatedAt": "2026-04-13T08:07:19.473944+09:00",
   "items": [
     {
-      "id": "2026-04-12_1",
-      "date": "2026-04-12",
+      "id": "2026-04-13_1",
+      "date": "2026-04-13",
       "category": "국제",
-      "title": "협상 변동성에 증시 혼조 및 유가 하락, 물가 '경보'",
+      "title": "국제사회, 미-이란 '노딜'에 실망…협상 지속 촉구",
       "summary": [
-        "미국과 이란의 종전 협상을 앞두고 국제유가는 변동성 속에 소폭 하락했습니다.",
-        "뉴욕증시는 인플레이션 우려가 커지면서 혼조세로 마감했습니다.",
-        "소비자물가지수는 전월 대비 0.9% 상승하여 2022년 6월 이후 최대 상승폭을 기록했습니다."
+        "미국과 이란의 종전 협상이 결렬된 후, 국제사회는 실망감을 표하며 외교적 노력을 지속할 것을 촉구했습니다.",
+        "EU는 중동 전쟁 해결에 외교가 필수적이라고 강조했으며, 오만은 양측의 '고통스러운 양보'를 촉구했습니다."
       ],
-      "whyImportant": "미국과 이란의 협상 결과 및 그에 따른 유가 변동이 세계 경제 성장률에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 아자이 방가 세계은행 총재는 휴전 협상이 지속적인 평화로 이어지지 않을 경우 전 세계 성장률이 0.2~0.3%p 하락할 것이라고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "시장은 호르무즈 봉쇄가 언제 풀릴지 주시하면서도 미국이 현재 적용 중인 러시아산 원유 제재 면제 조치의 연장 여부에도 촉각을 곤두세우는 모습입니다."
-        }
-      ],
-      "dedupeKey": "경보-물가-변동성-유가-증시-하락-협상-혼조",
-      "clusterKey": "관세/변동성",
+      "whyImportant": "미국과 이란 간의 협상 문제는 중동 지역의 안정과 국제 관계에 중요한 영향을 미치기 때문입니다.",
+      "importanceRationale": "근거: 미국과 이란의 첫 종전 협상이 '노딜'로 끝나면서 국제사회가 실망감을 표출하고, EU와 오만 등 여러 국가에서 협상 지속을 촉구하고 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "고통스러운-국제사회-노딜-미국-실망-이란-지속-협상",
+      "clusterKey": "미중동_관세/국제사회",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337930",
-      "publishedAt": "2026-04-11T04:21:06+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1338325",
+      "publishedAt": "2026-04-12T13:42:02+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-04-12_2",
-      "date": "2026-04-12",
-      "category": "기술",
-      "title": "디지털 자산 시장 재편과 규제 개혁 논의",
+      "id": "2026-04-13_2",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "미국-이란 협상 결렬에 따른 국내 증시 영향 전망",
       "summary": [
-        "디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편되는 전환점에 섰다는 분석이 나왔습니다.",
-        "글로벌 실물자산 토큰화 1위 기업은 규제 개혁을 강조했습니다.",
-        "일본 메타플래닛은 웹3 금융 인프라 생태계 지원을 위한 벤처 자회사를 신설하고 투자 이니셔티브를 공개했습니다."
+        "미국과 이란의 종전 협상이 결렬되면서 국내 증시에 대한 경계감이 커지고 있습니다.",
+        "전문가들은 협상 결렬 자체만으로는 시장이 크게 흔들리지 않을 것으로 전망합니다.",
+        "향후 기업 실적과 중동 협상 진행 상황이 핵심 변수가 될 것이라는 분석입니다."
       ],
-      "whyImportant": "디지털 자산 시장의 제도화와 기술 혁신이 금융 및 산업 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 기점으로 산업 전체가 재편될 수 있으며, 여러 토큰화 자산에 대한 개념검증(PoC)을 거쳤다는 내용이 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
-        }
-      ],
-      "dedupeKey": "1위-개혁-규제-기업-디지털-시장-자산-재편",
-      "clusterKey": "투자/디지털/정책",
-      "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
-      "publishedAt": "2026-04-10T04:57:33+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-12_3",
-      "date": "2026-04-12",
-      "category": "기술",
-      "title": "TSMC, 1분기 매출 52조 원 기록…분기 기준 역대 최대",
-      "summary": [
-        "세계 최대 파운드리 기업 TSMC가 올해 1분기 매출 52조 원을 기록하며 분기 기준 역대 최대 실적을 달성했습니다.",
-        "이는 전년 동기 대비 35.1% 증가한 수치이며, 시장 전망치 또한 상회하는 수준입니다.",
-        "TSMC의 매출 상승은 인공지능 인프라 확장과 첨단 칩 미세 공정 실적에 따른 것으로 분석됩니다."
-      ],
-      "whyImportant": "TSMC의 실적은 전 세계 인공지능 칩 수요와 파운드리 산업의 성장세를 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: TSMC의 1분기 매출이 52조 원으로 역대 최대를 기록했으며, 이는 전년 동기 대비 35.1% 증가한 수치입니다.",
+      "whyImportant": "미국과 이란의 협상 결과는 국내 증시에 단기적인 변동성을 야기할 수 있어 투자 전략에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 코스피는 지난주 중동 긴장 완화 기대에 8% 넘게 급등했으나, 협상 결렬로 단기적 변동성 요인이 발생할 수 있다는 분석이 있습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "티에스엠시는 10일(현지시각) 올 1분기 매출이 1조1341억대만달러(52조8604억원가량·연결 기준)로 전년 동기 대비 35.1% 늘었다고 밝혔다."
+          "evidence": "인공지능(AI) 기반 투자 정보 플랫폼 에픽AI는 \"13일 이후에는 기업 실적 모멘텀과 중동 협상 진행 상황이 핵심 변수가 될 전망\"이라며 \"다만 종전 협상 과정에서의 노이즈와 인플레이션 우려는 단기 변동성 요인으로 작용할 가능성이 있다\"고 분석했다.홍민성 한경닷컴 기자 mshong@hankyung.com"
         }
       ],
-      "dedupeKey": "52조-tsmc-기록-기준-매출-분기-역대-최대",
-      "clusterKey": "실적/반도체/1분기",
+      "dedupeKey": "결렬-국내-따른-미국-영향-이란-증시-협상",
+      "clusterKey": "미중동_실적/결렬/관세",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1253672.html",
-      "publishedAt": "2026-04-10T08:18:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-12_4",
-      "date": "2026-04-12",
-      "category": "국제",
-      "title": "미국-이란 종전 협상 앞두고 국제 유가 소폭 하락",
-      "summary": [
-        "미국과 이란의 종전 협상을 앞두고 국제 유가가 소폭 하락했습니다.",
-        "브렌트유는 0.75%, 서부 텍사스산 원유(WTI)는 1.33% 하락했습니다."
-      ],
-      "whyImportant": "미국과 이란의 협상 결과에 따라 국제 에너지 시장의 변동성이 커질 수 있습니다.",
-      "importanceRationale": "근거: 11일 미-이란 종전협상 결과와 러시아산 원유 제재 면제 조치 연장 여부에 따라 시장이 주목하고 있기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "시장은 미국이 현재 적용 중인 러시아산 원유 제재 면제 조치의 연장 여부에도 촉각을 곤두세우고 있다."
-        }
-      ],
-      "dedupeKey": "국제-미국-소폭-앞두고-유가-이란-종전-협상",
-      "clusterKey": "관세/종전",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337844",
-      "publishedAt": "2026-04-10T19:53:33+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041254617",
+      "publishedAt": "2026-04-12T12:18:53+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -129,16 +62,47 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-12_5",
-      "date": "2026-04-12",
-      "category": "국제",
-      "title": "중국, 한중 FTA 후속 협상에서 긍정적 진전 발표",
+      "id": "2026-04-13_3",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "한솔케미칼 1분기 실적, 시장 기대치 하회 전망",
       "summary": [
-        "중국 상무부는 한중 FTA 제14차 후속 협상에서 국경 간 서비스 무역, 투자 등에 대해 심도 있는 논의를 진행했다고 밝혔습니다.",
-        "양측은 FTA 후속 협상을 가속 추진하는 것과 관련한 양국 정상의 공감대를 이행 중이라고 설명했습니다."
+        "키움증권은 한솔케미칼의 1분기 실적이 시장 기대치를 밑돌 것으로 예상하며 목표주가를 하향 조정했습니다.",
+        "유가 급등에 따른 원재료 가격 인상과 운송비 증가가 영업이익에 부정적 영향을 미칠 것으로 분석됩니다.",
+        "2분기 매출액과 영업이익 또한 시장 전망치를 충족하지 못할 것으로 전망됩니다."
       ],
-      "whyImportant": "이번 협상은 양국 기업을 위한 더욱 개방적인 서비스 무역 및 투자 환경 조성에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 중국 상무부는 FTA 후속 협상을 통해 양국 기업을 위한 더욱 개방적인 서비스 무역·투자 환경을 조성할 것이라고 밝혔습니다.",
+      "whyImportant": "한솔케미칼의 실적 부진은 반도체 소재 산업 전반의 수익성에 대한 우려를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 키움증권은 한솔케미칼의 1분기 영업이익이 시장 컨센서스인 505억원을 크게 밑도는 438억원으로 추정했으며, 2분기에도 시장 전망치를 하회할 것으로 예상했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "키움증권은 13일 한솔케미칼에 대해 \"올 1분기 실적이 시장 기대치를 충족하지 못할 것\"이라며 목표주가를 기존 39만원에서 35만원으로 하향 조정했다."
+        }
+      ],
+      "dedupeKey": "기대치-시장-실적-영업이익-충족하지-키움증권-하회-한솔케미칼",
+      "clusterKey": "실적/한솔케미칼",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041357226",
+      "publishedAt": "2026-04-12T22:48:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-13_4",
+      "date": "2026-04-13",
+      "category": "국제",
+      "title": "중국, 한중 FTA 후속 협상 개최에 \"긍정적 진전\"",
+      "summary": [
+        "한중 FTA 제14차 후속 협상이 서울에서 닷새간 열렸습니다.",
+        "양측은 국경 간 서비스 무역, 투자, 금융 서비스 등을 논의하고 긍정적 진전을 거두었다고 중국 상무부가 밝혔습니다."
+      ],
+      "whyImportant": "이번 협상은 양국 기업을 위한 더욱 개방적인 서비스 무역·투자 환경을 조성하는 데 기여할 수 있습니다.",
+      "importanceRationale": "근거: 중국 상무부는 FTA 후속 협상을 가속 추진하는 것과 관련한 양국 정상의 공감대를 이행하고 있다고 설명했습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -159,29 +123,98 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-12_6",
-      "date": "2026-04-12",
-      "category": "기술",
-      "title": "샘 알트만 자택에 화염병 투척 시도 및 OpenAI 본사 방화 위협 발생",
+      "id": "2026-04-13_5",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "중국, 2030년 신에너지차 보급률 70% 이상 전망",
       "summary": [
-        "한 남성이 샘 알트만 O AI CEO의 자택에 화염병을 던지고 샌프란시스코 본사를 방화하겠다고 위협하여 체포되었습니다.",
-        "경찰은 알트만 자택 외부에서 화재가 발생한 후 AI 회사 사무실에서 방화 위협을 인지하고 용의자를 체포했습니다.",
-        "O AI는 이번 공격에 대해 신속한 경찰 대응에 감사를 표하며, 직원의 안전을 위해 지원을 아끼지 않겠다고 밝혔습니다."
+        "중국 정부 자문 인사는 2030년까지 중국의 신에너지차 보급률이 70%를 넘어설 것으로 전망했습니다.",
+        "현재 중국 신차 기준 신에너지차 보급률은 2024년 40.9%이며, 올해는 50%를 넘어설 것으로 예상됩니다."
       ],
-      "whyImportant": "이번 사건은 AI 기술에 대한 우려와 비판이 고조되는 가운데 발생하여, 기술 산업 전반의 보안 및 리스크 관리 중요성을 부각합니다.",
-      "importanceRationale": "근거: OpenAI CEO 자택 공격 및 본사 방화 위협은 AI 산업에 대한 잠재적 위험을 보여주며, 특히 OpenAI와 같은 주요 기업에 대한 보안 강화 필요성을 시사합니다.",
+      "whyImportant": "중국의 신에너지차 시장 확대는 관련 산업 생태계 발전에 중요한 영향을 미칠 것입니다.",
+      "importanceRationale": "근거: 2030년까지 신에너지차 보급률 70% 이상 전망은 중국 자동차 시장의 큰 변화를 예고하며, 현재 40.9%에서 급증하는 추세입니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "A man was arrested for allegedly throwing a Molotov cocktail at OpenAI CEO Sam Altman’s home and then threatening to burn down the artificial intelligence company’s San Francisco headquarters on Friday, police said."
+          "label": "capex",
+          "evidence": "12일 중국 펑파이신문에 따르면 전 공업정보화부 부부장(차관)인 쑤보 중국 국가제조강국건설전략자문위원회 부주임은 전날 베이징에서 열린 스마트 전기차 발전 고위급 포럼에 참석해 이같이 말했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "판매된 신차를 기준으로 내수 보급률은 2020년 5.4%에서 2024년 40.9%로 뛰었고, 올해는 50%를 넘어설 것으로 전망된다."
         }
       ],
-      "dedupeKey": "openai-방화-본사-시도-알트-자택-투척-화염병",
-      "clusterKey": "알트/자택/화염병",
+      "dedupeKey": "넘어설-보급률-신에너지차-이상-인사-자문-정부-중국",
+      "clusterKey": "보급률/이상/자문",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/10/sam-altman-house-hit-with-molotov-cocktail-openai-office-threatened.html",
-      "publishedAt": "2026-04-10T19:51:30+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1338267",
+      "publishedAt": "2026-04-12T06:17:17+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-13_6",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "금융지주 내 증권사 실적 기여도 급부상",
+      "summary": [
+        "주요 금융지주에서 증권사의 위상이 높아지고 있으며, 증시 활황에 힘입어 순이익이 급증하고 있습니다.",
+        "신한금융지주에서 신한투자증권이 차지하는 비중은 2024년 3.9%에서 작년 7.5%로 증가했습니다.",
+        "NH투자증권의 순이익 비중도 같은 기간 28%에서 41.1%로 상승했습니다."
+      ],
+      "whyImportant": "증권사의 실적 증가는 금융 산업 내 자본시장 역할 확대와 은행 중심에서 다변화되는 수익 구조 변화를 의미합니다.",
+      "importanceRationale": "근거: 신한투자증권의 순이익 비중이 2024년 3.9%에서 지난해 7.5%로 두 배 가까이 치솟았고, NH투자증권 순이익은 50.2% 급증했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "신한금융지주의 연결 기준 순이익에서 신한투자증권이 차지하는 비중은 2024년 3.9%에서 지난해 7.5%로 두 배 가까이로 치솟았다."
+        }
+      ],
+      "dedupeKey": "nh투자증권-금융지주-급부상-기여-신한금융지주-신한투자증권-실적-증권사",
+      "clusterKey": "실적/금융/기여",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041252791",
+      "publishedAt": "2026-04-12T08:43:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-13_7",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "IMF, 한국 성장률 전망치 발표 예정",
+      "summary": [
+        "이번 주 IMF는 한국의 2026년 경제성장률 전망치를 발표할 예정입니다.",
+        "지난 1월 IMF는 한국의 올해 경제성장률을 1.9%로 제시한 바 있습니다.",
+        "한편, OECD는 이미 한국의 올해 성장률 전망치를 1.7%로 하향 조정한 바 있습니다."
+      ],
+      "whyImportant": "IMF의 한국 경제 성장률 전망치 변경은 향후 경제 정책 방향 설정에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: OECD가 한국의 올해 성장률 전망치를 1.7%로 하향 조정한 가운데, IMF가 14일 발표에서 한국 성장률 전망치를 조정할지 주목됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "개정안이 의결되면 금감원은 조사 단계에서 포착한 사건을 금융위 증권선물위원회의 검찰 고발·통보 없이도 수사로 전환할 수 있게 된다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "전쟁 이후 두 배가량으로 치솟은 국제 유가로 인해 수입 물가가 9개월 연속 상승했을지도 주목된다."
+        }
+      ],
+      "dedupeKey": "imf-oecd-경제성장률-발표할-성장률-예정입-전망치-한국",
+      "clusterKey": "imf/성장률/전망치",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041252061",
+      "publishedAt": "2026-04-12T08:39:03+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -190,29 +223,90 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-12_7",
-      "date": "2026-04-12",
-      "category": "정책",
-      "title": "26.2조 원 규모 '전쟁 추경' 예산안 국회 통과, 소득 하위 70%에 지원금 지급",
+      "id": "2026-04-13_8",
+      "date": "2026-04-13",
+      "category": "금융",
+      "title": "디지털 자산 기본법과 시장 재편",
       "summary": [
-        "중동 전쟁에 따른 민생 피해 지원을 위한 26조 2천억 원 규모의 추가경정예산안이 국회 본회의를 통과했습니다.",
-        "소득 하위 70%에 해당하는 3,256만 명에게 1인당 최소 10만 원에서 최대 60만 원의 고유가 피해 지원금이 지급될 예정입니다.",
-        "K-패스 환급 확대, 석유 최고가격제 지원, 나프타 수급 지원 예산도 포함되었습니다."
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장은 제도권 편입을 넘어 산업 전체가 재편될 전망입니다.",
+        "글로벌 스테이블코인 선도 기업과 STO, RWA 프로젝트 등을 통해 새로운 질서의 주도권 향방을 가늠할 수 있습니다."
       ],
-      "whyImportant": "이번 추경은 중동 전쟁 장기화에 따른 경제적 어려움을 완화하고, 취약 계층을 지원하는 데 중요한 역할을 할 수 있습니다.",
-      "importanceRationale": "근거: 소득 하위 70%에 해당하는 3,256만 명에게 지원금을 지급하는 사업(4조 8천억 원)이 포함되어 있어, 민생 안정에 기여할 수 있기 때문입니다.",
+      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 금융, 산업, 기술 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 전체가 재편될 수 있다는 내용이 언급되었습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "이재명 정부 두 번째 추경안…국회 제출 10일 만에 '고속' 심사 석유최고가격제 손실 보전·나프타 수급 지원…K-패스 환급 확대 (서울=연합뉴스) 서혜림 김유아 정연솔 기자 = 중동 전쟁에 따른 민생 피해 지원 등을 위한 추가경정예산안이 10일 국회 문턱을 넘었다."
+          "label": "policy",
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
         }
       ],
-      "dedupeKey": "2조-국회-규모-소득-예산안-전쟁-추경-통과",
-      "clusterKey": "2조/규모/전쟁",
+      "dedupeKey": "기본법-기업-디지털-디지털자산-디지털자산기본법-시장-자산-재편",
+      "clusterKey": "디지털/자산/기본법",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1337815",
-      "publishedAt": "2026-04-10T14:19:15+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-12T22:39:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-13_9",
+      "date": "2026-04-13",
+      "category": "정책",
+      "title": "금융위, 전세 거주 1주택자 전세보증대출 만기 불허 검토",
+      "summary": [
+        "금융위원회가 비거주 1주택자의 전세보증대출 만기 연장 불허 방안을 검토 중입니다.",
+        "이는 실거주 목적 외 부동산 투자·투기를 막기 위한 조치로 해석됩니다.",
+        "지난해 1주택 이상 주택소유자 전세대출 보증액은 약 14조 원으로 추산됩니다."
+      ],
+      "whyImportant": "이번 조치는 부동산 시장의 투자 및 투기 수요를 억제하고 실수요자 중심으로 재편하려는 정부 정책의 일환으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 금융위는 비거주 1주택 이상 유주택자의 전세보증대출 만기 연장을 제한하는 방안을 검토 중이며, 이는 지난해 전세대출 보증액의 12.7%인 약 14조 원에 해당합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이날 이재명 대통령은 엑스(X·옛 트위터)에 ‘정부가 비거주 1주택자의 신규 전세대출 보증 금지와 함께 기존 대출의 만기연장을 불허하는 규제를 검토하고 있다’는 내용의 기사를 공유하면서 “남의 돈으로 부동산 투기를 해 돈을 벌면 열심히 일하는 사람들은 의욕을 잃는다."
+        }
+      ],
+      "dedupeKey": "1주택자-거주-금융위-금융위원회-만기-불허-전세-전세보증대출",
+      "clusterKey": "투자/금융/전세",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1253847.html",
+      "publishedAt": "2026-04-12T09:59:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-13_10",
+      "date": "2026-04-13",
+      "category": "정책",
+      "title": "이원석 전 검찰총장, 법원 증거 배제한 국회의 '조작 기소' 판결 비판",
+      "summary": [
+        "이원석 전 검찰총장은 국회의 국정조사가 법원의 증거조사와 판단을 뒤집고 있다고 비판했습니다.",
+        "그는 유죄 판결을 받은 피고인들의 주장과 일부 반대 증거만 내세워 '조작 기소' 판결을 내렸다고 주장했습니다.",
+        "또한 정치권 수사를 이유로 검사들을 추궁하는 것은 사법 시스템을 위축시키는 행위라고 강조했습니다."
+      ],
+      "whyImportant": "이번 논란은 향후 정치적 사건에 대한 수사와 재판에 대한 검찰과 법원의 독립성에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이 전 총장은 “정치권에 대한 수사를 했다는 이유로 현직 검사 40여명을 증인으로 불러 죄인처럼 추궁하는 것은 수사와 재판에 외압을 가하는 국정조사”라고 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "그러면서 그는 “책임을 물을 일이 있다면 검찰의 지휘 감독을 맡았던 나에게 책임을 묻기 바란다”며 “수사 일선에서 실체적 진실을 찾기 위해 애써온 검사 수십명을 불러내어 외압을 가하는, 더 나아가 진행 중인 법원의 재판과 판사에까지 외압을 가하는 국정조사는 법치주의와 사법시스템을 무너뜨리게 될 것”이라고도 했다."
+        }
+      ],
+      "dedupeKey": "검찰총장-국회-배제-법원-이원석-조작-증거-판결",
+      "clusterKey": "법집행/이원석",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1253806.html",
+      "publishedAt": "2026-04-12T06:27:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

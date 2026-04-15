@@ -1,34 +1,33 @@
 {
-  "date": "2026-04-15",
+  "date": "2026-04-16",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-15T08:18:39.526783+09:00",
+  "lastUpdatedAt": "2026-04-16T08:14:11.274451+09:00",
   "items": [
     {
-      "id": "2026-04-15_1",
-      "date": "2026-04-15",
-      "category": "정책",
-      "title": "인공지능 데이터센터 특별법 국회 과방위 통과",
+      "id": "2026-04-16_1",
+      "date": "2026-04-16",
+      "category": "국제",
+      "title": "트럼프, “미국-이란, 2일 내 추가 협상 가능성”",
       "summary": [
-        "인공지능 데이터센터(AIDC) 구축 지원 특별법안이 국회 과학기술정보방송통신위원회를 통과했습니다.",
-        "비수도권 AIDC는 전력계통영향평가 면제, 입지 규제 완화, 세제 지원 등이 포함되었습니다.",
-        "법안은 공포 후 1년 후 시행될 예정입니다."
+        "트럼프 대통령은 미국과 이란이 2일 내에 추가 협상을 할 가능성이 있다고 밝혔습니다.",
+        "호르무즈 해협 봉쇄 속에서 외교적 노력이 재개될 수 있음을 시사합니다."
       ],
-      "whyImportant": "AI 데이터센터 구축 및 관련 산업 성장에 영향을 미칠 수 있는 법안입니다.",
-      "importanceRationale": "근거: 특별법안은 전력 수급과 행정 규제 완화에 중점을 두었으며, 비수도권 AIDC에 대한 전력계통영향평가 면제 등을 포함하고 있습니다.",
+      "whyImportant": "미국과 이란의 협상 재개 가능성은 중동 지역의 지정학적 긴장 완화에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 2일 내 추가 협상 가능성을 언급하여 정책 변화 가능성을 시사했습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "‘인공지능 데이터센터(AIDC)’ 구축 지원을 위한 '인공지능 데이터센터 산업 진흥에 관한 특별법안'이 14일 국회 과학기술정보방송통신위원회를 통과했다."
+          "label": "capex",
+          "evidence": "- 주태영[선물] 국내/해외 파생 경력 20년![선물옵션+주식 동시 진행] - 정재훈 기업 탐방을 통한 종목 발굴/시장의 변화에 따른 투자 전략 - 여승재 확인된 상승 방향을 따라가는 \"TG 모델 투자 전략\" - 예병군 눈으로 보이지 않는 가치에 투자하라!"
         }
       ],
-      "dedupeKey": "과방위-과학기술정보방송통신위원회-국회-데이터센터-인공지능-지원-통과-특별법",
-      "clusterKey": "정책/특별법",
+      "dedupeKey": "내에-대통령-미국-이란-있다고-트럼프-협상-호르무즈",
+      "clusterKey": "관세/트럼프",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604140554i",
-      "publishedAt": "2026-04-14T09:04:49+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://tv.edaily.co.kr/TvLive/",
+      "publishedAt": "2026-04-14T19:38:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -37,59 +36,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-15_3",
-      "date": "2026-04-15",
-      "category": "금융",
-      "title": "케이비엘러먼트, 내년 기술특례 상장 목표…올해 매출 100억 기대",
+      "id": "2026-04-16_2",
+      "date": "2026-04-16",
+      "category": "국제",
+      "title": "국제 유가, 보합세 유지…미-이란 종전 협상 낙관론 속 공급 우려",
       "summary": [
-        "케이비엘러먼트가 내년 기술특례 상장을 목표로 매출 확대에 주력하고 있습니다.",
-        "올해 매출 100억 원을 기대하며, 스마트폰 방열 소재, 자동차 흡음재 등으로 적용처를 넓히고 있습니다."
+        "미국과 이란의 종전 협상 낙관론이 유지되며 국제 유가가 보합세를 보였습니다.",
+        "미 에너지정보청은 미국의 상업용 원유 재고가 감소했다고 밝혀 공급 우려를 키웠습니다."
       ],
-      "whyImportant": "케이비엘러먼트의 상장은 그래핀 소재 상용화 및 시장 확대 가능성을 보여주는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 케이비엘러먼트는 올해 매출 100억 원을 기대하며, 내년 3분기 기술특례 상장을 추진하고 있어, 그래핀 시장 성장에 대한 기대감을 높이고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "배 대표는 \"올해 15% 정도까지 올라가면 원소재 기준 3~4톤 수준 생산이 가능하고, 매출로는 100억원 정도를 기대하고 있다\"고 말했다."
-        }
-      ],
-      "dedupeKey": "100억-기술특례-내년-매출-목표-상장-올해-케이비엘러먼트",
-      "clusterKey": "실적/케이비엘러먼트/상장",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=55086",
-      "publishedAt": "2026-04-14T22:46:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-15_4",
-      "date": "2026-04-15",
-      "category": "금융",
-      "title": "IMF, 올해 한국 성장률 전망 1.9% 유지",
-      "summary": [
-        "IMF는 올해 한국 경제 성장률을 1.9%로 전망하며 기존 전망치를 유지했습니다.",
-        "이는 반도체 수출 호조세와 추가경정예산 효과 등이 반영된 결과입니다.",
-        "글로벌 물가상승률 전망은 4.4%로 상향 조정되었고, 한국의 물가상승률은 2.5%로 추정됩니다."
-      ],
-      "whyImportant": "IMF의 한국 경제 성장률 전망 유지는 향후 경제 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: IMF는 올해 한국 경제 성장률을 1.9%로 유지했으며, 이는 반도체 수출 호조세와 추경 효과가 반영된 결과입니다.",
+      "whyImportant": "국제 유가 변동은 에너지 시장뿐 아니라 관련 산업 전반에 걸쳐 영향을 미칠 수 있는 중요한 지표입니다.",
+      "importanceRationale": "근거: 미국의 상업용 원유 재고가 한 주 전 대비 91만 배럴 감소했다는 에너지정보청 발표는 시장의 공급 우려를 자극하여 유가에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "아이엠에프는 “전쟁이 없었다면 세계 경제성장률은 3.4%로 상향됐을 것”이라며, 하향 조정의 주된 원인으로 2월 말 발생한 전쟁에 따른 에너지 가격 급등과 금융시장 불안 등을 지목했다."
+          "evidence": "미 에너지정보청(EIA)은 지난 10일 기준 미국의 상업용 원유 재고가 한주 전 대비 91만배럴 감소했다고 밝혀 시장의 공급 우려를 키우며 이날 유가 하락을 제한했다."
         }
       ],
-      "dedupeKey": "imf-경제-물가상승률-성장률-올해-조정되었고-추가경정예산-한국",
-      "clusterKey": "imf/올해/성장률",
+      "dedupeKey": "공급-국제-낙관론-보합세-유가-이란-종전-협상",
+      "clusterKey": "관세/국제",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1254238.html",
-      "publishedAt": "2026-04-14T13:14:00+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340047",
+      "publishedAt": "2026-04-15T19:49:58+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -98,15 +66,183 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-15_5",
-      "date": "2026-04-15",
+      "id": "2026-04-16_3",
+      "date": "2026-04-16",
+      "category": "기술",
+      "title": "OpenAI, 스타게이트 노르웨이 데이터센터 계약 철회, 마이크로소프트가 인수",
+      "summary": [
+        "O AI는 노르웨이 데이터센터의 컴퓨팅 용량 임대 계획을 철회했으며, 이는 영국에서의 유사한 프로젝트 중단 발표 직후에 이루어졌습니다.",
+        "마이크로소프트는 노르웨이 나르비크에 계획된 230MW 규모의 '스타게이트 노르웨이' 시설에서 O AI에 할당될 예정이었던 추가 컴퓨팅 용량을 인수합니다.",
+        "O AI는 현재 마이크로소프트로부터 용량을 임대하는 방안을 논의 중이며, 이는 기존 계약 지출 범위 내에서 재정적으로 더 합리적이라고 밝혔습니다."
+      ],
+      "whyImportant": "OpenAI의 데이터센터 계약 철회 및 마이크로소프트의 인수는 AI 인프라 투자 전략 변화와 시장 경쟁 구도에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: OpenAI는 2030년까지 약 6,000억 달러의 컴퓨팅 비용을 목표로 하고 있으며, 마이크로소프트는 나르비크 캠퍼스에서 3만 개 이상의 엔비디아 루빈 GPU를 추가 배치할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "After 2025 saw it announce a flurry of AI infrastructure investments, OpenAI told investors in February that it was targeting roughly $600 billion in total compute spend by 2030, following comments from CEO Sam Altman in November that the company would hit $1.4 trillion in infrastructure commitments over the next eight years."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "“Expanding our work with Nscale in Narvik helps ensure Microsoft customers have access to the advanced AI infrastructure they need as demand continues to grow across Europe,” Jon Tinter, president of business development and ventures at Microsoft, said in Tuesday’s statement."
+        },
+        {
+          "label": "capex",
+          "evidence": "The AI company said in 2025 it had the opportunity to be an “initial offtaker” at the data center, which OpenAI positioned under the umbrella of its “Stargate” infrastructure project and was being built by UK AI cloud startup Nscale."
+        }
+      ],
+      "dedupeKey": "230mw-openai-계약-노르웨-데이터센터-마이크로소프트-스타게이트-인수",
+      "clusterKey": "인수합병/openai",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/15/openai-stargate-norway-project-microsoft.html",
+      "publishedAt": "2026-04-15T12:29:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-16_4",
+      "date": "2026-04-16",
+      "category": "금융",
+      "title": "이란, 미국과 계속 소통…다음 주 2차 협상 전망",
+      "summary": [
+        "이란은 미국과의 1차 종전 협상 결렬 후에도 메시지를 교환하며 소통 중이라고 밝혔습니다.",
+        "양국은 2차 협상 개최에 원칙적으로 동의했으며, 이르면 다음 주에 열릴 가능성이 있습니다."
+      ],
+      "whyImportant": "미국과 이란의 협상 재개는 중동 지역의 지정학적 안정에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 2차 협상이 다음 주에 열릴 가능성이 있다는 언론 보도가 있으며, 이는 미국과 이란 간의 관계 변화 가능성을 시사합니다.",
+      "impactSignals": [],
+      "dedupeKey": "1차-2차-다음-미국-소통-양국-이란-협상",
+      "clusterKey": "관세/소통",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202604160450163531",
+      "publishedAt": "2026-04-15T19:50:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-16_5",
+      "date": "2026-04-16",
+      "category": "금융",
+      "title": "브이엠, 올해 역대급 실적 전망에 목표가 상향",
+      "summary": [
+        "하나증권은 브이엠에 대해 목표주가를 8만4000원으로 상향 조정하고 투자의견 '매수'를 유지했습니다.",
+        "브이엠의 올해 1분기 매출액은 전년 동기 대비 397% 증가한 889억원, 영업이익은 1505% 증가한 301억원을 기록했습니다."
+      ],
+      "whyImportant": "브이엠의 실적 개선은 전공정 장비 산업의 성장 가능성을 시사합니다.",
+      "importanceRationale": "근거: 올해 1분기 매출액이 전년 동기 대비 397% 증가하는 등 큰 폭의 실적 성장을 기록하여 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "브이엠의 올해 1분기 매출액은 전년 동기 대비 397% 증가한 889억원, 영업이익은 전년 동기 대비 1505% 증가한 301억원을 기록했다."
+        }
+      ],
+      "dedupeKey": "301억원-889억원-8만4000원-목표-브이엠-실적-역대급-올해",
+      "clusterKey": "실적/브이엠",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041641036",
+      "publishedAt": "2026-04-15T22:52:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-16_6",
+      "date": "2026-04-16",
+      "category": "금융",
+      "title": "ASML, 강력한 실적과 전망에도 불구하고 중국 규제 강화로 주가 하락",
+      "summary": [
+        "ASML 주가는 1분기 실적과 2026년 매출 전망 상향에도 불구하고 6% 하락했습니다.",
+        "이는 중국 수출 통제 강화로 중국 순매출 비중이 감소한 데 따른 것입니다.",
+        "미국 의원들은 ASML의 중국 반도체 기업에 대한 DUV 장비 판매를 차단하는 법안을 제안했습니다."
+      ],
+      "whyImportant": "ASML의 실적과 전망은 반도체 산업의 수요와 공급망 변화를 파악하는 데 중요한 지표가 됩니다.",
+      "importanceRationale": "근거: ASML은 2026년 순매출 전망을 360억~400억 유로로 상향 조정했으며, 1분기 중국 매출 비중은 19%로 감소했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "Last week, a bipartisan group of U.S. lawmakers proposed a bill that would cut off ASML’s sale of DUV machines to Chinese chip companies and impact its already shrinking sales there."
+        },
+        {
+          "label": "earnings",
+          "evidence": "ASML stock fell 6% on Wednesday despite raising its sales forecast for 2026 and beating first-quarter revenue and profit expectations."
+        }
+      ],
+      "dedupeKey": "asml-강화-규제-불구-실적-주가-중국-하락",
+      "clusterKey": "미중_실적/반도체/불구/정책",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
+      "publishedAt": "2026-04-15T05:12:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-16_7",
+      "date": "2026-04-16",
+      "category": "금융",
+      "title": "배터리 장비사 실적 양극화: 엠플러스만 성장세 유지",
+      "summary": [
+        "국내 배터리 3사의 투자 축소 속에서 배터리 장비 기업들의 실적이 엇갈리고 있으며, 일부는 배터리 외 사업으로 실적을 개선했습니다.",
+        "엠플러스는 각형 배터리 장비 전환과 고객사 다변화를 통해 2025년 매출 1,842억원, 영업이익 246억원을 기록하며 성장세를 보였습니다.",
+        "반면, 아바코 등 다른 기업들은 배터리 장비 매출이 감소하고 디스플레이 장비 매출이 증가하는 등 사업 구조 변화를 겪고 있습니다."
+      ],
+      "whyImportant": "배터리 장비 산업 내에서 특정 기술 변화와 고객 대응 전략에 따라 기업 실적이 크게 달라질 수 있음을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 엠플러스는 각형 장비 매출 비중을 2026년 80% 이상으로 확대할 것으로 예상되며, 2028년 연간 매출 7,000억원을 목표로 제시하여 산업 내 변화에 따른 성장 가능성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "디일렉이 배터리 장비기업 31곳의 2025년 연간 실적을 분석한 결과, 매출이 전년 대비 증가한 기업은 6곳, 감소한 기업은 25곳으로 집계됐다."
+        },
+        {
+          "label": "capex",
+          "evidence": "LG에너지솔루션, 삼성SDI, SK온 등 국내 배터리 3사의 시설 투자 축소가 이어지는 가운데 배터리 장비 기업의 실적이 극명하게 갈렸다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "파우치형에서 각형으로, 삼원계(NCM)에서 리튬인산철(LFP)로의 전환 과정에서 신규 수요가 발생할 수 있다."
+        }
+      ],
+      "dedupeKey": "246억원-842억원-배터리-성장세-실적-양극화-엠플러스-장비사",
+      "clusterKey": "실적/장비사/투자",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=55124",
+      "publishedAt": "2026-04-15T09:21:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-16_8",
+      "date": "2026-04-16",
       "category": "정책",
       "title": "박래군, 진실화해위원회 위원 후보로 추천",
       "summary": [
         "박래군 인권재단 사람이사가 진실·화해를위한과거사정리위원회 비상임위원 후보로 국회 비교섭단체 몫으로 추천되었습니다.",
-        "추천된 후보들은 국회 본회의 투표와 대통령 재가를 거쳐 임명이 확정될 예정입니다."
+        "추천된 후보는 국회 본회의 투표와 대통령 재가를 거쳐 임명이 확정될 예정입니다."
       ],
-      "whyImportant": "진실화해위원회는 과거사 문제 해결에 중요한 역할을 수행하며, 위원 구성은 위원회의 활동 방향에 영향을 미칩니다.",
+      "whyImportant": "과거사 진실 규명 및 화해 관련 정책 결정에 영향을 미칠 수 있는 위원회 구성에 대한 진행 상황입니다.",
       "importanceRationale": "근거: 3기 진실화해위원은 2기 때보다 4명 늘어난 13명으로 구성되며, 각 위원은 대통령, 국회의장, 여야, 비교섭단체 추천을 통해 선임됩니다.",
       "impactSignals": [
         {
@@ -127,105 +263,6 @@
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-15_6",
-      "date": "2026-04-15",
-      "category": "기술",
-      "title": "디지털 자산 기본법 논의 및 RWA 토큰화 규제 개혁 강조",
-      "summary": [
-        "디지털자산 시장은 디지털자산기본법 입법을 기점으로 제도권 편입을 넘어 산업 재편의 전환점에 섰습니다.",
-        "글로벌 실물자산 토큰화 1위 기업 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조했습니다."
-      ],
-      "whyImportant": "디지털 자산 규제 및 토큰화 논의는 금융 시장의 미래 방향성을 결정하는 데 중요한 영향을 미칩니다.",
-      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 산업 재편이 예고되었고, 플룸네트워크는 RWA 토큰화 규제 개혁을 강조하여 정책 논의의 필요성을 제기했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
-        }
-      ],
-      "dedupeKey": "1위-rwa-개혁-규제-기본법-디지털-자산-토큰화",
-      "clusterKey": "정책/디지털",
-      "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
-      "publishedAt": "2026-04-14T21:16:55+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-15_7",
-      "date": "2026-04-15",
-      "category": "에너지",
-      "title": "러시아-우크라이나 전쟁으로 자포리자 원전 또 정전, 체르노빌 붕괴 우려도 발생",
-      "summary": [
-        "러시아-우크라이나 전쟁의 영향으로 자포리자 원자력 발전소의 전력 공급이 일시 차단되었다가 90분 만에 정상화되었습니다.",
-        "이는 2022년 2월 러시아 침공 이후 13번째 정전이며, 체르노빌 원전 격납고 붕괴 시 방사성 물질 유출 우려도 제기되었습니다."
-      ],
-      "whyImportant": "원전의 전력 공급 차단은 노심 용융으로 이어져 재앙적 핵사고를 초래할 수 있어 안전 관리가 중요합니다.",
-      "importanceRationale": "근거: 자포리자 원전은 2022년 이후 13번째 정전이 발생했으며, 체르노빌 원전 격납고는 드론 공습으로 붕괴 위험이 커졌다는 점에서 중요도 4입니다.",
-      "impactSignals": [
-        {
-          "label": "infra",
-          "evidence": "자포리자 원전 13번째 정전…\"핵 위험 커져\" (로마=연합뉴스) 민경락 특파원 = 러시아·우크라이나 전쟁 영향으로 우크라이나 자포리자 지역에 있는 원자력 발전소의 전력 공급이 또 일시 차단됐다."
-        },
-        {
-          "label": "capex",
-          "evidence": "1986년 4월 역사상 최악의 원전 폭발 사고가 났던 체르노빌 원전은 현재 모든 원자로 가동이 멈췄지만 사용 후 핵연료를 냉각 시설에 보관 중이다."
-        },
-        {
-          "label": "security",
-          "evidence": "우크라이나군은 밤새 러시아가 미사일 4기와 드론 129대를 발사했으며 이중 미사일 1기와 드론 114대를 격추했다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "러시아-붕괴-우크라이나-원전-자포리자-전쟁-정전-체르노빌",
-      "clusterKey": "에너지/우크라이나",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1339322",
-      "publishedAt": "2026-04-14T08:17:17+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-15_8",
-      "date": "2026-04-15",
-      "category": "에너지",
-      "title": "미국 전기 요금 급등, 중간 선거 쟁점 부상",
-      "summary": [
-        "미국에서 전기 요금 급등이 소비자 부담을 가중시키며 11월 중간 선거의 주요 이슈로 떠오르고 있습니다.",
-        "데이터센터의 증가로 2028년까지 총 230억 달러의 추가 비용이 소비자에게 전가될 것으로 예상됩니다.",
-        "OPEC 주요 산유국들의 원유 생산량 감소 또한 전기 요금 상승 요인으로 작용할 수 있습니다."
-      ],
-      "whyImportant": "전기 요금 문제는 미국 중간 선거의 주요 변수로 작용할 수 있어 정치적, 경제적 중요성이 큽니다.",
-      "importanceRationale": "근거: 2028년까지 데이터센터가 소비자에게 230억 달러의 추가 비용을 전가할 것으로 예상되어, 전기 요금 문제가 전국적 정치 의제로 부상하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "펜실베이니아 역시 발전소 폐쇄와 데이터센터 수요 증가가 전기요금 상승의 배경으로 지목된다."
-        }
-      ],
-      "dedupeKey": "급등-미국-부상-선거-요금-쟁점-전기-중간",
-      "clusterKey": "요금/중간/선거",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604149468i",
-      "publishedAt": "2026-04-14T02:34:05+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

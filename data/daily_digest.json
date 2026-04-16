@@ -1,63 +1,33 @@
 {
-  "date": "2026-04-16",
+  "date": "2026-04-17",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-16T08:14:11.274451+09:00",
+  "lastUpdatedAt": "2026-04-17T08:14:17.313556+09:00",
   "items": [
     {
-      "id": "2026-04-16_1",
-      "date": "2026-04-16",
+      "id": "2026-04-17_1",
+      "date": "2026-04-17",
       "category": "국제",
-      "title": "트럼프, “미국-이란, 2일 내 추가 협상 가능성”",
+      "title": "인도 주재 미국 대사, 인도도 종전 협상 중재 가능성 언급",
       "summary": [
-        "트럼프 대통령은 미국과 이란이 2일 내에 추가 협상을 할 가능성이 있다고 밝혔습니다.",
-        "호르무즈 해협 봉쇄 속에서 외교적 노력이 재개될 수 있음을 시사합니다."
+        "인도 주재 미국 대사는 인도가 중동 전쟁 종전을 위한 노력에 동참하면 미국은 환영할 것이라고 밝혔습니다.",
+        "인도 대표단은 다음 주 미국을 방문하여 양국 간 무역 협정 서명 문제 등을 논의할 예정입니다."
       ],
-      "whyImportant": "미국과 이란의 협상 재개 가능성은 중동 지역의 지정학적 긴장 완화에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 2일 내 추가 협상 가능성을 언급하여 정책 변화 가능성을 시사했습니다.",
+      "whyImportant": "인도의 중재 참여 가능성과 미-인도 무역 협상은 지정학적 및 경제적 관계에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 미국 대사의 발언과 다음 주 인도 대표단의 방미 예정은 정책 결정 가능성을 시사하며, 특히 무역 협정은 여러 기업에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "- 주태영[선물] 국내/해외 파생 경력 20년![선물옵션+주식 동시 진행] - 정재훈 기업 탐방을 통한 종목 발굴/시장의 변화에 따른 투자 전략 - 여승재 확인된 상승 방향을 따라가는 \"TG 모델 투자 전략\" - 예병군 눈으로 보이지 않는 가치에 투자하라!"
+          "label": "security",
+          "evidence": "지난해 4월 인도령 카슈미르에서 총기테러가 발생하자 인도는 테러범들의 출신국으로 추정하는 파키스탄을 공격했고 파키스탄도 이에 맞서 전면전 직전까지 가기도 했다."
         }
       ],
-      "dedupeKey": "내에-대통령-미국-이란-있다고-트럼프-협상-호르무즈",
-      "clusterKey": "관세/트럼프",
-      "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://tv.edaily.co.kr/TvLive/",
-      "publishedAt": "2026-04-14T19:38:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-16_2",
-      "date": "2026-04-16",
-      "category": "국제",
-      "title": "국제 유가, 보합세 유지…미-이란 종전 협상 낙관론 속 공급 우려",
-      "summary": [
-        "미국과 이란의 종전 협상 낙관론이 유지되며 국제 유가가 보합세를 보였습니다.",
-        "미 에너지정보청은 미국의 상업용 원유 재고가 감소했다고 밝혀 공급 우려를 키웠습니다."
-      ],
-      "whyImportant": "국제 유가 변동은 에너지 시장뿐 아니라 관련 산업 전반에 걸쳐 영향을 미칠 수 있는 중요한 지표입니다.",
-      "importanceRationale": "근거: 미국의 상업용 원유 재고가 한 주 전 대비 91만 배럴 감소했다는 에너지정보청 발표는 시장의 공급 우려를 자극하여 유가에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "미 에너지정보청(EIA)은 지난 10일 기준 미국의 상업용 원유 재고가 한주 전 대비 91만배럴 감소했다고 밝혀 시장의 공급 우려를 키우며 이날 유가 하락을 제한했다."
-        }
-      ],
-      "dedupeKey": "공급-국제-낙관론-보합세-유가-이란-종전-협상",
-      "clusterKey": "관세/국제",
+      "dedupeKey": "대사-미국-양국-인도-종전-주재-중재-협상",
+      "clusterKey": "미인도_관세/주재",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340047",
-      "publishedAt": "2026-04-15T19:49:58+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340247",
+      "publishedAt": "2026-04-16T01:52:19+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -66,37 +36,60 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-16_3",
-      "date": "2026-04-16",
+      "id": "2026-04-17_2",
+      "date": "2026-04-17",
+      "category": "에너지",
+      "title": "독일 정가, 원전 재가동 논의 재점화",
+      "summary": [
+        "독일 정치권에서 원자력발전소 재가동 주장이 제기되고 있으며, 기독민주당(CDU)·기독사회당(CSU) 연합은 재가동에 90억~100억 유로가 소요될 것이라는 연구 결과를 언급했습니다.",
+        "극우 독일대안당(AfD)은 10억~30억 유로를 투입하면 3년 안에 재가동이 가능하다는 주장을 펼치고 있습니다.",
+        "여론조사에서는 응답자의 59%가 원전 정책에 대한 '전략적 실수' 발언에 동의하는 등 원전 재개에 대한 지지가 나타나고 있습니다."
+      ],
+      "whyImportant": "독일의 에너지 정책 방향 전환 가능성은 유럽 에너지 시장 및 관련 산업에 중장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 90억~100억 유로의 비용 추정, 3년 내 재가동 가능성, 그리고 여론조사에서 59%의 지지율이 나타나는 등 구체적인 수치를 통해 정책 변화 가능성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "그는 재가동에 드는 비용이 신규 원전 건설에 들이는 300억∼500억유로(52조2천억∼87조원)보다 훨씬 적다면서 \"어쨌든 사회적 논의가 필요하다고 본다\"고 덧붙였다."
+        }
+      ],
+      "dedupeKey": "100억-10억-90억-독일-원전-재가동-재점화-정가",
+      "clusterKey": "정책/독일",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340571",
+      "publishedAt": "2026-04-16T13:15:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-17_3",
+      "date": "2026-04-17",
       "category": "기술",
-      "title": "OpenAI, 스타게이트 노르웨이 데이터센터 계약 철회, 마이크로소프트가 인수",
+      "title": "TSMC와 ASML의 실적 발표 후 주가 변동, 반도체 기업의 미래를 암시",
       "summary": [
-        "O AI는 노르웨이 데이터센터의 컴퓨팅 용량 임대 계획을 철회했으며, 이는 영국에서의 유사한 프로젝트 중단 발표 직후에 이루어졌습니다.",
-        "마이크로소프트는 노르웨이 나르비크에 계획된 230MW 규모의 '스타게이트 노르웨이' 시설에서 O AI에 할당될 예정이었던 추가 컴퓨팅 용량을 인수합니다.",
-        "O AI는 현재 마이크로소프트로부터 용량을 임대하는 방안을 논의 중이며, 이는 기존 계약 지출 범위 내에서 재정적으로 더 합리적이라고 밝혔습니다."
+        "TSMC는 1분기 이익이 58% 증가하며 기록을 경신했지만, 주가는 하락했습니다.",
+        "ASML 또한 1분기 실적 호조와 향후 전망 상향에도 불구하고 주가가 하락했습니다.",
+        "이는 반도체 산업 전반에 대한 과도한 기대감이 반영된 결과일 수 있습니다."
       ],
-      "whyImportant": "OpenAI의 데이터센터 계약 철회 및 마이크로소프트의 인수는 AI 인프라 투자 전략 변화와 시장 경쟁 구도에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: OpenAI는 2030년까지 약 6,000억 달러의 컴퓨팅 비용을 목표로 하고 있으며, 마이크로소프트는 나르비크 캠퍼스에서 3만 개 이상의 엔비디아 루빈 GPU를 추가 배치할 예정입니다.",
+      "whyImportant": "TSMC와 ASML의 주가 변동은 향후 반도체 산업 투자 심리에 영향을 미칠 수 있는 중요한 지표입니다.",
+      "importanceRationale": "근거: TSMC의 1분기 이익이 58% 증가했음에도 주가가 하락한 점, ASML의 EUV 장비 생산량에 대한 실망감 등이 투자 심리에 영향을 줄 수 있음을 시사합니다.",
       "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "After 2025 saw it announce a flurry of AI infrastructure investments, OpenAI told investors in February that it was targeting roughly $600 billion in total compute spend by 2030, following comments from CEO Sam Altman in November that the company would hit $1.4 trillion in infrastructure commitments over the next eight years."
-        },
         {
           "label": "market-demand",
-          "evidence": "“Expanding our work with Nscale in Narvik helps ensure Microsoft customers have access to the advanced AI infrastructure they need as demand continues to grow across Europe,” Jon Tinter, president of business development and ventures at Microsoft, said in Tuesday’s statement."
-        },
-        {
-          "label": "capex",
-          "evidence": "The AI company said in 2025 it had the opportunity to be an “initial offtaker” at the data center, which OpenAI positioned under the umbrella of its “Stargate” infrastructure project and was being built by UK AI cloud startup Nscale."
+          "evidence": "Two of the biggest names in chip manufacturing, Taiwan Semiconductor Manufacturing Co. and ASML, both reported strong earnings this week as demand for artificial intelligence chips remains sky high."
         }
       ],
-      "dedupeKey": "230mw-openai-계약-노르웨-데이터센터-마이크로소프트-스타게이트-인수",
-      "clusterKey": "인수합병/openai",
+      "dedupeKey": "asml-tsmc-기업-미래-반도체-변동-실적-주가",
+      "clusterKey": "실적/반도체/변동",
       "matchedTo": null,
       "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/15/openai-stargate-norway-project-microsoft.html",
-      "publishedAt": "2026-04-15T12:29:04+00:00",
+      "sourceUrl": "https://www.cnbc.com/2026/04/16/taiwan-semi-tsm-asml-stock-earnings-ai-chips.html",
+      "publishedAt": "2026-04-16T14:15:11+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -105,164 +98,31 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-16_4",
-      "date": "2026-04-16",
-      "category": "금융",
-      "title": "이란, 미국과 계속 소통…다음 주 2차 협상 전망",
-      "summary": [
-        "이란은 미국과의 1차 종전 협상 결렬 후에도 메시지를 교환하며 소통 중이라고 밝혔습니다.",
-        "양국은 2차 협상 개최에 원칙적으로 동의했으며, 이르면 다음 주에 열릴 가능성이 있습니다."
-      ],
-      "whyImportant": "미국과 이란의 협상 재개는 중동 지역의 지정학적 안정에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 2차 협상이 다음 주에 열릴 가능성이 있다는 언론 보도가 있으며, 이는 미국과 이란 간의 관계 변화 가능성을 시사합니다.",
-      "impactSignals": [],
-      "dedupeKey": "1차-2차-다음-미국-소통-양국-이란-협상",
-      "clusterKey": "관세/소통",
-      "matchedTo": null,
-      "sourceName": "YTN",
-      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202604160450163531",
-      "publishedAt": "2026-04-15T19:50:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-16_5",
-      "date": "2026-04-16",
-      "category": "금융",
-      "title": "브이엠, 올해 역대급 실적 전망에 목표가 상향",
-      "summary": [
-        "하나증권은 브이엠에 대해 목표주가를 8만4000원으로 상향 조정하고 투자의견 '매수'를 유지했습니다.",
-        "브이엠의 올해 1분기 매출액은 전년 동기 대비 397% 증가한 889억원, 영업이익은 1505% 증가한 301억원을 기록했습니다."
-      ],
-      "whyImportant": "브이엠의 실적 개선은 전공정 장비 산업의 성장 가능성을 시사합니다.",
-      "importanceRationale": "근거: 올해 1분기 매출액이 전년 동기 대비 397% 증가하는 등 큰 폭의 실적 성장을 기록하여 중요도 3으로 판단합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "브이엠의 올해 1분기 매출액은 전년 동기 대비 397% 증가한 889억원, 영업이익은 전년 동기 대비 1505% 증가한 301억원을 기록했다."
-        }
-      ],
-      "dedupeKey": "301억원-889억원-8만4000원-목표-브이엠-실적-역대급-올해",
-      "clusterKey": "실적/브이엠",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026041641036",
-      "publishedAt": "2026-04-15T22:52:53+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-16_6",
-      "date": "2026-04-16",
-      "category": "금융",
-      "title": "ASML, 강력한 실적과 전망에도 불구하고 중국 규제 강화로 주가 하락",
-      "summary": [
-        "ASML 주가는 1분기 실적과 2026년 매출 전망 상향에도 불구하고 6% 하락했습니다.",
-        "이는 중국 수출 통제 강화로 중국 순매출 비중이 감소한 데 따른 것입니다.",
-        "미국 의원들은 ASML의 중국 반도체 기업에 대한 DUV 장비 판매를 차단하는 법안을 제안했습니다."
-      ],
-      "whyImportant": "ASML의 실적과 전망은 반도체 산업의 수요와 공급망 변화를 파악하는 데 중요한 지표가 됩니다.",
-      "importanceRationale": "근거: ASML은 2026년 순매출 전망을 360억~400억 유로로 상향 조정했으며, 1분기 중국 매출 비중은 19%로 감소했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Last week, a bipartisan group of U.S. lawmakers proposed a bill that would cut off ASML’s sale of DUV machines to Chinese chip companies and impact its already shrinking sales there."
-        },
-        {
-          "label": "earnings",
-          "evidence": "ASML stock fell 6% on Wednesday despite raising its sales forecast for 2026 and beating first-quarter revenue and profit expectations."
-        }
-      ],
-      "dedupeKey": "asml-강화-규제-불구-실적-주가-중국-하락",
-      "clusterKey": "미중_실적/반도체/불구/정책",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/15/asml-q1-2026-earnings-report.html",
-      "publishedAt": "2026-04-15T05:12:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-16_7",
-      "date": "2026-04-16",
-      "category": "금융",
-      "title": "배터리 장비사 실적 양극화: 엠플러스만 성장세 유지",
-      "summary": [
-        "국내 배터리 3사의 투자 축소 속에서 배터리 장비 기업들의 실적이 엇갈리고 있으며, 일부는 배터리 외 사업으로 실적을 개선했습니다.",
-        "엠플러스는 각형 배터리 장비 전환과 고객사 다변화를 통해 2025년 매출 1,842억원, 영업이익 246억원을 기록하며 성장세를 보였습니다.",
-        "반면, 아바코 등 다른 기업들은 배터리 장비 매출이 감소하고 디스플레이 장비 매출이 증가하는 등 사업 구조 변화를 겪고 있습니다."
-      ],
-      "whyImportant": "배터리 장비 산업 내에서 특정 기술 변화와 고객 대응 전략에 따라 기업 실적이 크게 달라질 수 있음을 보여주는 사례입니다.",
-      "importanceRationale": "근거: 엠플러스는 각형 장비 매출 비중을 2026년 80% 이상으로 확대할 것으로 예상되며, 2028년 연간 매출 7,000억원을 목표로 제시하여 산업 내 변화에 따른 성장 가능성을 시사합니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "디일렉이 배터리 장비기업 31곳의 2025년 연간 실적을 분석한 결과, 매출이 전년 대비 증가한 기업은 6곳, 감소한 기업은 25곳으로 집계됐다."
-        },
-        {
-          "label": "capex",
-          "evidence": "LG에너지솔루션, 삼성SDI, SK온 등 국내 배터리 3사의 시설 투자 축소가 이어지는 가운데 배터리 장비 기업의 실적이 극명하게 갈렸다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "파우치형에서 각형으로, 삼원계(NCM)에서 리튬인산철(LFP)로의 전환 과정에서 신규 수요가 발생할 수 있다."
-        }
-      ],
-      "dedupeKey": "246억원-842억원-배터리-성장세-실적-양극화-엠플러스-장비사",
-      "clusterKey": "실적/장비사/투자",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=55124",
-      "publishedAt": "2026-04-15T09:21:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-16_8",
-      "date": "2026-04-16",
+      "id": "2026-04-17_5",
+      "date": "2026-04-17",
       "category": "정책",
-      "title": "박래군, 진실화해위원회 위원 후보로 추천",
+      "title": "금융위, 은행·보험 자본규제 완화로 99조원 공급 여력 확보",
       "summary": [
-        "박래군 인권재단 사람이사가 진실·화해를위한과거사정리위원회 비상임위원 후보로 국회 비교섭단체 몫으로 추천되었습니다.",
-        "추천된 후보는 국회 본회의 투표와 대통령 재가를 거쳐 임명이 확정될 예정입니다."
+        "금융위원회는 은행 및 보험업권의 자본 규제를 일부 완화하여 약 99조원 규모의 자금 공급 여력을 확보하기로 했습니다.",
+        "이번 조치는 부동산 등 비생산적 분야에 쏠린 자금을 첨단산업 등 생산적 분야로 유도하기 위한 것입니다."
       ],
-      "whyImportant": "과거사 진실 규명 및 화해 관련 정책 결정에 영향을 미칠 수 있는 위원회 구성에 대한 진행 상황입니다.",
-      "importanceRationale": "근거: 3기 진실화해위원은 2기 때보다 4명 늘어난 13명으로 구성되며, 각 위원은 대통령, 국회의장, 여야, 비교섭단체 추천을 통해 선임됩니다.",
+      "whyImportant": "이번 자본 규제 완화는 금융 시장의 자금 흐름을 생산적인 분야로 전환하는 데 중요한 역할을 할 수 있습니다.",
+      "importanceRationale": "근거: 금융위는 은행권 74조 5000억원, 보험업권 24조 2000억원 등 최대 98조 7000억원의 추가 자금 공급 여력이 확보될 것으로 추산했습니다.",
       "impactSignals": [
         {
-          "label": "infra",
-          "evidence": "이에 따라 현재 확정된 3기 진실화해위원 후보는 여야가 각각 상임위원으로 추천한 이호중 서강대 법학전문대학원 교수, 장영수 고려대 법학전문대학원 명예교수와, 비상임위원 후보인 김정하 장애와인권발바닥 활동가, 정원옥 문화사회연구소 대표, 김영주 법무법인 지향 변호사(이상 민주당), 이동욱 전 5·18 민주화운동 진상규명조사위원회 위원(국민의힘) 등에 이어 7명으로 늘어났다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "1988년 친동생 박래전 열사가 5·18 진상 규명을 외치며 분신한 뒤 인권운동에 입문했던 박래군 이사는 민주화운동유가족협의회, 의문사진상규명위원회에서 활동한 바 있고, 현재 4·16재단 운영위원장 등도 맡고 있다."
+          "label": "policy",
+          "evidence": "금융당국이 생산적 금융 확대를 위해 은행·보험권의 자본 규제를 일부 손질해 약 99조원 규모의 자금 공급 여력을 확보하기로 했다."
         }
       ],
-      "dedupeKey": "박래군-비상임위원-위원-인권재단-진실화해위원회-추천-화해를위한과거사정리위원회-후보",
-      "clusterKey": "박래군/진실화해위원회/위원",
+      "dedupeKey": "99조원-공급-금융위-보험-여력-완화-은행-자본규제",
+      "clusterKey": "투자/금융/금융위/정책",
       "matchedTo": null,
       "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1254178.html",
-      "publishedAt": "2026-04-14T12:13:00+00:00",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1254539.html",
+      "publishedAt": "2026-04-16T09:55:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

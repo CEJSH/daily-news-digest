@@ -1,90 +1,106 @@
 {
-  "date": "2026-04-17",
+  "date": "2026-04-18",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-17T08:14:17.313556+09:00",
+  "lastUpdatedAt": "2026-04-18T08:13:32.713801+09:00",
   "items": [
     {
-      "id": "2026-04-17_1",
-      "date": "2026-04-17",
-      "category": "국제",
-      "title": "인도 주재 미국 대사, 인도도 종전 협상 중재 가능성 언급",
+      "id": "2026-04-18_1",
+      "date": "2026-04-18",
+      "category": "산업",
+      "title": "중국, 태양광 기술 미국 수출 제한 검토",
       "summary": [
-        "인도 주재 미국 대사는 인도가 중동 전쟁 종전을 위한 노력에 동참하면 미국은 환영할 것이라고 밝혔습니다.",
-        "인도 대표단은 다음 주 미국을 방문하여 양국 간 무역 협정 서명 문제 등을 논의할 예정입니다."
+        "중국 정부가 태양광 관련 첨단 기술의 미국 수출 제한 조치를 검토 중인 것으로 알려졌습니다.",
+        "중국은 전 세계 태양광 패널 부품의 80% 이상을 생산하고 있으며, 수출 통제 시 테슬라 등 미국 업체에 영향이 예상됩니다."
       ],
-      "whyImportant": "인도의 중재 참여 가능성과 미-인도 무역 협상은 지정학적 및 경제적 관계에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 미국 대사의 발언과 다음 주 인도 대표단의 방미 예정은 정책 결정 가능성을 시사하며, 특히 무역 협정은 여러 기업에 영향을 줄 수 있습니다.",
+      "whyImportant": "중국의 수출 통제는 글로벌 공급망 재편과 에너지 안보에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 중국이 태양광 패널 부품의 80% 이상을 생산하고 있으며, 테슬라가 4조 3000억원 규모의 설비 구매를 추진 중이므로 산업적 파급력이 있습니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "지난해 4월 인도령 카슈미르에서 총기테러가 발생하자 인도는 테러범들의 출신국으로 추정하는 파키스탄을 공격했고 파키스탄도 이에 맞서 전면전 직전까지 가기도 했다."
-        }
-      ],
-      "dedupeKey": "대사-미국-양국-인도-종전-주재-중재-협상",
-      "clusterKey": "미인도_관세/주재",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340247",
-      "publishedAt": "2026-04-16T01:52:19+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-17_2",
-      "date": "2026-04-17",
-      "category": "에너지",
-      "title": "독일 정가, 원전 재가동 논의 재점화",
-      "summary": [
-        "독일 정치권에서 원자력발전소 재가동 주장이 제기되고 있으며, 기독민주당(CDU)·기독사회당(CSU) 연합은 재가동에 90억~100억 유로가 소요될 것이라는 연구 결과를 언급했습니다.",
-        "극우 독일대안당(AfD)은 10억~30억 유로를 투입하면 3년 안에 재가동이 가능하다는 주장을 펼치고 있습니다.",
-        "여론조사에서는 응답자의 59%가 원전 정책에 대한 '전략적 실수' 발언에 동의하는 등 원전 재개에 대한 지지가 나타나고 있습니다."
-      ],
-      "whyImportant": "독일의 에너지 정책 방향 전환 가능성은 유럽 에너지 시장 및 관련 산업에 중장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 90억~100억 유로의 비용 추정, 3년 내 재가동 가능성, 그리고 여론조사에서 59%의 지지율이 나타나는 등 구체적인 수치를 통해 정책 변화 가능성을 시사합니다.",
-      "impactSignals": [
+          "label": "policy",
+          "evidence": "로이터는 미국 상호관세에 대응해 중국이 시행 중인 희토류 수출 통제를 거론하며 “중국이 자국 우위인 다른 기술 영역에서 수출 통제를 확대할 가능성이 있다”고 내다봤다."
+        },
         {
           "label": "capex",
-          "evidence": "그는 재가동에 드는 비용이 신규 원전 건설에 들이는 300억∼500억유로(52조2천억∼87조원)보다 훨씬 적다면서 \"어쨌든 사회적 논의가 필요하다고 본다\"고 덧붙였다."
+          "evidence": "ADVERTISEMENT 중국의 대미 수출 통제가 현실화하면 미국 내 공장을 신증설하려는 테슬라 등 미국 업체들 계획이 위태로워질 것으로 분석된다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "일론 머스크 테슬라 최고경영자(CEO)는 태양광 에너지로 데이터센터를 포함한 미국 내 모든 전력 수요를 감당할 수 있다고 본다."
+        },
+        {
+          "label": "security",
+          "evidence": "희토류에 이어 태양광까지 글로벌 공급망을 빠르게 장악한 중국이 공격적 수출 통제로 ‘무역 권력’을 키우는 모습이다."
         }
       ],
-      "dedupeKey": "100억-10억-90억-독일-원전-재가동-재점화-정가",
-      "clusterKey": "정책/독일",
+      "dedupeKey": "기술-미국-수출-정부-제한-중국-첨단-태양광",
+      "clusterKey": "미중/태양광/기술/수출",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340571",
-      "publishedAt": "2026-04-16T13:15:00+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026041663541",
+      "publishedAt": "2026-04-16T08:27:08+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-04-17_3",
-      "date": "2026-04-17",
-      "category": "기술",
-      "title": "TSMC와 ASML의 실적 발표 후 주가 변동, 반도체 기업의 미래를 암시",
+      "id": "2026-04-18_2",
+      "date": "2026-04-18",
+      "category": "국제",
+      "title": "미국-이란 종전 외교, 주말께 분수령",
       "summary": [
-        "TSMC는 1분기 이익이 58% 증가하며 기록을 경신했지만, 주가는 하락했습니다.",
-        "ASML 또한 1분기 실적 호조와 향후 전망 상향에도 불구하고 주가가 하락했습니다.",
-        "이는 반도체 산업 전반에 대한 과도한 기대감이 반영된 결과일 수 있습니다."
+        "미국과 이란 간 2차 종전 협상이 이번 주말 파키스탄에서 열릴 가능성이 있습니다.",
+        "트럼프 대통령은 이란과의 합의에 매우 근접했으며, 주말에 협상이 재개될 수 있다고 밝혔습니다.",
+        "미국은 대이란 해상 봉쇄를 전 세계로 확대하며 이란에 대한 압박 수위를 높이고 있습니다."
       ],
-      "whyImportant": "TSMC와 ASML의 주가 변동은 향후 반도체 산업 투자 심리에 영향을 미칠 수 있는 중요한 지표입니다.",
-      "importanceRationale": "근거: TSMC의 1분기 이익이 58% 증가했음에도 주가가 하락한 점, ASML의 EUV 장비 생산량에 대한 실망감 등이 투자 심리에 영향을 줄 수 있음을 시사합니다.",
+      "whyImportant": "미국과 이란의 협상 결과는 중동 지역의 안정을 포함한 국제 정세에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 이란과의 협상 재개 가능성을 언급하고, 미국이 대이란 해상 봉쇄를 전 세계로 확대하는 등 정책 변화 가능성이 시사되었기 때문에 중요도 3으로 판단합니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "Two of the biggest names in chip manufacturing, Taiwan Semiconductor Manufacturing Co. and ASML, both reported strong earnings this week as demand for artificial intelligence chips remains sky high."
+          "evidence": "트럼프 대통령은 이날 기름값이 현재 아주 높은 것은 아니라면서 \"(협상 타결이) 성사되면 자유로운 석유(의 흐름), 자유로운 호르무즈 해협이 주어질 것이고 기름값도 이전보다 내려갈 것\"이라며 유가 상승의 여파 축소를 시도하기도 했다."
+        },
+        {
+          "label": "security",
+          "evidence": "트럼프 대통령도 협상이 타결되지 않으면 이란에 대한 공격이 재개될 것이라고 했다."
         }
       ],
-      "dedupeKey": "asml-tsmc-기업-미래-반도체-변동-실적-주가",
+      "dedupeKey": "2차-미국-분수령-외교-이란-종전-주말께-파키스탄",
+      "clusterKey": "관세/종전",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1340655",
+      "publishedAt": "2026-04-16T22:08:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-18_3",
+      "date": "2026-04-18",
+      "category": "기술",
+      "title": "TSMC와 ASML의 실적 발표 후 주가 변동이 시사하는 점",
+      "summary": [
+        "TSMC는 1분기 이익이 58% 증가하며 기록을 경신했지만, 주가는 하락했습니다.",
+        "ASML 또한 1분기 실적 호조와 향후 전망 상향에도 불구하고 주가가 하락했습니다.",
+        "이는 반도체 업계 전반에 대한 지나치게 높은 기대감이 반영된 결과로 해석됩니다."
+      ],
+      "whyImportant": "반도체 산업 전반의 투자 심리 및 향후 실적에 대한 기대치를 가늠할 수 있는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: TSMC의 1분기 매출의 61%는 고성능 컴퓨팅 부문에서 발생했으며, 이는 AI 칩 수요가 견조함을 보여주지만, 투자자들은 TSMC가 목표로 한 연간 30% 성장을 넘어서기를 기대했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "“AI-related demand continues to be extremely robust,” President and CEO of TSMC C.C. Wei said in an earnings call Thursday."
+        }
+      ],
+      "dedupeKey": "asml-tsmc-변동-실적-이익-주가-증가-지나치게",
       "clusterKey": "실적/반도체/변동",
       "matchedTo": null,
       "sourceName": "CNBC",
@@ -98,31 +114,62 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-17_5",
-      "date": "2026-04-17",
-      "category": "정책",
-      "title": "금융위, 은행·보험 자본규제 완화로 99조원 공급 여력 확보",
+      "id": "2026-04-18_4",
+      "date": "2026-04-18",
+      "category": "금융",
+      "title": "디지털 자산 시장 재편과 규제 개혁 논의",
       "summary": [
-        "금융위원회는 은행 및 보험업권의 자본 규제를 일부 완화하여 약 99조원 규모의 자금 공급 여력을 확보하기로 했습니다.",
-        "이번 조치는 부동산 등 비생산적 분야에 쏠린 자금을 첨단산업 등 생산적 분야로 유도하기 위한 것입니다."
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 재편의 전환점에 섰다는 분석이 나왔습니다.",
+        "글로벌 실물자산 토큰화 1위 기업 플룸네트워크는 규제 개혁을 강조하며 토큰화가 자본에 미치는 영향이 인터넷 혁명과 같다고 밝혔습니다.",
+        "일본 메타플래닛은 웹3 금융 인프라 지원을 위해 자회사를 신설하고 JPYC에 첫 투자를 진행했습니다."
       ],
-      "whyImportant": "이번 자본 규제 완화는 금융 시장의 자금 흐름을 생산적인 분야로 전환하는 데 중요한 역할을 할 수 있습니다.",
-      "importanceRationale": "근거: 금융위는 은행권 74조 5000억원, 보험업권 24조 2000억원 등 최대 98조 7000억원의 추가 자금 공급 여력이 확보될 것으로 추산했습니다.",
+      "whyImportant": "디지털 자산 시장의 제도화 및 기술 혁신이 금융 및 산업 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법, 플룸네트워크의 규제 개혁 강조, 메타플래닛의 투자 이니셔티브 등을 통해 디지털 자산 시장의 변화를 엿볼 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "금융당국이 생산적 금융 확대를 위해 은행·보험권의 자본 규제를 일부 손질해 약 99조원 규모의 자금 공급 여력을 확보하기로 했다."
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
         }
       ],
-      "dedupeKey": "99조원-공급-금융위-보험-여력-완화-은행-자본규제",
-      "clusterKey": "투자/금융/금융위/정책",
+      "dedupeKey": "1위-개혁-규제-기업-디지털-시장-자산-재편",
+      "clusterKey": "투자/디지털/정책",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1254539.html",
-      "publishedAt": "2026-04-16T09:55:00+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-17T16:44:53+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-18_6",
+      "date": "2026-04-18",
+      "category": "에너지",
+      "title": "영국, 전력 탄소세 2028년부터 폐지",
+      "summary": [
+        "영국 정부는 전기요금 상승 억제를 위해 전력 생산에 부과하던 탄소세를 2028년 4월부터 폐지하기로 했습니다.",
+        "탄소가격지지제도(CPS) 폐지로 가구당 전기요금이 연간 약 21파운드 절감될 것으로 추산됩니다."
+      ],
+      "whyImportant": "이번 결정은 영국의 에너지 정책 전환을 보여주는 신호탄으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 2028년 4월부터 전력 탄소세를 폐지하여 가구 전기요금이 연간 약 21파운드 줄어들 것으로 예상되므로 중요도는 3입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "최근 중동 분쟁 영향으로 도매 에너지 가격이 상승하고 규제기관의 요금 상한이 조정되는 시점과 맞물려 추진됐다."
+        }
+      ],
+      "dedupeKey": "21파운드-부과하던-영국-전기요금-전력-정부-탄소세-폐지",
+      "clusterKey": "영국/탄소세/폐지",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202604177055i",
+      "publishedAt": "2026-04-16T23:01:41+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

@@ -1,161 +1,68 @@
 {
-  "date": "2026-04-24",
+  "date": "2026-04-25",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-24T08:28:44.113760+09:00",
+  "lastUpdatedAt": "2026-04-25T08:12:48.863659+09:00",
   "items": [
     {
-      "id": "2026-04-24_1",
-      "date": "2026-04-24",
-      "category": "에너지",
-      "title": "울주군, 신규 원전 유치 TF 가동",
+      "id": "2026-04-25_1",
+      "date": "2026-04-25",
+      "category": "금융",
+      "title": "기아, 1분기 최대 매출에도 미국 관세로 실적에 영향, 친환경차로 방어",
       "summary": [
-        "울주군은 신규 원전 유치를 위해 태스크포스(TF)를 구성하여 본격 운영한다고 밝혔습니다.",
-        "TF는 원전 유치에 필요한 주민 수용성 제고, 행정 지원, 기반 시설 확충 등을 중심으로 운영될 예정입니다.",
-        "현재 울주군 서생면에는 새울 원전 1·2호기가 가동 중이며, 3호기는 9~10월 상업 운전을 시작할 예정입니다."
+        "기아는 1분기에 최대 매출을 기록했지만, 미국 관세와 중동 전쟁으로 인해 영업이익이 감소했습니다.",
+        "친환경차 판매량 증가로 실적 악화를 일부 만회했으며, 2분기 이후 반등을 예상하고 있습니다.",
+        "미국 관세 비용은 7,550억원으로 영업이익 감소분의 대부분을 차지했습니다."
       ],
-      "whyImportant": "울주군의 신규 원전 유치 노력은 향후 에너지 정책 및 지역 경제에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 울주군은 신규 원전 건설 후보 부지 유치를 위해 TF를 구성하고 한국수력원자력에 유치신청서를 제출하여 본격적인 절차에 들어갔습니다.",
+      "whyImportant": "미국 관세가 국내 자동차 기업의 수익성에 지속적인 영향을 미칠 수 있음을 시사합니다.",
+      "importanceRationale": "근거: 기아는 1분기에 미국 관세로 7,550억원의 비용이 발생했으며, 현대차와 합산 시 1조 6,150억원의 추가 비용을 부담했습니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "울주군은 주민 수용성 제고, 행정 지원, 기반 시설 확충, 지역 상생 협력 방안 등 원전 유치에 필요한 주요 사항을 중심으로 부서별 역할과 협조체계를 상시 점검한다."
+          "label": "earnings",
+          "evidence": "기아는 연결 기준 1분기 영업이익이 2조2천51억원으로 전년 동기보다 26.7% 감소한 것으로 잠정 집계됐다고 24일 밝혔다."
         }
       ],
-      "dedupeKey": "2호기-3호기-가동-신규-울주군-원전-유치-지원",
-      "clusterKey": "울주군/신규/유치",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026042324811",
-      "publishedAt": "2026-04-23T08:24:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-24_2",
-      "date": "2026-04-24",
-      "category": "기술",
-      "title": "테슬라, 머스크의 290억 달러 '임시' 보상 철회",
-      "summary": [
-        "테슬라가 델라웨어주 법원의 판결로 머스크의 2018년 560억 달러 보상안이 복원됨에 따라, 290억 달러 규모의 임시 보상 패키지를 철회했습니다.",
-        "이는 델라웨어 최고 법원의 항소 기각 가능성에 대비한 조치였으며, '이중 수혜'를 방지하기 위한 것입니다.",
-        "테슬라는 분기 보고서에서 4월 21일에 임시 보상이 철회되었음을 확인했습니다."
-      ],
-      "whyImportant": "이번 결정은 테슬라 CEO 보상 구조와 관련된 불확실성을 해소하고, 향후 경영진 보상 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 델라웨어 최고 법원의 판결로 560억 달러 보상안이 복원됨에 따라 290억 달러 임시 보상 패키지가 철회되었으며, 이는 테슬라 이사회의 결정에 따른 것입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Tesla has revoked the “interim” pay package worth $29 billion that it gave its CEO Elon Musk last year, after the Delaware Supreme Court recently restored his larger $56 billion compensation award from 2018."
-        }
-      ],
-      "dedupeKey": "290억-560억-달러-머스크-법원-보상-임시-테슬라",
-      "clusterKey": "테슬라/머스크/290억",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/04/23/tesla-drops-musks-29b-interim-award-after-delaware-court-restored-larger-pay-package/",
-      "publishedAt": "2026-04-23T13:40:33+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-24_3",
-      "date": "2026-04-24",
-      "category": "에너지",
-      "title": "한국-베트남, 원전 수출 및 에너지 협력 논의",
-      "summary": [
-        "위성락 실장은 이재명 대통령의 베트남 국빈 방문이 양국 협력 수준을 도약시키는 계기가 되었다고 평가했습니다.",
-        "베트남은 원전 건설 등 에너지 전환 과정에서 한국 기업의 참여를 환영한다는 뜻을 밝혔습니다.",
-        "양국은 핵심 광물 공급망 및 에너지 문제에 대한 협력 방안을 추진할 예정입니다."
-      ],
-      "whyImportant": "한국과 베트남 간의 에너지 협력 논의는 향후 국내 기업의 해외 원전 건설 참여 가능성을 시사합니다.",
-      "importanceRationale": "근거: 베트남이 원전 건설에 한국 기업의 참여를 환영한다고 밝혔으며, 에너지 및 핵심 광물 공급망 협력을 추진할 예정이기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "베트남 닌투언 원전 건설사업을 비롯한 구체적인 프로젝트 참여 계획에 대해서는 \"아직은 초기 단계의 논의가 진행 중\"이라고 설명했고"
-        }
-      ],
-      "dedupeKey": "기업-베트남-수출-양국-에너지-원전-한국-협력",
-      "clusterKey": "에너지/베트남",
-      "matchedTo": null,
-      "sourceName": "MBC",
-      "sourceUrl": "https://imnews.imbc.com/news/2026/politics/article/6817533_36911.html",
-      "publishedAt": "2026-04-23T09:09:28+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-24_4",
-      "date": "2026-04-24",
-      "category": "산업",
-      "title": "SK하이닉스, HBM 수요가 생산 능력 초과",
-      "summary": [
-        "SK하이닉스는 향후 3년간 고객사들의 HBM 수요가 자사 공급 능력을 넘어설 것으로 예상했습니다.",
-        "2분기 D램 출하량은 한 자릿수 후반 증가, 낸드는 10% 중반 증가할 것으로 전망됩니다.",
-        "메모리 가격 상승 사이클은 AI 기술 발전으로 인해 장기화될 것으로 예상됩니다."
-      ],
-      "whyImportant": "SK하이닉스의 HBM 수요 증가는 AI 시대에 메모리 반도체의 중요성이 더욱 커지고 있음을 시사합니다.",
-      "importanceRationale": "근거: 향후 3년간 고객사 수요가 SK하이닉스 공급 캐파를 상회하는 수준이며, 2분기 D램 출하량 증가가 예상되어 중요도 4로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "회사는 향후 3년간 고객사들이 요청한 수요가 자사 공급 캐파를 상회하는 수준이라고 전했다."
-        }
-      ],
-      "dedupeKey": "3년간-hbm-sk하이닉스-고객사들-능력-생산-수요-초과",
-      "clusterKey": "반도체/sk하이닉스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604230762g",
-      "publishedAt": "2026-04-23T00:52:19+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-24_5",
-      "date": "2026-04-24",
-      "category": "에너지",
-      "title": "한국-베트남, 신규 원전 건설 협력 및 핵심광물 공급망 협력 가속화",
-      "summary": [
-        "한국과 베트남은 신규 원전 건설과 핵심광물 공급망 중심으로 경제 협력을 강화하기로 했습니다.",
-        "한국전력공사와 베트남 산업에너지공사는 닌투언2 원전 건설을 위한 협력을 추진할 계획입니다.",
-        "양국은 수출통제 협력 MOU를 체결하여 우리 기업의 불확실성을 해소할 예정입니다."
-      ],
-      "whyImportant": "원전 건설 협력은 에너지 안보 및 관련 산업에 장기적인 영향을 미칠 수 있는 중요한 결정입니다.",
-      "importanceRationale": "근거: 한국전력공사와 베트남 산업에너지공사 간 '원전 개발 협력 가능성 검토 MOU' 체결은 원전 건설을 위한 구체적인 협력 단계 진입을 의미합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "한전과 PVN은 닌투언2 원전 건설을 위해 원전 공급망 협력, 사업 수익성 분석 협력 등을 본격적으로 추진할 계획이다."
-        }
-      ],
-      "dedupeKey": "건설-공급망-베트남-신규-원전-한국-핵심광물-협력",
-      "clusterKey": "제재/베트남",
+      "dedupeKey": "550억원-관세-기아-매출-미국-실적-최대-친환경차",
+      "clusterKey": "미중동_실적/기아/관세",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1343424",
-      "publishedAt": "2026-04-22T12:58:19+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1344542",
+      "publishedAt": "2026-04-24T05:40:46+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-25_2",
+      "date": "2026-04-25",
+      "category": "국제",
+      "title": "이란 권력 구도 관련 보도에 따른 미국 증시 변동",
+      "summary": [
+        "이란 협상 대표 사임 소식에 나스닥과 S&P500 지수가 일시적으로 하락했습니다.",
+        "이후 이란 언론의 반박 보도에 지수는 다시 반등했습니다.",
+        "이란 내부 사정이 미국 증시에 미치는 영향력이 커지고 있다는 평가입니다."
+      ],
+      "whyImportant": "이란 내부 권력 구도 변화가 향후 국제 협상 및 시장 변동성에 영향을 줄 수 있기 때문입니다.",
+      "importanceRationale": "근거: 이란 의장의 협상 대표 사임 소식에 나스닥과 S&P500 지수가 한때 1%대 하락했으며, 이는 이란 내부 사정이 시장에 미치는 영향을 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "휴전 이전 트럼프 대통령의 말보다 걸프 국가를 향한 이란의 드론 공격이 국제 유가를 흔들었던 것처럼 이란 권력층 동향이 시장에 영향을 주게 됐기 때문이다."
+        }
+      ],
+      "dedupeKey": "구도-권력-따른-미국-변동-보도-이란-증시",
+      "clusterKey": "관세/권력",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042453811",
+      "publishedAt": "2026-04-24T08:29:12+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

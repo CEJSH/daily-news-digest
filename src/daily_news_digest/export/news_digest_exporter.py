@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import traceback
 from daily_news_digest.core.config import (
     AFFILIATE_AD_TEXT,
     AFFILIATE_LINK,
@@ -48,6 +49,8 @@ def main() -> None:
 
     except Exception as e:
         print("❌ 오류 발생:", e)
+        traceback.print_exc()
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

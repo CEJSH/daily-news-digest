@@ -692,7 +692,10 @@ class DedupeEngine:
             key = (item.get("clusterKeyRule") or item.get("clusterKey") or "").strip()
             dedupe_key = item.get("dedupeKeyRule") or item.get("dedupeKey") or ""
             if not item.get("clusterKeyRule") and not item.get("clusterKey") and dedupe_key:
-                recomputed = self.build_cluster_key(dedupe_key)
+                hint_text = " ".join(
+                    str(item.get(k) or "") for k in ("title", "summary", "summaryRaw")
+                ).strip() or None
+                recomputed = self.build_cluster_key(dedupe_key, hint_text=hint_text)
                 if recomputed:
                     key = recomputed
                     item["clusterKey"] = recomputed

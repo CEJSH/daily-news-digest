@@ -336,17 +336,17 @@ class ItemFilterScorer:
         return normalized * self._source_weight_factor
 
     def compute_age_hours(self, entry: Any) -> float | None:
-        updated_raw = getattr(entry, "updated", None)
         published_raw = getattr(entry, "published", None)
+        updated_raw = getattr(entry, "updated", None)
         published_dt = None
-        if updated_raw:
-            published_dt = parse_datetime_utc(str(updated_raw))
-        if published_dt is None and published_raw:
+        if published_raw:
             published_dt = parse_datetime_utc(str(published_raw))
+        if published_dt is None and updated_raw:
+            published_dt = parse_datetime_utc(str(updated_raw))
         if published_dt is None:
-            updated_parsed = getattr(entry, "updated_parsed", None)
             published_parsed = getattr(entry, "published_parsed", None)
-            parsed = updated_parsed or published_parsed
+            updated_parsed = getattr(entry, "updated_parsed", None)
+            parsed = published_parsed or updated_parsed
             if not parsed:
                 return None
             published_dt = datetime.datetime(*parsed[:6], tzinfo=datetime.timezone.utc)

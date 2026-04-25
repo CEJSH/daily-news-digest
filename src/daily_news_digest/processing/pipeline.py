@@ -510,6 +510,10 @@ class DigestPipeline:
                 "filtered": 0,
                 "lowScore": 0,
                 "skipReasons": {},
+                "feedsAttempted": 0,
+                "feedFailures": 0,
+                "feedWarnings": 0,
+                "feedFailureReasons": {},
             },
             "dedupe": {},
             "selection": {},
@@ -534,16 +538,30 @@ class DigestPipeline:
             topic, url, feed_limit = source["topic"], source["url"], source.get("limit", 3)
             topic_limits[topic] = max(topic_limits.get(topic, 0), feed_limit)
             self._log(f"피드 로딩({source_idx}/{len(sources)}): {topic}")
+            self._metrics["fetch"]["feedsAttempted"] += 1
             feed = self._feed_parser(url)
-            self._log(f"피드 항목 수: {len(feed.entries)}")
+            entries = list(getattr(feed, "entries", []) or [])
+            is_bozo = bool(getattr(feed, "bozo", 0))
+            if is_bozo:
+                bozo_exc = getattr(feed, "bozo_exception", None)
+                reason = type(bozo_exc).__name__ if bozo_exc is not None else "bozo"
+                reason_counts = self._metrics["fetch"]["feedFailureReasons"]
+                reason_counts[reason] = reason_counts.get(reason, 0) + 1
+                if not entries:
+                    self._metrics["fetch"]["feedFailures"] += 1
+                    self._log(f"⚠️ 피드 실패: {topic} url={url[:80]} reason={reason}")
+                    continue
+                self._metrics["fetch"]["feedWarnings"] += 1
+                self._log(f"⚠️ 피드 경고(처리 계속): {topic} reason={reason} entries={len(entries)}")
+            self._log(f"피드 항목 수: {len(entries)}")
 
             feed_seen = 0
             feed_kept = 0
             feed_dupes = 0
             feed_filtered = 0
             feed_low_score = 0
-            total_entries = min(len(feed.entries), self._max_entries_per_feed)
-            for entry_idx, entry in enumerate(feed.entries[: self._max_entries_per_feed], start=1):
+            total_entries = min(len(entries), self._max_entries_per_feed)
+            for entry_idx, entry in enumerate(entries[: self._max_entries_per_feed], start=1):
                 feed_seen += 1
                 total_seen += 1
                 self._metrics["fetch"]["totalSeen"] += 1

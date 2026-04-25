@@ -328,11 +328,11 @@ def strip_summary_boilerplate(text: str) -> str:
     """요약 후보에서 저작권/연락처/주소 등 고정 문구를 제거."""
     if not text:
         return ""
-    lines = [line.strip() for line in re.split(r"[\\r\\n]+", text) if line.strip()]
+    lines = [line.strip() for line in re.split(r"[\r\n]+", text) if line.strip()]
     patterns = [
         r"제호",
         r"대표전화",
-        r"주소\\s*:\\s*",
+        r"주소\s*:\s*",
         r"등록번호",
         r"등록일",
         r"발행인",
@@ -340,9 +340,9 @@ def strip_summary_boilerplate(text: str) -> str:
         r"기사배열책임자",
         r"청소년보호책임자",
         r"Copyright",
-        r"All\\s*Rights",
-        r"Rights\\s*Reserved",
-        r"Rights\\s*R",
+        r"All\s*Rights",
+        r"Rights\s*Reserved",
+        r"Rights\s*R",
         r"ⓒ",
         r"무단전재",
         r"재배포",
@@ -363,7 +363,7 @@ def strip_summary_boilerplate(text: str) -> str:
             if len(prefix) < 12:
                 continue
             line = prefix
-        line = re.sub(r"[\\s\\-–—·•:｜ㅣ]+$", "", line).strip()
+        line = re.sub(r"[\s\-–—·•:｜ㅣ]+$", "", line).strip()
         if not line:
             continue
         cleaned.append(line)

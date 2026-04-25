@@ -235,9 +235,8 @@ def test_passes_freshness_with_long_trigger() -> None:
     assert scorer.passes_freshness(100, ["policy"], "정부가 법안 통과를 확정했다") is True
 
 
-def test_compute_age_hours_prefers_updated() -> None:
-    now = datetime.datetime(2024, 1, 9, 15, 0, tzinfo=datetime.timezone.utc)
-    scorer = ItemFilterScorer(
+def _build_scorer_with_now(now: datetime.datetime) -> ItemFilterScorer:
+    return ItemFilterScorer(
         impact_signals_map=IMPACT_SIGNALS_MAP,
         long_impact_signals=LONG_IMPACT_SIGNALS,
         emotional_drop_keywords=[],
@@ -257,11 +256,45 @@ def test_compute_age_hours_prefers_updated() -> None:
         top_require_published=False,
         now_provider=lambda: now,
     )
+
+
+def test_compute_age_hours_prefers_published() -> None:
+    """published 가 있으면 그것을 신선도 기준으로 사용한다.
+    Google News aggregator의 updated 가 재인덱싱 시각으로 오염되어도
+    실제 첫 발행 시각으로 신선도를 측정해 stale을 정확히 식별한다.
+    """
+    now = datetime.datetime(2024, 1, 9, 15, 0, tzinfo=datetime.timezone.utc)
+    scorer = _build_scorer_with_now(now)
+
     class Dummy:
-        updated = "2024-01-10T00:00:00+09:00"
-        published = "2024-01-01T00:00:00+09:00"
+        updated = "2024-01-10T00:00:00+09:00"  # 갓 재인덱싱된 것처럼 보이지만
+        published = "2024-01-01T00:00:00+09:00"  # 실제 발행은 9일 전
+
     age = scorer.compute_age_hours(Dummy())
-    assert age == 0.0
+    assert age == 216.0  # 9일 = 216시간
+
+
+def test_compute_age_hours_falls_back_to_updated_when_published_missing() -> None:
+    """published 가 없을 때만 updated 로 fallback. (Atom 피드 일부 시나리오)"""
+    now = datetime.datetime(2024, 1, 10, 0, 0, tzinfo=datetime.timezone.utc)
+    scorer = _build_scorer_with_now(now)
+
+    class Dummy:
+        updated = "2024-01-09T15:00:00+00:00"
+        published = None
+
+    age = scorer.compute_age_hours(Dummy())
+    assert age == 9.0
+
+
+def test_compute_age_hours_returns_none_when_both_missing() -> None:
+    now = datetime.datetime(2024, 1, 10, 0, 0, tzinfo=datetime.timezone.utc)
+    scorer = _build_scorer_with_now(now)
+
+    class Dummy:
+        pass
+
+    assert scorer.compute_age_hours(Dummy()) is None
 
 
 def test_parse_datetime_naive_assumes_kst() -> None:

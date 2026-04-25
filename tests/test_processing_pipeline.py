@@ -20,8 +20,16 @@ class _Entry:
 
 
 class _Feed:
-    def __init__(self, entries: list[_Entry]) -> None:
+    def __init__(
+        self,
+        entries: list[_Entry],
+        *,
+        bozo: int = 0,
+        bozo_exception: Exception | None = None,
+    ) -> None:
         self.entries = entries
+        self.bozo = bozo
+        self.bozo_exception = bozo_exception
 
 
 def _build_pipeline(feed: _Feed) -> DigestPipeline:
@@ -115,6 +123,38 @@ def test_pipeline_handles_missing_link() -> None:
     assert grouped
     assert top_items
     assert "link" in top_items[0]
+
+
+def test_pipeline_records_feed_failure_when_bozo_and_no_entries() -> None:
+    """bozo=1 이면서 entries가 비어있으면 실패로 기록하고 해당 source는 건너뛴다."""
+    feed = _Feed([], bozo=1, bozo_exception=Exception("xml parse error"))
+    pipeline = _build_pipeline(feed)
+    pipeline.fetch_grouped_and_top(
+        sources=[{"topic": "IT", "url": "http://broken.example.com/rss", "limit": 1}],
+        top_limit=1,
+    )
+    fetch = pipeline.get_pipeline_metrics()["fetch"]
+    assert fetch["feedsAttempted"] == 1
+    assert fetch["feedFailures"] == 1
+    assert fetch["feedWarnings"] == 0
+    assert fetch["totalSeen"] == 0
+    assert "Exception" in fetch["feedFailureReasons"]
+
+
+def test_pipeline_continues_when_bozo_with_entries_present() -> None:
+    """bozo=1 이어도 entries가 있으면 warning만 남기고 처리는 계속한다."""
+    entry = _Entry(title="Policy update", summary="policy impact is noted")
+    feed = _Feed([entry], bozo=1)
+    pipeline = _build_pipeline(feed)
+    pipeline.fetch_grouped_and_top(
+        sources=[{"topic": "IT", "url": "http://lenient.example.com/rss", "limit": 1}],
+        top_limit=1,
+    )
+    fetch = pipeline.get_pipeline_metrics()["fetch"]
+    assert fetch["feedsAttempted"] == 1
+    assert fetch["feedFailures"] == 0
+    assert fetch["feedWarnings"] == 1
+    assert fetch["totalSeen"] == 1
 
 
 def test_pick_top_with_mix_enforces_policy_cap_and_minimums() -> None:

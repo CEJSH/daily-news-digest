@@ -37,7 +37,12 @@ def has_number_token(text: str) -> bool:
 
 
 def policy_evidence_valid(text: str) -> bool:
-    """Policy evidence 검증."""
+    """Policy evidence 검증.
+
+    정책 키워드를 포함하되, 다음 두 케이스는 binding policy 가 아니므로 제외:
+    - 정부 행위자 + 협상/대화 같은 외교 활동만 있는 경우 (정치 활동, 정책 결과 아님)
+    - 무역/관세/협상 등 trade 단독 표현 (정책 자체보다 시장 이슈)
+    """
     t = clean_text(text or "").lower()
     if not t:
         return False
@@ -50,7 +55,7 @@ def policy_evidence_valid(text: str) -> bool:
         return False
     if any(k in t for k in POLICY_TRADE_ONLY_KEYWORDS):
         return False
-    return False
+    return True
 
 
 def sanctions_evidence_valid(text: str) -> bool:

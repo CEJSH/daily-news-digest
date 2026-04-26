@@ -559,10 +559,12 @@ def _build_impact_signals_detail(
     full_text: str,
     summary_text: str,
 ) -> list[dict[str, str]]:
-    raw_signals = ai_result.get("impact_signals")
     impact_signals_detail: list[dict[str, str]] = []
-    if isinstance(raw_signals, list) and raw_signals and isinstance(raw_signals[0], dict):
-        for entry in raw_signals:
+
+    # 1순위: enricher가 직접 만들어준 dict 리스트 (label-evidence 쌍 보장)
+    detail_pairs = ai_result.get("impact_signals_detail")
+    if isinstance(detail_pairs, list) and detail_pairs:
+        for entry in detail_pairs:
             if not isinstance(entry, dict):
                 continue
             label = clean_text(entry.get("label") or "").lower()
@@ -570,8 +572,23 @@ def _build_impact_signals_detail(
             if not label or not evidence:
                 continue
             impact_signals_detail.append({"label": label, "evidence": evidence})
-    else:
-        impact_signals = raw_signals or item.get("impactSignals", [])
+
+    # 2순위: dict 형태로 들어온 raw 신호
+    if not impact_signals_detail:
+        raw_signals = ai_result.get("impact_signals")
+        if isinstance(raw_signals, list) and raw_signals and isinstance(raw_signals[0], dict):
+            for entry in raw_signals:
+                if not isinstance(entry, dict):
+                    continue
+                label = clean_text(entry.get("label") or "").lower()
+                evidence = clean_text(entry.get("evidence") or "")
+                if not label or not evidence:
+                    continue
+                impact_signals_detail.append({"label": label, "evidence": evidence})
+
+    # 3순위: strings + 별도 evidence_map (legacy 경로)
+    if not impact_signals_detail:
+        impact_signals = ai_result.get("impact_signals") or item.get("impactSignals", [])
         evidence_map = ai_result.get("impact_signals_evidence") or {}
         for label in impact_signals:
             evidence = clean_text(evidence_map.get(label) or "")

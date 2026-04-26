@@ -77,7 +77,7 @@ DEDUPE_EVENT_TOKENS = {  # 이벤트 유형(투자·M&A·실적 등) 중복 판�
     "acquisition", "acquire", "acquires", "merger", "m&a", "deal", "buyout", "stake", "takeover",
     "ipo", "listing", "listed", "offering",
     "earnings", "results", "guidance", "revenue", "profit", "loss",
-    "sanction", "sanctions", "tariff", "tariffs", "export", "control",
+    "sanction", "sanctions", "export", "control",
     "policy", "regulation", "bill", "law", "guideline", "rule",
     "enforcement", "investigation", "probe", "indictment", "prosecution", "lawsuit",
     "capex", "expansion", "build",

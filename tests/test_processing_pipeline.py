@@ -108,7 +108,6 @@ def _build_pipeline(feed: _Feed) -> DigestPipeline:
         output_json="",
         dedupe_history_path="",
         dedupe_recent_days=0,
-        top_mix_target={"IT": 1, "경제": 1, "글로벌": 1},
     )
 
 

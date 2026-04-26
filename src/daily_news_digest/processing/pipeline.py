@@ -489,6 +489,31 @@ class DigestPipeline:
 
         return _pick_from_candidates(fresh_candidates)
 
+    def _refill_after_prefetch(
+        self,
+        top_items: list[Item],
+        all_items: list[Item],
+        top_limit: int,
+    ) -> list[Item]:
+        kept = [item for item in top_items if self._filter_scorer.is_eligible(item)]
+        if len(kept) >= top_limit:
+            return kept
+
+        self._log(f"⚠️ 본문 확보 실패로 TOP 부족: {len(kept)}/{top_limit}")
+        kept_ids = {id(item) for item in kept}
+        refill_pool = [
+            item for item in all_items
+            if id(item) not in kept_ids and self._filter_scorer.is_eligible(item)
+        ]
+        extra_needed = top_limit - len(kept)
+        if extra_needed <= 0 or not refill_pool:
+            return kept
+
+        refill = self.pick_top_with_mix(refill_pool, extra_needed)
+        self._ai_service.prefetch_full_text(refill)
+        eligible_refill = [item for item in refill if self._filter_scorer.is_eligible(item)]
+        return kept + eligible_refill
+
     def fetch_grouped_and_top(
         self,
         sources: list[dict[str, Any]],
@@ -725,12 +750,7 @@ class DigestPipeline:
         }
         # 최종 선택 후보에 대해 본문을 최대한 확보 (편집 품질 보장)
         self._ai_service.prefetch_full_text(top_items)
-        top_items = [item for item in top_items if self._filter_scorer.is_eligible(item)]
-        if len(top_items) < top_limit:
-            self._log(f"⚠️ 본문 확보 실패로 TOP 부족: {len(top_items)}/{top_limit}")
-            refill = self.pick_top_with_mix(all_items, top_limit)
-            self._ai_service.prefetch_full_text(refill)
-            top_items = [item for item in refill if self._filter_scorer.is_eligible(item)]
+        top_items = self._refill_after_prefetch(top_items, all_items, top_limit)
 
         if isinstance(self._metrics.get("selection"), dict):
             source_counts: dict[str, int] = {}

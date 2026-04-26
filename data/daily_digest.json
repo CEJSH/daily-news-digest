@@ -1,33 +1,34 @@
 {
-  "date": "2026-04-26",
+  "date": "2026-04-27",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-26T08:09:44.753790+09:00",
+  "lastUpdatedAt": "2026-04-27T08:11:03.011104+09:00",
   "items": [
     {
-      "id": "2026-04-26_1",
-      "date": "2026-04-26",
+      "id": "2026-04-27_1",
+      "date": "2026-04-27",
       "category": "산업",
-      "title": "중국, EU 군수기업 7곳에 희토류 등 수출 통제",
+      "title": "서대웅 서울바이오시스 사장, 데이터센터 광통신이 HBM 수요 증가 전망",
       "summary": [
-        "중국이 대만 무기 판매 연루를 이유로 EU 군수기업 7곳을 희토류 등 이중용도 물품 수출 통제 대상에 포함했습니다.",
-        "수출 사업자는 해당 기업에 이중용도 물품 수출이 금지되며, 해외 조직과 개인도 중국산 이중용도 물품을 제공할 수 없습니다."
+        "서대웅 서울바이오시스 사장은 데이터센터의 광통신 적용이 HBM 수요를 폭발적으로 늘릴 것이라고 밝혔습니다.",
+        "서울바이오시스는 광통신 관련 특허 1800건을 보유하고 있으며, 데이터센터용 기술 개발을 본격화했습니다.",
+        "업계는 광통신 양산 시점을 2029년으로 예상하나, 서울바이오시스는 시기를 앞당길 계획입니다."
       ],
-      "whyImportant": "이번 조치는 중국이 대만 문제에 대한 대응 수위를 높이고 있음을 보여주는 사례입니다.",
-      "importanceRationale": "근거: EU 군수기업 7곳에 대한 수출 통제는 대만 무기 판매 연루에 대한 대응이며, 이는 중국의 국가 안보 및 이익과 관련됩니다.",
+      "whyImportant": "데이터센터의 광통신 도입은 HBM 수요 증가를 촉진하고, 데이터센터 설계 혁신을 가져올 수 있어 장기적인 기술 경쟁력 확보에 중요합니다.",
+      "importanceRationale": "근거: 서울바이오시스는 광통신 관련 특허 1800건을 보유하고 있으며, 엔비디아가 광통신 기업에 6조원을 투자하는 등 데이터센터 광통신 기술 개발이 활발히 진행 중입니다.",
       "impactSignals": [
         {
-          "label": "sanctions",
-          "evidence": "중국이 유럽연합(EU) 군수기업 7곳을 대만 무기 판매 연루를 이유로 희토류 등 이중용도 물품(군사용으로도 민간용으로도 활용될 수 있는 물자) 수출통제 대상에 포함하며 대만 문제 대응 수위를 끌어올렸다."
+          "label": "market-demand",
+          "evidence": "“데이터센터에 구리가 아닌 광통신을 적용하면 고대역폭메모리(HBM) 수요가 폭발적으로 늘어날 겁니다.”"
         }
       ],
-      "dedupeKey": "7곳-군수기업-기업-대만-수출-중국-통제-희토류",
-      "clusterKey": "중대만/군수기업/7곳/희토류",
+      "dedupeKey": "hbm-광통신-데이터센터-사장-서대웅-서울바이오시스-수요-증가",
+      "clusterKey": "서대웅/사장/적용",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1344645",
-      "publishedAt": "2026-04-24T08:51:12+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042673681",
+      "publishedAt": "2026-04-26T08:26:56+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -36,17 +37,47 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-26_2",
-      "date": "2026-04-26",
+      "id": "2026-04-27_3",
+      "date": "2026-04-27",
+      "category": "금융",
+      "title": "인텔 부활 신호탄, 반도체주 전망에 힘 보태",
+      "summary": [
+        "인텔 주가가 1분기 실적 발표 후 급등하며 반도체주 전반의 장밋빛 전망에 기여했습니다.",
+        "인텔의 1분기 매출액은 20조 1천억원으로 전년 동기 대비 7% 증가했으며, 2분기 실적 전망치도 시장 예상치를 상회했습니다."
+      ],
+      "whyImportant": "인텔의 실적 개선은 반도체 산업 전반의 투자 심리 개선에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 인텔 주가가 23.6% 급등했고, AMD와 Arm 등 주요 반도체주도 큰 폭의 주가 상승을 기록했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "이 회사의 올해 1분기 매출액은 135억8천만달러(20조1천억원)로 지난해 1분기보다 7% 늘었다."
+        }
+      ],
+      "dedupeKey": "1천억원-20조-반도체주-보태-부활-신호탄-인텔-주가",
+      "clusterKey": "실적/인텔",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1255926.html",
+      "publishedAt": "2026-04-26T10:13:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-27_4",
+      "date": "2026-04-27",
       "category": "국제",
       "title": "미국-이란, 파키스탄서 간접 협상 가능성",
       "summary": [
         "미국과 이란이 파키스탄에서 간접적으로 접촉할 가능성이 제기되고 있습니다.",
-        "이란은 회담 계획을 부인하고 있지만, 미국은 주말 회담 가능성이 있다고 보고 있습니다.",
-        "양측은 파키스탄의 중재를 통해 간접 협상을 진행할 가능성이 있습니다."
+        "이란은 회담 계획을 부인하고 있지만, 미국은 주말 회담 가능성을 시사하고 있습니다.",
+        "파키스탄이 양측을 중재하는 '셔틀 외교'가 예상되고 있습니다."
       ],
-      "whyImportant": "미국과 이란의 협상 재개는 중동 지역의 긴장 완화에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 워싱턴포스트는 미국 당국자를 인용, 이번 주말 협상 재개 가능성을 보도하며, 백악관도 긍정적 진전을 기대한다고 밝혀 협상 가능성을 시사합니다.",
+      "whyImportant": "미국과 이란의 협상 재개는 호르무즈 해협의 긴장 완화에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국과 이란이 파키스탄에서 만날 가능성이 있으며, 미국 측은 '긍정적 진전을 기대'한다고 밝혔습니다.",
       "impactSignals": [],
       "dedupeKey": "간접-간접적-미국-이란-접촉할-파키스탄-파키스탄서-협상",
       "clusterKey": "관세/파키스탄서",
@@ -62,133 +93,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-26_4",
-      "date": "2026-04-26",
-      "category": "에너지",
-      "title": "원자력 스타트업 X-energy, 데이터 센터 수요 힘입어 10억 달러 IPO",
+      "id": "2026-04-27_5",
+      "date": "2026-04-27",
+      "category": "국제",
+      "title": "미국-이란 2차 협상 무산, 트럼프 대통령은 더 나은 제안 요구",
       "summary": [
-        "원자력 스타트업 X-energy는 IPO에서 주당 23달러에 4,430만 주를 판매하여 10억 달러를 조달했습니다.",
-        "X-energy는 소형 모듈 원자로를 건설 중이며, 아마존과 2039년까지 최대 5기가와트의 전력을 판매하는 계약을 맺었습니다."
+        "미국과 이란의 2차 종전 협상이 무산되었으며, 트럼프 대통령은 이란과의 대화 가능성을 열어두었습니다.",
+        "트럼프 대통령은 미국 협상단의 파키스탄 방문 일정을 취소하고, 이란에 더 나은 문서를 요구했습니다.",
+        "이란 측은 미국의 외교적 진정성을 지켜봐야 한다는 입장을 밝혔습니다."
       ],
-      "whyImportant": "데이터 센터의 전력 수요 증가로 인해 소형 모듈 원자로를 건설하는 원자력 스타트업에 대한 투자가 증가하고 있습니다.",
-      "importanceRationale": "근거: X-energy는 IPO를 통해 10억 달러를 조달했으며, 아마존과 2039년까지 최대 5기가와트의 전력 판매 계약을 체결했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "Nuclear startups like X-energy have been buoyed by surging demand for electricity from data centers and other parts of the economy that have been electrifying."
-        }
-      ],
-      "dedupeKey": "10억-energy-데이터-센터-수요-스타트업-원자력-힘입어",
-      "clusterKey": "상장/에너지/스타트업",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/04/24/nuclear-startup-x-energy-raises-1b-in-data-center-driven-ipo/",
-      "publishedAt": "2026-04-24T15:06:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-26_5",
-      "date": "2026-04-26",
-      "category": "기술",
-      "title": "구글, Anthropic에 최대 400억 달러 투자 계획",
-      "summary": [
-        "구글이 인공지능 선두 기업 Anthropic에 최대 400억 달러를 투자할 계획이라고 밝혔습니다.",
-        "이번 계약에는 Anthropic의 최근 기업 가치인 3800억 달러를 기준으로 구글의 초기 투자금 100억 달러가 포함됩니다.",
-        "Anthropic은 구글, Broadcom과의 발표를 통해 내년부터 5기가와트 규모의 컴퓨팅 용량을 확보할 예정입니다."
-      ],
-      "whyImportant": "이번 투자는 AI 모델 및 서비스 시장 경쟁 심화 속에서 구글의 AI 분야 영향력 확대 전략의 일환으로 해석될 수 있습니다.",
-      "importanceRationale": "근거: 구글은 Anthropic에 최대 400억 달러를 투자할 계획이며, 이는 초기 투자금 100억 달러와 특정 성과 목표 달성에 따른 300억 달러를 포함합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "“Our collaboration with Amazon will allow us to continue advancing AI research while delivering Claude to our customers, including the more than 100,000 building on AWS.” Anthropic was founded in 2021 by a group of researchers and executives who departed from OpenAI."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "“Our users tell us Claude is increasingly essential to how they work, and we need to build the infrastructure to keep pace with rapidly growing demand,” Anthropic CEO Dario Amodei said in a statement at the time."
-        },
-        {
-          "label": "policy",
-          "evidence": "Now, the leading tech companies are investing tens of billions of dollars in the frontier AI labs — OpenAI and Anthropic — in funding rounds that far exceed any prior investments in startups."
-        },
-        {
-          "label": "earnings",
-          "evidence": "Anthropic’s annualized revenue has topped $30 billion."
-        }
-      ],
-      "dedupeKey": "100억-3800억-400억-anthropic-구글-달러-최대-투자",
-      "clusterKey": "투자/구글",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
-      "publishedAt": "2026-04-24T17:30:55+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-26_6",
-      "date": "2026-04-26",
-      "category": "금융",
-      "title": "인텔, 1분기 매출 20.1조 원 기록",
-      "summary": [
-        "인텔은 AI 수요 증가에 힘입어 6분기 연속 어닝 서프라이즈를 기록했습니다.",
-        "1분기 매출은 20조 1700억 원으로 전년 동기 대비 7% 증가했습니다.",
-        "데이터센터와 AI 부문 매출이 크게 성장했으며, 파운드리 부문은 18A 공정 수율 개선을 기대하고 있습니다."
-      ],
-      "whyImportant": "인텔의 실적 개선은 AI 시대에 CPU, 웨이퍼, 첨단 패키징 제품 수요 증가를 반영하며, 향후 반도체 산업의 방향성을 가늠하는 데 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 인텔의 데이터센터 및 AI 부문 매출이 전년 동기 대비 22%, 영업이익은 168% 상승했으며, 이는 주요 고객사와의 장기 공급 계약 덕분입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "인공지능(AI) 수요 속에서 데이터센터와 중앙처리장치(CPU) 수요가 늘어난 덕분이다."
-        }
-      ],
-      "dedupeKey": "1700억-18a-1조-20조-기록-데이터센터-매출-인텔",
-      "clusterKey": "실적/반도체/인텔",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=55600",
-      "publishedAt": "2026-04-23T23:46:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-26_7",
-      "date": "2026-04-26",
-      "category": "산업",
-      "title": "미국 연준 본부 리모델링 비용 초과 관련 파월 의장 수사 종료",
-      "summary": [
-        "미국 연준 본부 리모델링 비용 초과와 관련한 파월 의장의 의회 증언에 대한 형사 수사가 종료되었습니다.",
-        "다만, 필요할 경우 수사를 재개할 수 있다고 밝혀 완전 종결은 아닌 조건부 종료 성격입니다.",
-        "수사 종료로 파월 의장이 연준에 잔류할지, 임기 종료와 함께 물러날지 선택해야 하는 상황입니다."
-      ],
-      "whyImportant": "파월 의장의 거취는 향후 시장 방향성을 좌우할 핵심 변수가 될 수 있습니다.",
-      "importanceRationale": "근거: 수사가 사실상 마무리되면서 파월 의장의 선택에 따라 채권 금리 하락 등 시장에 영향을 줄 수 있기 때문입니다.",
+      "whyImportant": "미국과 이란의 협상 재개 여부는 향후 중동 지역의 지정학적 안정성에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 2차 협상 무산으로 양측 간 입장차가 여전하며, 호르무즈 해협과 이란 핵 프로그램 등 주요 쟁점에서 이견이 있는 것으로 분석됩니다.",
       "impactSignals": [
         {
           "label": "infra",
-          "evidence": "이번 결정은 워시 인준의 최대 장애물 제거라는 점에서 의미가 크다."
+          "evidence": "구체적으로 우라늄 농축 중단 기간, 비축 물량 처리 방식, 호르무즈해협 관리 방식 등에서 접점을 찾지 못하고 있다는 분석이 나오는 이유다.다만 트럼프 대통령은 이란에 대한 압박 수위를 높이면서도 대화 여지를 열어두고 있다."
         }
       ],
-      "dedupeKey": "리모델링-미국-본부-비용-연준-의장-초과-파월",
-      "clusterKey": "법집행/연준",
+      "dedupeKey": "2차-나은-대통령-무산-미국-이란-트럼프-협상",
+      "clusterKey": "관세/2차",
       "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://www.edaily.co.kr/News/Read?newsId=01285766645420056&mediaCodeNo=257",
-      "publishedAt": "2026-04-24T10:32:41+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042668627",
+      "publishedAt": "2026-04-26T02:34:48+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -197,17 +124,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-26_8",
-      "date": "2026-04-26",
+      "id": "2026-04-27_6",
+      "date": "2026-04-27",
       "category": "국제",
       "title": "미국, 이란 자금줄 봉쇄로 압박 강화",
       "summary": [
-        "미국 재무부와 국무부는 중국 정유 대기업 헝리그룹을 제재하며 이란의 석유 수출을 차단하고 있습니다.",
-        "또한, 이란과 연계된 것으로 보이는 약 5000억원 상당의 가상화폐를 동결했습니다.",
-        "미국은 이란의 자금 생성 및 이동 능력을 약화시키기 위해 제재를 강화하고 있습니다."
+        "미국 재무부와 국무부는 이란산 석유를 수입하는 중국 헝리그룹을 제재한다고 발표했습니다.",
+        "또한 이란과 연계된 것으로 보이는 약 5000억원 상당의 가상화폐를 동결했습니다.",
+        "이번 조치는 이란의 자금 생성 및 이동 능력을 약화하기 위한 것입니다."
       ],
-      "whyImportant": "미국의 이러한 제재 강화는 이란의 경제적 활동에 상당한 영향을 미쳐, 향후 국제 관계 및 에너지 시장에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 미국은 중국 헝리그룹 제재, 5000억원 상당의 가상화폐 동결 등 이란의 자금줄을 압박하는 정책을 시행하고 있으며, 이는 이란의 경제 활동에 영향을 줄 수 있습니다.",
+      "whyImportant": "미국의 이란 자금줄 봉쇄는 향후 이란과의 협상에서 미국의 입지를 강화하는 데 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 미국은 중국 헝리그룹 제재와 5000억원 상당의 가상화폐 동결을 통해 이란의 자금줄을 압박하고 있습니다.",
       "impactSignals": [
         {
           "label": "sanctions",
@@ -228,29 +155,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-26_9",
-      "date": "2026-04-26",
-      "category": "국제",
-      "title": "이란 권력 구도 혼란에 따른 미국 증시 변동성 확대",
+      "id": "2026-04-27_7",
+      "date": "2026-04-27",
+      "category": "기술",
+      "title": "MS, 애플 등 빅테크 기업 실적 발표 예정",
       "summary": [
-        "이란 협상 대표 사임 소식에 나스닥과 S&P500 지수가 일시적으로 하락했습니다.",
-        "이란 내부 권력 다툼이 미국 증시에 영향을 미치는 변수로 작용하고 있습니다.",
-        "이란의 경제적 어려움으로 인해 종전 협상이 진행될 것이라는 전망도 있습니다."
+        "이번 주 뉴욕 증시는 미국 기준금리 결정과 빅테크 기업들의 실적 발표에 영향을 받을 것으로 예상됩니다.",
+        "30일에는 MS, 알파벳, 아마존, 메타 등의 실적 발표가, 31일에는 애플의 실적 발표가 예정되어 있습니다.",
+        "특히 M7 기업들의 실적은 AI 관련 투자 성과를 진단하는 기회가 될 것으로 보입니다."
       ],
-      "whyImportant": "이란 내부 권력 구도 변화가 국제 유가 및 세계 경제에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 이란 내부 갈등 노출로 세계 증시와 원자재 시장을 압박할 수 있으며, 전쟁 피해 규모가 3000억~1조 달러에 달해 경제적 압박이 큰 상황입니다.",
+      "whyImportant": "주요 빅테크 기업들의 실적은 기술 산업 전반의 투자 및 성장 방향을 가늠하는 데 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 30일과 31일에 걸쳐 MS, 애플 등 주요 빅테크 기업들의 실적 발표가 예정되어 있으며, 특히 M7 기업의 실적은 AI 투자 성과를 진단할 기회가 될 것이라는 내용이 있습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "휴전 이전 트럼프 대통령의 말보다 걸프 국가를 향한 이란의 드론 공격이 국제 유가를 흔들었던 것처럼 이란 권력층 동향이 시장에 영향을 주게 됐기 때문이다."
+          "label": "earnings",
+          "evidence": "오는 30일은 마이크로소프트(MS)를 비롯해 알파벳, 아마존, 메타 등 주요 빅테크가 실적을 공개한다."
         }
       ],
-      "dedupeKey": "구도-권력-따른-미국-변동성-이란-증시-혼란",
-      "clusterKey": "관세/권력",
+      "dedupeKey": "기업-기준금리-뉴욕-미국-빅테크-실적-애플-증시",
+      "clusterKey": "실적/애플/투자",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026042453811",
-      "publishedAt": "2026-04-24T08:29:12+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026042674541",
+      "publishedAt": "2026-04-26T09:01:58+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -259,35 +186,66 @@
       "isBriefing": false
     },
     {
-      "id": "2026-04-26_10",
-      "date": "2026-04-26",
+      "id": "2026-04-27_8",
+      "date": "2026-04-27",
       "category": "금융",
-      "title": "미국-이란, 27일 2차 종전 협상 전망",
+      "title": "호텔신라, 1분기 면세점·호텔 실적 개선으로 투자 의견 상향",
       "summary": [
-        "이란 협상팀이 파키스탄으로 향한 직후 미국도 협상팀 파견을 발표했습니다.",
-        "백악관은 이란으로부터 통일된 제안을 받았다는 질문에 진전이 있는 것으로 보인다고 밝혔습니다."
+        "한국투자증권은 호텔신라에 대해 면세점과 호텔 실적 개선을 이유로 투자 의견을 '중립'에서 '매수'로 상향 조정했습니다.",
+        "호텔신라의 1분기 연결기준 영업이익은 시장 기대치를 상회하는 204억 원을 기록했습니다."
       ],
-      "whyImportant": "미국과 이란의 협상 재개는 중동 지역의 지정학적 긴장 완화에 영향을 줄 수 있기 때문입니다.",
-      "importanceRationale": "근거: 이란 협상팀이 파키스탄에 도착했고, 미국도 협상팀 파견을 밝히면서 협상 모드로 돌아섰기 때문입니다.",
+      "whyImportant": "호텔신라의 실적 개선은 면세점 산업과 호텔 산업의 회복 가능성을 시사합니다.",
+      "importanceRationale": "근거: 호텔신라의 1분기 영업이익이 204억 원을 기록했고, 목표주가가 1년 6개월 만에 10만 원으로 제시된 점이 근거입니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "중동전쟁으로 미군의 첨단 정밀 무기 재고가 줄면서, 아시아·유럽에서의 대비 태세가 약화되고 있다는 지적이 나옵니다."
+          "evidence": "하반기에 중국 경기의 점진적 회복이 기대되기 때문에 중국 화장품 수요 회복이 따이공 매출 증가로 이어질 것"
         },
         {
-          "label": "capex",
-          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정영민(kkong@yna.co.kr)"
+          "label": "earnings",
+          "evidence": "호텔신라의 올 1분기 연결기준 영업이익이 시장 기대치를 웃도는 204억원을 기록했다"
         }
       ],
-      "dedupeKey": "2차-미국-보인다고-이란-종전-파키스탄-협상-협상팀",
-      "clusterKey": "관세/2차",
+      "dedupeKey": "개선-면세점-상향-실적-의견-투자-호텔-호텔신라",
+      "clusterKey": "실적/호텔신라/투자",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1344840",
-      "publishedAt": "2026-04-25T06:02:22+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042778976",
+      "publishedAt": "2026-04-26T22:50:58+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-27_9",
+      "date": "2026-04-27",
+      "category": "금융",
+      "title": "비트코인, 미국 ETF 자금 유입으로 상승세",
+      "summary": [
+        "미국 비트코인 현물 ETF에 이달 들어 3조 6000억 원이 순유입되면서 비트코인 가격이 상승하고 있습니다.",
+        "전문가들은 비트코인이 7만 5000달러를 넘어섰고, 8만 5000달러까지 오를 수 있다고 전망합니다.",
+        "다만, 미국과 이란 간의 협상 교착 상태와 트럼프 대통령의 발언이 변수로 작용할 수 있다는 분석도 있습니다."
+      ],
+      "whyImportant": "비트코인 ETF를 통한 기관 자금 유입은 가상자산 시장의 구조적 변화를 가속화할 수 있습니다.",
+      "importanceRationale": "근거: 이달에만 ETF로 3조 6000억 원이 순유입되었고, 전문가들은 7만 5000달러 돌파를 구조적 돌파로 해석하며 추가 상승을 전망합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "미국 현물 상장지수펀드(ETF)를 통한 기관 자금 유입이 가격 상승을 이끌었다는 분석이 나온다."
+        }
+      ],
+      "dedupeKey": "5000달러-6000억-etf-미국-비트코인-상승세-유입-자금",
+      "clusterKey": "투자/비트코인/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042673951",
+      "publishedAt": "2026-04-26T08:33:03+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

@@ -252,3 +252,48 @@ def test_export_prefers_resolved_url_for_source_url(monkeypatch, tmp_path) -> No
         {"selection_criteria": "", "editor_note": "", "question": ""},
     )
     assert digest["items"][0]["sourceUrl"] == "https://example.com/news/real-article"
+
+
+def test_export_prefers_published_at_over_updated_at(monkeypatch, tmp_path) -> None:
+    import datetime
+
+    now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
+    published_at = now.replace(minute=0, second=0, microsecond=0).isoformat()
+    updated_at = (now + datetime.timedelta(hours=1)).replace(minute=0, second=0, microsecond=0).isoformat()
+
+    monkeypatch.setattr(em, "MIN_TOP_ITEMS", 1)
+    monkeypatch.setattr(em, "TOP_LIMIT", 5)
+    monkeypatch.setattr(em, "METRICS_JSON", str(tmp_path / "metrics.json"))
+    output_path = tmp_path / "digest.json"
+    item = {
+        "title": "정부 정책 발표",
+        "summary": "정부가 정책을 발표했다.",
+        "summaryRaw": "정부가 정책을 발표했다.",
+        "fullText": "정부가 정책을 발표했다. 적용 범위와 시행 시점을 설명했다. " * 5,
+        "topic": "정책",
+        "source": "source",
+        "sourceRaw": "source",
+        "link": "https://example.com/news",
+        "publishedAtUtc": published_at,
+        "updatedAtUtc": updated_at,
+        "impactSignals": ["policy"],
+        "dedupeKey": "정부-정책-발표",
+        "clusterKey": "정책/정부",
+        "score": 3.0,
+        "ai": {
+            "summary_lines": ["정부가 정책을 발표했다."],
+            "why_important": "정책 변화가 영향을 미친다.",
+            "importance_rationale": "근거: 정부가 정책을 발표했다.",
+            "importance_score": 3,
+            "impact_signals": ["policy"],
+            "impact_signals_evidence": {"policy": "정부가 정책을 발표했다."},
+            "quality_label": "ok",
+            "quality_reason": "",
+        },
+    }
+    digest = em.export_daily_digest_json(
+        [item],
+        str(output_path),
+        {"selection_criteria": "", "editor_note": "", "question": ""},
+    )
+    assert digest["items"][0]["publishedAt"] == published_at

@@ -1213,7 +1213,7 @@ def export_daily_digest_json(
         full_text = (item.get("fullText") or "").strip()
         topic = (item.get("topic") or "").strip()
         source_name = (item.get("source") or "").strip()
-        published = item.get("updatedAtUtc") or item.get("publishedAtUtc") or item.get("published")
+        published = item.get("publishedAtUtc") or item.get("updatedAtUtc") or item.get("published")
         published_at = clean_text(str(published)) if published is not None else ""
         is_carried_over = item.get("isCarriedOver") is True
 

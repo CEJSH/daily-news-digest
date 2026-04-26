@@ -216,7 +216,7 @@ class AIEnrichmentService:
         if not text or not token:
             return False
         if re.search(r"[a-zA-Z]", token) and token.isalpha():
-            return bool(re.search(rf"\\b{re.escape(token)}\\b", text))
+            return bool(re.search(rf"\b{re.escape(token)}\b", text))
         return token in text
 
     def _extract_incremental_tokens(self, text: str, vocab: set[str]) -> set[str]:

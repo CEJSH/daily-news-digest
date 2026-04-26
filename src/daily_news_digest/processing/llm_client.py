@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import ast
 import json
 import os
 import re
@@ -103,29 +102,15 @@ def parse_json(text: str) -> dict[str, Any] | None:
         parsed = _try_load_json(candidate)
         if parsed is not None:
             return parsed
-        cleaned = _strip_trailing_commas(candidate)
-        parsed = _try_load_json(cleaned)
+        parsed = _try_load_json(_strip_trailing_commas(candidate))
         if parsed is not None:
             return parsed
-        try:
-            obj = ast.literal_eval(cleaned)
-            return obj if isinstance(obj, dict) else None
-        except Exception:
-            return None
 
     # 모델이 여분 텍스트를 섞을 때 대비한 백업 파서
     match = re.search(r"\{.*\}", raw, flags=re.DOTALL)
     if not match:
         return None
-    cleaned = _strip_trailing_commas(match.group(0))
-    parsed = _try_load_json(cleaned)
-    if parsed is not None:
-        return parsed
-    try:
-        obj = ast.literal_eval(cleaned)
-        return obj if isinstance(obj, dict) else None
-    except Exception:
-        return None
+    return _try_load_json(_strip_trailing_commas(match.group(0)))
 
 
 def gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any] | None:

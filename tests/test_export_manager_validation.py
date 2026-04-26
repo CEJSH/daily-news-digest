@@ -173,29 +173,33 @@ def test_export_downgrades_importance_without_impact_signals(monkeypatch, tmp_pa
     monkeypatch.setattr(em, "TOP_LIMIT", 5)
     monkeypatch.setattr(em, "METRICS_JSON", str(tmp_path / "metrics.json"))
     output_path = tmp_path / "digest.json"
+    # 임팩트 신호로 분류될 키워드가 전혀 없는 중립 텍스트
+    # (정책/실적/제재/공장/해킹/판매/수요/유가 등 트리거 단어 없음)
+    neutral_text = "어린이 도서관 동호회 회원들이 사진전을 함께 열었다."
+    summary_text = "어린이 도서관 동호회 회원들이 사진전을 함께 열었습니다."
     ai_payload = {
-        "summary_lines": ["정부가 정책을 발표했습니다."],
-        "why_important": "정책 변화가 영향을 미칩니다.",
-        "importance_rationale": "근거: 정부가 정책을 발표했습니다.",
+        "summary_lines": [summary_text],
+        "why_important": "지역 문화 활동입니다.",
+        "importance_rationale": f"근거: {summary_text}",
         "importance_score": 4,
         "impact_signals": [],
         "quality_label": "ok",
         "quality_reason": "",
     }
     item = {
-        "title": "정부 정책 발표",
-        "summary": "정부가 정책을 발표했다.",
-        "summaryRaw": "정부가 정책을 발표했다.",
-        "fullText": "정부가 정책을 발표했다. " * 10,
-        "topic": "정책",
+        "title": "어린이 도서관 동호회 사진전",
+        "summary": neutral_text,
+        "summaryRaw": neutral_text,
+        "fullText": (neutral_text + " ") * 10,
+        "topic": "라이프",
         "source": "source",
         "sourceRaw": "source",
         "link": "http://example.com",
         "publishedAtUtc": date_str,
         "updatedAtUtc": date_str,
         "impactSignals": [],
-        "dedupeKey": "정부-정책-발표",
-        "clusterKey": "정책/정부",
+        "dedupeKey": "어린이-도서관-동호회-사진전",
+        "clusterKey": "라이프/도서관/사진전",
         "score": 3.0,
         "ai": ai_payload,
     }

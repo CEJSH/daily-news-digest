@@ -34,11 +34,14 @@ POLICY_ACTION_KEYWORDS = [
     "관세", "비관세", "무역 장벽", "trade barrier", "tariff", "non-tariff",
     "policy announcement", "official policy",
 ]
+# 협상/대화 행위 표현 (정부 행위자와 함께 나타나면 외교 활동으로 분류)
 POLICY_NEGOTIATION_KEYWORDS = ["협상", "협의", "협정", "회담", "대화", "negotiation", "talks", "summit", "dialogue"]
 POLICY_GOV_KEYWORDS = ["정부", "외교", "국가", "당국", "diplomatic", "government", "state"]
+# 무역/관세 단독 표현 (binding policy가 아닌 trade signal로 간주하여 정책 evidence 거부)
+# NEGOTIATION_KEYWORDS와는 의도가 다르므로 단어를 중복시키지 않음
 POLICY_TRADE_ONLY_KEYWORDS = [
-    "협상", "협의", "협정", "회담", "대화",
-    "관세", "무역", "무역전쟁", "trade", "tariff", "trade talks", "negotiation", "agreement", "summit", "dialogue",
+    "관세", "무역", "무역전쟁",
+    "trade", "tariff", "trade talks", "trade agreement", "trade deal",
 ]
 POLICY_STRONG_KEYWORDS = [
     "법안", "법률", "규제", "행정명령", "법 개정", "법개정", "정책 발표",

@@ -50,7 +50,7 @@ class AIEnrichmentService:
         get_embedding_func: Callable[[str], list[float] | None] | None,
         fetch_article_text_func: Callable[..., Any] | None,
         estimate_read_time_func: Callable[[str], int],
-        score_entry_func: Callable[[list[str], int, str | None], float],
+        score_entry_func: Callable[[list[str], int, str | None, str | None], float],
         get_item_category_func: Callable[[Item], str] | None,
         is_eligible_func: Callable[[Item], bool],
         logger: LogFunc,

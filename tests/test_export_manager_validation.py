@@ -125,6 +125,27 @@ def test_validate_digest_rejects_missing_evidence(monkeypatch) -> None:
     assert error == "ERROR: IMPACT_EVIDENCE_REQUIRED"
 
 
+def test_build_impact_signals_detail_prefers_detail_pairs() -> None:
+    """C2 가드: enricher가 impact_signals_detail을 제공하면 그것을 우선 사용해야 한다."""
+    evidence = "국회가 새로운 인공지능 규제 법안을 본회의에서 통과시켜 시행을 앞두고 있습니다."
+    full_text = evidence + " 추가 설명입니다."
+    summary_text = "법안 통과 소식입니다."
+    item = {"impactSignals": []}
+    ai_result = {
+        "impact_signals": ["policy"],  # legacy 문자열
+        "impact_signals_evidence": {"policy": "다른 evidence"},  # legacy map
+        "impact_signals_detail": [
+            {"label": "policy", "evidence": evidence},
+        ],
+    }
+    detail = em._build_impact_signals_detail(
+        item, ai_result, full_text=full_text, summary_text=summary_text
+    )
+    assert len(detail) == 1
+    assert detail[0]["label"] == "policy"
+    assert detail[0]["evidence"] == evidence
+
+
 def test_sanitize_impact_signals_drops_missing_evidence() -> None:
     full_text = "정부가 정책 발표를 했습니다."
     raw = [{"label": "policy", "evidence": "기사에 없는 문장"}]

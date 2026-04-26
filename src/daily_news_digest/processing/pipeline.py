@@ -18,6 +18,7 @@ from daily_news_digest.core.config import (
     AI_SEMANTIC_DEDUPE_ENABLED,
     AI_SEMANTIC_DEDUPE_MAX_ITEMS,
     AI_SEMANTIC_DEDUPE_THRESHOLD,
+    AI_SEMANTIC_DEDUPE_THRESHOLD_RELAXED,
     DEDUPE_HISTORY_PATH,
     DEDUPE_RECENT_DAYS,
     DEDUPKEY_NGRAM_N,
@@ -121,7 +122,6 @@ class DigestPipeline:
         output_json: str,
         dedupe_history_path: str,
         dedupe_recent_days: int,
-        top_mix_target: dict[str, int] | None = None,
     ) -> None:
         self._entry_parser = entry_parser
         self._filter_scorer = filter_scorer
@@ -134,7 +134,6 @@ class DigestPipeline:
         self._output_json = output_json
         self._dedupe_history_path = dedupe_history_path
         self._dedupe_recent_days = dedupe_recent_days
-        self._top_mix_target = top_mix_target or DEFAULT_TOP_MIX_TARGET
         self._last_signal_cap_stats: dict[str, Any] = {}
         self._last_mix_stats: dict[str, Any] = {}
         self._metrics: dict[str, Any] = {}
@@ -476,7 +475,6 @@ class DigestPipeline:
                 if len(allowlist_candidates) < top_limit:
                     self._log(f"⚠️ TOP allowlist 부족: {len(allowlist_candidates)}/{top_limit}")
                     self._log_allowlist_debug(fresh_candidates, top_limit)
-                    return _pick_from_candidates(allowlist_candidates)
                 return _pick_from_candidates(allowlist_candidates)
             picked = _pick_from_candidates(allowlist_candidates)
             if len(picked) < top_limit:
@@ -725,7 +723,7 @@ class DigestPipeline:
         before_semantic_secondary = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
         self._ai_service.apply_semantic_dedupe(
             all_items,
-            threshold_override=0.85,
+            threshold_override=AI_SEMANTIC_DEDUPE_THRESHOLD_RELAXED,
             ignore_key_constraints=True,
         )
         after_semantic_secondary = sum(1 for x in all_items if x.get("mergeReason") == "semantic_duplicate")
@@ -832,7 +830,7 @@ def build_default_dedupe_engine(
 def build_default_ai_service(
     *,
     logger: LogFunc,
-    score_entry_func: Callable[[list[str], int, str | None], float],
+    score_entry_func: Callable[[list[str], int, str | None, str | None], float],
     get_item_category_func: Callable[[Item], str] | None,
     is_eligible_func: Callable[[Item], bool],
 ) -> AIEnrichmentService:
@@ -881,5 +879,4 @@ def build_default_pipeline(*, logger: LogFunc) -> DigestPipeline:
         output_json=OUTPUT_JSON,
         dedupe_history_path=DEDUPE_HISTORY_PATH,
         dedupe_recent_days=DEDUPE_RECENT_DAYS,
-        top_mix_target=DEFAULT_TOP_MIX_TARGET,
     )

@@ -117,6 +117,11 @@ def enrich_item_with_ai(item: dict) -> dict:
         candidates,
         evidence_text,
     )
+    impact_signals_detail = [
+        {"label": label, "evidence": evidence_map.get(label, "")}
+        for label in impact_signals_ai
+        if evidence_map.get(label)
+    ]
     importance_score = _normalize_importance_score(
         payload.get("importance_score") or payload.get("importance"),
         impact_signals,
@@ -149,6 +154,7 @@ def enrich_item_with_ai(item: dict) -> dict:
         "importance_score": importance_score,
         "impact_signals": impact_signals_ai,
         "impact_signals_evidence": {s: evidence_map.get(s, "") for s in impact_signals_ai},
+        "impact_signals_detail": impact_signals_detail,
         "quality_label": quality_label,
         "quality_reason": quality_reason,
         "quality_tags": quality_tags,

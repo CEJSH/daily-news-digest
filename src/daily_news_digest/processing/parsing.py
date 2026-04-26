@@ -64,7 +64,7 @@ class EntryParser:
             return self._clean_text(" ".join(parts))
         return ""
 
-    def parse_entry(self, entry: Any, source_name: str) -> tuple[str, str, str, str, str, str, str]:
+    def parse_entry(self, entry: Any, source_name: str) -> tuple[str, str, str, str, str]:
         # entry의 title/summary/content를 정제해 UI용 요약과 분석용 텍스트를 구성한다.
         # 반환값은 raw/clean/요약/본문/분석 텍스트를 일관된 순서로 제공한다.
         title_raw = getattr(entry, "title", "").strip()

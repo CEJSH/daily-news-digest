@@ -1,154 +1,33 @@
 {
-  "date": "2026-04-28",
+  "date": "2026-04-29",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-28T08:32:19.365765+09:00",
+  "lastUpdatedAt": "2026-04-29T08:33:05.859524+09:00",
   "items": [
     {
-      "id": "2026-04-28_1",
-      "date": "2026-04-28",
-      "category": "산업",
-      "title": "서대웅 서울바이오시스 사장, 데이터센터 광통신이 HBM 수요 증가 전망",
+      "id": "2026-04-29_1",
+      "date": "2026-04-29",
+      "category": "금융",
+      "title": "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
       "summary": [
-        "서대웅 서울바이오시스 사장은 데이터센터의 광통신 적용이 HBM 수요를 폭발적으로 늘릴 것이라고 밝혔습니다.",
-        "서울바이오시스는 광통신 관련 특허 1800건을 보유하고 있으며, 데이터센터용 기술 개발을 본격화했습니다.",
-        "업계는 광통신 양산 시점을 2029년으로 예상하나, 서울바이오시스는 시기를 앞당길 계획입니다."
+        "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
+        "[종목+]"
       ],
-      "whyImportant": "데이터센터의 광통신 도입은 HBM 수요 증가를 촉진하고, 관련 기술 경쟁력 강화에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: 서울바이오시스는 광통신 관련 특허 1800건을 보유하고 있으며, 엔비디아는 광통신 기업에 6조원을 투자하는 등 데이터센터 광통신 기술 개발이 활발합니다.",
+      "whyImportant": "기사 본문을 바탕으로 한 중요성 설명이 충분히 제공되지 않았습니다.",
+      "importanceRationale": "근거: 기사 텍스트에서 명확한 수치나 범위 근거를 찾지 못했습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "“데이터센터에 구리가 아닌 광통신을 적용하면 고대역폭메모리(HBM) 수요가 폭발적으로 늘어날 겁니다.”"
+          "label": "capex",
+          "evidence": "\"한화, 비핵심자산 매각해 솔루션 유증 대금 마련…목표가↑\"-한화證 한화투자증권은 15일 한화에 대해 \"차입 없이 부동산 등 비핵심자산 매각을 통해 한화솔루션 유상증자 대금을 마련할 계획\"이라며 \"증자 후 솔루션 지분은 기존 36.3%에서 최대 36%로 소폭 낮아질 전망\"이라고 했다..."
         }
       ],
-      "dedupeKey": "hbm-광통신-데이터센터-사장-서대웅-서울바이오시스-수요-증가",
-      "clusterKey": "서대웅/사장/적용",
+      "dedupeKey": "깜짝실적-엇갈린-에도-이유-종목-증권-한화솔루션",
+      "clusterKey": "한화솔루션/깜짝실적/에도",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026042673681",
-      "publishedAt": "2026-04-26T08:26:56+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-28_2",
-      "date": "2026-04-28",
-      "category": "국제",
-      "title": "미국, 이란 협상에 국무장관 불참",
-      "summary": [
-        "미국-이란 협상에서 마코 루비오 국무장관이 불참하고 트럼프 대통령 측근들이 전면에 나서고 있습니다.",
-        "루비오 장관은 국가안보보좌관을 겸임하며 백악관에 머무는 시간이 늘어난 것으로 분석됩니다."
-      ],
-      "whyImportant": "미국 외교 정책 결정 과정의 변화를 보여주는 사례입니다.",
-      "importanceRationale": "근거: 국무장관이 전통적으로 맡아온 고위급 외교가 백악관 중심으로 재편되었고, 이는 과거 행정부와 대비되는 변화입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "뉴욕타임스(NYT)는 25일(현지시간) 루비오 장관이 이달 초 파키스탄 이슬라마바드에서 열린 1차 협상에 불참한 데 이어 후속 접촉에도 모습을 드러내지 않았다고 보도했다."
-        }
-      ],
-      "dedupeKey": "국가안보보좌관-국무장관-루비오-마코-미국-불참-이란-협상",
-      "clusterKey": "관세/국무장관",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1345092",
-      "publishedAt": "2026-04-26T05:53:21+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-28_3",
-      "date": "2026-04-28",
-      "category": "금융",
-      "title": "에스티팜, 1분기 영업이익 10배 증가",
-      "summary": [
-        "에스티팜은 올리고 사업 확대와 환율 효과로 1분기 영업이익이 10배 이상 증가했습니다.",
-        "1분기 매출은 670억원으로 전년 동기 대비 27.7% 증가했으며, 영업이익은 115억원으로 1024.6% 증가했습니다."
-      ],
-      "whyImportant": "에스티팜의 실적 개선은 RNA 치료제 핵심 원료인 올리고 부문의 성장과 고마진 제품 매출 비중 확대에 따른 것으로, 향후 CDMO 부문 성장과 신약 개발을 통해 추가 성장이 기대됩니다.",
-      "importanceRationale": "근거: 1분기 영업이익이 1024.6% 증가했으며, 올리고 매출은 404억원으로 7.5% 성장했고, 올리고 수주잔고는 약 3400억원입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "에스티팜이 올리고 사업 확대와 환율 효과를 힘입어 1분기 영업이익이 10배 이상 증가했다."
-        }
-      ],
-      "dedupeKey": "10배-115억원-670억원-사업-에스티팜-영업이익-올리고-증가",
-      "clusterKey": "실적/에스티팜",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=55720",
-      "publishedAt": "2026-04-27T09:01:31+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-28_5",
-      "date": "2026-04-28",
-      "category": "기술",
-      "title": "대만 법원, TSMC 2나노 기술 유출에 최고 10년형 선고",
-      "summary": [
-        "대만 법원은 TSMC의 2나노 공정 기술 유출 사건 관련자들에게 최고 10년형을 선고했습니다.",
-        "TSMC 전 직원 천리밍은 징역 10년 형을 받았으며, 도쿄일렉트론 대만 지사는 벌금 70억 원을 부과받았습니다."
-      ],
-      "whyImportant": "이번 판결은 반도체 산업 기술 유출에 대한 강력한 처벌 의지를 보여주며, 향후 유사 사건에 대한 억제 효과를 가져올 수 있습니다.",
-      "importanceRationale": "근거: TSMC 전 직원에게 징역 10년형이 선고되었고, 도쿄일렉트론 대만 지사에 70억 원의 벌금이 부과된 것은 대만 반도체 산업 보호 노력을 반영합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "천씨에게 중형이 선고된 것은 반도체 산업을 보호하려는 대만 정부의 노력을 반영한다고 블룸버그는 해석했다."
-        }
-      ],
-      "dedupeKey": "10년형-2나노-tsmc-기술-대만-법원-유출-최고",
-      "clusterKey": "법원/2나노/기술",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1345552",
-      "publishedAt": "2026-04-27T06:43:12+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-04-28_6",
-      "date": "2026-04-28",
-      "category": "에너지",
-      "title": "우크라이나 드론 공격으로 자포리자 원전 직원 사망",
-      "summary": [
-        "자포리자 원전 측은 우크라이나의 드론 공격으로 현장 직원이 사망했다고 주장했습니다.",
-        "러시아 측은 원전 공격이 인명과 안보에 대한 위협이라고 강조했습니다."
-      ],
-      "whyImportant": "원전 시설에 대한 공격은 방사성 물질 누출 위험을 증가시켜 심각한 안보 문제로 이어질 수 있습니다.",
-      "importanceRationale": "근거: 2022년부터 러시아가 장악한 자포리자 원전은 공습으로 전력 공급 차단이 빈발하여 냉각 시스템 중단 우려가 지속적으로 제기되고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "오늘 자포리자 원전의 운송 작업장에서 운전기사가 우크라이나 드론의 공격에 목숨을 잃었다"
-        }
-      ],
-      "dedupeKey": "공격-드론-사망-우크라이나-원전-자포리자-직원-측은",
-      "clusterKey": "우크라이나/드론/공격",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1345588",
-      "publishedAt": "2026-04-27T07:50:39+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026042939226",
+      "publishedAt": "2026-04-28T23:13:22+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

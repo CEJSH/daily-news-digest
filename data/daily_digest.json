@@ -1,36 +1,285 @@
 {
-  "date": "2026-04-29",
+  "date": "2026-04-30",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-04-29T08:33:05.859524+09:00",
+  "lastUpdatedAt": "2026-04-30T08:32:31.538239+09:00",
   "items": [
     {
-      "id": "2026-04-29_1",
-      "date": "2026-04-29",
-      "category": "금융",
-      "title": "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
+      "id": "2026-04-30_1",
+      "date": "2026-04-30",
+      "category": "산업",
+      "title": "글로벌 핵심 광물 수출 규제 5배 급증",
       "summary": [
-        "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
-        "[종목+]"
+        "핵심 원자재에 대한 각국의 수출 제한이 2009년 이후 5배 증가한 것으로 나타났습니다.",
+        "OECD는 방위·기술·친환경 산업에 필수적인 핵심 소재에 대한 수출 통제가 지속해서 증가했다고 밝혔습니다.",
+        "중국은 희토류와 흑연의 약 70%를 생산하며, 일부 핵심 소재에서는 90% 이상의 시장 점유율을 기록하고 있습니다."
       ],
-      "whyImportant": "기사 본문을 바탕으로 한 중요성 설명이 충분히 제공되지 않았습니다.",
-      "importanceRationale": "근거: 기사 텍스트에서 명확한 수치나 범위 근거를 찾지 못했습니다.",
+      "whyImportant": "핵심 광물 자원 통제는 산업 경쟁력과 직결되며 국가 간 블록화 심화를 촉진할 수 있어 중요합니다.",
+      "importanceRationale": "근거: OECD에 따르면 핵심 광물에 대한 수출 통제 조치가 2009년 이후 15년 연속 증가했으며, 이는 글로벌 무역 질서의 구조적 변화와 관련됩니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "\"한화, 비핵심자산 매각해 솔루션 유증 대금 마련…목표가↑\"-한화證 한화투자증권은 15일 한화에 대해 \"차입 없이 부동산 등 비핵심자산 매각을 통해 한화솔루션 유상증자 대금을 마련할 계획\"이라며 \"증자 후 솔루션 지분은 기존 36.3%에서 최대 36%로 소폭 낮아질 전망\"이라고 했다..."
+          "label": "policy",
+          "evidence": "글로벌 핵심광물 수출규제 5배 급증…커지는 공급망 불안"
         }
       ],
-      "dedupeKey": "깜짝실적-엇갈린-에도-이유-종목-증권-한화솔루션",
-      "clusterKey": "한화솔루션/깜짝실적/에도",
+      "dedupeKey": "5배-각국-광물-규제-글로벌-수출-중국-핵심",
+      "clusterKey": "정책/글로벌",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026042939226",
-      "publishedAt": "2026-04-28T23:13:22+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/202604294461i",
+      "publishedAt": "2026-04-29T00:43:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_2",
+      "date": "2026-04-30",
+      "category": "기술",
+      "title": "이란의 인터넷 장애로 메타 주가 하락",
+      "summary": [
+        "메타의 주가가 예상보다 낮은 자본 지출과 사용자 수 감소로 인해 7% 하락했습니다.",
+        "이란의 인터넷 장애와 러시아의 WhatsApp 접속 제한이 사용자 수 감소의 원인으로 지목되었습니다.",
+        "메타는 올해 자본 지출 전망을 1250억 달러에서 1450억 달러로 상향 조정했습니다."
+      ],
+      "whyImportant": "메타의 투자 확대와 사용자 수 감소는 AI 인프라 구축 경쟁 심화 및 지정학적 요인이 기술 기업에 미치는 영향을 보여줍니다.",
+      "importanceRationale": "근거: 메타는 올해 자본 지출을 최대 1450억 달러로 늘릴 예정이며, 이는 데이터 센터 비용 증가를 반영합니다. 또한 이란의 인터넷 장애로 사용자 수가 감소했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "Zuckerberg has spent the past three months continuing his company’s deeper push into AI following a strategy shift and talent overhaul that he initiated in June with the $14.3 billion investment in Scale AI and the hiring of CEO Alexandr Wang."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "Wall Street has been piling into the tech sector despite concerns that surging oil prices and supply chain disruptions from the war in Iran will lead to rising costs for AI infrastructure and related data centers buildouts."
+        },
+        {
+          "label": "earnings",
+          "evidence": "Meta attributed its quarter-over-quarter drop in users in part to “internet disruptions in Iran.” Here’s how the company did, compared with estimates from analysts polled by LSEG: - Earnings per share: $7.31 adjusted vs."
+        },
+        {
+          "label": "capex",
+          "evidence": "“This reflects our expectations for higher component pricing this year and, to a lesser extent, additional data center costs to support future year capacity,” Meta said in an earnings announcement."
+        }
+      ],
+      "dedupeKey": "1250억-1450억-메타-이란-인터넷-장애-주가-하락",
+      "clusterKey": "인터넷/장애/메타",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html",
+      "publishedAt": "2026-04-29T16:00:01+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_3",
+      "date": "2026-04-30",
+      "category": "기술",
+      "title": "구글 클라우드, 200억 달러 매출 돌파에도 불구하고 성장 제약 존재",
+      "summary": [
+        "구글 클라우드가 1분기에 200억 달러 이상의 매출을 기록하며 전년 동기 대비 63% 성장했습니다.",
+        "AI 솔루션 수요 증가로 인해 클라우드 성장이 주도되었지만, 컴퓨팅 용량 제약으로 인해 수요를 충족하지 못하고 있다고 밝혔습니다.",
+        "구글 클라우드의 수주 잔고는 4,620억 달러로 두 배 증가했으며, 향후 24개월 동안 50%를 처리할 것으로 예상됩니다."
+      ],
+      "whyImportant": "AI 인프라 수요 증가에 따른 클라우드 용량 제약은 향후 데이터 센터 투자 및 클라우드 시장 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 구글 클라우드는 AI 솔루션에 대한 강력한 수요로 1분기에 63% 성장했지만, 컴퓨팅 용량 제약으로 인해 클라우드 매출이 더 높을 수 있었다고 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "(The Cloud division includes a variety of services like infrastructure, data analytics, AI/ML tools, and Google Workspace.) Alphabet CEO Sundar Pichai told analysts on the Q1 2026 earnings call on Wednesday that this growth came from “strong demand” for Gemini Enterprise and its AI solutions, and pointed to an increased demand for infrastructure, including TPU hardware and data centers."
+        },
+        {
+          "label": "policy",
+          "evidence": "Pichai noted other cloud milestones, including new customer acquisition doubling year-over year, deal momentum doubling the number of $100 million to $1 billion deals year-over-year, with the company signing multiple “billion-dollar-plus” deals."
+        }
+      ],
+      "dedupeKey": "200억-구글-달러-돌파-매출-불구-성장-클라우드",
+      "clusterKey": "실적/구글",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/29/google-cloud-surpasses-20b-but-says-growth-was-capacity-constrained/",
+      "publishedAt": "2026-04-29T22:20:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_5",
+      "date": "2026-04-30",
+      "category": "기술",
+      "title": "오픈AI, 매출 및 사용자 목표 달성 실패로 위기론 제기",
+      "summary": [
+        "오픈AI가 내부 성장 목표 달성에 실패하고 경영진 간 갈등이 불거져 위기론이 제기되었습니다.",
+        "사라 프라이어 CFO는 매출 성장 둔화로 컴퓨팅 계약 비용 지불에 대한 우려를 표명했습니다.",
+        "주간활성이용자 목표 달성 실패와 구글 제미나이의 선전으로 시장 점유율이 잠식된 것이 원인입니다."
+      ],
+      "whyImportant": "오픈AI의 위기는 AI 산업 전반의 성장 전략 및 투자에 대한 재평가를 촉발할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 오픈AI가 180조 원 상당의 자금을 확보했지만, 컴퓨팅 파워 계약으로 인해 3년 이내에 소진될 것으로 예상되어 재무적 부담이 커지고 있다는 점이 중요도 판단의 근거입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "미 월스트리트저널(WSJ)은 27일(현지시각) 익명의 관계자를 인용해 사라 프라이어 오픈에이아이 최고재무책임자(CFO)가 최근 ‘회사의 매출이 충분히 빠르게 성장하지 못할 경우 향후 컴퓨팅 계약 비용을 지불하지 못할 수 있다’는 우려를 다른 회사 경영진에 표명했다고 보도했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "이 관계자에 따르면, 최근 몇 달 동안 데이터센터 계약을 살핀 오픈에이아이 이사회 구성원들들은 사업 성장 둔화에도 컴퓨팅 파워 추가 확보에 집중하는 샘 올트만 최고경영자(CEO)에게 의문을 제기한 것으로 전해진다."
+        }
+      ],
+      "dedupeKey": "달성-매출-목표-사용자-실패-오픈ai-위기론-제기",
+      "clusterKey": "실적/오픈ai",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/it/1256406.html",
+      "publishedAt": "2026-04-29T02:51:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_6",
+      "date": "2026-04-30",
+      "category": "금융",
+      "title": "실적 악화에 신종자본증권 발행 늘어나는 기업들",
+      "summary": [
+        "건설, 화학 등 업황 부진 기업을 중심으로 재무구조 개선을 위한 신종자본증권 발행이 급증하고 있습니다.",
+        "2024~2025년 일반기업 발행액이 금융지주·은행보다 많아졌으며, 상법 개정으로 유상증자 대신 신종자본증권을 활용하는 기업이 늘고 있습니다."
+      ],
+      "whyImportant": "기업의 자본 조달 방식 변화는 재무 건전성 평가에 영향을 미치고 투자 전략에 대한 고려 사항을 증가시킵니다.",
+      "importanceRationale": "근거: 2024년 6조 6천억원, 2025년 6조 2천억원으로 신종자본증권 발행액이 크게 증가했으며, 이는 국내 신종자본증권 총 발행액의 29%에 해당합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "신종자본증권 누적 발행액(2020~2025년) 상위 업종은 에너지·화학(5조4천억원), 항공(2조8천억원), 영화관(2조4천억원), 건설(2조원), 이차전지(1조5천억원), 일반지주회사(1조5천억원), 해운·유통·음식료·방송통신(각 5천억~8천억원) 등이다."
+        },
+        {
+          "label": "policy",
+          "evidence": "지난해 7월 개정 상법에 ‘이사의 주주 충실의무’가 포함되면서 일반기업들이 주식 지분 희석에 따른 주주가치 훼손 논란을 초래하는 유상증자의 대안으로 신종자본증권 발행을 더 늘릴 공산도 커졌다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "일반기업 중에 신종자본증권 활용도가 높은 기업을 보면, 내수 및 업황 부진으로 실적이 나빠져 차입만으로는 재무안정성을 방어하기 힘들어진 업종에 주로 분포한다."
+        }
+      ],
+      "dedupeKey": "금융지주-기업들-늘어나-발행-신종자본증권-실적-악화-일반기업",
+      "clusterKey": "실적/금융/악화",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1256550.html",
+      "publishedAt": "2026-04-29T22:32:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_7",
+      "date": "2026-04-30",
+      "category": "금융",
+      "title": "인도 스나빗, 5600만 달러 투자 유치",
+      "summary": [
+        "인도의 홈 서비스 스타트업 스나빗이 5600만 달러의 투자금을 유치했습니다.",
+        "이번 시리즈 D 투자 라운드는 Susquehanna Venture Capital 등이 주도했습니다.",
+        "스나빗은 현재 인도 5개 도시에서 1만 5천 명 이상의 인력을 통해 하루 4만 건 이상의 작업을 처리하고 있습니다."
+      ],
+      "whyImportant": "온디맨드 홈 서비스 시장의 성장 가능성을 보여주는 투자 유치입니다.",
+      "importanceRationale": "근거: 스나빗은 5개 도시에서 하루 4만 건 이상의 작업을 처리하며, 이번 투자 라운드에서 약 3억 5천만 달러의 가치를 평가받았습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Snabbit said it is now processing over 40,000 jobs daily across a network of more than 15,000 workers in five cities, offering services such as cleaning, dishwashing, and laundry as demand for rapid, on-demand home services grows in urban India."
+        }
+      ],
+      "dedupeKey": "1만-5개-5천-달러-스나빗-유치-인도-투자",
+      "clusterKey": "투자/스나빗",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/27/indias-snabbit-closes-56m-round-as-investor-interest-heats-up-in-on-demand-home-services/",
+      "publishedAt": "2026-04-28T03:30:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_8",
+      "date": "2026-04-30",
+      "category": "기술",
+      "title": "메타 Reality Labs, 1분기에 40억 달러 이상 손실 기록",
+      "summary": [
+        "메타의 Reality Labs 부문은 1분기에 4억 300만 달러의 운영 손실을 기록했습니다.",
+        "매출은 4억 200만 달러였습니다.",
+        "메타는 AI 분야 투자를 늘리고 있으며, Reality Labs는 인력 감축을 진행 중입니다."
+      ],
+      "whyImportant": "메타의 AI 투자 집중과 Reality Labs의 손실은 향후 메타의 사업 방향에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: Reality Labs는 2020년 이후 800억 달러 이상의 누적 운영 손실을 기록했으며, 메타는 전체 인력의 10%를 감축할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "In its first-quarter earnings report on Wednesday, Meta revealed that its Reality Labs division recorded an operating loss of $4.03 billion while bringing in $402 million in sales."
+        }
+      ],
+      "dedupeKey": "40억-labs-reality-기록-달러-메타-손실-이상",
+      "clusterKey": "실적/메타/투자",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/29/metas-reality-labs-lost-over-4-billion-in-first-quarter.html",
+      "publishedAt": "2026-04-29T20:19:52+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-30_9",
+      "date": "2026-04-30",
+      "category": "산업",
+      "title": "미국, 화훙 AI 칩 제조 위한 장비 선적 중단 명령",
+      "summary": [
+        "미국 상무부가 중국 2위 파운드리 업체 화훙의 AI 칩 제조를 늦추기 위해 특정 반도체 장비 수출을 차단하는 조치를 시작했습니다.",
+        "미국 상무부는 자국 반도체 장비 업체에 화훙으로 향하는 특정 장비 선적을 중단하라는 서한을 발송했습니다.",
+        "이번 조치는 중국의 첨단 칩 개발 속도를 늦추고 미국의 기술적 우위를 지키기 위한 것이라고 분석됩니다."
+      ],
+      "whyImportant": "이번 조치는 미중 기술 경쟁 심화와 반도체 공급망 재편에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 상무부가 화훙의 두 제조 시설을 대상으로 반도체 장비 수출을 규제하는 내용의 서한을 발송했으며, 이는 중국의 첨단 칩 개발 속도를 늦추기 위한 최신 조치입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "통신은 \"화훙이 AI 반도체 등 첨단 칩 제조 기술을 개발했다\"며 \"화훙의 파운드리 부문 계열사인 화리 마이크로일렉트로닉스가 상하이 공장에서 7나노 반도체 제조 공정을 준비 중이었다\"고 전했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "상무부 서한에는 중국 내에서 가장 정교한 칩을 생산할 가능성이 있다고 판단한 화훙의 두 제조 시설을 대상으로 반도체 장비와 기타 재료 수출을 규제하는 내용이 담겼다."
+        }
+      ],
+      "dedupeKey": "명령-미국-상무부-선적-위한-장비-제조-화훙",
+      "clusterKey": "미중/반도체/화훙",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1346576",
+      "publishedAt": "2026-04-29T01:55:21+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

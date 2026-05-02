@@ -1,172 +1,13 @@
 {
-  "date": "2026-05-02",
+  "date": "2026-05-03",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-02T08:31:48.607915+09:00",
+  "lastUpdatedAt": "2026-05-03T08:12:48.559045+09:00",
   "items": [
     {
-      "id": "2026-05-02_1",
-      "date": "2026-05-02",
-      "category": "산업",
-      "title": "삼성전자, 내년 메모리 수급 불균형 심화 전망 및 파운드리 사업 재편",
-      "summary": [
-        "삼성전자는 AI 수요 증가로 메모리 공급 부족이 지속될 것으로 예상하며, HBM을 중심으로 서버용 제품 판매를 확대할 계획입니다.",
-        "파운드리 사업은 고부가 가치 수요에 집중하고 경쟁력 낮은 공정을 정리하여 사업 체질을 개선할 방침입니다.",
-        "노조 파업 예고에 대해서는 생산 차질이 없도록 대응하고 대화를 통해 해결하겠다고 밝혔습니다."
-      ],
-      "whyImportant": "삼성전자의 메모리 시장 전략 변화와 파운드리 사업 재편은 향후 반도체 산업 전반에 걸쳐 공급망 및 경쟁 구도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 삼성전자는 내년 메모리 수요 대비 공급 격차가 올해보다 심화될 것으로 예상하며, 올해 HBM 매출이 전년 대비 3배 이상 확대될 것이라고 밝혔기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "앞으로도 메모리 시장의 성장 모멘텀은 AI향 수요가 이끌 것\"이라며 \"당사는 상당히 타이트한 재고 수준 하에서 공급 가용량이 고객 수요에 한참 미치지 못하고 있고, 수요 대비 공급 충족률은 역대 최저 수준을 기록하고 있다"
-        }
-      ],
-      "dedupeKey": "내년-메모리-불균형-사업-삼성전자-수급-심화-파운드리",
-      "clusterKey": "관세/반도체/삼성전자",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347335",
-      "publishedAt": "2026-04-30T03:16:50+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_2",
-      "date": "2026-05-02",
-      "category": "에너지",
-      "title": "효성중공업, 미국 AI 데이터센터 전력망 토털 솔루션 소개",
-      "summary": [
-        "효성중공업은 IEEE PES T&D 2026에 참가하여 AI 데이터센터 전력 솔루션을 소개합니다.",
-        "세계 최대 용량의 가스절연차단기(GCB)와 차세대 데이터센터 핵심 전력 솔루션인 반도체 변압기(SST) 등을 선보일 예정입니다.",
-        "미국 AI 산업 성장으로 향후 10년간 전력 수요가 25% 증가할 것으로 예상됩니다."
-      ],
-      "whyImportant": "AI 데이터센터 전력망 구축 경쟁 심화에 따라 관련 기술 확보 및 시장 선점의 중요성이 커지고 있습니다.",
-      "importanceRationale": "근거: 미국 AI 산업 성장으로 향후 10년간 전력 수요가 25% 증가할 것으로 예상되어, 효성중공업의 AI 데이터센터 전력 솔루션 소개가 중요합니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "최근 미국에서는 인공지능(AI) 산업의 성장과 함께 데이터센터 등을 중심으로 향후 10년간 전력 수요가 25% 증가할 것으로 예상된다."
-        }
-      ],
-      "dedupeKey": "10년간-데이터센터-미국-소개-솔루션-전력망-토털-효성중공업",
-      "clusterKey": "에너지/효성중공업",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347167",
-      "publishedAt": "2026-04-30T00:40:38+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_3",
-      "date": "2026-05-02",
-      "category": "기술",
-      "title": "AI 패권 경쟁 속 중국 국가발전개혁위원회의 역할 강화",
-      "summary": [
-        "중국 국가발전개혁위원회(NDRC)가 기술·경제 안보 통제 핵심 기관으로 부상하고 있습니다.",
-        "NDRC는 메타의 AI 모델 인수를 막는 등 규제 범위를 확대하고 있습니다.",
-        "이는 중국이 경제 기획 기관에서 경제안보 집행 기관으로 변화하고 있음을 시사합니다."
-      ],
-      "whyImportant": "NDRC의 역할 강화는 중국의 기술 자립 및 공급망 구축 전략에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: NDRC는 메타의 20억 달러 규모 AI 모델 인수를 중단시키는 등 경제안보 관련 정책 집행에 적극적으로 관여하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "최근 들어선 경제 기획 기관에서 경제안보 집행기관으로 색깔이 변하고 있다.실제 그간 장기 경제계획, 국가 투자 프로젝트, 에너지·국방 등 전략 부문을 담당해왔지만 최근 1년 동안만 봐도 엔비디아 칩 구매, 파나마 항만 거래, 메타의 마누스 인수 문제까지 정책에 깊게 관여하고 있다.NDRC의 관할이 국내 투자·산업정책을 넘어 외국 기업의 중국 기술 접근, 해외 인프라 운영, 첨단 반도체 공급망으로 확장되고 있다는 뜻이다.이를 두고 FT는 \"미국의 외국인투자심의위원회(CFIUS)와 유사한 기능을 수행하기 시작했다\"며 \"중국판 CFIUS의 선도 기관으로 부상하고 있다\"고 평가했다."
-        },
-        {
-          "label": "policy",
-          "evidence": "현재 NDRC는 정 주임이 이끌고 있지만 시 주석에서 허 부총리로 이어지는 시 주석의 경제안보 라인의 정책 방향 속에서 움직인다는 의미다.NDRC는 1952년 중앙인민정부 국가계획위원회로 출발했고, 마오쩌둥 시대 계획경제의 핵심 기구였다."
-        }
-      ],
-      "dedupeKey": "ndrc-강화-경쟁-경제안보-국가발전개혁위원회-역할-중국-패권",
-      "clusterKey": "인수합병/패권/정책",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202604308823i",
-      "publishedAt": "2026-04-30T06:07:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_4",
-      "date": "2026-05-02",
-      "category": "기술",
-      "title": "AI 수요 증가에 따른 클라우드 시장 성장세: 구글, MS, 아마존 실적 발표",
-      "summary": [
-        "주요 클라우드 인프라 제공업체인 구글, 마이크로소프트, 아마존 모두 시장 예상치를 상회하는 실적을 발표했습니다.",
-        "특히 구글 클라우드는 63%의 매출 증가율을 기록하며 가장 빠른 성장세를 보였습니다.",
-        "이는 인공지능 모델 및 서비스에 대한 수요 증가에 따른 클라우드 시장의 호황에 기인합니다."
-      ],
-      "whyImportant": "AI 모델 및 서비스 수요 증가가 클라우드 시장의 지속적인 성장을 견인할 것으로 예상됩니다.",
-      "importanceRationale": "근거: 시너지 리서치는 클라우드 인프라 지출이 1,290억 달러에 달했으며, AI가 클라우드 제공업체의 수익을 증대시킬 것으로 전망했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "Google Cloud, which includes infrastructure and corporate productivity apps, saw revenue shoot up 63% to $20.03 billion, surpassing StreetAccount's consensus of $18.05 billion."
-        }
-      ],
-      "dedupeKey": "구글-따른-성장세-수요-시장-아마존-증가-클라우드",
-      "clusterKey": "실적/ai/따른",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/30/google-microsoft-and-amazon-all-report-cloud-beats-in-earnings.html",
-      "publishedAt": "2026-04-30T15:56:57+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_5",
-      "date": "2026-05-02",
-      "category": "에너지",
-      "title": "삼성중공업, 1분기 영업이익 122% 증가…LNG선 건조 증가",
-      "summary": [
-        "삼성중공업은 1분기 영업이익이 전년 동기 대비 122% 증가한 2731억 원이라고 밝혔습니다.",
-        "매출액은 16% 증가한 2조 9023억 원으로 잠정 집계되었습니다.",
-        "LNG 운반선 등 고수익 선종 건조 증가와 FLNG 프로젝트 본격화가 실적 개선에 기여했습니다."
-      ],
-      "whyImportant": "삼성중공업의 실적 증가는 조선업계의 수익성 개선 추세를 보여주는 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 1분기 영업이익이 122% 증가했으며, 향후 3년 치 이상의 수주 잔고를 확보하여 안정적인 수익 창출 기반을 마련했다고 밝혔습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "삼성중공업은 올해 1분기(1~3월) 연결 기준 실적을 잠정 집계한 결과 영업이익이 2731억원으로 전년 동기 대비 122% 증가했다고 30일 공시했다."
-        }
-      ],
-      "dedupeKey": "2731억-2조-9023억-lng선-건조-삼성중공업-영업이익-증가",
-      "clusterKey": "실적/삼성중공업",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1256683.html",
-      "publishedAt": "2026-04-30T08:48:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_6",
-      "date": "2026-05-02",
+      "id": "2026-05-03_1",
+      "date": "2026-05-03",
       "category": "기술",
       "title": "미국 상원 의원, 엔비디아의 대중국 칩 판매 관련 질의",
       "summary": [
@@ -174,8 +15,8 @@
         "쿤스 의원은 미국이 중국 기업에 H200 칩을 판매하지 않았다는 러트닉 장관의 발언이 젠슨 황 엔비디아 CEO의 발언과 상충된다고 지적했습니다.",
         "Lutnick gets grilling on Nvidia chip sales to China in letter from Sen."
       ],
-      "whyImportant": "미국의 대중국 반도체 수출 통제 정책 및 관련 기업 활동에 대한 감시가 강화될 수 있기 때문입니다.",
-      "importanceRationale": "근거: 쿤스 의원은 H200 칩의 중국 수출에 대해 '심각한 국가 안보 및 경제 리더십에 대한 위험'을 제기하며 우려를 표명했고, 이는 엔비디아의 중국 시장 접근에 영향을 미칠 수 있습니다.",
+      "whyImportant": "미국의 대중국 반도체 수출 통제 정책 및 관련 기업 활동에 대한 감시가 강화될 수 있습니다.",
+      "importanceRationale": "근거: 쿤스 의원은 H200 칩의 중국 수출에 대해 '국가 안보와 경제 리더십에 심각한 위험'을 제기한다고 언급하며 정책적 중요성을 강조했습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -200,64 +41,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-02_7",
-      "date": "2026-05-02",
-      "category": "기술",
-      "title": "미국 S&P500, 애플 호실적에 연일 최고치 경신…나스닥 25,000 첫 돌파",
+      "id": "2026-05-03_2",
+      "date": "2026-05-03",
+      "category": "금융",
+      "title": "네이버, 글로벌 C2C 확장 본격화…매출 58% 급증",
       "summary": [
-        "애플의 호실적과 유가 하락에 힘입어 뉴욕증시 주요 지수가 사상 최고치를 경신했습니다.",
-        "나스닥 지수는 사상 처음으로 종가 기준 25,000선을 넘어섰습니다.",
-        "이번 주 매그니피센트7 기업 중 5곳이 시장 예상을 뛰어넘는 실적을 발표했습니다."
+        "네이버의 C2C(개인 간 거래) 부문 1분기 매출이 작년 동기 대비 57.7% 증가한 3,511억 원을 기록했습니다.",
+        "북미 포시마크, 스페인 왈라팝 등 글로벌 C2C 사업 전반의 성장세가 반영된 결과입니다.",
+        "네이버는 C2C 플랫폼 경쟁력 강화에 힘쓸 것이라고 밝혔습니다."
       ],
-      "whyImportant": "미국 기업들의 실적 호조세가 지속될 경우, 투자 심리 개선 및 추가적인 자본 투자를 유도할 수 있습니다.",
-      "importanceRationale": "근거: 이번 주 매그니피센트7 중 5개 기업이 예상보다 강한 실적을 발표하며 미국 기업들의 이익 창출이 이어지고 있음을 나타냈습니다.",
+      "whyImportant": "네이버의 C2C 사업 확장은 장기적인 성장 동력 확보에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: C2C 부문 매출이 57.7% 증가했으며, 포시마크 거래액과 매출이 30% 증가하는 등 1분기 실적에서 가시적인 성장세를 보였습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "전날 '깜짝 실적'을 발표한 애플이 이날 3.24% 상승하면서 기술주 상승을 이끌었다."
+          "evidence": "이 가운데 C2C 부문 매출은 3천511억원으로 작년 동기 대비 57.7% 증가했다."
         }
       ],
-      "dedupeKey": "p500-경신-나스닥-미국-애플-연일-최고치-호실적",
-      "clusterKey": "실적/p500",
+      "dedupeKey": "511억-c2c-것이라고-글로벌-네이버-매출-포시마크-확장",
+      "clusterKey": "실적/네이버",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347896",
-      "publishedAt": "2026-05-01T20:48:43+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-02_8",
-      "date": "2026-05-02",
-      "category": "금융",
-      "title": "일라이 릴리, 제프바운드와 문자로 판매 급증으로 분기별 예상치 상회 및 전망 상향",
-      "summary": [
-        "일라이 릴리가 체중 감량제 제프바운드와 당뇨병 치료제 문자로의 수요 급증으로 1분기 실적 예상치를 상회했습니다.",
-        "연간 매출 전망을 20억 달러 상향 조정하여 2026년 매출액을 820억~850억 달러로 예상합니다.",
-        "미국 비만 및 당뇨병 치료제 시장에서 60.1%의 점유율을 차지하며 시장 지배력을 유지하고 있습니다."
-      ],
-      "whyImportant": "일라이 릴리의 실적 증가는 GLP-1 약물 시장의 성장과 경쟁 심화를 보여주는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 릴리는 1분기에 미국 비만 및 당뇨병 치료제 시장의 60.1%를 점유했으며, 문자로의 전 세계 수익은 125% 증가한 86억 6천만 달러를 기록했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "Eli Lilly on Thursday reported first-quarter earnings and revenue that blew past estimates and hiked its full-year sales outlook by $2 billion, as demand for its blockbuster weight loss drug Zepbound and diabetes treatment Mounjaro spiked again."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "Resilient demand for Zepbound and Mounjaro has helped fuel several strong quarters for Lilly despite lower prices for the medications in the U.S."
-        }
-      ],
-      "dedupeKey": "릴리-문자-분기별-상회-예상치-일라-제프바운드-판매",
-      "clusterKey": "실적/일라",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/04/30/eli-lilly-lly-earnings-q1-2026.html",
-      "publishedAt": "2026-04-30T10:15:01+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348102",
+      "publishedAt": "2026-05-02T22:55:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -266,29 +72,123 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-02_9",
-      "date": "2026-05-02",
-      "category": "정책",
-      "title": "미래에셋 코빗 인수에 대한 증권사들의 우려, 공정위 심사 변수될까",
+      "id": "2026-05-03_3",
+      "date": "2026-05-03",
+      "category": "금융",
+      "title": "중국 프랜차이즈 한국 상륙 가속화, 하이디라오 매출 5년 새 8.4배 증가",
       "summary": [
-        "미래에셋의 가상자산 거래소 코빗 주식 취득에 대해 증권사들이 공정거래위원회에 우려를 표명한 것으로 알려졌습니다.",
-        "증권사들은 미래에셋이 '금가분리' 원칙을 우회하여 특혜를 받을 수 있다는 의견을 제시했습니다.",
-        "공정위는 이러한 의견을 참고하여 미래에셋의 코빗 인수에 대한 기업결합 승인 여부를 결정할 예정입니다."
+        "훠궈, 마라탕 브랜드에 이어 최근에는 대형 밀크티 브랜드들이 한국 시장에 진출하며 중국 프랜차이즈의 공세가 거세지고 있습니다.",
+        "하이디라오코리아의 작년 매출액은 1,177억원으로 5년 만에 약 8.4배 급증했으며, 탕화쿵푸는 전국 매장 수가 560개를 넘어섰습니다."
       ],
-      "whyImportant": "미래에셋의 코빗 인수는 가상자산 시장에 대한 금융 규제 방향과 경쟁 환경에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 공정위가 미래에셋컨설팅의 코빗 주식 취득이 시장에 미치는 영향을 분석하기 위해 증권사 10여곳에 의견을 조회했고, 증권사들은 특혜 가능성을 우려하며 당국의 가이드라인을 요구하고 있습니다.",
+      "whyImportant": "중국 식음료 프랜차이즈의 성공적인 한국 시장 진출은 국내 외식업계에 경쟁 심화 및 차별화 필요성을 제기합니다.",
+      "importanceRationale": "근거: 하이디라오코리아의 매출이 5년 만에 8.4배 증가한 1,177억원을 기록했고, 탕화쿵푸 매장이 560개를 돌파하는 등 중국계 프랜차이즈의 확장세가 두드러지고 있기 때문입니다.",
       "impactSignals": [
         {
+          "label": "security",
+          "evidence": "탕화쿵푸 매장 560개 돌파…훠궈·마라탕 넘어 밀크티로 영토 확장 국내 외식업 폐점률 상승 속 중국계는 공격적 확장 (서울=연합뉴스) 홍국기 한주홍 기자 = 국내 식음료 시장에 이른바 'C-프랜차이즈'(중국 오프라인 가맹업체)가 공세가 매섭다."
+        },
+        {
           "label": "policy",
-          "evidence": "다른 증권사 관계자는 \"미래에셋 사업 추진 자체를 반대한다기보다는 당국의 명확한 가이드라인을 요구하는 입장\"이라며 \"이런 식으로 비금융 계열사를 이용한 가상자산 사업이 가능했다면 우리도 진작 하지 않았겠냐는 게 업계 컨센서스\"라고 전했다."
+          "evidence": "◇ 훠궈·마라탕 안착…매출·매장 수 '수직 상승' 연합뉴스가 3일 금융감독원 전자공시시스템을 분석한 결과 중국 훠궈 브랜드 하이디라오코리아의 지난해 매출액은 1천177억원을 기록했다."
         }
       ],
-      "dedupeKey": "공정거래위원회-공정위-미래에셋-변수될까-심사-인수-증권사들-코빗",
-      "clusterKey": "인수합병/플랫폼규제/미래에셋",
+      "dedupeKey": "177억원-4배-가속화-상륙-중국-프랜차이즈-하이디라오-한국",
+      "clusterKey": "한중_실적/프랜차이즈",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347667",
-      "publishedAt": "2026-04-30T20:51:01+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348066",
+      "publishedAt": "2026-05-02T21:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-03_4",
+      "date": "2026-05-03",
+      "category": "금융",
+      "title": "코스피, 단기 급등 후 숨 고르기 전망",
+      "summary": [
+        "증권가는 이번 주 국내 증시가 단기 과열 해소 국면에 진입할 것으로 예상했습니다.",
+        "최근 한 달간 코스피지수는 30.61% 급등하여 단기 과열 부담이 있다는 분석입니다.",
+        "실적에 근거한 상승 추세는 유효하며, 순환매 전략이 필요하다는 조언이 나옵니다."
+      ],
+      "whyImportant": "코스피 시장의 단기 변동성과 투자 전략에 대한 시사점을 제공합니다.",
+      "importanceRationale": "근거: 코스피가 한 달간 30.61% 급등한 후 단기 과열 해소 국면에 진입할 수 있다는 전망이 제시되었기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "4월 29일부터 5월 6일까지 일본 골든 위크와 5월 1일부터 5일까지 중국 노동절 연휴로 인바운드(외국인의 국내 관광) 수요가 기대된다"
+        }
+      ],
+      "dedupeKey": "고르기-국내-급등-단기-증권-증시-코스피-코스피지수",
+      "clusterKey": "실적/코스피",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050216956",
+      "publishedAt": "2026-05-02T23:00:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-03_5",
+      "date": "2026-05-03",
+      "category": "기술",
+      "title": "AI 연구 밑거름은 다양한 경험…딥마인드 CEO 조언",
+      "summary": [
+        "데미스 하사비스 딥마인드 CEO는 한국 학생과 학부모에게 다양한 경험이 창의적 AI 연구의 밑거름이 될 수 있다고 조언했습니다.",
+        "그는 게임을 만들며 프로그래밍을 배웠고, 그것이 AI 연구의 밑거름이 되었다고 밝혔습니다."
+      ],
+      "whyImportant": "AI 연구 개발에 있어 다양한 경험의 중요성을 강조하는 발언입니다.",
+      "importanceRationale": "근거: 딥마인드 CEO가 게임 개발 경험이 AI 연구의 밑거름이 되었다고 언급했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "ceo-경험-다양-딥마인드-밑거름-연구-조언-한국",
+      "clusterKey": "연구/밑거름/다양",
+      "matchedTo": null,
+      "sourceName": "머니투데이",
+      "sourceUrl": "https://www.mt.co.kr/tech",
+      "publishedAt": "2026-05-01T20:58:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-03_6",
+      "date": "2026-05-03",
+      "category": "금융",
+      "title": "미국 석유 기업 실적 감소, 새로운 종전 협상안에 유가 하락",
+      "summary": [
+        "중동 전쟁 장기화로 미국 주요 에너지 기업들의 실적이 감소했습니다.",
+        "엑손모빌의 1분기 순이익은 1년 전보다 46% 급감했으며, 셰브런 역시 순이익이 37% 감소했습니다.",
+        "이란이 미국에 새로운 협상안을 전달했다는 소식에 국제 유가는 하락세로 돌아섰습니다."
+      ],
+      "whyImportant": "에너지 기업 실적과 유가 변동은 거시 경제에 영향을 미치는 중요한 요인입니다.",
+      "importanceRationale": "근거: 엑손모빌의 1분기 순이익이 1년 전보다 46% 급감하고, 셰브런 역시 37%나 빠지는 등 에너지 기업 실적에 큰 변화가 있었습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "다만, 천정부지로 치솟던 국제 유가는 이란이 미국에 새로운 협상안을 전달했다는 소식이 전해지며 일단 숨 고르기에 들어갔습니다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "미국 최대 에너지 기업 엑손모빌의 올해 1분기 순이익은 1년 전보다 46% 급감하며 5년 만에 최저치를 기록했습니다."
+        }
+      ],
+      "dedupeKey": "감소-기업-미국-석유-실적-유가-종전-협상안",
+      "clusterKey": "미중동_실적/석유",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347982",
+      "publishedAt": "2026-05-02T05:16:23+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

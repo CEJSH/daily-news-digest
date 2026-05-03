@@ -1,38 +1,33 @@
 {
-  "date": "2026-05-03",
+  "date": "2026-05-04",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-03T08:12:48.559045+09:00",
+  "lastUpdatedAt": "2026-05-04T08:13:59.863927+09:00",
   "items": [
     {
-      "id": "2026-05-03_1",
-      "date": "2026-05-03",
+      "id": "2026-05-04_1",
+      "date": "2026-05-04",
       "category": "기술",
-      "title": "미국 상원 의원, 엔비디아의 대중국 칩 판매 관련 질의",
+      "title": "레지 피서메이, 아마존이 과거 닌텐도에 불법 행위 요구",
       "summary": [
-        "크리스쿤스 상원 의원이 엔비디아의 H200 AI 칩의 중국 판매 허용 여부에 대해 하워드 러트닉 상무부 장관에게 서한을 통해 질의했습니다.",
-        "쿤스 의원은 미국이 중국 기업에 H200 칩을 판매하지 않았다는 러트닉 장관의 발언이 젠슨 황 엔비디아 CEO의 발언과 상충된다고 지적했습니다.",
-        "Lutnick gets grilling on Nvidia chip sales to China in letter from Sen."
+        "닌텐도가 과거 아마존에 판매를 중단한 이유는 아마존이 다른 소매업체와의 관계를 해치고 잠재적으로 불법적인 특혜를 요구했기 때문이라고 전 닌텐도 아메리카 사장 레지 피서메이가 밝혔습니다.",
+        "아마존은 월마트를 가격 면에서 깎아내리기 위해 과도한 재정 지원을 원했다고 합니다."
       ],
-      "whyImportant": "미국의 대중국 반도체 수출 통제 정책 및 관련 기업 활동에 대한 감시가 강화될 수 있습니다.",
-      "importanceRationale": "근거: 쿤스 의원은 H200 칩의 중국 수출에 대해 '국가 안보와 경제 리더십에 심각한 위험'을 제기한다고 언급하며 정책적 중요성을 강조했습니다.",
+      "whyImportant": "과거의 사례이지만, 대형 플랫폼의 불공정 행위 요구는 기업의 의사결정에 중요한 영향을 미칠 수 있음을 시사합니다.",
+      "importanceRationale": "근거: 닌텐도가 아마존의 불법적인 요구에 응하지 않고 거래를 중단한 것은 다른 소매업체와의 관계를 보호하고 사업 방식을 고수하기 위한 결정이었습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "The Trump administration in 2025 told Nvidia it would need a license to export chips to China and a handful of other countries."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "Previously at least one-fifth of Nvidia's data center revenue came from China sales."
+          "evidence": "During a recent lecture at NYU, former Nintendo of America President Reggie Fils-Aimé said it was because Amazon was seeking preferential treatment that would have hurt its relationship with other retailers, and potentially broken the law."
         }
       ],
-      "dedupeKey": "h200-대중국-미국-상원-엔비디아-의원-질의-판매",
-      "clusterKey": "미중/상원/의원/엔비디아",
+      "dedupeKey": "과거-닌텐-레지-불법-아마존-지원-피서메-행위",
+      "clusterKey": "레지/피서메/아마존",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/01/nvidia-chips-jensen-huang-h200-lutnick-chris-coons.html",
-      "publishedAt": "2026-05-01T14:07:46+00:00",
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/games/922840/reggie-fils-aime-amazon-nintendo-illegal",
+      "publishedAt": "2026-05-03T15:24:27+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -41,94 +36,36 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-03_2",
-      "date": "2026-05-03",
+      "id": "2026-05-04_2",
+      "date": "2026-05-04",
       "category": "금융",
-      "title": "네이버, 글로벌 C2C 확장 본격화…매출 58% 급증",
+      "title": "미군 철수 발표에 독일, 유럽 자주 방위 가속화 전망",
       "summary": [
-        "네이버의 C2C(개인 간 거래) 부문 1분기 매출이 작년 동기 대비 57.7% 증가한 3,511억 원을 기록했습니다.",
-        "북미 포시마크, 스페인 왈라팝 등 글로벌 C2C 사업 전반의 성장세가 반영된 결과입니다.",
-        "네이버는 C2C 플랫폼 경쟁력 강화에 힘쓸 것이라고 밝혔습니다."
+        "독일 국방장관은 미군의 독일 주둔 미군 감축에 대해 예측 가능한 일이라고 밝혔습니다.",
+        "트럼프 대통령은 유럽산 자동차·트럭에 25% 관세율을 적용하겠다고 발표하여 독일 자동차 산업에 연간 25억 유로의 비용이 발생할 것으로 예상됩니다."
       ],
-      "whyImportant": "네이버의 C2C 사업 확장은 장기적인 성장 동력 확보에 기여할 수 있기 때문입니다.",
-      "importanceRationale": "근거: C2C 부문 매출이 57.7% 증가했으며, 포시마크 거래액과 매출이 30% 증가하는 등 1분기 실적에서 가시적인 성장세를 보였습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "이 가운데 C2C 부문 매출은 3천511억원으로 작년 동기 대비 57.7% 증가했다."
-        }
-      ],
-      "dedupeKey": "511억-c2c-것이라고-글로벌-네이버-매출-포시마크-확장",
-      "clusterKey": "실적/네이버",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348102",
-      "publishedAt": "2026-05-02T22:55:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-03_3",
-      "date": "2026-05-03",
-      "category": "금융",
-      "title": "중국 프랜차이즈 한국 상륙 가속화, 하이디라오 매출 5년 새 8.4배 증가",
-      "summary": [
-        "훠궈, 마라탕 브랜드에 이어 최근에는 대형 밀크티 브랜드들이 한국 시장에 진출하며 중국 프랜차이즈의 공세가 거세지고 있습니다.",
-        "하이디라오코리아의 작년 매출액은 1,177억원으로 5년 만에 약 8.4배 급증했으며, 탕화쿵푸는 전국 매장 수가 560개를 넘어섰습니다."
-      ],
-      "whyImportant": "중국 식음료 프랜차이즈의 성공적인 한국 시장 진출은 국내 외식업계에 경쟁 심화 및 차별화 필요성을 제기합니다.",
-      "importanceRationale": "근거: 하이디라오코리아의 매출이 5년 만에 8.4배 증가한 1,177억원을 기록했고, 탕화쿵푸 매장이 560개를 돌파하는 등 중국계 프랜차이즈의 확장세가 두드러지고 있기 때문입니다.",
+      "whyImportant": "미국의 정책 변화에 따라 유럽의 자주 국방 및 경제적 대응이 가속화될 수 있기 때문입니다.",
+      "importanceRationale": "근거: 트럼프 대통령의 관세 인상으로 독일 자동차 산업에 연간 25억 유로의 비용이 발생할 것으로 예상되며, 유럽은 자주 국방 강화로 대응하자는 목소리가 나오고 있습니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "탕화쿵푸 매장 560개 돌파…훠궈·마라탕 넘어 밀크티로 영토 확장 국내 외식업 폐점률 상승 속 중국계는 공격적 확장 (서울=연합뉴스) 홍국기 한주홍 기자 = 국내 식음료 시장에 이른바 'C-프랜차이즈'(중국 오프라인 가맹업체)가 공세가 매섭다."
+          "evidence": "페르디난트 두덴회퍼 센터장은 “(유럽) 다른 나라 업체들의 대미 수출 규모는 적기 때문에, 트럼프의 새 관세 위협은 독일을 겨냥한 경제 전쟁의 시작으로 해석할 수 있다”고 설명했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "두덴회퍼 센터장은 “(미국 내) 판매가 인상을 통해 미국 소비자들에게 관세 부담을 전가하려는 시도가 있을 것”이라며 “독일 자동차에 대한 (미 소비자들의) 브랜드 충성도가 강하다."
         },
         {
           "label": "policy",
-          "evidence": "◇ 훠궈·마라탕 안착…매출·매장 수 '수직 상승' 연합뉴스가 3일 금융감독원 전자공시시스템을 분석한 결과 중국 훠궈 브랜드 하이디라오코리아의 지난해 매출액은 1천177억원을 기록했다."
+          "evidence": "유럽에 등 돌려온 트럼프 행정부 행보에 비추어 보면 미국과의 유대가 느슨해질 수밖에 없었다는 것이다."
         }
       ],
-      "dedupeKey": "177억원-4배-가속화-상륙-중국-프랜차이즈-하이디라오-한국",
-      "clusterKey": "한중_실적/프랜차이즈",
+      "dedupeKey": "25억-가속화-독일-미군-방위-유럽-자주-철수",
+      "clusterKey": "미군/철수/독일",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348066",
-      "publishedAt": "2026-05-02T21:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-03_4",
-      "date": "2026-05-03",
-      "category": "금융",
-      "title": "코스피, 단기 급등 후 숨 고르기 전망",
-      "summary": [
-        "증권가는 이번 주 국내 증시가 단기 과열 해소 국면에 진입할 것으로 예상했습니다.",
-        "최근 한 달간 코스피지수는 30.61% 급등하여 단기 과열 부담이 있다는 분석입니다.",
-        "실적에 근거한 상승 추세는 유효하며, 순환매 전략이 필요하다는 조언이 나옵니다."
-      ],
-      "whyImportant": "코스피 시장의 단기 변동성과 투자 전략에 대한 시사점을 제공합니다.",
-      "importanceRationale": "근거: 코스피가 한 달간 30.61% 급등한 후 단기 과열 해소 국면에 진입할 수 있다는 전망이 제시되었기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "4월 29일부터 5월 6일까지 일본 골든 위크와 5월 1일부터 5일까지 중국 노동절 연휴로 인바운드(외국인의 국내 관광) 수요가 기대된다"
-        }
-      ],
-      "dedupeKey": "고르기-국내-급등-단기-증권-증시-코스피-코스피지수",
-      "clusterKey": "실적/코스피",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026050216956",
-      "publishedAt": "2026-05-02T23:00:02+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/international_general/1256972.html",
+      "publishedAt": "2026-05-03T15:39:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -137,58 +74,64 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-03_5",
-      "date": "2026-05-03",
-      "category": "기술",
-      "title": "AI 연구 밑거름은 다양한 경험…딥마인드 CEO 조언",
+      "id": "2026-05-04_3",
+      "date": "2026-05-04",
+      "category": "금융",
+      "title": "씨티그룹, 삼성전자 목표가 하향 조정",
       "summary": [
-        "데미스 하사비스 딥마인드 CEO는 한국 학생과 학부모에게 다양한 경험이 창의적 AI 연구의 밑거름이 될 수 있다고 조언했습니다.",
-        "그는 게임을 만들며 프로그래밍을 배웠고, 그것이 AI 연구의 밑거름이 되었다고 밝혔습니다."
+        "씨티그룹은 삼성전자의 노사 갈등 리스크를 지목하며 목표주가를 30만 원으로 하향 조정했습니다.",
+        "파업에 따른 성과급 충당금 설정이 향후 실적에 영향을 줄 것이라는 분석입니다.",
+        "씨티그룹은 올해와 내년 영업이익 추정치를 각각 10%와 11% 하향 조정했습니다."
       ],
-      "whyImportant": "AI 연구 개발에 있어 다양한 경험의 중요성을 강조하는 발언입니다.",
-      "importanceRationale": "근거: 딥마인드 CEO가 게임 개발 경험이 AI 연구의 밑거름이 되었다고 언급했습니다.",
-      "impactSignals": [],
-      "dedupeKey": "ceo-경험-다양-딥마인드-밑거름-연구-조언-한국",
-      "clusterKey": "연구/밑거름/다양",
+      "whyImportant": "노조 리스크가 기업의 실적에 미치는 영향을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 씨티그룹은 노사 갈등으로 인해 발생할 성과급 충당금을 고려하여 삼성전자의 올해와 내년 영업이익 추정치를 각각 10%와 11% 하향 조정했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "씨티그룹은 노사 갈등으로 인해 발생할 성과급 충당금이 실적에 반영될 것을 고려해 삼성전자의 올해와 내년 영업이익 추정치를 각각 10%와 11% 하향 조정했다."
+        }
+      ],
+      "dedupeKey": "갈등-노사-목표-삼성전자-씨티그룹-영업이익-조정-하향",
+      "clusterKey": "실적/씨티그룹",
       "matchedTo": null,
-      "sourceName": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr/tech",
-      "publishedAt": "2026-05-01T20:58:00+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050330197",
+      "publishedAt": "2026-05-03T09:22:44+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 2,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-05-03_6",
-      "date": "2026-05-03",
+      "id": "2026-05-04_4",
+      "date": "2026-05-04",
       "category": "금융",
-      "title": "미국 석유 기업 실적 감소, 새로운 종전 협상안에 유가 하락",
+      "title": "중복 상장 여부는 주주 결정에 맡겨야 하며, 모호한 규제는 역효과를 낼 수 있습니다",
       "summary": [
-        "중동 전쟁 장기화로 미국 주요 에너지 기업들의 실적이 감소했습니다.",
-        "엑손모빌의 1분기 순이익은 1년 전보다 46% 급감했으며, 셰브런 역시 순이익이 37% 감소했습니다.",
-        "이란이 미국에 새로운 협상안을 전달했다는 소식에 국제 유가는 하락세로 돌아섰습니다."
+        "제이 리터 교수는 중복 상장 제한과 관련해 시장 판단에 맡기는 것이 더 효과적이라고 언급했습니다.",
+        "그는 모회사 주주에게 중복 상장 승인 투표권을 부여하는 것이 갈등을 줄이는 해법이 될 수 있다고 제시했습니다.",
+        "또한, 한국 자본시장은 이미 성숙 단계에 있으며 기관 투자자들이 충분한 역할을 할 수 있다고 평가했습니다."
       ],
-      "whyImportant": "에너지 기업 실적과 유가 변동은 거시 경제에 영향을 미치는 중요한 요인입니다.",
-      "importanceRationale": "근거: 엑손모빌의 1분기 순이익이 1년 전보다 46% 급감하고, 셰브런 역시 37%나 빠지는 등 에너지 기업 실적에 큰 변화가 있었습니다.",
+      "whyImportant": "중복 상장 규제 방향에 대한 논의는 자본 시장의 효율성과 투자자 보호에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융당국이 중복상장에 대해 '원칙적 금지, 예외적 허용' 원칙을 세운 상황에서, 규제 완화 또는 주주 권한 강화에 대한 논의가 필요하기 때문입니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "다만, 천정부지로 치솟던 국제 유가는 이란이 미국에 새로운 협상안을 전달했다는 소식이 전해지며 일단 숨 고르기에 들어갔습니다."
+          "label": "policy",
+          "evidence": "한경 인터뷰 '미스터 IPO' 제이 리터 美 플로리다대 워링턴경영대학원 명예교수 경영진과 주주의 이해 상충 줄이는 '구조 설계' 필요 주주에 중복상장 여부 결정하는 투표권 부여 고려할 만 韓 자본시장 이미 성숙…기관투자가, 충분한 역할 할 것 제이 리터 미국 플로리다대 워링턴경영대학원 명예교수는 중복상장 제한과 관련해 “자본시장이 성숙할수록 규제보다 시장 판단에 맡기는 게 효과적”이라고 말했다."
         },
         {
           "label": "earnings",
-          "evidence": "미국 최대 에너지 기업 엑손모빌의 올해 1분기 순이익은 1년 전보다 46% 급감하며 5년 만에 최저치를 기록했습니다."
+          "evidence": "다만 현실적으로 일몰 조건 아래 중복상장을 허용하는 방안도 고려해볼 수 있습니다."
         }
       ],
-      "dedupeKey": "감소-기업-미국-석유-실적-유가-종전-협상안",
-      "clusterKey": "미중동_실적/석유",
+      "dedupeKey": "규제-맡겨야-모호-상장-여부-주주-중복-하며",
+      "clusterKey": "상장/중복/정책",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347982",
-      "publishedAt": "2026-05-02T05:16:23+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050328441",
+      "publishedAt": "2026-05-03T08:16:57+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

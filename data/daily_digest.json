@@ -1,101 +1,33 @@
 {
-  "date": "2026-05-06",
+  "date": "2026-05-07",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-06T08:30:54.470445+09:00",
+  "lastUpdatedAt": "2026-05-07T08:31:38.807200+09:00",
   "items": [
     {
-      "id": "2026-05-06_1",
-      "date": "2026-05-06",
-      "category": "에너지",
-      "title": "삼성중공업, LNG 부유식 저장·재기화 설비 4848억원에 수주",
+      "id": "2026-05-07_1",
+      "date": "2026-05-07",
+      "category": "국제",
+      "title": "중국, 중동 중재 외교 가속화…미중 정상회담 앞두고 협상 지렛대 강화",
       "summary": [
-        "삼성중공업이 아시아 지역 선주로부터 LNG-FSRU 1척을 4848억원에 수주했다고 밝혔습니다.",
-        "FSRU는 LNG를 기체 상태로 바꿔 공급하는 설비로, 에너지 수요 급증 지역에서 활용됩니다."
+        "중국 외교부장이 이란 외무장관과 만나 호르무즈 해협 개방 및 휴전 문제를 논의하며 중재자 역할을 강조했습니다.",
+        "미국과 이란의 휴전 합의 과정에서 중국이 역할을 했다는 평가 속, 중국은 미중 회담을 앞두고 협상 지렛대를 강화하고 있습니다."
       ],
-      "whyImportant": "FSRU는 에너지 인프라 구축의 신속한 대안이 될 수 있어 AI 산업 확산에 따른 전력 공급 수요에 대응 가능하다는 점에서 중요합니다.",
-      "importanceRationale": "근거: 삼성중공업은 LNG-FSRU 1척을 4848억원에 수주했으며, FSRU는 육상 터미널보다 건조 기간이 짧아 에너지 인프라 구축에 현실적인 대안이 될 수 있습니다.",
+      "whyImportant": "중국의 중동 문제 개입은 에너지 수송로 안정성 확보, 위안화 기반 거래 확대 등 복합적인 전략적 이익과 관련되어 있습니다.",
+      "importanceRationale": "근거: 중국은 이란 원유의 최대 구매국이며, '25년 협력 협정'에 따라 약 583조원을 투자하는 대신 이란산 원유를 저렴하게 공급받기로 했습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "삼성중공업 관계자는 \"최근 에너지 인프라 확보 수요가 늘고 있는 가운데 FSRU는 가장 신속하고 현실적인 대안이 될 수 있다\"며 \"강력한 LNG 밸류체인 라인업으로 글로벌 시장을 선도하겠다\"고 말했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "삼성중공업은 글로벌 시장 1위인 FLNG(생산·액화·하역)부터 LNG 운반선(운반), LNG-FSRU(공급) 등 LNG 밸류체인 전 영역에 걸친 라인업을 갖추고 있다."
+          "label": "policy",
+          "evidence": "미국과 이란의 지난달 2주 휴전 합의 과정에서 중국이 일정 역할을 했다는 평가에 이어 이란 측으로부터 \"호르무즈 해협 개방 문제를 해결할 수 있다\"는 발언까지 이끌어내면서 미중 회담에 앞서 협상 지렛대를 강화하는 모습이다."
         }
       ],
-      "dedupeKey": "4848억원-lng-부유식-삼성중공업-설비-수주-재기화-저장",
-      "clusterKey": "설비투자/에너지/삼성중공업",
+      "dedupeKey": "가속화-미중-앞두고-외교-정상회담-중국-중동-중재",
+      "clusterKey": "미중_관세/중재",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348470",
-      "publishedAt": "2026-05-04T01:57:39+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-06_3",
-      "date": "2026-05-06",
-      "category": "금융",
-      "title": "S&P·나스닥 최고치 경신",
-      "summary": [
-        "뉴욕 증시에서 S&P500과 나스닥 종합지수가 기업 실적 낙관론에 힘입어 사상 최고치를 경신했습니다.",
-        "AI 관련 반도체 종목이 상승세를 주도했으며, AMD는 1분기 데이터센터 부문 매출 급증으로 시장 기대치를 상회하는 실적을 발표했습니다."
-      ],
-      "whyImportant": "주요 지수 상승과 AI 반도체 분야의 성장은 관련 산업 투자 및 기술 개발에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: AMD의 데이터센터 부문 매출이 57% 급증한 58억 달러를 기록하며 실적을 견인했고, 2분기 매출 전망도 시장 예상치를 웃돌았습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "국제유가가 하락한 가운데 견조한 기업 실적에 대한 낙관론이 힘을 받았는데요."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "인공지능 수요 급증에 힘입어 1분기 실적이 시장 기대를 웃돌았습니다."
-        }
-      ],
-      "dedupeKey": "p500-경신-기업-나스닥-뉴욕-데이터센터-종합지수-최고치",
-      "clusterKey": "실적/나스닥",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349102",
-      "publishedAt": "2026-05-05T23:05:53+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-06_4",
-      "date": "2026-05-06",
-      "category": "금융",
-      "title": "AMD, 1분기 매출 38% 급증…AI 수요에 2분기 ‘깜짝 전망’",
-      "summary": [
-        "AMD는 1분기 매출이 전년 동기 대비 38% 증가한 103억 달러를 기록했다고 밝혔습니다.",
-        "데이터센터 부문 매출은 57% 증가한 58억 달러로, 2분기 매출은 시장 예상치를 크게 웃도는 112억 달러로 제시했습니다."
-      ],
-      "whyImportant": "AMD의 실적 증가는 AI 데이터센터 투자 확대에 따른 고성능 반도체 수요 급증을 반영하며, 향후 AI 칩 시장 경쟁 심화를 예고합니다.",
-      "importanceRationale": "근거: AMD는 1분기 매출이 38% 증가했으며, 데이터센터 부문 매출은 57% 증가하여 AI 인프라 투자 확대가 실적에 반영되고 있음을 보여줍니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "AMD는 5일(현지시간) 1분기 매출이 103억달러로 전년 동기 대비 38% 증가했다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "103억-112억-58억-amd-데이터센터-매출-수요-전년",
-      "clusterKey": "실적/amd",
-      "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://www.mk.co.kr/news/it/12036935",
-      "publishedAt": "2026-05-05T22:01:54+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349544",
+      "publishedAt": "2026-05-06T09:58:09+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -104,28 +36,190 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-06_5",
-      "date": "2026-05-06",
-      "category": "금융",
-      "title": "한전기술, 1분기 실적 급반등 전망",
+      "id": "2026-05-07_2",
+      "date": "2026-05-07",
+      "category": "기술",
+      "title": "앤스로픽 CEO, \"중국 AI 추격 전 취약점 막아야\"",
       "summary": [
-        "LS증권은 한전기술의 목표주가를 19만원으로 상향 조정하고 투자의견은 '매수'를 유지했습니다.",
-        "1분기 영업이익은 전년 동기 대비 751% 증가한 101억원으로 예상됩니다."
+        "앤스로픽 CEO는 AI가 찾아낸 소프트웨어 취약점이 사이버 공격으로 이어질 수 있다고 경고했습니다.",
+        "그는 중국 AI 기업들이 유사한 기술력에 도달하기 전에 정부와 기업들이 취약점을 보완해야 한다고 주장했습니다.",
+        "앤스로픽은 최신 AI 모델 '미토스'가 기존 모델보다 많은 보안 결함을 발견했다고 밝혔습니다."
       ],
-      "whyImportant": "한전기술의 실적 개선은 국내외 원전 시장의 장기적인 성장 가능성을 시사합니다.",
-      "importanceRationale": "근거: 1분기 영업이익이 전년 동기 대비 751% 증가할 것으로 예상되며, 올해 영업이익은 87% 증가할 것으로 전망됩니다.",
+      "whyImportant": "AI가 발견한 소프트웨어 취약점을 악용한 사이버 공격 위험이 증가할 수 있어, 관련 보안 강화 및 규제 논의가 중요해질 수 있습니다.",
+      "importanceRationale": "근거: 앤스로픽 CEO는 앞으로 6~12개월이 위험한 전환점이 될 수 있다고 경고하며, 미토스가 파이어폭스에서 기존 모델보다 훨씬 많은 300개에 가까운 취약점을 발견했다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "“인공지능(AI)이 찾아낸 대규모 소프트웨어 취약점이 사이버 공격으로 이어질 수 있다”며 “앞으로 6~12개월이 위험한 전환점이 될 수 있다”고 경고했다."
+        }
+      ],
+      "dedupeKey": "ceo-막아야-소프트웨어-앤스로픽-정부-중국-추격-취약점",
+      "clusterKey": "앤스로픽/ceo/추격",
+      "matchedTo": null,
+      "sourceName": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr/news/it/12037331",
+      "publishedAt": "2026-05-06T05:06:36+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-07_3",
+      "date": "2026-05-07",
+      "category": "기술",
+      "title": "마이크로소프트, AI 데이터 센터 확장과 청정 에너지 목표 사이에서 고민",
+      "summary": [
+        "마이크로소프트가 AI 데이터 센터의 급속한 확장으로 인해 청정 에너지 목표 달성에 어려움을 겪고 있습니다.",
+        "시간별 청정 에너지 매칭 목표에 대한 내부 논의가 진행 중이며, 목표 연기는 검토 대상입니다.",
+        "2030년까지 시간별 에너지 사용량의 100%를 청정 에너지로 충당하겠다는 목표에 차질이 예상됩니다."
+      ],
+      "whyImportant": "데이터 센터의 전력 소비 증가와 청정 에너지 목표 간의 균형 문제는 다른 기술 기업에도 영향을 미칠 수 있는 중요한 선례를 제시합니다.",
+      "importanceRationale": "근거: 마이크로소프트는 2030년까지 시간별 에너지 사용량의 100%를 청정 에너지로 충당하겠다는 목표를 설정했지만, AI 데이터 센터 구축으로 인해 목표 달성에 대한 내부 논쟁이 발생하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Because the grid is a balanced system — the supply and demand of electrons needs to be matched on a near-instantaneous basis — hourly matching helps develop clean energy sources that more closely align with a company’s usage patterns."
+        },
+        {
+          "label": "capex",
+          "evidence": "1 to build a massive natural gas power plant in West Texas that could eventually generate up to 5 gigawatts."
+        }
+      ],
+      "dedupeKey": "데이터-마이크로소프트-목표-사이-센터-에너지-청정-확장",
+      "clusterKey": "마이크로소프트/데이터/센터",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/06/microsofts-ai-data-center-push-is-colliding-with-its-clean-power-goals/",
+      "publishedAt": "2026-05-06T19:57:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-07_4",
+      "date": "2026-05-07",
+      "category": "금융",
+      "title": "CJ올리브영, 중복 상장 규제로 IPO 제동",
+      "summary": [
+        "정부의 중복 상장 차단 정책으로 CJ올리브영의 IPO 추진에 어려움이 예상됩니다.",
+        "이재명 대통령의 지적에 따라 금융당국은 관련 규제 도입을 서두르고 있으며, 6월까지 제도 개편안 마련 후 7월부터 시행할 계획입니다.",
+        "CJ올리브영의 IPO 무산은 이선호 그룹장의 승계 재원 확보에도 영향을 줄 수 있습니다."
+      ],
+      "whyImportant": "중복 상장 규제는 기업의 자금 조달 및 지배 구조 개편에 영향을 미쳐 장기적인 기업 전략에 중요한 변수가 될 수 있습니다.",
+      "importanceRationale": "근거: 금융당국이 6월까지 제도 개편안을 마련하고 7월부터 시행할 계획이므로 정책 결정의 실행 시점이 명시되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이재명 대통령이 중복상장을 코리아 디스카운트의 원인으로 지목하면서 금융당국과 한국거래소는 관련 규제 도입에 속도를 내고 있다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "6일 금융감독원 전자공시시스템에 따르면 CJ올리브영의 지난해 매출은 5조8539억원으로 전년 대비 22.1% 성장했다."
+        }
+      ],
+      "dedupeKey": "cj올리브영-규제-금융당국-상장-재원-정부-제동-중복",
+      "clusterKey": "상장/cj올리브영/정책",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=661354",
+      "publishedAt": "2026-05-06T03:16:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-07_5",
+      "date": "2026-05-07",
+      "category": "에너지",
+      "title": "일본 원전 가동률 3년째 최고치 경신",
+      "summary": [
+        "일본 원자력산업협회 조사 결과, 작년 일본 원전 가동률이 33.6%로 후쿠시마 원전 사고 이후 최고치를 기록했습니다.",
+        "올해는 가시와자키·가리와 원전 6호기가 재가동되며 가동률 상승이 전망되지만, 홋카이도 도마리 원전 3호기 재가동 시기 지연으로 큰 폭 상승은 어려울 것으로 예상됩니다."
+      ],
+      "whyImportant": "일본의 원전 정책 변화와 에너지 수급에 영향을 미칠 수 있는 지표이기 때문입니다.",
+      "importanceRationale": "근거: 일본 원전 가동률은 2023년부터 3년째 최고치를 경신하고 있으며, 이는 일본 에너지 정책의 방향성을 보여주는 지표입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "일본의 원전 가동률은 2011년 원전 사고 이후 폐로 작업과 규제 강화가 시행되면서 0%까지 내려갔으나 이후 서서히 회복해 2023년부터 3년째 최고치를 경신하고 있다."
+        }
+      ],
+      "dedupeKey": "3년째-6호기-가동률-경신-원자력산업협회-원전-일본-최고치",
+      "clusterKey": "법집행/가동률",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349571",
+      "publishedAt": "2026-05-06T12:06:57+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-07_6",
+      "date": "2026-05-07",
+      "category": "산업",
+      "title": "미국의 대중국 반도체 장비 수출 통제 강화에 대한 중국의 반발",
+      "summary": [
+        "미국이 심자외선(DUV) 노광장비 등 반도체 장비의 대중국 수출 통제를 강화하려는 움직임에 중국 전문가들은 반발하고 있습니다.",
+        "중국 전문가들은 미국의 이러한 조치가 장기적으로 효과가 없을 것이며 중국산 대체 속도를 가속화할 것이라고 주장합니다.",
+        "중국은 미국의 제재 이후 DUV 장비를 이용해 공정을 업그레이드하고 있으며, 가성비 AI 모델을 출시하는 등 기술 자립을 추진하고 있습니다."
+      ],
+      "whyImportant": "미국의 대중국 반도체 장비 수출 통제는 장기적으로 중국의 반도체 자립을 가속화하고, 글로벌 반도체 공급망에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 의회의 대중국 반도체 수출 통제 강화 법안은 중국 반도체 산업에 '철의 장막'을 치려는 시도로 해석되며, 중국은 이에 맞서 반도체 자립을 가속화할 것으로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "앞서 미 하원 외교위는 지난달 22일 반도체와 반도체 장비 등의 대중국 수출 통제를 강화하는 법안들을 통과시켰으며, 중국 상무부는 국가안보 개념 적용의 확대와 수출 통제 남용에 대한 반대 입장을 밝힌 바 있다."
+        }
+      ],
+      "dedupeKey": "강화-대중국-미국-반도체-수출-장비-중국-통제",
+      "clusterKey": "미중_제재/대중국",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349507",
+      "publishedAt": "2026-05-06T08:44:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-07_7",
+      "date": "2026-05-07",
+      "category": "금융",
+      "title": "GS피앤엘, 1분기 실적 기대치 상회",
+      "summary": [
+        "하나증권은 GS피앤엘의 1분기 실적이 컨센서스를 상회했다고 발표했습니다.",
+        "매출액은 전년 동기 대비 38% 증가한 1,304억원, 영업이익은 59% 증가한 242억원을 기록했습니다."
+      ],
+      "whyImportant": "GS피앤엘의 실적 개선은 호텔 및 식음료 사업의 성장 가능성을 보여줍니다.",
+      "importanceRationale": "근거: GS피앤엘의 1분기 매출액은 1,304억원, 영업이익은 242억원으로 컨센서스를 크게 상회했으며, 웨스틴은 첫 분기 흑자 전환을 기록했습니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "LS증권은 6일 한전기술에 대해 \"올 1분기를 기점으로 실적 급반등을 시작할 것으로 예상된다\"며 목표주가를 기존 15만원에서 19만원으로 상향 조정했다."
+          "evidence": "GS피앤엘에 대해 \"올 1분기 실적이 컨센서스(증권사 추정치 평균)를 웃돌았다\"며 목표주가를 기존 6만9000원에서 7만2000원으로 상향 조정했다."
         }
       ],
-      "dedupeKey": "101억원-19만원-ls증권-급반등-실적-영업이익-투자의견-한전기술",
-      "clusterKey": "실적/1분기",
+      "dedupeKey": "242억원-304억원-gs피앤엘-기대치-상회-실적-컨센서스-하나증권",
+      "clusterKey": "실적/gs피앤엘",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026050673866",
-      "publishedAt": "2026-05-05T22:59:41+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026050701856",
+      "publishedAt": "2026-05-06T23:07:47+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

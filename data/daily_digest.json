@@ -1,21 +1,21 @@
 {
-  "date": "2026-05-12",
+  "date": "2026-05-13",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-12T08:35:18.928274+09:00",
+  "lastUpdatedAt": "2026-05-13T08:39:48.918997+09:00",
   "items": [
     {
-      "id": "2026-05-12_1",
-      "date": "2026-05-12",
+      "id": "2026-05-13_1",
+      "date": "2026-05-13",
       "category": "산업",
       "title": "GST, 장중 15% 급등: 반도체 장비 수요 확대",
       "summary": [
-        "반도체 장비 제조업체 GST가 장 초반 급등세를 보이고 있습니다.",
+        "반도체 장비 제조업체 GST가 장 초반 급등세를 보였습니다.",
         "삼성전자와 마이크론 등 주요 고객사의 생산설비 증설로 장비 수요 확대 전망이 주가에 영향을 준 것으로 분석됩니다."
       ],
-      "whyImportant": "반도체 설비 투자 확대에 따른 장비 업체들의 실적 개선 기대감을 보여주는 사례입니다.",
-      "importanceRationale": "근거: GST는 올해 사상 최대 실적 달성 가능성이 부각되었고, 주가는 전 거래일보다 15.33% 상승했습니다.",
+      "whyImportant": "반도체 설비 투자 확대에 따른 장비 수요 변화는 관련 산업 전반에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: GST는 반도체·디스플레이 공정용 스크러버와 칠러를 주력으로 생산하는 장비 업체이며, 주요 고객사의 생산설비 증설이 본격화되면서 장비 수요가 확대될 것이란 전망이 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
@@ -36,93 +36,37 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-12_2",
-      "date": "2026-05-12",
+      "id": "2026-05-13_2",
+      "date": "2026-05-13",
       "category": "국제",
-      "title": "미중 무역 대표, 한국에서 정상회담 사전 협상 예정",
+      "title": "미국-이란 협상 좌초 위기, 미중 정상회담 변수",
       "summary": [
-        "미중 정상회담을 앞두고 양국 무역 협상 고위급 대표들이 서울에서 만날 예정입니다.",
-        "스콧 베선트 미국 재무장관은 중국 방문에 앞서 한국과 일본을 방문할 계획입니다."
+        "미국과 이란 간의 종전 협상이 난항을 겪고 있으며, 트럼프 대통령은 이란의 종전안을 비난했습니다.",
+        "이런 가운데, 베이징에서 열리는 미중 정상회담에서 이란 문제 해결을 위한 협력 가능성이 제기되고 있습니다.",
+        "정부는 호르무즈 해협에서 피격된 '나무호' 잔해를 국내로 들여와 정밀 조사할 예정입니다."
       ],
-      "whyImportant": "미중 무역 협상은 세계 경제에 중요한 영향을 미칠 수 있는 사안입니다.",
-      "importanceRationale": "근거: 부산 정상회담에서 이룬 공감대에 따라 경제 무역 문제 협상이 진행될 예정이므로 중요도는 3입니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "#방한 #방일 #미중관계 #미중정상회담 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)"
-        }
-      ],
-      "dedupeKey": "대표-무역-미중-사전-양국-정상회담-한국-협상",
-      "clusterKey": "미중_관세/사전",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351786",
-      "publishedAt": "2026-05-11T21:49:26+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_3",
-      "date": "2026-05-12",
-      "category": "정책",
-      "title": "국민의힘, 정부의 나무호 피격 대응 비판",
-      "summary": [
-        "국민의힘 국방위원들은 정부가 호르무즈 해협에서 발생한 나무호 피격 사건에 대한 대응이 미흡하다고 비판했습니다.",
-        "이들은 정부가 사고를 은폐하려 했으며, 초기 대응에 실패했다고 주장했습니다.",
-        "또한, 국방위 긴급 현안 질의를 정부·여당이 거부하고 있다고 밝혔습니다."
-      ],
-      "whyImportant": "이번 사건에 대한 정부의 대응은 향후 유사한 사건 발생 시 정부의 위기 대응 능력에 대한 신뢰도에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 호르무즈 해협에는 26척의 한국 선박과 160여 명의 선원이 있어 추가 공격 가능성이 있으며, 정부의 초기 발표와 외교부 발표가 달라 은폐 의혹이 제기되었기 때문입니다.",
+      "whyImportant": "미국과 이란의 협상 난항은 중동 지역의 불안정을 심화시키고, 국제 유가 및 에너지 시장에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 이란의 종전안을 비난하고 군사적 대응 방안을 논의하는 등 갈등이 고조되고 있으며, 미중 정상회담에서 이란 문제가 논의될 예정입니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "국민의힘 국회 국방위원 일동(국방위원장 성일종)은 11일 국회 소통관에서 기자회견을 열고 “지난 4일 호르무즈 해협에서 대한민국이 공격 당했다”라며 “현 상황을 전시상황으로 규정, 정부가 지금이라도 강력한 대응에 즉각 나서라”라고 비판했다."
+          "evidence": "CNN은 소식통을 인용해 “트럼프 대통령이 전쟁 종식을 위한 협상에 임하는 이란의 방식에 점점 더 불만을 품고 있다”며 “지난 몇 주보다 전투 작전 재개를 더욱 진지하게 고려하고 있다”고 보도했습니다."
+        },
+        {
+          "label": "capex",
+          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 박경재(parkpd@yna.co.kr)"
         },
         {
           "label": "security",
-          "evidence": "이어 “지금 이 시간에도 호르무즈 해협에는 26척의 우리 선박과 160여 명의 우리 선원들이 발이 묶여있다”며 “이들도 언제 공격 당할 지 모르는 위태로운 상황이다”고 강조했다."
+          "evidence": "공격 주체와 수단을 규명하기 위해선 심층적인 분석이 필요한 만큼, 국내에서 조사하려는 걸까요?"
         }
       ],
-      "dedupeKey": "거부-국민의힘-국방위원들-나무호-대응-정부-피격-호르무즈",
-      "clusterKey": "국민의힘/나무호/피격",
-      "matchedTo": null,
-      "sourceName": "도민연합",
-      "sourceUrl": "https://www.krcom.co.kr/news/articleView.html?idxno=149712",
-      "publishedAt": "2026-05-11T15:18:52+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_4",
-      "date": "2026-05-12",
-      "category": "국제",
-      "title": "국제 유가 3%대 상승",
-      "summary": [
-        "미국과 이란 간의 종전 협상 교착 상태가 지속될 수 있다는 우려로 국제 유가가 상승했습니다.",
-        "브렌트유 선물 가격은 3.38% 상승한 배럴당 104.71달러를 기록했습니다."
-      ],
-      "whyImportant": "국제 유가 변동은 에너지 시장뿐만 아니라 관련 산업 전반에 걸쳐 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 국제 유가가 3% 이상 상승했으며, 브렌트유 선물 가격이 배럴당 104.71달러를 나타내면서 시장에 영향을 주고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "미국과 이란 간 종전 협상 교착 국면이 계속될 수 있다는 우려에 국제유가가 3%대 상승세를 보이고 있습니다."
-        }
-      ],
-      "dedupeKey": "71달러-간의-국제-미국-브렌트유-상승-유가-이란",
-      "clusterKey": "관세/국제",
+      "dedupeKey": "미국-미중-변수-위기-이란-정상회담-좌초-협상",
+      "clusterKey": "미중_관세/좌초",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351664",
-      "publishedAt": "2026-05-11T09:29:26+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1352186",
+      "publishedAt": "2026-05-12T08:14:19+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -131,63 +75,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-12_5",
-      "date": "2026-05-12",
-      "category": "기술",
-      "title": "OpenAI, 기업 AI 도입 '티핑 포인트' 진입",
+      "id": "2026-05-13_3",
+      "date": "2026-05-13",
+      "category": "국제",
+      "title": "대통령, 미국 재무장관 접견 예정",
       "summary": [
-        "OpenAI의 최고 수익 책임자(CRO)인 데니스 드레서는 기업 인공지능 도입이 '티핑 포인트'에 도달했다고 밝혔습니다.",
-        "OpenAI는 기업 고객 확보를 위해 새로운 사업 부서를 발표하고, 응용 AI 컨설팅 회사인 Tomoro를 인수했습니다.",
-        "기업은 현재 OpenAI 수익의 40% 이상을 차지하며, 2026년 말까지 소비자 부문과 동등한 수준에 도달할 것으로 예상됩니다."
+        "대통령은 미국 재무장관을 접견하여 국제 정세에 대해 논의할 예정입니다.",
+        "미중 정상회담을 앞두고 관세 및 공급망 안정 문제가 논의될 것으로 예상됩니다."
       ],
-      "whyImportant": "OpenAI의 기업 AI 시장 확대 전략은 장기적으로 AI 기술의 산업 전반 확산에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: OpenAI가 Tomoro 인수를 통해 기업 AI 도입을 가속화하고, 기업 수익 비중이 40% 이상이며 2026년 말까지 소비자 부문과 동등한 수준을 목표로 한다는 점에서 중요도 3으로 판단됩니다.",
+      "whyImportant": "이번 접견은 미중 관계 및 한미 간 현안에 대한 논의를 통해 국제 정세에 영향을 미칠 수 있기 때문에 중요합니다.",
+      "importanceRationale": "근거: 14일로 예정된 미중 정상회담을 앞두고 대통령과 미국 재무장관이 만나 국제 정세에 대해 논의할 예정입니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "Enterprise now makes up more than 40% of OpenAI’s revenue, Dresser revealed in an April blog post, adding that the startup expects that portion of the business to reach parity with consumer by the end of 2026."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "Since we announced the partnership at the end of February, inbound demand from our customers for this offering has been frankly staggering.”"
+          "label": "capex",
+          "evidence": "관세협상 후속 조치인 대미투자 프로젝트에 관심이 쏠린 가운데 구체적인 사업 내용이 거론될 것인지 주목된다."
         }
       ],
-      "dedupeKey": "openai-tomoro-기업-도입-인공지능-진입-티핑-포인트",
-      "clusterKey": "인수합병/openai",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/11/open-ai-dresser-enterprise-business.html",
-      "publishedAt": "2026-05-11T19:24:38+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_6",
-      "date": "2026-05-12",
-      "category": "금융",
-      "title": "삼성증권, 증시 호황으로 실적 호조 및 목표가 상향",
-      "summary": [
-        "한국투자증권은 삼성증권의 1분기 실적을 평가하며 목표 주가를 17만원으로 상향 조정했습니다.",
-        "삼성증권의 1분기 지배주주순이익은 4509억원으로, 컨센서스를 17% 상회했습니다."
-      ],
-      "whyImportant": "증시 호황에 따른 증권사의 실적 개선은 투자 및 자산 관리 전략에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 삼성증권의 1분기 지배주주순이익이 4509억원을 기록하며 컨센서스를 17% 상회했고, 금융상품 판매수익은 전분기 대비 83% 증가했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "삼성증권의 1분기 금융상품 판매수익은 846억원으로 전분기 대비 83% 증가했고, 랩과 펀드 수익이 각각 131%와 97% 늘었다."
-        }
-      ],
-      "dedupeKey": "17만원-4509억원-목표-삼성증권-실적-증시-호조-호황",
-      "clusterKey": "실적/금융/증시",
+      "dedupeKey": "국제-논의할-대통령-미국-재무장관-접견-정상회담-정세",
+      "clusterKey": "미중_관세/대통령",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026051295406",
-      "publishedAt": "2026-05-11T22:36:09+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026051219227",
+      "publishedAt": "2026-05-12T09:43:09+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -196,17 +105,43 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-12_7",
-      "date": "2026-05-12",
+      "id": "2026-05-13_4",
+      "date": "2026-05-13",
+      "category": "기술",
+      "title": "구글, AI 기반 노트북 '구글북' 공개",
+      "summary": [
+        "구글이 자체 AI 모델 Gemini를 기반으로 구축된 새로운 노트북 라인 '구글북'을 발표했습니다.",
+        "Acer, Asus, Dell, HP, Lenovo 등 주요 파트너와 협력하여 다양한 형태와 크기의 구글북을 출시할 예정입니다.",
+        "올 가을 출시 예정인 구글북은 Gemini를 기반으로 설계되어 개인 맞춤형 및 능동적인 도움을 제공합니다."
+      ],
+      "whyImportant": "구글의 새로운 AI 기반 노트북 출시로 PC 시장에서 AI 기능 경쟁이 심화될 수 있습니다.",
+      "importanceRationale": "근거: 구글이 Gemini를 기반으로 새로운 노트북 라인을 출시하고, 주요 PC 제조업체들이 협력하여 AI 기능을 강화한 제품을 선보임으로써 Microsoft의 Copilot+ PC에 대응하고 있기 때문입니다.",
+      "impactSignals": [],
+      "dedupeKey": "acer-asus-dell-gemini-구글-구글북-기반-노트북",
+      "clusterKey": "구글/기반/노트북",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/12/google-unveils-googlebooks-a-new-line-of-ai-native-laptops/",
+      "publishedAt": "2026-05-12T17:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-13_5",
+      "date": "2026-05-13",
       "category": "에너지",
       "title": "중동 에너지 위기 속 전기요금 동결, 가격 신호 회복 필요",
       "summary": [
         "중동발 에너지 위기에도 전기요금 동결로 미래 세대에 부담이 가중될 것이라는 우려가 제기되었습니다.",
-        "참석자들은 전기요금 정상화, 요금 결정의 탈정치화, 취약계층 지원을 정책 대안으로 제시했습니다.",
-        "한전 부채가 급증하여 전력망 투자에 차질이 생길 수 있다는 지적도 나왔습니다."
+        "전문가들은 전기요금 정상화, 요금 결정의 탈정치화, 취약 계층 지원을 정책 대안으로 제시했습니다.",
+        "한전 부채가 급증하여 전력망 투자에 차질이 생기고 에너지 전환에도 어려움이 예상됩니다."
       ],
-      "whyImportant": "에너지 가격 왜곡은 장기적으로 에너지 안보와 미래 세대의 부담으로 이어질 수 있기 때문입니다.",
-      "importanceRationale": "근거: 2022년 러시아-우크라이나 전쟁 때 한전 부채가 100조원대에서 200조원대로 늘어났고, 중동전쟁으로 300~400조원으로 급증할 수 있다는 전망이 있습니다.",
+      "whyImportant": "에너지 가격 왜곡은 장기적으로 에너지 안보를 저해하고 미래 세대에 부담을 전가할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 한전 부채가 2022년 러시아-우크라이나 전쟁 때 100조원대에서 200조원대로 늘어났고, 이번 중동전쟁에서는 300~400조원으로 급증할 수 있다고 언급되어 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
@@ -227,133 +162,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-12_8",
-      "date": "2026-05-12",
-      "category": "국제",
-      "title": "일본, 메르코수르와 무역협정 협상 개시 추진",
+      "id": "2026-05-13_6",
+      "date": "2026-05-13",
+      "category": "기술",
+      "title": "FedEx CEO, 아마존의 새로운 물류 서비스 발표에 대한 경쟁 위협 일축",
       "summary": [
-        "일본 정부가 남미공동시장(메르코수르)과 경제동반자협정(EPA) 협상 개시를 모색합니다.",
-        "일본은 이달 말 메르코수르와 전략적 파트너십 프레임워크를 창설할 계획입니다.",
-        "일본은 에너지와 중요 광물 조달에 관심을 두고 있습니다."
+        "FedEx CEO는 아마존의 새로운 공급망 서비스 발표에 대해 FedEx가 운영하는 방식과는 완전히 다르다고 언급했습니다.",
+        "그는 아마존의 발표가 FedEx가 이미 참여하고 있는 제3자 물류 제공에 더 가깝다고 평가했습니다.",
+        "FedEx는 5월에 종료되는 회계연도에 930억 달러 이상의 매출을 올릴 것으로 예상됩니다."
       ],
-      "whyImportant": "이번 협상은 일본이 메르코수르와의 경제 협력을 강화하고 에너지 및 광물 자원 확보에 기여할 수 있기 때문에 중요합니다.",
-      "importanceRationale": "근거: 메르코수르 5개국의 GDP는 3조 1,600억 달러 규모이며, 일본 정부는 에너지와 중요 광물 조달에 관심을 두고 있어 협상 추진의 의미가 있습니다.",
+      "whyImportant": "아마존의 물류 서비스 확장이 전통적인 배송 기업에 미치는 잠재적 영향에 대한 시장의 우려를 보여줍니다.",
+      "importanceRationale": "근거: FedEx 주가가 아마존 발표 후 9% 하락했으며, 경쟁사인 UPS도 10.5% 하락한 것은 시장의 즉각적인 반응을 보여줍니다.",
       "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "원래 메르코수르 회원국이던 베네수엘라는 인권 침해 등을 이유로 2016년 참가 자격이 정지됐다."
-        }
-      ],
-      "dedupeKey": "경제동반자협정-남미공동시장-메르코수르-무역협정-일본-정부-파트너십-협상",
-      "clusterKey": "관세/메르코수르",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351038",
-      "publishedAt": "2026-05-10T02:48:12+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_9",
-      "date": "2026-05-12",
-      "category": "에너지",
-      "title": "카타르 LNG 수출 재개, 호르무즈 해협 통과",
-      "summary": [
-        "카타르산 LNG를 실은 운반선이 이란의 승인을 받아 호르무즈 해협을 통과하여 파키스탄으로 향하고 있습니다.",
-        "이는 2월 말 이란 전쟁 발발 후 카타르 소유 유조선이 호르무즈 해협을 건넌 첫 사례입니다.",
-        "이번 물량은 파키스탄과 카타르 간 정부 계약 방식으로 판매된 것으로 알려졌습니다."
-      ],
-      "whyImportant": "카타르의 LNG 수출 재개는 에너지 공급망 안정화에 기여할 수 있는 중요한 움직임입니다.",
-      "importanceRationale": "근거: 전쟁으로 심각한 가스 부족에 직면한 파키스탄은 LNG 운반선 통행 허용을 이란에 요구해왔으며, 카타르는 세계 2위의 LNG 수출국입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "이란은 미국과 휴전 협상에서 중재 역할을 해온 파키스탄과 신뢰 구축을 위해 이번 선박의 통과를 사전 승인한 것으로 전해졌다."
-        }
-      ],
-      "dedupeKey": "lng-수출-정부-카타르-카타르산-통과-해협-호르무즈",
-      "clusterKey": "카타르/수출/호르무즈",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351117",
-      "publishedAt": "2026-05-10T09:02:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_10",
-      "date": "2026-05-12",
-      "category": "금융",
-      "title": "컬리, 1분기 순이익 흑자 전환으로 IPO 속도",
-      "summary": [
-        "컬리는 1분기에 매출과 영업이익이 증가하며 분기 최대 실적을 기록했습니다.",
-        "당기순이익은 203억원으로 흑자 전환에 성공했으며, 네이버로부터 2조 8000억원의 기업 가치를 인정받았습니다."
-      ],
-      "whyImportant": "컬리의 흑자 전환은 향후 IPO 추진에 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 컬리의 1분기 영업이익은 242억원으로 전년 동기 대비 1277% 증가했으며, 당기순이익은 203억원으로 흑자 전환했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "\"IPO 속도 낸다\"…수익성 개선한 컬리, 1분기 순이익 흑자전환 영업이익 242억원…전년 대비 13배 증가 리테일 테크 기업 컬리가 올해 1분기 매출과 영업이익을 모두 늘리며 분기 기준 최대 실적을 기록했다."
-        },
         {
           "label": "market-demand",
-          "evidence": "ADVERTISEMENT 실적 개선에는 주력 사업인 신선식품과 뷰티 부문 성장, 판매자배송(3P), 풀필먼트서비스(FBK), 컬리N마트 등 사업 다각화가 영향을 줬다."
-        },
-        {
-          "label": "capex",
-          "evidence": "회사 측은 국가데이터처가 공개한 1분기 국내 온라인 쇼핑 거래액 성장률 9.7%와 비교하면 약 3배 높은 성장률이라고 설명했다."
+          "evidence": "“We’re very much a win-win relationship.” Subramaniam spoke to Cramer a few weeks before FedEx spins off its freight division, which puts bulk shipments from multiple customers onto one truck, into a standalone public company."
         },
         {
           "label": "policy",
-          "evidence": "파트너사와의 협상력 강화와 3P 사업 확대가 영향을 미쳤다."
+          "evidence": "“It’s not the biggest piece of our business.” FedEx is projected to generate over $93 billion in its fiscal year ended in May, according to FactSet."
         }
       ],
-      "dedupeKey": "203억원-2조-8000억원-속도-순이익-전환-컬리-흑자",
-      "clusterKey": "실적/컬리/상장",
+      "dedupeKey": "ceo-fedex-경쟁-물류-서비스-아마존-위협-일축",
+      "clusterKey": "실적/공급망/fedex",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202605118434g",
-      "publishedAt": "2026-05-11T05:58:16+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-12_11",
-      "date": "2026-05-12",
-      "category": "정책",
-      "title": "FIU, '특금법 시행령' 관련 가상자산 업계 의견 수렴 예정",
-      "summary": [
-        "금융정보분석원(FIU)이 '특정금융정보법'(특금법) 시행령 개정안에 대한 가상자산 업계의 의견을 수렴할 예정입니다.",
-        "업계는 1천만 원 이상 모든 가상자산 거래를 FIU에 보고하는 것에 우려를 표하고 있습니다.",
-        "개정안대로 시행될 경우 의심거래 보고 건수가 크게 증가하여 운영에 부담이 될 것이라는 의견입니다."
-      ],
-      "whyImportant": "가상자산 관련 규제 변화는 업계 운영 및 투자 환경에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 1천만 원 이상 모든 가상자산 거래 보고 의무는 업계에 큰 부담이 될 수 있으며, 이는 가상자산 사업자 운영에 직접적인 영향을 미칠 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "금융위원회 산하 금융정보분석원(FIU)이 지난 3월 입법예고된 '특정금융정보법'(특금법) 시행령 개정안과 관련해 가상자산 업계 의견을 듣는다."
-        }
-      ],
-      "dedupeKey": "fiu-가상자산-금융정보분석원-수렴-시행령-업계-의견-특금법",
-      "clusterKey": "정책/금융/fiu",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351556",
-      "publishedAt": "2026-05-11T06:31:18+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/12/fed-ex-ceo-jim-cramer-amazon-logistics.html",
+      "publishedAt": "2026-05-12T22:58:55+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -362,28 +197,119 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-12_12",
-      "date": "2026-05-12",
-      "category": "정책",
-      "title": "조경태 의원, 국회부의장 출마 선언",
+      "id": "2026-05-13_7",
+      "date": "2026-05-13",
+      "category": "기술",
+      "title": "아마존, 미국 내 수십 개 도시에서 30분 배송 서비스 시행",
       "summary": [
-        "조경태 국민의힘 의원이 22대 국회 후반기 야당 몫 국회부의장 출마를 선언했습니다.",
-        "조 의원은 절대 권력의 독주에 맞서는 역할을 하겠다고 밝혔습니다."
+        "아마존이 미국 내 수십 개 도시에서 30분 내 배송 서비스를 시행합니다.",
+        "아마존은 소규모 물류센터를 전략적으로 배치해 배송 시간을 단축했습니다.",
+        "연말까지 수천만 명이 해당 서비스를 이용할 수 있도록 확대할 예정입니다."
       ],
-      "whyImportant": "국회부의장 선출 결과는 향후 국회 운영과 여야 관계에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 국민의힘은 오는 13일 의원총회에서 국회부의장 후보를 선출할 예정이며, 조 의원 외 2명의 의원이 경쟁할 전망입니다.",
+      "whyImportant": "아마존의 초고속 배송 서비스 확대는 물류 인프라 투자 및 시장 경쟁 심화를 의미합니다.",
+      "importanceRationale": "근거: 아마존은 미국 내 수십 개 도시에서 30분 배송 서비스를 시행하고, 연말까지 수천만 명이 이용할 수 있도록 확대할 예정입니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "국민의힘은 오는 13일 의원총회에서 자당 몫 국회부의장 후보를 선출한다."
+          "label": "capex",
+          "evidence": "- 카카오톡 앱에서 'jebo23' 친구 추가 - 라인 앱에서 'jebo23' 친구 추가 - jebo23@yna.co.kr ⓒ연합뉴스TV, 무단 전재-재배포, AI 학습 및 활용 금지"
         }
       ],
-      "dedupeKey": "22대-국민의힘-국회부의장-선언-의원-조경태-출마-하겠다고",
-      "clusterKey": "조경태/의원/국회부의장",
+      "dedupeKey": "30분-도시-미국-배송-서비스-수십-시행-아마존",
+      "clusterKey": "아마존/수십/도시",
+      "matchedTo": null,
+      "sourceName": "연합뉴스",
+      "sourceUrl": "https://m.yonhapnewstv.co.kr/news/AKR20260513015955Tgx",
+      "publishedAt": "2026-05-12T16:59:57+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-13_8",
+      "date": "2026-05-13",
+      "category": "국제",
+      "title": "국제 유가 상승, 이란 협상 기대감 약화",
+      "summary": [
+        "미국과 이란 간 종전 협상 타결 전망이 약화되면서 국제 유가가 3% 넘게 상승했습니다.",
+        "미국 서부텍사스산원유(WTI) 선물 종가는 배럴당 102.18달러로 4.2% 올랐습니다."
+      ],
+      "whyImportant": "국제 유가 변동은 에너지 시장 전반에 걸쳐 영향을 미칠 수 있는 중요한 지표입니다.",
+      "importanceRationale": "근거: 국제 유가가 3% 이상 상승했으며, WTI 선물 종가가 4.2% 상승하여 시장에 영향을 미치고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "미국과 이란 간 종전협상 타결 전망이 약화되면서 12일(현지시간) 국제 유가가 3% 넘게 상승했다."
+        }
+      ],
+      "dedupeKey": "18달러-국제-기대감-상승-약화-유가-이란-협상",
+      "clusterKey": "관세/국제",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351419",
-      "publishedAt": "2026-05-11T02:35:03+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1352322",
+      "publishedAt": "2026-05-12T19:24:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-13_9",
+      "date": "2026-05-13",
+      "category": "국제",
+      "title": "김정관 산업부 장관 방미 후 부처 협의 지시",
+      "summary": [
+        "이재명 대통령이 김정관 산업부 장관에게 외교부, 청와대 안보실과 대미 투자 관련 사전 협의를 지시했습니다.",
+        "산업부가 외교안보 당국과 충분한 협의 없이 대미 투자 프로젝트를 진행한다는 우려가 있었던 것으로 전해집니다."
+      ],
+      "whyImportant": "부처 간 협의를 통해 대미 투자 프로젝트가 외교 및 안보적 측면을 고려하여 진행될 가능성이 높아졌습니다.",
+      "importanceRationale": "근거: 대통령이 특정 부처 장관에게 다른 부처와의 정보 공유를 공개적으로 주문한 것은 드문 일이며, 이는 대미 투자 프로젝트에 대한 정부의 정책적 중요성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "李, 김정관에 대미투자 협의 지시 \"방미 내용, 외교·안보라인과 공유\" 부처간 정보 공유 이례적 주문 부처간 정보 공유 이례적 주문 이재명 대통령이 미국 워싱턴DC를 방문해 하워드 러트닉 미 상무부 장관 등과 대미 투자 프로젝트를 논의하고 돌아온 김정관 산업통상부 장관에게 “외교부, 청와대 국가안보실과 구체적 내용을 사전에 협의하라”고 12일 지시했다."
+        }
+      ],
+      "dedupeKey": "김정관-당국-방미-부처-산업부-외교부-외교안보-장관",
+      "clusterKey": "투자/김정관/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051217681",
+      "publishedAt": "2026-05-12T08:57:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-13_10",
+      "date": "2026-05-13",
+      "category": "국제",
+      "title": "미중 무역 대표, 한국에서 정상회담 사전 협상 예정",
+      "summary": [
+        "미중 정상회담을 앞두고 양국 무역 협상 고위급 대표들이 서울에서 만날 예정입니다.",
+        "스콧 베선트 미 재무장관은 중국 허리펑 부총리와 회담하기 위해 방한한다고 밝혔습니다."
+      ],
+      "whyImportant": "미중 무역 협상의 진전 여부가 향후 경제 및 무역 관계에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 14~15일 미중 정상회담을 앞두고 무역 협상 고위급 대표들이 사전 협상을 진행할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "#방한 #방일 #미중관계 #미중정상회담 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "대표-무역-미중-사전-양국-정상회담-한국-협상",
+      "clusterKey": "미중_관세/사전",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1351786",
+      "publishedAt": "2026-05-11T21:49:26+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

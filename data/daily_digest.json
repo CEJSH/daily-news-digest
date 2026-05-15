@@ -1,52 +1,52 @@
 {
-  "date": "2026-05-15",
+  "date": "2026-05-16",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-15T08:32:52.601777+09:00",
+  "lastUpdatedAt": "2026-05-16T08:32:47.738489+09:00",
   "items": [
     {
-      "id": "2026-05-15_1",
-      "date": "2026-05-15",
-      "category": "국제",
-      "title": "중국, 미중 무역 협상에서 솔직하고 건설적인 의견 교환",
+      "id": "2026-05-16_1",
+      "date": "2026-05-16",
+      "category": "산업",
+      "title": "미국 무역대표부, 반도체 수출 통제는 미중 정상회담 의제에서 제외",
       "summary": [
-        "미중 정상회담을 앞두고 양국 고위급 협상에서 솔직하고 건설적인 의견 교환이 있었다고 중국 관영 매체가 보도했습니다.",
-        "양측은 경제·무역 문제 해결과 실무 협력 확대에 대해 깊이 있는 의견을 교환했다고 밝혔습니다."
+        "미국과 중국은 항공기, 농산물, 에너지 분야에서 대규모 구매 합의를 추진하고 새로운 협의체 설치에 합의했습니다.",
+        "다만, 첨단 반도체 수출 통제 문제는 이번 정상회담의 핵심 의제로 다뤄지지 않았습니다."
       ],
-      "whyImportant": "미중 관계는 국제 경제 및 정치에 중요한 영향을 미치므로, 양국 간의 협상 진행 상황은 계속 주목할 필요가 있습니다.",
-      "importanceRationale": "근거: 양국 고위급 협상에서 경제·무역 문제 해결에 대한 의견 교환이 있었다는 점에서 의미가 있지만, 구체적인 합의 내용은 없어 중요도는 2입니다.",
+      "whyImportant": "미국과 중국의 무역 관계 재조정 노력과 첨단 기술 분야의 규제 방향을 파악하는 데 중요한 정보입니다.",
+      "importanceRationale": "근거: 미국 무역대표부 대표는 반도체 수출 통제가 회담의 주요 논의 주제가 아니었다고 밝혔으며, 지난 1년간 미국의 대중국 무역적자가 3분의 1 감소했다고 언급했습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "미중 정상회담을 하루 앞고 열린 양국 고위급 협상에서 양측이 \"솔직하고 건설적인 의견 교환을 했다\"고 중국 관영매체가 보도했습니다."
+          "label": "sanctions",
+          "evidence": "다만 관심을 모았던 첨단 반도체 수출통제 문제는 이번 정상회담의 핵심 의제로 다뤄지지 않아, 엔비디아의 고성능 인공지능(AI) 반도체 H200의 대중국 판매 확대도 당분간 불투명하다는 관측이 나온다."
         }
       ],
-      "dedupeKey": "건설적인-교환-무역-미중-솔직-의견-중국-협상",
-      "clusterKey": "미중_관세/솔직",
+      "dedupeKey": "무역대표부-미국-미중-반도체-수출-의제-정상회담-통제",
+      "clusterKey": "미중_관세/무역대표부",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1352941",
-      "publishedAt": "2026-05-13T20:10:19+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/america/1258871.html",
+      "publishedAt": "2026-05-15T06:05:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 2,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_2",
-      "date": "2026-05-15",
+      "id": "2026-05-16_2",
+      "date": "2026-05-16",
       "category": "에너지",
-      "title": "원전 수출 '컨트롤타워' 신설 및 역할 분담",
+      "title": "원전 수출 '컨트롤타워' 신설: 한전 협상, 한수원 건설",
       "summary": [
-        "정부가 한전과 한수원의 해외 원전 수주 경쟁을 해소하기 위해 원전 수출 체계를 효율화하기로 했습니다.",
-        "원전 수출 사업을 총괄·조정할 ‘원전수출기획위원회’를 신설하고, 한전은 협상, 한수원은 건설을 주도합니다.",
-        "정부는 법적 근거 마련을 위해 연내 ‘원전수출진흥법’ 제정을 추진할 예정입니다."
+        "정부가 한전과 한수원의 해외 원전 수주 경쟁을 해소하기 위해 원전 수출 체계를 개편합니다.",
+        "원전 수출 사업을 총괄·조정할 ‘원전수출기획위원회’를 신설하고, 연내 ‘원전수출진흥법’ 제정을 추진합니다.",
+        "한전은 대외 협상을, 한수원은 원전 건설 및 운영을 주도하는 역할 분담이 이루어질 예정입니다."
       ],
-      "whyImportant": "이번 원전 수출 체계 개편은 향후 국가 간 협력이 중요한 원전 시장에서 한국의 경쟁력 강화에 기여할 수 있습니다.",
-      "importanceRationale": "근거: 정부는 원전 수출 효율화 방안을 확정하고, 연내 ‘원전수출진흥법’ 제정을 추진하여 정책적 지원을 강화할 예정입니다.",
+      "whyImportant": "원전 수출 체계 효율화는 향후 국가 간 협력이 중요한 원전 시장에서 한국의 경쟁력 강화에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 정부는 원전 수출 효율화를 위해 ‘원전수출기획위원회’를 신설하고, 연내 ‘원전수출진흥법’ 제정을 추진할 계획입니다.",
       "impactSignals": [
         {
           "label": "capex",
@@ -57,7 +57,7 @@
           "evidence": "산업부 관계자는 “2010년 이후 글로벌 원전 시장은 대부분 국가 간 수의계약 형태로 진행됐다”며 “국책 프로젝트인 만큼 정부의 적극적인 역할이 필수적”이라고 말했다."
         }
       ],
-      "dedupeKey": "분담-수출-신설-역할-원전-원전수출기획위원회-정부-컨트롤타워",
+      "dedupeKey": "건설-수출-신설-원전-컨트롤타워-한수원-한전-협상",
       "clusterKey": "관세/수출",
       "matchedTo": null,
       "sourceName": "한국경제",
@@ -71,62 +71,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_3",
-      "date": "2026-05-15",
-      "category": "국제",
-      "title": "중국, 미중 경제 문제에 대한 심도 있는 의견 교환 발표",
-      "summary": [
-        "중국 관영 매체는 미중 양측이 주요 경제·무역 현안을 놓고 솔직하고 깊이 있는 의견을 교환했다고 밝혔습니다.",
-        "이번 고위급 협상은 미중 정상회담을 하루 앞두고 진행되었습니다."
-      ],
-      "whyImportant": "미중 간의 경제 및 무역 관계는 세계 경제에 중요한 영향을 미치기 때문입니다.",
-      "importanceRationale": "근거: 미중 고위급 경제·무역 협상이 주요 경제·무역 현안을 다루고 있어, 향후 양국 관계 및 관련 산업에 영향을 줄 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "ADVERTISEMENT 이어 \"서로 관심이 있는 경제·무역 문제의 해결 및 실무 협력 확대에 대해 솔직하고 깊이 있으며 건설적인 의견을 교환했다\"고 밝혔다."
-        },
-        {
-          "label": "policy",
-          "evidence": "ADVERTISEMENT 미중은 과거 정상회담을 앞두고도 고위급 협상을 통해 의제를 조율한 바 있다."
-        }
-      ],
-      "dedupeKey": "경제-교환-문제-미중-심도-의견-있는-중국",
-      "clusterKey": "미중_관세/경제",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026051343657",
-      "publishedAt": "2026-05-13T08:08:12+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-15_4",
-      "date": "2026-05-15",
+      "id": "2026-05-16_3",
+      "date": "2026-05-16",
       "category": "기술",
-      "title": "SK바이오팜, 엑스코프리 매출 둔화 우려 해소 및 신규 기술 확장 전략",
+      "title": "빌 액먼, AI 및 클라우드 성장 기대하며 마이크로소프트 지분 확보",
       "summary": [
-        "SK바이오팜의 1분기 매출은 전년 동기 대비 57.8% 증가한 2279억 원이며, 엑스코프리 미국 매출이 1977억 원으로 86.8%를 차지했습니다.",
-        "엑스코프리의 연간 매출 가이던스는 5억 5000만~5억 8000만 달러로 유지되었으며, 신규 기술 확장을 통해 단일 제품 의존 구조에서 벗어날 계획입니다."
+        "빌 액먼의 퍼싱 스퀘어가 마이크로소프트의 주가 하락을 매수 기회로 보고 지분을 확보했습니다.",
+        "액먼은 마이크로소프트의 AI 경쟁력과 애저 클라우드 사업 성장에 대한 과도한 우려가 있다고 밝혔습니다.",
+        "그는 마이크로소프트의 M365 생산성 도구가 기업에 깊이 뿌리내리고 있다고 평가했습니다."
       ],
-      "whyImportant": "SK바이오팜의 매출 성장과 신규 기술 확장 전략은 향후 제약 시장에서의 경쟁력 강화에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 엑스코프리 미국 매출이 전체 매출의 86.8%를 차지하며, 연간 매출 가이던스가 5억 5000만~5억 8000만 달러로 유지되는 점이 중요합니다.",
+      "whyImportant": "이번 투자는 AI 및 클라우드 시장에 대한 투자자들의 심리 변화를 나타낼 수 있습니다.",
+      "importanceRationale": "근거: 액먼은 마이크로소프트 주가가 26% 이상 하락한 후 지분을 확보했으며, 이는 AI 경쟁 및 클라우드 사업에 대한 시장의 우려를 활용한 투자입니다.",
       "impactSignals": [
         {
           "label": "earnings",
-          "evidence": "SK바이오팜의 올해 1분기 매출은 2279억원으로 전년 동기 대비 57.8% 늘었다."
+          "evidence": "Ackman disclosed the investment in a lengthy post Friday ahead of his firm's quarterly 13F filing, saying Pershing Square began accumulating shares in February after Microsoft's stock declined following its fiscal second-quarter earnings report."
+        },
+        {
+          "label": "policy",
+          "evidence": "Bill Ackman's Pershing Square has built a position in Microsoft, as the hedge fund manager said the software giant's recent pullback created a rare opportunity to buy one of the world's dominant technology franchises at a compelling valuation."
         }
       ],
-      "dedupeKey": "sk바이오팜-기술-둔화-매출-신규-엑스코프리-해소-확장",
-      "clusterKey": "실적/엑스코프리",
+      "dedupeKey": "m365-기대-마이크로소프트-성장-액먼-지분-클라우드-확보",
+      "clusterKey": "인수합병/액먼",
       "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://www.edaily.co.kr/News/Read?newsId=03201286645449248&mediaCodeNo=257",
-      "publishedAt": "2026-05-14T06:18:58+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/15/bill-ackman-says-he-built-microsoft-position-in-first-quarter.html",
+      "publishedAt": "2026-05-15T10:52:24+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -135,17 +106,17 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_5",
-      "date": "2026-05-15",
+      "id": "2026-05-16_4",
+      "date": "2026-05-16",
       "category": "국제",
       "title": "OpenAI, 코드 보안 문제로 일부 데이터 해킹 피해",
       "summary": [
         "OpenAI는 일부 직원의 장치가 해킹 공격을 받아 내부 소스 코드 저장소의 자격 증명이 유출되었다고 밝혔습니다.",
-        "영향을 받은 저장소에는 디지털 인증서가 포함되어 있어 macOS 사용자는 앱을 업데이트해야 할 수 있습니다.",
-        "OpenAI는 사용자 데이터, 생산 시스템 또는 지적 재산이 손상되었다는 증거는 발견하지 못했다고 덧붙였습니다."
+        "영향을 받은 저장소에는 디지털 인증서가 포함되어 있어 macOS 사용자는 앱을 업데이트해야 합니다.",
+        "OpenAI는 사용자 데이터 접근, 생산 시스템 손상, 소프트웨어 변경 증거는 발견하지 못했다고 합니다."
       ],
       "whyImportant": "소프트웨어 공급망 공격은 여러 기업에 광범위한 피해를 줄 수 있어 보안 관점에서 중요합니다.",
-      "importanceRationale": "근거: OpenAI는 내부 소스 코드 저장소에서 제한된 자격 증명 자료가 유출되었으며, macOS 사용자는 앱 업데이트가 필요할 수 있다고 밝혔습니다.",
+      "importanceRationale": "근거: 이번 공격은 오픈 소스 프로젝트를 통해 악성 코드를 배포하여 여러 기업을 잠재적으로 위험에 빠뜨릴 수 있으며, 과거 유사한 공격 사례(Axios, Daemon Tools)가 존재합니다.",
       "impactSignals": [
         {
           "label": "security",
@@ -166,41 +137,28 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_6",
-      "date": "2026-05-15",
+      "id": "2026-05-16_5",
+      "date": "2026-05-16",
       "category": "기술",
-      "title": "미국, 엔비디아 H200 칩 중국 기업 10곳에 판매 승인",
+      "title": "김포시장 후보, 김포를 자족형 스마트 도시로 만들겠다고 공약",
       "summary": [
-        "미국이 엔비디아의 AI 칩 H200 판매를 중국 기업 10곳에 승인했지만 아직 납품은 이루어지지 않았습니다.",
-        "중국 기업들은 베이징의 지침에 따라 구매를 보류하고 있으며, 이는 중국 내 자체 AI 칩 개발 노력에 영향을 미칠 수 있습니다.",
-        "미국 수출 통제 강화 이전 엔비디아는 중국 고급 칩 시장의 약 95%를 점유했었습니다."
+        "김포시장 후보는 김포를 교통이 편리하고 경제가 풍요로운 자족 도시로 만들겠다고 밝혔습니다.",
+        "AI, 바이오 등 첨단 미래산업 기반의 일자리를 늘려 청년이 떠나지 않는 도시로 발전시키겠다고 설명했습니다."
       ],
-      "whyImportant": "미중 기술 경쟁이 승인된 거래까지 얽히게 하면서 엔비디아의 중국 시장 전략에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 상무부가 중국 기업 10곳에 H200 칩 구매를 승인했지만, 중국 정부의 수입 제약으로 인해 거래가 지연되고 있어 중요도 3으로 판단됩니다.",
+      "whyImportant": "김포를 서북부 중심도시로 만들겠다는 비전은 향후 지역 발전 방향에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 후보는 김포 광역철도망 구축, 서울 5호선 연장, 미래 전략산업 거점도시 육성 등을 공약으로 제시했습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "Commerce Secretary Howard Lutnick echoed that view, telling a Senate hearing last month that “the Chinese central government has not let them, as of yet, buy the chips, because they’re trying to keep their investment focused on their own domestic industry.” Beijing’s hesitation reflects a strategic calculation, as it fears imports could weaken a push to develop homegrown AI chips."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "The continued delay has been welcomed by China hardliners in Washington, who dismiss Trump administration claims that such sales would deter Chinese rivals from closing the gap with U.S."
-        },
-        {
-          "label": "earnings",
-          "evidence": "China once accounted for 13% of its revenue, and Huang has previously estimated the country’s AI market alone would be worth $50 billion this year."
-        },
-        {
-          "label": "sanctions",
-          "evidence": "export controls are eroding the company’s foothold in the market, saying its share of AI accelerators in China has effectively fallen to zero."
+          "evidence": "이어 “이를 위해 원스톱 인허가 지원, 규제 샌드박스, 스마트공장 전환 지원, 청년채용 인센티브 등 기업 유치와 성장에 대한 정책을 추진하겠다”며 “김포를 청년이 배우고 일하며 정착하는 자족형 첨단산업도시로 바꾸겠다”고 표명했다.이 외에도 이 후보는 △공공형 실내외 웨딩라운지 운영 △전동킥보드 안전 대책 추진 △도시 외곽 학교 스쿨버스 확대 △교통오지 수요응답형 버스 도입 등을 공약했다.이 후보는 김병수 김포시장이 4년간 못한 일들을 모두 정상으로 돌려놓겠다고 제시했다."
         }
       ],
-      "dedupeKey": "10곳-h200-기업-미국-엔비디아-이루어지지-중국-판매",
-      "clusterKey": "미중/엔비디아/h200/기업",
+      "dedupeKey": "공약-김포-김포시장-도시-만들겠다고-스마트-자족형-후보",
+      "clusterKey": "김포시장/후보/김포",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/14/us-clears-h200-chip-sales-to-10-china-firms-as-nvidia-ceo-looks-for-breakthrough.html",
-      "publishedAt": "2026-05-14T06:07:25+00:00",
+      "sourceName": "이데일리",
+      "sourceUrl": "https://www.edaily.co.kr/election2026",
+      "publishedAt": "2026-05-15T07:48:07+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -209,59 +167,88 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_7",
-      "date": "2026-05-15",
-      "category": "금융",
-      "title": "앤두릴, 기업 가치 600억 달러 이상으로 두 배 증가",
+      "id": "2026-05-16_6",
+      "date": "2026-05-16",
+      "category": "에너지",
+      "title": "대우건설, 체코 원전 부지 인근 지자체에 소방차 기증",
       "summary": [
-        "방위 기술 스타트업 앤두릴은 50억 달러의 자금을 조달하여 기업 가치가 610억 달러로 두 배 증가했습니다.",
-        "앤두릴은 미국 정부의 군사 재산업화 정책의 주요 수혜자가 될 것으로 예상됩니다.",
-        "미 국방부는 앤두릴을 포함한 기업들과 향후 3년간 1만 개 이상의 저가 극초음속 미사일 구매 계약을 발표했습니다."
+        "대우건설은 체코 신규 원전 건설 사업과 관련하여 나메슈티 나드 오슬라보우에 특수 제작된 소방차를 기증했습니다.",
+        "이번 기증은 두코바니 신규 원전 사업 수주를 앞두고 지역 소방 인프라 강화 필요성에 대한 공감대에서 비롯되었습니다."
       ],
-      "whyImportant": "앤두릴의 기업 가치 증가는 방위 산업에 대한 투자 증가 추세를 반영하며, 이는 향후 국방 기술 개발 및 산업 구조 변화에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 앤두릴은 50억 달러의 자금 조달을 통해 기업 가치가 610억 달러로 증가했으며, 미 국방부와 향후 3년간 1만 개 이상의 미사일 구매 계약을 체결했습니다.",
+      "whyImportant": "이번 기증은 대우건설이 체코 원전 사업 수주를 위한 지역 상생 협력의 일환으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 대우건설은 체코 두코바니 신규 원전 사업 수주를 앞두고 2024년 9월부터 지역 소방 인프라 강화를 위해 소방차 기증을 추진했습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "Anduril is also positioning itself as a key beneficiary of the U.S. government’s race to reindustrialize the U.S. military under President Donald Trump."
+          "label": "capex",
+          "evidence": "대우건설은 김보현 대표이사가 지난 13일 체코 원전 예정 부지 인근 지자체인 나메슈티 나드 오슬라보우를 방문해 특수 제작된 소방차를 기증했다고 15일 밝혔다."
         }
       ],
-      "dedupeKey": "600억-610억-가치-기업-달러-앤두릴-이상-증가",
-      "clusterKey": "투자/앤두릴/정책",
+      "dedupeKey": "기증-대우건설-부지-소방차-원전-인근-지자체-체코",
+      "clusterKey": "대우건설/체코/부지",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/13/anduril-valuation-defense-tech-funding-boom.html",
-      "publishedAt": "2026-05-13T13:49:59+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1353790",
+      "publishedAt": "2026-05-15T01:59:31+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
+      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-05-15_8",
-      "date": "2026-05-15",
-      "category": "정책",
-      "title": "더불어민주당, 후반기 국회의장 후보로 조정식 의원 선출",
+      "id": "2026-05-16_7",
+      "date": "2026-05-16",
+      "category": "산업",
+      "title": "미중 회담, 무역 관련 숙제 해결 못 하고 종료",
       "summary": [
-        "더불어민주당은 22대 국회 후반기 국회의장 후보로 조정식 의원을 선출했습니다.",
-        "국회부의장 후보로는 남인순 의원이 선출되었으며, 국민의힘은 박덕흠 의원을 국회부의장 후보로 선출했습니다."
+        "미중 정상회담에서 희토류 수출 제한과 AI 반도체 수출 제한 등 무역 관련 주요 의제에 대한 결론을 내지 못했습니다.",
+        "관세 문제 역시 논의되지 않았으며, 반도체 수출 통제 문제도 포함되지 않아 시장의 불확실성이 여전합니다."
       ],
-      "whyImportant": "국회의장 선출은 향후 국회 운영 방향과 법안 처리 등에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 22대 국회 후반기 국회의장 후보가 선출됨에 따라 향후 국회 운영에 대한 결정이 이루어질 예정입니다.",
+      "whyImportant": "미중 무역 관계의 불확실성이 지속될 경우 관련 산업에 계속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 회담에서 AI 반도체 수출 제한, 희토류, 관세 문제 등이 해결되지 않아 불확실성이 남았고, 이는 여러 기업에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "조 의원은 13일 오후 국회에서 열린 더불어민주당 제22대 국회 후반기 국회의장 및 부의장 후보 선출 의원총회 1차 투표에서 과반 득표했다."
+          "label": "capex",
+          "evidence": "애나 켈리 백악관 수석대변인은 지난 10일 미·중 정상회담을 앞두고 연 브리핑에서 “이번 회담의 주요 의제로 미·중 무역위원회와 미·중 투자위원회 설립 및 운영에 관한 논의가 포함될 것”이라고 밝혔다."
         }
       ],
-      "dedupeKey": "22대-국회의장-더불어민주당-선출-의원-조정식-후반기-후보",
-      "clusterKey": "더불어민주당/후반기/국회의장",
+      "dedupeKey": "논의되지-무역-미중-숙제-정상회담-종료-하고-해결",
+      "clusterKey": "미중_관세/숙제",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1258480.html",
-      "publishedAt": "2026-05-13T10:44:00+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051598521",
+      "publishedAt": "2026-05-15T08:46:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_8",
+      "date": "2026-05-16",
+      "category": "에너지",
+      "title": "우크라이나 드론 공격으로 자포리자 원전 직원 부상",
+      "summary": [
+        "자포리자 원전 측은 우크라이나 드론 공격으로 직원 2명이 부상했다고 주장했습니다.",
+        "원전 운영사는 이번 공격을 테러 행위로 규정하며 원전 시설 종사자를 표적으로 삼아서는 안 된다고 밝혔습니다."
+      ],
+      "whyImportant": "원자력 발전소에 대한 공격은 방사능 누출 위험을 증가시켜 광범위한 지역에 심각한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 자포리자 원전은 유럽 최대 규모이며, 공습으로 전력 공급 차단이 빈발하여 냉각 시스템 가동 중단 우려가 끊이지 않고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "우크라이나가 러시아에 점령된 자포리자 원자력발전소를 무인항공기(드론)로 공격해 근무 중이던 직원 2명이 부상했다고 원전 측이 14일(현지시간) 주장했다."
+        }
+      ],
+      "dedupeKey": "2명-공격-드론-부상-우크라이나-원전-자포리자-직원",
+      "clusterKey": "우크라이나/드론/공격",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1353595",
+      "publishedAt": "2026-05-14T15:44:03+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

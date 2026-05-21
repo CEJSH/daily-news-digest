@@ -1,72 +1,96 @@
 {
-  "date": "2026-05-21",
+  "date": "2026-05-22",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-21T08:52:24.919783+09:00",
+  "lastUpdatedAt": "2026-05-22T08:39:01.036365+09:00",
   "items": [
     {
-      "id": "2026-05-21_1",
-      "date": "2026-05-21",
-      "category": "국제",
-      "title": "외신, 삼성전자 노사 협상 결렬…세계 공급망 위기 가능성 제기",
+      "id": "2026-05-22_1",
+      "date": "2026-05-22",
+      "category": "산업",
+      "title": "자원 민족주의 확산과 원자재 수출 통제",
       "summary": [
-        "주요 외신들은 삼성전자 노사 협상 결렬 소식을 긴급 뉴스로 보도하며, 파업이 장기화될 경우 세계 반도체 공급망에 위기를 초래할 수 있다고 지적했습니다.",
-        "로이터통신은 4만 8천 명의 노동자 이탈로 한국 경제와 글로벌 반도체 공급망에 부담을 줄 수 있다고 평가했습니다.",
-        "AFP통신은 파업으로 심각한 생산 차질과 손실이 발생할 가능성이 있으며, 한국 수출의 약 35%를 차지하는 반도체 산업에 타격을 줄 수 있다는 우려를 제기했습니다."
+        "인도네시아는 니켈 등 원자재 가격을 직접 결정하겠다고 선언하며 수출 통제를 강화하고 있습니다.",
+        "칠레는 구리 생산량을 줄여 가격 방어 전략을 취하고 있으며, 콩고는 코발트 수출 쿼터를 강화했습니다.",
+        "OECD에 따르면 핵심 원자재 수출 제한 조치는 2009년 대비 5배 증가했습니다."
       ],
-      "whyImportant": "삼성전자 파업은 글로벌 반도체 공급망에 영향을 미칠 수 있는 중요한 사안입니다.",
-      "importanceRationale": "근거: 삼성전자 파업으로 4만 8천 명의 노동자가 이탈하고, 한국 수출의 약 35%를 차지하는 반도체 생산에 차질이 생길 수 있다는 점에서 중요합니다.",
+      "whyImportant": "자원 수출 통제는 관련 산업 공급망에 영향을 미치고 가격 변동성을 확대할 수 있습니다.",
+      "importanceRationale": "근거: OECD 보고서에 따르면, 2023년 핵심 원자재 수출 제한은 2009년보다 5배 증가하여 산업 전반에 걸쳐 공급망 및 가격에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "해당 자원의 세계 공급량을 조절해 판매 수익을 극대화하겠다는 전략에서다."
+        }
+      ],
+      "dedupeKey": "5배-민족주-수출-원자재-인도네시아-자원-통제-확산",
+      "clusterKey": "자원/민족주/확산",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052125731",
+      "publishedAt": "2026-05-21T09:28:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_2",
+      "date": "2026-05-22",
+      "category": "국제",
+      "title": "식량 안보, 비료 공급망 차질 및 엘니뇨 위험으로 압박",
+      "summary": [
+        "최근 기후 및 국가 안보 관련 글에서 식량 안보의 취약성이 부각되고 있습니다.",
+        "이란 분쟁으로 인한 공급망 차질, 천연가스 가격 변동성, 엘니뇨 및 가뭄이 복합적으로 작용하고 있습니다.",
+        "2023년 중반 엘니뇨 발생 후 2024년 초 특정 주요 작물 생산량 감소가 예상됩니다."
+      ],
+      "whyImportant": "비료 공급망 차질과 엘니뇨 현상은 식량 가격 상승과 공급 부족을 야기하여 장기적인 식량 안보에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 2022년 러시아-우크라이나 전쟁으로 인한 비료 접근 제한과 2023년 엘니뇨 발생 후 2024년 초 특정 작물 생산량 감소 예상은 식량 안보에 대한 구체적인 위협입니다.",
+      "impactSignals": [
+        {
+          "label": "infra",
+          "evidence": "The food security piece highlighted where concentration risks in key farming inputs or climate sensitive crops could be threatened by trade disruptions or climate variability."
+        }
+      ],
+      "dedupeKey": "공급망-비료-식량-안보-압박-엘니뇨-위험-차질",
+      "clusterKey": "식량/안보/비료",
+      "matchedTo": null,
+      "sourceName": "J",
+      "sourceUrl": "https://www.jpmorgan.com/insights/sustainability/climate/food-security-under-pressure",
+      "publishedAt": "2026-05-21T22:41:15+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_3",
+      "date": "2026-05-22",
+      "category": "기술",
+      "title": "일론 머스크, 스페이스X와 테슬라 합병할까? 추측 확산",
+      "summary": [
+        "스페이스X의 IPO 이후, 일부에서는 스페이스X와 테슬라의 합병 가능성을 제기하고 있습니다.",
+        "두 회사는 이미 텍사스 동부에 반도체 제조 공장인 테라팹을 공동으로 개발 중이며, 이는 최대 1,190억 달러의 비용이 소요될 수 있습니다.",
+        "Will Elon Musk eventually merge SpaceX with Tesla?"
+      ],
+      "whyImportant": "두 회사의 합병은 AI 생태계에서 일론 머스크의 영향력을 확대하고, 테슬라의 경쟁력 강화에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 테슬라와 스페이스X가 공동으로 테라팹을 개발하며 최대 1,190억 달러의 비용이 소요될 수 있다는 점이 합병 가능성에 대한 추측을 뒷받침합니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "#삼성전자 #로이터 #파업 #외신 #블룸버그 #afp 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)"
-        },
-        {
-          "label": "policy",
-          "evidence": "먼저 로이터 통신은 삼성전자가 성과급 지급과 관련해 노사 협상 타결에 실패했다는 소식에 긴급 속보를 잇따라 내보냈습니다."
+          "evidence": "Tesla and SpaceX, which also owns artificial intelligence company xAI, are already developing the semiconductor fabrication plant Terafab in East Texas. The project would manufacture chips for the two companies and filings show it can cost up to to $119 billion."
         }
       ],
-      "dedupeKey": "결렬-공급망-노사-삼성전자-세계-외신-위기-협상",
-      "clusterKey": "관세/통신/외신",
+      "dedupeKey": "190억-머스크-스페이스x-일론-추측-테슬라-합병할까-확산",
+      "clusterKey": "상장/일론/인수합병",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356285",
-      "publishedAt": "2026-05-20T07:42:44+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_2",
-      "date": "2026-05-21",
-      "category": "국제",
-      "title": "국제 유가 소폭 하락, 이란 협상 진전 기대",
-      "summary": [
-        "국제 유가가 미국과 이란 간 협상 진전 기대감으로 소폭 하락했습니다.",
-        "브렌트유는 0.73% 하락한 배럴당 111.29달러, 서부텍사스산원유는 0.82% 하락한 배럴당 107.77달러에 마감했습니다."
-      ],
-      "whyImportant": "국제 유가 변동은 에너지 시장 전반에 영향을 미치며, 관련 산업 및 소비자 물가에 파급 효과를 가져올 수 있습니다.",
-      "importanceRationale": "근거: 브렌트유와 서부텍사스산원유 가격이 각각 0.73%, 0.82% 하락하여 유가 변동이 발생했고, 이는 시장의 이란 협상 진전 기대감을 반영합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "JD 밴스 미 부통령은 이날 오후 기자들에게 미·이란 협상과 관련, \"상당한 진전이 있었다고 판단한다\"며 \"이란 측도 합의를 원하고 있다고 생각한다\"고 말했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "브렌트유 0.73%↓, 여전히 111달러대 (뉴욕=연합뉴스) 김연숙 특파원 = 3거래일 연속 상승했던 국제유가가 19일(현지시간) 소폭 하락했다."
-        }
-      ],
-      "dedupeKey": "국제-기대-소폭-유가-이란-진전-하락-협상",
-      "clusterKey": "관세/국제",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1355813",
-      "publishedAt": "2026-05-19T19:43:50+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/will-elon-musk-eventually-merge-spacex-with-tesla-speculation-builds.html",
+      "publishedAt": "2026-05-21T19:19:06+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -75,148 +99,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-21_3",
-      "date": "2026-05-21",
-      "category": "에너지",
-      "title": "한일, 에너지 안보 협력 강화 및 원유·LNG 스와프 추진",
-      "summary": [
-        "이재명 대통령과 다카이치 사나에 일본 총리가 에너지 분야 협력을 강화하기로 했습니다.",
-        "양국은 액화천연가스(LNG), 원유 등의 스와프 거래를 포함한 에너지 안보 강화 협력을 추진합니다.",
-        "산업통상부와 일본 경제산업성은 원유, 석유제품 스와프 관련 민관 대화를 장려하기로 했습니다."
-      ],
-      "whyImportant": "이번 협력은 중동 사태로 인한 에너지 안보 위기에 대한 공동 대응 기반을 마련했다는 점에서 중요합니다.",
-      "importanceRationale": "근거: 한국가스공사와 제라(JERA)는 LNG 운반선 교환에 합의했으며, 산업통상부와 일본 경제산업성은 민관 대화를 장려하기로 합의했습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "구체적으로 호르무즈해협 봉쇄 사태로 공조 필요성이 커진 LNG·원유 분야 협력이 논의됐다."
-        }
-      ],
-      "dedupeKey": "lng-강화-스와프-안보-에너지-원유-한일-협력",
-      "clusterKey": "한일_관세/에너지/안보",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026051971231",
-      "publishedAt": "2026-05-19T09:08:12+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_4",
-      "date": "2026-05-21",
-      "category": "국제",
-      "title": "해커, 오픈소스 패키지 다수 침해 공급망 공격 진행",
-      "summary": [
-        "해커들이 여러 인기 있는 오픈소스 프로젝트를 침해하는 사이버 공격이 진행 중입니다.",
-        "SafeDep에 따르면 해커는 한 개발자의 계정을 탈취하여 약 20분 만에 317개 패키지에 걸쳐 630개 이상의 악성 버전을 배포했습니다.",
-        "이번 공격의 목표는 데이터 탈취 및 악성코드 확산을 위해 비밀번호 관리자를 포함한 다양한 서비스의 자격 증명을 훔치는 것입니다."
-      ],
-      "whyImportant": "오픈소스 소프트웨어 공급망 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 피해를 초래할 수 있어 보안 관점에서 중요합니다.",
-      "importanceRationale": "근거: 해커가 317개 패키지에 걸쳐 630개 이상의 악성 버전을 배포했으며, OpenAI 직원들의 컴퓨터도 침해당하는 등 여러 피해 사례가 발생했습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "In an ongoing cyberattack, hackers have compromised several popular open source projects that software developers all over the world rely on."
-        }
-      ],
-      "dedupeKey": "공격-공급망-다수-오픈소스-진행-침해-패키지-해커",
-      "clusterKey": "해커/오픈소스/패키지",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/05/19/hackers-have-compromised-dozens-of-popular-open-source-packages-in-an-ongoing-supply-chain-attack/",
-      "publishedAt": "2026-05-19T15:32:46+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_5",
-      "date": "2026-05-21",
-      "category": "에너지",
-      "title": "원전 미승인 드론 침투 탐지·격추 훈련 실시",
-      "summary": [
-        "울산 새울원자력본부에서 미승인 드론 침투 상황을 가정한 탐지, 격추, 검거 훈련이 실시되었습니다.",
-        "이번 훈련은 드론 테러 대응 체계를 점검하기 위해 한국수력원자력과 원자력안전위원회가 진행했습니다.",
-        "원안위는 드론 대응 강화를 위해 레이더와 카메라를 도입하고, 올해 월성원전부터 단계적으로 확대할 예정입니다."
-      ],
-      "whyImportant": "원전 시설에 대한 드론 공격 위협이 증가하는 상황에서, 드론 방어 체계 강화는 중요합니다.",
-      "importanceRationale": "근거: 원자력안전위원회가 드론 방어 강화를 위해 레이더와 카메라를 도입하고 올해 월성원전부터 확대할 예정이며, 관련 법 개정을 통해 훈련 중 재머 사용이 가능해질 예정입니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "최근 중동 지역 원전을 겨냥한 드론 공격으로 우려가 커지는 가운데, 정부가 새울원전 드론 테러 대응 체계를 점검했다."
-        }
-      ],
-      "dedupeKey": "격추-드론-미승인-실시-원전-침투-탐지-훈련",
-      "clusterKey": "미승인/드론/침투",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1259587.html",
-      "publishedAt": "2026-05-20T07:56:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_6",
-      "date": "2026-05-21",
+      "id": "2026-05-22_4",
+      "date": "2026-05-22",
       "category": "기술",
-      "title": "구글, 25년 만에 AI 기반으로 검색창 전면 개편",
+      "title": "Anthropic, 50억 달러 투자 후 AI 칩 계약을 위해 Microsoft와 협상 중",
       "summary": [
-        "구글이 25년 만에 검색창을 대대적으로 개편하여 인공지능 모델과의 결합을 강화합니다.",
-        "새 검색창은 텍스트, 이미지, 파일 등 다양한 형태로 입력이 가능하며, 사용자 질문 의도를 파악해 검색과 질문을 추천합니다.",
-        "정보·예약 비서 기능이 추가되어 사용자 편의성을 높일 예정입니다."
+        "Microsoft가 Anthropic에 자체 AI 칩을 공급하기 위해 협상 중인 것으로 확인되었습니다.",
+        "Anthropic은 2029년 5월까지 SpaceX에 컴퓨팅 파워 비용으로 월 12억 5천만 달러를 지불할 예정입니다.",
+        "Anthropic은 Amazon Web Services의 Trainium 칩을 10년 동안 1,000억 달러 이상 규모로 사용할 것이라고 밝혔습니다."
       ],
-      "whyImportant": "구글 검색창의 개편은 사용자 검색 방식 변화에 발맞춰 AI 기반 검색 서비스의 중요성을 강조합니다.",
-      "importanceRationale": "근거: 구글은 25년 만에 검색창을 개편하며, 새로운 기능들은 올 여름부터 미국 내 사용자를 대상으로 제공될 예정입니다.",
-      "impactSignals": [],
-      "dedupeKey": "개편-검색창-결합-구글-기반-만에-모델-인공지능",
-      "clusterKey": "ai/구글",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/it/1259562.html",
-      "publishedAt": "2026-05-20T09:39:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_7",
-      "date": "2026-05-21",
-      "category": "에너지",
-      "title": "한국 건설 바라카 원전 공격, 배후는 이라크 발 드론",
-      "summary": [
-        "아랍에미리트(UAE) 국방부는 바라카 원자력 발전소를 타격한 드론이 이라크에서 발사됐다고 밝혔습니다.",
-        "당시 공격에 동원된 3기의 드론 중 2기는 요격되었고, 1기는 원전 외곽 발전기에 충돌했습니다.",
-        "한국 기업들이 건설하고 운영에 관여 중인 바라카 원전 단지는 드론 공격을 받았으나, 인명 피해와 방사능 안전에는 영향이 없었습니다."
-      ],
-      "whyImportant": "원전 시설에 대한 드론 공격은 잠재적인 보안 위협을 야기하며, 유사 시설에 대한 경각심을 높이는 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: UAE 국방부는 드론 3기가 공격에 동원되었으며, 그 중 1기가 원전 외곽 발전기에 충돌했다고 밝혔습니다.",
+      "whyImportant": "AI 칩 시장에서 Microsoft의 입지를 강화하고, Anthropic의 컴퓨팅 파워 확보 전략에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: Microsoft가 Anthropic에 AI 칩을 공급하는 협상과 Anthropic이 SpaceX에 월 12억 5천만 달러를 지불하는 계약은 컴퓨팅 파워 확보 경쟁의 중요성을 보여줍니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "한국전력을 비롯한 한국 기업들이 건설하고 운영에도 관여 중인 아부다비 바라카 원전 단지는 지난 17일 드론 공격을 받았습니다."
+          "label": "policy",
+          "evidence": "WATCH: Nvidia CEO Jensen Huang: With Anthropic, we are scaling very quickly, we have big plans for them Correction: In April, Anthropic said it would use Amazon Web Services’ custom Trainium chips in a 10-year arrangement worth more than $100 billion."
+        },
+        {
+          "label": "earnings",
+          "evidence": "Microsoft’s Maia 200 “offers over 30% improved tokens per dollar, compared to the latest silicon in our fleet,” CEO Satya Nadella said on the company’s earnings call in April."
         }
       ],
-      "dedupeKey": "건설-공격-드론-바라카-배후-원전-이라크-한국",
-      "clusterKey": "에너지/건설",
+      "dedupeKey": "000억-50억-anthropic-microsoft-계약-달러-투자-협상",
+      "clusterKey": "투자/anthropic/관세",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356229",
-      "publishedAt": "2026-05-20T06:31:46+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "publishedAt": "2026-05-21T18:02:33+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -225,24 +134,54 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-21_8",
-      "date": "2026-05-21",
+      "id": "2026-05-22_5",
+      "date": "2026-05-22",
+      "category": "금융",
+      "title": "매출 증가에도 월마트 주가 폭락, 고유가 영향",
+      "summary": [
+        "월마트의 1분기 매출은 7.3% 증가했지만, 물류비 증가로 인해 내년 주당 순이익 전망치가 기대에 미치지 못해 주가가 7% 넘게 하락했습니다.",
+        "미국 서비스업 구매 관리자 지수(PMI)는 5월에 50.9로 하락하며 서비스업 경기 둔화가 중소, 중견기업으로 확산되는 추세입니다."
+      ],
+      "whyImportant": "유통 업체의 실적 부진과 서비스업 경기 둔화는 미국 경제 전반의 불확실성을 시사합니다.",
+      "importanceRationale": "근거: 월마트 주가가 7% 넘게 하락했고, 5월 미국 서비스업 PMI가 50.9로 하락하여 미국 경제의 약 80%를 차지하는 서비스업의 둔화가 나타났기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "물류비 증가분이 이익 증가분을 상쇄했다는 분석이 나오면서 내년 주당 순이익 전망치가 기대에 미치지 못하자 주가는 7% 넘게 하락했습니다."
+        }
+      ],
+      "dedupeKey": "고유-매출-영향-월마트-주가-중견기업-증가-폭락",
+      "clusterKey": "실적/월마트",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0134_202605220709118219",
+      "publishedAt": "2026-05-21T22:09:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_6",
+      "date": "2026-05-22",
       "category": "에너지",
       "title": "새울원전, 드론 테러 대응 훈련…5분 만에 격추",
       "summary": [
-        "울산 새울원전에서 드론 테러 시도 상황을 가정한 방호 훈련이 실시되었습니다.",
-        "불법 드론 탐지부터 격추, 조종자 검거까지 10분 이내에 완료되었으며, 드론 격추에는 5분이 소요되었습니다."
+        "울산 새울원전에서 드론 테러 시도 상황을 가정한 방호 훈련이 실시되었으며, 불법 드론 탐지부터 조종자 검거까지 10분 만에 완료되었습니다.",
+        "원자력안전위원회는 원자력시설 주변 불법 드론 대응을 위해 범정부 전담팀을 운영하고 있으며, 국내 원전에 레이더와 카메라를 추가 도입할 예정입니다."
       ],
-      "whyImportant": "원자력 시설에 대한 드론 테러 위협이 증가하는 상황에서, 신속한 대응 체계 구축 및 관련 기술 확보가 중요합니다.",
-      "importanceRationale": "근거: 원전 반경 18.5km 비행금지, 2015년부터 드론 위협 반영, 모든 원전에 재머와 RF 스캐너 도입 등 원자력 시설의 드론 대응 체계 구축 노력이 이루어지고 있습니다.",
+      "whyImportant": "원전 시설에 대한 드론 테러 위협이 증가함에 따라, 신속한 대응 체계 구축 및 관련 기술 도입이 중요해지고 있습니다.",
+      "importanceRationale": "근거: 원전 반경 18.5km는 비행금지구역으로 지정되어 있으며, 원안위는 2015년부터 드론 위협을 '설계기준위협'에 반영하여 불법 드론 대응 체계를 구축하도록 하고 있습니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "불법 드론 탐지부터 조종자 검거까지 실전 훈련 공개 새울 4호기 내부 공개…원안위원장 \"에너지 안보 큰역할 기대\""
+          "evidence": "이번 훈련은 드론을 이용한 테러 시도가 발생한 상황을 가정해 이뤄졌다"
         }
       ],
       "dedupeKey": "5분-격추-대응-드론-만에-새울원전-테러-훈련",
-      "clusterKey": "드론/테러/대응",
+      "clusterKey": "새울원전/드론/테러",
       "matchedTo": null,
       "sourceName": "연합",
       "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356093",
@@ -255,28 +194,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-21_9",
-      "date": "2026-05-21",
+      "id": "2026-05-22_7",
+      "date": "2026-05-22",
       "category": "국제",
-      "title": "이재명 정부 외교 정책, 실용주의로 긍정적 평가",
+      "title": "국제 유가 하락, 이란 협상 진전 기대",
       "summary": [
-        "한국정치학회 설문조사에서 이재명 정부의 외교 정책이 5점 만점에 3.79점을 받았습니다.",
-        "대미, 대일 관계에서 긍정적 평가를 받았으며, 특히 대미 관세 및 안보 협상 결과가 긍정적으로 평가되었습니다."
+        "국제 유가는 미국과 이란 간의 협상 진전 기대감으로 3일 연속 하락 마감했습니다.",
+        "브렌트유 선물은 2.32% 하락한 배럴당 102.58달러에, 서부텍사스산원유는 1.94% 떨어진 96.35달러에 마감했습니다."
       ],
-      "whyImportant": "정부의 외교 정책 방향은 향후 국제 관계 및 국내 경제에 지속적인 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 한국정치학회 118명을 대상으로 한 설문조사에서 외교 정책이 3.79점을 받았으며, 대미 관계에서 핵추진 잠수함 건조 승인 등의 성과가 있었습니다.",
+      "whyImportant": "이란 핵 협상 결과에 따라 국제 에너지 시장의 변동성이 확대될 수 있습니다.",
+      "importanceRationale": "근거: 브렌트유 선물은 2.32% 하락했으며, 서부텍사스산원유는 1.94% 하락하여 국제 유가 하락을 보였습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "이재명 정부가 외교 정책 전반에서 긍정적인 1년 성적표를 받았다."
+          "evidence": "최근 트럼프 대통령은 걸프 지역 동맹국들의 요청에 따라, 임박했던 이란 공습을 전격 취소한 데 이어, 전날엔 협상 진전을 위해 이란 측 답변을 며칠 더 기다릴 용의가 있다고 말했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "장중 큰 변동성에도 외교 해결 낙관론 무게 (뉴욕=연합뉴스) 김연숙 특파원 = 21일(현지시간) 국제유가가 미국과 이란 간의 협상 진전 기대감에 3일 연속 하락 마감했다."
         }
       ],
-      "dedupeKey": "5점-79점-긍정적-실용주-외교-이재명-정부-정책",
-      "clusterKey": "정책/이재명/관세",
+      "dedupeKey": "58달러-국제-기대-유가-이란-진전-하락-협상",
+      "clusterKey": "관세/국제",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026051970421",
-      "publishedAt": "2026-05-19T09:27:16+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1357061",
+      "publishedAt": "2026-05-21T19:47:54+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -285,62 +228,36 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-21_10",
-      "date": "2026-05-21",
-      "category": "에너지",
-      "title": "UAE 국방부, 바라카 원전 공격 드론 이라크 발사",
+      "id": "2026-05-22_8",
+      "date": "2026-05-22",
+      "category": "국제",
+      "title": "외신, 삼성전자 노사 협상 결렬…글로벌 공급망 위기 가능성 제기",
       "summary": [
-        "아랍에미리트(UAE) 국방부는 바라카 원자력 발전소를 타격한 드론이 이라크에서 발사됐다고 밝혔습니다.",
-        "UAE 국방부는 지난 48시간 동안 자국 내 주요 시설을 겨냥한 적대적 드론 6기를 추가로 요격했다고 발표했습니다."
+        "주요 외신들이 삼성전자 노사 협상 결렬 소식을 긴급 뉴스로 보도하며, 파업 장기화 시 세계 반도체 공급망에 위기를 초래할 수 있다고 지적했습니다.",
+        "로이터통신은 4만 8천 명의 노동자 이탈로 한국 경제와 글로벌 반도체 공급망에 부담을 줄 수 있다고 평가했습니다.",
+        "AFP통신은 파업으로 심각한 생산 차질과 손실이 발생할 가능성이 있으며, 한국 수출의 약 35%를 차지하는 반도체 산업에 타격을 줄 수 있다는 우려를 제기했습니다."
       ],
-      "whyImportant": "이번 사건은 원자력 발전소와 주요 시설에 대한 드론 공격 위협이 현실화되었음을 보여주며, 향후 유사 공격에 대한 대비책 마련의 중요성을 강조합니다.",
-      "importanceRationale": "근거: UAE 국방부는 바라카 원전 공격에 동원된 드론 3기가 모두 이라크 영토에서 발사되었으며, 지난 48시간 동안 적대적 드론 6기를 추가로 요격했다고 밝혔습니다.",
+      "whyImportant": "삼성전자 파업은 글로벌 반도체 공급망에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 삼성전자 파업이 장기화될 경우, 한국 수출의 약 35%를 차지하는 반도체 산업에 타격을 줄 수 있다는 외신 보도가 있습니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "UAE 국방부는 또 지난 48시간 동안 자국 내 민간 및 핵심 주요 시설을 겨냥한 적대적 드론 6기를 추가로 방공 시스템을 통해 요격했다고 밝혔다."
+          "label": "capex",
+          "evidence": "#삼성전자 #로이터 #파업 #외신 #블룸버그 #afp 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)"
+        },
+        {
+          "label": "policy",
+          "evidence": "먼저 로이터 통신은 삼성전자가 성과급 지급과 관련해 노사 협상 타결에 실패했다는 소식에 긴급 속보를 잇따라 내보냈습니다."
         }
       ],
-      "dedupeKey": "uae-공격-국방부-드론-바라카-발사-원전-이라크",
-      "clusterKey": "에너지/uae",
+      "dedupeKey": "결렬-공급망-글로벌-노사-삼성전자-외신-위기-협상",
+      "clusterKey": "관세/통신/외신",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1355773",
-      "publishedAt": "2026-05-19T14:38:28+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356285",
+      "publishedAt": "2026-05-20T07:42:44+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-21_11",
-      "date": "2026-05-21",
-      "category": "금융",
-      "title": "이 대통령, 삼성전자 노조의 영업이익 배분 요구에 대한 강경 메시지 발표",
-      "summary": [
-        "이재명 대통령은 삼성전자 노조의 영업이익 배분 요구에 대해 투자자도 할 수 없는 과도한 요구라고 밝혔습니다.",
-        "대통령은 노조의 요구가 시장경제 원칙을 벗어난 것이며, 다른 기업 노조에 선례가 되어서는 안 된다는 입장입니다.",
-        "정부가 긴급조정권을 발동할 수 있음을 시사하며, 선을 넘을 때는 책임을 다해야 한다고 덧붙였습니다."
-      ],
-      "whyImportant": "대통령의 발언은 향후 노사 관계 및 기업 이익 배분 방식에 대한 정부의 정책 방향을 가늠할 수 있는 중요한 지표가 될 수 있습니다.",
-      "importanceRationale": "근거: 대통령이 삼성전자 노조의 요구에 대해 강경한 입장을 표명하며, 향후 다른 기업 노조에 미칠 선례를 우려하고 있어 중요도 3으로 판단됩니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "이재명 대통령이 20일 삼성전자 노조를 향해 “영업이익의 일정 비율을 제도적으로 나눠 갖는 건 투자자도 할 수 없는 일”이라며 노조의 요구가 과하다는 인식을 숨김없이 드러냈다."
-        }
-      ],
-      "dedupeKey": "기업-노조-대통령-메시지-배분-삼성전자-영업이익-정부",
-      "clusterKey": "실적/대통령",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/politics/bluehouse/1259668.html",
-      "publishedAt": "2026-05-20T13:57:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

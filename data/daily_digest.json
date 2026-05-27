@@ -1,98 +1,34 @@
 {
-  "date": "2026-05-27",
+  "date": "2026-05-28",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-27T08:44:41.958616+09:00",
+  "lastUpdatedAt": "2026-05-28T08:48:40.240178+09:00",
   "items": [
     {
-      "id": "2026-05-27_1",
-      "date": "2026-05-27",
+      "id": "2026-05-28_1",
+      "date": "2026-05-28",
       "category": "국제",
-      "title": "미국-이란 협상 기대감 속 국제 유가 상승",
+      "title": "중국, 미국 핵 질서 견제하며 북핵 문제에 소극적 태도",
       "summary": [
-        "미국이 이란 남부를 공습한 가운데, 브렌트유 7월 인도분 선물은 3.6% 상승한 배럴당 99.58달러를 기록했습니다.",
-        "트럼프 대통령은 이란과의 협상이 순조롭게 진행 중이나 결렬 시 군사 행동을 재개할 수 있다고 밝혔습니다.",
-        "미국 증시 선물은 국제 유가 상승에도 불구하고 상승세를 보였습니다."
+        "중국은 북한의 전술핵 운용 3종 세트 발사에 대해 사실상 침묵했습니다.",
+        "이란 핵 문제에 대해서도 국제 핵비확산 체제 안에서 해결해야 한다는 입장을 밝혔습니다.",
+        "미국 중심의 핵 질서 확대를 견제하면서도, 전쟁 확산 방지와 에너지 공급망 유지에 더 중점을 두고 있다는 분석입니다."
       ],
-      "whyImportant": "미국과 이란 간의 협상 및 군사적 긴장 완화 여부가 국제 유가 및 시장 변동성에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 브렌트유가 3.6% 상승했으며, 트럼프 대통령의 발언이 시장에 영향을 미치고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "이 날 국제 유가 벤치마크인 브렌트유 7월 인도분 선물은 그리니치표준시(GMT)로 오전 10시 35분에 유럽 시장 거래에서 3.6% 상승한 배럴당 99.58달러를 기록했다."
-        }
-      ],
-      "dedupeKey": "58달러-국제-기대감-미국-상승-유가-이란-협상",
-      "clusterKey": "관세/기대감",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202605260165i",
-      "publishedAt": "2026-05-26T10:07:14+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-27_2",
-      "date": "2026-05-27",
-      "category": "에너지",
-      "title": "비에이치아이, 575억 규모 LNG 복합화력 발전설비 공급 계약 체결",
-      "summary": [
-        "비에이치아이는 CHEC-HEI-THCC General Partner와 575억 원 규모의 LNG 복합화력 발전설비 공급 계약을 체결했습니다.",
-        "계약 금액은 작년 연결 기준 매출액의 7.4%에 해당하며, 계약 기간은 2026년 5월부터 2029년 2월까지입니다."
-      ],
-      "whyImportant": "이번 계약은 비에이치아이의 매출 증대에 기여하며, LNG 복합화력 발전설비 시장에서의 입지를 강화하는 데 중요합니다.",
-      "importanceRationale": "근거: 계약 금액이 575억 원으로 작년 매출액의 7.4%를 차지하며, 계약 기간은 2026년부터 2029년까지로 설정되어 있어 중장기적인 매출 확보에 기여할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "IB 업계 관계자는 \"비에이치아이는 단순 투자를 넘어 PE의 밸류업 전략이 지방 소재 기업의 기술력과 만났을 때 발생하는 시너지를 보여준 사례\"라며 \"원전 시장의 파고를 넘어 기업을 살린 것은 물론 지역 산업의 자부심을 회복시키는 계기가 됐다\"고 말했다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "글로벌 리서치 기관인 맥코이 리포트가 발간한 HRSG 시장 분석에 따르면 비에이치아이는 2024년과 2025년 2년 연속 글로벌 HRSG에서 1위 수주 실적을 기록했다."
-        }
-      ],
-      "dedupeKey": "575억-lng-계약-공급-규모-발전설비-복합화력-비에이치아",
-      "clusterKey": "비에이치아/575억/규모",
-      "matchedTo": null,
-      "sourceName": "블로터",
-      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=663402",
-      "publishedAt": "2026-05-26T02:09:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-27_3",
-      "date": "2026-05-27",
-      "category": "정책",
-      "title": "토지거래허가구역 실거주 의무 유예 범위 확대 시행령 국무회의 통과",
-      "summary": [
-        "토지거래허가구역 내 주택 거래 시 실거주 의무 유예 범위가 세입자가 있는 전체 주택으로 확대됩니다.",
-        "이번 개정 시행령에 따라 29일부터 관할 관청에 토지거래 허가를 신청할 수 있습니다."
-      ],
-      "whyImportant": "이번 시행령 개정은 부동산 거래에 영향을 미치는 정책 변화입니다.",
-      "importanceRationale": "근거: 29일부터 시행되며, 서울 전역과 경기 12개 지역이 토지거래허가구역에 해당되어 규제 대상에 영향을 미칩니다.",
+      "whyImportant": "중국의 이러한 행보는 국제 핵 질서에 대한 복잡한 역학 관계를 보여주며, 향후 관련국들의 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국이 북핵 문제에 소극적인 태도를 보이고 이란 핵 문제에 대한 협상 해법을 강조하는 것은 미국 중심의 핵 질서 견제와 에너지 공급망 유지라는 두 가지 목표를 동시에 추구하기 때문입니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "정부는 26일 청와대에서 이재명 대통령 주재로 국무회의를 열어 이 같은 내용을 담은 부동산 거래 신고 등에 관한 법률 시행령 개정안을 심의·의결했다."
+          "evidence": "이란 핵 문제에서도 군사 압박보다 협상 해법을 강조하고 있습니다."
         }
       ],
-      "dedupeKey": "국무회-범위-시행령-실거주-유예-의무-토지거래허가구역-확대",
-      "clusterKey": "정책/토지거래허가구역",
+      "dedupeKey": "견제-문제-미국-북핵-소극적-중국-질서-태도",
+      "clusterKey": "미중/질서/견제/북핵",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026052690307",
-      "publishedAt": "2026-05-26T04:43:49+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359243",
+      "publishedAt": "2026-05-27T11:51:11+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -101,37 +37,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-27_4",
-      "date": "2026-05-27",
+      "id": "2026-05-28_2",
+      "date": "2026-05-28",
       "category": "기술",
-      "title": "마이크론 시가총액, 사상 첫 1조 달러 돌파",
+      "title": "퀄컴, 중국 틱톡에 AI 데이터센터용 칩 공급",
       "summary": [
-        "AI 데이터센터 확산으로 마이크론의 시가총액이 사상 처음으로 1조 달러를 넘어섰습니다.",
-        "UBS는 마이크론 목표 주가를 기존 535달러에서 1625달러로 상향 조정했습니다.",
-        "AI 인프라 확대 이후 대형 고객사들이 장기 공급 계약에 적극 나서고 있다는 분석입니다."
+        "퀄컴이 중국 바이트댄스에 AI 데이터센터용 반도체를 공급합니다.",
+        "바이트댄스는 퀄컴의 AI 반도체 수백만 개를 구매하기로 했습니다.",
+        "이번 계약은 미국의 대중국 AI 칩 수출 규제 속에서 이루어졌습니다."
       ],
-      "whyImportant": "AI 시대에 메모리 반도체 수요 증가와 산업 구조 변화 가능성을 시사합니다.",
-      "importanceRationale": "근거: 마이크론 주가가 19% 급등하며 시가총액 1조 달러를 돌파했고, UBS는 목표 주가를 세 배 이상 상향 조정했습니다.",
+      "whyImportant": "이번 공급은 미국의 대중국 AI 칩 수출 규제 속에서 퀄컴이 중국 시장을 공략하는 중요한 사례가 될 수 있습니다.",
+      "importanceRationale": "근거: 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 44조6000억원으로 확대했으며, 퀄컴은 AI 반도체 수백만 개를 공급합니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "AI 데이터센터 확산에 메모리 수요 폭증 올해 주가만 3배 급등…‘사이클’ 공식 흔들 “AI 시대엔 메모리 공급 부족 장기화 가능성” 미국 메모리 반도체 기업 마이크론의 시가총액이 사상 처음으로 1조달러를 돌파했다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "인공지능(AI) 데이터센터 확산으로 고대역폭메모리(HBM)와 서버용 D램 수요가 폭증하면서 경기 흐름에 따라 실적이 급변하던 메모리 산업의 구조 자체가 바뀌고 있다는 분석이 나온다."
+          "evidence": "AI 신흥 강자로 떠오른 중국을 대표하는 빅테크인 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 2000억위안(약 44조6000억원)으로 확대했다."
         },
         {
           "label": "policy",
-          "evidence": "그동안 AI 반도체 시장은 엔비디아가 사실상 독주해왔지만 AI 모델 규모가 커질수록 메모리 병목 현상이 심해지면서 메모리 기업들의 협상력도 함께 커지고 있다는 것이다."
+          "evidence": "퀄컴, 中틱톡에 AI데이터센터용 칩 공급 美 수출 규제속 저성능 칩 공략 미국 반도체 설계사인 퀄컴이 중국 바이트댄스에 인공지능(AI) 데이터센터용 반도체를 공급한다."
         }
       ],
-      "dedupeKey": "1조-535달러-달러-데이터센터-돌파-마이크론-사상-시가총액",
-      "clusterKey": "마이크론/시가총액/사상",
+      "dedupeKey": "공급-대중국-데이터센터용-미국-바이트댄스-중국-퀄컴-틱톡",
+      "clusterKey": "미중_정책/퀄컴",
       "matchedTo": null,
-      "sourceName": "매일경제",
-      "sourceUrl": "https://www.mk.co.kr/news/it/12058366",
-      "publishedAt": "2026-05-26T22:08:50+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052725381",
+      "publishedAt": "2026-05-27T09:14:45+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -140,59 +72,99 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-27_5",
-      "date": "2026-05-27",
-      "category": "정책",
-      "title": "금융위, 국부펀드와 국민성장펀드 기능 중복에 대한 우려 표명",
+      "id": "2026-05-28_3",
+      "date": "2026-05-28",
+      "category": "국제",
+      "title": "크라우드스트라이크와 구글, 오픈 소스 소프트웨어 개발자 대상 해커의 봇넷 제거",
       "summary": [
-        "금융위원회가 재정경제부의 국부펀드 추진에 대해 국민성장펀드와의 기능 중복 우려를 제기했습니다.",
-        "금융위는 국부펀드의 투자 대상을 국민성장펀드와 차별화해야 한다는 의견을 전달했습니다.",
-        "시장에서는 정부 주도 초대형 펀드 자금이 특정 기업군에 몰려 거품이 커질 수 있다는 지적이 나옵니다."
+        "크라우드스트라이크는 구글 및 섀도우서버와 협력하여 오픈 소스 소프트웨어 개발자로부터 악성 코드를 배포하고 비밀번호를 훔치는 데 사용된 봇넷을 제거했습니다.",
+        "이번 제거 작전은 '글래스웜' 봇넷 배후의 사이버 범죄자들의 활동을 방해하는 것을 목표로 했습니다.",
+        "해커들은 개발자들이 사용하는 마켓플레이스에 악성 확장 프로그램을 게시하는 등 여러 전략을 사용했습니다."
       ],
-      "whyImportant": "정책 펀드들의 투자 중복은 자원 배분 왜곡과 장기적인 펀드 공멸로 이어질 수 있어 중요합니다.",
-      "importanceRationale": "근거: 금융위는 150조원 규모의 국민성장펀드와 기능 중복을 우려하며, 시장에서는 특정 기업군에 자금 쏠림으로 인한 거품 발생 가능성을 지적합니다.",
+      "whyImportant": "오픈 소스 소프트웨어 공급망에 대한 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 영향을 미칠 수 있기 때문에 중요합니다.",
+      "importanceRationale": "근거: 크라우드스트라이크에 따르면 해커들은 300개 이상의 GitHub 코드 저장소를 손상시켰으며, 이는 수천 개의 다운스트림 조직 및 사용자에게 영향을 미칠 수 있는 공급망 침해로 이어질 수 있습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "재경부가 올 하반기 ‘20조원+a’ 규모의 국부펀드 출범을 추진하는 가운데 금융위가 “150조원 규모의 국민성장펀드와 기능이 중복된다”는 우려를 표하면서다."
+          "label": "security",
+          "evidence": "CrowdStrike, working with Google and Shadowserver, a nonprofit organization that scans and monitors the internet for cyberattacks, took down a botnet that cybercriminals used to push malware and steal passwords from open source software developers."
         }
       ],
-      "dedupeKey": "국민성장펀드-국부펀드-금융위-금융위원회-기능-재정경제부-중복-표명",
-      "clusterKey": "투자/금융/국부펀드",
+      "dedupeKey": "개발자-구글-대상-소스-소프트웨어-오픈-크라우드스트라이크-해커",
+      "clusterKey": "크라우드스트라이크/구글/오픈",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://marketinsight.hankyung.com/article/202605268839r",
-      "publishedAt": "2026-05-26T05:54:56+00:00",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/27/crowdstrike-and-google-take-down-botnet-used-by-hackers-to-target-software-developers-in-supply-chain-attacks/",
+      "publishedAt": "2026-05-27T16:59:19+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-05-27_6",
-      "date": "2026-05-27",
-      "category": "정책",
-      "title": "아이유·변우석 사과에도 '21세기 대군부인' 폐기 청원 국회 회부",
+      "id": "2026-05-28_4",
+      "date": "2026-05-28",
+      "category": "기술",
+      "title": "엔비디아, 대만 투자 확대 발표 후 대만 반도체 주식 상승",
       "summary": [
-        "MBC 드라마 '21세기 대군부인'의 방영 중단 및 콘텐츠 폐기 청원이 5일 만에 5만 명 이상의 동의를 얻어 국회 상임위원회에 회부됩니다.",
-        "청원인은 역사 왜곡 논란 콘텐츠의 영구 퇴출을 위한 제도적 장치 마련도 촉구했습니다."
+        "엔비디아가 AI 성장에 발맞춰 대만에 새로운 캠퍼스를 건설하고 연간 지출을 10배 늘릴 계획이라고 밝혔습니다.",
+        "대만 가권지수는 수요일 1.7% 상승하여 사상 최고치를 기록했습니다.",
+        "엔비디아는 대만에 연간 1,500억 달러를 지출할 예정이며, 이는 4~5년 전의 100억~150억 달러에서 증가한 수치입니다."
       ],
-      "whyImportant": "역사 왜곡 논란에 대한 제도적 장치 마련 요구가 제기됨에 따라 향후 콘텐츠 제작 및 규제에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 청원이 5일 만에 상임위 회부 요건을 충족했고, 역사 왜곡 콘텐츠 퇴출을 위한 제도적 장치 마련 촉구가 있었습니다.",
+      "whyImportant": "엔비디아의 대만 투자 확대는 글로벌 반도체 공급망과 AI 기술 경쟁에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 대만에 연간 1,500억 달러를 지출할 계획이며, 이는 기존 지출에서 10배 증가한 수치로, 2030년까지 4,000명을 수용할 수 있는 새로운 사무실 단지를 건설할 예정입니다.",
       "impactSignals": [
         {
+          "label": "capex",
+          "evidence": "The company plans to use its new \"LogicFolding\" engineering in a smartphone chip this fall, and in its Ascend chips that power data centers \"by around 2030.\" Earlier this month, widely followed venture capitalist Chamath Palihapitiya also said Taiwan could become less important to global semiconductor development in 18 months due to advances by U.S.-based Neuralink."
+        },
+        {
           "label": "policy",
-          "evidence": "'5일 만에 5만명' 폭발…아이유·변우석 사과에도 결국 국회로 MBC 드라마 '21세기 대군부인', 콘텐츠 폐기 청원 5만명 돌파 청원 5일 만에 상임위 회부 요건 충족 역사 왜곡에 대한 제도적 장치도 촉구 청원 5일 만에 상임위 회부 요건 충족 역사 왜곡에 대한 제도적 장치도 촉구 MBC 드라마 '21세기 대군부인'의 방영 중단과 콘텐츠 폐기를 촉구하는 국회 국민동의청원이 26일 오전 동의자 5만명을 넘어섰다."
+          "evidence": "\"Now we're spending $100 [billion], going to $150 billion in Taiwan each year,\" Huang said in Taipei, noting that's up from $10 billion to $15 billion annually just four or five years ago."
+        },
+        {
+          "label": "earnings",
+          "evidence": "A $150 billion annual outlay in Taiwan would be among Nvidia's largest spending plans to date, and exceed what the company made in revenue in a single quarter."
         }
       ],
-      "dedupeKey": "21세기-국회-대군부인-변우석-아이유-청원-폐기-회부",
-      "clusterKey": "아이유/변우석/사과",
+      "dedupeKey": "500억-대만-반도체-상승-엔비디아-주식-투자-확대",
+      "clusterKey": "투자/엔비디아",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026052687397",
-      "publishedAt": "2026-05-26T02:27:47+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
+      "publishedAt": "2026-05-27T09:41:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-28_5",
+      "date": "2026-05-28",
+      "category": "기술",
+      "title": "엔비디아 '루빈 CPX' 출시 불투명",
+      "summary": [
+        "엔비디아의 추론용 GPU '루빈 CPX'의 올해 하반기 출시가 불투명해졌습니다.",
+        "메모리 및 기판 발주 움직임이 없어 기존 계획 철회 가능성이 제기됩니다.",
+        "GDDR7 메모리 적용 관련 논의가 없는 상황입니다."
+      ],
+      "whyImportant": "엔비디아의 제품 전략 변화는 관련 메모리 및 기판 산업에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 엔비디아가 루빈 CPX에 128GB 용량의 GDDR7 메모리를 탑재할 것이라고 밝혔으나, 현재 관련 논의 자체가 없는 상황입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "당초 올해 하반기 출시 계획을 밝혔으나, 관련 메모리와 기판을 주문하거나 개발하려는 움직임이 없는 것으로 확인됐다."
+        }
+      ],
+      "dedupeKey": "cpx-gddr7-gpu-루빈-불투명-불투명해졌-엔비디아-추론용",
+      "clusterKey": "엔비디아/루빈/cpx",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57206",
+      "publishedAt": "2026-05-27T06:12:06+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

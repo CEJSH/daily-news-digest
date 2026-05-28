@@ -1,34 +1,33 @@
 {
-  "date": "2026-05-28",
+  "date": "2026-05-29",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-28T08:48:40.240178+09:00",
+  "lastUpdatedAt": "2026-05-29T08:54:47.590669+09:00",
   "items": [
     {
-      "id": "2026-05-28_1",
-      "date": "2026-05-28",
+      "id": "2026-05-29_1",
+      "date": "2026-05-29",
       "category": "국제",
-      "title": "중국, 미국 핵 질서 견제하며 북핵 문제에 소극적 태도",
+      "title": "미국, 이란 호르무즈 해협 통행료 관리 기관 제재",
       "summary": [
-        "중국은 북한의 전술핵 운용 3종 세트 발사에 대해 사실상 침묵했습니다.",
-        "이란 핵 문제에 대해서도 국제 핵비확산 체제 안에서 해결해야 한다는 입장을 밝혔습니다.",
-        "미국 중심의 핵 질서 확대를 견제하면서도, 전쟁 확산 방지와 에너지 공급망 유지에 더 중점을 두고 있다는 분석입니다."
+        "미국 재무부가 이란의 페르시아만해협청(PGSA)을 제재 명단에 추가했습니다.",
+        "페르시아만해협청은 호르무즈 해협 통항을 관리하며 선박당 최고 200만 달러의 통행료를 부과하는 기관입니다."
       ],
-      "whyImportant": "중국의 이러한 행보는 국제 핵 질서에 대한 복잡한 역학 관계를 보여주며, 향후 관련국들의 정책 결정에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 중국이 북핵 문제에 소극적인 태도를 보이고 이란 핵 문제에 대한 협상 해법을 강조하는 것은 미국 중심의 핵 질서 견제와 에너지 공급망 유지라는 두 가지 목표를 동시에 추구하기 때문입니다.",
+      "whyImportant": "이번 제재는 미국과 이란 간의 종전 협상과 군사적 긴장 상황에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 재무부는 이란의 호르무즈 해협 관련 기관을 제재 명단에 올렸으며, 이는 이란의 통항 관리에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "이란 핵 문제에서도 군사 압박보다 협상 해법을 강조하고 있습니다."
+          "label": "sanctions",
+          "evidence": "OFAC의 특별제재 대상에 추가되면 미국 내 자산이 동결되고 금융거래 등이 금지된다."
         }
       ],
-      "dedupeKey": "견제-문제-미국-북핵-소극적-중국-질서-태도",
-      "clusterKey": "미중/질서/견제/북핵",
+      "dedupeKey": "관리-기관-미국-이란-통행료-페르시아만해협청-해협-호르무즈",
+      "clusterKey": "제재/호르무즈",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359243",
-      "publishedAt": "2026-05-27T11:51:11+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359538",
+      "publishedAt": "2026-05-28T02:33:20+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -37,8 +36,8 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-28_2",
-      "date": "2026-05-28",
+      "id": "2026-05-29_2",
+      "date": "2026-05-29",
       "category": "기술",
       "title": "퀄컴, 중국 틱톡에 AI 데이터센터용 칩 공급",
       "summary": [
@@ -46,7 +45,7 @@
         "바이트댄스는 퀄컴의 AI 반도체 수백만 개를 구매하기로 했습니다.",
         "이번 계약은 미국의 대중국 AI 칩 수출 규제 속에서 이루어졌습니다."
       ],
-      "whyImportant": "이번 공급은 미국의 대중국 AI 칩 수출 규제 속에서 퀄컴이 중국 시장을 공략하는 중요한 사례가 될 수 있습니다.",
+      "whyImportant": "이번 퀄컴의 AI 칩 공급은 미국 수출 규제 속에서 중국 AI 시장 공략을 본격화했다는 의미가 있습니다.",
       "importanceRationale": "근거: 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 44조6000억원으로 확대했으며, 퀄컴은 AI 반도체 수백만 개를 공급합니다.",
       "impactSignals": [
         {
@@ -72,8 +71,39 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-28_3",
-      "date": "2026-05-28",
+      "id": "2026-05-29_3",
+      "date": "2026-05-29",
+      "category": "국제",
+      "title": "트럼프, 이란 협상 불충분 및 군사 옵션 재개 가능성 시사",
+      "summary": [
+        "도널드 트럼프 미국 대통령은 이란과의 종전 협상이 만족할 만한 수준에 도달하지 못했다고 밝혔습니다.",
+        "트럼프 대통령은 이란이 요구하는 제재 완화나 동결자산 해제에 대해 선을 그었습니다.",
+        "또한, 이란의 고농축우라늄 처리 문제를 중국이나 러시아에 맡기는 방안에 부정적 입장을 밝혔습니다."
+      ],
+      "whyImportant": "미국 대통령의 발언은 향후 이란 핵 협상 및 중동 지역 안보에 영향을 미칠 수 있는 결정적 요소입니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 이란과의 협상에 대한 불만족과 군사 옵션 재개 가능성을 언급하며, 제재 완화에 선을 긋는 등 정책 방향을 시사했기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "트럼프 대통령은 27일(현지시간) 백악관 내각회의에서 \"이란은 매우 협상을 성사시키고 싶어 한다\"면서도 \"지금까지는 그들이 우리가 만족할 수준에 이르지 못했다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "군사-도달하지-미국-불충분-옵션-이란-트럼프-협상",
+      "clusterKey": "제재/트럼프/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052829857",
+      "publishedAt": "2026-05-27T21:25:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-29_4",
+      "date": "2026-05-29",
       "category": "국제",
       "title": "크라우드스트라이크와 구글, 오픈 소스 소프트웨어 개발자 대상 해커의 봇넷 제거",
       "summary": [
@@ -82,7 +112,7 @@
         "해커들은 개발자들이 사용하는 마켓플레이스에 악성 확장 프로그램을 게시하는 등 여러 전략을 사용했습니다."
       ],
       "whyImportant": "오픈 소스 소프트웨어 공급망에 대한 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 영향을 미칠 수 있기 때문에 중요합니다.",
-      "importanceRationale": "근거: 크라우드스트라이크에 따르면 해커들은 300개 이상의 GitHub 코드 저장소를 손상시켰으며, 이는 수천 개의 다운스트림 조직 및 사용자에게 영향을 미칠 수 있는 공급망 침해로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 크라우드스트라이크에 따르면 해커들은 300개 이상의 GitHub 코드 저장소를 손상시켰으며, 이는 여러 기업과 사용자에게 영향을 미칠 수 있는 공급망 공격으로 이어질 수 있습니다.",
       "impactSignals": [
         {
           "label": "security",
@@ -103,37 +133,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-28_4",
-      "date": "2026-05-28",
+      "id": "2026-05-29_5",
+      "date": "2026-05-29",
       "category": "기술",
-      "title": "엔비디아, 대만 투자 확대 발표 후 대만 반도체 주식 상승",
+      "title": "LG에너지솔루션, 데이터센터 등에 2.4조원대 ESS 공급",
       "summary": [
-        "엔비디아가 AI 성장에 발맞춰 대만에 새로운 캠퍼스를 건설하고 연간 지출을 10배 늘릴 계획이라고 밝혔습니다.",
-        "대만 가권지수는 수요일 1.7% 상승하여 사상 최고치를 기록했습니다.",
-        "엔비디아는 대만에 연간 1,500억 달러를 지출할 예정이며, 이는 4~5년 전의 100억~150억 달러에서 증가한 수치입니다."
+        "LG에너지솔루션이 DTE에너지와 2조 4100억원 규모의 ESS 배터리 공급 계약을 체결했습니다.",
+        "이번 계약 물량은 오라클의 AI 데이터센터를 포함한 8개의 핵심 전력망 구축 사업에 투입될 예정입니다."
       ],
-      "whyImportant": "엔비디아의 대만 투자 확대는 글로벌 반도체 공급망과 AI 기술 경쟁에 중요한 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 엔비디아가 대만에 연간 1,500억 달러를 지출할 계획이며, 이는 기존 지출에서 10배 증가한 수치로, 2030년까지 4,000명을 수용할 수 있는 새로운 사무실 단지를 건설할 예정입니다.",
+      "whyImportant": "이번 계약은 AI 데이터센터 증가에 따른 전력 수요 충족에 기여할 수 있다는 점에서 중요합니다.",
+      "importanceRationale": "근거: 계약 규모가 2조 4100억원이며, 오라클의 AI 데이터센터를 포함한 8개의 전력망 구축 사업에 투입될 예정이기 때문입니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "The company plans to use its new \"LogicFolding\" engineering in a smartphone chip this fall, and in its Ascend chips that power data centers \"by around 2030.\" Earlier this month, widely followed venture capitalist Chamath Palihapitiya also said Taiwan could become less important to global semiconductor development in 18 months due to advances by U.S.-based Neuralink."
+          "evidence": "앞서 챗지피티(GPT)를 개발한 오픈에이아이는 지난해 10월 오라클과 함께 미시간주 샐린 타운십에 대규모 데이터센터인 스타게이트 캠퍼스를 건설한다고 밝히며, 디티이에너지가 지역 에너지 공급에 영향을 미치지 않는 범위에서 잉여 전기를 공급한다고 소개한 바 있다."
         },
         {
-          "label": "policy",
-          "evidence": "\"Now we're spending $100 [billion], going to $150 billion in Taiwan each year,\" Huang said in Taipei, noting that's up from $10 billion to $15 billion annually just four or five years ago."
-        },
-        {
-          "label": "earnings",
-          "evidence": "A $150 billion annual outlay in Taiwan would be among Nvidia's largest spending plans to date, and exceed what the company made in revenue in a single quarter."
+          "label": "market-demand",
+          "evidence": "디티이에너지는 이날 계약 사실을 알리며 “에너지저장장치를 통해 전력 생산이 과잉일 때 저장한 전기를 수요가 급증하는 시간대에 공급해 전력망 부담을 줄이게 된다."
         }
       ],
-      "dedupeKey": "500억-대만-반도체-상승-엔비디아-주식-투자-확대",
-      "clusterKey": "투자/엔비디아",
+      "dedupeKey": "2조-4100억원-4조원대-ess-lg에너지솔루션-공급-데이터센터-등에",
+      "clusterKey": "lg에너지솔루션/등에/4조원대",
       "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
-      "publishedAt": "2026-05-27T09:41:14+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1260820.html",
+      "publishedAt": "2026-05-28T11:19:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -142,29 +167,58 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-28_5",
-      "date": "2026-05-28",
-      "category": "기술",
-      "title": "엔비디아 '루빈 CPX' 출시 불투명",
+      "id": "2026-05-29_6",
+      "date": "2026-05-29",
+      "category": "국제",
+      "title": "미국-이란 협상 타결 기대에 국제유가 급락",
       "summary": [
-        "엔비디아의 추론용 GPU '루빈 CPX'의 올해 하반기 출시가 불투명해졌습니다.",
-        "메모리 및 기판 발주 움직임이 없어 기존 계획 철회 가능성이 제기됩니다.",
-        "GDDR7 메모리 적용 관련 논의가 없는 상황입니다."
+        "이란 국영매체의 미국과의 종전 협상안 초안 보도로 종전 합의 기대감이 커지며 국제유가가 급락했습니다.",
+        "WTI 선물 종가는 배럴당 88.68달러로, 브렌트유 선물 종가는 배럴당 94.29달러로 하락했습니다."
       ],
-      "whyImportant": "엔비디아의 제품 전략 변화는 관련 메모리 및 기판 산업에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 엔비디아가 루빈 CPX에 128GB 용량의 GDDR7 메모리를 탑재할 것이라고 밝혔으나, 현재 관련 논의 자체가 없는 상황입니다.",
+      "whyImportant": "미국과 이란의 협상 결과에 따라 국제 에너지 시장의 변동성이 확대될 수 있습니다.",
+      "importanceRationale": "근거: 이란-미국 종전 협상 기대감으로 브렌트유는 5.3%, WTI는 5.6% 하락하여 유가 변동에 영향을 미치고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이란 국영매체가 미국과의 종전 협상안 초안을 보도하면서 종전 합의가 임박했다는 기대감이 커지자, 국제유가가 일제히 급락했습니다."
+        }
+      ],
+      "dedupeKey": "68달러-국제유-급락-기대-미국-이란-타결-협상",
+      "clusterKey": "관세/타결",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359352",
+      "publishedAt": "2026-05-27T23:33:08+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-29_7",
+      "date": "2026-05-29",
+      "category": "금융",
+      "title": "프랑스 원전 개발사 '뉴클레오', 스팩 상장 추진",
+      "summary": [
+        "프랑스의 차세대 원전 개발 기업인 뉴클레오가 약 24억 달러 규모의 스팩 합병을 통해 미국 나스닥 상장을 추진합니다.",
+        "이는 AI 전력 수요 급증에 따른 것입니다."
+      ],
+      "whyImportant": "AI 전력 수요 증가에 따라 원자력 발전 관련 기업의 상장 추진이 가속화될 수 있습니다.",
+      "importanceRationale": "근거: 뉴클레오가 24억 달러 규모의 스팩 합병을 통해 나스닥 상장을 추진하는 것은 AI 전력 수요 증가에 따른 시장의 변화를 반영합니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "당초 올해 하반기 출시 계획을 밝혔으나, 관련 메모리와 기판을 주문하거나 개발하려는 움직임이 없는 것으로 확인됐다."
+          "evidence": "프랑스 차세대 원전 개발 기업 뉴클레오가 AI 전력 수요 급증 흐름 속에서 약 24억 달러 규모의 스팩 합병을 통해 미국 나스닥 상장을 추진한다."
         }
       ],
-      "dedupeKey": "cpx-gddr7-gpu-루빈-불투명-불투명해졌-엔비디아-추론용",
-      "clusterKey": "엔비디아/루빈/cpx",
+      "dedupeKey": "24억-개발사-뉴클레오-미국-상장-스팩-원전-프랑스",
+      "clusterKey": "상장/에너지/프랑스/인수합병",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57206",
-      "publishedAt": "2026-05-27T06:12:06+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605295741i",
+      "publishedAt": "2026-05-28T23:33:15+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

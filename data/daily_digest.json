@@ -1,224 +1,195 @@
 {
-  "date": "2026-05-29",
+  "date": "2026-05-30",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-29T08:54:47.590669+09:00",
+  "lastUpdatedAt": "2026-05-30T08:52:57.194809+09:00",
   "items": [
     {
-      "id": "2026-05-29_1",
-      "date": "2026-05-29",
-      "category": "국제",
-      "title": "미국, 이란 호르무즈 해협 통행료 관리 기관 제재",
+      "id": "2026-05-30_1",
+      "date": "2026-05-30",
+      "category": "에너지",
+      "title": "러시아-카자흐스탄 정상회담, 카자흐스탄 첫 원전 건설 협력 협정 체결",
       "summary": [
-        "미국 재무부가 이란의 페르시아만해협청(PGSA)을 제재 명단에 추가했습니다.",
-        "페르시아만해협청은 호르무즈 해협 통항을 관리하며 선박당 최고 200만 달러의 통행료를 부과하는 기관입니다."
+        "러시아와 카자흐스탄이 정상회담을 통해 카자흐스탄 최초의 원자력 발전소 건설 협력 협정을 체결했습니다.",
+        "양국은 원전 건설 자금 조달을 위한 러시아의 신용 제공에 관한 협정에도 서명했습니다.",
+        "카자흐스탄은 2024년 국민투표를 통해 원자력 발전소 건설 여부를 결정할 예정입니다."
       ],
-      "whyImportant": "이번 제재는 미국과 이란 간의 종전 협상과 군사적 긴장 상황에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 미국 재무부는 이란의 호르무즈 해협 관련 기관을 제재 명단에 올렸으며, 이는 이란의 통항 관리에 영향을 줄 수 있습니다.",
+      "whyImportant": "카자흐스탄의 에너지 자립 및 러시아의 중앙아시아 영향력 확대에 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 카자흐스탄 최초의 원자력 발전소 건설 협력 협정 체결 및 2024년 국민투표를 통한 건설 결정 예정으로, 에너지 정책에 중요한 변화를 가져올 수 있습니다.",
       "impactSignals": [
         {
-          "label": "sanctions",
-          "evidence": "OFAC의 특별제재 대상에 추가되면 미국 내 자산이 동결되고 금융거래 등이 금지된다."
-        }
-      ],
-      "dedupeKey": "관리-기관-미국-이란-통행료-페르시아만해협청-해협-호르무즈",
-      "clusterKey": "제재/호르무즈",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359538",
-      "publishedAt": "2026-05-28T02:33:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-29_2",
-      "date": "2026-05-29",
-      "category": "기술",
-      "title": "퀄컴, 중국 틱톡에 AI 데이터센터용 칩 공급",
-      "summary": [
-        "퀄컴이 중국 바이트댄스에 AI 데이터센터용 반도체를 공급합니다.",
-        "바이트댄스는 퀄컴의 AI 반도체 수백만 개를 구매하기로 했습니다.",
-        "이번 계약은 미국의 대중국 AI 칩 수출 규제 속에서 이루어졌습니다."
-      ],
-      "whyImportant": "이번 퀄컴의 AI 칩 공급은 미국 수출 규제 속에서 중국 AI 시장 공략을 본격화했다는 의미가 있습니다.",
-      "importanceRationale": "근거: 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 44조6000억원으로 확대했으며, 퀄컴은 AI 반도체 수백만 개를 공급합니다.",
-      "impactSignals": [
-        {
-          "label": "capex",
-          "evidence": "AI 신흥 강자로 떠오른 중국을 대표하는 빅테크인 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 2000억위안(약 44조6000억원)으로 확대했다."
+          "label": "policy",
+          "evidence": "두 정상은 회담에서 카자흐스탄에 첫 원자력 발전소를 짓는 사업과 관련한 협력 협정을 맺었다."
         },
         {
-          "label": "policy",
-          "evidence": "퀄컴, 中틱톡에 AI데이터센터용 칩 공급 美 수출 규제속 저성능 칩 공략 미국 반도체 설계사인 퀄컴이 중국 바이트댄스에 인공지능(AI) 데이터센터용 반도체를 공급한다."
-        }
-      ],
-      "dedupeKey": "공급-대중국-데이터센터용-미국-바이트댄스-중국-퀄컴-틱톡",
-      "clusterKey": "미중_정책/퀄컴",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026052725381",
-      "publishedAt": "2026-05-27T09:14:45+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-29_3",
-      "date": "2026-05-29",
-      "category": "국제",
-      "title": "트럼프, 이란 협상 불충분 및 군사 옵션 재개 가능성 시사",
-      "summary": [
-        "도널드 트럼프 미국 대통령은 이란과의 종전 협상이 만족할 만한 수준에 도달하지 못했다고 밝혔습니다.",
-        "트럼프 대통령은 이란이 요구하는 제재 완화나 동결자산 해제에 대해 선을 그었습니다.",
-        "또한, 이란의 고농축우라늄 처리 문제를 중국이나 러시아에 맡기는 방안에 부정적 입장을 밝혔습니다."
-      ],
-      "whyImportant": "미국 대통령의 발언은 향후 이란 핵 협상 및 중동 지역 안보에 영향을 미칠 수 있는 결정적 요소입니다.",
-      "importanceRationale": "근거: 트럼프 대통령이 이란과의 협상에 대한 불만족과 군사 옵션 재개 가능성을 언급하며, 제재 완화에 선을 긋는 등 정책 방향을 시사했기 때문입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "트럼프 대통령은 27일(현지시간) 백악관 내각회의에서 \"이란은 매우 협상을 성사시키고 싶어 한다\"면서도 \"지금까지는 그들이 우리가 만족할 수준에 이르지 못했다\"고 말했다."
-        }
-      ],
-      "dedupeKey": "군사-도달하지-미국-불충분-옵션-이란-트럼프-협상",
-      "clusterKey": "제재/트럼프/관세",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026052829857",
-      "publishedAt": "2026-05-27T21:25:47+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-29_4",
-      "date": "2026-05-29",
-      "category": "국제",
-      "title": "크라우드스트라이크와 구글, 오픈 소스 소프트웨어 개발자 대상 해커의 봇넷 제거",
-      "summary": [
-        "크라우드스트라이크는 구글 및 섀도우서버와 협력하여 오픈 소스 소프트웨어 개발자로부터 악성 코드를 배포하고 비밀번호를 훔치는 데 사용된 봇넷을 제거했습니다.",
-        "이번 제거 작전은 '글래스웜' 봇넷 배후의 사이버 범죄자들의 활동을 방해하는 것을 목표로 했습니다.",
-        "해커들은 개발자들이 사용하는 마켓플레이스에 악성 확장 프로그램을 게시하는 등 여러 전략을 사용했습니다."
-      ],
-      "whyImportant": "오픈 소스 소프트웨어 공급망에 대한 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 영향을 미칠 수 있기 때문에 중요합니다.",
-      "importanceRationale": "근거: 크라우드스트라이크에 따르면 해커들은 300개 이상의 GitHub 코드 저장소를 손상시켰으며, 이는 여러 기업과 사용자에게 영향을 미칠 수 있는 공급망 공격으로 이어질 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "security",
-          "evidence": "CrowdStrike, working with Google and Shadowserver, a nonprofit organization that scans and monitors the internet for cyberattacks, took down a botnet that cybercriminals used to push malware and steal passwords from open source software developers."
-        }
-      ],
-      "dedupeKey": "개발자-구글-대상-소스-소프트웨어-오픈-크라우드스트라이크-해커",
-      "clusterKey": "크라우드스트라이크/구글/오픈",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/05/27/crowdstrike-and-google-take-down-botnet-used-by-hackers-to-target-software-developers-in-supply-chain-attacks/",
-      "publishedAt": "2026-05-27T16:59:19+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-29_5",
-      "date": "2026-05-29",
-      "category": "기술",
-      "title": "LG에너지솔루션, 데이터센터 등에 2.4조원대 ESS 공급",
-      "summary": [
-        "LG에너지솔루션이 DTE에너지와 2조 4100억원 규모의 ESS 배터리 공급 계약을 체결했습니다.",
-        "이번 계약 물량은 오라클의 AI 데이터센터를 포함한 8개의 핵심 전력망 구축 사업에 투입될 예정입니다."
-      ],
-      "whyImportant": "이번 계약은 AI 데이터센터 증가에 따른 전력 수요 충족에 기여할 수 있다는 점에서 중요합니다.",
-      "importanceRationale": "근거: 계약 규모가 2조 4100억원이며, 오라클의 AI 데이터센터를 포함한 8개의 전력망 구축 사업에 투입될 예정이기 때문입니다.",
-      "impactSignals": [
-        {
           "label": "capex",
-          "evidence": "앞서 챗지피티(GPT)를 개발한 오픈에이아이는 지난해 10월 오라클과 함께 미시간주 샐린 타운십에 대규모 데이터센터인 스타게이트 캠퍼스를 건설한다고 밝히며, 디티이에너지가 지역 에너지 공급에 영향을 미치지 않는 범위에서 잉여 전기를 공급한다고 소개한 바 있다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "디티이에너지는 이날 계약 사실을 알리며 “에너지저장장치를 통해 전력 생산이 과잉일 때 저장한 전기를 수요가 급증하는 시간대에 공급해 전력망 부담을 줄이게 된다."
+          "evidence": "양국은 원전 건설 자금을 조달하기 위한 러시아의 신용 제공에 관한 협정에도 서명했다."
         }
       ],
-      "dedupeKey": "2조-4100억원-4조원대-ess-lg에너지솔루션-공급-데이터센터-등에",
-      "clusterKey": "lg에너지솔루션/등에/4조원대",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/marketing/1260820.html",
-      "publishedAt": "2026-05-28T11:19:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-29_6",
-      "date": "2026-05-29",
-      "category": "국제",
-      "title": "미국-이란 협상 타결 기대에 국제유가 급락",
-      "summary": [
-        "이란 국영매체의 미국과의 종전 협상안 초안 보도로 종전 합의 기대감이 커지며 국제유가가 급락했습니다.",
-        "WTI 선물 종가는 배럴당 88.68달러로, 브렌트유 선물 종가는 배럴당 94.29달러로 하락했습니다."
-      ],
-      "whyImportant": "미국과 이란의 협상 결과에 따라 국제 에너지 시장의 변동성이 확대될 수 있습니다.",
-      "importanceRationale": "근거: 이란-미국 종전 협상 기대감으로 브렌트유는 5.3%, WTI는 5.6% 하락하여 유가 변동에 영향을 미치고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "이란 국영매체가 미국과의 종전 협상안 초안을 보도하면서 종전 합의가 임박했다는 기대감이 커지자, 국제유가가 일제히 급락했습니다."
-        }
-      ],
-      "dedupeKey": "68달러-국제유-급락-기대-미국-이란-타결-협상",
-      "clusterKey": "관세/타결",
+      "dedupeKey": "건설-러시아-양국-원전-정상회담-카자흐스탄-협력-협정",
+      "clusterKey": "투자/에너지/카자흐스탄/관세",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359352",
-      "publishedAt": "2026-05-27T23:33:08+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359840",
+      "publishedAt": "2026-05-28T10:13:51+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
     },
     {
-      "id": "2026-05-29_7",
-      "date": "2026-05-29",
+      "id": "2026-05-30_2",
+      "date": "2026-05-30",
       "category": "금융",
-      "title": "프랑스 원전 개발사 '뉴클레오', 스팩 상장 추진",
+      "title": "마벨, AI 데이터센터 연결 수요 폭증으로 매출 전망치 상향",
       "summary": [
-        "프랑스의 차세대 원전 개발 기업인 뉴클레오가 약 24억 달러 규모의 스팩 합병을 통해 미국 나스닥 상장을 추진합니다.",
-        "이는 AI 전력 수요 급증에 따른 것입니다."
+        "미국 반도체 기업 마벨은 1분기 실적이 시장 기대치를 상회했다고 발표했습니다.",
+        "AI 데이터센터 연결용 고속 인터커넥트 반도체 수요 증가로 중장기 매출 전망치를 상향 조정했습니다.",
+        "2028 회계연도 매출 전망을 기존 150억 달러에서 165억 달러로 상향했습니다."
       ],
-      "whyImportant": "AI 전력 수요 증가에 따라 원자력 발전 관련 기업의 상장 추진이 가속화될 수 있습니다.",
-      "importanceRationale": "근거: 뉴클레오가 24억 달러 규모의 스팩 합병을 통해 나스닥 상장을 추진하는 것은 AI 전력 수요 증가에 따른 시장의 변화를 반영합니다.",
+      "whyImportant": "AI 데이터센터 연결 수요 증가에 따른 마벨의 매출 전망 상향은 관련 산업의 성장 가능성을 시사합니다.",
+      "importanceRationale": "근거: 마벨은 2028 회계연도 매출 전망을 165억 달러로 상향했으며, 이는 데이터센터용 인터커넥트 반도체 수요 증가에 따른 것입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "마벨은 27일(현지시간) 2027 회계연도 1분기(2월1일~5월2일)에 매출 24억1780만달러를 기록했다고 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI) 데이터센터를 잇는 고속 인터커넥트 반도체 수요가 높아졌기 때문이다."
+        }
+      ],
+      "dedupeKey": "데이터센터-마벨-매출-상향-수요-연결-전망치-폭증",
+      "clusterKey": "실적/마벨",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57280",
+      "publishedAt": "2026-05-29T05:14:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-30_3",
+      "date": "2026-05-30",
+      "category": "금융",
+      "title": "AI 서버 매출 급증에 힘입어 Dell 주가 32% 폭등",
+      "summary": [
+        "Dell Technologies의 주가가 금요일 32.76% 상승하며, 2018년 상장 이후 최고의 하루를 기록했습니다.",
+        "AI 서버 매출이 전년 대비 757% 증가한 161억 달러를 기록하며 분기 수익이 급증했습니다.",
+        "조정 주당 순이익은 4.86달러로 예상치인 2.94달러를 상회했습니다."
+      ],
+      "whyImportant": "Dell의 AI 서버 매출 급증은 AI 기술 수요 증가와 시장 경쟁 심화를 시사합니다.",
+      "importanceRationale": "근거: AI 서버 매출이 757% 증가하여 161억 달러에 달했으며, 조정 주당 순이익이 예상치를 상회하는 등 실적이 크게 개선되어 중요도 4로 판단됩니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "Adjusted earnings per share came in at $4.86, beating expectations of $2.94."
+        }
+      ],
+      "dedupeKey": "161억-86달러-dell-매출-서버-주가-폭등-힘입어",
+      "clusterKey": "실적/서버/상장",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
+      "publishedAt": "2026-05-29T13:41:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-30_4",
+      "date": "2026-05-30",
+      "category": "에너지",
+      "title": "정부, 발전용 LNG 가격 상한제 추진",
+      "summary": [
+        "정부가 국제 가스 가격 급등에 따른 국내 전기 가격 상승을 막기 위해 발전용 가스 판매 가격에 상한선을 두는 방안을 추진합니다.",
+        "상한선은 민간 발전사업자에도 적용되며, 한국전력이 발전 대금을 정산할 때 연료비를 상한선 수준까지만 인정해줍니다."
+      ],
+      "whyImportant": "이번 정책은 에너지 가격 변동성이 큰 상황에서 전기 가격 안정화를 시도하는 정부의 중요한 결정입니다.",
+      "importanceRationale": "근거: 정부가 국제 LNG 가격 급등에 대응하여 발전용 LNG 가격에 상한선을 설정하는 방안을 추진하고 있으며, 이는 SK이노베이션E&S 등 민간 발전사업자에도 적용됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "정부가 발전용 가스 판매 가격에 상한선을 두는 방안을 추진한다."
+        }
+      ],
+      "dedupeKey": "lng-가격-발전사업자-발전용-상한제-인정해줍-정부-한국전력",
+      "clusterKey": "에너지/발전용",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052974661",
+      "publishedAt": "2026-05-29T10:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-30_5",
+      "date": "2026-05-30",
+      "category": "정책",
+      "title": "한국공정거래조정원 원장에 김정기 전 공정위 상임위원 임명",
+      "summary": [
+        "김정기 전 공정거래위원회 상임위원이 한국공정거래조정원 제7대 원장으로 취임했습니다.",
+        "김 신임 원장은 분쟁조정 업무 내실화 및 신속한 피해구제 기능 강화를 통해 국민과 기업이 체감할 수 있는 지원체계를 마련하겠다고 밝혔습니다."
+      ],
+      "whyImportant": "이번 인사는 공정거래 관련 분쟁 조정 및 중소사업자 피해 구제에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 김 신임 원장은 취임사에서 분쟁조정업무 내실화 및 피해구제 기능 강화를 언급하여 정책 방향 변화 가능성을 시사했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "한국공정거래조정원 7대 원장에 김정기 전 공정위 상임위원 김 신임 원장 \"국민과 기업이 체감할 수 있는 실질적 지원체계 마련\" 한국공정거래조정원은 김정기 전 공정거래위원회 상임위원(사진)이 제7대 원장으로 취임했다고 29일 밝혔다."
+        }
+      ],
+      "dedupeKey": "공정거래위원회-공정위-김정기-상임위원-원장-임명-제7대-한국공정거래조정원",
+      "clusterKey": "플랫폼규제/한국공정거래조정원",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605296667i",
+      "publishedAt": "2026-05-29T04:41:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-30_6",
+      "date": "2026-05-30",
+      "category": "금융",
+      "title": "5월 범용 D램 최고가 갱신, 6월에는 주춤 전망",
+      "summary": [
+        "5월 범용 D램 가격이 전월 대비 25% 상승하며 역대 최고가를 경신했습니다.",
+        "낸드 플래시 가격도 9.73% 상승하여 최고가를 기록했으며, 17개월 연속 상승세입니다.",
+        "6월에는 D램 성장세가 주춤할 것이라는 전망이 나왔습니다."
+      ],
+      "whyImportant": "D램 및 낸드 플래시 가격 변동은 PC, 메모리 카드 등 관련 산업 전반에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 5월 D램 가격이 25% 상승했고, 낸드 플래시 가격도 9.73% 상승하여 최고가를 경신했으며, 17개월 연속 상승세가 지속되고 있다는 점에서 중요도 3으로 판단했습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "프랑스 차세대 원전 개발 기업 뉴클레오가 AI 전력 수요 급증 흐름 속에서 약 24억 달러 규모의 스팩 합병을 통해 미국 나스닥 상장을 추진한다."
+          "evidence": "범용 D램과 낸드 플래시 가격이 5월에도 동반 상승하며 역대 최고가를 갈아 치웠다."
         }
       ],
-      "dedupeKey": "24억-개발사-뉴클레오-미국-상장-스팩-원전-프랑스",
-      "clusterKey": "상장/에너지/프랑스/인수합병",
+      "dedupeKey": "17개월-d램-가격-갱신-범용-상승세입-주춤-최고",
+      "clusterKey": "범용/d램/최고",
       "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202605295741i",
-      "publishedAt": "2026-05-28T23:33:15+00:00",
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57379",
+      "publishedAt": "2026-05-29T08:56:59+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

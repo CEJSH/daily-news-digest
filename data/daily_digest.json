@@ -1,73 +1,38 @@
 {
-  "date": "2026-05-30",
+  "date": "2026-05-31",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-30T08:52:57.194809+09:00",
+  "lastUpdatedAt": "2026-05-31T08:37:43.515650+09:00",
   "items": [
     {
-      "id": "2026-05-30_1",
-      "date": "2026-05-30",
-      "category": "에너지",
-      "title": "러시아-카자흐스탄 정상회담, 카자흐스탄 첫 원전 건설 협력 협정 체결",
+      "id": "2026-05-31_1",
+      "date": "2026-05-31",
+      "category": "국제",
+      "title": "미국, 북미 무역 협정 협상에서 미국산 자동차 부품 비중 50% 요구 전망",
       "summary": [
-        "러시아와 카자흐스탄이 정상회담을 통해 카자흐스탄 최초의 원자력 발전소 건설 협력 협정을 체결했습니다.",
-        "양국은 원전 건설 자금 조달을 위한 러시아의 신용 제공에 관한 협정에도 서명했습니다.",
-        "카자흐스탄은 2024년 국민투표를 통해 원자력 발전소 건설 여부를 결정할 예정입니다."
+        "미국이 USMCA 개정 협상에서 자동차 관세 혜택 조건으로 미국산 부품 원산지 요건 강화를 요구할 예정입니다.",
+        "미국 협상팀은 미국산 부품 및 소재 비중을 50% 이상으로 높이는 방안을 제안할 것으로 보입니다.",
+        "USMCA의 완성차 원산지 규정 개정 시 현대자동차 등 국내 완성차 업계에 타격이 예상됩니다."
       ],
-      "whyImportant": "카자흐스탄의 에너지 자립 및 러시아의 중앙아시아 영향력 확대에 중요한 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: 카자흐스탄 최초의 원자력 발전소 건설 협력 협정 체결 및 2024년 국민투표를 통한 건설 결정 예정으로, 에너지 정책에 중요한 변화를 가져올 수 있습니다.",
+      "whyImportant": "미국산 부품 비중 강화는 자동차 산업 공급망에 중대한 변화를 가져올 수 있는 정책 결정입니다.",
+      "importanceRationale": "근거: 미국이 USMCA 개정 협상에서 미국산 부품 비중을 50% 이상으로 높이는 방안을 제안할 예정이며, 이는 국내 완성차 업계에 영향을 줄 수 있습니다.",
       "impactSignals": [
         {
           "label": "policy",
-          "evidence": "두 정상은 회담에서 카자흐스탄에 첫 원자력 발전소를 짓는 사업과 관련한 협력 협정을 맺었다."
-        },
-        {
-          "label": "capex",
-          "evidence": "양국은 원전 건설 자금을 조달하기 위한 러시아의 신용 제공에 관한 협정에도 서명했다."
-        }
-      ],
-      "dedupeKey": "건설-러시아-양국-원전-정상회담-카자흐스탄-협력-협정",
-      "clusterKey": "투자/에너지/카자흐스탄/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359840",
-      "publishedAt": "2026-05-28T10:13:51+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-30_2",
-      "date": "2026-05-30",
-      "category": "금융",
-      "title": "마벨, AI 데이터센터 연결 수요 폭증으로 매출 전망치 상향",
-      "summary": [
-        "미국 반도체 기업 마벨은 1분기 실적이 시장 기대치를 상회했다고 발표했습니다.",
-        "AI 데이터센터 연결용 고속 인터커넥트 반도체 수요 증가로 중장기 매출 전망치를 상향 조정했습니다.",
-        "2028 회계연도 매출 전망을 기존 150억 달러에서 165억 달러로 상향했습니다."
-      ],
-      "whyImportant": "AI 데이터센터 연결 수요 증가에 따른 마벨의 매출 전망 상향은 관련 산업의 성장 가능성을 시사합니다.",
-      "importanceRationale": "근거: 마벨은 2028 회계연도 매출 전망을 165억 달러로 상향했으며, 이는 데이터센터용 인터커넥트 반도체 수요 증가에 따른 것입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "마벨은 27일(현지시간) 2027 회계연도 1분기(2월1일~5월2일)에 매출 24억1780만달러를 기록했다고 밝혔다."
+          "evidence": "USMCA는 기존 북미자유무역협정(NAFTA)을 대체해 트럼프 1기 행정부 시절인 2018년 미국·멕시코·캐나다 간에 타결된 협정으로, 일부 수정을 거쳐 2020년 발효됐다."
         },
         {
           "label": "market-demand",
-          "evidence": "인공지능(AI) 데이터센터를 잇는 고속 인터커넥트 반도체 수요가 높아졌기 때문이다."
+          "evidence": "현재 기아차는 멕시코에서 생산한 차량을 USMCA 관세 혜택 아래 미국에 수출하고 있다."
         }
       ],
-      "dedupeKey": "데이터센터-마벨-매출-상향-수요-연결-전망치-폭증",
-      "clusterKey": "실적/마벨",
+      "dedupeKey": "무역-미국-미국산-부품-북미-자동차-협상-협정",
+      "clusterKey": "관세/북미",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57280",
-      "publishedAt": "2026-05-29T05:14:28+00:00",
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1360413",
+      "publishedAt": "2026-05-29T15:46:45+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -76,29 +41,33 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-30_3",
-      "date": "2026-05-30",
-      "category": "금융",
-      "title": "AI 서버 매출 급증에 힘입어 Dell 주가 32% 폭등",
+      "id": "2026-05-31_2",
+      "date": "2026-05-31",
+      "category": "기술",
+      "title": "엔비디아, AI 산업 변화시킬 광자 기술에 수십억 달러 투자",
       "summary": [
-        "Dell Technologies의 주가가 금요일 32.76% 상승하며, 2018년 상장 이후 최고의 하루를 기록했습니다.",
-        "AI 서버 매출이 전년 대비 757% 증가한 161억 달러를 기록하며 분기 수익이 급증했습니다.",
-        "조정 주당 순이익은 4.86달러로 예상치인 2.94달러를 상회했습니다."
+        "엔비디아가 인공지능 병목 현상 해결을 위해 광자 기술 개발 회사에 최소 65억 달러를 투자했습니다.",
+        "광자 기술은 데이터를 빛으로 전송하여 전기를 사용하는 기존 방식보다 효율적인 대안으로 여겨집니다.",
+        "엔비디아는 이미 일부 광자 기술을 네트워킹 솔루션에 적용했으며, AI 공장에서 수백만 개의 GPU를 연결하는 도구를 발표했습니다."
       ],
-      "whyImportant": "Dell의 AI 서버 매출 급증은 AI 기술 수요 증가와 시장 경쟁 심화를 시사합니다.",
-      "importanceRationale": "근거: AI 서버 매출이 757% 증가하여 161억 달러에 달했으며, 조정 주당 순이익이 예상치를 상회하는 등 실적이 크게 개선되어 중요도 4로 판단됩니다.",
+      "whyImportant": "광자 기술 투자는 엔비디아가 AI 인프라 확장 시 에너지 비용 문제를 해결하고, 장기적으로 AI 기술 발전의 지속 가능성을 확보하는 데 중요합니다.",
+      "importanceRationale": "근거: 엔비디아는 지난 3개월 동안 광자 기술 회사에 최소 65억 달러를 투자했으며, 이는 AI 인프라의 확장성과 성능 향상에 기여할 수 있습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "Adjusted earnings per share came in at $4.86, beating expectations of $2.94."
+          "label": "policy",
+          "evidence": "Nvidia has committed at least $6.5 billion into companies developing photonics technology in the past three months, as the company races to invest in solving one of the major bottlenecks to the rollout of artificial intelligence."
+        },
+        {
+          "label": "capex",
+          "evidence": "\"So we work with the supply chain to make sure we can help them build up the capacity in advance of that.\" Lumentum's stock has risen 134% since the start of the year, while Coherent is up 96%."
         }
       ],
-      "dedupeKey": "161억-86달러-dell-매출-서버-주가-폭등-힘입어",
-      "clusterKey": "실적/서버/상장",
+      "dedupeKey": "광자-기술-달러-변화시킬-산업-수십억-엔비디아-투자",
+      "clusterKey": "투자/ai/엔비디아",
       "matchedTo": null,
       "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/29/dell-stock-earnings-ai-servers.html",
-      "publishedAt": "2026-05-29T13:41:07+00:00",
+      "sourceUrl": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
+      "publishedAt": "2026-05-29T05:00:02+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -107,89 +76,60 @@
       "isBriefing": false
     },
     {
-      "id": "2026-05-30_4",
-      "date": "2026-05-30",
+      "id": "2026-05-31_3",
+      "date": "2026-05-31",
+      "category": "금융",
+      "title": "한국 수출액 1조 달러 달성 전망",
+      "summary": [
+        "한국의 연간 수출액이 지난해 7093억 달러를 기록하며 사상 처음으로 7000억 달러를 넘어섰습니다.",
+        "일각에서는 올해 수출액이 1조 달러를 달성할 것이라는 전망도 제기되고 있습니다.",
+        "메리츠증권은 올해 한국 수출이 지난해 대비 44.2% 급증할 것으로 내다봤습니다."
+      ],
+      "whyImportant": "수출액 증가는 국내 경제 성장에 긍정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 메리츠증권은 올해 한국 수출이 지난해 대비 44.2% 급증한 1조200억달러에 달할 것으로 전망했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "\"수출 1조달러 달성\" 파격 전망 나왔다…한국 '초유의 상황' 정부 \"지난해 한국의 연간 수출액 7093억달러\" 한국이 지난해 사상 최초로 수출액 7000억달러를 넘은 데 이어 올해 9000억달러를 겨냥하고 있다."
+        }
+      ],
+      "dedupeKey": "1조-7000억-7093억-달러-달성-메리츠증권-수출액-한국",
+      "clusterKey": "수출액/1조/달러",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026053184757",
+      "publishedAt": "2026-05-30T22:58:39+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-31_4",
+      "date": "2026-05-31",
       "category": "에너지",
       "title": "정부, 발전용 LNG 가격 상한제 추진",
       "summary": [
-        "정부가 국제 가스 가격 급등에 따른 국내 전기 가격 상승을 막기 위해 발전용 가스 판매 가격에 상한선을 두는 방안을 추진합니다.",
-        "상한선은 민간 발전사업자에도 적용되며, 한국전력이 발전 대금을 정산할 때 연료비를 상한선 수준까지만 인정해줍니다."
+        "정부가 발전용 가스 판매 가격에 상한선을 두는 방안을 추진합니다.",
+        "이는 국제 가스 가격 급등이 국내 전기 가격을 올리는 것을 막기 위함입니다.",
+        "상한선은 민간 발전사업자에도 적용되며, 손실 보전 방식을 놓고 논란이 예상됩니다."
       ],
-      "whyImportant": "이번 정책은 에너지 가격 변동성이 큰 상황에서 전기 가격 안정화를 시도하는 정부의 중요한 결정입니다.",
-      "importanceRationale": "근거: 정부가 국제 LNG 가격 급등에 대응하여 발전용 LNG 가격에 상한선을 설정하는 방안을 추진하고 있으며, 이는 SK이노베이션E&S 등 민간 발전사업자에도 적용됩니다.",
+      "whyImportant": "이번 정책은 에너지 가격 결정 구조에 영향을 미쳐 장기적인 시장 왜곡을 초래할 수 있습니다.",
+      "importanceRationale": "근거: 정부가 LNG 도매가격에 상한선을 설정하는 방안을 추진하며, 이는 SK이노베이션E&S 등 민간 발전사업자에도 적용됩니다.",
       "impactSignals": [
         {
           "label": "policy",
           "evidence": "정부가 발전용 가스 판매 가격에 상한선을 두는 방안을 추진한다."
         }
       ],
-      "dedupeKey": "lng-가격-발전사업자-발전용-상한제-인정해줍-정부-한국전력",
+      "dedupeKey": "lng-가격-가스-발전사업자-발전용-상한제-정부-판매",
       "clusterKey": "에너지/발전용",
       "matchedTo": null,
       "sourceName": "한국경제",
       "sourceUrl": "https://www.hankyung.com/article/2026052974661",
       "publishedAt": "2026-05-29T10:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-30_5",
-      "date": "2026-05-30",
-      "category": "정책",
-      "title": "한국공정거래조정원 원장에 김정기 전 공정위 상임위원 임명",
-      "summary": [
-        "김정기 전 공정거래위원회 상임위원이 한국공정거래조정원 제7대 원장으로 취임했습니다.",
-        "김 신임 원장은 분쟁조정 업무 내실화 및 신속한 피해구제 기능 강화를 통해 국민과 기업이 체감할 수 있는 지원체계를 마련하겠다고 밝혔습니다."
-      ],
-      "whyImportant": "이번 인사는 공정거래 관련 분쟁 조정 및 중소사업자 피해 구제에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 김 신임 원장은 취임사에서 분쟁조정업무 내실화 및 피해구제 기능 강화를 언급하여 정책 방향 변화 가능성을 시사했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "한국공정거래조정원 7대 원장에 김정기 전 공정위 상임위원 김 신임 원장 \"국민과 기업이 체감할 수 있는 실질적 지원체계 마련\" 한국공정거래조정원은 김정기 전 공정거래위원회 상임위원(사진)이 제7대 원장으로 취임했다고 29일 밝혔다."
-        }
-      ],
-      "dedupeKey": "공정거래위원회-공정위-김정기-상임위원-원장-임명-제7대-한국공정거래조정원",
-      "clusterKey": "플랫폼규제/한국공정거래조정원",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202605296667i",
-      "publishedAt": "2026-05-29T04:41:24+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-30_6",
-      "date": "2026-05-30",
-      "category": "금융",
-      "title": "5월 범용 D램 최고가 갱신, 6월에는 주춤 전망",
-      "summary": [
-        "5월 범용 D램 가격이 전월 대비 25% 상승하며 역대 최고가를 경신했습니다.",
-        "낸드 플래시 가격도 9.73% 상승하여 최고가를 기록했으며, 17개월 연속 상승세입니다.",
-        "6월에는 D램 성장세가 주춤할 것이라는 전망이 나왔습니다."
-      ],
-      "whyImportant": "D램 및 낸드 플래시 가격 변동은 PC, 메모리 카드 등 관련 산업 전반에 영향을 미칠 수 있기 때문입니다.",
-      "importanceRationale": "근거: 5월 D램 가격이 25% 상승했고, 낸드 플래시 가격도 9.73% 상승하여 최고가를 경신했으며, 17개월 연속 상승세가 지속되고 있다는 점에서 중요도 3으로 판단했습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "범용 D램과 낸드 플래시 가격이 5월에도 동반 상승하며 역대 최고가를 갈아 치웠다."
-        }
-      ],
-      "dedupeKey": "17개월-d램-가격-갱신-범용-상승세입-주춤-최고",
-      "clusterKey": "범용/d램/최고",
-      "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57379",
-      "publishedAt": "2026-05-29T08:56:59+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

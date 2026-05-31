@@ -1,138 +1,36 @@
 {
-  "date": "2026-05-31",
+  "date": "2026-06-01",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-05-31T08:37:43.515650+09:00",
+  "lastUpdatedAt": "2026-06-01T08:41:59.627131+09:00",
   "items": [
     {
-      "id": "2026-05-31_1",
-      "date": "2026-05-31",
+      "id": "2026-06-01_1",
+      "date": "2026-06-01",
       "category": "국제",
-      "title": "미국, 북미 무역 협정 협상에서 미국산 자동차 부품 비중 50% 요구 전망",
+      "title": "미국, USMCA 협상에서 미국산 자동차 부품 비중 50% 요구 가능성…한국에 영향",
       "summary": [
-        "미국이 USMCA 개정 협상에서 자동차 관세 혜택 조건으로 미국산 부품 원산지 요건 강화를 요구할 예정입니다.",
-        "미국 협상팀은 미국산 부품 및 소재 비중을 50% 이상으로 높이는 방안을 제안할 것으로 보입니다.",
-        "USMCA의 완성차 원산지 규정 개정 시 현대자동차 등 국내 완성차 업계에 타격이 예상됩니다."
+        "미국이 USMCA(미국-멕시코-캐나다 협정) 협상에서 미국산 자동차 부품 비중을 50%까지 요구할 가능성이 있습니다.",
+        "이는 한국 자동차 산업에 영향을 미칠 수 있습니다."
       ],
-      "whyImportant": "미국산 부품 비중 강화는 자동차 산업 공급망에 중대한 변화를 가져올 수 있는 정책 결정입니다.",
-      "importanceRationale": "근거: 미국이 USMCA 개정 협상에서 미국산 부품 비중을 50% 이상으로 높이는 방안을 제안할 예정이며, 이는 국내 완성차 업계에 영향을 줄 수 있습니다.",
+      "whyImportant": "미국산 부품 비중 요구는 한국 자동차 산업의 공급망에 영향을 미쳐 경쟁력 변화를 초래할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국이 USMCA 협상에서 미국산 자동차 부품 비중 50%를 요구할 가능성이 있다는 내용이 한국 자동차 산업에 미칠 영향에 대한 결정적 근거는 부족합니다.",
       "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "USMCA는 기존 북미자유무역협정(NAFTA)을 대체해 트럼프 1기 행정부 시절인 2018년 미국·멕시코·캐나다 간에 타결된 협정으로, 일부 수정을 거쳐 2020년 발효됐다."
-        },
         {
           "label": "market-demand",
-          "evidence": "현재 기아차는 멕시코에서 생산한 차량을 USMCA 관세 혜택 아래 미국에 수출하고 있다."
+          "evidence": "메리츠 vs MBK…악연의 골이 더 깊어졌다 ‘최고가격제’에…정유사는 왜 걱정 앞설까 주공5·장미…빨라지는 잠실 재건축 시계"
         }
       ],
-      "dedupeKey": "무역-미국-미국산-부품-북미-자동차-협상-협정",
-      "clusterKey": "관세/북미",
+      "dedupeKey": "usmca-미국-미국산-부품-비중-자동차-한국-협상",
+      "clusterKey": "한미_관세/usmca",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1360413",
-      "publishedAt": "2026-05-29T15:46:45+00:00",
+      "sourceName": "매일경제",
+      "sourceUrl": "https://news.mk.co.kr/v2/economy/",
+      "publishedAt": "2026-05-30T00:10:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-31_2",
-      "date": "2026-05-31",
-      "category": "기술",
-      "title": "엔비디아, AI 산업 변화시킬 광자 기술에 수십억 달러 투자",
-      "summary": [
-        "엔비디아가 인공지능 병목 현상 해결을 위해 광자 기술 개발 회사에 최소 65억 달러를 투자했습니다.",
-        "광자 기술은 데이터를 빛으로 전송하여 전기를 사용하는 기존 방식보다 효율적인 대안으로 여겨집니다.",
-        "엔비디아는 이미 일부 광자 기술을 네트워킹 솔루션에 적용했으며, AI 공장에서 수백만 개의 GPU를 연결하는 도구를 발표했습니다."
-      ],
-      "whyImportant": "광자 기술 투자는 엔비디아가 AI 인프라 확장 시 에너지 비용 문제를 해결하고, 장기적으로 AI 기술 발전의 지속 가능성을 확보하는 데 중요합니다.",
-      "importanceRationale": "근거: 엔비디아는 지난 3개월 동안 광자 기술 회사에 최소 65억 달러를 투자했으며, 이는 AI 인프라의 확장성과 성능 향상에 기여할 수 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Nvidia has committed at least $6.5 billion into companies developing photonics technology in the past three months, as the company races to invest in solving one of the major bottlenecks to the rollout of artificial intelligence."
-        },
-        {
-          "label": "capex",
-          "evidence": "\"So we work with the supply chain to make sure we can help them build up the capacity in advance of that.\" Lumentum's stock has risen 134% since the start of the year, while Coherent is up 96%."
-        }
-      ],
-      "dedupeKey": "광자-기술-달러-변화시킬-산업-수십억-엔비디아-투자",
-      "clusterKey": "투자/ai/엔비디아",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/05/29/nvidia-photonics-investment-ai.html",
-      "publishedAt": "2026-05-29T05:00:02+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-31_3",
-      "date": "2026-05-31",
-      "category": "금융",
-      "title": "한국 수출액 1조 달러 달성 전망",
-      "summary": [
-        "한국의 연간 수출액이 지난해 7093억 달러를 기록하며 사상 처음으로 7000억 달러를 넘어섰습니다.",
-        "일각에서는 올해 수출액이 1조 달러를 달성할 것이라는 전망도 제기되고 있습니다.",
-        "메리츠증권은 올해 한국 수출이 지난해 대비 44.2% 급증할 것으로 내다봤습니다."
-      ],
-      "whyImportant": "수출액 증가는 국내 경제 성장에 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 메리츠증권은 올해 한국 수출이 지난해 대비 44.2% 급증한 1조200억달러에 달할 것으로 전망했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "\"수출 1조달러 달성\" 파격 전망 나왔다…한국 '초유의 상황' 정부 \"지난해 한국의 연간 수출액 7093억달러\" 한국이 지난해 사상 최초로 수출액 7000억달러를 넘은 데 이어 올해 9000억달러를 겨냥하고 있다."
-        }
-      ],
-      "dedupeKey": "1조-7000억-7093억-달러-달성-메리츠증권-수출액-한국",
-      "clusterKey": "수출액/1조/달러",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026053184757",
-      "publishedAt": "2026-05-30T22:58:39+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-05-31_4",
-      "date": "2026-05-31",
-      "category": "에너지",
-      "title": "정부, 발전용 LNG 가격 상한제 추진",
-      "summary": [
-        "정부가 발전용 가스 판매 가격에 상한선을 두는 방안을 추진합니다.",
-        "이는 국제 가스 가격 급등이 국내 전기 가격을 올리는 것을 막기 위함입니다.",
-        "상한선은 민간 발전사업자에도 적용되며, 손실 보전 방식을 놓고 논란이 예상됩니다."
-      ],
-      "whyImportant": "이번 정책은 에너지 가격 결정 구조에 영향을 미쳐 장기적인 시장 왜곡을 초래할 수 있습니다.",
-      "importanceRationale": "근거: 정부가 LNG 도매가격에 상한선을 설정하는 방안을 추진하며, 이는 SK이노베이션E&S 등 민간 발전사업자에도 적용됩니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "정부가 발전용 가스 판매 가격에 상한선을 두는 방안을 추진한다."
-        }
-      ],
-      "dedupeKey": "lng-가격-가스-발전사업자-발전용-상한제-정부-판매",
-      "clusterKey": "에너지/발전용",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026052974661",
-      "publishedAt": "2026-05-29T10:00:01+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
+      "importance": 2,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

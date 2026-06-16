@@ -29,7 +29,10 @@ GEMINI_EMBEDDING_MODEL = os.getenv("GEMINI_EMBEDDING_MODEL", "gemini-embedding-0
 GEMINI_TIMEOUT_SEC = int(os.getenv("GEMINI_TIMEOUT_SEC", "60"))
 GEMINI_MAX_RETRIES = int(os.getenv("GEMINI_MAX_RETRIES", "2"))
 GEMINI_RETRY_BACKOFF_SEC = float(os.getenv("GEMINI_RETRY_BACKOFF_SEC", "1.5"))
-GEMINI_MAX_OUTPUT_TOKENS = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "1000"))
+GEMINI_MAX_OUTPUT_TOKENS = int(os.getenv("GEMINI_MAX_OUTPUT_TOKENS", "2048"))
+# thinking 계열 모델(2.5/3.x)은 maxOutputTokens 예산을 사고 토큰이 먼저 소진해 JSON이 잘릴 수 있음.
+# 이 추출 작업은 확장 추론이 불필요하므로 기본 0(비활성)으로 출력 예산을 전부 JSON에 사용.
+GEMINI_THINKING_BUDGET = int(os.getenv("GEMINI_THINKING_BUDGET", "0"))
 AI_EMBED_MAX_CHARS = int(os.getenv("AI_EMBED_MAX_CHARS", "1200"))
 
 
@@ -134,6 +137,7 @@ def gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any]
             "temperature": 0.2,
             "maxOutputTokens": GEMINI_MAX_OUTPUT_TOKENS,
             "responseMimeType": "application/json",
+            "thinkingConfig": {"thinkingBudget": GEMINI_THINKING_BUDGET},
         },
     }
     max_attempts = max(1, GEMINI_MAX_RETRIES + 1)

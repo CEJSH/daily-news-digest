@@ -120,20 +120,19 @@ def gemini_generate_json(system_prompt: str, user_prompt: str) -> dict[str, Any]
         log_ai_unavailable("GEMINI_API_KEY 미설정")
         return None
     url = f"{GEMINI_API_BASE}/models/{GEMINI_MODEL}:generateContent"
+    # v1 엔드포인트는 systemInstruction / responseMimeType 미지원.
+    # 시스템 프롬프트는 사용자 메시지 앞에 합치고, JSON 강제는 프롬프트 지시 + parse_json 방어 파싱으로 대체.
+    merged_prompt = f"{system_prompt}\n\n{user_prompt}"
     request_payload = {
         "contents": [
             {
                 "role": "user",
-                "parts": [{"text": user_prompt}],
+                "parts": [{"text": merged_prompt}],
             }
         ],
-        "systemInstruction": {
-            "parts": [{"text": system_prompt}],
-        },
         "generationConfig": {
             "temperature": 0.2,
             "maxOutputTokens": GEMINI_MAX_OUTPUT_TOKENS,
-            "responseMimeType": "application/json",
         },
     }
     max_attempts = max(1, GEMINI_MAX_RETRIES + 1)

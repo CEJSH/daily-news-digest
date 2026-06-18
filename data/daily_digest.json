@@ -1,220 +1,34 @@
 {
-  "date": "2026-06-17",
+  "date": "2026-06-18",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-06-17T09:00:15.610540+09:00",
+  "lastUpdatedAt": "2026-06-18T09:01:25.912799+09:00",
   "items": [
     {
-      "id": "2026-06-17_1",
-      "date": "2026-06-17",
-      "category": "기술",
-      "title": "건설현장 불법하도급 신고포상금 확대 및 행정처분 강화",
-      "summary": [
-        "정부는 건설현장 내 불법하도급 신고자에 대한 포상금을 대폭 확대합니다.",
-        "기존 최대 200만 원이었던 포상금 지급 상한을 폐지하고 과징금 부과액 등을 고려하여 지급합니다.",
-        "불법하도급 등 불공정행위에 대한 행정처분도 함께 강화됩니다."
-      ],
-      "whyImportant": "건설업계 내 불법하도급 신고 포상금 상한 폐지와 처분 강화는 건설 시장의 투명성을 높이고 불공정 관행을 근절하는 계기가 될 것입니다.",
-      "importanceRationale": "근거: 국토교통부는 16일 국무회의에서 불법하도급 신고포상금 상한을 폐지하는 건설산업기본법 시행령 개정안을 의결했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "국토교통부는 16일 국무회의에서 이같은 내용을 담은 건설산업기본법(건산법) 시행령 일부 개정안이 의결됐다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "강화-건설현장-불법하도급-신고포상금-원이었던-정부-행정처분-확대",
-      "clusterKey": "건설현장/불법하도급/신고포상금",
-      "matchedTo": null,
-      "sourceName": "머니투데이",
-      "sourceUrl": "https://www.mt.co.kr/estate",
-      "publishedAt": "2026-06-16T04:35:56+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_2",
-      "date": "2026-06-17",
-      "category": "국제",
-      "title": "대통령 \"중동 협상 타결 환영…국제사회 공조해 필요 역할 수행\"",
-      "summary": [
-        "대통령은 미국과 이란의 종전 협상 타결에 대해 글로벌 에너지 수급 안정과 선박의 안전 운항 재개를 기대하며 환영했습니다.",
-        "정부는 호르무즈 해협의 안전한 항행을 위해 미국 등 국제사회와 긴밀히 공조하며 필요한 역할을 수행할 계획입니다.",
-        "오는 16일부터 17일까지 열리는 G7 정상회의에 참석하여 호르무즈 해협 통항 관리를 위한 공조 방안 등을 논의할 예정입니다."
-      ],
-      "whyImportant": "중동 협상 타결과 호르무즈 해협의 항행 안전 확보는 국내 에너지 수급 안정과 물류비 부담 완화 등 경제적 불확실성 해소에 긍정적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 대통령은 오는 16~17일 G7 정상회의에 참석하여 호르무즈 해협 통항 관리를 위한 국제사회 공조 방안을 논의할 예정입니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "[속보] 李 대통령 \"중동 협상타결 환영…국제사회 공조해 필요역할 수행\" 이재명 대통령이 15일 미국과 이란의 종전 협상 타결 소식에 대해 \"국제사회가 오랫동안 기대해 온 사태 해결을 위한 중요한 진전\"이라면서 환영 의사를 밝혔다."
-        }
-      ],
-      "dedupeKey": "공조해-국제사회-대통령-중동-타결-필요-협상-환영",
-      "clusterKey": "미중동_관세/대통령",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026061580147",
-      "publishedAt": "2026-06-15T14:22:24+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_3",
-      "date": "2026-06-17",
-      "category": "국제",
-      "title": "미국과 이란, 휴전 후 60일간 추가 협상 진행 및 핵 문제 과제 잔존",
-      "summary": [
-        "미국과 이란이 종전 양해각서에 합의하고 향후 60일 동안 핵 프로그램과 경제 제재 해결을 위한 추가 협상을 진행합니다.",
-        "양측은 이란의 핵무기 보유 불가 원칙에는 합의했으나 구체적인 핵 프로그램 처리 방안은 합의안에 포함하지 못했습니다.",
-        "이란은 동결 자금 해제와 제재 완화를 원하지만 미국은 비핵화 이행 수준에 따른 단계적 해제 원칙을 고수할 전망입니다."
-      ],
-      "whyImportant": "미국과 이란의 추가 협상 결과에 따라 중동 지역의 지정학적 긴장 완화 여부와 글로벌 에너지 공급망의 안정성이 결정될 수 있습니다.",
-      "importanceRationale": "근거: 양국은 향후 60일 동안 이란 핵 문제, 대이란 경제 제재, 호르무즈 해협 개방 등에 관한 구체안을 두고 협상할 예정입니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "두 나라는 향후 60일간 완전한 전쟁 종결을 위한 이란의 핵 프로그램과 대이란 경제 제재에 대한 해결 방안을 도출해야 한다."
-        }
-      ],
-      "dedupeKey": "60일간-과제-문제-미국-이란-진행-협상-휴전",
-      "clusterKey": "투자/휴전/제재/관세",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202606156735i",
-      "publishedAt": "2026-06-15T06:03:46+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_4",
-      "date": "2026-06-17",
-      "category": "기술",
-      "title": "스페이스X 옵션 거래 개시, 엔비디아와 테슬라를 넘어설 것으로 전망",
-      "summary": [
-        "스페이스X 옵션 거래가 공식적으로 시작되어 첫 30분 만에 30만 계약 이상이 거래되었습니다.",
-        "거래 대금은 4억 달러를 돌파하며 테슬라와 엔비디아에 이어 세 번째로 활발하게 거래되었습니다.",
-        "전문가들은 시장이 안정되면 스페이스X 옵션 거래량이 테슬라와 엔비디아를 넘어설 것으로 예상합니다."
-      ],
-      "whyImportant": "스페이스X 옵션 거래의 활성화는 민간 우주 기업에 대한 소매 및 기관 투자자들의 강력한 투자 수요를 증명하며 시장의 유동성을 크게 확대할 수 있습니다.",
-      "importanceRationale": "근거: 거래 개시 첫 30분 만에 30만 계약 이상, 4억 달러 이상의 프리미엄이 거래되며 시장의 높은 수요를 입증했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "Less than 30 minutes into the session, SpaceX options are already the third-most traded among single stocks, behind Tesla and Nvidia, which typically trade millions of contracts and over $1 billion a day."
-        }
-      ],
-      "dedupeKey": "30분-거래-것으-넘어설-스페이스x-엔비디아-옵션-테슬라",
-      "clusterKey": "스페이스x/옵션/거래",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/06/16/godfather-of-options-sees-spacex-surpassing-nvidia-tesla-as-early-trades-come-in.html",
-      "publishedAt": "2026-06-16T14:27:40+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_5",
-      "date": "2026-06-17",
-      "category": "기술",
-      "title": "엔비디아, AI 붐 시작 이후 첫 회사채 발행으로 최소 200억 달러 조달 계획",
-      "summary": [
-        "엔비디아가 AI 붐이 시작된 이후 처음으로 최소 200억 달러 규모의 회사채 발행을 통한 자금 조달을 추진하고 있습니다.",
-        "조달된 자금은 기존 부채 상환 및 차환을 포함한 일반 기업 목적으로 사용될 예정입니다.",
-        "최근 알파벳, 슈퍼마이크로, 아마존 등 AI 관련 기술 기업들의 대규모 자본 조달 흐름이 이어지고 있습니다."
-      ],
-      "whyImportant": "AI 시장을 주도하는 엔비디아가 대규모 자금 조달에 나서면서, 주주 환원 프로그램 이행과 향후 기술 투자를 위한 재정적 기반을 더욱 강화하고 있습니다.",
-      "importanceRationale": "근거: 엔비디아가 최소 200억 달러에서 최대 250억 달러 규모의 회사채 발행을 추진하며, 이는 2021년 50억 달러 조달 이후 최대 규모입니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "Nvidia generated $49 billion in free cash flow in the latest quarter, up from $35 billion in the same period a year earlier, and reiterated plans in its latest earnings call to \"return roughly 50% of free cash flow to shareholders this year.\""
-        }
-      ],
-      "dedupeKey": "200억-달러-발행-시작-엔비디아-이후-최소-회사채",
-      "clusterKey": "투자/엔비디아",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/06/15/nvidia-plans-to-raise-about-20-billion-first-debt-sale-in-ai-boom.html",
-      "publishedAt": "2026-06-15T19:42:46+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_6",
-      "date": "2026-06-17",
-      "category": "기술",
-      "title": "포드, 5세대 올-뉴 익스페디션 국내 출시",
-      "summary": [
-        "포드코리아가 30주년을 맞이한 초대형 SUV 익스페디션의 5세대 풀체인지 모델을 국내에 공식 출시합니다.",
-        "신형 모델은 상하단으로 분리되어 열리는 포드 스플릿 게이트와 24인치 파노라믹 디스플레이를 탑재했습니다.",
-        "국내에는 플래티넘 단일 트림으로 출시되며 판매 가격은 부가세를 포함해 1억 2,350만 원입니다."
-      ],
-      "whyImportant": "수입 대형 SUV 시장에서 포드의 핵심 스테디셀러 모델이 세대 교체를 통해 상품성을 강화하고 국내 시장 공략에 나섭니다.",
-      "importanceRationale": "근거: 국내에 1억 2,350만 원 가격의 플래티넘 단일 모델로 출시되어 대형 SUV 수요층을 공략합니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "올-뉴 포드 익스페디션은 국내에 플래티넘 단일 모델로 가격은 1억2350만원(부가세 포함, 개별소비세 3.5% 적용 기준)이다."
-        }
-      ],
-      "dedupeKey": "1억-24인치-30주년-5세대-국내-익스페디션-포드-포드코리아",
-      "clusterKey": "포드/5세대/익스페디션",
-      "matchedTo": null,
-      "sourceName": "이데일리",
-      "sourceUrl": "https://www.edaily.co.kr/News/Read?newsId=02765046645482704&mediaCodeNo=257",
-      "publishedAt": "2026-06-16T19:57:22+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 2,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_7",
-      "date": "2026-06-17",
+      "id": "2026-06-18_1",
+      "date": "2026-06-18",
       "category": "금융",
-      "title": "SK하이닉스, 미국 나스닥 ADR 상장 임박…이르면 7월 전망",
+      "title": "매파색 강해진 연준, 물가 전망 상향하며 고금리 장기화 기조 강화",
       "summary": [
-        "SK하이닉스가 이르면 7월 중순 이후 미국 나스닥에 주식예탁증서(ADR) 상장을 완료할 전망입니다.",
-        "상장 규모는 발행 주식 수의 2.5%로 지분 가치는 최대 270억 달러에 달할 것으로 추산됩니다.",
-        "회사는 ADR 상장을 통해 기업 가치를 재평가받고 대규모 현금을 확보할 계획입니다."
+        "미국 연방공개시장위원회는 기준금리를 연 3.50~3.75%로 유지하고 올해 PCE 물가상승률 전망치를 3.6%로 상향했습니다.",
+        "올해 말 기준금리 전망치 중간값은 기존 3.4%에서 3.8%로 높아졌으며 실질 GDP 성장률 전망은 2.2%로 하향되었습니다.",
+        "연준은 물가 상승세가 예상보다 오래 지속될 것으로 보고 금리 역시 상당 기간 높은 수준을 유지할 것임을 시사했습니다."
       ],
-      "whyImportant": "SK하이닉스의 미국 나스닥 ADR 상장은 글로벌 자본 유입과 기업 가치 재평가를 통해 반도체 투자 재원을 확보하는 중요한 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: SK하이닉스는 발행 주식 수의 2.5% 규모인 최대 270억 달러 가치의 ADR 상장을 이르면 올해 7월 추진하고 있습니다.",
+      "whyImportant": "미국 연준의 금리 전망 상향과 고금리 장기화 기조는 글로벌 금융 시장의 조달 비용 상승과 자산 가격 변동성을 높이는 직접적인 요인입니다.",
+      "importanceRationale": "근거: 연방공개시장위원회가 올해 말 기준금리 전망을 3.4%에서 3.8%로 상향하고 2027년 및 2028년 전망치까지 모두 올렸습니다.",
       "impactSignals": [
         {
-          "label": "earnings",
-          "evidence": "증권가는 SK하이닉스의 올해 2분기 영업이익 규모를 60조~65조원으로 보고 있다."
+          "label": "market-demand",
+          "evidence": "위원회는 “인플레이션이 여전히 2% 목표를 웃돌고 있으며, 에너지를 포함한 일부 부문의 가격 상승을 초래한 공급 충격의 영향을 반영하고 있다”고 밝혔다."
         }
       ],
-      "dedupeKey": "270억-adr-sk하이닉스-나스닥-미국-상장-이르면-임박",
-      "clusterKey": "상장/sk하이닉스/인수합병",
+      "dedupeKey": "강해진-고금리-기조-매파색-물가-상향-연준-장기화",
+      "clusterKey": "매파색/강해진/연준",
       "matchedTo": null,
-      "sourceName": "디일렉",
-      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=58201",
-      "publishedAt": "2026-06-16T13:49:39+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202606183068i",
+      "publishedAt": "2026-06-17T18:12:43+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -223,29 +37,60 @@
       "isBriefing": false
     },
     {
-      "id": "2026-06-17_8",
-      "date": "2026-06-17",
-      "category": "에너지",
-      "title": "월성원전에 불법 드론 대응 레이더 최초 도입",
+      "id": "2026-06-18_2",
+      "date": "2026-06-18",
+      "category": "금융",
+      "title": "데이터브릭스, AI 에이전트 급증으로 매출 80% 이상 성장했으나 마진은 축소",
       "summary": [
-        "원자력안전위원회는 월성원전에서 불법 드론 침입에 대응하기 위한 레이더 방호 체계를 점검했습니다.",
-        "이번에 도입된 레이더는 자율비행 드론 등을 탐지할 수 있으며 6월 말부터 시범 운영에 돌입합니다.",
-        "정부는 성과 평가를 거쳐 해당 레이더 방호 체계를 다른 원전 부지에도 확대 도입할 예정입니다."
+        "데이터브릭스의 연간 환산 매출이 전년 대비 80% 이상 증가한 69억 달러를 기록했습니다.",
+        "하지만 AI 에이전트 사용량 증가로 인해 기본 모델에 대한 지출이 늘어나며 마진은 감소하고 있습니다.",
+        "회사는 보안 스타트업 팬서를 인수하고 마케팅 데이터 관리 소프트웨어를 출시하며 사업을 확장하고 있습니다."
       ],
-      "whyImportant": "국가 핵심 보안 시설인 원자력 발전소의 공중 위협 대응 능력을 강화하고 향후 전국 원전으로 방호 체계를 확대하는 계기가 됩니다.",
-      "importanceRationale": "근거: 6월 말부터 월성원전에서 레이더를 시범 운영한 후 성과 평가를 통해 다른 원전 부지에도 도입할 예정입니다.",
+      "whyImportant": "AI 에이전트의 활성화가 데이터 분석 기업의 매출 성장을 견인하는 동시에, 인프라 비용 증가로 인한 마진 압박이라는 양날의 검이 되고 있음을 보여줍니다.",
+      "importanceRationale": "근거: 데이터브릭스의 연간 환산 매출이 69억 달러로 80% 이상 급증했으나, AI 제품 비용 증가로 마진이 하락하고 있습니다.",
       "impactSignals": [
         {
-          "label": "security",
-          "evidence": "원자력안전위원회는 16일 경북 경주 월성원전에서 불법 드론 침입을 가정한 물리적방호 훈련을 참관하고 최초 도입되는 레이더 등 드론 탐지·대응 장비와 물리적방호 시설 등을 점검했다고 밝혔다."
+          "label": "earnings",
+          "evidence": "Databricks told analysts at the conference that annualized revenue jumped over 80% from a year earlier and now sits at $6.9 billion, up from a figure of $5.4 billion in the fiscal fourth quarter."
         }
       ],
-      "dedupeKey": "대응-도입-드론-레이더-불법-원자력안전위원회-월성원전-최초",
-      "clusterKey": "월성원전/불법/드론",
+      "dedupeKey": "69억-데이터브릭스-마진-매출-성장-에이전트-이상-축소",
+      "clusterKey": "실적/데이터브릭스/인수합병",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368341",
-      "publishedAt": "2026-06-16T04:52:58+00:00",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/06/16/databricks-revenue-growth-tops-80percent-to-6point9-billion-annualized.html",
+      "publishedAt": "2026-06-16T22:25:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-18_3",
+      "date": "2026-06-18",
+      "category": "산업",
+      "title": "젠슨 황 \"AI 수출 통제, 어떤 위험 우려하는지 구체적으로 규정해야\"",
+      "summary": [
+        "젠슨 황 엔비디아 CEO는 미국 정부의 AI 수출 통제에 대해 우려하는 위험을 구체적으로 규정해야 한다고 비판했습니다.",
+        "그는 국가 안보가 최우선이지만 수출 통제 정책 마련 전에 구체적인 위험을 명확히 해야 한다고 강조했습니다.",
+        "트럼프 행정부의 AI 기업 지분 보유 구상에 대해서도 무엇을 달성하려는 것인지 모르겠다며 회의적인 태도를 보였습니다."
+      ],
+      "whyImportant": "글로벌 AI 반도체 시장을 주도하는 엔비디아의 수장이 미국의 AI 수출 통제 및 지분 보유 정책에 대해 공식적으로 비판적인 입장을 표명함으로써 향후 규제 방향에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아 CEO가 미국 정부의 AI 수출 통제 정책과 트럼프 행정부의 지분 보유 구상에 대해 공식적으로 회의적인 입장을 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "젠슨 황 엔비디아 최고경영자는 미국 정부의 인공지능 수출 통제 논란과 관련해 \"어떤 위험을 우려하는지 매우 구체적으로 규정해야 한다\"며 비판적인 입장을 나타냈습니다."
+        }
+      ],
+      "dedupeKey": "구체적-규정해야-수출-어떤-우려하는지-위험-젠슨-통제",
+      "clusterKey": "인수합병/젠슨/정책",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202606171602061914",
+      "publishedAt": "2026-06-17T00:00:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -254,29 +99,29 @@
       "isBriefing": false
     },
     {
-      "id": "2026-06-17_9",
-      "date": "2026-06-17",
+      "id": "2026-06-18_4",
+      "date": "2026-06-18",
       "category": "에너지",
-      "title": "중국 1∼4월 신규 발전설비 70%가 재생에너지, 전력망 연계 강화 추진",
+      "title": "대형원전 2기 영덕에 짓는다…문 정부 중단 뒤 ‘부활’",
       "summary": [
-        "중국의 올해 1∼4월 신규 설치 발전설비 중 재생에너지 비중이 70.7%를 차지했습니다.",
-        "국가에너지국은 신재생에너지의 전력망 연계와 청정에너지 소비 확대를 강화할 방침입니다.",
-        "시장 가격 변동 원칙을 존중하여 신재생에너지 기업의 수익을 보장하고 ESS 산업을 육성합니다."
+        "경북 영덕과 부산 기장이 각각 신규 대형 원전 2기와 소형모듈원전 1기 부지로 선정되었습니다.",
+        "정부는 내년 초까지 예정구역 지정을 마치고 대형 원전은 2037~2038년 준공을 목표로 합니다.",
+        "영덕은 문재인 정부 시절 사업 중단 이후 약 10년 만에 원전 건설이 부활하게 되었습니다."
       ],
-      "whyImportant": "중국이 대규모 재생에너지 설비 확충에 맞춰 전력망 연계와 시장 가격 체계 개편을 본격화함에 따라 글로벌 에너지 인프라 및 ESS 시장에 큰 영향을 미칠 것입니다.",
-      "importanceRationale": "근거: 중국 국가에너지국이 발표한 올해 1~4월 신규 재생에너지 설비 7,516만kW 및 누적 24억kW 돌파 수치는 국가적 규모의 인프라 전환을 보여줍니다.",
+      "whyImportant": "이번 신규 원전 부지 선정은 국가 전력 인프라의 장기적 확장과 에너지 정책의 구조적 전환을 본격화하는 결정입니다.",
+      "importanceRationale": "근거: 정부는 내년 초까지 지정 절차를 마치고 2035년과 2038년까지 신규 원전들을 준공할 계획입니다.",
       "impactSignals": [
         {
-          "label": "capex",
-          "evidence": "또한 신재생에너지의 지역 내 소비를 적극 확대하는 한편 대규모 풍력·태양광 발전 프로젝트를 지속 추진하고 착공 전 절차를 신속히 진행해 사업 속도를 높이기로 했다."
+          "label": "policy",
+          "evidence": "한수원이 입지를 추천하면 정부는 내년 초까지 전원개발사업 예정구역 지정 절차를 마친 뒤 2029년 실시계획 승인과 건설허가를 거쳐 2031년 착공할 계획이다."
         }
       ],
-      "dedupeKey": "강화-국가에너지국-발전설비-신규-연계-재생에너지-전력망-중국",
-      "clusterKey": "신규/발전설비/재생에너지",
+      "dedupeKey": "1기-2기-대형원전-부활-소형모듈원전-영덕-정부-짓는다",
+      "clusterKey": "대형원전/2기/영덕",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368473",
-      "publishedAt": "2026-06-16T08:04:06+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1264049.html",
+      "publishedAt": "2026-06-17T13:10:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 4,
@@ -285,72 +130,95 @@
       "isBriefing": false
     },
     {
-      "id": "2026-06-17_10",
-      "date": "2026-06-17",
-      "category": "국제",
-      "title": "미국과 이란, 양해각서 체결 후 60일간의 핵무기 처리 및 제재 해제 후속 협상 돌입",
+      "id": "2026-06-18_5",
+      "date": "2026-06-18",
+      "category": "에너지",
+      "title": "튀르키예, 차기 원전 건설에 캐나다 기술 도입 검토",
       "summary": [
-        "미국과 이란은 양해각서에 서명한 후 60일 동안 전쟁 종결을 위한 이란 핵 프로그램 처리와 경제 제재 해제 방안을 협상합니다.",
-        "미국은 고농축 우라늄과 시설의 완전 폐기를 요구하는 반면, 이란은 평화적 목적의 핵 프로그램 유지를 주장하고 있습니다.",
-        "이란의 해외 동결 자산 240억 달러의 해제 규모와 시점도 양국 간의 주요 쟁점 중 하나입니다."
+        "튀르키예가 2050년까지 원자력발전 용량을 2만㎿로 확대하기 위해 차기 원전 건설에 캐나다 기술 도입을 검토하고 있습니다.",
+        "바이락타르 에너지장관은 루마니아의 캐나다 기술 적용 원전을 방문했으며 소형 모듈형 원자로 도입도 논의 중이라고 밝혔습니다.",
+        "튀르키예는 차기 원전 기술 선정을 위해 중국, 한국, 캐나다 등 여러 국가와 협력 및 협상을 진행하고 있습니다."
       ],
-      "whyImportant": "미국과 이란의 후속 협상 결과는 중동 지역의 지정학적 긴장 완화와 글로벌 에너지 공급망의 안정성에 장기적인 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 양국은 19일 양해각서 서명 후 60일 동안 이란의 핵 프로그램 처리와 240억 달러 규모의 동결 자산 해제를 두고 협상합니다.",
-      "impactSignals": [
-        {
-          "label": "sanctions",
-          "evidence": "핵 프로그램 폐기를 조건으로 미국이 이란에 줄 수 있는 반대급부는 240억달러(약 36조원)에 이르는 이란의 해외 자산 동결 해제다."
-        }
-      ],
-      "dedupeKey": "60일간-미국-양해각서-이란-처리-핵무기-협상-후속",
-      "clusterKey": "제재/양해각서/관세",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026061577571",
-      "publishedAt": "2026-06-15T09:06:15+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-06-17_11",
-      "date": "2026-06-17",
-      "category": "기술",
-      "title": "대법원 회생·파산위원회, 도산 절차 전면 온라인 및 디지털화 권고",
-      "summary": [
-        "대법원 회생·파산위원회는 도산 사건의 신청부터 종결까지 전 과정을 온라인·디지털화할 것을 법원에 권고했습니다.",
-        "채무자가 AI를 활용해 신청서를 작성하고 온라인 집회시스템을 도입하는 방안과 회생법원종합지원센터 구축이 추진됩니다.",
-        "연 매출 3억 원 이하 소상공인 대상 개인파산 비용 지원 등 취약 채무자를 위한 지원책도 함께 시행됩니다."
-      ],
-      "whyImportant": "도산 절차의 디지털화와 온라인 지원 체계 구축은 고금리 상황에서 급증하는 도산 신청 처리의 효율성을 높이고 채무자의 사법 서비스 접근성을 개선하는 중요한 제도적 변화입니다.",
-      "importanceRationale": "근거: 대법원 회생·파산위원회가 연 매출 3억원 이하 소상공인 지원 및 전면적인 디지털화 권고안을 공식 채택했습니다.",
+      "whyImportant": "튀르키예의 대규모 원전 확장 계획은 글로벌 원전 수출 시장의 경쟁 구도와 국가별 에너지 인프라 수주 기회에 장기적인 영향을 미칩니다.",
+      "importanceRationale": "근거: 튀르키예 정부가 2050년까지 원자력발전 용량을 2만㎿로 확대하는 목표를 세우고 차기 원전 건설을 추진 중입니다.",
       "impactSignals": [
         {
           "label": "capex",
-          "evidence": "법원행정처 자문기구인 회생·파산위는 16일 열린 제24차 정기회의에서 \"도산사건의 신청부터 종결까지 모든 과정을 온라인·디지털화해 도산사법서비스 접근성을 획기적으로 높이고, 신속성과 효율성을 높일 기술적·제도적 기반을 마련할 것을 권고한다\"는 내용의 건의문을 채택했다."
+          "evidence": "(이스탄불=연합뉴스) 김동호 특파원 = 튀르키예가 건설을 검토하고 있는 차기 원자력발전소와 관련해 캐나다 기술을 도입하는 방안을 검토 중이라고 아나돌루 통신, 일간 사바흐 등 현지 언론이 17일(현지시간) 보도했다."
         },
         {
           "label": "policy",
-          "evidence": "작년 7월 금융위원회에서 개인회생 채무자가 변제계획인가 결정 후 1년간 성실히 변제를 완료한 경우 개인회생 정보를 해제하기로 함에 따라, 법원행정처가 올해 2월부터 대상 개인회생 정보를 제공하고 신용정보원에서 신용정보 해제 절차를 진행한다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "구체적으로 도산 채무자가 인공지능(AI) 시스템을 활용해 도산 신청서를 쉽게 작성·제출하도록 하고, 도산사건 정보를 데이터화해 온라인 집회시스템을 도입하라는 내용이다."
-        },
-        {
-          "label": "earnings",
-          "evidence": "또 연 매출 3억원 이하의 소상공인도 개인파산·면책 등 사건에서 변호사비용, 송달료 등을 지원받을 수 있다."
+          "evidence": "바이락타르 장관은 튀르키예가 이 사안을 두고 중국과 오랜 기간 협상해왔으며, 최근에는 한국과 집중적으로 협력하기 시작했고 지난 몇달 사이에는 캐나다와 활발히 협력하는 상황이라고 설명했다."
         }
       ],
-      "dedupeKey": "권고-대법원-도산-디지털화-온라인-절차-파산위원회-회생",
-      "clusterKey": "실적/대법원",
+      "dedupeKey": "2만-건설-기술-도입-원전-차기-캐나다-튀르키예",
+      "clusterKey": "한중_관세/튀르키예",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368466",
-      "publishedAt": "2026-06-16T07:52:12+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1369228",
+      "publishedAt": "2026-06-17T14:52:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-18_6",
+      "date": "2026-06-18",
+      "category": "산업",
+      "title": "미토스 수출통제, 'AI 주도권 확보' 美행정부 전략과 모순",
+      "summary": [
+        "미국 행정부가 앤트로픽의 AI 모델에 수출 통제를 가하면서 AI 글로벌 주도권 확보 전략과 모순된다는 지적이 나왔습니다.",
+        "업계에서는 이번 조치로 전 세계 고객들이 미국 AI 구매를 결정하기가 더 어려워질 것이라고 우려하고 있습니다.",
+        "수출 프로그램 신청 마감을 앞두고 백악관의 대응에 따라 다른 기업들의 참여 여부가 결정될 전망입니다."
+      ],
+      "whyImportant": "미국의 AI 수출 통제 조치가 자국 AI 기업들의 글로벌 경쟁력을 약화시키고 기술 생태계 전반에 의도치 않은 연쇄 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 행정부가 앤트로픽의 AI 모델에 수출 통제를 가하면서, 이번 달 말 마감되는 미국 AI 수출 프로그램에 대한 기업들의 참여 여부에 영향을 미치게 되었습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "도널드 트럼프 미국 행정부가 앤트로픽의 '미토스5', '페이블5' 등 인공지능(AI) 모델에 대해 수출 통제를 가한 것은 AI 모델 수출을 통해 이 분야 글로벌 주도권을 확보하겠다는 미국의 최신 전략과 모순된다는 지적이 제기됐다."
+        }
+      ],
+      "dedupeKey": "모순-미국-미토스-수출통제-전략-주도권-행정부-확보",
+      "clusterKey": "제재/미토스",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368840",
+      "publishedAt": "2026-06-17T01:40:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-18_7",
+      "date": "2026-06-18",
+      "category": "국제",
+      "title": "중국 왕이 부장 \"미국·이란 2단계 협상 더 어려울 것…각국 조력해야\"",
+      "summary": [
+        "중국 왕이 외교부장은 파키스탄 외무장관과의 통화에서 미국과 이란의 1단계 양해각서 체결을 축하했습니다.",
+        "왕 부장은 향후 진행될 2단계 협상의 난도가 더 높아질 것으로 예상하며 국제사회의 조력을 촉구했습니다.",
+        "중국은 대화와 협상을 통해 지역 국가들이 참여하는 평화 안보 프레임 모색을 희망한다고 밝혔습니다."
+      ],
+      "whyImportant": "미국과 이란의 관계 개선 및 중동 평화 안보 프레임 구축 과정에서 중국과 파키스탄 등 주변국들의 중재 역할과 외교적 영향력을 보여줍니다.",
+      "importanceRationale": "근거: 미국과 이란이 1단계 양해각서(MOU)를 체결한 상황에서 향후 2단계 협상의 난도가 높아질 것이라는 외교적 전망을 담고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "중동과 걸프 지역의 지속적인 평화에는 여전히 각국의 끊임없는 노력이 필요하다\"면서 \"1단계와 비교할 때 2단계 협상의 난도가 더 높아질 것으로 예상할 수 있지만 중국은 되돌아가서는 안 되고 다시 무력을 행사해서는 더욱 안 된다고 본다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "2단계-각국-미국-부장-왕이-이란-조력해야-중국",
+      "clusterKey": "미중_관세/왕이",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368617",
+      "publishedAt": "2026-06-16T14:41:25+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,

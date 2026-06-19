@@ -110,6 +110,8 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 DATA_DIR = Path(os.getenv("DATA_DIR", str(REPO_ROOT / "data")))
 
 OUTPUT_JSON = os.getenv("OUTPUT_JSON", str(DATA_DIR / "daily_digest.json"))
+ARCHIVE_DIR = os.getenv("ARCHIVE_DIR", str(DATA_DIR / "archive"))
+ARCHIVE_INDEX_JSON = os.getenv("ARCHIVE_INDEX_JSON", str(DATA_DIR / "index.json"))
 DEDUPE_HISTORY_PATH = os.getenv("DEDUPE_HISTORY_PATH", str(DATA_DIR / "dedupe_history.json"))
 METRICS_JSON = os.getenv("METRICS_JSON", str(DATA_DIR / "digest_metrics.json"))
 DEDUPE_RECENT_DAYS = int(os.getenv("DEDUPE_RECENT_DAYS", "3"))

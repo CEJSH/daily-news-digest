@@ -10,6 +10,8 @@ from daily_news_digest.processing.ai_enricher import enrich_item_with_ai
 from daily_news_digest.processing.scoring import map_topic_to_category
 from daily_news_digest.processing.dedupe import DedupeEngine
 from daily_news_digest.core.config import (
+    ARCHIVE_DIR,
+    ARCHIVE_INDEX_JSON,
     DEDUPE_HISTORY_PATH,
     DEDUPE_RECENT_DAYS,
     DEDUPKEY_NGRAM_N,
@@ -1137,10 +1139,57 @@ def _validate_digest(digest: dict) -> tuple[bool, str]:
 
 def _atomic_write_json(path: str, payload: dict) -> None:
     """임시 파일로 저장 후 원자적 교체."""
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
     tmp_path = f"{path}.tmp"
     with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
     os.replace(tmp_path, path)
+
+
+_ARCHIVE_DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json$")
+
+
+def _rebuild_archive_index(archive_dir: str, index_path: str) -> None:
+    """archive 폴더를 스캔해 날짜 목록 manifest(index.json)를 재생성."""
+    entries: list[dict[str, Any]] = []
+    try:
+        names = os.listdir(archive_dir)
+    except FileNotFoundError:
+        names = []
+    for name in names:
+        match = _ARCHIVE_DATE_RE.match(name)
+        if not match:
+            continue
+        date_str = match.group(1)
+        entry: dict[str, Any] = {"date": date_str, "path": f"archive/{name}"}
+        snapshot = _safe_read_json(os.path.join(archive_dir, name), None)
+        if isinstance(snapshot, dict):
+            items = snapshot.get("items")
+            if isinstance(items, list):
+                entry["count"] = sum(
+                    1
+                    for it in items
+                    if isinstance(it, dict) and it.get("status") in {"published", "kept"}
+                )
+        entries.append(entry)
+    entries.sort(key=lambda e: e["date"], reverse=True)
+    index_payload = {
+        "version": 1,
+        "latest": entries[0]["date"] if entries else None,
+        "dates": [e["date"] for e in entries],
+        "entries": entries,
+    }
+    _atomic_write_json(index_path, index_payload)
+
+
+def _write_archive_snapshot(digest: dict) -> None:
+    """오늘 digest를 날짜별 archive 파일로 저장하고 index.json 갱신."""
+    date_str = digest.get("date")
+    if not date_str or not _ARCHIVE_DATE_RE.match(f"{date_str}.json"):
+        return
+    archive_path = os.path.join(ARCHIVE_DIR, f"{date_str}.json")
+    _atomic_write_json(archive_path, digest)
+    _rebuild_archive_index(ARCHIVE_DIR, ARCHIVE_INDEX_JSON)
 
 def _load_dedupe_history(path: str) -> dict:
     """중복 제거 히스토리를 안전하게 로드."""
@@ -1554,6 +1603,10 @@ def export_daily_digest_json(
             print(f"⚠️ 최소 개수({MIN_TOP_ITEMS}) 미달로 {len(items_out)}개만 저장합니다.")
             _atomic_write_json(output_path, digest)
             try:
+                _write_archive_snapshot(digest)
+            except Exception:
+                pass
+            try:
                 _update_dedupe_history(digest, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS)
             except Exception:
                 pass
@@ -1592,6 +1645,10 @@ def export_daily_digest_json(
         )
 
     _atomic_write_json(output_path, digest)
+    try:
+        _write_archive_snapshot(digest)
+    except Exception:
+        pass
     try:
         _update_dedupe_history(digest, DEDUPE_HISTORY_PATH, DEDUPE_RECENT_DAYS)
     except Exception:

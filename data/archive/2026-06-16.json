@@ -1,0 +1,384 @@
+{
+  "date": "2026-06-16",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-06-16T15:32:46.787069+09:00",
+  "items": [
+    {
+      "id": "2026-06-16_1",
+      "date": "2026-06-16",
+      "category": "금융",
+      "title": "경남 ‘스마트공장’ 도입 뒤 439개 기업 매출 상승, 고용은 평균 이하 기록",
+      "summary": [
+        "경남 지역에서 스마트공장을 도입한 439개 기업을 분석한 결과 생산성이 22.8% 증가하고 원가는 32.5% 절감되었습니다.",
+        "이러한 공정 개선은 매출액 15.6% 증가와 산업재해 21.7% 감소로 이어졌습니다.",
+        "다만 스마트공장 도입 기업의 평균 고용증가율은 1.8%로 미도입 기업의 3.1%보다 낮게 나타났습니다."
+      ],
+      "whyImportant": "스마트공장 도입이 실제 제조 공정 개선과 매출 증가에는 기여하지만, 고용 창출 효과는 오히려 미도입 기업보다 낮아 기술 도입과 일자리 간의 상충 관계를 보여줍니다.",
+      "importanceRationale": "근거: 경남 지역에서 2022년부터 2023년까지 스마트공장을 도입한 439개 기업의 실제 성과 데이터를 바탕으로 분석한 결과입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "공정 관리 개선은 매출액 15.6% 증가, 고용 3.3% 증가, 산업재해 21.7% 감소로 이어졌다."
+        }
+      ],
+      "dedupeKey": "439개-경남-고용-기업-도입-매출-상승-스마트공장",
+      "clusterKey": "실적/경남",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/area/yeongnam/1263775.html",
+      "publishedAt": "2026-06-16T04:41:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_2",
+      "date": "2026-06-16",
+      "category": "국제",
+      "title": "미국과 이란 종전 양해각서 서명, 핵심 쟁점 후속 협상 과제로 남아",
+      "summary": [
+        "미국과 이란이 종전 양해각서에 전자 서명했으며 오는 19일 제네바에서 별도 서명식을 개최합니다.",
+        "이번 합의는 이란의 비핵화와 미국의 상응 조치를 연결하는 대략적인 틀을 담고 있습니다.",
+        "호르무즈 해협 통행료 면제 기간과 제재 완화 조건 등 핵심 쟁점은 향후 기술적 협상에서 다뤄집니다."
+      ],
+      "whyImportant": "글로벌 에너지 수송로인 호르무즈 해협의 통행료 문제와 이란 제재 완화 여부가 향후 협상 결과에 따라 결정되므로 국제 유가 및 공급망에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국과 이란이 종전 양해각서에 서명하였으며, 호르무즈 해협의 60일간 무상 개방 이후 통행료 징수 여부와 제재 완화 조건을 두고 후속 협상을 진행할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "미국·이란 '종전' 서명했지만…진짜 협상은 이제 시작 19일 제네바서 별도 서명식 예정 美 \"이란 조치 따라 제재완화 가능\" 美 \"이란 조치 따라 제재완화 가능\" 미국과 이란이 종전 양해각서(MOU)에 전자 방식으로 먼저 서명한 것으로 전해졌다."
+        }
+      ],
+      "dedupeKey": "미국-양해각서-이란-쟁점-종전-핵심-협상-후속",
+      "clusterKey": "제재/종전/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026061684037",
+      "publishedAt": "2026-06-15T23:39:16+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_3",
+      "date": "2026-06-16",
+      "category": "국제",
+      "title": "미국과 이란, 19일 양해각서 서명 후 60일간 핵무기 처리 및 제재 해제 최종 협상 진행",
+      "summary": [
+        "미국과 이란은 양해각서 서명 후 60일 동안 전쟁 종결을 위한 이란 핵 프로그램 처리와 경제 제재 해제 방안을 협상합니다.",
+        "미국은 핵물질의 완전 폐기를 요구하는 반면 이란은 평화적 목적의 핵 프로그램과 농축 우라늄 보유를 주장하고 있습니다.",
+        "이란의 해외 동결 자산 해제 규모와 시점을 두고 양국의 초안과 입장 차이가 존재합니다."
+      ],
+      "whyImportant": "미국과 이란의 최종 합의 여부는 중동 지역의 지정학적 긴장 완화와 글로벌 에너지 공급망의 안정성에 장기적인 영향을 미칩니다.",
+      "importanceRationale": "근거: 양국은 19일 양해각서 서명 후 60일 동안 이란의 핵 프로그램 처리와 240억 달러 규모의 동결 자산 해제를 협상합니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "핵 프로그램 폐기를 조건으로 미국이 이란에 줄 수 있는 반대급부는 240억달러(약 36조원)에 이르는 이란의 해외 자산 동결 해제다."
+        }
+      ],
+      "dedupeKey": "60일간-미국-양해각서-이란-처리-최종-핵무기-협상",
+      "clusterKey": "제재/양해각서/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026061577571",
+      "publishedAt": "2026-06-15T09:06:15+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_5",
+      "date": "2026-06-16",
+      "category": "기술",
+      "title": "마이크로소프트 사칭 해킹 확산…이메일 첨부파일 주의",
+      "summary": [
+        "북한 연계 해킹조직 APT37의 소행으로 의심되는 악성코드 나왈랫이 국내 이용자를 겨냥해 확산 중입니다.",
+        "마이크로소프트 계정 팀을 사칭한 이메일의 첨부파일을 실행하면 PC 제어 및 정보 탈취 기능의 악성코드가 설치됩니다.",
+        "해당 악성코드는 네이버 웨일 브라우저로 위장하고 카카오톡 관련 창을 처리하는 등 국내 환경에 맞춰 설계되었습니다."
+      ],
+      "whyImportant": "국내 사용자가 많은 네이버 웨일과 카카오톡을 표적으로 삼아 고도화된 원격제어 악성코드가 유포되고 있어 기업 및 개인의 보안 대비가 시급합니다.",
+      "importanceRationale": "근거: 북한 연계 조직 APT37이 국내 이용자를 겨냥해 30종 이상의 원격제어 기능을 가진 악성코드를 유포하고 있음이 확인되었습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "지니언스는 이번 공격이 지난해 공개된 APT37의 파이썬 기반 백도어 공격 사례와 구조, 수법 면에서 유사하다고 분석했다."
+        }
+      ],
+      "dedupeKey": "apt37-마이크로소프트-사칭-이메일-주의-첨부파일-해킹-확산",
+      "clusterKey": "마이크로소프트/사칭/해킹",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=58119",
+      "publishedAt": "2026-06-15T09:28:49+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_6",
+      "date": "2026-06-16",
+      "category": "금융",
+      "title": "미국과 이란, 19일 후속 실무협상 돌입 전망 및 미국 협상단 구성",
+      "summary": [
+        "미국과 이란의 종전 합의로 인해 봉쇄되었던 호르무즈 해협이 열릴 것이라는 기대감이 커지고 있습니다.",
+        "중동 전쟁의 여파는 해운 및 제조업 분야에도 상당한 영향을 미치고 있습니다."
+      ],
+      "whyImportant": "미국과 이란의 종전 합의 및 호르무즈 해협 개방 기대감은 글로벌 해운 공급망과 제조업 전반의 비용 부담을 완화하는 중요한 전환점이 될 수 있습니다.",
+      "importanceRationale": "근거: 미국과 이란의 종전 합의로 호르무즈 해협 개방 기대감이 커지며 해운 및 제조업 산업 전반에 영향을 미치고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "[🔴LIVE] 개표소 집회 관련 행안부 등 관계부처 대국민 담화/2026년 6월 16(화)/KBS 국민참정권 침해 및 잠실 개표소 집회와 관련해 윤호중 행정안전부 장관, 정성호 법무부 장관, 유재성 경찰청장 직무대리가 오늘 오후 정부서울청사..."
+        }
+      ],
+      "dedupeKey": "구성-돌입-미국-봉쇄되었던-실무협상-이란-협상단-후속",
+      "clusterKey": "미중동_관세/후속",
+      "matchedTo": null,
+      "sourceName": "KBS",
+      "sourceUrl": "https://www.youtube.com/user/NewsKBS",
+      "publishedAt": "2026-06-15T21:34:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_7",
+      "date": "2026-06-16",
+      "category": "기술",
+      "title": "엔비디아, AI 붐 시작 이후 첫 회사채 발행 통해 최소 200억 달러 조달 계획",
+      "summary": [
+        "엔비디아가 AI 붐이 시작된 이후 처음으로 최소 200억 달러 규모의 회사채 발행을 준비하고 있습니다.",
+        "조달된 자금은 기존 부채 상환 및 차환을 포함한 일반 기업 목적으로 사용될 예정입니다.",
+        "엔비디아는 최근 분기에 490억 달러의 잉여현금흐름을 기록했으며 올해 잉여현금흐름의 약 50%를 주주에게 환원할 계획입니다."
+      ],
+      "whyImportant": "AI 시장의 급격한 성장 속에서 엔비디아가 대규모 자본 조달을 통해 재무 구조를 강화하고 주주 환원 및 기업 운영 자금을 확보하려는 전략적 움직임입니다.",
+      "importanceRationale": "근거: 엔비디아가 최소 200억 달러에서 최대 250억 달러 규모의 회사채 발행을 계획하고 있으며, 이는 2021년 50억 달러 조달 이후 최대 규모입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "Nvidia generated $49 billion in free cash flow in the latest quarter, up from $35 billion in the same period a year earlier, and reiterated plans in its latest earnings call to “return roughly 50% of free cash flow to shareholders this year.”"
+        },
+        {
+          "label": "market-demand",
+          "evidence": "and European bond sales, and it announced plans last week to raise about $10 billion in a Canadian debt sale Nvidia has about $7.5 billion in long-term debt and another $1 billion in short-term debt."
+        }
+      ],
+      "dedupeKey": "200억-달러-발행-시작-엔비디아-이후-최소-회사채",
+      "clusterKey": "투자/엔비디아",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/06/15/nvidia-plans-to-raise-about-20-billion-first-debt-sale-in-ai-boom.html",
+      "publishedAt": "2026-06-15T19:42:46+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_8",
+      "date": "2026-06-16",
+      "category": "기술",
+      "title": "상하이 디즈니랜드 개장 10주년, 세 번째 테마호텔 이번 겨울 개장 예정",
+      "summary": [
+        "상하이 디즈니랜드가 개장 10주년을 맞이하여 이번 겨울 세 번째 테마호텔을 개장할 예정입니다.",
+        "지난해 10월 누적 방문객 1억 명을 돌파하며 상하이의 대표 관광 명소로 자리 잡았습니다.",
+        "디즈니랜드는 1만 5,000개 이상의 직접 일자리를 창출하며 지역 경제 성장의 핵심 동력이 되고 있습니다."
+      ],
+      "whyImportant": "상하이 디즈니랜드의 지속적인 확장은 중국 내수 관광 산업의 활성화와 외국인 관광객 유치에 기여하고 있습니다.",
+      "importanceRationale": "근거: 상하이 디즈니랜드는 누적 방문객 1억 명을 돌파하고 1만 5,000개 이상의 직접 일자리를 창출했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "펑파이는 “상하이의 주요 랜드마크 중 하나인 디즈니랜드가 지역 성장의 핵심 동력으로서 경제적 기여도가 높아지고 있다”면서 “1만5000개 이상의 직접적인 일자리를 창출하고 간접 고용 기회를 창출하며 점점 더 많은 방문객을 상하이로 끌어들여 글로벌 관광·소비 명소로서의 선도적 위치를 더욱 강화하고 있다”고 전했다."
+        }
+      ],
+      "dedupeKey": "000개-10주년-개장-겨울-디즈니랜드-번째-상하-테마호텔",
+      "clusterKey": "상하/디즈니랜드/개장",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://www.edaily.co.kr/News/Read?newsId=04290246645482376&mediaCodeNo=257",
+      "publishedAt": "2026-06-15T19:11:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_9",
+      "date": "2026-06-16",
+      "category": "에너지",
+      "title": "원전 불법 드론 막는다…월성원전에 레이더 최초 도입",
+      "summary": [
+        "원자력안전위원회는 불법 드론 침입에 대응하기 위해 월성원전에 드론 탐지 레이더를 최초로 도입하여 시범 운영했습니다.",
+        "이번에 도입된 레이더는 성능시험을 거쳐 6월 말부터 정식 운용되며 향후 다른 원전으로 확대될 예정입니다.",
+        "원전 사업자는 공중 위협에 대비한 방호 장비를 구축하고 정기적인 물리적 방호 훈련을 실시해야 합니다."
+      ],
+      "whyImportant": "국가 핵심 보안 시설인 원자력 발전소의 공중 위협 대응 체계가 레이더 도입을 통해 한층 강화되며, 이는 향후 전국 원전으로 확대 적용될 수 있는 중요한 전환점입니다.",
+      "importanceRationale": "근거: 월성원전에서 레이더를 최초 도입하여 6월 말부터 운용하고, 성과 평가를 통해 다른 원전 부지에도 도입하는 방안이 마련될 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "원자력안전위원회는 16일 경북 경주 월성원전에서 불법 드론 침입을 가정한 물리적방호 훈련을 참관하고 최초 도입되는 레이더 등 드론 탐지·대응 장비와 물리적방호 시설 등을 점검했다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "도입-드론-레이더-막는다-불법-원전-월성원전-최초",
+      "clusterKey": "불법/드론/막는다",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1368341",
+      "publishedAt": "2026-06-16T04:52:58+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_10",
+      "date": "2026-06-16",
+      "category": "국제",
+      "title": "이재명 대통령, 미·이란 종전 협상 타결 환영 및 국제사회 공조 역할 표명",
+      "summary": [
+        "이재명 대통령은 미국과 이란의 종전 협상 타결에 대해 글로벌 에너지 수급 안정과 선박의 안전한 운항 재개를 기대하며 환영의 뜻을 밝혔습니다.",
+        "대한민국은 호르무즈 해협의 안전한 항행 보장을 위해 미국 및 국제사회와 긴밀히 공조하며 필요한 역할을 수행할 계획입니다.",
+        "이번 합의를 통해 중동 긴장으로 인한 물류비 상승 등 국내 경제의 불확실성이 점차 해소되기를 기대하고 있습니다."
+      ],
+      "whyImportant": "미·이란 종전 협상 타결은 호르무즈 해협의 항행 안전을 확보하고 글로벌 에너지 수급 및 물류비 부담을 완화하여 한국 경제의 불확실성을 해소하는 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 이재명 대통령은 16~17일 G7 정상회의에 참석하여 호르무즈 해협 통항 관리를 위한 국제 공조 방안을 논의할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "\"안전한 선박운행 재개할 수 있길…트럼프 리더십 높이 평가\" (서울=연합뉴스) 황윤기 기자 = 이재명 대통령은 15일 미국과 이란의 종전 협상 타결 소식에 \"국제사회가 오랫동안 기대해 온 사태 해결을 위한 중요한 진전\"이라며 \"환영한다\"고 밝혔다."
+        }
+      ],
+      "dedupeKey": "국제사회-대통령-이란-이재명-종전-타결-협상-환영",
+      "clusterKey": "미중동_관세/이재명",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1367983",
+      "publishedAt": "2026-06-15T14:34:36+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_11",
+      "date": "2026-06-16",
+      "category": "국제",
+      "title": "미국과 이란, 휴전 후 60일간 추가 협상 진행 및 핵 문제 과제 잔존",
+      "summary": [
+        "미국과 이란이 종전 양해각서에 합의하고 향후 60일 동안 핵 프로그램과 경제 제재 해결을 위한 추가 협상을 진행합니다.",
+        "양측은 이란의 핵무기 보유 불가 원칙에는 합의했으나 구체적인 핵 프로그램 처리 방안은 합의안에 포함하지 못했습니다.",
+        "이란은 동결 자금 해제와 제재 완화를 원하지만 미국은 비핵화 이행 수준에 따른 단계적 해제 원칙을 고수할 전망입니다."
+      ],
+      "whyImportant": "미국과 이란의 임시 합의 이후 60일간의 추가 협상 결과에 따라 중동 지역의 지정학적 긴장 완화 여부와 대이란 경제 제재의 향방이 결정됩니다.",
+      "importanceRationale": "근거: 양국은 향후 60일 동안 이란의 핵 프로그램 처리와 240억 달러 규모의 동결자산 해제 등 구체적인 제재 완화 조건을 두고 협상할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "두 나라는 향후 60일간 완전한 전쟁 종결을 위한 이란의 핵 프로그램과 대이란 경제 제재에 대한 해결 방안을 도출해야 한다."
+        }
+      ],
+      "dedupeKey": "60일간-과제-문제-미국-이란-진행-협상-휴전",
+      "clusterKey": "투자/휴전/제재/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202606156735i",
+      "publishedAt": "2026-06-15T06:03:46+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_12",
+      "date": "2026-06-16",
+      "category": "금융",
+      "title": "한국콜마, 2분기 실적 기대치 웃돌 전망",
+      "summary": [
+        "한국콜마의 2분기 연결기준 매출은 전년 동기 대비 13% 증가한 8259억원, 영업이익은 32.4% 증가한 973억원으로 전망됩니다.",
+        "국내 법인은 주요 고객사의 양호한 매출 흐름에 힘입어 영업이익이 32.7% 늘어난 650억원을 기록할 것으로 예상됩니다.",
+        "중국 법인은 수익성 중심 경영으로 10% 수준의 매출 성장이 기대되나 미국 법인은 역성장을 이어갈 것으로 보입니다."
+      ],
+      "whyImportant": "한국콜마가 국내 주요 고객사의 매출 호조와 중국 법인의 수익성 개선을 바탕으로 올해 역대 최대 실적을 기록할 것으로 전망됩니다.",
+      "importanceRationale": "근거: 한국투자증권은 한국콜마의 2분기 영업이익이 전년 동기 대비 32.4% 증가한 973억원으로 시장 컨센서스를 5.2% 상회할 것으로 전망했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "한국투자증권은 한국콜마의 2분기 연결기준 매출과 영업이익을 각각 전년 동기보다 13%와 32.4% 증가한 8259억원, 973억원으로 예상했다."
+        }
+      ],
+      "dedupeKey": "650억원-8259억원-973억원-기대치-실적-웃돌-중국-한국콜마",
+      "clusterKey": "미중_실적/한국콜마",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026061682556",
+      "publishedAt": "2026-06-15T22:53:03+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-06-16_13",
+      "date": "2026-06-16",
+      "category": "에너지",
+      "title": "러시아 점령 자포리자 원전, 19번째 정전 발생 후 사흘 만에 복구",
+      "summary": [
+        "러시아가 점령한 우크라이나 자포리자 원전의 외부 전력 공급이 피격 사흘 만에 복구되었습니다.",
+        "이번 정전은 2022년 2월 러시아의 침공 이후 19번째로 발생한 사례입니다.",
+        "교전 격화로 전력 공급이 차단되면 냉각 시스템이 멈춰 방사성 물질 누출 우려가 커집니다."
+      ],
+      "whyImportant": "전쟁 중 지속되는 원전 정전은 냉각 시스템 마비로 인한 방사성 물질 누출이라는 글로벌 재앙으로 이어질 수 있어 지속적인 감시가 필요합니다.",
+      "importanceRationale": "근거: 2022년 2월 침공 이후 19번째 정전이 발생했으며, 외부 전력 차단 시 냉각 시스템이 멈추는 위험이 존재합니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "지난 11일 외부 공격에 변전소가 파손되면서 모든 외부 전력 공급이 중단된 이후 사흘만이다."
+        }
+      ],
+      "dedupeKey": "19번째-러시아-발생-사흘-원전-자포리자-점령-정전",
+      "clusterKey": "에너지/점령",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1367350",
+      "publishedAt": "2026-06-14T07:55:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

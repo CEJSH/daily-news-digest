@@ -1,0 +1,324 @@
+{
+  "date": "2026-04-08",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-04-08T08:11:09.730227+09:00",
+  "items": [
+    {
+      "id": "2026-04-08_1",
+      "date": "2026-04-08",
+      "category": "국제",
+      "title": "국제 유가, 종전 협상 상황에 촉각…브렌트유 1% 상승",
+      "summary": [
+        "현지시간 6일 국제 유가가 상승했으며, 6월 인도분 브렌트유 선물 종가는 배럴당 109.77달러로 0.7% 상승했습니다.",
+        "5월 인도분 미국 서부텍사스산원유 선물은 배럴당 112.41달러로 0.8% 상승했습니다."
+      ],
+      "whyImportant": "국제 유가 변동은 에너지 시장 전반에 영향을 미치며, 관련 산업 및 소비자 물가에 파급 효과를 미칠 수 있습니다.",
+      "importanceRationale": "근거: 브렌트유 선물 종가가 0.7%, 서부텍사스산원유 선물은 0.8% 상승하여 시장에 영향을 줄 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "#국제유가 #WTI #브렌트유 #이란전쟁 #종전협상 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장효인(hijang@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "국제-브렌트유-상승-상황-유가-종전-촉각-협상",
+      "clusterKey": "관세/국제",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1335675",
+      "publishedAt": "2026-04-06T21:27:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_2",
+      "date": "2026-04-08",
+      "category": "기술",
+      "title": "엔비디아 지원 AI 데이터 센터 구축업체 Firmus, 7조 5천억원 가치 평가",
+      "summary": [
+        "F mus가 Coatue가 주도하는 5억 5백만 달러의 투자를 유치하여 기업 가치가 55억 달러로 평가되었습니다.",
+        "이번 투자 라운드를 통해 F mus는 6개월 만에 13억 5천만 달러를 조달했습니다.",
+        "F mus는 호주와 태즈매니아에 에너지 효율적인 AI 데이터 센터 네트워크를 개발 중입니다."
+      ],
+      "whyImportant": "AI 데이터 센터 구축 경쟁이 심화되는 가운데, 엔비디아의 지원을 받는 Firmus의 성장은 업계의 주목할 만한 변화를 나타냅니다.",
+      "importanceRationale": "근거: Firmus는 엔비디아의 Vera Rubin 플랫폼을 사용하여 데이터 센터를 구축할 예정이며, 이는 2026년 하반기에 출시될 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Asia AI data center provider Firmus on Monday announced a fresh $505 million raise led by Coatue at a $5.5 billion post-money valuation."
+        }
+      ],
+      "dedupeKey": "5천억원-7조-firmus-구축업체-데이터-센터-엔비디아-지원",
+      "clusterKey": "투자/엔비디아",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/04/07/firmus-the-southgate-ai-datacenter-builder-backed-by-nvidia-hits-5-5b-valuation/",
+      "publishedAt": "2026-04-07T18:46:55+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_3",
+      "date": "2026-04-08",
+      "category": "기술",
+      "title": "법무법인 세종, AI·디지털 경쟁법팀 출범",
+      "summary": [
+        "법무법인 세종이 AI 및 디지털 시장의 경쟁법 이슈에 대응하기 위해 전문팀을 출범했습니다.",
+        "이는 대형 로펌 중 처음으로 경쟁법 중심으로 특화된 조직을 구성한 것입니다.",
+        "AI 반도체, 클라우드, 학습 데이터 등 관련 경쟁 이슈에 대한 자문을 제공할 예정입니다."
+      ],
+      "whyImportant": "AI 및 디지털 시장의 경쟁 심화와 규제 강화에 따라 기업들의 법적 리스크 관리 중요성이 커지고 있습니다.",
+      "importanceRationale": "근거: AI 및 디지털 시장의 경쟁법 리스크에 대응하기 위해 법무법인 세종이 'AI·디지털 경쟁법팀'을 출범한 것은 규제 환경 변화에 대한 선제적 대응이라는 점에서 중요합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "세종, 대형로펌 최초 'AI·디지털 경쟁법팀' 출범…규제 대응 본격화 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 AI·플랫폼 경쟁 규제 확대 기업 리스크 관리 수요 증가 전방위 자문 체계 구축 기업 리스크 관리 수요 증가 전방위 자문 체계 구축 법무법인(유) 세종이 인공지능(AI)과 디지털 시장을 둘러싼 경쟁법 이슈에 대응하기 위해 전문 조직을 신설하며 규제 대응 체계를 강화했다."
+        }
+      ],
+      "dedupeKey": "경쟁법-경쟁법팀-대응하기-디지털-법무법인-세종-시장-클라우드",
+      "clusterKey": "법무법인/세종/디지털",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202604074429i",
+      "publishedAt": "2026-04-07T05:12:16+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_4",
+      "date": "2026-04-08",
+      "category": "기술",
+      "title": "디지털 자산 기본법 관련 이데일리 디지털자산포럼 개최 예정",
+      "summary": [
+        "이데일리 디지털자산포럼이 디지털자산기본법이 가져올 변화를 주제로 개최됩니다.",
+        "글로벌 스테이블코인, STO, RWA 프로젝트 등의 비전을 통해 시장의 주도권 향방을 가늠할 예정입니다."
+      ],
+      "whyImportant": "디지털 자산 시장의 제도권 편입과 산업 재편에 대한 논의를 촉진할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 2026년 4월 23일에 열리는 포럼에서 디지털자산기본법 입법을 기점으로 국내 디지털자산 시장의 변화를 조망할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
+        }
+      ],
+      "dedupeKey": "기본법-디지털-디지털자산기본법-디지털자산포럼-스테이블코인-이데일리-자산-프로젝트",
+      "clusterKey": "디지털/자산/기본법",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-07T19:41:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_5",
+      "date": "2026-04-08",
+      "category": "산업",
+      "title": "디지털 자산 기본법 논의 및 관련 투자 동향",
+      "summary": [
+        "디지털자산기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편될 전환점에 섰습니다.",
+        "글로벌 실물자산 토큰화 1위 기업인 플룸네트워크는 RWA 토큰화를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조했습니다.",
+        "일본 메타플래닛은 일본 내 웹3 금융 인프라 생태계를 지원하기 위해 벤처 자회사를 신설하고 JPYC에 첫 투자를 했습니다."
+      ],
+      "whyImportant": "디지털 자산 관련 규제 및 투자 동향은 금융 시장의 변화를 예측하고 대응하는 데 중요한 정보입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법 논의, RWA 토큰화 규제 개혁 강조, 일본 메타플래닛의 웹3 투자 등 여러 움직임이 디지털 자산 시장의 변화를 예고하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "본 포럼은 규제의 틀을 넘어 금융·산업·기술 전반에 몰아칠 구조적 변화의 실체를 입체적으로 조망하고자 합니다."
+        }
+      ],
+      "dedupeKey": "1위-기본법-동향-디지털-벤처-웹3-자산-투자",
+      "clusterKey": "투자/디지털/정책",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-07T11:20:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_6",
+      "date": "2026-04-08",
+      "category": "에너지",
+      "title": "후쿠시마 원전 연료 수조 펌프에서 연기 발생, 냉각 기능 일시 중단",
+      "summary": [
+        "후쿠시마 제2원자력 발전소 1호기의 핵연료 냉각 수조 기능이 장비 이상으로 일시 중단되었습니다.",
+        "펌프에서 연기가 발생해 가동이 중단되었으며, 수조에는 사용 후 핵연료 2500여 개가 보관되어 있습니다."
+      ],
+      "whyImportant": "원전 사고 이후 폐로 작업이 진행 중인 상황에서 냉각 기능 중단은 안전 문제에 대한 우려를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 연료 수조에는 사용 후 핵연료 2500여 개가 보관되어 있으며, 냉각 중단 시 수온이 8일 안에 안전 상한 온도에 도달할 수 있다는 점에서 중요도가 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "도쿄전력 사내 규정에 따르면, 지금 상태에서 냉각 수조에 안전상 우려가 생기는 상한 온도인 65도까지 진행하는 데는 8일 정도 여유가 있다."
+        }
+      ],
+      "dedupeKey": "기능-냉각-발생-수조-연료-원전-펌프-후쿠시마",
+      "clusterKey": "후쿠시마/연료/수조",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/international_general/1252828.html",
+      "publishedAt": "2026-04-06T10:06:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_7",
+      "date": "2026-04-08",
+      "category": "에너지",
+      "title": "대만, SMR 연구 착수…2035년 전력 생산 목표",
+      "summary": [
+        "대만 정부가 인공지능 전력 수요 대응을 위해 소형모듈원자로(SMR) 연구에 착수했습니다.",
+        "국가원자력과학기술연구원은 3종류의 SMR 기술을 연구 중이며, 2035년부터 전력 생산을 목표로 하고 있습니다.",
+        "중장기 프로젝트에 약 472억원을 투입하여 SMR 기술 관련 안전 및 사용후핵연료 처리 문제를 점검할 계획입니다."
+      ],
+      "whyImportant": "대만의 SMR 연구 개발은 향후 에너지 안보 및 전력 공급에 중요한 영향을 미칠 수 있는 결정입니다.",
+      "importanceRationale": "근거: 대만은 SMR 연구에 착수하여 2035년부터 전력 생산을 목표하고 있으며, 중장기 프로젝트에 약 472억원을 투입할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "(타이베이=연합뉴스) 김철문 통신원 = '탈원전'을 추진해온 대만 정부가 인공지능(AI) 전력 수요 등에 대응해 원자력발전소 재가동에 이어 소형모듈원자로(SMR) 연구에 착수했다."
+        }
+      ],
+      "dedupeKey": "472억원-smr-국가원자력과학기술연구원-대만-목표-생산-연구-전력",
+      "clusterKey": "에너지/연구",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1335879",
+      "publishedAt": "2026-04-07T03:14:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_8",
+      "date": "2026-04-08",
+      "category": "기술",
+      "title": "본토 규제 피해 AI 기업, 홍콩 증시로 몰려 5년 만에 최대 호황",
+      "summary": [
+        "올해 1분기 홍콩 증시의 IPO 규모는 132억 6000만 달러로 2021년 이후 최대치를 기록했습니다.",
+        "중국 AI 기업들이 홍콩 증시에서 활발히 상장하며 IPO 규모가 증가했습니다.",
+        "중국 본토 증시의 상장 규제 강화로 기업들이 홍콩 증시로 눈을 돌린 영향도 있습니다."
+      ],
+      "whyImportant": "홍콩 증시가 중국 AI 기업들의 자금 조달 창구로 부상하면서, 관련 산업 투자 및 성장에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 올 1분기 홍콩 증시 IPO 규모가 132억 6000만 달러로 2021년 이후 최대 규모이며, 중국 본토 증시의 규제 강화가 영향을 미쳤습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "파이낸셜타임스(FT)는 “두 기업이 IPO로 약 13억달러를 조달했다”며 “빠르게 성장하는 중국 AI산업에 대한 투자 수요가 얼마나 강한지 여실히 보여준다”고 평가했다.제이슨 루이 BNP파리바 아시아태평양 주식 및 파생상품 전략책임자는 “지난해 딥시크 모멘트를 기점으로 대형 기술주를 집중 매수하던 중국 기업 투자자들이 지금은 AI 모델 개발 기업, AI 반도체, AI 서버 관련 주식을 매수하고 있다”고 말했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "FT는 “최근 몇 주 동안 중국 규제당국이 IPO 열기를 완전히 꺾지 않으면서 과열을 식히기 위해 저품질 기업을 걸러내는 방향으로 시장을 관리하고 있다”고 평가했다.베이징=김은정 특파원 kej@hankyung.com"
+        }
+      ],
+      "dedupeKey": "규제-기업-만에-몰려-본토-증시-피해-홍콩",
+      "clusterKey": "상장/본토/정책",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026040625111",
+      "publishedAt": "2026-04-06T08:52:30+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_9",
+      "date": "2026-04-08",
+      "category": "기술",
+      "title": "삼성전자, 1분기 영업이익 57조 원 기록",
+      "summary": [
+        "삼성전자는 AI 반도체 호황에 힘입어 1분기 영업이익 57조 2000억 원을 기록했다고 발표했습니다.",
+        "이는 전년 동기 대비 755.01% 증가한 수치이며, 분기 매출 100조 원과 영업이익 50조 원을 동시에 넘긴 한국 기업 사상 최초의 기록입니다.",
+        "증권가에서는 삼성전자의 올해 영업이익이 300조 원을 넘어설 것이라는 전망이 나오고 있습니다."
+      ],
+      "whyImportant": "삼성전자의 실적은 반도체 산업의 성장과 경쟁 환경 변화를 보여주는 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 삼성전자의 1분기 영업이익은 57조 2000억 원으로, 전년 동기 대비 755.01% 증가했으며, 증권가에서는 올해 영업이익이 300조 원을 넘어설 것으로 예상합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "지난해 하반기 공급을 시작한 HBM3E(5세대 고대역폭메모리)와 함께 지난 1분기 업계 최초로 양산한 HBM4(6세대) 판매가 급증하며 수익성을 극대화한 결과다."
+        }
+      ],
+      "dedupeKey": "100조-2000억-300조-50조-57조-기록-삼성전자-영업이익",
+      "clusterKey": "실적/삼성전자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026040751781",
+      "publishedAt": "2026-04-07T08:43:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-08_10",
+      "date": "2026-04-08",
+      "category": "금융",
+      "title": "삼성전자, 1분기 영업이익 57조 원 기록",
+      "summary": [
+        "삼성전자가 1분기에 57조 2000억 원의 영업이익을 기록하며 최대 실적을 달성했습니다.",
+        "AI 메모리 수요 폭증이 호실적의 주요 원인으로 분석됩니다.",
+        "증권가에서는 실적 성장세가 계속될 것이라는 전망이 나오고 있습니다."
+      ],
+      "whyImportant": "삼성전자의 실적은 메모리 시장의 변화와 기술 수요를 반영하는 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 1분기 영업이익이 57조 2000억 원으로, 이는 작년 연간 영업이익을 넘어선 수치이며, 증권사들은 올해와 내년 영업이익을 각각 327조 원, 488조 원으로 추정합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "삼성전자의 1분기 매출과 영업이익은 각각 전년 동기 대비 68.06%, 755.01% 급증한 133조원, 57조2000억원으로 잠정 집계됐다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI) 서버용 메모리 수요가 급증한 게 호실적의 원인이다."
+        }
+      ],
+      "dedupeKey": "2000억-57조-기록-삼성전자-영업이익-원의-증권-최대",
+      "clusterKey": "실적/삼성전자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026040750546",
+      "publishedAt": "2026-04-07T21:30:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

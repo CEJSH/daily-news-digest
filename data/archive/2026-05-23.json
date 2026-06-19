@@ -1,0 +1,325 @@
+{
+  "date": "2026-05-23",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-23T08:43:29.118878+09:00",
+  "items": [
+    {
+      "id": "2026-05-23_1",
+      "date": "2026-05-23",
+      "category": "산업",
+      "title": "중국 SMIC, 9조 원 규모 기업 인수 최종 승인",
+      "summary": [
+        "중국 최대 파운드리 업체 SMIC가 9조 원 규모의 중신베이팡 지분 49% 인수에 대한 규제 당국의 최종 승인을 받았습니다.",
+        "이번 인수를 통해 SMIC는 중신베이팡을 100% 자회사로 만들 계획입니다.",
+        "SMIC는 이번 거래로 주당순이익이 기존 0.49위안에서 0.55위안으로 증가할 것으로 기대하고 있습니다."
+      ],
+      "whyImportant": "이번 인수는 중국 반도체 기업의 경쟁력 강화에 기여할 수 있다는 점에서 중요합니다.",
+      "importanceRationale": "근거: SMIC가 9조 원 규모의 인수를 통해 중신베이팡을 완전 자회사화하고, 주당순이익 개선을 기대하는 것은 반도체 산업 내에서의 영향력 확대 가능성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "SMIC의 1분기 매출은 전년 동기 대비 11.5% 늘어난 25억1천만 달러(약 3조8천억원)를 기록했고, 성숙 공정 칩 공급 부족 속에 글로벌 고객사들이 중국 파운드리 업체에 주문을 늘리면서 웨이퍼 가동률은 93.1%로 상승했다."
+        }
+      ],
+      "dedupeKey": "49위안-9조-smic-규모-기업-인수-중국-최종",
+      "clusterKey": "인수합병/smic/정책",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1357385",
+      "publishedAt": "2026-05-22T07:51:08+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_2",
+      "date": "2026-05-23",
+      "category": "국제",
+      "title": "이란-미국, 물밑 협상 진행 중",
+      "summary": [
+        "이란은 미국과의 종전 합의를 위해 메시지를 교환하고 있다고 밝혔습니다.",
+        "파키스탄이 중재에 나선 가운데, 우라늄 농축과 호르무즈 해협 통제권이 쟁점으로 남아있습니다.",
+        "외교적 해결 가능성에 시장이 무게를 두며 국제유가는 3일 연속 하락했습니다."
+      ],
+      "whyImportant": "미국과 이란의 협상 결과는 중동 지역의 지정학적 안정과 국제 에너지 시장에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 국제유가가 3일 연속 하락 마감한 것은 시장이 외교적 해결 가능성에 무게를 두고 있음을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "한편, 시장이 외교적 해결 가능성에 무게를 두며 국제유가는 3일 연속 하락 마감했습니다."
+        }
+      ],
+      "dedupeKey": "물밑-미국-이란-종전-진행-파키스탄-협상-호르무즈",
+      "clusterKey": "관세/물밑",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1357280",
+      "publishedAt": "2026-05-22T02:48:08+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_3",
+      "date": "2026-05-23",
+      "category": "국제",
+      "title": "기후 변화와 식량 안보: 이란 분쟁과 엘니뇨의 영향",
+      "summary": [
+        "이란 분쟁으로 인한 공급망 차질과 엘니뇨 현상으로 식량 안보에 대한 우려가 커지고 있습니다.",
+        "천연가스 가격 변동성과 공급망 붕괴 위협이 증가하면서 식량 공급에 취약성이 드러나고 있습니다."
+      ],
+      "whyImportant": "기후 변화와 지정학적 불안정이 결합되어 식량 공급망에 미치는 복합적인 영향을 이해하는 것이 중요합니다.",
+      "importanceRationale": "근거: 2022년 러시아-우크라이나 전쟁으로 비료 접근이 제한되어 작물 생산량이 감소했고, 2023년 엘니뇨로 인해 특정 주요 작물의 생산량 감소가 예측되었습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "We are seeing some of those vulnerabilities at play today, as emerging supply chain and business continuity threats are growing, amplified by natural gas price volatility and supply chain disruptions from the Iran conflict, a brewing El Niño and existing drought conditions."
+        }
+      ],
+      "dedupeKey": "기후-변화-분쟁-식량-안보-엘니뇨-영향-이란",
+      "clusterKey": "기후/변화/식량",
+      "matchedTo": null,
+      "sourceName": "J",
+      "sourceUrl": "https://www.jpmorgan.com/insights/sustainability/climate/food-security-under-pressure",
+      "publishedAt": "2026-05-21T22:45:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_4",
+      "date": "2026-05-23",
+      "category": "정책",
+      "title": "이억원 금융위원장의 포용금융 '3층론'",
+      "summary": [
+        "이억원 금융위원장이 포용금융 '3층론'을 제시하며 금융 시스템 내 취약 차주 문제에 대한 새로운 접근 방식을 모색합니다.",
+        "금융위는 포용금융전략추진단을 다음달 출범하고, 금융회사 내 CIFO 지정 방안을 논의할 예정입니다."
+      ],
+      "whyImportant": "이번 논의는 금융 시스템 내 취약 계층 지원 방안을 재검토하고, 금융 접근성을 높이는 데 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 금융위는 다음달 포용금융전략추진단을 출범할 계획이며, 금융회사 안에 포용금융최고책임자(CIFO)를 지정하는 방안도 논의할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이억원 금융위원장이 21일 기자간담회에서 포용금융 '3층론'을 언급해 눈길을 끌었습니다."
+        }
+      ],
+      "dedupeKey": "3층론-cifo-금융위원장-금융회사-이억원-제시-포용금융-포용금융전략추진단",
+      "clusterKey": "이억원/금융위원장/포용금융",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605211807i",
+      "publishedAt": "2026-05-21T05:47:18+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_5",
+      "date": "2026-05-23",
+      "category": "산업",
+      "title": "삼성전자 노조, 성과급 합의안 효력정지 가처분 추진",
+      "summary": [
+        "삼성전자 노조가 사업부별 성과급 격차에 반발하여 합의안 효력정지 가처분 소송을 검토 중입니다.",
+        "DX 노조는 파운드리사업부와 연대하여 합의안 부결 운동에 돌입할 것이라고 밝혔습니다.",
+        "주주들 또한 노사 합의가 상법 위반이라며 주주총회 승인 없이는 무효 소송을 제기할 것이라고 주장합니다."
+      ],
+      "whyImportant": "사업부별 성과급 격차로 인한 노사 갈등은 기업 내부 결속력을 저해하고 사회적 위화감을 조성할 수 있어 중요합니다.",
+      "importanceRationale": "근거: 100배에 가까운 사업부별 보상 격차가 발생했으며, DX 부문 직원의 특별경영성과급은 600만원에 그쳐 메모리 직원의 5억7000만원과 큰 차이를 보입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "합의안은 올해 사업 성과(영업이익)의 10.5%를 특별경영성과급 재원으로 활용해 자사주로 지급하는 내용을 골자로 한다."
+        }
+      ],
+      "dedupeKey": "가처분-노조-사업부별-삼성전자-성과급-파운드리사업부-합의안-효력정지",
+      "clusterKey": "법집행/삼성전자/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052248581",
+      "publishedAt": "2026-05-22T09:01:13+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_6",
+      "date": "2026-05-23",
+      "category": "기술",
+      "title": "일론 머스크, 스페이스X와 테슬라 합병할까? 추측 확산",
+      "summary": [
+        "스페이스X의 IPO 이후, 일부에서는 스페이스X와 테슬라의 합병 가능성을 제기하고 있습니다.",
+        "두 회사는 이미 텍사스 동부에 반도체 제조 공장인 테라팹을 공동 개발 중이며, 이는 최대 1,190억 달러의 비용이 소요될 수 있습니다.",
+        "Will Elon Musk eventually merge SpaceX with Tesla?"
+      ],
+      "whyImportant": "두 회사의 합병은 AI 생태계에서 일론 머스크의 영향력을 확대하고, 테슬라의 중국 시장 경쟁력 강화에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 테라팹 건설에 최대 1,190억 달러가 투자될 수 있으며, 이는 두 회사의 협력 관계를 강화하고 합병 가능성을 높이는 요인으로 작용할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Tesla and SpaceX, which also owns artificial intelligence company xAI, are already developing the semiconductor fabrication plant Terafab in East Texas. The project would manufacture chips for the two companies and filings show it can cost up to to $119 billion."
+        }
+      ],
+      "dedupeKey": "190억-머스크-스페이스x-일론-추측-테슬라-합병할까-확산",
+      "clusterKey": "상장/일론/인수합병",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/will-elon-musk-eventually-merge-spacex-with-tesla-speculation-builds.html",
+      "publishedAt": "2026-05-21T19:19:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_7",
+      "date": "2026-05-23",
+      "category": "산업",
+      "title": "원자재 수출 통제 강화 추세",
+      "summary": [
+        "인도네시아는 니켈 등 원자재 가격을 직접 결정하겠다고 선언하며 수출 통제를 강화하고 있습니다.",
+        "칠레는 구리 생산량을 줄여 가격을 방어하고 있으며, 콩고는 코발트 수출 쿼터를 강화했습니다.",
+        "OECD에 따르면 핵심 원자재 수출 제한 조치는 2009년 대비 5배 증가했습니다."
+      ],
+      "whyImportant": "자원 수출 통제 강화는 관련 산업 공급망에 영향을 미쳐 가격 변동성을 확대할 수 있습니다.",
+      "importanceRationale": "근거: OECD 보고서에 따르면 핵심 원자재 수출 제한이 2009년보다 5배 늘어났으며, 코발트, 흑연, 희토류 등의 수출 물량 상당 부분이 제한에 걸려 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "해당 자원의 세계 공급량을 조절해 판매 수익을 극대화하겠다는 전략에서다."
+        }
+      ],
+      "dedupeKey": "5배-강화-결정하겠다고-수출-원자재-인도네시아-추세-통제",
+      "clusterKey": "원자재/수출/통제",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052125731",
+      "publishedAt": "2026-05-21T09:28:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_8",
+      "date": "2026-05-23",
+      "category": "기술",
+      "title": "엔비디아 실적 발표: 2천억 달러 규모의 CPU 시장 기회와 엣지 컴퓨팅",
+      "summary": [
+        "엔비디아가 85% 증가한 820억 달러의 분기 매출을 기록하고 800억 달러 규모의 자사주 매입 프로그램과 배당금 인상을 발표했습니다.",
+        "엔비디아는 데이터 센터와 엣지 컴퓨팅의 두 가지 범주로 수익을 보고하고 있으며, 새로운 Vera CPU로 2천억 달러 규모의 시장을 열었습니다.",
+        "미국 정부는 양자 컴퓨팅 분야의 9개 회사에 20억 달러의 보조금을 지원할 것이라고 발표했습니다."
+      ],
+      "whyImportant": "엔비디아의 CPU 시장 진출은 AI 모델 추론 과정에서 CPU의 중요성이 부각됨에 따라 장기적인 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아 CFO는 새로운 Vera CPU가 2천억 달러 규모의 시장을 열 것이라고 밝혔으며, 올해 CPU 매출은 200억 달러로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "Anthropic is on track to generate $10.9 billion in revenue during the second quarter, CNBC confirmed on Wednesday, a figure that would top the AI company's sales for all of last year."
+        },
+        {
+          "label": "sanctions",
+          "evidence": "and China and export controls. It's been given the green light from the U.S."
+        }
+      ],
+      "dedupeKey": "2천억-cpu-규모-기회-달러-시장-실적-엔비디아",
+      "clusterKey": "실적/엔비디아",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/22/the-tech-download-what-you-might-have-missed-in-nvidias-earnings.html",
+      "publishedAt": "2026-05-22T11:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_9",
+      "date": "2026-05-23",
+      "category": "기술",
+      "title": "트럼프, AI 규제 관련 행정명령 곧 서명 예정",
+      "summary": [
+        "도널드 트럼프 미국 대통령이 AI 모델 사전 제출을 의무화하는 행정명령에 서명할 예정입니다.",
+        "AI 개발업체는 모델 출시 전 정부와 소통하는 자발적 체계를 구축해야 합니다.",
+        "이번 명령은 AI 기업들을 사이버 보안 정보공유 프로그램에 포함하는 내용을 담고 있습니다."
+      ],
+      "whyImportant": "이번 행정명령은 AI 기술 개발 및 사이버 보안에 대한 정부의 규제 방향을 설정하는 데 중요한 역할을 할 수 있습니다.",
+      "importanceRationale": "근거: AI 모델 출시 전 정부와 사전 소통 체계를 구축하는 내용을 담고 있어 정책적 중요성이 인정되며, 이르면 21일 서명 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "도널드 트럼프 미국 대통령이 최첨단 AI 출시에 앞서 정부가 미리 살펴볼 수 있도록 하는 행정명령에 곧 서명할 것으로 보인다."
+        }
+      ],
+      "dedupeKey": "개발업체-구축해야-규제-미국-정보공유-정부-트럼프-행정명령",
+      "clusterKey": "정책/트럼프",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356899",
+      "publishedAt": "2026-05-21T07:22:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-23_10",
+      "date": "2026-05-23",
+      "category": "기술",
+      "title": "Anthropic, 50억 달러 투자 후 AI 칩 계약을 위해 Microsoft와 협상 중",
+      "summary": [
+        "Microsoft가 Anthropic에 자체 AI 칩을 공급하기 위해 협상 중인 것으로 확인되었습니다.",
+        "Anthropic은 2029년 5월까지 SpaceX에 컴퓨팅 성능 비용으로 월 12억 5천만 달러를 지불할 예정입니다.",
+        "Anthropic은 Amazon Web Services의 Trainium 칩을 10년 동안 1,000억 달러 이상 규모로 사용하기로 했습니다."
+      ],
+      "whyImportant": "AI 칩 시장에서 Microsoft의 입지를 강화하고, Anthropic의 컴퓨팅 자원 확보 전략에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: Microsoft는 Anthropic에 AI 칩을 공급하기 위해 협상 중이며, Anthropic은 컴퓨팅 성능 확보를 위해 2029년까지 월 12억 5천만 달러를 SpaceX에 지불할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "WATCH: Nvidia CEO Jensen Huang: With Anthropic, we are scaling very quickly, we have big plans for them Correction: In April, Anthropic said it would use Amazon Web Services’ custom Trainium chips in a 10-year arrangement worth more than $100 billion."
+        },
+        {
+          "label": "earnings",
+          "evidence": "Microsoft’s Maia 200 “offers over 30% improved tokens per dollar, compared to the latest silicon in our fleet,” CEO Satya Nadella said on the company’s earnings call in April."
+        }
+      ],
+      "dedupeKey": "000억-50억-anthropic-microsoft-계약-달러-투자-협상",
+      "clusterKey": "투자/anthropic/관세",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "publishedAt": "2026-05-21T18:02:33+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "date": "2026-03-02",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-02T07:54:14.703891+09:00",
+  "items": [
+    {
+      "id": "2026-03-02_1",
+      "date": "2026-03-02",
+      "category": "산업",
+      "title": "삼성 평택공장, HBM 전진기지 역할 및 메모리·파운드리 시너지 확대",
+      "summary": [
+        "삼성전자는 평택캠퍼스 생산능력 확충에 속도를 내고 있으며, 2028년 가동 예정인 P5 공사는 다음 달부터 작업자를 늘려 설비 공사에 들어갈 예정입니다.",
+        "평택 P4·P5는 AI 반도체 수요 확대에 대응하고 HBM 등 차세대 메모리 제품의 공급 대응력을 강화하기 위한 핵심 인프라로 구축될 예정입니다."
+      ],
+      "whyImportant": "삼성전자의 평택캠퍼스 확장은 AI 반도체 시장의 수요에 대응하고 차세대 메모리 기술 경쟁력을 강화하는 데 중요한 역할을 할 것입니다.",
+      "importanceRationale": "근거: 삼성전자는 2028년 가동 예정인 P5 공사에 대한 투자를 확대하고 있으며, 평택 P4·P5를 통해 HBM 등 차세대 메모리 제품의 공급 대응력을 강화할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "오는 2028년 가동 예정인 삼성전자 평택 P5(5공장)는 다음 달부터 작업자를 기존보다 1만여명가량 늘리고, 철골 공사에 이어 클린룸 등 팹(공장) 구축을 위한 핵심 설비 공사에 들어가는 것으로 알려졌다."
+        }
+      ],
+      "dedupeKey": "hbm-메모리-삼성-시너지-역할-전진기지-파운드리-평택공장",
+      "clusterKey": "설비투자/반도체/삼성",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1316791",
+      "publishedAt": "2026-03-01T21:07:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_2",
+      "date": "2026-03-02",
+      "category": "국제",
+      "title": "미국, 이란 공격에 대한 정보 유출 가능성",
+      "summary": [
+        "폴리마켓에서 6개의 계정이 2월 28일까지 미국의 이란 공격에 베팅하여 약 100만 달러의 이익을 얻었습니다.",
+        "이 계정들은 모두 2월에 새로 생성되었으며, 미국의 공격 시기에 대한 베팅만 했습니다."
+      ],
+      "whyImportant": "정보 유출은 시장 조작 및 불공정 거래를 야기할 수 있습니다.",
+      "importanceRationale": "근거: 6개 계정이 미국 공격 시기에 대한 베팅으로 100만 달러의 이익을 얻었다는 점에서 정보 유출 가능성이 제기됩니다.",
+      "impactSignals": [],
+      "dedupeKey": "6개-공격-미국-생성되었으며-유출-이란-정보-폴리마켓",
+      "clusterKey": "공격/정보/유출",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech",
+      "publishedAt": "2026-02-28T02:19:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_3",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "금융위, 이수스페셜티 방문하여 이차전지 산업 생태계 확대 논의",
+      "summary": [
+        "권대영 금융위원회 부위원장은 울산·경남 지역에서 '국민성장펀드·지방우대금융 지역간담회'를 개최했습니다.",
+        "이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 역할을 강조하며 산업 생태계 육성을 논의했습니다."
+      ],
+      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여주는 행보입니다.",
+      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의한 사실에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "금융위-금융위원회-부위원장-산업-생태계-이수스페셜티-이차전지-확대",
+      "clusterKey": "금융/이수스페셜티",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315882",
+      "publishedAt": "2026-02-27T05:00:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_4",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "조국혁신당, 서명옥 의원 윤리특위 제소 방침",
+      "summary": [
+        "조국혁신당은 서명옥 국민의힘 의원이 이해민 혁신당 사무총장을 손팻말로 폭행했다며 국회 윤리특별위원회에 제소할 것이라고 밝혔습니다.",
+        "혁신당은 서 의원이 '초상권 침해'라고 말한 뒤 손팻말을 휘둘렀다고 주장하며, 관련 영상 증거를 확보하여 윤리특위 제소 후 형사 고소 및 민사적 대응을 진행할 예정입니다."
+      ],
+      "whyImportant": "국회 내 의원 간 물리적 충돌은 향후 정치적 갈등 심화 및 의회 기능 저하로 이어질 수 있어 중요합니다.",
+      "importanceRationale": "근거: 국회 본회의장에서 발생한 폭행 사건으로, 혁신당은 윤리특위 제소 및 형사 고소 등의 법적 대응을 예고하고 있어 정치적 파장이 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "사건은 이날 국민의힘 소속 의원 수십명이 재판소원제 도입법(헌법재판소법 개정안) 필리버스터(무제한 토론) 종결에 항의하는 국민의힘 의원들이 ‘사법 파괴 즉각 철회 ’등이 적힌 손팻말과 펼침막을 들고 시위를 벌이던 도중 벌어졌다."
+        },
+        {
+          "label": "security",
+          "evidence": "혁신당이 공개한 영상에는 서 의원이 “초상권 침해예요”라고 말한 뒤 손팻말을 위에서 아래로 휘두르는 장면이 담겼다."
+        }
+      ],
+      "dedupeKey": "국민의힘-방침-서명옥-윤리특별위원회-윤리특위-의원-제소-조국혁신당",
+      "clusterKey": "조국혁신당/서명옥/의원",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1247006.html",
+      "publishedAt": "2026-02-28T07:20:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_5",
+      "date": "2026-03-02",
+      "category": "금융",
+      "title": "미국·이란 충돌에 따른 코스피 영향 전망",
+      "summary": [
+        "증권가는 이번 주 코스피지수가 최고 6800선까지 오를 것으로 전망했습니다.",
+        "미국의 이란 공습과 3차 상법 개정안 효과, 수출 실적 등이 주요 이유입니다.",
+        "전문가들은 삼성전자와 SK하이닉스 등 대형 반도체주 비중 유지를 조언했습니다."
+      ],
+      "whyImportant": "미국과 이란의 지정학적 갈등이 국내 증시에 미치는 영향에 대한 투자 전략 수립에 참고할 수 있습니다.",
+      "importanceRationale": "근거: NH투자증권은 이번 주 코스피 예상 등락 범위를 5800~6800선으로 제시했으며, 2월 1~20일 수출액은 전년 대비 23.5% 증가했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "나 연구원은 \"올해 코스피 당기순이익 컨센서스 457조원 중 삼성전자와 SK하이닉스가 257조6000억원을 차지해 비중이 56%에 달한다\"며 \"두 종목 주가가 빠르게 상승하고 있지만, 코스피 순이익의 절반 이상을 좌우하는 반도체 어닝이 확대되는 구간에서는 주도주인 대형 반도체 비중을 유지할 필요가 있다\"고 분석했다."
+        }
+      ],
+      "dedupeKey": "6800선-따른-미국-영향-이란-증권-충돌-코스피",
+      "clusterKey": "실적/충돌",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022812336",
+      "publishedAt": "2026-02-28T23:00:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_6",
+      "date": "2026-03-02",
+      "category": "에너지",
+      "title": "삼성, HBM4E '전력망' 대수술",
+      "summary": [
+        "삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하여 HBM 내부 전력망을 분산하는 조직 개편을 시도합니다.",
+        "이를 통해 IR 드롭을 줄여 전압 마진을 개선하고 칩 자체의 신뢰성을 높일 수 있다고 합니다.",
+        "삼성전자는 자동 배선 배치 툴을 활용해 개발 시간을 단축했다고 밝혔습니다."
+      ],
+      "whyImportant": "HBM 업계에서 전력 문제는 칩 성능과 신뢰성에 중요한 영향을 미치므로, 삼성전자의 전력망 개선 노력은 차세대 HBM 경쟁력 확보에 중요합니다.",
+      "importanceRationale": "근거: 삼성전자는 HBM4E부터 새로운 전력 공급망을 도입하고, 자동 배선 배치 툴을 활용해 개발 시간을 2.5주로 단축했다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "특히 올해 간판 제품인 HBM4는 엔비디아에 초도 양산품 출하를 경쟁사를 따돌리고 가장 먼저 해내면서 기세를 올리고 있습니다.오늘 이야기는 삼성의 HBM4의 다음 세대 제품인 HBM4E에 관한 이야기입니다."
+        }
+      ],
+      "dedupeKey": "hbm4e-공급망-내부-대수술-삼성-삼성전자-전력-전력망",
+      "clusterKey": "에너지/삼성",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602281130i",
+      "publishedAt": "2026-02-28T04:02:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_7",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "금융위, 이란 사태 관련 시장 안정 조치 준비",
+      "summary": [
+        "금융위원회는 이란 사태로 인한 중동 지정학적 긴장 고조에 따라 필요시 100조 원+α 규모의 시장안정조치를 시행할 수 있다고 밝혔습니다.",
+        "금융위는 '비상대응 금융시장반'을 즉각 가동하여 금융시장 상황을 24시간 모니터링할 것을 지시했습니다."
+      ],
+      "whyImportant": "금융 시장의 잠재적 변동성에 대응하기 위한 정부의 선제적 조치라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 금융위가 필요시 '100조원+α' 규모의 시장안정프로그램을 시행할 것을 지시한 것은 시장 안정에 대한 의지를 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "금융위 \"이란 사태 긴장 고조…필요 시 100조＋α 시장안정 조치\" - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 긴급 시장점검회의…'비상대응 금융시장반' 즉각 가동 아야톨라 세예드 알리 하메네이 이란 최고지도자가 미국과 이스라엘의 공격으로 사망하며 중동 지정학적 긴장이 고조된 가운데, 금융당국이 필요 시 100조원 규모 시장안정프로그램을 즉각 시행할 수 있다고 밝혔다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "다음 날인 2일은 국내 금융시장이 휴장인 가운데 아시아, 유럽, 미국 등 글로벌 시장 동향을 면밀히 모니터링하라고 주문했다."
+        }
+      ],
+      "dedupeKey": "금융위-금융위원회-사태-시장-안정-이란-조치-준비",
+      "clusterKey": "금융/사태",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030123666",
+      "publishedAt": "2026-03-01T07:18:29+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-02_8",
+      "date": "2026-03-02",
+      "category": "정책",
+      "title": "아동수당법 국회 본회의 통과",
+      "summary": [
+        "국회 본회의에서 아동수당법이 통과되었습니다.",
+        "아동수당법은 2030년까지 지급 연령을 만 8세 미만에서 만 13세 미만으로 상향하는 내용을 담고 있습니다."
+      ],
+      "whyImportant": "아동수당 지급 연령 확대는 향후 아동 복지 정책 및 관련 예산에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 아동수당법은 2030년까지 지급 연령을 만 13세 미만으로 상향하는 내용을 담고 있어 정책 변화의 시행 시점이 명시되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "아동수당법, 국회 본회의 통과 - 기사 스크랩 - 공유 - 댓글 - 클린뷰 - 프린트 국민투표법도 함께 처리 국민투표법과 아동수당법이 1일 국회 본회의 문턱을 넘어섰다."
+        }
+      ],
+      "dedupeKey": "13세-8세-국회-본회-아동수당법-연령-지급-통과",
+      "clusterKey": "아동수당법/국회/본회",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030127681",
+      "publishedAt": "2026-03-01T12:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

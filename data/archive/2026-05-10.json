@@ -1,0 +1,201 @@
+{
+  "date": "2026-05-10",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-10T08:28:30.226420+09:00",
+  "items": [
+    {
+      "id": "2026-05-10_1",
+      "date": "2026-05-10",
+      "category": "국제",
+      "title": "트럼프 대통령, EU 무역 협상에 압박 가중",
+      "summary": [
+        "트럼프 대통령이 EU의 무역 합의 미이행을 이유로 EU산 승용차와 트럭에 대한 관세 인상 시한을 7월 4일까지로 연기하며 압박하고 있습니다.",
+        "EU 고위 당국자들은 트럼프 대통령이 제시한 시한까지 무역협정을 마무리하지 못할 경우 미국-EU 관계가 악화될 수 있다고 우려합니다.",
+        "유럽의회는 미국과의 무역합의안을 조건부로 승인했으며, 아직 회원국의 승인이 마무리되지 않아 협정 발효가 지연되고 있습니다."
+      ],
+      "whyImportant": "미국과 EU 간의 무역 협상 결과는 양측 경제에 상당한 영향을 미칠 수 있으며, 특히 관세 부과는 관련 산업에 직접적인 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령은 EU산 승용차와 트럭에 대한 관세를 25%로 인상하는 시한을 7월 4일까지 늦추며 무역 합의 이행을 압박하고 있어, 정책적 결정에 따른 무역 관계 변화 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "하지만, 유럽의회는 지난 3월에야 미국과의 무역합의안을 조건부로 승인했고, 아직 회원국의 승인이 모두 마무리되지 않아 양측의 협정이 최종 발효되지 않은 상태다."
+        },
+        {
+          "label": "security",
+          "evidence": "하지만 트럼프 대통령은 주독미군을 5천명 이상 철수시키겠다는 위협을 철회하지 않고 있어 양국 간 갈등의 불씨는 여전한 것으로 평가된다."
+        }
+      ],
+      "dedupeKey": "가중-대통령-무역-미국-압박-조건부-트럼프-협상",
+      "clusterKey": "관세/트럼프",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1350916",
+      "publishedAt": "2026-05-09T12:29:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-10_2",
+      "date": "2026-05-10",
+      "category": "에너지",
+      "title": "호르무즈 해협 위기, 대만 '실리콘 실드' 취약점 노출",
+      "summary": [
+        "호르무즈 해협 위기로 인해 대만의 에너지 수입 의존도와 취약한 전력망 문제가 부각되고 있습니다.",
+        "대만의 LNG 법정 비축량은 11일분에 불과하며, 에너지의 96%를 수입에 의존하고 있습니다.",
+        "대만은 미국과의 에너지 협력을 강화하고 LNG 구매 비율을 늘리는 방안을 추진 중입니다."
+      ],
+      "whyImportant": "에너지 공급망 불안정은 반도체 산업을 포함한 대만 경제 전반에 중대한 영향을 미칠 수 있는 문제입니다.",
+      "importanceRationale": "근거: 대만이 첨단 칩의 약 90%를 생산하고 에너지의 96%를 수입에 의존하며, LNG 비축량은 11일분에 불과하여 에너지 공급망 불안정 시 경제적 타격이 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "대만이 전 세계의 첨단 칩의 약 90%를 생산하고 있는 가운데 AI 붐으로 인해 전력 수요는 계속 높아지고 있다."
+        }
+      ],
+      "dedupeKey": "노출-대만-실드-실리콘-위기-취약점-해협-호르무즈",
+      "clusterKey": "미대만/에너지/호르무즈",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1350504",
+      "publishedAt": "2026-05-08T03:51:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-10_3",
+      "date": "2026-05-10",
+      "category": "기술",
+      "title": "엔비디아, AI 투자 확대: 올해 400억 달러 이상 투자",
+      "summary": [
+        "엔비디아가 AI 인프라 관련 기업에 투자를 확대하며 올해 400억 달러 이상의 투자를 단행했습니다.",
+        "최근에는 데이터 센터 운영업체 IREN과 유리 제조업체 코닝에 각각 최대 21억 달러, 32억 달러를 투자하기로 합의했습니다.",
+        "일부에서는 엔비디아의 투자가 자체 성장을 위한 것이라는 우려도 제기되고 있습니다."
+      ],
+      "whyImportant": "엔비디아의 AI 분야 투자는 AI 생태계 전반에 걸쳐 엔비디아의 영향력을 확대하고, 장기적인 경쟁 우위를 확보하려는 전략적 움직임으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 올해 이미 400억 달러 이상을 투자했으며, IREN과 코닝에 각각 최대 21억 달러, 32억 달러를 투자하기로 한 것은 AI 공급망 전반에 걸친 엔비디아의 영향력 확대를 의미합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "This week alone Nvidia forged an agreement with data center operator IREN, giving it the right to invest up to $2.1 billion in the company, a day after Nvidia struck a pact with Corning, allowing it to invest up to $3.2 billion in the 175-year-old glass maker."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "To help the company grow its dominance beyond chips, Nvidia is financing the entire AI supply chain, ensuring it runs on Nvidia hardware and that there’s sufficient capacity to meet demand."
+        }
+      ],
+      "dedupeKey": "400억-기업-달러-엔비디아-올해-이상-투자-확대",
+      "clusterKey": "투자/엔비디아/관세",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html",
+      "publishedAt": "2026-05-09T12:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-10_4",
+      "date": "2026-05-10",
+      "category": "금융",
+      "title": "해외 인기 힘입어 오리온 전망 '깜짝' 상향",
+      "summary": [
+        "오리온은 해외 현지 생산 전략으로 올해 예상 영업이익률이 17.5%에 달할 것으로 전망됩니다.",
+        "증권가에서는 오리온의 평균 목표 주가를 17만3000원대로 상향 조정했습니다.",
+        "지난해 오리온 연결 매출의 66%는 중국, 베트남 등 해외 법인에서 발생했습니다."
+      ],
+      "whyImportant": "오리온의 해외 시장 성과는 국내 식품 기업의 해외 진출 전략에 중요한 시사점을 제공합니다.",
+      "importanceRationale": "근거: 오리온은 해외 매출 비중이 66%에 달하며, 올해 예상 영업이익률은 17.5%로 전망되어 국내 식품 업계의 해외 진출 전략에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "지난해 16.8%였던 영업이익률은 올해와 내년에 각각 17.5%, 18%로 뛸 것이란 전망도 나온다."
+        }
+      ],
+      "dedupeKey": "17만3000원대-상향-오리온-인기-중국-증권-해외-힘입어",
+      "clusterKey": "실적/해외",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605095505i",
+      "publishedAt": "2026-05-09T03:00:03+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-10_5",
+      "date": "2026-05-10",
+      "category": "정책",
+      "title": "헌법 개정안 국회 재상정, 국민의힘 필리버스터 예고",
+      "summary": [
+        "국회는 헌법 개정안을 재상정할 예정이나, 국민의힘의 필리버스터로 처리가 어려울 것으로 예상됩니다.",
+        "국민의힘은 민생법안에도 필리버스터를 신청할 방침이며, 우원식 국회의장은 유감을 표명했습니다."
+      ],
+      "whyImportant": "헌법 개정안의 처리 여부와 필리버스터 진행은 향후 정치적 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 6월 3일 지방선거와 개헌 국민투표 동시 시행을 위한 본회의 처리 시한이 10일로 다가왔기 때문에 중요도는 3점입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "국회가 8일 오후 2시 본회의를 열고 전날 투표가 불성립된 헌법개정안을 재상정한다."
+        }
+      ],
+      "dedupeKey": "개정안-국민의힘-국회-예고-재상정-재상정할-필리버스터-헌법",
+      "clusterKey": "헌법/개정안/국회",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050833277",
+      "publishedAt": "2026-05-08T01:47:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-10_6",
+      "date": "2026-05-10",
+      "category": "정책",
+      "title": "송영길, 러시아산 나프타·원유 도입 추진 의사 밝혀",
+      "summary": [
+        "송영길 후보는 국회 입성 시 러시아산 나프타 및 원유 도입을 위한 외교 협상을 우선 추진하겠다고 밝혔습니다.",
+        "미국이 한시적으로 허용 중인 관련 제재 해제를 위해 노력하겠다는 입장입니다."
+      ],
+      "whyImportant": "러시아산 에너지 수입 재개 논의는 에너지 안보 및 외교 관계에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 송영길 후보가 국회 입성 시 러시아산 나프타 및 원유 도입을 위한 외교 협상을 우선 과제로 추진하겠다고 밝힌 점이 근거입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "인천=최형창 기자 calling@hankyung.com 8일 인천 청학동 선거사무소에서 만난 송 후보는 “현재는 미국이 한시적으로만 허용하고 있지만, 궁극적으로는 관련 제재를 풀어야 한다”며 “국회에 입성하면 이 문제를 가장 먼저 해결하겠다”고 밝혔다."
+        }
+      ],
+      "dedupeKey": "나프타-도입-러시아산-미국-밝혀-송영길-원유-의사",
+      "clusterKey": "제재/송영길/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050848761",
+      "publishedAt": "2026-05-08T09:13:35+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

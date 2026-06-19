@@ -1,0 +1,155 @@
+{
+  "date": "2026-03-24",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-24T08:04:01.634136+09:00",
+  "items": [
+    {
+      "id": "2026-03-24_1",
+      "date": "2026-03-24",
+      "category": "금융",
+      "title": "미국, 이스라엘에 호르무즈 해협 군사 작전 장기화 전망 전달",
+      "summary": [
+        "미국 백악관 관계자들이 이스라엘 측에 호르무즈 해협 봉쇄 해제를 위한 군사 작전이 몇 주간 장기화될 수 있다고 전달했습니다.",
+        "미국은 호르무즈 해협 작전이 예상보다 오래 걸릴 것으로 보고 있으며, 전반적인 전쟁 기간도 늘어날 것으로 예상합니다."
+      ],
+      "whyImportant": "호르무즈 해협 봉쇄 및 군사 작전의 장기화는 전 세계 석유 물동량에 영향을 미쳐 경제적 불확실성을 증가시킬 수 있습니다.",
+      "importanceRationale": "근거: 전 세계 석유 물동량의 20%가 통과하는 호르무즈 해협 봉쇄 해제를 위한 군사 작전이 수 주에 걸쳐 진행될 것으로 예상되기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "미국 백악관 관계자들이 이스라엘 쪽에 호르무즈 해협 봉쇄를 풀기 위한 군사 작전이 몇 주간에 걸쳐 장기화될 수 있다는 입장을 전달했다고 이스라엘 채널12 방송이 22일(현지시각) 보도했다."
+        }
+      ],
+      "dedupeKey": "군사-미국-이스라엘-작전-장기화-전달-해협-호르무즈",
+      "clusterKey": "호르무즈/해협/군사",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/america/1250567.html",
+      "publishedAt": "2026-03-23T01:21:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-24_2",
+      "date": "2026-03-24",
+      "category": "에너지",
+      "title": "이란, UAE 바라카 원전 공격 표적 언급",
+      "summary": [
+        "이란 매체들이 UAE 아부다비의 바라카 원자력발전소를 이란군의 공격 표적으로 언급했습니다.",
+        "걸프 지역 발전소와 두바이 태양광 발전소, 카타르 담수화 시설 등도 표적으로 거론되었습니다.",
+        "이란은 '이란의 전력 인프라 공격 시 중동 전체가 암흑으로 빠질 것'이라고 경고했습니다."
+      ],
+      "whyImportant": "중동 지역의 지정학적 긴장 고조와 잠재적 에너지 인프라 공격 위협은 국제적 안보 및 에너지 시장에 중대한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이란 매체가 UAE 바라카 원전을 포함한 걸프 지역의 여러 발전소를 공격 표적으로 언급하며 긴장도를 높이고 있어 중요도 3으로 판단됩니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "기자 : 김예린 오디오 : AI 더빙 제작 : 이준흠 #이란 #이스라엘 #원전 #UAE #바라카 #미사일 #카타르 #전력인프라 #중동 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이준흠(humi@yna.co.kr)"
+        },
+        {
+          "label": "security",
+          "evidence": "또 '중동 내 큰 발전소의 80%가 페르시아만 해안에 세워졌고 이란에서 이 해안까지 거리는 50㎞가 채 안 된다'며 이들 전력 인프라 모두가 이란의 조준경 안에 있다는 뜻'이라고 위협했습니다."
+        }
+      ],
+      "dedupeKey": "uae-공격-바라카-아부다비-원자력발전소-원전-이란-표적",
+      "clusterKey": "에너지/uae",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328348",
+      "publishedAt": "2026-03-23T08:35:59+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-24_3",
+      "date": "2026-03-24",
+      "category": "에너지",
+      "title": "LNG 가격 상승 우려, 가스 공급 위기",
+      "summary": [
+        "이란이 카타르 LNG 시설 피격으로 국내 LNG 공급 차질 우려가 커지고 있습니다.",
+        "산업통상부는 카타르산 LNG의 전면 중단 가능성에 대비해 추가 물량을 확보했다고 밝혔습니다."
+      ],
+      "whyImportant": "LNG 공급 차질은 에너지 가격 상승과 수급 불안정으로 이어질 수 있는 중요한 문제입니다.",
+      "importanceRationale": "근거: 산업통상부가 LNG 추가 물량을 확보했지만, 장기적인 수급 압박 가능성이 있어 에너지 가격 상승 우려가 존재합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "연말까지는 충분한 물량이 있다고 판단되지만, 에너지 가격 상승과 장기적으로 수급 압박 가능성이 있어 그 부분을 잘 살피고 있다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "lng-가격-가스-공급-산업통상부-상승-위기-카타르산",
+      "clusterKey": "가스/위기/카타르",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1328245",
+      "publishedAt": "2026-03-23T05:46:49+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-24_4",
+      "date": "2026-03-24",
+      "category": "금융",
+      "title": "인슐린 치료, 주사 대신 ‘먹는 약’으로 가능해질 전망",
+      "summary": [
+        "심장마비의 전조 증상으로 왼쪽 어깨 결림, 턱 통증, 명치의 답답함 등이 있습니다.",
+        "심장마비 시 아스피린을 씹어 복용하면 약효가 더 빠르게 나타날 수 있습니다.",
+        "심장 세포가 생존할 수 있는 시간은 30분으로, 즉시 병원에 가야 합니다."
+      ],
+      "whyImportant": "심장마비 발생 시 빠른 대처가 중요하다는 점을 강조하고 있습니다.",
+      "importanceRationale": "근거: 심장 세포 생존 시간은 30분으로 매우 짧기 때문에, 심장마비 의심 증상 발생 시 즉시 대처해야 함을 알립니다.",
+      "impactSignals": [],
+      "dedupeKey": "30분-가능해질-대신-먹는-으로-인슐린-주사-치료",
+      "clusterKey": "인슐린/치료/주사",
+      "matchedTo": null,
+      "sourceName": "조선",
+      "sourceUrl": "https://health.chosun.com/site/data/html_dir/2026/03/09/2026030901749.html",
+      "publishedAt": "2026-03-23T04:52:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-24_5",
+      "date": "2026-03-24",
+      "category": "기술",
+      "title": "심장마비 전조 증상과 응급 대처법",
+      "summary": [
+        "흉부외과 전문의는 심장마비 의심 증상으로 왼쪽 어깨 결림, 턱 통증, 명치의 답답함을 언급했습니다.",
+        "심장 세포 생존 가능 시간은 30분으로, 응급 시 아스피린을 씹어 삼키는 것이 초기 대응에 도움이 될 수 있습니다."
+      ],
+      "whyImportant": "심장마비는 빠른 대처가 중요하므로, 전조 증상을 인지하고 응급 대처법을 숙지하는 것이 중요합니다.",
+      "importanceRationale": "근거: 심장 세포가 생존할 수 있는 시간은 단 30분이며, 아스피린을 씹어 복용하면 약효가 더 빨리 나타난다는 내용이 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "30분-대처법-심장마비-아스피린-응급-전조-증상-흉부외",
+      "clusterKey": "심장마비/전조/증상",
+      "matchedTo": null,
+      "sourceName": "조선",
+      "sourceUrl": "https://health.chosun.com/site/data/html_dir/2026/03/09/2026030901749.html",
+      "publishedAt": "2026-03-23T02:36:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

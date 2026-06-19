@@ -1,0 +1,40 @@
+{
+  "date": "2026-04-21",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-04-21T08:13:29.148175+09:00",
+  "items": [
+    {
+      "id": "2026-04-21_1",
+      "date": "2026-04-21",
+      "category": "국제",
+      "title": "2차 협상 앞두고 이란 강경파·군부 본격 움직임",
+      "summary": [
+        "이란 혁명수비대가 호르무즈 해협을 지나는 유조선에 경고 없이 발포하는 사건이 발생했습니다.",
+        "이란 군부는 미국의 과도한 요구로 다음 협상에 동의하지 않았다고 밝혔습니다.",
+        "미국과 이란의 2차 협상 가능성이 불분명해졌습니다."
+      ],
+      "whyImportant": "미국과 이란의 협상 불발은 국제 유가 변동 및 중동 지역의 지정학적 리스크를 증가시킬 수 있습니다.",
+      "importanceRationale": "근거: 이란 군부가 미국의 요구로 다음 협상에 동의하지 않았다고 밝히고, 호르무즈 해협에서 유조선에 발포하는 등 긴장이 고조되어 2차 협상 가능성이 불분명해졌기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이란 외무장관이 모든 상선에 대해 해협 봉쇄를 풀겠다고 한 다음날, 이란 군부는 해협 통제를 재개한다고 말을 뒤집었습니다."
+        }
+      ],
+      "dedupeKey": "2차-강경파-군부-미국-앞두고-움직임-이란-협상",
+      "clusterKey": "관세/2차",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1341349",
+      "publishedAt": "2026-04-18T23:52:10+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

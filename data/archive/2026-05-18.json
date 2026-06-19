@@ -1,0 +1,165 @@
+{
+  "date": "2026-05-18",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-18T08:33:53.735008+09:00",
+  "items": [
+    {
+      "id": "2026-05-18_1",
+      "date": "2026-05-18",
+      "category": "산업",
+      "title": "미국 무역대표부, 반도체 수출 통제는 회담 주요 의제 아니라고 밝혀",
+      "summary": [
+        "미국 무역대표부 대표는 미중 정상회담에서 반도체 수출 통제가 주요 의제가 아니었다고 밝혔습니다.",
+        "중국 기업의 엔비디아 H200 구매 여부는 중국의 주권적 결정 사항이라고 덧붙였습니다."
+      ],
+      "whyImportant": "미국의 반도체 수출 통제 정책 방향을 간접적으로 시사합니다.",
+      "importanceRationale": "근거: 미국 무역대표부 대표의 발언을 통해 정책 변화 가능성이 낮음을 간접적으로 확인할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "#반도체 #정상회담 #USTR 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장윤희(ego@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "무역대표부-미국-반도체-수출-아니라고-의제-주요-통제",
+      "clusterKey": "미중_관세/무역대표부",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354234",
+      "publishedAt": "2026-05-15T23:43:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-18_2",
+      "date": "2026-05-18",
+      "category": "국제",
+      "title": "미국-이란 협상 재개 가능성 논의",
+      "summary": [
+        "이란 내무부 장관이 파키스탄 측과 미국과의 평화 협상 재개 문제를 논의했습니다.",
+        "이란은 호르무즈 해협 선박 통행을 관리할 새 통제 체계를 공개할 예정입니다."
+      ],
+      "whyImportant": "미국과 이란의 관계는 국제 유가 및 중동 지역의 안정을 포함한 광범위한 지정학적 문제에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 이란 내무부 장관이 평화 협상 재개 문제를 논의한 것은 미국과 이란 관계에 중요한 변화 가능성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이란 내무부 장관이 중재국인 파키스탄 측과 미국과의 평화 협상 재개 문제를 논의한 것으로 전해졌습니다."
+        }
+      ],
+      "dedupeKey": "내무부-미국-이란-장관-측과-파키스탄-협상-호르무즈",
+      "clusterKey": "관세/내무부",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354516",
+      "publishedAt": "2026-05-17T04:45:41+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-18_3",
+      "date": "2026-05-18",
+      "category": "에너지",
+      "title": "UAE, 원전 공격 드론 진입 방향 발표",
+      "summary": [
+        "아랍에미리트 국방부는 바라카 원자력 발전소에 대한 드론 공격의 발사 원점을 조사 중이라고 밝혔습니다.",
+        "드론 2대는 성공적으로 대응했으나, 1대가 원전 부근 발전기를 타격했으며, 서쪽 국경 방향에서 진입했다고 밝혔습니다."
+      ],
+      "whyImportant": "원전 시설에 대한 공격은 에너지 안보 및 국가 기반 시설 보호와 관련된 중요한 문제이기 때문입니다.",
+      "importanceRationale": "근거: UAE 국방부가 원전 공격에 대한 조사 결과를 발표할 예정이므로, 향후 유사 사건 방지 및 대응책 마련에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "(서울=연합뉴스) 강훈상 기자 = 아랍에미리트(UAE) 국방부는 17일(현지시간) 바라카 원자력 발전소에 대한 드론 공격의 발사 원점을 조사하고 있다고 밝혔다."
+        },
+        {
+          "label": "policy",
+          "evidence": "UAE 아부다비 정부는 이날 바라카 원전 내부 경계선의 바깥쪽에 있는 발전기가 드론 1대에 공격받아 불이 났다고 발표했다."
+        }
+      ],
+      "dedupeKey": "2대-uae-공격-국방부-드론-방향-원전-진입",
+      "clusterKey": "법집행/에너지/uae",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354596",
+      "publishedAt": "2026-05-17T14:53:34+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-18_4",
+      "date": "2026-05-18",
+      "category": "에너지",
+      "title": "테라파워, 한국 원전 기술 구매",
+      "summary": [
+        "미국 최초의 SMR 건설 승인을 받은 테라파워가 한국의 소듐냉각고속로 안전 시험 시설 기술을 약 70억원에 사들였습니다.",
+        "테라파워는 SFR 안전 검증에 필요한 유동 실험 장치를 직접 구축하기 위해 이번 기술 이전을 진행했습니다.",
+        "미국 첫 SMR 건설 테라파워, 한국 원전 기술 사들였다"
+      ],
+      "whyImportant": "차세대 원자로 기술 확보 경쟁이 심화되는 가운데, 한국의 원자력 기술이 해외에서 인정받고 활용될 가능성을 보여줍니다.",
+      "importanceRationale": "근거: 테라파워가 한국원자력연구원의 소듐냉각고속로 안전 시험 시설 기술을 약 70억원에 구매했으며, 이는 미국 와이오밍주에 건설 중인 SFR '나트륨' 개발에 활용될 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "미국 첫 상업용 소형모듈원자로(SMR) 건설 승인을 받은 테라파워가 한국의 소듐냉각고속로(SFR) 안전 시험 시설 기술을 약 70억원에 사 간 것으로 확인됐다."
+        }
+      ],
+      "dedupeKey": "70억원-구매-기술-미국-소듐냉각고속-원전-테라파워-한국",
+      "clusterKey": "한미/에너지/테라파워",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354363",
+      "publishedAt": "2026-05-16T21:13:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-18_5",
+      "date": "2026-05-18",
+      "category": "금융",
+      "title": "주식시장 결제 T+1 추진 본격화…내년 10월 시행 전망",
+      "summary": [
+        "주식시장 결제 주기를 하루 단축하는 T+1 방안이 본격적으로 추진될 예정입니다.",
+        "내년 10월 시행이 전망되지만, 외환 인프라 정비, 시스템 개편 등 해결해야 할 과제가 많습니다.",
+        "외국인 투자자와의 협의 및 노조 합의도 필요한 상황입니다."
+      ],
+      "whyImportant": "주식시장 결제 주기 단축은 투자금 회전 속도를 높여 시장 효율성을 증대시킬 수 있습니다.",
+      "importanceRationale": "근거: 내년 10월 시행 전망이 나오는 가운데, 한국거래소 등 유관기관은 이달 토론회를 통해 T+1 시행을 논의할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "박용진 규제합리화위원회 부위원장도 최근 언론 인터뷰에서 \"준비 단위에서는 내년 10월쯤이나 (가능하다고) 얘기한다\"고 밝혔다."
+        }
+      ],
+      "dedupeKey": "결제-내년-시행-전망되지-주기-주식시장-하루-해결해야",
+      "clusterKey": "관세/결제",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354623",
+      "publishedAt": "2026-05-17T20:53:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

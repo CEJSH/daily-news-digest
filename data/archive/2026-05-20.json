@@ -1,0 +1,325 @@
+{
+  "date": "2026-05-20",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-20T08:45:20.547288+09:00",
+  "items": [
+    {
+      "id": "2026-05-20_1",
+      "date": "2026-05-20",
+      "category": "기술",
+      "title": "엔비디아 실적 발표, AI 인프라 구축 방향 시사: 골드만삭스 스나이더",
+      "summary": [
+        "골드만삭스의 벤 스나이더는 엔비디아의 실적 발표를 앞두고 시장에 대한 시사점을 논의했습니다.",
+        "CNBC의 \"Closing Bell\"에서 엔비디아 실적과 관련된 내용을 다루었습니다."
+      ],
+      "whyImportant": "엔비디아의 실적은 AI 인프라 투자 방향을 가늠할 수 있는 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아의 실적 발표가 AI 인프라 구축 방향을 시사한다는 내용이 언급되어 있습니다.",
+      "impactSignals": [],
+      "dedupeKey": "cnbc-골드만삭스-구축-방향-스나이더-실적-엔비디아-인프라",
+      "clusterKey": "실적/엔비디아",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/video/2026/05/19/nvidia-earnings-signal-ai-infrastructure-buildout-future-goldmans-snider.html",
+      "publishedAt": "2026-05-19T20:22:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_2",
+      "date": "2026-05-20",
+      "category": "기술",
+      "title": "OpenAI, 컴퓨팅 용량 보장 프로그램 발표",
+      "summary": [
+        "OpenAI는 고객이 AI 제품을 구동할 컴퓨팅 자원에 장기적으로 접근할 수 있도록 보장하는 새로운 프로그램을 발표했습니다.",
+        "고객은 1년, 2년, 3년 단위로 계약을 선택할 수 있으며, 계약 기간에 따라 할인율이 증가합니다.",
+        "OpenAI는 2030년까지 총 6천억 달러 규모의 컴퓨팅 비용을 목표로 하고 있습니다."
+      ],
+      "whyImportant": "OpenAI의 컴퓨팅 용량 보장 프로그램은 AI 모델 개발 및 운영에 필요한 고비용 컴퓨팅 자원에 대한 접근성을 높여 AI 산업 발전에 기여할 수 있습니다.",
+      "importanceRationale": "근거: OpenAI는 2030년까지 약 6천억 달러의 컴퓨팅 비용을 목표로 하고 있으며, 이는 AI 모델 개발 및 운영에 대한 대규모 투자를 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "The company unnerved Wall Street by inking a flurry of multi-billion-dollar compute deals late last year, sparking debates about how OpenAI would be able pay for such a large infrastructure buildout."
+        },
+        {
+          "label": "earnings",
+          "evidence": "OpenAI, which is is valued at more than $850 billion by private investors, is looking to bring in more revenue as it gears up for a potentially massive IPO as soon as this year."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "Altman repeatedly brushed off concerns, writing in a post on X in November that OpenAI expects to grow to hundreds of billions in sales by 2030."
+        }
+      ],
+      "dedupeKey": "6천억-openai-고객-보장-용량-자원-컴퓨팅-프로그램",
+      "clusterKey": "openai/컴퓨팅/용량",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/19/openai-announces-new-guaranteed-capacity-offering-for-customers-to-secure-compute.html",
+      "publishedAt": "2026-05-19T21:56:12+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_3",
+      "date": "2026-05-20",
+      "category": "에너지",
+      "title": "한일, 에너지 안보 협력 및 원유·LNG 스와프 추진",
+      "summary": [
+        "이재명 대통령과 다카이치 사나에 일본 총리가 에너지 분야 협력을 강화하기로 했습니다.",
+        "양국은 액화천연가스(LNG), 원유 등의 스와프 거래를 포함한 에너지 안보 강화 협력을 추진합니다.",
+        "산업통상부와 일본 경제산업성은 관련 민관 대화를 장려하기로 합의했습니다."
+      ],
+      "whyImportant": "이번 협력은 중동 사태로 인한 에너지 안보 위기에 대한 공동 대응이라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 대외 에너지 의존도가 높은 한국과 일본이 중동 사태에 따른 에너지 안보 위기에 공동 대응하기 위해 협력하며, 원유·석유제품 스와프 거래를 포함한 에너지 안보 강화 협력을 시작하기로 했습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "구체적으로 호르무즈해협 봉쇄 사태로 공조 필요성이 커진 LNG·원유 분야 협력이 논의됐다."
+        }
+      ],
+      "dedupeKey": "lng-산업통상부-스와프-안보-에너지-원유-한일-협력",
+      "clusterKey": "한일_관세/에너지/안보",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051971231",
+      "publishedAt": "2026-05-19T09:08:12+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_4",
+      "date": "2026-05-20",
+      "category": "국제",
+      "title": "해커, 오픈소스 패키지 다수 침해 공급망 공격 진행",
+      "summary": [
+        "해커들이 여러 인기 있는 오픈소스 프로젝트를 침해하는 사이버 공격이 진행 중입니다.",
+        "SafeDep에 따르면 해커는 한 개발자의 계정을 탈취하여 약 20분 만에 317개 패키지에 걸쳐 630개 이상의 악성 버전을 배포했습니다.",
+        "이번 공격의 목표는 데이터 유출 및 악성코드 확산을 위해 비밀번호 관리자를 포함한 다양한 서비스의 자격 증명을 훔치는 것입니다."
+      ],
+      "whyImportant": "오픈소스 소프트웨어 공급망 공격은 개발자와 사용자 모두에게 광범위한 보안 위협을 초래할 수 있습니다.",
+      "importanceRationale": "근거: 317개 패키지에 걸쳐 630개 이상의 악성 버전이 배포되었으며, OpenAI 직원 컴퓨터도 해킹되는 등 여러 피해 사례가 발생했습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "In an ongoing cyberattack, hackers have compromised several popular open source projects that software developers all over the world rely on."
+        }
+      ],
+      "dedupeKey": "공격-공급망-다수-오픈소스-진행-침해-패키지-해커",
+      "clusterKey": "해커/오픈소스/패키지",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/19/hackers-have-compromised-dozens-of-popular-open-source-packages-in-an-ongoing-supply-chain-attack/",
+      "publishedAt": "2026-05-19T15:32:46+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_5",
+      "date": "2026-05-20",
+      "category": "에너지",
+      "title": "2035년 태양광 에너지 지배 전망, AI 데이터센터는 화석 연료 유지",
+      "summary": [
+        "블룸버그NEF 보고서에 따르면 태양광이 향후 10년 내 석탄, 석유, 천연가스를 넘어 최대 전력 공급원이 될 것으로 예상됩니다.",
+        "데이터 센터는 유틸리티 규모의 태양광 1테라와트, 태양광 400기가와트, 천연가스 370기가와트, 석탄 110기가와트를 추가로 필요로 할 것으로 전망됩니다."
+      ],
+      "whyImportant": "태양광 에너지의 성장과 데이터 센터의 에너지 수요 증가는 향후 에너지 시장의 구조적 변화를 보여주는 중요한 지표입니다.",
+      "importanceRationale": "근거: 블룸버그NEF는 데이터 센터가 2050년까지 화석 연료에 대한 의존도를 51%로 유지할 것으로 예상하며, 이는 기술 기업과 데이터 센터 개발자가 에너지원 선택에 큰 영향을 미칠 것임을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Big batteries received a boost from Google, which has included $1 billion worth of 100-hour batteries from Form Energy in a recent data center project."
+        }
+      ],
+      "dedupeKey": "1테라와트-400기가와트-데이터센터-에너지-연료-지배-태양광-화석",
+      "clusterKey": "에너지/태양광",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/19/solar-to-dominate-energy-in-2035-but-data-centers-will-keep-fossil-fuels-in-business/",
+      "publishedAt": "2026-05-19T10:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_6",
+      "date": "2026-05-20",
+      "category": "금융",
+      "title": "코스피 상장사, 삼성전자·SK하이닉스 제외해도 영업이익 급증",
+      "summary": [
+        "반도체 호황에도 불구하고 삼성전자와 SK하이닉스를 제외한 코스피 상장사의 1분기 영업이익이 전년 동기 대비 44% 증가했습니다.",
+        "전체 20개 업종 중 12개 업종에서 영업이익이 증가했으며, 특히 비금속, 의료·정밀기기, 일반서비스, 화학 업종에서 높은 증가율을 보였습니다."
+      ],
+      "whyImportant": "코스피 상장사의 실적 개선은 특정 산업에 치중되지 않고 다양한 분야에서 나타나고 있음을 시사합니다.",
+      "importanceRationale": "근거: 코스피 상장사의 1분기 영업이익이 삼성전자와 SK하이닉스를 제외하고도 44% 증가했으며, 12개 업종에서 영업이익이 증가했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "반도체 호황으로 사상 최대 실적을 기록한 삼성전자와 에스케이(SK)하이닉스를 제외하고도, 나머지 코스피 상장사의 1분기 영업이익이 전년 동기 대비 44% 증가한 것으로 나타났다."
+        }
+      ],
+      "dedupeKey": "12개-20개-sk하이닉스-삼성전자-상장사-영업이익-제외-코스피",
+      "clusterKey": "실적/코스피",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1259363.html",
+      "publishedAt": "2026-05-19T09:30:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_7",
+      "date": "2026-05-20",
+      "category": "금융",
+      "title": "한미반도체, 영업이익 88% 급감 '실적 쇼크', 3분기 연속 역성장",
+      "summary": [
+        "한미반도체의 1분기 영업이익이 전년 동기 대비 87.9% 급감하며 실적 부진이 3분기 연속으로 이어졌습니다.",
+        "주요 원인은 반도체 제조 장비 매출의 급감이며, SK하이닉스와 마이크론의 HBM3E용 TC 본더 투자가 일단락된 것으로 분석됩니다."
+      ],
+      "whyImportant": "한미반도체의 실적 부진은 반도체 장비 산업의 변화와 경쟁 심화 가능성을 시사합니다.",
+      "importanceRationale": "근거: 한미반도체의 영업이익이 87.9% 급감했으며, SK하이닉스에 ASMPT와 한화세미텍이 TC 본더를 공급하며 한미반도체의 공급 비중이 감소했습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "지난 15일 한미반도체는 올해 1분기 연결 기준 매출 509억원, 영업이익 84억5000만원을 기록했다고 공시했다."
+        }
+      ],
+      "dedupeKey": "hbm3e용-급감이며-쇼크-실적-역성장-연속-영업이익-한미반도체",
+      "clusterKey": "한미_실적/쇼크/투자",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=56775",
+      "publishedAt": "2026-05-18T03:33:27+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_8",
+      "date": "2026-05-20",
+      "category": "에너지",
+      "title": "한일, 에너지 안보 공조 강화 논의",
+      "summary": [
+        "이재명 대통령은 다카이치 사나에 일본 총리와의 회담 후 LNG 및 원유 분야 협력 강화를 밝혔습니다.",
+        "양국은 에너지 수급 불확실성에 대응하여 에너지 안보 공조를 확대하기로 했습니다.",
+        "공급망 협력과 한일·한미일 안보 협력의 중요성도 재확인되었습니다."
+      ],
+      "whyImportant": "에너지 안보 공조 강화는 중동 전쟁 장기화에 따른 에너지 수급 불확실성에 대한 대응이라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 양국은 지난 3월 체결한 'LNG 수급협력 협약서'를 토대로 LNG 협력을 확대하고, 원유 수급과 비축 관련 정보 공유를 강화하기로 했습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이 대통령은 '초국가 스캠범죄 공동 대응을 위한 MOU' 체결이 양국 국민을 범죄 위협으로부터 지키는 토대가 될 것이라고 평가했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "이 대통령은 남북이 평화롭게 공존하고 함께 성장하는 '싸울 필요가 없는 평화의 한반도'를 구축하겠다는 정부 입장을 설명했다."
+        }
+      ],
+      "dedupeKey": "강화-공조-다카이치-불확실성-안보-양국-에너지-한일",
+      "clusterKey": "미일_관세/에너지/안보",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051968727",
+      "publishedAt": "2026-05-19T07:57:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_9",
+      "date": "2026-05-20",
+      "category": "에너지",
+      "title": "UAE 국방부, 바라카 원전 공격 드론 이라크 발사",
+      "summary": [
+        "아랍에미리트(UAE) 국방부는 바라카 원자력 발전소를 타격한 드론이 이라크에서 발사됐다고 밝혔습니다.",
+        "UAE 국방부는 지난 48시간 동안 자국 내 주요 시설을 겨냥한 적대적 드론 6기를 추가로 요격했다고 발표했습니다."
+      ],
+      "whyImportant": "원전과 주요 시설에 대한 드론 공격은 잠재적인 안보 위협을 야기할 수 있어 관련 대응 및 감시 강화가 중요합니다.",
+      "importanceRationale": "근거: UAE 국방부는 바라카 원전 공격에 동원된 드론 3기가 이라크에서 발사되었으며, 지난 48시간 동안 적대적 드론 6기를 추가로 요격했다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "\"48시간 동안 이라크발 적대적 드론 6기 추가 요격\" (카이로=연합뉴스) 김상훈 특파원 = 아랍에미리트(UAE) 국방부는 지난 17일 바라카 원자력 발전소를 타격한 드론이 이라크에서 발사된 것이라고 19일(현지시간) 밝혔다."
+        },
+        {
+          "label": "capex",
+          "evidence": "UAE 국방부는 또 지난 48시간 동안 자국 내 민간 및 핵심 주요 시설을 겨냥한 적대적 드론 6기를 추가로 방공 시스템을 통해 요격했다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "uae-공격-국방부-드론-바라카-발사-원전-이라크",
+      "clusterKey": "에너지/uae",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1355773",
+      "publishedAt": "2026-05-19T14:38:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-20_10",
+      "date": "2026-05-20",
+      "category": "에너지",
+      "title": "다카이치 총리, 한일 스와프 거래 추진 및 경제 안보 협력 강화",
+      "summary": [
+        "다카이치 총리는 이재명 대통령과 원유·LNG 스와프 거래를 포함한 에너지 안보 협력을 시작하기로 합의했습니다.",
+        "양국은 AI와 경제 안보 전반에 걸쳐 호혜적인 협력을 추진할 예정입니다.",
+        "핵심 광물 공급망 협력과 인도태평양 지역 안정화에 대한 공동 노력도 강조되었습니다."
+      ],
+      "whyImportant": "에너지 안보 및 공급망 안정화를 위한 한일 협력 강화는 장기적인 경제 안보에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 한일 양국이 원유·LNG 스와프 거래를 포함한 에너지 안보 협력을 시작하기로 합의함에 따라, 공급망 안정화에 기여할 수 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "다카이치 총리가 이날 직접적으로 중국을 언급하지는 않았지만, 지난해 '대만 유사시 개입' 시사 발언 뒤 중국이 희토류 등 핵심 광물의 대일 수출 규제에 나서는 등 경제 안보 기반이 약화한 최근의 국제 환경에서 한일 협력을 강조한 것으로 풀이된다."
+        }
+      ],
+      "dedupeKey": "거래-경제-다카이치-스와프-안보-총리-한일-협력",
+      "clusterKey": "한일_관세/에너지/다카이치",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1355708",
+      "publishedAt": "2026-05-19T09:05:40+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

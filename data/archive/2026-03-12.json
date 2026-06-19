@@ -1,0 +1,278 @@
+{
+  "date": "2026-03-12",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-12T07:54:47.616932+09:00",
+  "items": [
+    {
+      "id": "2026-03-12_1",
+      "date": "2026-03-12",
+      "category": "국제",
+      "title": "미 전문가들, 이란 전쟁의 연쇄 충격 경고",
+      "summary": [
+        "미국 전문가들은 이란 전쟁이 핵 확산, 한반도 안보, 세계 경제에 연쇄적인 충격을 줄 수 있다고 경고했습니다.",
+        "특히, LNG 수급 차질과 AI 데이터센터 공격으로 인한 반도체 수요 위축 가능성을 지적했습니다.",
+        "미국의 대외전략과 모순되며, 동북아 안보 환경에도 영향을 줄 수 있다고 분석했습니다."
+      ],
+      "whyImportant": "이란 전쟁은 에너지 및 반도체 산업에 영향을 미쳐 한국 경제에 중대한 위협이 될 수 있기 때문입니다.",
+      "importanceRationale": "근거: 전문가들은 LNG 수급 차질과 AI 데이터센터 공격으로 삼성전자와 SK하이닉스의 HBM 수요에 직접적인 타격을 줄 수 있다고 분석했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이 지역의 인공지능 인프라 구축이 지연되거나 재검토될 경우, 삼성전자와 에스케이하이닉스의 고대역폭메모리(HBM) 수요에 직접적인 타격을 줄 수 있다"
+        }
+      ],
+      "dedupeKey": "데이터센터-미국-연쇄-연쇄적인-이란-전문가들-전쟁-충격",
+      "clusterKey": "전문가들/전쟁/연쇄",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1248512.html",
+      "publishedAt": "2026-03-10T05:47:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_2",
+      "date": "2026-03-12",
+      "category": "기술",
+      "title": "엔비디아, 오픈 소스 AI 모델 구축에 260억 달러 투자",
+      "summary": [
+        "엔비디아가 향후 5년간 오픈 소스 인공지능 모델 구축에 260억 달러를 투자할 예정입니다.",
+        "이번 투자를 통해 엔비디아는 칩 제조업체를 넘어 AI 분야의 선두 주자로 발돋움할 수 있습니다.",
+        "엔비디아는 N 3 S 라는 새로운 오픈 웨이트 AI 모델을 공개했습니다."
+      ],
+      "whyImportant": "엔비디아의 투자는 AI 모델 개발 생태계에 큰 영향을 미치고, AI 기술 발전 방향에 중요한 역할을 할 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 향후 5년간 260억 달러를 투자하여 오픈 소스 AI 모델을 구축하는 것은 AI 분야에서 엔비디아의 입지를 강화하는 전략적 움직임입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Nvidia will spend $26 billion over the next five years to build open source artificial intelligence models, according to a 2025 financial filing."
+        }
+      ],
+      "dedupeKey": "260억-구축-달러-모델-소스-엔비디아-오픈-투자",
+      "clusterKey": "투자/ai/엔비디아",
+      "matchedTo": null,
+      "sourceName": "WIRED",
+      "sourceUrl": "https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/",
+      "publishedAt": "2026-03-11T18:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_3",
+      "date": "2026-03-12",
+      "category": "기술",
+      "title": "FCC 위원장, 아마존의 위성 발사 지연 비판",
+      "summary": [
+        "FCC 위원장이 아마존이 스페이스X의 데이터 센터 계획에 반대하면서 자체 위성 발사 목표 달성에는 미흡하다고 비판했습니다.",
+        "아마존은 2026년 7월까지 약 1,600개의 인터넷 위성을 배치해야 하는 기한 연장을 FCC에 요청했습니다.",
+        "스페이스X는 현재 약 9,000개의 위성을 궤도에 보유하고 있으며 약 9백만 명의 고객을 확보하고 있습니다."
+      ],
+      "whyImportant": "위성 인터넷 시장 경쟁 심화 및 관련 규제 논의에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 아마존은 100억 달러 이상을 투자하여 위성 서비스 경쟁을 하고 있으며, FCC는 아마존의 4,500개 위성 배치 신청을 승인했습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Federal Communications Commission Chairman Brendan Carr lashed out at Amazon on Wednesday for opposing SpaceX’s orbital data center plans while it’s falling short of its own satellite “deployment milestone.” “Amazon should focus on the fact that it will fall roughly 1,000 satellites short of meeting its upcoming deployment milestone, rather than spending their time and resources filing petitions against companies that are putting thousands of satellites in orbit,” Carr wrote in a post on X."
+        },
+        {
+          "label": "policy",
+          "evidence": "The company has invested more than $10 billion into the effort, and has sent up at least 200 satellites since last April via a variety of launch partners, including Elon Musk’s SpaceX."
+        },
+        {
+          "label": "infra",
+          "evidence": "At the time, the company blamed delays beyond its control, including a “shortage in the near-term availability” of rockets and manufacturing disruptions."
+        }
+      ],
+      "dedupeKey": "000개-600개-fcc-발사-아마존-위성-위원장-지연",
+      "clusterKey": "fcc/아마존/위성",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/11/fcc-chair-amazon-spacex-data-center-space.html",
+      "publishedAt": "2026-03-11T22:12:42+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_4",
+      "date": "2026-03-12",
+      "category": "에너지",
+      "title": "중동발 전력 시장 불안정, 원전 6기 조기 재가동",
+      "summary": [
+        "정부는 중동 사태로 인한 에너지 부족에 대비해 원자력발전소 6기를 조기 재가동하기로 했습니다.",
+        "3월부터 신월성 1호기, 고리 2호기 등 원전 6기를 5월 중순까지 재가동하여 전기 생산량을 확보할 계획입니다."
+      ],
+      "whyImportant": "이번 결정은 에너지 시장 불안정에 대응하고 전기료 급등을 방지하기 위한 정부의 선제적 조치입니다.",
+      "importanceRationale": "근거: 정부는 5월 중순까지 원전 6기를 재가동하여 에너지 위기에 대응하고, 7~8월 한여름 '전기료 폭탄'을 막고자 합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "한 전문가는 “국제 유가가 100달러를 넘는 상태가 한 달 넘게 이어지면 4~5개월 뒤 우리가 사오는 가스 가격도 덩달아 비싸진다”며 “가스 가격이 너무 올라 민간 발전사들이 현물 시장에서 가스를 사지 않고 버티면 가스공사가 부족한 물량을 훨씬 더 비싼 값(현물 가격)에 급하게 사와야 해 전력 공급에 큰 혼란이 생길 수 있다”고 말했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "기후부는 “근본적 해결책은 재생에너지 확대에 있다”며 “재생에너지 보급·융자 사업 예산을 신속히 집행하고 인허가와 계통 연계를 서둘러 설비를 조기에 가동하겠다”고 밝혔다."
+        }
+      ],
+      "dedupeKey": "6기-불안정-시장-원전-재가동-전력-조기-중동발",
+      "clusterKey": "에너지/중동발",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031146631",
+      "publishedAt": "2026-03-11T09:00:56+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_5",
+      "date": "2026-03-12",
+      "category": "에너지",
+      "title": "유럽 최초의 마이크로그리드 연결 데이터 센터 가동",
+      "summary": [
+        "아일랜드 더블린 외곽에 유럽 최초로 독립형 마이크로그리드에 연결된 데이터 센터가 가동되었습니다.",
+        "P e Data C e G oup은 AVK와 협력하여 더블린 시설을 구축했으며, 이는 유럽의 자체 전력 공급 생태계의 첫걸음이 될 수 있습니다.",
+        "이 데이터 센터는 클라우드 및 AI 워크로드를 처리할 수 있으며, 총 용량은 약 110MW이고 총 투자액은 약 10억 유로입니다."
+      ],
+      "whyImportant": "데이터 센터의 전력 수요 증가에 대한 대안으로 마이크로그리드 도입이 확대될 가능성을 보여줍니다.",
+      "importanceRationale": "근거: 유럽연합은 2040년까지 최소 1조 2천억 유로의 투자가 필요하다고 추정하며, 아일랜드는 데이터 센터의 전력 소비량이 2024년에 국가 전력의 22%를 차지합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "\"We are a true enabling factor to allow big renewable projects to come online, to allow flexibility into the grid, and ultimately to allow power costs to come down for all consumers, both business and normal citizens, but the policy and regulation takes a while to allow and facilitate that,\" Childs told CNBC."
+        },
+        {
+          "label": "capex",
+          "evidence": "However, to get the most sustainable solution and to provide services back into the grid in Dublin, in the most constrained area of Ireland, it would be our desire to get a grid connection.\" The Dublin data center, which can run both cloud and AI workloads, has a total capacity of about 110 megawatts."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "has such a high demand that we've seen the rollout a little bit quicker than we've seen here in Europe,\" Pritchard told CNBC, adding that the company is now seeing a new type of investor who is specifically interested in microgrids and not necessarily the data center itself."
+        }
+      ],
+      "dedupeKey": "110mw이고-가동-데이터-마이크로그리드-센터-연결-유럽-최초",
+      "clusterKey": "최초/마이크로그리드/연결",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/03/11/data-center-microgrid-power-ireland-ai-boom-avk-pure-dc.html",
+      "publishedAt": "2026-03-11T06:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_6",
+      "date": "2026-03-12",
+      "category": "금융",
+      "title": "정부, 고유가 대응 위한 추가경정예산 편성 공식화",
+      "summary": [
+        "정부가 고유가에 대응하기 위해 추가경정예산 편성을 사실상 공식화했습니다.",
+        "이번 추경은 중동 사태로 인한 유가 급등에 따른 민생 및 산업 부담 완화를 위한 조치입니다.",
+        "시장에선 추경 규모가 최대 20조 원에 달할 수 있다는 전망이 나오고 있습니다."
+      ],
+      "whyImportant": "이번 추경은 고유가 상황에 대한 정부의 정책적 대응을 보여주는 것으로, 향후 에너지 가격 변동에 따른 정부의 재정 정책 방향을 가늠할 수 있는 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 시장에서는 이번 추경 규모를 10조에서 최대 20조 원 수준으로 예상하며, 이는 취약계층 에너지 지원과 고유가로 타격 입은 기업, 소상공인 지원 등에 집중될 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "[영상취재 김동화] [영상편집 고종필] [뉴스리뷰] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 임혜준(junelim@yna.co.kr) 정부가 고유가 대응을 위한, 이른바 '벚꽃 추경' 편성을 사실상 공식화했습니다."
+        }
+      ],
+      "dedupeKey": "20조-고유-공식화-대응-위한-정부-추가경정예산-편성",
+      "clusterKey": "고유/대응/위한",
+      "matchedTo": null,
+      "sourceName": "연합뉴스",
+      "sourceUrl": "https://m.yonhapnewstv.co.kr/news/MYH20260311211521oMD",
+      "publishedAt": "2026-03-11T12:15:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_7",
+      "date": "2026-03-12",
+      "category": "에너지",
+      "title": "일본, 휘발유 가격 급등 조짐에 비축유 단독 반출 가능성 언급",
+      "summary": [
+        "일본 정부는 중동 정세 악화로 휘발유 가격이 급등하자 비축유 단독 반출 가능성을 언급하며 대응에 나섰습니다.",
+        "정유업체 에네오스는 12~18일 도매가를 리터당 26엔 인상한다고 주유소에 통보했으며, 휘발유 가격이 리터당 180엔을 돌파할 가능성도 제기됩니다."
+      ],
+      "whyImportant": "일본 정부의 비축유 단독 반출 결정은 에너지 수급 불안정에 대한 선제적 대응이라는 점에서 중요합니다.",
+      "importanceRationale": "근거: 일본 정부가 휘발유 가격 급등에 대응하여 비축유 단독 반출 가능성을 언급한 것은 1978년 관련 제도 이후 첫 사례이며, 에네오스는 도매가를 리터당 26엔 인상했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "석달 만에 리터당 160엔 넘어…정유업체, 도매가 26엔 인상 통보 원유가 연동된 LNG도 상승 우려…전기요금도 연쇄적 인상 전망 (도쿄=연합뉴스) 박상현 특파원 = 일본 정부가 중동 정세 악화 이후 휘발윳값 상승세가 이어지자 이례적으로 비축유 단독 반출 가능성을 언급하며 대응에 나섰다."
+        },
+        {
+          "label": "security",
+          "evidence": "아카자와 경제산업상은 전날 기자회견에서도 열흘 정도가 지나면 일본에 도착하는 유조선이 대폭 감소할 가능성이 있다며 경계감을 나타냈다."
+        }
+      ],
+      "dedupeKey": "가격-급등-단독-반출-비축유-일본-조짐-휘발유",
+      "clusterKey": "휘발유/조짐/비축유",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1322407",
+      "publishedAt": "2026-03-11T10:11:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-12_8",
+      "date": "2026-03-12",
+      "category": "에너지",
+      "title": "한·미 원자력협력 정부대표, 한국 원전 공급망 강화 계획 발표",
+      "summary": [
+        "임갑수 한·미 원자력협력 정부대표는 국제회의에서 한국의 원전 공급망 강화 계획을 발표했습니다.",
+        "최근 국내 대형원전 2기와 소형모듈원자로(SMR) 1기 건설 추진 결정 등을 설명하며 수출 경쟁력을 높일 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "원자력 에너지의 중요성이 부각되는 시점에서 한국의 원전 공급망 강화는 에너지 안보 및 수출 경쟁력 측면에서 중요한 의미를 가집니다.",
+      "importanceRationale": "근거: 한국이 대형원전 2기와 SMR 1기 건설을 추진하기로 결정한 점을 언급하며 공급망 강화 및 수출 경쟁력 제고 구상을 밝혔기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "임 대표는 기후변화와 에너지 안보, 인공지능 시대 전력수요 급증, 불안정한 중동 정세 속에서 “원자력 에너지는 기후변화 대응과 에너지 안보를 동시에 달성할 수 있는 핵심 에너지원”이라고 강조했다."
+        }
+      ],
+      "dedupeKey": "1기-2기-강화-공급망-원자력협력-원전-정부대표-한국",
+      "clusterKey": "에너지/원자력협력",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/politics/politics_general/1248764.html",
+      "publishedAt": "2026-03-11T04:36:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

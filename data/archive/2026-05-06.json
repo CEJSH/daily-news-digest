@@ -1,0 +1,137 @@
+{
+  "date": "2026-05-06",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-06T08:30:54.470445+09:00",
+  "items": [
+    {
+      "id": "2026-05-06_1",
+      "date": "2026-05-06",
+      "category": "에너지",
+      "title": "삼성중공업, LNG 부유식 저장·재기화 설비 4848억원에 수주",
+      "summary": [
+        "삼성중공업이 아시아 지역 선주로부터 LNG-FSRU 1척을 4848억원에 수주했다고 밝혔습니다.",
+        "FSRU는 LNG를 기체 상태로 바꿔 공급하는 설비로, 에너지 수요 급증 지역에서 활용됩니다."
+      ],
+      "whyImportant": "FSRU는 에너지 인프라 구축의 신속한 대안이 될 수 있어 AI 산업 확산에 따른 전력 공급 수요에 대응 가능하다는 점에서 중요합니다.",
+      "importanceRationale": "근거: 삼성중공업은 LNG-FSRU 1척을 4848억원에 수주했으며, FSRU는 육상 터미널보다 건조 기간이 짧아 에너지 인프라 구축에 현실적인 대안이 될 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "삼성중공업 관계자는 \"최근 에너지 인프라 확보 수요가 늘고 있는 가운데 FSRU는 가장 신속하고 현실적인 대안이 될 수 있다\"며 \"강력한 LNG 밸류체인 라인업으로 글로벌 시장을 선도하겠다\"고 말했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "삼성중공업은 글로벌 시장 1위인 FLNG(생산·액화·하역)부터 LNG 운반선(운반), LNG-FSRU(공급) 등 LNG 밸류체인 전 영역에 걸친 라인업을 갖추고 있다."
+        }
+      ],
+      "dedupeKey": "4848억원-lng-부유식-삼성중공업-설비-수주-재기화-저장",
+      "clusterKey": "설비투자/에너지/삼성중공업",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1348470",
+      "publishedAt": "2026-05-04T01:57:39+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-06_3",
+      "date": "2026-05-06",
+      "category": "금융",
+      "title": "S&P·나스닥 최고치 경신",
+      "summary": [
+        "뉴욕 증시에서 S&P500과 나스닥 종합지수가 기업 실적 낙관론에 힘입어 사상 최고치를 경신했습니다.",
+        "AI 관련 반도체 종목이 상승세를 주도했으며, AMD는 1분기 데이터센터 부문 매출 급증으로 시장 기대치를 상회하는 실적을 발표했습니다."
+      ],
+      "whyImportant": "주요 지수 상승과 AI 반도체 분야의 성장은 관련 산업 투자 및 기술 개발에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: AMD의 데이터센터 부문 매출이 57% 급증한 58억 달러를 기록하며 실적을 견인했고, 2분기 매출 전망도 시장 예상치를 웃돌았습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "국제유가가 하락한 가운데 견조한 기업 실적에 대한 낙관론이 힘을 받았는데요."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "인공지능 수요 급증에 힘입어 1분기 실적이 시장 기대를 웃돌았습니다."
+        }
+      ],
+      "dedupeKey": "p500-경신-기업-나스닥-뉴욕-데이터센터-종합지수-최고치",
+      "clusterKey": "실적/나스닥",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349102",
+      "publishedAt": "2026-05-05T23:05:53+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-06_4",
+      "date": "2026-05-06",
+      "category": "금융",
+      "title": "AMD, 1분기 매출 38% 급증…AI 수요에 2분기 ‘깜짝 전망’",
+      "summary": [
+        "AMD는 1분기 매출이 전년 동기 대비 38% 증가한 103억 달러를 기록했다고 밝혔습니다.",
+        "데이터센터 부문 매출은 57% 증가한 58억 달러로, 2분기 매출은 시장 예상치를 크게 웃도는 112억 달러로 제시했습니다."
+      ],
+      "whyImportant": "AMD의 실적 증가는 AI 데이터센터 투자 확대에 따른 고성능 반도체 수요 급증을 반영하며, 향후 AI 칩 시장 경쟁 심화를 예고합니다.",
+      "importanceRationale": "근거: AMD는 1분기 매출이 38% 증가했으며, 데이터센터 부문 매출은 57% 증가하여 AI 인프라 투자 확대가 실적에 반영되고 있음을 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "AMD는 5일(현지시간) 1분기 매출이 103억달러로 전년 동기 대비 38% 증가했다고 밝혔다."
+        }
+      ],
+      "dedupeKey": "103억-112억-58억-amd-데이터센터-매출-수요-전년",
+      "clusterKey": "실적/amd",
+      "matchedTo": null,
+      "sourceName": "매일경제",
+      "sourceUrl": "https://www.mk.co.kr/news/it/12036935",
+      "publishedAt": "2026-05-05T22:01:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-06_5",
+      "date": "2026-05-06",
+      "category": "금융",
+      "title": "한전기술, 1분기 실적 급반등 전망",
+      "summary": [
+        "LS증권은 한전기술의 목표주가를 19만원으로 상향 조정하고 투자의견은 '매수'를 유지했습니다.",
+        "1분기 영업이익은 전년 동기 대비 751% 증가한 101억원으로 예상됩니다."
+      ],
+      "whyImportant": "한전기술의 실적 개선은 국내외 원전 시장의 장기적인 성장 가능성을 시사합니다.",
+      "importanceRationale": "근거: 1분기 영업이익이 전년 동기 대비 751% 증가할 것으로 예상되며, 올해 영업이익은 87% 증가할 것으로 전망됩니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "LS증권은 6일 한전기술에 대해 \"올 1분기를 기점으로 실적 급반등을 시작할 것으로 예상된다\"며 목표주가를 기존 15만원에서 19만원으로 상향 조정했다."
+        }
+      ],
+      "dedupeKey": "101억원-19만원-ls증권-급반등-실적-영업이익-투자의견-한전기술",
+      "clusterKey": "실적/1분기",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050673866",
+      "publishedAt": "2026-05-05T22:59:41+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

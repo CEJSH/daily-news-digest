@@ -1,0 +1,193 @@
+{
+  "date": "2026-03-09",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-09T07:53:42.100092+09:00",
+  "items": [
+    {
+      "id": "2026-03-09_1",
+      "date": "2026-03-09",
+      "category": "금융",
+      "title": "GS건설, 도안자이 센텀리체 분양으로 주택 실적 부진 만회 시도",
+      "summary": [
+        "GS건설이 4월 대전 도안신도시에 2293세대 규모의 '도안자이 센텀리체'를 분양하며, 이 중 1780세대를 일반에 공급합니다.",
+        "이는 GS건설의 주택 부문 실적 부진을 개선하기 위한 전략으로, 2024년 건축주택사업본부 매출이 18.1% 감소했습니다."
+      ],
+      "whyImportant": "이번 분양은 GS건설의 주택 사업 실적 회복 가능성을 가늠하는 중요한 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: GS건설의 2024년 건축주택사업본부 매출이 18.1% 감소한 상황에서, 수요가 높은 지역의 대규모 분양을 통해 매출 감소분을 상쇄하려는 전략입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "건축주택사업본부 매출은 2024년 9조5110억원에서 지난해 7조7869억원으로 18.1% 줄었다."
+        }
+      ],
+      "dedupeKey": "gs건설-도안자-만회-부진-분양-센텀리체-실적-주택",
+      "clusterKey": "실적/gs건설",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656087",
+      "publishedAt": "2026-03-08T11:34:43+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-09_2",
+      "date": "2026-03-09",
+      "category": "에너지",
+      "title": "외국인 투자자, 차익 실현 속 건설주 매수한 배경은 원전 모멘텀",
+      "summary": [
+        "DB증권에 따르면 이란 사태 전후 외국인 투자자의 매도세 속에서도 건설주에는 자금 유입이 있었다고 밝혔습니다.",
+        "외국인은 대우건설, 삼성E&A, 현대건설 등 원전 테마 건설주를 집중 매수했습니다."
+      ],
+      "whyImportant": "원전 관련 건설주에 대한 외국인 투자자들의 관심은 향후 에너지 정책 및 관련 산업에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 3~6일 동안 대우건설 시가총액의 1.20%에 해당하는 금액을 외국인이 순매수했으며, 삼성E&A(0.73%)와 현대건설(0.64%)에도 자금이 몰렸습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "강 연구원은 외국인이 원전 산업에 투자하는 콘셉트로 건설주를 사들인 배경을 △이란 사태로 유가가 상승할 때 대안적 에너지로 부상할 수 있다는 점 △인공지능(AI) 시대에 대규모 에너지가 필요하다는 인식 △한국의 원전 관련 기업 상당수가 순수 건설 분야에도 강점이 있어 중동 지역 분쟁이 마무리된 뒤 재건 수주를 받을 수 있다는 점 등을 꼽았다."
+        }
+      ],
+      "dedupeKey": "건설주-매수-배경-실현-외국인-원전-차익-투자자",
+      "clusterKey": "투자/외국인",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030971136",
+      "publishedAt": "2026-03-08T22:42:13+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-09_3",
+      "date": "2026-03-09",
+      "category": "에너지",
+      "title": "신한울1호기 계획예방정비 92일 기록",
+      "summary": [
+        "2022년 첫 가동을 시작한 신한울1호기 원자력발전소는 경상북도 연간 전력 소비량의 약 1/4을 책임집니다.",
+        "1년 6개월 가동 후 3개월 재정비 주기를 따르는 신한울1호기 발전소는 안정적 전력 공급을 위한 계획예방정비가 진행됩니다.",
+        "원자로가 정지된 상태에서 연료 인출, 핵심 설비 점검 등을 진행하며 1,500명 이상의 인력이 투입됩니다."
+      ],
+      "whyImportant": "신한울1호기의 계획예방정비는 안정적인 전력 공급과 원전 안전성 유지를 위해 필수적인 과정입니다.",
+      "importanceRationale": "근거: 신한울1호기는 시간당 1,400MW의 전력을 생산하는 대형 원전으로, 1년 6개월 가동 후 3개월 재정비 주기를 가집니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "본문영역 상세페이지 92일의 기록, 신한울1호기 계획예방정비 국가 보안 시설의 심부가 열린다!"
+        }
+      ],
+      "dedupeKey": "3개월-4을-500명-6개월-계획예방정비-기록-신한울1호기-원자력발전소",
+      "clusterKey": "설비투자/신한울1호기",
+      "matchedTo": null,
+      "sourceName": "MyloveKBS",
+      "sourceUrl": "https://mylovekbs.kbs.co.kr/index.html?source=mylovekbs&sname=mylovekbs&stype=magazine&contents_id=70000000403445",
+      "publishedAt": "2026-03-07T16:25:45+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-09_4",
+      "date": "2026-03-09",
+      "category": "금융",
+      "title": "일본, 2040년 반도체 매출 40조엔 목표",
+      "summary": [
+        "일본 정부가 2040년까지 자국산 반도체 매출을 40조엔으로 늘리는 목표를 설정했습니다.",
+        "AI 및 데이터센터 수요에 대응하여 최첨단 반도체 연구개발 거점을 마련할 계획입니다.",
+        "라피더스는 캐논을 첫 고객 후보로 확보하여 2나노 이미지 처리용 반도체를 공동 개발할 예정입니다."
+      ],
+      "whyImportant": "일본의 반도체 산업 부활 노력은 장기적으로 글로벌 반도체 시장의 경쟁 구도에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 일본 정부는 2040년까지 반도체 매출 40조엔 달성을 목표로, 라피더스에 올해 2500억엔을 출자하는 등 적극적인 지원 정책을 추진하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "당초 통신기기 등에 쓰이는 6나노 반도체를 생산할 계획이었지만, AI 반도체 수요가 늘자 더 미세한 고성능 제품을 제조하기로 방향을 바꿨다."
+        }
+      ],
+      "dedupeKey": "2나노-40조엔-데이터센터-매출-목표-반도체-일본-정부",
+      "clusterKey": "실적/40조엔",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030866381",
+      "publishedAt": "2026-03-08T09:22:52+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-09_5",
+      "date": "2026-03-09",
+      "category": "금융",
+      "title": "파라다이스, 춘절 효과로 카지노 매출 급증 및 하얏트 재개관 앞두고 탄력",
+      "summary": [
+        "파라다이스의 지난달 카지노 매출액은 895억원으로 전년 동기 대비 24.4% 증가했습니다.",
+        "1~2월 누계 카지노 매출은 1812억원으로 전년 동기 대비 26.1% 증가했습니다.",
+        "하얏트 리젠시 인천 파라다이스시티가 이달 중 재개관할 예정입니다."
+      ],
+      "whyImportant": "파라다이스의 카지노 매출 증가는 국내 관광 산업 및 관련 기업 실적에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 2월 카지노 매출액이 전년 동기 대비 24.4% 증가했으며, 1~2월 누계 매출은 26.1% 증가하여 실적 개선을 보였습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "파라다이스의 지난달 카지노 매출액은 895억원으로 전년 동기보다 24.4% 뛰었다."
+        }
+      ],
+      "dedupeKey": "1812억원-895억원-매출-춘절-카지노-파라다이스-하얏트-효과",
+      "clusterKey": "실적/파라다이스",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656085",
+      "publishedAt": "2026-03-08T09:19:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-09_6",
+      "date": "2026-03-09",
+      "category": "금융",
+      "title": "강스템바이오텍, CDMO 고객사 임상 진입으로 실적 연결 기대",
+      "summary": [
+        "강스템바이오텍의 CDMO 위탁사가 임상 1/2a상에 진입하여 CDMO 사업이 실적과 연결될 가능성이 커졌습니다.",
+        "2025년 마일스톤 부재로 매출이 급감한 상황에서 임상 투약 연동형 공급 매출이 새로운 변수로 떠올랐습니다.",
+        "회사는 2026년 공급 매출 발생 가능성을 높게 보고 있습니다."
+      ],
+      "whyImportant": "CDMO 사업의 임상 연동형 매출 구조 구체화는 강스템바이오텍의 실적 안정성에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 2025년 매출이 53.9% 감소한 상황에서 2026년 공급 매출 발생 가능성이 제기되어 실적 개선의 기대감이 나타나고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "강스템바이오텍의 위탁개발생산(CDMO) 위탁사가 임상1/2a상에 진입하면서 CDMO 사업이 실적과 연결되는 구조가 구체화됐다."
+        }
+      ],
+      "dedupeKey": "cdmo-강스템바이오텍-고객사-기대-실적-연결-임상-진입",
+      "clusterKey": "실적/cdmo",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=656036",
+      "publishedAt": "2026-03-08T03:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "date": "2026-03-01",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-01T07:51:59.137764+09:00",
+  "items": [
+    {
+      "id": "2026-03-01_2",
+      "date": "2026-03-01",
+      "category": "금융",
+      "title": "이란의 호르무즈 해협 봉쇄로 유가 전망치 변동",
+      "summary": [
+        "미국과 이스라엘의 이란 공격에 이란이 호르무즈 해협 봉쇄를 단행하여 유가 전망치가 크게 변동하고 있습니다.",
+        "바클레이즈는 주요 공급망 차단 시 브렌트유가 배럴당 80달러에 이를 것으로 전망했으며, SEB는 호르무즈 해협 봉쇄 시 배럴당 150달러까지 예상했습니다."
+      ],
+      "whyImportant": "호르무즈 해협 봉쇄는 전 세계 원유 공급에 큰 영향을 미쳐 에너지 시장의 변동성을 확대시킬 수 있기 때문입니다.",
+      "importanceRationale": "근거: 호르무즈 해협은 전 세계 원유 공급량의 20%를 처리하는 핵심 지점이며, 이란은 1월 기준 하루 319만 배럴의 원유를 생산했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "트레이딩뉴스는 공습이 시작되기 전인 지난 27일 브렌트유가 2.45%, WTI가 2.78% 급등한 것을 언급하면서 이를 \"경험 많은 원자재 트레이더들이 실시간으로 전쟁 프리미엄을 반영한 결과\"라고 설명했다."
+        }
+      ],
+      "dedupeKey": "80달러-변동-봉쇄-유가-이란-전망치-해협-호르무즈",
+      "clusterKey": "이스라엘이란/호르무즈/해협/봉쇄",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603011731i",
+      "publishedAt": "2026-02-28T19:55:52+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_3",
+      "date": "2026-03-01",
+      "category": "정책",
+      "title": "금융위, 이수스페셜티 방문하여 국민성장펀드 승인 논의",
+      "summary": [
+        "권대영 금융위원회 부위원장이 울산·경남 지역에서 지역벤처기업의 의견을 청취했습니다.",
+        "이수스페셜티케미컬을 방문하여 이차전지 산업 생태계 확대를 위한 과제를 논의했습니다."
+      ],
+      "whyImportant": "이차전지 소재 산업 생태계 육성에 대한 정부의 관심과 지원 의지를 보여줍니다.",
+      "importanceRationale": "근거: 금융위원회 부위원장이 이수스페셜티케미컬을 방문하여 이차전지 소재 부문의 핵심 플레이어 육성을 바란다고 언급했습니다.",
+      "impactSignals": [],
+      "dedupeKey": "국민성장펀드-금융위-금융위원회-부위원장-이수스페셜티-이수스페셜티케미컬-이차전지-지역벤처기업",
+      "clusterKey": "금융/이수스페셜티",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315882",
+      "publishedAt": "2026-02-27T05:00:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_4",
+      "date": "2026-03-01",
+      "category": "기술",
+      "title": "OpenAI, 아마존, 엔비디아, 소프트뱅크로부터 1,100억 달러 자금 조달 발표",
+      "summary": [
+        "O AI는 금요일 아마존, 엔비디아, 소프트뱅크의 지원을 받아 1,100억 달러의 자금 조달을 발표했습니다.",
+        "이번 투자를 통해 O AI의 기업 가치는 7,300억 달러로 상승했습니다.",
+        "O AI는 또한 아마존 웹 서비스와의 기존 계약을 8년 동안 1,000억 달러로 확대한다고 밝혔습니다."
+      ],
+      "whyImportant": "이번 대규모 자금 조달은 AI 분야 경쟁 심화 속에서 OpenAI의 시장 지배력 유지 및 기술 개발에 중요한 역할을 할 것입니다.",
+      "importanceRationale": "근거: OpenAI는 2030년까지 총 컴퓨팅 비용으로 약 6,000억 달러를 목표로 하고 있으며, 2030년 총 수익은 2,800억 달러 이상으로 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "“AI is going to happen everywhere. It’s transforming the whole economy, and the world needs a lot of collective computing power to meet the demand.”"
+        }
+      ],
+      "dedupeKey": "100억-openai-달러-소프트뱅크-아마존-엔비디아-자금-조달",
+      "clusterKey": "투자/openai",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/02/27/open-ai-funding-round-amazon.html",
+      "publishedAt": "2026-02-27T13:31:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_5",
+      "date": "2026-03-01",
+      "category": "국제",
+      "title": "국방부 장관, Anthropic을 공급망 위험으로 지정",
+      "summary": [
+        "제프리 엡스타인과 4 의 연관성이 있습니다.",
+        "B ess I 는 최근 공개된 파일에서 법무부와 FBI가 4 , T-Mobile, AT&T에 소환장을 보내 출처를 조사한 방법을 보여주는 문서가 있다고 보도합니다."
+      ],
+      "whyImportant": "이번 조사는 법 집행 기관이 온라인 플랫폼을 통해 유출되는 정보의 출처를 추적하는 데 있어 중요한 선례를 남길 수 있습니다.",
+      "importanceRationale": "근거: 법무부와 FBI가 4chan, T-Mobile, AT&T를 조사한 것은 여러 기관에 영향을 미치는 중요한 사안입니다.",
+      "impactSignals": [],
+      "dedupeKey": "anthropic-공급망-국방부-법무부-위험-장관-지정-출처",
+      "clusterKey": "법집행/국방부",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech",
+      "publishedAt": "2026-02-28T02:19:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_6",
+      "date": "2026-03-01",
+      "category": "산업",
+      "title": "퀄컴, 인텔 수석부사장 케빈 오버클리 영입",
+      "summary": [
+        "퀄컴이 인텔 파운드리 수석부사장이었던 케빈 오버클리를 글로벌 운영·공급망 수석부사장으로 영입했습니다.",
+        "오버클리 부사장은 퀄컴의 전 세계 반도체 운영 전반을 담당하며, 아카시 팔키왈라 CFO 겸 COO에게 직접 보고할 예정입니다."
+      ],
+      "whyImportant": "퀄컴의 공급망 관리 및 반도체 운영 역량 강화에 기여할 수 있는 주요 인력 이동입니다.",
+      "importanceRationale": "근거: 퀄컴은 오버클리 부사장의 영입으로 고성능 저전력 컴퓨팅, AI, 연결 기술 등 공급 제품의 글로벌 운영을 강화할 것으로 기대하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이후 IBM에서 분사한 주문형 반도체(ASIC) 설계 기업 아베라 세미컨덕터의 최고경영자(CEO)를 맡아, 마벨 테크놀로지와 합병을 성사시켰다."
+        },
+        {
+          "label": "capex",
+          "evidence": "마벨에서는 1500명 규모 엔지니어 팀을 이끌며 데이터센터용 서버 프로세서와 인공지능(AI)용 반도체 개발을 지휘했다."
+        }
+      ],
+      "dedupeKey": "수석부사장-수석부사장이었던-영입-오버클리-인텔-케빈-퀄컴-파운드리",
+      "clusterKey": "반도체/퀄컴",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=52858",
+      "publishedAt": "2026-02-27T08:06:51+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_7",
+      "date": "2026-03-01",
+      "category": "국제",
+      "title": "중국, '트럼프 협상력 약화' 판단 및 EU와 밀착",
+      "summary": [
+        "미국 연방대법원의 펜타닐 관세 무효화 판결 후 중국이 미국과의 6차 무역회담을 제안했습니다.",
+        "중국은 일본 방산 기업에 대한 수출 통제 조치를 발표하고, 독일과는 경제·무역 협력 강화를 논의했습니다."
+      ],
+      "whyImportant": "미국과 중국 간의 무역 협상 및 중국의 대외 전략 변화는 국제 경제 및 안보 환경에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국이 미국의 관세 압박에 대응하여 EU와의 협력을 강화하고 일본에 대한 수출 통제를 시행하는 등, 정책 변화가 나타나고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "중국 상무부는 미쓰비시와 가와사키, IHI 계열 등 방산 관련 기업·기관 20곳을 수출통제 관리 명단에 올리고, 이중용도 품목의 대일 수출을 전면 금지했습니다."
+        }
+      ],
+      "dedupeKey": "미국-밀착-약화-연방대법원-중국-트럼프-판단-협상력",
+      "clusterKey": "미중_관세/트럼프",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315994",
+      "publishedAt": "2026-02-27T08:14:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_8",
+      "date": "2026-03-01",
+      "category": "에너지",
+      "title": "일본, 후쿠시마 사고 15년…원전 재가동 찬성 우세",
+      "summary": [
+        "아사히신문 여론조사 결과, 일본인 절반 이상이 원전 재가동에 찬성하는 것으로 나타났습니다.",
+        "2023년부터 찬성 비율이 반대보다 높아졌으며, 남성과 18~29세의 찬성 비율이 특히 높았습니다."
+      ],
+      "whyImportant": "원전 재가동에 대한 여론 변화는 향후 일본 에너지 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 아사히신문 여론조사에서 응답자 51%가 원전 재가동에 찬성했으며, 이는 2023년부터 찬성 비율이 높아진 결과입니다.",
+      "impactSignals": [],
+      "dedupeKey": "29세-사고-우세-원전-일본-재가동-찬성-후쿠시마",
+      "clusterKey": "후쿠시마/사고/재가동",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1316166",
+      "publishedAt": "2026-02-28T05:20:43+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-01_9",
+      "date": "2026-03-01",
+      "category": "기술",
+      "title": "엔비디아 주가 급락, 월가의 우려",
+      "summary": [
+        "엔비디아의 4분기 실적은 월가 기대를 상회했으나, 주가는 5% 폭락했습니다.",
+        "데이터센터 매출의 하이퍼스케일러 의존도가 높아, 이들의 자본 지출 둔화 가능성이 제기됩니다.",
+        "소프트웨어 업종으로 자금 유입이 관측되며, 하드웨어와 소프트웨어 수익률 격차 축소 가능성이 거론됩니다."
+      ],
+      "whyImportant": "하이퍼스케일러의 자본 지출 변화는 엔비디아를 포함한 AI 반도체 산업 전반에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 엔비디아 데이터센터 매출의 절반이 아마존, 마이크로소프트 등에 의존하며, 이들의 자본지출 증가율 둔화가 예상되어 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "어제 장 마감 뒤 4분기 실적을 발표한 엔비디아, 세일즈포스, 스노우플레이크는 모두 월가 기대를 크게 넘는 좋은 매출, 이익을 공개했죠."
+        }
+      ],
+      "dedupeKey": "급락-데이터센터-소프트웨어-엔비디아-월가-주가-하드웨어-하이퍼스케일러",
+      "clusterKey": "실적/엔비디아/투자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602278403i",
+      "publishedAt": "2026-02-26T23:29:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "date": "2026-03-16",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-16T07:58:58.680128+09:00",
+  "items": [
+    {
+      "id": "2026-03-16_1",
+      "date": "2026-03-16",
+      "category": "금융",
+      "title": "월가, 이란전 장기화에 긴장 및 젠슨 황 메시지 주목",
+      "summary": [
+        "뉴욕 증시는 미국-이란 전쟁 추이에 따라 변동성을 보일 것으로 예상됩니다.",
+        "17~18일 FOMC와 엔비디아 GTC 콘퍼런스 등 주요 이벤트도 예정되어 있습니다.",
+        "상하이 증시는 중국의 통화정책 방향과 정책 집행 속도에 주목할 전망입니다."
+      ],
+      "whyImportant": "미국과 이란의 관계 및 엔비디아의 AI 시장 전망이 투자 심리에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 16~19일 엔비디아 GTC 콘퍼런스에서 젠슨 황 CEO의 기조연설이 예정되어 있으며, 그의 발언이 AI 분야에 대한 시장의 안도감을 줄 수 있다고 언급되었습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "16일 발표되는 1~2월 소매 판매 및 고정자산투자 지표는 연초 경기 회복의 강도를 확인하는 잣대가 될 것으로 전망된다."
+        },
+        {
+          "label": "sanctions",
+          "evidence": "월가에선 오는 17~18일 열린 FOMC에서 금리가 동결되리라는 것을 기정사실로 보고 있다."
+        }
+      ],
+      "dedupeKey": "긴장-메시지-미국-월가-이란전-장기화-젠슨-주목",
+      "clusterKey": "미중_정책/월가",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603151644i",
+      "publishedAt": "2026-03-15T03:02:51+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_2",
+      "date": "2026-03-16",
+      "category": "에너지",
+      "title": "도쿄전력 원전 발전 중단, 상업 운전 연기 전망",
+      "summary": [
+        "도쿄전력이 14년 만에 재가동한 가시와자키 원전 6호기의 발전과 송전을 중단합니다.",
+        "발전기에서 누전 경보음이 울려 원인 조사에 착수했으며, 상업 운전은 연기될 것으로 예상됩니다."
+      ],
+      "whyImportant": "원전 재가동은 에너지 정책 및 공급 안정성에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 14년 만에 재가동한 원전의 발전 중단으로 인해 상업 운전이 연기될 것으로 전망되어 에너지 공급 계획에 차질이 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "infra",
+          "evidence": "누전으로 경보음 울려…1월에도 제어봉 작업 도중 경보 (도쿄=연합뉴스) 박상현 특파원 = 일본 도쿄전력이 14년 만에 재가동한 혼슈 중부 니가타현 가시와자키·가리와 원자력발전소(이하 가시와자키 원전) 6호기의 발전과 송전을 중단한다."
+        }
+      ],
+      "dedupeKey": "6호기-가시와자키-도쿄전력-만에-발전-상업-운전-원전",
+      "clusterKey": "법집행/도쿄전력",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323914",
+      "publishedAt": "2026-03-14T01:39:42+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_3",
+      "date": "2026-03-16",
+      "category": "국제",
+      "title": "미국의 무역법 301조 조사로 인도-미국 무역 협정 보류 전망",
+      "summary": [
+        "인도가 미국의 무역법 301조 조사 대상에 포함되면서 양국 간 1단계 무역 협정이 보류될 것으로 예상됩니다.",
+        "인도 소식통은 미국의 조사가 압박 전술이며, 미국의 관세 정책 변화를 관망할 것이라고 밝혔습니다.",
+        "미국은 인도에 부과한 국가별 관세를 낮추고 러시아산 원유 수입 제재 관세를 철회하기로 했었습니다."
+      ],
+      "whyImportant": "미국의 무역 정책 변화가 인도와의 무역 관계에 영향을 미치고, 이는 양국 경제에 장기적인 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 미국의 무역법 301조 조사가 인도와의 무역 협상에 직접적인 영향을 미치고 있으며, 이는 16개국을 대상으로 하는 조사이므로 중요도는 3입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "그는 트럼프 대통령이 인도가 러시아산 원유 수입을 중단하기로 합의했다고 밝힌 후 인도에 부과하던 제재성 관세 25%를 철회했지만, 인도는 단지 원유 공급 기반을 다각화하겠다고만 언급했다고 강조했다."
+        }
+      ],
+      "dedupeKey": "1단계-301조-무역-무역법-미국-양국-인도-협정",
+      "clusterKey": "미인도_법집행/무역법/정책/제재",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323995",
+      "publishedAt": "2026-03-14T06:35:55+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_4",
+      "date": "2026-03-16",
+      "category": "금융",
+      "title": "일본은행, 다음 주 회의에서 금리 동결 전망",
+      "summary": [
+        "일본은행은 다음 주 금융정책결정회의에서 기준금리를 동결할 것으로 예상됩니다.",
+        "중동 정세 불안으로 인한 에너지 가격 상승이 동결 결정에 영향을 미칠 것으로 보입니다.",
+        "미쓰이스미토모 신탁은행은 5년 만기 정기예금 금리를 1.0%로 인상할 예정입니다."
+      ],
+      "whyImportant": "일본은행의 금리 정책은 엔화 가치 및 일본 경제 전반에 영향을 미치므로 중요합니다.",
+      "importanceRationale": "근거: 일본은행이 다음 회의에서 금리 동결을 고려하는 이유는 중동 정세 불안정 때문이며, 미쓰이스미토모 신탁은행은 5년 만기 정기예금 금리를 1.0%로 인상할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "미쓰이스미토모신탁은행은 5년 만기 정기예금 금리 1.0%로 인상 방침 (서울=연합뉴스) 이도연 기자 = 중동 지역 긴장 고조로 금융시장 등에 불확실성이 커지는 가운데 일본 중앙은행인 일본은행이 내주 기준금리를 동결할 것으로 전망된다고 니혼게이자이신문(닛케이)과 요미우리신문 등이 14일 보도했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "우에다 가즈오 일본은행 총재는 지난 4일 일본 중의원(하원)에서 중동 사태와 관련해 \"원유 등 에너지 가격과 국제 금융시장에 미치는 영향 등을 통해 세계 경제와 우리나라(일본) 경제에 큰 영향을 줄 가능성이 있다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "금리-금융정책결정회-기준금리-다음-동결-미쓰이스미토모-신탁은행-일본은행",
+      "clusterKey": "금융/다음",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323916",
+      "publishedAt": "2026-03-14T01:48:48+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_5",
+      "date": "2026-03-16",
+      "category": "에너지",
+      "title": "일본, 7년 만에 LNG선 건조 추진",
+      "summary": [
+        "일본 정부가 2019년 이후 중단된 LNG 운반선 건조를 재개할 계획입니다.",
+        "이는 경제 안보 강화 정책의 일환으로, 국토교통성이 전문가 회의를 통해 협의를 시작합니다.",
+        "향후 10년간 민관이 조선업에 1조엔을 투자할 예정입니다."
+      ],
+      "whyImportant": "LNG 운반선 건조 재개는 에너지 안보 강화에 기여할 수 있는 중요한 결정입니다.",
+      "importanceRationale": "근거: 일본 정부는 향후 10년간 민관이 조선업에 1조엔을 투자하여 LNG 운반선 건조를 재개할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "규슈 나가사키 거점 활용…설비 투자·인재 확보는 과제 (도쿄=연합뉴스) 박상현 특파원 = 일본 정부가 민간과 함께 2019년 이후 자국 내에서 만들어지지 않은 액화천연가스(LNG) 운반선 건조를 추진한다고 교도통신이 14일 보도했다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "다만 교도통신은 일본이 7년 동안 LNG 운반선을 건조한 실적이 없어서 추가 설비 투자와 인재 확보가 과제가 될 것이라고 짚었다."
+        }
+      ],
+      "dedupeKey": "10년간-1조엔-lng선-건조-국토교통성-만에-일본-정부",
+      "clusterKey": "정책/만에/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1324005",
+      "publishedAt": "2026-03-14T07:38:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_6",
+      "date": "2026-03-16",
+      "category": "기술",
+      "title": "중동발 악재 속 변동성 장세 지속 전망",
+      "summary": [
+        "증권가에서는 중동 분쟁으로 국내 증시의 변동성 장세가 이어질 것으로 전망합니다.",
+        "엔비디아 연례 행사와 마이크론 실적 발표를 통해 반도체 수요를 확인할 수 있을 것으로 예상됩니다.",
+        "NH투자증권은 이번 주 코스피지수 예상 범위를 5300~5900선으로 제시했습니다."
+      ],
+      "whyImportant": "변동성이 커진 장세 속에서 투자 전략 수립에 참고할 만한 정보입니다.",
+      "importanceRationale": "근거: NH투자증권은 이번 주 코스피지수 예상 범위를 5300~5900선으로 제시하며, 엔비디아와 마이크론 이벤트가 긍정적 요인이 될 수 있다고 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "다만 이번주 예정된 엔비디아의 연례 행사와 마이크론 실적을 통해 메모리 반도체의 강한 수요가 재차 확인되면 삼성전자·SK하이닉스가 상승 탄력을 받으며 증시를 밀어 올릴 수 있다는 관측도 나온다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "18일 발표되는 메모리 반도체 업체 마이크론의 실적은 증시 상승을 이끌 기대 요인으로 지목된다."
+        }
+      ],
+      "dedupeKey": "5900선-nh투자증권-변동성-악재-장세-중동발-증권-지속",
+      "clusterKey": "실적/중동발",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031392256",
+      "publishedAt": "2026-03-14T23:00:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_7",
+      "date": "2026-03-16",
+      "category": "금융",
+      "title": "삼성전자 목표 주가 상향 조정",
+      "summary": [
+        "하나증권은 삼성전자의 목표 주가를 25만원에서 30만원으로 상향 조정했습니다.",
+        "이는 메모리 반도체 가격 상승을 반영한 연간 영업이익 추정치 상향에 따른 것입니다."
+      ],
+      "whyImportant": "삼성전자의 목표 주가 상향은 메모리 반도체 시장의 긍정적 전망을 반영합니다.",
+      "importanceRationale": "근거: 하나증권은 메모리 반도체 가격 상승을 반영하여 삼성전자의 연간 영업이익 추정치를 229조원으로 상향 조정했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "\"삼성전자, 메모리 가격 상승·주주환원 기대…목표가 30만원\"-하나 하나증권은 13일 삼성전자의 목표주가를 25만원에서 30만원으로 높였다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "메모리 반도체 가격 상승을 반영해 연간 영업이익 추정치를 229조원으로 상향 조정하면서다."
+        }
+      ],
+      "dedupeKey": "25만원-30만원-목표-삼성전자-상향-조정-주가-하나증권",
+      "clusterKey": "실적/반도체/삼성전자",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026031397616",
+      "publishedAt": "2026-03-14T06:33:52+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-16_8",
+      "date": "2026-03-16",
+      "category": "금융",
+      "title": "트럼프, 북미 대화에 깊은 관심 표명",
+      "summary": [
+        "트럼프 대통령이 김정은 위원장과의 대화 의지를 재차 표명하며 방중 계기 성사 가능성이 주목됩니다.",
+        "김 총리와의 면담에서 트럼프 대통령은 김 위원장과의 관계를 언급하며 대화 의사를 밝혔습니다.",
+        "트럼프 대통령은 북미 대화를 진전시키기 위한 조언을 듣고 보좌관에게 지시를 내렸다고 합니다."
+      ],
+      "whyImportant": "북미 관계는 한반도 및 동북아시아 안보에 중대한 영향을 미치므로, 관련 대화 재개 가능성은 주목할 필요가 있습니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 방중을 앞두고 북미 대화에 대한 의지를 적극적으로 보였다는 점에서 의미가 있으며, 과거 판문점 회동의 전례를 고려할 때 '판문점 회동 시즌2'가 전개될 가능성을 배제할 수 없다는 분석이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "다만, 김 위원장은 지난달 노동당 9차 대회에서 미국이 북한을 '핵보유국'으로 인정하고 적대시 정책을 철회한다면 미국과 \"좋게 지내지 못할 이유가 없다\"며 \"조미(북미) 관계의 전망성은 미국 측의 태도에 전적으로 달려있다\"고 밝히는 등 북미 대화에 대해선 여전히 가능성을 닫아놓지 않고 있다."
+        },
+        {
+          "label": "security",
+          "evidence": "일각에서는 올해 들어 트럼프 대통령이 베네수엘라와 이란을 상대로 군사공격에 나서 상대국 최고 지도자를 압송 또는 제거한 것을 목도한 김 위원장이 '보험' 차원에서라도 트럼프 대통령과의 대화 채널을 복구하는 데 관심을 가질 가능성을 배제할 수 없다고 보기도 한다."
+        }
+      ],
+      "dedupeKey": "관심-깊은-내렸다고-대화-북미-진전시키기-트럼프-표명",
+      "clusterKey": "관세/트럼프",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1323915",
+      "publishedAt": "2026-03-14T01:45:04+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

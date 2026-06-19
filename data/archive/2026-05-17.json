@@ -1,0 +1,229 @@
+{
+  "date": "2026-05-17",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-17T08:30:59.197576+09:00",
+  "items": [
+    {
+      "id": "2026-05-17_1",
+      "date": "2026-05-17",
+      "category": "산업",
+      "title": "미국 무역대표부, \"반도체 수출 통제, 회담 주요 의제 아냐\"",
+      "summary": [
+        "미국 무역대표부 대표는 미중 정상회담에서 반도체 수출 통제가 주요 의제가 아니었다고 밝혔습니다.",
+        "중국 기업의 엔비디아 H200 구매 여부는 중국의 주권적 결정 사항이라고 덧붙였습니다."
+      ],
+      "whyImportant": "미국 정부의 반도체 수출 통제 정책 방향을 간접적으로 시사합니다.",
+      "importanceRationale": "근거: 미국 무역대표부 대표의 발언을 통해 정책 변화 가능성이 낮음을 간접적으로 확인할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "#반도체 #정상회담 #USTR 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 장윤희(ego@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "무역대표부-미국-반도체-수출-아냐-의제-주요-통제",
+      "clusterKey": "미중_관세/무역대표부",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354234",
+      "publishedAt": "2026-05-15T23:43:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_2",
+      "date": "2026-05-17",
+      "category": "기술",
+      "title": "빌 액먼, AI 및 클라우드 성장 전망에 힘입어 마이크로소프트 지분 확보",
+      "summary": [
+        "빌 액먼의 Pershing Square는 마이크로소프트의 주가 하락을 매수 기회로 보고 지분을 확보했습니다.",
+        "액먼은 마이크로소프트의 AI 및 Azure 클라우드 사업의 성장 가능성에 주목했습니다.",
+        "Alphabet 주식 매각 자금을 활용하여 마이크로소프트 주식을 매입했다고 밝혔습니다."
+      ],
+      "whyImportant": "이번 투자는 AI 경쟁 시대에 대한 시장의 회의론 속에서 이루어진 것이며, 마이크로소프트의 AI 및 클라우드 사업의 장기적인 성장 가능성에 대한 투자자의 신뢰를 보여줍니다.",
+      "importanceRationale": "근거: 액먼은 마이크로소프트 주식을 주당 순이익의 21배 수준으로 매입했으며, 이는 과거 마이크로소프트의 거래 평균보다 낮은 수준입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "\"We were able to establish our position at a valuation of 21 times forward earnings, broadly in line with the market multiple and well below Microsoft's trading average over the last few years,\" Ackman wrote."
+        }
+      ],
+      "dedupeKey": "pershing-마이크로소프트-성장-액먼-지분-클라우드-확보-힘입어",
+      "clusterKey": "투자/클라우드/액먼/인수합병",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/15/bill-ackman-says-he-built-microsoft-position-in-first-quarter.html",
+      "publishedAt": "2026-05-15T10:52:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_3",
+      "date": "2026-05-17",
+      "category": "금융",
+      "title": "한미반도체, 1분기 '어닝 쇼크' 기록",
+      "summary": [
+        "한미반도체의 1분기 영업이익이 전년 동기 대비 87.9% 급감한 84억 5600만 원으로 공시되었습니다.",
+        "매출액 또한 전년 동기 대비 65.5% 감소한 509억 원을 기록했습니다.",
+        "증권사 전망치를 크게 밑도는 실적에 시장에서는 우려가 나오고 있습니다."
+      ],
+      "whyImportant": "이번 실적 부진은 향후 한미반도체의 주가 및 투자 심리에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 1분기 영업이익이 전년 동기 대비 87.9% 급감하고, 매출액도 65.5% 줄어 증권사 전망치를 크게 하회하여 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "15일 한미반도체는 올 1분기 연결 기준 영업이익이 84억5600만원이라고 공시했다."
+        }
+      ],
+      "dedupeKey": "509억-84억-기록-쇼크-어닝-영업이익-전년-한미반도체",
+      "clusterKey": "한미_실적/1분기",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605159545i",
+      "publishedAt": "2026-05-15T07:43:51+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_4",
+      "date": "2026-05-17",
+      "category": "에너지",
+      "title": "전력망 갈등, 송전망 확대만으로 해결될까",
+      "summary": [
+        "환경운동연합과 시민환경연구소는 전력망 갈등의 원인이 송전선 부족이 아닌 공간적 불균형에 있다고 지적했습니다.",
+        "전력 수요를 분산하고 재생에너지 우선 접속, 기존 전력망 활용 확대를 통해 문제에 접근해야 한다고 밝혔습니다.",
+        "보고서는 전력 생산과 소비의 공간적 불균형 완화, 분산형 에너지 구조 확대를 핵심 전략으로 제시했습니다."
+      ],
+      "whyImportant": "전력망 구축의 방향성이 단순히 설비 확충이 아닌, 수요 분산 및 기존 설비 활용도를 높이는 방향으로 전환될 가능성을 시사합니다.",
+      "importanceRationale": "근거: 보고서는 2050년 탄소 중립 목표 달성을 위해 송전망 확충 외에 수요 관리 및 기존 전력망 활용도 제고가 필요하다고 강조했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "보고서 작성에 참여한 배슬기 환경운동연합 정책변화팀 활동가는 “정부는 재생에너지·에너지 분산 확대의 명분으로 송전선로 건설을 추진하지만, 모순되게도 동시에 액화석유가스(LNG)·핵발전소(원전) 등 대규모 오염 발전소의 신규 건설을 추진하고 있다”고 지적했다."
+        }
+      ],
+      "dedupeKey": "갈등-송전망-시민환경연구소-재생에너지-전력망-해결될까-확대-환경운동연합",
+      "clusterKey": "에너지/갈등",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1258682.html",
+      "publishedAt": "2026-05-15T01:31:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_5",
+      "date": "2026-05-17",
+      "category": "에너지",
+      "title": "테라파워, 한국 원전 기술 구매",
+      "summary": [
+        "미국 최초의 SMR 건설 승인을 받은 테라파워가 한국의 소듐냉각고속로(SFR) 안전 시험 시설 기술을 약 70억원에 사들였습니다.",
+        "테라파워는 SFR 안전 검증에 필요한 유동 실험 장치를 직접 구축하기 위해 이번 기술 이전을 진행했습니다.",
+        "미국 첫 SMR 건설 테라파워, 한국 원전 기술 사들였다"
+      ],
+      "whyImportant": "이는 차세대 SMR 기술 경쟁에서 한국의 기술력이 인정받고 있음을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 테라파워가 한국원자력연구원의 스텔라 장치 설계 및 제작 노하우에 관한 지적재산권을 이전받았으며, 이는 금액으로 약 70억원에 해당합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "미국 첫 상업용 소형모듈원자로(SMR) 건설 승인을 받은 테라파워가 한국의 소듐냉각고속로(SFR) 안전 시험 시설 기술을 약 70억원에 사 간 것으로 확인됐다."
+        }
+      ],
+      "dedupeKey": "70억원-구매-기술-미국-소듐냉각고속-원전-테라파워-한국",
+      "clusterKey": "한미/에너지/테라파워",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354363",
+      "publishedAt": "2026-05-16T21:13:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_6",
+      "date": "2026-05-17",
+      "category": "에너지",
+      "title": "안전장치 없는 태양광 발전, 전력망 비상 초래",
+      "summary": [
+        "이번 주말 태양광 발전량 과잉으로 대정전 우려가 커지고 있으며, 전력 당국은 비상 대응에 돌입했습니다.",
+        "국내 태양광 설비 상당수가 계통 안정 기능이 없어 전력망 주파수 불안정을 야기할 수 있습니다.",
+        "소규모 태양광 사업자들의 설비 개선 참여가 저조하여 문제 해결에 어려움을 겪고 있습니다."
+      ],
+      "whyImportant": "태양광 발전 증가에 따른 전력망 불안정 문제는 향후 에너지 정책 및 전력 시스템 운영에 중요한 고려 사항입니다.",
+      "importanceRationale": "근거: 이번 주말 약 7~8GW의 전력 과잉 공급이 예상되며, 전체 설비 용량 32.1GW 중 계통안정기능을 갖춘 설비는 10GW에 불과하여 전력망 불안정성이 심화될 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "15일 정부 등에 따르면 이번 주말 한낮 태양광 발전량이 정점에 달하는 것과 달리 전력 수요는 급감하면서 약 7~8GW의 전력이 과잉 공급될 것으로 보인다."
+        },
+        {
+          "label": "infra",
+          "evidence": "전력당국이 이번 주말 ‘블랙아웃’(대정전) 우려가 극대화한다고 보고 비상대응에 들어갔다."
+        }
+      ],
+      "dedupeKey": "당국-발전-비상-안전장치-없는-전력망-초래-태양광",
+      "clusterKey": "설비투자/에너지/안전장치",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051598811",
+      "publishedAt": "2026-05-15T09:13:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-17_7",
+      "date": "2026-05-17",
+      "category": "금융",
+      "title": "소상공인 임차인 월세 평균 112만원, 연 영업이익 4천800만원",
+      "summary": [
+        "소상공인 임차인의 평균 월세는 112만원이며, 연평균 영업이익은 4천800만원으로 조사되었습니다.",
+        "서울의 평균 월세는 158만원으로 가장 높았고, 전남은 49만원으로 가장 낮았습니다.",
+        "임차인의 평균 계약 기간은 42.2개월, 평균 부채 잔액은 1억 4천400만원으로 나타났습니다."
+      ],
+      "whyImportant": "소상공인 임차인의 임대료 부담 및 경영 상황을 파악하여 관련 정책 수립에 참고 자료로 활용될 수 있습니다.",
+      "importanceRationale": "근거: 중소벤처기업부의 '2025년 상가건물임대차 실태조사' 보고서에 따르면, 소상공인 임차인의 평균 월세와 영업이익, 부채 규모 등이 구체적으로 제시되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "상가건물에 입주한 소상공인 임차인이지불하는 월세가 평균 112만원이고, 이들의 연평균 영업이익은 4천800만원이라는 조사 결과가 나왔다."
+        }
+      ],
+      "dedupeKey": "112만원-158만원-49만원-4천400만원-4천800만원-소상공인-영업이익-임차인",
+      "clusterKey": "실적/소상공인/법집행",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1354398",
+      "publishedAt": "2026-05-16T23:01:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

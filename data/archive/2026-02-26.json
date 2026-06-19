@@ -1,0 +1,225 @@
+{
+  "date": "2026-02-26",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-02-26T08:05:53.504810+09:00",
+  "items": [
+    {
+      "id": "2026-02-26_1",
+      "date": "2026-02-26",
+      "category": "산업",
+      "title": "중국, 일본 기업 수출 규제 강화에 일본 정부가 철회를 촉구",
+      "summary": [
+        "중국이 일본 기업 및 기관 수십 곳을 대상으로 이중용도 물자 수출 통제 및 관찰 리스트에 추가한 것에 대해 일본 정부가 철회를 요구했습니다.",
+        "일본 정부는 이번 조치에 대해 '절대로 용납할 수 없다'며 강하게 항의하고, 필요한 대응을 해 나갈 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "중국의 수출 규제 강화는 일본 기업의 활동에 영향을 미치고, 양국 간의 경제 및 외교 관계에 긴장을 고조시킬 수 있습니다.",
+      "importanceRationale": "근거: 중국 상무부가 미쓰비시조선 등 일본 내 20개 기업 및 기관을 수출 통제 관리 명단에 포함했다고 발표했기 때문에 중요도 점수를 3으로 설정했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "일본 정부 부대변인인 사토 게이 관방 부장관은 이날 기자회견에서 중국의 수출 규제 강화에 대해 \"절대로 용납할 수 없고 매우 유감스럽다\"며 \"우리나라(일본) 정부는 강하게 항의하고 조치 철회를 요구했다\"고 밝혔다."
+        }
+      ],
+      "dedupeKey": "강화-것이라고-규제-기업-수출-일본-정부-중국",
+      "clusterKey": "일중_정책/기업",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1314150",
+      "publishedAt": "2026-02-24T08:13:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_2",
+      "date": "2026-02-26",
+      "category": "국제",
+      "title": "중국, 미국에 관세 협상 제안…독일 총리 방중",
+      "summary": [
+        "중국이 미국 대법원의 상호 관세 무효 판결 이후 미국에 제6차 경제·무역 협상을 공식 제안했습니다.",
+        "프리드리히 메르츠 독일 총리는 30명의 기업인과 동행하여 중국을 방문, 경제 실리 외교에 나섰습니다."
+      ],
+      "whyImportant": "미국과 중국의 무역 협상 및 독일의 대중국 외교는 국제 무역 질서에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 중국은 미국에 경제·무역 협상을 제안했고, 독일 총리는 30명의 기업인과 중국을 방문하여 경제 협력을 모색하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "중독 관계의 건전한 발전은 양국의 이익에 부합하며, 세계가 기대하는 바입니다.\" 메르츠 총리가 미국의 관세 압박에 맞서 EU 통상위협대응조치, ACI 발동 가능성까지 언급한 가운데 중국을 찾으면서, 다자 무역질서 복원을 둘러싼 중·EU 통상 연대 가능성도 주목됩니다."
+        },
+        {
+          "label": "capex",
+          "evidence": "[영상취재 임임락] [영상편집 고종필] [뉴스리뷰] 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 배삼진(baesj@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "관세-대법원-독일-미국-방중-중국-총리-협상",
+      "clusterKey": "미중_관세/독일",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1314904",
+      "publishedAt": "2026-02-25T12:19:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_3",
+      "date": "2026-02-26",
+      "category": "국제",
+      "title": "미국-이란 협상 재개에 따른 유가 보합세",
+      "summary": [
+        "미국과 이란이 스위스 제네바에서 핵 협상을 재개하기로 하면서 국제 유가가 보합세를 유지했습니다.",
+        "트럼프 대통령은 합의가 이뤄지지 않을 경우 군사 공격을 선택할 수 있다고 시사했습니다.",
+        "골드만삭스는 OECD 회원국의 원유 재고 감소를 이유로 4분기 국제 유가 전망치를 상향 조정했습니다."
+      ],
+      "whyImportant": "미국과 이란의 핵 협상 및 미국의 정책 변화는 국제 유가에 지속적인 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 26일 제네바에서 핵 협상이 예정되어 있으며, 트럼프 대통령은 군사 공격 가능성을 언급했고, 골드만삭스는 유가 전망치를 조정했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "골드만삭스는 경제협력개발기구(OECD) 회원국의 원유 재고 감소를 이유로 올 4분기 국제 유가 전망치를 상향 조정했다."
+        }
+      ],
+      "dedupeKey": "따른-미국-보합세-유가-이란-재개하기-협상-회원국",
+      "clusterKey": "관세/따른",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602240171i",
+      "publishedAt": "2026-02-24T01:45:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_4",
+      "date": "2026-02-26",
+      "category": "산업",
+      "title": "중국, 일본 핵심 방산업체 등 20곳 수출 통제…일본은 철회 요구",
+      "summary": [
+        "중국이 미쓰비시, 가와사키 등 일본 핵심 방위산업체 20곳을 이중용도 물자 수출통제 명단에 올렸습니다.",
+        "일본 정부는 이에 대해 강하게 항의하며 철회를 요구했습니다.",
+        "이번 조치는 일본의 군사력 증강에 참여한 기업을 대상으로 이루어졌다고 중국은 밝혔습니다."
+      ],
+      "whyImportant": "이번 조치는 중-일 관계에 장기적인 갈등을 심화시키고, 일본 방위산업에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 중국은 일본의 군사력 증강에 참여한 기업을 대상으로 수출 통제를 시행했으며, 이는 일본 방위산업에 타격을 줄 수 있다고 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "중국이 일본의 핵심 방위산업체를 포함한 군사 기업 및 기관 20곳을 이중용도 물자(군용·민간 제품 생산에 모두 쓰이는 물자) 수출통제 명단에 올렸다."
+        }
+      ],
+      "dedupeKey": "20곳-방산업체-수출-일본-정부-중국-통제-핵심",
+      "clusterKey": "일중_제재/핵심",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/china/1246362.html",
+      "publishedAt": "2026-02-24T09:47:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_5",
+      "date": "2026-02-26",
+      "category": "국제",
+      "title": "미국, 이란 제재 부과…핵 협상 전날 '그림자 선단' 겨냥",
+      "summary": [
+        "미국 행정부가 미국-이란 핵 협상 전날 이란 정권의 자금줄과 무기 공급 체계를 겨냥한 제재를 부과했습니다.",
+        "제재 대상은 수억 달러 상당의 이란산 원유 등을 운송해 온 '그림자 선단' 선박과 무기 조달 네트워크입니다."
+      ],
+      "whyImportant": "이번 제재는 이란의 자금줄을 차단하고 무기 공급망을 교란하여 국제 제재를 강화하려는 미국의 의도를 보여줍니다.",
+      "importanceRationale": "근거: 미국 재무부와 국무부는 수억 달러 상당의 이란산 원유 등을 운송해 온 '그림자 선단' 선박과 무기 조달 네트워크를 제재 대상으로 지정했습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "미국 행정부가 미국-이란 핵협상 전날 이란 정권의 자금줄과 무기 공급체계를 겨냥한 제재를 부과했습니다."
+        }
+      ],
+      "dedupeKey": "겨냥-그림자-미국-부과-선단-이란-전날-협상",
+      "clusterKey": "제재/부과/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1314963",
+      "publishedAt": "2026-02-25T20:56:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_6",
+      "date": "2026-02-26",
+      "category": "국제",
+      "title": "미국-이란 최종 담판 전운, 트럼프 관세 구상 변화 가능성",
+      "summary": [
+        "미국이 이란과의 핵 협상을 앞두고 이란산 원유 운송 선박과 무기 조달 네트워크에 대한 제재를 발표했습니다.",
+        "트럼프 행정부의 글로벌 관세 부과 구상에 변화가 생길 수 있다는 전망이 나왔습니다."
+      ],
+      "whyImportant": "미국과 이란의 핵 협상 결과와 미국의 관세 정책 변화는 국제 관계 및 무역에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국이 이란 제재를 발표하고, 트럼프 행정부의 관세 정책에 변화 가능성이 제기되어 정책 변화 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "재무부와 국무부는 이란산 원유와 석유제품을 운송해 온 다수의 그림자 선단 선박과 소유주, 운영자를 제재한다고 발표했는데요."
+        }
+      ],
+      "dedupeKey": "관세-구상-담판-미국-이란-전운-최종-트럼프",
+      "clusterKey": "제재/최종/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1315009",
+      "publishedAt": "2026-02-25T22:47:49+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-26_7",
+      "date": "2026-02-26",
+      "category": "금융",
+      "title": "이란 대통령, 제네바 핵 협상 전망 긍정적 평가",
+      "summary": [
+        "마수드 페제시키안 이란 대통령은 미국과의 핵 협상에 대해 긍정적인 전망을 밝혔습니다.",
+        "26일 스위스 제네바에서 미국과 이란의 3차 회담이 열릴 예정입니다."
+      ],
+      "whyImportant": "이란 핵 협상 결과는 국제 관계 및 핵 개발 관련 정책에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 26일 제네바에서 미국과 이란의 3차 회담이 예정되어 있어 정책 결정 가능성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "infra",
+          "evidence": "이어 \"협상을 통해 원하는 결과를 얻을 수 있다면, 앞으로는 장애물을 제거하고 국가 발전 과정을 더 빠르고 수월하게 진행할 수 있을 것\"이라며 기대감을 보였다."
+        }
+      ],
+      "dedupeKey": "3차-긍정적-대통령-미국-이란-제네바-페제시키안-협상",
+      "clusterKey": "관세/대통령",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1314923",
+      "publishedAt": "2026-02-25T16:27:12+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-06-01",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-06-01T08:41:59.627131+09:00",
+  "items": [
+    {
+      "id": "2026-06-01_1",
+      "date": "2026-06-01",
+      "category": "국제",
+      "title": "미국, USMCA 협상에서 미국산 자동차 부품 비중 50% 요구 가능성…한국에 영향",
+      "summary": [
+        "미국이 USMCA(미국-멕시코-캐나다 협정) 협상에서 미국산 자동차 부품 비중을 50%까지 요구할 가능성이 있습니다.",
+        "이는 한국 자동차 산업에 영향을 미칠 수 있습니다."
+      ],
+      "whyImportant": "미국산 부품 비중 요구는 한국 자동차 산업의 공급망에 영향을 미쳐 경쟁력 변화를 초래할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 미국이 USMCA 협상에서 미국산 자동차 부품 비중 50%를 요구할 가능성이 있다는 내용이 한국 자동차 산업에 미칠 영향에 대한 결정적 근거는 부족합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "메리츠 vs MBK…악연의 골이 더 깊어졌다 ‘최고가격제’에…정유사는 왜 걱정 앞설까 주공5·장미…빨라지는 잠실 재건축 시계"
+        }
+      ],
+      "dedupeKey": "usmca-미국-미국산-부품-비중-자동차-한국-협상",
+      "clusterKey": "한미_관세/usmca",
+      "matchedTo": null,
+      "sourceName": "매일경제",
+      "sourceUrl": "https://news.mk.co.kr/v2/economy/",
+      "publishedAt": "2026-05-30T00:10:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

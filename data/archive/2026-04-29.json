@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-29",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-04-29T08:33:05.859524+09:00",
+  "items": [
+    {
+      "id": "2026-04-29_1",
+      "date": "2026-04-29",
+      "category": "금융",
+      "title": "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
+      "summary": [
+        "한화솔루션 '깜짝실적'에도 엇갈린 증권가 전망…이유는?",
+        "[종목+]"
+      ],
+      "whyImportant": "기사 본문을 바탕으로 한 중요성 설명이 충분히 제공되지 않았습니다.",
+      "importanceRationale": "근거: 기사 텍스트에서 명확한 수치나 범위 근거를 찾지 못했습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "\"한화, 비핵심자산 매각해 솔루션 유증 대금 마련…목표가↑\"-한화證 한화투자증권은 15일 한화에 대해 \"차입 없이 부동산 등 비핵심자산 매각을 통해 한화솔루션 유상증자 대금을 마련할 계획\"이라며 \"증자 후 솔루션 지분은 기존 36.3%에서 최대 36%로 소폭 낮아질 전망\"이라고 했다..."
+        }
+      ],
+      "dedupeKey": "깜짝실적-엇갈린-에도-이유-종목-증권-한화솔루션",
+      "clusterKey": "한화솔루션/깜짝실적/에도",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026042939226",
+      "publishedAt": "2026-04-28T23:13:22+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

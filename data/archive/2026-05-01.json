@@ -1,0 +1,75 @@
+{
+  "date": "2026-05-01",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-01T08:31:27.393519+09:00",
+  "items": [
+    {
+      "id": "2026-05-01_1",
+      "date": "2026-05-01",
+      "category": "에너지",
+      "title": "효성중공업, 미국 AI 데이터센터 전력망 토털 솔루션 소개",
+      "summary": [
+        "효성중공업은 IEEE PES T&D 2026에 참가하여 AI 데이터센터 전력 솔루션을 소개합니다.",
+        "미국 수출용 800kV 7천A GCB와 차세대 데이터센터 핵심 전력 솔루션 SST 등을 선보일 예정입니다.",
+        "향후 10년간 미국 데이터센터를 중심으로 전력 수요가 25% 증가할 것으로 예상됩니다."
+      ],
+      "whyImportant": "AI 데이터센터 전력망 구축 경쟁 심화에 따라 관련 기술 확보 및 시장 선점의 중요성이 커지고 있습니다.",
+      "importanceRationale": "근거: 향후 10년간 미국 데이터센터 전력 수요가 25% 증가할 것으로 예상되어, 효성중공업의 AI 전력망 솔루션 소개는 시장 선점 기회와 관련됩니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "최근 미국에서는 인공지능(AI) 산업의 성장과 함께 데이터센터 등을 중심으로 향후 10년간 전력 수요가 25% 증가할 것으로 예상된다."
+        }
+      ],
+      "dedupeKey": "800kv-데이터센터-미국-소개-솔루션-전력망-토털-효성중공업",
+      "clusterKey": "에너지/효성중공업",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1347167",
+      "publishedAt": "2026-04-30T00:40:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-01_2",
+      "date": "2026-05-01",
+      "category": "에너지",
+      "title": "효성중공업, 미국 AI 데이터센터 전력망 미래 제시",
+      "summary": [
+        "효성중공업은 미국 최대 송·배전 전시회에서 AI 데이터센터 전력망 토털 솔루션을 소개합니다.",
+        "세계 최대 용량 800kV 가스절연차단기, 반도체 변압기 등 차세대 전력 솔루션을 전시할 예정입니다.",
+        "미국 AI 산업 성장으로 데이터센터 전력 수요가 향후 10년간 25% 급증할 것으로 예상됩니다."
+      ],
+      "whyImportant": "AI 데이터센터의 전력 수요 증가에 따라 관련 전력망 기술의 중요성이 더욱 부각될 것입니다.",
+      "importanceRationale": "근거: 미국 AI 산업 성장으로 데이터센터 전력 수요가 향후 10년간 25% 급증할 것으로 예상되어, 효성중공업의 솔루션이 중요해질 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "주요 전시 제품으로는 △세계 최대 용량 800kV 7000A GCB(가스절연차단기) △차세대 데이터센터의 핵심 전력 솔루션 SST(반도체 변압기) △국내 최초 독자기술로 개발에 성공한 전압형 HVDC(초고압 직류송전 시스템) △데이터센터, 신재생에너지의 전력 안정성을 강화하는 STATCOM(정지형 무효 전력 보상장치) 등이 있다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "최근 미국 시장은 AI 산업의 폭발적인 성장으로 데이터센터 등 전력 수요가 향후 10년간 25% 급증할 것으로 예상된다."
+        }
+      ],
+      "dedupeKey": "10년간-800kv-데이터센터-미국-미래-전력망-제시-효성중공업",
+      "clusterKey": "에너지/효성중공업",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202604307425P",
+      "publishedAt": "2026-04-30T00:12:58+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "date": "2026-03-03",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-03T07:58:38.544448+09:00",
+  "items": [
+    {
+      "id": "2026-03-03_1",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "아마존 UAE 데이터센터 공격으로 서비스 중단",
+      "summary": [
+        "아마존의 아랍에미리트(UAE) 데이터센터가 공격을 받아 클라우드 서비스가 중단되었습니다.",
+        "이번 사태로 UAE와 바레인에서 AWS 서비스가 중단되었으며, 금융 기관들이 영향을 받았습니다.",
+        "미국-이란 군사 충돌로 데이터센터 가동이 중단된 첫 사례일 가능성이 제기됩니다."
+      ],
+      "whyImportant": "이번 사건은 중동 지역 데이터센터에 대한 물리적 공격 가능성을 보여주며, 향후 유사 사례 발생 시 서비스 연속성에 대한 우려를 야기할 수 있습니다.",
+      "importanceRationale": "근거: UAE 아마존 데이터센터 공격으로 AWS 서비스가 중단되었고, 이는 미국-이란 군사 충돌과 연관되었을 가능성이 있으며, 중동 국가들의 장기 계획에 불확실성을 초래할 수 있다고 언급되었습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "아마존의 데이터센터가 공격을 받아 서비스 중단 사태가 벌어졌다."
+        }
+      ],
+      "dedupeKey": "uae-공격-데이터센터-미국-서비스-아랍에미리트-아마존-클라우드",
+      "clusterKey": "클라우드/아마존",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603024213i",
+      "publishedAt": "2026-03-02T15:34:47+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_2",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르 LNG 시설 가동 중단으로 천연가스 가격 급등",
+      "summary": [
+        "이란의 드론 공격으로 카타르 최대 액화천연가스 생산기지 가동이 중단되었습니다.",
+        "네덜란드 TTF 거래소에서 천연가스 선물 가격이 46% 폭등했습니다."
+      ],
+      "whyImportant": "카타르는 세계 2위 LNG 수출국으로, 이번 사태가 장기화될 경우 에너지 시장에 큰 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 카타르 LNG 시설 가동 중단으로 네덜란드 TTF 거래소에서 천연가스 선물 가격이 46% 폭등하여 에너지 시장에 미치는 영향이 큽니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이란의 드론 공격으로 카타르 최대 액화천연가스 생산기지인 라스라판 시설 가동이 중단되면서 국제 천연가스 가격이 급등했습니다."
+        }
+      ],
+      "dedupeKey": "lng-가격-가동-급등-시설-액화천연가스-천연가스-카타르",
+      "clusterKey": "에너지/카타르",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317288",
+      "publishedAt": "2026-03-02T20:40:26+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_3",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르, 이란 드론 공격에 세계 최대 LNG 시설 생산 중단",
+      "summary": [
+        "이란의 드론 공격으로 카타르가 세계 최대 LNG 생산 시설 가동을 중단했습니다.",
+        "유럽 가스 가격이 4년 만에 최대 폭으로 급등했습니다.",
+        "사우디 정유 시설도 드론 공격으로 폐쇄됐으나 현재 상황은 통제되고 있습니다."
+      ],
+      "whyImportant": "중동 지역의 지정학적 불안정이 에너지 공급망에 미치는 영향을 보여주는 사례입니다.",
+      "importanceRationale": "근거: 이란의 드론 공격으로 카타르 LNG 생산이 중단되고 유럽 가스 가격이 45% 이상 급등하여 에너지 시장에 미치는 영향이 큽니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이에 따라 이 날 유럽 가스 가격이 45% 이상 급등, 약 4년만에 가장 큰 폭으로 상승했다."
+        },
+        {
+          "label": "security",
+          "evidence": "카타르, 이란 드론 공격에 세계최대 LNG 시설 생산 중단"
+        }
+      ],
+      "dedupeKey": "lng-공격-드론-세계-시설-이란-최대-카타르",
+      "clusterKey": "카타르/드론/공격",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603024168i",
+      "publishedAt": "2026-03-02T13:38:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_5",
+      "date": "2026-03-03",
+      "category": "에너지",
+      "title": "카타르 LNG 시설 생산 중단으로 유럽·아시아 가스 가격 급등",
+      "summary": [
+        "카타르 국영 에너지 기업의 세계 최대 LNG 수출 시설이 이란 드론 공격으로 생산을 중단했습니다.",
+        "유럽 가스 벤치마크 가격이 한때 46% 폭등하며 에너지 위기 이후 최대 상승폭을 기록했습니다.",
+        "글로벌 연료 수송의 핵심 통로인 호르무즈 해협을 통과하는 LNG 운반선 운항도 중단되었습니다."
+      ],
+      "whyImportant": "카타르 LNG 시설의 생산 중단은 전 세계 가스 공급망에 차질을 초래하여 에너지 시장의 불안정을 심화시킬 수 있습니다.",
+      "importanceRationale": "근거: 카타르 라스라판 시설은 전 세계 LNG 공급의 약 5분의 1을 차지하며, 호르무즈 해협은 전 세계 LNG의 약 20%가 통과하는 핵심 통로이기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "카타르 국영 에너지기업의 세계 최대 액화천연가스(LNG) 수출 시설이 이란의 드론 공격으로 생산을 중단하면서 유럽과 아시아 가스 가격이 급등하고 글로벌 에너지 시장이 크게 흔들릴 것이라는 우려가 번지고 있다."
+        },
+        {
+          "label": "security",
+          "evidence": "카타르에너지는 라스라판 시설이 이란이 발사한 드론 2기의 공격 대상이 돼서 LNG 생산을 중단했다고 발표했다."
+        }
+      ],
+      "dedupeKey": "lng-가격-가스-생산-시설-아시아-유럽-카타르",
+      "clusterKey": "에너지/카타르",
+      "matchedTo": null,
+      "sourceName": "블로터",
+      "sourceUrl": "https://www.bloter.net/news/articleView.html?idxno=655560",
+      "publishedAt": "2026-03-02T16:30:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_6",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "Apple, M4 프로세서로 업그레이드된 새로운 iPad Air 출시",
+      "summary": [
+        "Apple은 M4 프로세서로 구동되는 새로운 iPad A 를 발표했습니다.",
+        "새로운 iPad A 는 Wi-Fi 7, Bluetooth 6, T ead로 무선 연결이 향상되었습니다.",
+        "M4를 탑재한 새로운 iPad A 는 M3를 탑재한 iPad A 보다 최대 30% 더 빠릅니다."
+      ],
+      "whyImportant": "Apple의 새로운 iPad Air 출시로 태블릿 시장에서의 경쟁이 심화될 수 있습니다.",
+      "importanceRationale": "근거: M4 프로세서를 탑재한 새로운 iPad Air는 M3 모델보다 최대 30% 더 빠르며, Wi-Fi 7, Bluetooth 6 등의 연결성을 제공합니다.",
+      "impactSignals": [],
+      "dedupeKey": "air-apple-bluetooth-ead-ipad-구동-업그레이드-프로세서",
+      "clusterKey": "apple/프로세서/업그레이드",
+      "matchedTo": null,
+      "sourceName": "The",
+      "sourceUrl": "https://www.theverge.com/tech/886433/apple-ipad-air-2026-launch-price-specs-availability",
+      "publishedAt": "2026-03-02T14:00:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_7",
+      "date": "2026-03-03",
+      "category": "금융",
+      "title": "중국 AI 기업 미니맥스, 작년 매출 159% 증가",
+      "summary": [
+        "중국 AI 스타트업 미니맥스의 작년 매출이 전년 대비 159% 급증했습니다.",
+        "매출은 7천900만 달러를 기록했지만, 연구·개발 비용 증가로 손실 규모도 302% 증가했습니다.",
+        "미니맥스는 200개 국가 및 지역에서 2억 3천600만 명 이상의 사용자를 보유하고 있습니다."
+      ],
+      "whyImportant": "미니맥스의 성장은 중국 AI 산업의 발전과 글로벌 시장 경쟁 심화를 보여주는 지표가 될 수 있습니다.",
+      "importanceRationale": "근거: 미니맥스의 매출이 159% 증가한 7천900만 달러를 기록했으며, 200개 국가 및 지역에서 2억 3천600만 명 이상의 사용자를 확보했다는 점에서 중요성을 확인할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "미니맥스는 이날 발표를 통해 작년 매출이 전년 동기 대비 159% 증가한 7천900만달러(약 1천156억원)를 기록해 블룸버그 예상치인 7천139만달러(약 1천45억원)를 상회했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "미니맥스 주가는 올해 1월 초 기업공개(IPO) 이후 성장하는 중국 AI 기업에 대한 투자 수요에 힘입어 4배 이상 급등했다."
+        }
+      ],
+      "dedupeKey": "200개-7천900-기업-매출-미니맥스-작년-중국-증가",
+      "clusterKey": "실적/기업",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317241",
+      "publishedAt": "2026-03-02T12:50:39+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_8",
+      "date": "2026-03-03",
+      "category": "국제",
+      "title": "기술 노동자들이 미국 국방부에 Anthropic의 공급망 위험 지정 철회를 촉구합니다",
+      "summary": [
+        "수백 명의 기술 노동자들이 국방부에 A opic을 '공급망 위험'으로 지정한 것을 철회할 것을 촉구하는 공개 서한에 서명했습니다.",
+        "이 서한은 또한 의회에 미국 기술 회사에 대한 이러한 특별 권한 사용이 적절한지 조사할 것을 요구합니다.",
+        "이는 A opic이 군에 AI 시스템에 대한 무제한 액세스를 제공하는 것을 거부한 후 발생했습니다."
+      ],
+      "whyImportant": "이번 사태는 정부가 기술 계약 조건에 대한 이견을 이유로 기업에 불이익을 줄 수 있다는 선례를 남길 수 있어 중요합니다.",
+      "importanceRationale": "근거: 트럼프 대통령이 Anthropic을 공격한 직후 OpenAI가 국방부의 기밀 환경에 모델을 배포하기로 합의한 것은 정부의 압박 가능성을 시사합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Hundreds of tech workers have signed an open letter urging the Department of Defense to withdraw its designation of Anthropic as a “supply-chain risk.” The letter also calls on Congress to step in and “examine whether the use of these extraordinary authorities against an American technology company is appropriate.” The letter includes signatories from major technology and venture capital firms, including OpenAI, Slack, IBM, Cursor, Salesforce Ventures, and more."
+        },
+        {
+          "label": "security",
+          "evidence": "Boaz Barak, an OpenAI researcher, wrote in a social media post on Monday that blocking governments from using AI to do mass domestic surveillance is also his “personal red line” and “it should be all of ours.” Moments after Trump publicly attacked Anthropic, OpenAI announced it had reached a deal of its own for its models to be deployed in the DOD’s classified environments."
+        },
+        {
+          "label": "policy",
+          "evidence": "The DOD said it had no plans to do either of those things but that it didn’t believe it should be limited by the rules of a vendor."
+        }
+      ],
+      "dedupeKey": "anthropic-공급망-국방부-기술-노동자들-미국-위험-지정",
+      "clusterKey": "기술/국방부/anthropic",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/",
+      "publishedAt": "2026-03-02T17:18:34+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_9",
+      "date": "2026-03-03",
+      "category": "기술",
+      "title": "정부, 중동 체류자 1.7만 명 육로 대피 계획 수립",
+      "summary": [
+        "정부는 아랍에미리트(UAE) 등 중동 7개국에 특별여행주의보를 발령했습니다.",
+        "외교부는 중동 현지에 체류 중인 1만 7천 명을 위한 육로 대피 계획을 수립 중입니다.",
+        "국내 해운사에는 호르무즈 해협 운항 자제를 권고했습니다."
+      ],
+      "whyImportant": "정부의 이번 조치는 중동 지역의 긴장 고조에 따른 국민 안전 확보를 위한 결정입니다.",
+      "importanceRationale": "근거: 중동 7개국에 특별여행주의보를 발령하고, 현지 체류 중인 1만 7천 명의 국민을 위한 육로 대피 계획을 수립하는 등 정부의 구체적인 대응책이 제시되었습니다.",
+      "impactSignals": [],
+      "dedupeKey": "7개국-7만-대피-수립-육로-정부-중동-체류자",
+      "clusterKey": "체류자/7만/육로",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030240731",
+      "publishedAt": "2026-03-02T11:32:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 2,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_10",
+      "date": "2026-03-03",
+      "category": "정책",
+      "title": "국회 외통위, 미국의 이란 공습 관련 긴급 현안 질의 예정",
+      "summary": [
+        "국회 외교통일위원회가 미국의 이란 공습과 관련해 긴급 현안 질의를 6일에 진행합니다.",
+        "중동 정세 불안정이 국내외 경제, 외교, 안보에 미칠 영향과 정부 대응책이 논의될 예정입니다."
+      ],
+      "whyImportant": "이번 긴급 현안 질의는 중동 지역의 지정학적 리스크가 국내 경제 및 외교 안보에 미치는 영향을 점검하고 정부의 대응책을 논의하는 데 중요한 계기가 될 것입니다.",
+      "importanceRationale": "근거: 6일에 예정된 긴급 현안 질의에서 중동 정세 불안정이 국내외 경제에 미칠 영향과 정부 대응책이 다뤄질 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "현안 질의에서는 이란 공습 사태가 불러온 중동 정세의 불안정이 유가와 환율을 비롯한 국내외 경제와 우리 정부의 외교 노선, 안보 지형에 미칠 영향과 정부의 대응책 등이 다뤄질 것으로 예상됩니다."
+        },
+        {
+          "label": "capex",
+          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 정영빈(jyb21@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "공습-국회-미국-외교통일위원회-외통위-이란-질의-현안",
+      "clusterKey": "미중동/국회/외통위/공습",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1317100",
+      "publishedAt": "2026-03-02T06:09:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-03_11",
+      "date": "2026-03-03",
+      "category": "정책",
+      "title": "국회 청원 제도 개선 요구",
+      "summary": [
+        "국회에 계류 중인 청원 270건 중 90%에 달하는 243건이 법정 심사 기한을 넘긴 채 표류하고 있습니다.",
+        "21대 국회 청원 폐기율은 83%로 역대 최고치를 기록했으며, 본회의를 통과해 채택된 청원은 단 한 건도 없습니다."
+      ],
+      "whyImportant": "국회 청원 제도의 실효성 문제가 제기됨에 따라 제도 개선 논의가 필요합니다.",
+      "importanceRationale": "근거: 21대 국회에서 청원 폐기율이 83%를 기록하며 제도 개선의 필요성이 제기되었고, 270건 중 243건이 심사 기한을 넘겨 표류하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "이후 20대 국회 당시 문희상 국회의장 직속 국회 혁신자문위원회의 권고를 바탕으로 2019년 4월 국회법이 개정됐고, 이듬해인 2020년 1월 국회청원심사규칙 개정을 통해 온라인 기반의 전자청원(국민동의 청원) 제도가 본격 도입됐다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "현행 국회법 제125조 5항은 청원이 회부된 날로부터 90일 이내에 심사 결과를 보고하고, 특별한 사유가 있을 경우 60일 범위에서 한 차례만 기간을 연장할 수 있도록 규정하고 있다.이 같은 구조적 맹점의 결과는 수치로 나타났다."
+        },
+        {
+          "label": "policy",
+          "evidence": "이 기간 본회의를 통과해 채택된 청원은 단 한 건도 없었다.감소세를 보이던 청원 건수는 개원 후 22개월이 된 22대 국회 들어 279건으로 급증했다."
+        }
+      ],
+      "dedupeKey": "21대-243건-270건-개선-계류-국회-제도-청원",
+      "clusterKey": "국회/청원/제도",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026030234667",
+      "publishedAt": "2026-03-02T07:41:17+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

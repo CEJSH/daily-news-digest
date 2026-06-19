@@ -49,13 +49,14 @@ jobs:
           python -m daily_news_digest.export.news_digest_exporter
           test -f data/daily_digest.json
           test -f data/dedupe_history.json
+          test -f data/index.json
 
       - name: Commit & push if changed
         run: |
           git config user.name "digest-bot"
           git config user.email "digest-bot@users.noreply.github.com"
 
-          git add data/daily_digest.json data/dedupe_history.json
+          git add data/daily_digest.json data/dedupe_history.json data/index.json data/archive
 
           # 변경 없으면 커밋/푸시 스킵
           if git diff --cached --quiet; then

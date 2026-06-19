@@ -1,0 +1,260 @@
+{
+  "date": "2026-05-16",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-16T08:32:47.738489+09:00",
+  "items": [
+    {
+      "id": "2026-05-16_1",
+      "date": "2026-05-16",
+      "category": "산업",
+      "title": "미국 무역대표부, 반도체 수출 통제는 미중 정상회담 의제에서 제외",
+      "summary": [
+        "미국과 중국은 항공기, 농산물, 에너지 분야에서 대규모 구매 합의를 추진하고 새로운 협의체 설치에 합의했습니다.",
+        "다만, 첨단 반도체 수출 통제 문제는 이번 정상회담의 핵심 의제로 다뤄지지 않았습니다."
+      ],
+      "whyImportant": "미국과 중국의 무역 관계 재조정 노력과 첨단 기술 분야의 규제 방향을 파악하는 데 중요한 정보입니다.",
+      "importanceRationale": "근거: 미국 무역대표부 대표는 반도체 수출 통제가 회담의 주요 논의 주제가 아니었다고 밝혔으며, 지난 1년간 미국의 대중국 무역적자가 3분의 1 감소했다고 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "다만 관심을 모았던 첨단 반도체 수출통제 문제는 이번 정상회담의 핵심 의제로 다뤄지지 않아, 엔비디아의 고성능 인공지능(AI) 반도체 H200의 대중국 판매 확대도 당분간 불투명하다는 관측이 나온다."
+        }
+      ],
+      "dedupeKey": "무역대표부-미국-미중-반도체-수출-의제-정상회담-통제",
+      "clusterKey": "미중_관세/무역대표부",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/america/1258871.html",
+      "publishedAt": "2026-05-15T06:05:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_2",
+      "date": "2026-05-16",
+      "category": "에너지",
+      "title": "원전 수출 '컨트롤타워' 신설: 한전 협상, 한수원 건설",
+      "summary": [
+        "정부가 한전과 한수원의 해외 원전 수주 경쟁을 해소하기 위해 원전 수출 체계를 개편합니다.",
+        "원전 수출 사업을 총괄·조정할 ‘원전수출기획위원회’를 신설하고, 연내 ‘원전수출진흥법’ 제정을 추진합니다.",
+        "한전은 대외 협상을, 한수원은 원전 건설 및 운영을 주도하는 역할 분담이 이루어질 예정입니다."
+      ],
+      "whyImportant": "원전 수출 체계 효율화는 향후 국가 간 협력이 중요한 원전 시장에서 한국의 경쟁력 강화에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 정부는 원전 수출 효율화를 위해 ‘원전수출기획위원회’를 신설하고, 연내 ‘원전수출진흥법’ 제정을 추진할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "한전은 협상·한수원은 건설…원전 수출 '콘트롤타워' 신설 정부 ‘원전 수출 체계 효율화 방안’ 발표 민관합동 기획위가 총괄 한전 한수원 역할 분담 중복, 갈등 방지 연내 진흥법 입법 추진 민관합동 기획위가 총괄 한전 한수원 역할 분담 중복, 갈등 방지 연내 진흥법 입법 추진 정부가 한국전력과 한국수력원자력의 해외 원전 수주 과정에서 발생하는 중복 경쟁과 비효율을 해소하기 위해 원전 수출 체계를 바꾸기로 했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "산업부 관계자는 “2010년 이후 글로벌 원전 시장은 대부분 국가 간 수의계약 형태로 진행됐다”며 “국책 프로젝트인 만큼 정부의 적극적인 역할이 필수적”이라고 말했다."
+        }
+      ],
+      "dedupeKey": "건설-수출-신설-원전-컨트롤타워-한수원-한전-협상",
+      "clusterKey": "관세/수출",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202605146516i",
+      "publishedAt": "2026-05-14T05:48:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_3",
+      "date": "2026-05-16",
+      "category": "기술",
+      "title": "빌 액먼, AI 및 클라우드 성장 기대하며 마이크로소프트 지분 확보",
+      "summary": [
+        "빌 액먼의 퍼싱 스퀘어가 마이크로소프트의 주가 하락을 매수 기회로 보고 지분을 확보했습니다.",
+        "액먼은 마이크로소프트의 AI 경쟁력과 애저 클라우드 사업 성장에 대한 과도한 우려가 있다고 밝혔습니다.",
+        "그는 마이크로소프트의 M365 생산성 도구가 기업에 깊이 뿌리내리고 있다고 평가했습니다."
+      ],
+      "whyImportant": "이번 투자는 AI 및 클라우드 시장에 대한 투자자들의 심리 변화를 나타낼 수 있습니다.",
+      "importanceRationale": "근거: 액먼은 마이크로소프트 주가가 26% 이상 하락한 후 지분을 확보했으며, 이는 AI 경쟁 및 클라우드 사업에 대한 시장의 우려를 활용한 투자입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "Ackman disclosed the investment in a lengthy post Friday ahead of his firm's quarterly 13F filing, saying Pershing Square began accumulating shares in February after Microsoft's stock declined following its fiscal second-quarter earnings report."
+        },
+        {
+          "label": "policy",
+          "evidence": "Bill Ackman's Pershing Square has built a position in Microsoft, as the hedge fund manager said the software giant's recent pullback created a rare opportunity to buy one of the world's dominant technology franchises at a compelling valuation."
+        }
+      ],
+      "dedupeKey": "m365-기대-마이크로소프트-성장-액먼-지분-클라우드-확보",
+      "clusterKey": "인수합병/액먼",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/15/bill-ackman-says-he-built-microsoft-position-in-first-quarter.html",
+      "publishedAt": "2026-05-15T10:52:24+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_4",
+      "date": "2026-05-16",
+      "category": "국제",
+      "title": "OpenAI, 코드 보안 문제로 일부 데이터 해킹 피해",
+      "summary": [
+        "OpenAI는 일부 직원의 장치가 해킹 공격을 받아 내부 소스 코드 저장소의 자격 증명이 유출되었다고 밝혔습니다.",
+        "영향을 받은 저장소에는 디지털 인증서가 포함되어 있어 macOS 사용자는 앱을 업데이트해야 합니다.",
+        "OpenAI는 사용자 데이터 접근, 생산 시스템 손상, 소프트웨어 변경 증거는 발견하지 못했다고 합니다."
+      ],
+      "whyImportant": "소프트웨어 공급망 공격은 여러 기업에 광범위한 피해를 줄 수 있어 보안 관점에서 중요합니다.",
+      "importanceRationale": "근거: 이번 공격은 오픈 소스 프로젝트를 통해 악성 코드를 배포하여 여러 기업을 잠재적으로 위험에 빠뜨릴 수 있으며, 과거 유사한 공격 사례(Axios, Daemon Tools)가 존재합니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "On Wednesday, OpenAI confirmed that two employees had their devices “impacted by this attack.”"
+        }
+      ],
+      "dedupeKey": "openai-데이터-문제-보안-일부-코드-피해-해킹",
+      "clusterKey": "openai/코드/보안",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/14/openai-says-hackers-stole-some-data-after-latest-code-security-issue/",
+      "publishedAt": "2026-05-14T16:25:20+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_5",
+      "date": "2026-05-16",
+      "category": "기술",
+      "title": "김포시장 후보, 김포를 자족형 스마트 도시로 만들겠다고 공약",
+      "summary": [
+        "김포시장 후보는 김포를 교통이 편리하고 경제가 풍요로운 자족 도시로 만들겠다고 밝혔습니다.",
+        "AI, 바이오 등 첨단 미래산업 기반의 일자리를 늘려 청년이 떠나지 않는 도시로 발전시키겠다고 설명했습니다."
+      ],
+      "whyImportant": "김포를 서북부 중심도시로 만들겠다는 비전은 향후 지역 발전 방향에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 후보는 김포 광역철도망 구축, 서울 5호선 연장, 미래 전략산업 거점도시 육성 등을 공약으로 제시했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이어 “이를 위해 원스톱 인허가 지원, 규제 샌드박스, 스마트공장 전환 지원, 청년채용 인센티브 등 기업 유치와 성장에 대한 정책을 추진하겠다”며 “김포를 청년이 배우고 일하며 정착하는 자족형 첨단산업도시로 바꾸겠다”고 표명했다.이 외에도 이 후보는 △공공형 실내외 웨딩라운지 운영 △전동킥보드 안전 대책 추진 △도시 외곽 학교 스쿨버스 확대 △교통오지 수요응답형 버스 도입 등을 공약했다.이 후보는 김병수 김포시장이 4년간 못한 일들을 모두 정상으로 돌려놓겠다고 제시했다."
+        }
+      ],
+      "dedupeKey": "공약-김포-김포시장-도시-만들겠다고-스마트-자족형-후보",
+      "clusterKey": "김포시장/후보/김포",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://www.edaily.co.kr/election2026",
+      "publishedAt": "2026-05-15T07:48:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_6",
+      "date": "2026-05-16",
+      "category": "에너지",
+      "title": "대우건설, 체코 원전 부지 인근 지자체에 소방차 기증",
+      "summary": [
+        "대우건설은 체코 신규 원전 건설 사업과 관련하여 나메슈티 나드 오슬라보우에 특수 제작된 소방차를 기증했습니다.",
+        "이번 기증은 두코바니 신규 원전 사업 수주를 앞두고 지역 소방 인프라 강화 필요성에 대한 공감대에서 비롯되었습니다."
+      ],
+      "whyImportant": "이번 기증은 대우건설이 체코 원전 사업 수주를 위한 지역 상생 협력의 일환으로 해석될 수 있습니다.",
+      "importanceRationale": "근거: 대우건설은 체코 두코바니 신규 원전 사업 수주를 앞두고 2024년 9월부터 지역 소방 인프라 강화를 위해 소방차 기증을 추진했습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "대우건설은 김보현 대표이사가 지난 13일 체코 원전 예정 부지 인근 지자체인 나메슈티 나드 오슬라보우를 방문해 특수 제작된 소방차를 기증했다고 15일 밝혔다."
+        }
+      ],
+      "dedupeKey": "기증-대우건설-부지-소방차-원전-인근-지자체-체코",
+      "clusterKey": "대우건설/체코/부지",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1353790",
+      "publishedAt": "2026-05-15T01:59:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_7",
+      "date": "2026-05-16",
+      "category": "산업",
+      "title": "미중 회담, 무역 관련 숙제 해결 못 하고 종료",
+      "summary": [
+        "미중 정상회담에서 희토류 수출 제한과 AI 반도체 수출 제한 등 무역 관련 주요 의제에 대한 결론을 내지 못했습니다.",
+        "관세 문제 역시 논의되지 않았으며, 반도체 수출 통제 문제도 포함되지 않아 시장의 불확실성이 여전합니다."
+      ],
+      "whyImportant": "미중 무역 관계의 불확실성이 지속될 경우 관련 산업에 계속적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 회담에서 AI 반도체 수출 제한, 희토류, 관세 문제 등이 해결되지 않아 불확실성이 남았고, 이는 여러 기업에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "애나 켈리 백악관 수석대변인은 지난 10일 미·중 정상회담을 앞두고 연 브리핑에서 “이번 회담의 주요 의제로 미·중 무역위원회와 미·중 투자위원회 설립 및 운영에 관한 논의가 포함될 것”이라고 밝혔다."
+        }
+      ],
+      "dedupeKey": "논의되지-무역-미중-숙제-정상회담-종료-하고-해결",
+      "clusterKey": "미중_관세/숙제",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026051598521",
+      "publishedAt": "2026-05-15T08:46:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-16_8",
+      "date": "2026-05-16",
+      "category": "에너지",
+      "title": "우크라이나 드론 공격으로 자포리자 원전 직원 부상",
+      "summary": [
+        "자포리자 원전 측은 우크라이나 드론 공격으로 직원 2명이 부상했다고 주장했습니다.",
+        "원전 운영사는 이번 공격을 테러 행위로 규정하며 원전 시설 종사자를 표적으로 삼아서는 안 된다고 밝혔습니다."
+      ],
+      "whyImportant": "원자력 발전소에 대한 공격은 방사능 누출 위험을 증가시켜 광범위한 지역에 심각한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 자포리자 원전은 유럽 최대 규모이며, 공습으로 전력 공급 차단이 빈발하여 냉각 시스템 가동 중단 우려가 끊이지 않고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "우크라이나가 러시아에 점령된 자포리자 원자력발전소를 무인항공기(드론)로 공격해 근무 중이던 직원 2명이 부상했다고 원전 측이 14일(현지시간) 주장했다."
+        }
+      ],
+      "dedupeKey": "2명-공격-드론-부상-우크라이나-원전-자포리자-직원",
+      "clusterKey": "우크라이나/드론/공격",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1353595",
+      "publishedAt": "2026-05-14T15:44:03+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

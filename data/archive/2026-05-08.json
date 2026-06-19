@@ -1,0 +1,317 @@
+{
+  "date": "2026-05-08",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-08T08:32:15.737818+09:00",
+  "items": [
+    {
+      "id": "2026-05-08_1",
+      "date": "2026-05-08",
+      "category": "산업",
+      "title": "미국의 대중국 반도체 장비 수출 통제 강화에 중국은 자립 가속화 전망",
+      "summary": [
+        "미국이 DUV 장비 등 반도체 장비의 대중국 수출 통제를 강화하려는 움직임에 중국 전문가들은 반도체 자립 움직임이 강해질 것이라고 전망합니다.",
+        "중국 전문가들은 미국의 수출 통제가 단기적으로는 영향을 줄 수 있지만, 장기적으로는 효과가 없고 중국산 대체 속도를 가속화할 것이라고 주장합니다.",
+        "중국은 이미 DUV 장비를 이용해 7나노 칩 제조를 실현하고 칩 수율을 끌어올리는 등 기술 자립을 추진하고 있습니다."
+      ],
+      "whyImportant": "미국의 대중국 반도체 장비 수출 통제 강화는 중국의 반도체 자립을 가속화하여 장기적으로 글로벌 반도체 공급망에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 의회의 대중국 반도체 수출 통제 강화 법안 추진은 중국의 반도체 자립을 가속화할 수 있으며, 이는 세계 반도체 설비 시장에서 큰 비중(495억 달러)을 차지하는 중국 시장에 대한 접근 제한을 의미합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "앞서 미 하원 외교위는 지난달 22일 반도체와 반도체 장비 등의 대중국 수출 통제를 강화하는 법안들을 통과시켰으며, 중국 상무부는 국가안보 개념 적용의 확대와 수출 통제 남용에 대한 반대 입장을 밝힌 바 있다."
+        }
+      ],
+      "dedupeKey": "강화-대중국-미국-반도체-수출-장비-중국-통제",
+      "clusterKey": "미중/반도체/대중국",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349507",
+      "publishedAt": "2026-05-06T08:44:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_2",
+      "date": "2026-05-08",
+      "category": "국제",
+      "title": "이란 핵 동결-미국 제재 완화 합의 임박",
+      "summary": [
+        "미국과 이란이 핵 동결 및 제재 완화에 대한 양해각서(MOU) 합의에 근접했다고 보도되었습니다.",
+        "합의에는 이란의 핵 농축 일시 중단, 미국의 대이란 제재 해제, 호르무즈 해협 통행 제한 해제 등이 포함될 수 있습니다."
+      ],
+      "whyImportant": "이번 합의는 이란 핵 문제 해결의 실마리가 될 수 있으며, 중동 지역의 안정을 가져올 가능성이 있습니다.",
+      "importanceRationale": "근거: 미국이 이란에게 48시간 내 답변을 요구하고 있으며, 합의에는 14개 항이 포함되어 있어 정책적 중요성이 있습니다.",
+      "impactSignals": [
+        {
+          "label": "sanctions",
+          "evidence": "합의 내용에는 이란의 핵농축 일시 중단(모라토리엄), 미국의 대이란 제재 해제 및 동결 자금 일부 해제, 이란의 호르무즈해협 통행 제한 점진적 해제, 미국의 이란 해상 봉쇄 점진적 해제 등이 포함된 것으로 알려졌다."
+        },
+        {
+          "label": "policy",
+          "evidence": "보도에 따르면 한쪽 분량의 MOU에는 전쟁 종식과 세부 핵 협상의 기본 원칙을 담은 14개 항이 담겼다."
+        }
+      ],
+      "dedupeKey": "mou-동결-미국-양해각서-완화-이란-임박-호르무즈",
+      "clusterKey": "제재/동결/관세",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026050697041",
+      "publishedAt": "2026-05-06T09:05:21+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_3",
+      "date": "2026-05-08",
+      "category": "기술",
+      "title": "인권위, 정부의 북한 장애인 인권 개선 권고 일부 수용 판단",
+      "summary": [
+        "국가인권위원회는 통일부와 보건복지부가 북한 장애인 인권보호 제도 개선 권고를 일부 수용했다고 밝혔습니다.",
+        "구체적인 지원 방식과 세부 계획은 제시되지 않아 일부 수용으로 판단했습니다."
+      ],
+      "whyImportant": "북한 장애인 인권 개선 문제는 향후 남북 관계 및 인도적 지원 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 인권위는 통일부와 보건복지부에 북한 장애인 인권 관련 제도 개선을 권고했으며, 일부 수용 결정은 정책적 논의의 시작점이 될 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "infra",
+          "evidence": "또 통일부장관과 보건복지부 장관에게 △의족·의수·보청기 등 장애인 관련 대북지원 물품에 대해 물품 반출 절차 간소화 방안 마련 △물품 반출 승인 관련 전문가 지원 체계 구축 △남북 장애인지원단체 간 교류를 지원 등 북한 내 장애인에 대한 인도적 지원의 활성화를 위한 개선 방안을 마련하라고 권고했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "고용노동부 장관과 성평등가족부 장관에게 민간 부문의 성희롱 예방체계를 강화할 것을 주문하는 내용을 골자로 하는 이 안건은 지난해 3월 상임위에 상정됐지만, 의결되지 못한 채 이날 재상정 됐다."
+        },
+        {
+          "label": "policy",
+          "evidence": "또 “장애인 물품 지원이 면밀히 이뤄져야 한다는 권고의 취지에는 공감하지만, 현재 남북교류협력법에서 규정하는 필요 최소한의 검토를 거쳐 신속하게 반출하고 있다”고 답했다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "장애인 관련 인도적 지원 등에 대해선 “단체 간 교류나 지원 체계 구축은 현실적으로 실질적인 정부의 지배권이 미치는 영역이 아니라 한계가 있다”고 봤다."
+        }
+      ],
+      "dedupeKey": "개선-권고-북한-인권-인권위-일부-장애인-정부",
+      "clusterKey": "인권위/장애인/인권",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1257534.html",
+      "publishedAt": "2026-05-07T04:57:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_4",
+      "date": "2026-05-08",
+      "category": "에너지",
+      "title": "일본 원전 가동률 3년째 최고치 경신",
+      "summary": [
+        "일본 원자력산업협회 조사 결과, 작년 일본 원전 가동률이 33.6%로 후쿠시마 원전 사고 이후 최고치를 기록했습니다.",
+        "올해는 가시와자키·가리와 원전 6호기가 재가동되며 가동률 상승이 전망되지만, 홋카이도 도마리 원전 3호기 재가동 지연으로 큰 폭 상승은 어려울 것으로 예상됩니다."
+      ],
+      "whyImportant": "일본의 원전 정책 변화와 에너지 수급에 영향을 미칠 수 있는 지표이기 때문입니다.",
+      "importanceRationale": "근거: 작년 일본 원전 가동률이 33.6%로 최고치를 기록했으며, 올해 니가타현 가시와자키·가리와 원전 6호기 재가동으로 가동률 변화가 예상됩니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "일본의 원전 가동률은 2011년 원전 사고 이후 폐로 작업과 규제 강화가 시행되면서 0%까지 내려갔으나 이후 서서히 회복해 2023년부터 3년째 최고치를 경신하고 있다."
+        }
+      ],
+      "dedupeKey": "3년째-6호기-가동률-경신-원자력산업협회-원전-일본-최고치",
+      "clusterKey": "법집행/가동률",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349571",
+      "publishedAt": "2026-05-06T12:06:57+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_5",
+      "date": "2026-05-08",
+      "category": "금융",
+      "title": "CoreWeave, 매출 가이던스 약세 및 지출 전망 증가로 주가 10% 하락",
+      "summary": [
+        "AI 인프라 제공업체인 CoreWeave의 주가가 매출 가이던스 약세와 2026년 자본 지출 전망 증가로 인해 10% 하락했습니다.",
+        "2분기 매출은 24억 5천만 달러에서 26억 달러로 예상되며, 이는 LSEG 컨센서스인 26억 9천만 달러에 미치지 못합니다.",
+        "2026년 자본 지출은 310억 달러에서 350억 달러로 전망됩니다."
+      ],
+      "whyImportant": "CoreWeave의 지출 증가와 매출 가이던스 하향 조정은 AI 인프라 시장 경쟁 심화와 데이터 센터 개발 비용 증가를 시사합니다.",
+      "importanceRationale": "근거: CoreWeave는 2026년 자본 지출을 310억 달러에서 350억 달러로 전망하며, 이는 AI 인프라 시장 경쟁 심화와 데이터 센터 개발 비용 증가를 의미합니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "CoreWeave shares tumbled 10% in extended trading on Thursday after the AI infrastructure provider issued light revenue guidance and increased its 2026 capital spending forecast."
+        }
+      ],
+      "dedupeKey": "coreweave-가이던스-매출-약세-주가-증가-지출-하락",
+      "clusterKey": "실적/coreweave",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/07/coreweave-crwv-q1-earnings-report-2026.html",
+      "publishedAt": "2026-05-07T20:15:37+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_6",
+      "date": "2026-05-08",
+      "category": "금융",
+      "title": "해외 IB, 올해 한국 경제 성장률 2.4%로 전망 상향",
+      "summary": [
+        "해외 주요 투자은행들은 한국의 1분기 경제 성장률이 예상보다 높아 올해 성장률 전망치를 상향 조정했습니다.",
+        "주요 IB 8곳의 올해 경제 성장률 전망치는 4월 말 기준 평균 2.4%로 집계되었습니다.",
+        "JP모건은 0.8%p, 씨티는 0.7%p 성장률 전망치를 높였습니다."
+      ],
+      "whyImportant": "해외 투자은행들의 한국 경제 성장률 전망 상향은 향후 투자 및 경제 정책 결정에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 주요 IB 8곳이 제시한 올해 경제성장률 전망치가 4월 말 기준 평균 2.4%로, 3월 말 2.1%에서 0.3%p 상승했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "중동전쟁으로 인한 고유가 상황이 지속됨에 따라 올해 우리나라 소비자물가지수(CPI) 상승률은 지난 3월 평균 2.4%에서 4월 말 평균 2.5%로 0.1%p 올랐다."
+        },
+        {
+          "label": "policy",
+          "evidence": "IB들은 지난 1월 말 이미 한국은행 전망치(1.8%)와 정부 전망치(2.0%)를 웃도는 수치(2.1%)를 내놨다."
+        }
+      ],
+      "dedupeKey": "8곳-경제-상향-성장률-올해-투자은행들-한국-해외",
+      "clusterKey": "해외/올해/경제",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1350235",
+      "publishedAt": "2026-05-07T20:51:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_7",
+      "date": "2026-05-08",
+      "category": "기술",
+      "title": "정부 데이터 세트, LLM·피지컬 AI용으로 재가공",
+      "summary": [
+        "과학기술정보통신부는 AI 허브 데이터를 최신 생성형 AI 기술 환경에 맞게 재가공하는 사업을 시작했습니다.",
+        "2022년까지 구축된 AI 허브 데이터 691종 중 30종을 선정하여 재가공하고 AI 허브를 통해 개방할 계획입니다.",
+        "AX 디바이스 개발·실증 사업의 신규 3개 과제 사업자 선정 공고도 실시합니다."
+      ],
+      "whyImportant": "정부의 데이터 재가공 및 디바이스 개발 지원은 AI 기술 발전과 AX 확산에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 과기정통부는 AI 허브 데이터 691종 중 30종을 재가공하고, AX 디바이스 개발·실증 사업의 3개 과제 사업자 선정 공고를 실시합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "AX 디바이스 개발·실증 신규 3개 과제 공모 (서울=연합뉴스) 권하영 기자 = 정부가 기존에 확보한 데이터들을 최신 인공지능(AI) 기술로 활용할 수 있도록 재가공하는 작업에 착수한다."
+        }
+      ],
+      "dedupeKey": "ai용-llm-과학기술정보통신부-데이터-세트-재가공-정부-피지컬",
+      "clusterKey": "ai/데이터",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349892",
+      "publishedAt": "2026-05-07T03:00:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_8",
+      "date": "2026-05-08",
+      "category": "국제",
+      "title": "미국-이란 MOU 협상 쟁점: 핵 농축 유예 및 제재 해제",
+      "summary": [
+        "트럼프 대통령은 이란과의 합의가 임박했다고 밝혔으나, 핵심 쟁점에 대한 이견으로 난항이 예상됩니다.",
+        "현재 양측은 14개 항목이 담긴 1쪽 분량의 합의문을 검토 중이며, 이란의 저농축 우라늄 생산 제한 허용 방안이 포함된 것으로 알려졌습니다.",
+        "미국은 중국에 이란과의 중재를 요구하고 있으며, 미중 정상회담에서 관련 논의가 이루어질 가능성이 있습니다."
+      ],
+      "whyImportant": "미국과 이란의 협상 결과는 중동 지역의 안정을 포함한 국제 정세에 중요한 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 트럼프 대통령의 발언과 미중 정상회담 의제 가능성 언급을 통해 협상이 국제적 중요성을 가짐을 알 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "양국이 종전 협상을 서두르면서 호르무즈 해협 통항 정상화에 대한 기대감도 커지고 있지만 정상화 해법에 관해선 상당한 진통이 따를 것이란 전망도 나오고 있습니다."
+        },
+        {
+          "label": "security",
+          "evidence": "다만 협상 상황에 대해서는 비교적 낙관적인 평가를 내놓으면서도 합의가 이뤄지지 않을 경우 더 강한 공격에 나설 수 있다고 경고했는데요."
+        },
+        {
+          "label": "capex",
+          "evidence": "연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 이혜선(youstina@yna.co.kr)"
+        }
+      ],
+      "dedupeKey": "14개-mou-농축-미국-유예-이란-쟁점-협상",
+      "clusterKey": "미중_제재/mou/관세",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349985",
+      "publishedAt": "2026-05-07T05:50:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-08_9",
+      "date": "2026-05-08",
+      "category": "에너지",
+      "title": "감사원, 한전·한수원의 원전 수출 협력 미흡 지적",
+      "summary": [
+        "감사원은 한국전력과 한국수력원자력이 원전 수출 사업에서 협력 부족과 기능 중복을 보였다고 밝혔습니다.",
+        "정보 공유 및 인력·기술 협력 미흡으로 입찰·협상 과정에서 비효율이 발생하고 국가 신뢰도 저하 우려가 있다고 지적했습니다.",
+        "개선안으로 협업 기준 명시 MOU 체결, 원전수출협의회 조정 기능 강화 등을 제안했습니다."
+      ],
+      "whyImportant": "원전 수출은 국가 경쟁력과 관련된 중요한 사안으로, 관련 기관들의 협력 부족은 장기적으로 국가 이익에 부정적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 감사원은 한전과 한수원이 각각 567명, 216명을 원전수출 사업에 운용하며 기능 중복을 수행하고, 정보 공유 부족으로 비효율이 발생했다고 지적했습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "한수원, 직원·가족 휴양시설 이용을 교육훈련 경비로 처리 美육상풍력발전사업 투자 과정 미회수 구상금 144억 발생 (서울=연합뉴스) 이상현 기자 = 아랍에미리트(UAE) 원전 건설 과정에 '집안 싸움'을 벌여 논란을 빚었던 한국전력과 한국수력원자력이 각종 원전 수출 사업에 제대로 협력하지 않았다는 감사원 지적이 나왔다."
+        },
+        {
+          "label": "policy",
+          "evidence": "다만 감사원은 한미 정부 간 외교관계에 대한 사항을 비롯한 일부 내용은 규정에 따라 비공개했다."
+        }
+      ],
+      "dedupeKey": "감사원-미흡-수출-원전-한국전력-한수원-한전-협력",
+      "clusterKey": "관세/감사원",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1349891",
+      "publishedAt": "2026-05-07T03:00:05+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

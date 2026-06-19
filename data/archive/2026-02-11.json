@@ -1,0 +1,358 @@
+{
+  "date": "2026-02-11",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-02-11T08:18:39.780419+09:00",
+  "items": [
+    {
+      "id": "2026-02-11_1",
+      "date": "2026-02-11",
+      "category": "산업",
+      "title": "AI 슈퍼사이클에 따른 메모리 시장 급성장 전망",
+      "summary": [
+        "트렌드포스는 AI 수요 급증으로 올해 메모리 반도체 시장 규모가 최대 806조 원에 이를 수 있다고 전망했습니다.",
+        "이는 웨이퍼 파운드리 산업의 두 배를 넘는 규모이며, 클라우드서비스사업자(CSP)가 수요를 주도하고 있습니다.",
+        "AI 칩 수요 증가에도 불구하고 파운드리 산업은 구조적 한계로 인해 메모리 시장만큼의 급격한 성장은 어려울 것으로 분석됩니다."
+      ],
+      "whyImportant": "AI 산업 발전과 함께 메모리 반도체 시장의 중요성이 더욱 부각될 것으로 예상됩니다.",
+      "importanceRationale": "근거: 트렌드포스는 올해 메모리 시장 규모가 최대 806조 원에 이를 것으로 전망하며, 이는 웨이퍼 파운드리 시장의 두 배를 넘는 수치입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI) 수요 급증으로 올해 메모리 반도체 시장 규모가 웨이퍼 파운드리 산업의 두 배를 넘을 것이라는 전망이 나왔다."
+        }
+      ],
+      "dedupeKey": "806조-급성장-따른-메모리-슈퍼사이클-시장-트렌드포스-파운드리",
+      "clusterKey": "반도체/슈퍼사이클",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBmMzlKY01MNXlqU2Z3bmpDWWJWVWZCaHZFZmJDU0h4Z0pLbmVvTk5zbllINFdPLXMxNmJkWFo3Wk40NlpxbFBueTUtaHdSM2d3QjNOQldKUTFlazlDN3VBcmJBWXIyZw?oc=5",
+      "publishedAt": "2026-02-10T00:45:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_2",
+      "date": "2026-02-11",
+      "category": "국제",
+      "title": "미국 USTR 부대표 방한, 비관세 장벽 완화 협상 전망",
+      "summary": [
+        "미국무역대표부(USTR) 부대표가 방한하여 여한구 통상교섭본부장과 통상 현안을 논의할 예정입니다.",
+        "미국은 한국의 비관세 장벽 문제에 대한 구체적인 요구 사항을 제시할 것으로 예상됩니다.",
+        "양측은 한미 자유무역협정(FTA) 공동위원회에서 비관세 장벽 관련 논의를 진행할 계획입니다."
+      ],
+      "whyImportant": "미국과의 비관세 장벽 관련 협상 결과는 향후 한미 통상 관계에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 미국 USTR 부대표의 방한은 이례적이며, 한미 FTA 공동위원회에서 비관세 장벽 논의를 진행할 예정이므로 중요도는 3입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "“한국과 미국은 망 사용료, 온라인플랫폼 규제를 포함한 디지털 서비스 관련 법과 정책에 있어서 미국 기업들이 차별당하거나 불필요한 장벽에 직면하지 않도록 보장할 것” 등이 그 방향으로 제시됐다."
+        },
+        {
+          "label": "capex",
+          "evidence": "스위처 부대표는 여 본부장을 만나 농산물·자동차·온라인플랫폼·지도데이터 등 미국 쪽이 주장하는 한국의 비관세 장벽 문제를 논의할 예정이다."
+        }
+      ],
+      "dedupeKey": "ustr-미국-방한-부대표-비관세-완화-장벽-협상",
+      "clusterKey": "한미_관세/ustr",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBNZGNKMGlORnlKUDhWcVhxNlluRzRIRGNiOUJyMTNWdjdCbGtGX2cyY3ZvWkdFdTR2LWVob1dpbVVXTU9ubm1DYTBVQ0IwNGo5MmVfT00xZEhLdGdycXNHN01IWTJFNGFVZTZQek5saE1jZw?oc=5",
+      "publishedAt": "2026-02-10T10:14:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_3",
+      "date": "2026-02-11",
+      "category": "기술",
+      "title": "인권위, 점자 공보물 면수 제한 폐지 권고",
+      "summary": [
+        "국가인권위원회가 중앙선거관리위원회와 방송미디어통신위원회에 장애인 참정권 보장을 위한 제도 개선을 권고했습니다.",
+        "점자 공보물 면수 제한 폐지와 수어 통역 확대 등이 권고 내용에 포함되었습니다.",
+        "장애인 단체는 4년 만에 나온 권고에 안타까움을 표했습니다."
+      ],
+      "whyImportant": "이번 권고는 장애인의 참정권 보장을 위한 제도 개선에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 인권위가 중앙선거관리위원회에 점자형 선거공보의 면수 제한을 두지 않도록 공직선거법 개정을 추진할 것을 권고했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "방송미디어통신위원회위원장에게도 선거방송에서 발화자 2인 이상의 내용이 청각장애인에게 충분히 전달될 수 있도록 최소한 2인 이상의 한국수어통역사를 배치하는 수어통역방송이 공영방송 전반에서 확대될 수 있도록 장애인방송 프로그램 제공 가이드라인을 개정할 것을 권고했다."
+        }
+      ],
+      "dedupeKey": "공보물-국가인권위원회-권고-면수-인권위-점자-제한-폐지",
+      "clusterKey": "인권위/점자/공보물",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE91RFZaTWRXWFZpaVluU1lSVGlPYTE1OUMxNzg5akNBa09MUmpKNTdBclpHOHhjV25hNEp0WFVyX2JMRENVNDJia25pMHdlZUt4TmliQlBjTHEzMDRKU1pIYWNGMGptd1pfTUszbkc5SWpiUQ?oc=5",
+      "publishedAt": "2026-02-10T03:47:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_4",
+      "date": "2026-02-11",
+      "category": "금융",
+      "title": "코카콜라, 수요 우려 속 소폭 성장 전망",
+      "summary": [
+        "코카콜라는 예상보다 저조한 분기별 매출을 보고했으며, 이는 5년 만에 처음으로 월스트리트의 예상치를 밑도는 결과입니다.",
+        "2026년에는 유기적 매출이 4~5%, 주당 순이익은 7~8% 성장할 것으로 예상됩니다.",
+        "북미와 라틴 아메리카에서는 음료 수요가 개선될 조짐을 보이고 있습니다."
+      ],
+      "whyImportant": "코카콜라의 실적 및 전망은 음료 시장의 수요 변화와 프리미엄 제품 전략의 영향을 보여주며, 향후 시장 경쟁 및 소비자 트렌드 변화에 대한 시사점을 제공합니다.",
+      "importanceRationale": "근거: 코카콜라는 2026년 유기적 매출 성장률을 4~5%로 전망하며, 북미와 라틴 아메리카에서 수요 개선 조짐을 보이고 있어 중요도 3으로 판단됩니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Like rival PepsiCo, Coke has seen demand for its drinks fall as budget-conscious shoppers try to save more on their grocery bills and dine out less frequently."
+        }
+      ],
+      "dedupeKey": "성장-소폭-수요-아메리카-예상보다-월스트리트-저조-코카콜라",
+      "clusterKey": "실적/코카콜라",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZeWNFZ0ZZMkVkX05XcnFnUXg3OFEwNTB4aV9qU0ZDUHJzVFU5UnIyWWpmcU51c2R0SGp5OWhWbjZWQWFxZ0lBaUdiYjJoZlhDQ1VFb0VPclljR1VqbFZsZm1naDJPMHp4c2h0cENNLUlyVDlV0gF6QVVfeXFMTXJYdFRyX0VCQlpnU19ESUxKTXY2UUUxaERjZDdHVDNuQ1BDSnhLWFZHbk85U1hfZVZqNlh6c21ZazFoWFluUTg3N0dnd3hlNjFSVTNQdlhEMC1RNXVZVUdtd2tQSXRaSUVMT1RpTjNPVzd2TVZBSTF2anc?oc=5",
+      "publishedAt": "2026-02-10T11:35:02+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_5",
+      "date": "2026-02-11",
+      "category": "금융",
+      "title": "데이터브릭스, 1,340억 달러 가치로 50억 달러 자금 조달 완료",
+      "summary": [
+        "데이터 분석 소프트웨어 회사인 데이터브릭스가 1,340억 달러의 가치로 50억 달러의 자금을 조달했다고 밝혔습니다.",
+        "또한, 1월 분기 연간 수익이 54억 달러를 초과하여 전년 대비 65% 증가했으며, 지난 한 해 동안 잉여 현금 흐름을 달성했다고 합니다.",
+        "AI 제품은 현재 연간 14억 달러의 수익을 창출하고 있다고 데이터브릭스는 밝혔습니다."
+      ],
+      "whyImportant": "데이터브릭스의 대규모 자금 조달은 AI 및 데이터 분석 시장의 성장 가능성을 시사합니다.",
+      "importanceRationale": "근거: 데이터브릭스는 1,340억 달러의 가치로 50억 달러의 자금을 조달했으며, AI 제품으로 연간 14억 달러의 수익을 창출하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "The privately held data analytics software company also said that its annualized revenue exceeded $5.4 billion for the January quarter, up 65% year over year, while delivering free cash flow over the past year."
+        },
+        {
+          "label": "capex",
+          "evidence": "The pace of Databricks' overall expansion is accelerating — in June, the company forecast 50% growth."
+        }
+      ],
+      "dedupeKey": "340억-50억-가치-달러-데이터브릭스-완료-자금-조달",
+      "clusterKey": "투자/데이터브릭스",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORGIzMXFFdUtmQnNDTGljOVhzbWFjclVYcmdQS3d0eUJqMEdhcmNmZE1lQS16S0dVRHRjdVNOdWxxTTZQRTNDcXE1MmJNTjU3UGpCMmoyRlNpS3ktNkpGNjd5VTc2YU14X0tydUJmQ09MQnI4ZUp2c0t0QlFTdWZINVNCVFUxX0pYaTZVNVgxUE1nSG92SHJxekd3MjlNLW1MVUJiNlRaQdIBrAFBVV95cUxNVmt1d24yQ09jdmJMczdzVW9EWkZJdXVkeGhwNmpZN2NLenFkdFowY2NONURsY2pUbXAxSnp1T0xDbFN2NmN0V09Ba2ZnWUdCSUJoUjk3cThrUmxiVU1JOFlMZVBUUllZdW5Tc0dtTG02aVJBOU11MUs2bzJKTU1yenBWanl4ZHFiOXVOalVvZHlpb3RkX2NBMXY4X1M4YUdMNlVUdm9kaWM0MEd0?oc=5",
+      "publishedAt": "2026-02-09T15:00:01+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_6",
+      "date": "2026-02-11",
+      "category": "정책",
+      "title": "AI 투자 경쟁 심화: 아마존의 대규모 자본 지출",
+      "summary": [
+        "미국 하이퍼스케일러들을 중심으로 AI 투자가 증가하며 뉴욕 증시를 흔들고 있습니다.",
+        "아마존은 올해 자본 지출 예상액을 약 2000억 달러로 제시하며 월가 전망치를 크게 초과했습니다."
+      ],
+      "whyImportant": "AI 투자가 기업의 자본 지출 및 증시 흐름에 미치는 영향을 파악하는 데 중요합니다.",
+      "importanceRationale": "근거: 아마존의 올해 자본 지출 예상액이 2000억 달러로 제시되어 월가 전망치를 500억 달러 이상 초과하는 수치이기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "글로벌 최대 전자상거래 업체인 아마존은 지난 5일(현지 시간) 장 마감 후 지난해 4분기(10∼12월) 실적 공시를 내고 AI를 포함한 올해 자본지출(CAPEX) 예상액을 약 2000억 달러로 제시했다."
+        }
+      ],
+      "dedupeKey": "2000억-경쟁-미국-심화-아마존-자본-지출-투자",
+      "clusterKey": "투자/경쟁",
+      "matchedTo": null,
+      "sourceName": "서울경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nN3hLbGhTaWVxUzVBcEdRbjhVVHBGNU9oR3A4bEFhNy1adWdJZHBOMC11U005MUhiLXcxS29YVTdOQ1E2VzB4SGVXTF9iR2R2Yk40MGhrNHFHcS1xTkJ1cDRBaXM?oc=5",
+      "publishedAt": "2026-02-10T08:07:22+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_7",
+      "date": "2026-02-11",
+      "category": "기술",
+      "title": "쿠팡, 개인 정보 유출 사고 발생",
+      "summary": [
+        "정부가 쿠팡 침해 사고 조사 결과, 3367만 명의 개인 정보가 유출되었다고 발표했습니다.",
+        "가족 및 지인의 정보가 포함된 배송 목록 약 1억 4800만 건도 조회되어 피해 규모가 늘어날 것으로 예상됩니다."
+      ],
+      "whyImportant": "이번 개인 정보 유출 사고는 기업의 데이터 보안 및 개인 정보 보호의 중요성을 강조하며, 향후 관련 규제 강화 논의로 이어질 수 있습니다.",
+      "importanceRationale": "근거: 3367만 명의 개인 정보 유출과 1억 4800만 건의 배송 목록 조회는 상당한 규모이며, 개인 정보 보호에 대한 사회적 우려를 야기할 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "정부가 쿠팡 침해사고 조사 결과 성명·이메일 등 3367만명의 정보가 유출됐다고 발표했다."
+        }
+      ],
+      "dedupeKey": "1억-개인-발생-사고-유출-정보-정부-쿠팡",
+      "clusterKey": "법집행/쿠팡",
+      "matchedTo": null,
+      "sourceName": "전자",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE13UFRHNUtGbHpCMHBGNlVkSnJfa1J1bFl3NWVzRTB4NExtZXVVcUk0ckdGbTRITFdMWXBBQkNRRUx1RS1VQUd4UUd4a1VyZw?oc=5",
+      "publishedAt": "2026-02-10T05:20:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_8",
+      "date": "2026-02-11",
+      "category": "기술",
+      "title": "쿠팡 침해 사고로 3367만 명 정보 유출",
+      "summary": [
+        "정부가 쿠팡 침해 사고 조사 결과, 3367만 명의 성명, 이메일 등 정보가 유출되었다고 발표했습니다.",
+        "가족·지인 등의 개인정보가 담긴 배송 목록 약 1억 4800만 건도 조회되어 최종 피해자 규모가 늘어날 것으로 예상됩니다."
+      ],
+      "whyImportant": "개인 정보 유출 사고는 기업의 보안 강화 및 정부의 규제 필요성을 높이는 계기가 됩니다.",
+      "importanceRationale": "근거: 3367만 명의 정보 유출과 1억 4800만 건의 배송 목록 조회는 개인 정보 보호의 중요성을 부각합니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "정부가 쿠팡 침해사고 조사 결과 성명·이메일 등 3367만명의 정보가 유출됐다고 발표했다."
+        }
+      ],
+      "dedupeKey": "1억-사고-유출-유출되었다고-정보-정부-침해-쿠팡",
+      "clusterKey": "법집행/쿠팡",
+      "matchedTo": null,
+      "sourceName": "전자",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9yQnJld2htNjIxeE53SFRuVGlsSzQwMmx1NDYyOFR4MTJWS28wc0hrUy1kTDk4MVNkNUhTNGNOVHJKcWZKbFhzX1E5LXp1Zw?oc=5",
+      "publishedAt": "2026-02-09T22:08:45+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_9",
+      "date": "2026-02-11",
+      "category": "에너지",
+      "title": "육상 송전망의 한계를 넘어설 '오션 그리드'란?",
+      "summary": [
+        "인공지능, 반도체 등 첨단산업 투자로 전력 수요가 폭증하면서 효율적인 전력망 구축의 필요성이 커지고 있습니다.",
+        "기존 육상 송전망의 대안으로 해저 전력망인 '오션 그리드'가 주목받고 있으며, 정부는 서해안을 중심으로 해저 전력망 구축을 검토 중입니다.",
+        "새만금에서 서화성까지 약 230km 구간에 약 2조원의 사업비가 투입될 예정이며, 관련 기업들의 수주 기회가 늘어날 것으로 예상됩니다."
+      ],
+      "whyImportant": "오션 그리드는 증가하는 전력 수요에 대응하고, 반도체 클러스터와 같은 전력 다소비 시설에 안정적인 전력 공급을 가능하게 하는 중요한 인프라가 될 수 있습니다.",
+      "importanceRationale": "근거: 정부가 서해안에 약 2조원을 투자하여 230km 구간의 해저 전력망 구축을 검토하고 있으며, 이는 전력 인프라 투자 확대와 관련 기업의 수주 기회 증가를 의미합니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "인공지능(AI)을 위한 데이터센터, 반도체, 디스플레이 등 첨단산업 투자로 전력 수요가 폭증하고 있다."
+        }
+      ],
+      "dedupeKey": "230km-2조원-그리드-넘어설-송전망-오션-육상-한계",
+      "clusterKey": "투자/에너지/육상",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBJNm9rbVBORUFvNUpZY2oxSW5Wa1ExTG9FUEVwUk5NQjRtUW13S284eC1EaUxnOUk3VTRESTNueW9MMnlKaW84VTNKVTJzUkRlb2I3R29kdXZIbkpDcE42bGNBNXN5dw?oc=5",
+      "publishedAt": "2026-02-09T05:11:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_11",
+      "date": "2026-02-11",
+      "category": "에너지",
+      "title": "GS건설 허윤홍 대표, 호주 전력망 인프라 구축 사업 추진",
+      "summary": [
+        "허윤홍 GS건설 대표가 호주를 방문해 전력망 인프라 구축 사업 기회를 모색했습니다.",
+        "GS건설은 호주에서 재생에너지 공급 증가에 따른 대규모 송전망 구축 필요성에 주목하고 있습니다."
+      ],
+      "whyImportant": "GS건설의 호주 전력망 인프라 구축 사업 추진은 미래 에너지 시장 변화에 대응하는 전략적 움직임입니다.",
+      "importanceRationale": "근거: GS건설은 호주 시장에서 사업 역량을 바탕으로 전력망 인프라 구축으로 사업 포트폴리오 확장을 준비 중입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "허 대표는 2024년 GS건설이 수주한 'SRL(Suburban Rail Loop) 지하철 터널 공사' 현장을 방문해 공사 진행 상황을 점검하고, 현지 직원들을 격려했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "호주는 현재 재생에너지 공급이 빠르게 늘면서 발생한 전기를 실제 수요가 필요한 도시나 산업단지로 보내기 위한 대규모 송전망 구축이 필요한 상황이다."
+        }
+      ],
+      "dedupeKey": "gs건설-구축-대표-사업-인프라-전력망-허윤홍-호주",
+      "clusterKey": "gs건설/허윤홍/호주",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4zc0ZsWWZGX0dRWVdtT2JaQ0JldWpPZG5ka3d3S0Y5UHl1TklkTks4OVRzdTRrRnRoNVRPZHQ0VVJQTk1xSlVLUWJoRFY4MGlhdUNDbXQ0eFVzTmVoeloxT2FXT1R2WEZLNEY2V21WTW1ZemVf?oc=5",
+      "publishedAt": "2026-02-09T01:28:50+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-11_12",
+      "date": "2026-02-11",
+      "category": "에너지",
+      "title": "대우건설, 실적 턴어라운드 및 원전 사업 기대감에 신고가 기록",
+      "summary": [
+        "대우건설 주가가 급등하며 52주 신고가를 경신했습니다.",
+        "지난해 4분기 빅배스 단행으로 올해 실적 턴어라운드 기대감이 커진 것이 주가 상승의 요인으로 분석됩니다.",
+        "체코 원전 수주 계약이 상반기 중 체결될 것으로 예상되며, 미국과 베트남 원전 사업도 추진 중입니다."
+      ],
+      "whyImportant": "대우건설의 실적 개선과 원전 사업 수주 결과에 따라 건설업계 전반에 걸쳐 투자 심리에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 대우건설은 지난해 4분기 빅배스를 단행했으며, 체코 원전 수주 계약이 올해 상반기 중 체결될 것으로 예상되어 실적 개선 기대감이 커지고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "지난해 4분기 빅배스(big bath·일시적 대규모 손실처리)를 단행하면서 올해 실적 턴어라운드(개선) 가능성이 커진 데다 해외 원전시장 진출 기대감이 매수세를 유발한 것으로 풀이된다."
+        }
+      ],
+      "dedupeKey": "기대감-기록-대우건설-사업-신고-실적-원전-턴어라운드",
+      "clusterKey": "실적/대우건설",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1TcDZsdVRPYkZYUndhUUgyTkhmN0hQcEUwZFNYSDZPMXY4U01TVk81dnBpcmV0bnFuTDlrV0tiWGF2WWZPeXhGRUZpMDJrMmN6R2JscFcwdjB5UdIBVEFVX3lxTE42SzZtYmw2TjBHTzhXcFp1SWl6YmNRUFVyTEJQLWdXT2RuemUxSU9tV01SU1hvX09SQUZiR3BiMG5zOW43OTBKeXRiT00yTzR6Z013Ng?oc=5",
+      "publishedAt": "2026-02-10T00:43:28+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

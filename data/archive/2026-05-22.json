@@ -1,0 +1,266 @@
+{
+  "date": "2026-05-22",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-22T08:39:01.036365+09:00",
+  "items": [
+    {
+      "id": "2026-05-22_1",
+      "date": "2026-05-22",
+      "category": "산업",
+      "title": "자원 민족주의 확산과 원자재 수출 통제",
+      "summary": [
+        "인도네시아는 니켈 등 원자재 가격을 직접 결정하겠다고 선언하며 수출 통제를 강화하고 있습니다.",
+        "칠레는 구리 생산량을 줄여 가격 방어 전략을 취하고 있으며, 콩고는 코발트 수출 쿼터를 강화했습니다.",
+        "OECD에 따르면 핵심 원자재 수출 제한 조치는 2009년 대비 5배 증가했습니다."
+      ],
+      "whyImportant": "자원 수출 통제는 관련 산업 공급망에 영향을 미치고 가격 변동성을 확대할 수 있습니다.",
+      "importanceRationale": "근거: OECD 보고서에 따르면, 2023년 핵심 원자재 수출 제한은 2009년보다 5배 증가하여 산업 전반에 걸쳐 공급망 및 가격에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "해당 자원의 세계 공급량을 조절해 판매 수익을 극대화하겠다는 전략에서다."
+        }
+      ],
+      "dedupeKey": "5배-민족주-수출-원자재-인도네시아-자원-통제-확산",
+      "clusterKey": "자원/민족주/확산",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052125731",
+      "publishedAt": "2026-05-21T09:28:32+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_2",
+      "date": "2026-05-22",
+      "category": "국제",
+      "title": "식량 안보, 비료 공급망 차질 및 엘니뇨 위험으로 압박",
+      "summary": [
+        "최근 기후 및 국가 안보 관련 글에서 식량 안보의 취약성이 부각되고 있습니다.",
+        "이란 분쟁으로 인한 공급망 차질, 천연가스 가격 변동성, 엘니뇨 및 가뭄이 복합적으로 작용하고 있습니다.",
+        "2023년 중반 엘니뇨 발생 후 2024년 초 특정 주요 작물 생산량 감소가 예상됩니다."
+      ],
+      "whyImportant": "비료 공급망 차질과 엘니뇨 현상은 식량 가격 상승과 공급 부족을 야기하여 장기적인 식량 안보에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 2022년 러시아-우크라이나 전쟁으로 인한 비료 접근 제한과 2023년 엘니뇨 발생 후 2024년 초 특정 작물 생산량 감소 예상은 식량 안보에 대한 구체적인 위협입니다.",
+      "impactSignals": [
+        {
+          "label": "infra",
+          "evidence": "The food security piece highlighted where concentration risks in key farming inputs or climate sensitive crops could be threatened by trade disruptions or climate variability."
+        }
+      ],
+      "dedupeKey": "공급망-비료-식량-안보-압박-엘니뇨-위험-차질",
+      "clusterKey": "식량/안보/비료",
+      "matchedTo": null,
+      "sourceName": "J",
+      "sourceUrl": "https://www.jpmorgan.com/insights/sustainability/climate/food-security-under-pressure",
+      "publishedAt": "2026-05-21T22:41:15+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_3",
+      "date": "2026-05-22",
+      "category": "기술",
+      "title": "일론 머스크, 스페이스X와 테슬라 합병할까? 추측 확산",
+      "summary": [
+        "스페이스X의 IPO 이후, 일부에서는 스페이스X와 테슬라의 합병 가능성을 제기하고 있습니다.",
+        "두 회사는 이미 텍사스 동부에 반도체 제조 공장인 테라팹을 공동으로 개발 중이며, 이는 최대 1,190억 달러의 비용이 소요될 수 있습니다.",
+        "Will Elon Musk eventually merge SpaceX with Tesla?"
+      ],
+      "whyImportant": "두 회사의 합병은 AI 생태계에서 일론 머스크의 영향력을 확대하고, 테슬라의 경쟁력 강화에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: 테슬라와 스페이스X가 공동으로 테라팹을 개발하며 최대 1,190억 달러의 비용이 소요될 수 있다는 점이 합병 가능성에 대한 추측을 뒷받침합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "Tesla and SpaceX, which also owns artificial intelligence company xAI, are already developing the semiconductor fabrication plant Terafab in East Texas. The project would manufacture chips for the two companies and filings show it can cost up to to $119 billion."
+        }
+      ],
+      "dedupeKey": "190억-머스크-스페이스x-일론-추측-테슬라-합병할까-확산",
+      "clusterKey": "상장/일론/인수합병",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/will-elon-musk-eventually-merge-spacex-with-tesla-speculation-builds.html",
+      "publishedAt": "2026-05-21T19:19:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_4",
+      "date": "2026-05-22",
+      "category": "기술",
+      "title": "Anthropic, 50억 달러 투자 후 AI 칩 계약을 위해 Microsoft와 협상 중",
+      "summary": [
+        "Microsoft가 Anthropic에 자체 AI 칩을 공급하기 위해 협상 중인 것으로 확인되었습니다.",
+        "Anthropic은 2029년 5월까지 SpaceX에 컴퓨팅 파워 비용으로 월 12억 5천만 달러를 지불할 예정입니다.",
+        "Anthropic은 Amazon Web Services의 Trainium 칩을 10년 동안 1,000억 달러 이상 규모로 사용할 것이라고 밝혔습니다."
+      ],
+      "whyImportant": "AI 칩 시장에서 Microsoft의 입지를 강화하고, Anthropic의 컴퓨팅 파워 확보 전략에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: Microsoft가 Anthropic에 AI 칩을 공급하는 협상과 Anthropic이 SpaceX에 월 12억 5천만 달러를 지불하는 계약은 컴퓨팅 파워 확보 경쟁의 중요성을 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "WATCH: Nvidia CEO Jensen Huang: With Anthropic, we are scaling very quickly, we have big plans for them Correction: In April, Anthropic said it would use Amazon Web Services’ custom Trainium chips in a 10-year arrangement worth more than $100 billion."
+        },
+        {
+          "label": "earnings",
+          "evidence": "Microsoft’s Maia 200 “offers over 30% improved tokens per dollar, compared to the latest silicon in our fleet,” CEO Satya Nadella said on the company’s earnings call in April."
+        }
+      ],
+      "dedupeKey": "000억-50억-anthropic-microsoft-계약-달러-투자-협상",
+      "clusterKey": "투자/anthropic/관세",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "publishedAt": "2026-05-21T18:02:33+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_5",
+      "date": "2026-05-22",
+      "category": "금융",
+      "title": "매출 증가에도 월마트 주가 폭락, 고유가 영향",
+      "summary": [
+        "월마트의 1분기 매출은 7.3% 증가했지만, 물류비 증가로 인해 내년 주당 순이익 전망치가 기대에 미치지 못해 주가가 7% 넘게 하락했습니다.",
+        "미국 서비스업 구매 관리자 지수(PMI)는 5월에 50.9로 하락하며 서비스업 경기 둔화가 중소, 중견기업으로 확산되는 추세입니다."
+      ],
+      "whyImportant": "유통 업체의 실적 부진과 서비스업 경기 둔화는 미국 경제 전반의 불확실성을 시사합니다.",
+      "importanceRationale": "근거: 월마트 주가가 7% 넘게 하락했고, 5월 미국 서비스업 PMI가 50.9로 하락하여 미국 경제의 약 80%를 차지하는 서비스업의 둔화가 나타났기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "물류비 증가분이 이익 증가분을 상쇄했다는 분석이 나오면서 내년 주당 순이익 전망치가 기대에 미치지 못하자 주가는 7% 넘게 하락했습니다."
+        }
+      ],
+      "dedupeKey": "고유-매출-영향-월마트-주가-중견기업-증가-폭락",
+      "clusterKey": "실적/월마트",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0134_202605220709118219",
+      "publishedAt": "2026-05-21T22:09:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_6",
+      "date": "2026-05-22",
+      "category": "에너지",
+      "title": "새울원전, 드론 테러 대응 훈련…5분 만에 격추",
+      "summary": [
+        "울산 새울원전에서 드론 테러 시도 상황을 가정한 방호 훈련이 실시되었으며, 불법 드론 탐지부터 조종자 검거까지 10분 만에 완료되었습니다.",
+        "원자력안전위원회는 원자력시설 주변 불법 드론 대응을 위해 범정부 전담팀을 운영하고 있으며, 국내 원전에 레이더와 카메라를 추가 도입할 예정입니다."
+      ],
+      "whyImportant": "원전 시설에 대한 드론 테러 위협이 증가함에 따라, 신속한 대응 체계 구축 및 관련 기술 도입이 중요해지고 있습니다.",
+      "importanceRationale": "근거: 원전 반경 18.5km는 비행금지구역으로 지정되어 있으며, 원안위는 2015년부터 드론 위협을 '설계기준위협'에 반영하여 불법 드론 대응 체계를 구축하도록 하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "이번 훈련은 드론을 이용한 테러 시도가 발생한 상황을 가정해 이뤄졌다"
+        }
+      ],
+      "dedupeKey": "5분-격추-대응-드론-만에-새울원전-테러-훈련",
+      "clusterKey": "새울원전/드론/테러",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356093",
+      "publishedAt": "2026-05-20T03:00:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_7",
+      "date": "2026-05-22",
+      "category": "국제",
+      "title": "국제 유가 하락, 이란 협상 진전 기대",
+      "summary": [
+        "국제 유가는 미국과 이란 간의 협상 진전 기대감으로 3일 연속 하락 마감했습니다.",
+        "브렌트유 선물은 2.32% 하락한 배럴당 102.58달러에, 서부텍사스산원유는 1.94% 떨어진 96.35달러에 마감했습니다."
+      ],
+      "whyImportant": "이란 핵 협상 결과에 따라 국제 에너지 시장의 변동성이 확대될 수 있습니다.",
+      "importanceRationale": "근거: 브렌트유 선물은 2.32% 하락했으며, 서부텍사스산원유는 1.94% 하락하여 국제 유가 하락을 보였습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "최근 트럼프 대통령은 걸프 지역 동맹국들의 요청에 따라, 임박했던 이란 공습을 전격 취소한 데 이어, 전날엔 협상 진전을 위해 이란 측 답변을 며칠 더 기다릴 용의가 있다고 말했다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "장중 큰 변동성에도 외교 해결 낙관론 무게 (뉴욕=연합뉴스) 김연숙 특파원 = 21일(현지시간) 국제유가가 미국과 이란 간의 협상 진전 기대감에 3일 연속 하락 마감했다."
+        }
+      ],
+      "dedupeKey": "58달러-국제-기대-유가-이란-진전-하락-협상",
+      "clusterKey": "관세/국제",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1357061",
+      "publishedAt": "2026-05-21T19:47:54+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-22_8",
+      "date": "2026-05-22",
+      "category": "국제",
+      "title": "외신, 삼성전자 노사 협상 결렬…글로벌 공급망 위기 가능성 제기",
+      "summary": [
+        "주요 외신들이 삼성전자 노사 협상 결렬 소식을 긴급 뉴스로 보도하며, 파업 장기화 시 세계 반도체 공급망에 위기를 초래할 수 있다고 지적했습니다.",
+        "로이터통신은 4만 8천 명의 노동자 이탈로 한국 경제와 글로벌 반도체 공급망에 부담을 줄 수 있다고 평가했습니다.",
+        "AFP통신은 파업으로 심각한 생산 차질과 손실이 발생할 가능성이 있으며, 한국 수출의 약 35%를 차지하는 반도체 산업에 타격을 줄 수 있다는 우려를 제기했습니다."
+      ],
+      "whyImportant": "삼성전자 파업은 글로벌 반도체 공급망에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 삼성전자 파업이 장기화될 경우, 한국 수출의 약 35%를 차지하는 반도체 산업에 타격을 줄 수 있다는 외신 보도가 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "#삼성전자 #로이터 #파업 #외신 #블룸버그 #afp 연합뉴스TV 기사문의 및 제보 : 카톡/라인 jebo23 최진경(highjean@yna.co.kr)"
+        },
+        {
+          "label": "policy",
+          "evidence": "먼저 로이터 통신은 삼성전자가 성과급 지급과 관련해 노사 협상 타결에 실패했다는 소식에 긴급 속보를 잇따라 내보냈습니다."
+        }
+      ],
+      "dedupeKey": "결렬-공급망-글로벌-노사-삼성전자-외신-위기-협상",
+      "clusterKey": "관세/통신/외신",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1356285",
+      "publishedAt": "2026-05-20T07:42:44+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

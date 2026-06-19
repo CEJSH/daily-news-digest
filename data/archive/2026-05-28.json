@@ -1,0 +1,176 @@
+{
+  "date": "2026-05-28",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-05-28T08:48:40.240178+09:00",
+  "items": [
+    {
+      "id": "2026-05-28_1",
+      "date": "2026-05-28",
+      "category": "국제",
+      "title": "중국, 미국 핵 질서 견제하며 북핵 문제에 소극적 태도",
+      "summary": [
+        "중국은 북한의 전술핵 운용 3종 세트 발사에 대해 사실상 침묵했습니다.",
+        "이란 핵 문제에 대해서도 국제 핵비확산 체제 안에서 해결해야 한다는 입장을 밝혔습니다.",
+        "미국 중심의 핵 질서 확대를 견제하면서도, 전쟁 확산 방지와 에너지 공급망 유지에 더 중점을 두고 있다는 분석입니다."
+      ],
+      "whyImportant": "중국의 이러한 행보는 국제 핵 질서에 대한 복잡한 역학 관계를 보여주며, 향후 관련국들의 정책 결정에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 중국이 북핵 문제에 소극적인 태도를 보이고 이란 핵 문제에 대한 협상 해법을 강조하는 것은 미국 중심의 핵 질서 견제와 에너지 공급망 유지라는 두 가지 목표를 동시에 추구하기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이란 핵 문제에서도 군사 압박보다 협상 해법을 강조하고 있습니다."
+        }
+      ],
+      "dedupeKey": "견제-문제-미국-북핵-소극적-중국-질서-태도",
+      "clusterKey": "미중/질서/견제/북핵",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1359243",
+      "publishedAt": "2026-05-27T11:51:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-28_2",
+      "date": "2026-05-28",
+      "category": "기술",
+      "title": "퀄컴, 중국 틱톡에 AI 데이터센터용 칩 공급",
+      "summary": [
+        "퀄컴이 중국 바이트댄스에 AI 데이터센터용 반도체를 공급합니다.",
+        "바이트댄스는 퀄컴의 AI 반도체 수백만 개를 구매하기로 했습니다.",
+        "이번 계약은 미국의 대중국 AI 칩 수출 규제 속에서 이루어졌습니다."
+      ],
+      "whyImportant": "이번 공급은 미국의 대중국 AI 칩 수출 규제 속에서 퀄컴이 중국 시장을 공략하는 중요한 사례가 될 수 있습니다.",
+      "importanceRationale": "근거: 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 44조6000억원으로 확대했으며, 퀄컴은 AI 반도체 수백만 개를 공급합니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "AI 신흥 강자로 떠오른 중국을 대표하는 빅테크인 바이트댄스는 올해 AI 인프라 투자 규모를 전년 대비 25% 늘린 2000억위안(약 44조6000억원)으로 확대했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "퀄컴, 中틱톡에 AI데이터센터용 칩 공급 美 수출 규제속 저성능 칩 공략 미국 반도체 설계사인 퀄컴이 중국 바이트댄스에 인공지능(AI) 데이터센터용 반도체를 공급한다."
+        }
+      ],
+      "dedupeKey": "공급-대중국-데이터센터용-미국-바이트댄스-중국-퀄컴-틱톡",
+      "clusterKey": "미중_정책/퀄컴",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026052725381",
+      "publishedAt": "2026-05-27T09:14:45+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-28_3",
+      "date": "2026-05-28",
+      "category": "국제",
+      "title": "크라우드스트라이크와 구글, 오픈 소스 소프트웨어 개발자 대상 해커의 봇넷 제거",
+      "summary": [
+        "크라우드스트라이크는 구글 및 섀도우서버와 협력하여 오픈 소스 소프트웨어 개발자로부터 악성 코드를 배포하고 비밀번호를 훔치는 데 사용된 봇넷을 제거했습니다.",
+        "이번 제거 작전은 '글래스웜' 봇넷 배후의 사이버 범죄자들의 활동을 방해하는 것을 목표로 했습니다.",
+        "해커들은 개발자들이 사용하는 마켓플레이스에 악성 확장 프로그램을 게시하는 등 여러 전략을 사용했습니다."
+      ],
+      "whyImportant": "오픈 소스 소프트웨어 공급망에 대한 공격은 소프트웨어 개발 생태계 전반에 걸쳐 광범위한 영향을 미칠 수 있기 때문에 중요합니다.",
+      "importanceRationale": "근거: 크라우드스트라이크에 따르면 해커들은 300개 이상의 GitHub 코드 저장소를 손상시켰으며, 이는 수천 개의 다운스트림 조직 및 사용자에게 영향을 미칠 수 있는 공급망 침해로 이어질 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "CrowdStrike, working with Google and Shadowserver, a nonprofit organization that scans and monitors the internet for cyberattacks, took down a botnet that cybercriminals used to push malware and steal passwords from open source software developers."
+        }
+      ],
+      "dedupeKey": "개발자-구글-대상-소스-소프트웨어-오픈-크라우드스트라이크-해커",
+      "clusterKey": "크라우드스트라이크/구글/오픈",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/05/27/crowdstrike-and-google-take-down-botnet-used-by-hackers-to-target-software-developers-in-supply-chain-attacks/",
+      "publishedAt": "2026-05-27T16:59:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-28_4",
+      "date": "2026-05-28",
+      "category": "기술",
+      "title": "엔비디아, 대만 투자 확대 발표 후 대만 반도체 주식 상승",
+      "summary": [
+        "엔비디아가 AI 성장에 발맞춰 대만에 새로운 캠퍼스를 건설하고 연간 지출을 10배 늘릴 계획이라고 밝혔습니다.",
+        "대만 가권지수는 수요일 1.7% 상승하여 사상 최고치를 기록했습니다.",
+        "엔비디아는 대만에 연간 1,500억 달러를 지출할 예정이며, 이는 4~5년 전의 100억~150억 달러에서 증가한 수치입니다."
+      ],
+      "whyImportant": "엔비디아의 대만 투자 확대는 글로벌 반도체 공급망과 AI 기술 경쟁에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 엔비디아가 대만에 연간 1,500억 달러를 지출할 계획이며, 이는 기존 지출에서 10배 증가한 수치로, 2030년까지 4,000명을 수용할 수 있는 새로운 사무실 단지를 건설할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "The company plans to use its new \"LogicFolding\" engineering in a smartphone chip this fall, and in its Ascend chips that power data centers \"by around 2030.\" Earlier this month, widely followed venture capitalist Chamath Palihapitiya also said Taiwan could become less important to global semiconductor development in 18 months due to advances by U.S.-based Neuralink."
+        },
+        {
+          "label": "policy",
+          "evidence": "\"Now we're spending $100 [billion], going to $150 billion in Taiwan each year,\" Huang said in Taipei, noting that's up from $10 billion to $15 billion annually just four or five years ago."
+        },
+        {
+          "label": "earnings",
+          "evidence": "A $150 billion annual outlay in Taiwan would be among Nvidia's largest spending plans to date, and exceed what the company made in revenue in a single quarter."
+        }
+      ],
+      "dedupeKey": "500억-대만-반도체-상승-엔비디아-주식-투자-확대",
+      "clusterKey": "투자/엔비디아",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/05/27/nvidia-taiwan-investment-150-billion-spending.html",
+      "publishedAt": "2026-05-27T09:41:14+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-05-28_5",
+      "date": "2026-05-28",
+      "category": "기술",
+      "title": "엔비디아 '루빈 CPX' 출시 불투명",
+      "summary": [
+        "엔비디아의 추론용 GPU '루빈 CPX'의 올해 하반기 출시가 불투명해졌습니다.",
+        "메모리 및 기판 발주 움직임이 없어 기존 계획 철회 가능성이 제기됩니다.",
+        "GDDR7 메모리 적용 관련 논의가 없는 상황입니다."
+      ],
+      "whyImportant": "엔비디아의 제품 전략 변화는 관련 메모리 및 기판 산업에 영향을 미칠 수 있기 때문입니다.",
+      "importanceRationale": "근거: 엔비디아가 루빈 CPX에 128GB 용량의 GDDR7 메모리를 탑재할 것이라고 밝혔으나, 현재 관련 논의 자체가 없는 상황입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "당초 올해 하반기 출시 계획을 밝혔으나, 관련 메모리와 기판을 주문하거나 개발하려는 움직임이 없는 것으로 확인됐다."
+        }
+      ],
+      "dedupeKey": "cpx-gddr7-gpu-루빈-불투명-불투명해졌-엔비디아-추론용",
+      "clusterKey": "엔비디아/루빈/cpx",
+      "matchedTo": null,
+      "sourceName": "디일렉",
+      "sourceUrl": "https://www.thelec.kr/news/articleView.html?idxno=57206",
+      "publishedAt": "2026-05-27T06:12:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

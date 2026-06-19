@@ -1,0 +1,254 @@
+{
+  "date": "2026-02-20",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-02-20T08:04:46.412127+09:00",
+  "items": [
+    {
+      "id": "2026-02-20_1",
+      "date": "2026-02-20",
+      "category": "산업",
+      "title": "마이크론, 아이다호 공장에서 내년 중반부터 HBM 생산 시작",
+      "summary": [
+        "마이크론은 아이다호주 보이시에 건설 중인 신규 공장에서 내년 중반부터 고대역폭메모리(HBM) 생산을 시작할 예정입니다.",
+        "500억 달러가 투입된 이 공장의 첫 번째 팹은 내년 중반 D램 생산을 시작하며, 전체 라인은 2028년 말 완전 가동될 예정입니다."
+      ],
+      "whyImportant": "이번 투자는 HBM 공급 부족 상황에서 마이크론의 생산 능력 확대를 의미합니다.",
+      "importanceRationale": "근거: 마이크론은 아이다호 공장에 500억 달러를 투자하여 내년 중반부터 HBM 생산을 시작할 예정이며, 이는 2000억 달러 규모의 미국 내 생산 거점 확보 프로젝트의 일부입니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "마이크론은 500억달러를 투입해 팹 두 곳을 건설 중이며, 첫 번째 팹은 내년 중반 D램 생산을 시작한다."
+        }
+      ],
+      "dedupeKey": "hbm-공장-내년-마이크론-생산-시작-아이다호-중반",
+      "clusterKey": "마이크론/아이다호/공장",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026021896291",
+      "publishedAt": "2026-02-18T08:28:50+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_2",
+      "date": "2026-02-20",
+      "category": "금융",
+      "title": "코스닥 부실 기업 신속 퇴출 관리단 가동",
+      "summary": [
+        "한국거래소는 코스닥 시장의 체질 개선을 위해 상장폐지 기준을 강화할 예정입니다.",
+        "개선 기간이 끝나기 전 조기 퇴출 방안과 통합 상장실질심사 시스템을 도입하여 한계기업을 빠르게 퇴출할 방침입니다.",
+        "이를 위해 상장폐지 집중관리단을 구성하여 이달부터 내년 6월까지 집중 관리 기간을 운영합니다."
+      ],
+      "whyImportant": "이번 조치는 코스닥 시장의 신뢰도를 높이고 투자자 보호를 강화하는 데 기여할 수 있습니다.",
+      "importanceRationale": "근거: 한국거래소는 이달부터 내년 6월까지 '상장폐지 집중관리단'을 운영하여 코스닥 시장의 부실 기업 퇴출을 가속화할 계획입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "앞으로 지배주주가 동일한 여러 기업에서 동시에 상장폐지 사유가 발생하면 통합·일괄 심사를 통해 더 신속하게 퇴출 여부가 가려진다."
+        }
+      ],
+      "dedupeKey": "가동-관리단-기업-부실-코스닥-퇴출-한계기업-한국거래소",
+      "clusterKey": "코스닥/부실/기업",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026021919781",
+      "publishedAt": "2026-02-19T08:28:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_3",
+      "date": "2026-02-20",
+      "category": "정책",
+      "title": "당정, 쿠팡 개인정보 유출 축소 공시 문제 제기",
+      "summary": [
+        "더불어민주당과 정부는 쿠팡이 미국 증권거래위원회에 개인정보 유출 규모를 축소 공시한 점을 지적하며 시정을 요구했습니다.",
+        "개인정보보호위원회는 과징금을, 공정거래위원회는 과태료 및 시정조치를 검토 중입니다.",
+        "쿠팡은 이달 중 보안 사고 관련 재발 방지 대책을 제출할 예정입니다."
+      ],
+      "whyImportant": "개인정보 유출 문제에 대한 정부의 대응과 기업의 책임 강화에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 쿠팡 코리아는 3천300만 건의 개인정보 유출을 인정했지만, 미국 본사는 3천300건만 유출됐다고 공시하여 정부가 시정을 요구하고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "아울러 이번 사태에 대해 개보위에서는 과징금, 공정위에는 과태료와 시정조치 등의 제재를 검토 중이다."
+        }
+      ],
+      "dedupeKey": "개인정보-당정-문제-유출-제기-증권거래위원회-축소-쿠팡",
+      "clusterKey": "당정/쿠팡/개인정보",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1311870",
+      "publishedAt": "2026-02-19T08:45:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_4",
+      "date": "2026-02-20",
+      "category": "기술",
+      "title": "OpenAI, 인도에 100MW AI 데이터 센터 용량 확보 및 1GW 목표",
+      "summary": [
+        "O AI는 인도의 Tata 그룹과 협력하여 100MW 규모의 AI 데이터 센터 용량을 확보하고, 1GW까지 확장할 계획입니다.",
+        "이번 협력은 O AI의 '인도를 위한 O AI' 이니셔티브의 일환이며, Tata 그룹의 H Vault 데이터 센터 사업의 첫 번째 고객이 됩니다.",
+        "Tata 그룹은 ChatGPT E ise를 전사적으로 도입하고, O AI의 도구를 통해 AI 기반 소프트웨어 개발을 표준화할 예정입니다."
+      ],
+      "whyImportant": "OpenAI의 인도 데이터 센터 투자는 데이터 주권 및 보안 요구 사항을 충족하며, 인도 내 AI 인프라 구축에 기여할 수 있기 때문입니다.",
+      "importanceRationale": "근거: OpenAI는 Tata 그룹과 협력하여 초기 100MW에서 시작해 장기적으로 1GW까지 확장할 계획이며, 이는 인도 내 AI 인프라 투자 규모를 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "OpenAI has partnered with India’s Tata Group to secure 100 megawatts of AI-ready data center capacity in the country, with plans to scale to 1 gigawatt."
+        }
+      ],
+      "dedupeKey": "100mw-1gw-openai-데이터-센터-용량-인도-확보",
+      "clusterKey": "openai/100mw/데이터",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/18/openai-taps-tata-for-100mw-ai-data-center-capacity-in-india-eyes-1gw/",
+      "publishedAt": "2026-02-19T05:34:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_5",
+      "date": "2026-02-20",
+      "category": "에너지",
+      "title": "소프트뱅크, 미국에 대규모 가스 발전소 건설 위해 330억 달러 투자",
+      "summary": [
+        "소프트뱅크의 자회사인 SB E gy가 오하이오-켄터키 국경에 9.2기가와트 규모의 천연가스 발전소를 건설할 예정입니다.",
+        "이 발전소는 약 750만 가구에 전력을 공급할 수 있으며, 건설 비용은 330억 달러에 달할 것으로 예상됩니다."
+      ],
+      "whyImportant": "미국 최대 규모의 발전소 건설은 에너지 시장과 데이터 센터 전력 공급에 장기적인 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 330억 달러 규모의 투자는 미국 내 최대 발전소 건설을 목표로 하며, 이는 에너지 산업 전반에 걸쳐 상당한 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "With a price tag of $33 billion, the project would be more expensive than recent natural gas-fired power plants, which have skyrocketed in cost, Bloomberg notes."
+        }
+      ],
+      "dedupeKey": "330억-가스-건설-달러-미국-발전소-소프트뱅크-투자",
+      "clusterKey": "투자/에너지/소프트뱅크",
+      "matchedTo": null,
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/02/19/softbank-to-spend-an-eye-popping-33b-to-build-huge-u-s-gas-power-plant/",
+      "publishedAt": "2026-02-19T16:27:58+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_6",
+      "date": "2026-02-20",
+      "category": "기술",
+      "title": "올트먼 오픈AI CEO, AI 기술 규제 및 국제조정기구 필요성 강조",
+      "summary": [
+        "샘 올트먼 오픈AI CEO는 AI 기술의 시급한 규제 필요성을 언급하며 국제조정기구 설립을 제안했습니다.",
+        "그는 AI 기술이 특정 기업이나 국가에 집중될 경우 위험을 초래할 수 있다고 경고했습니다.",
+        "인도에서 열린 AI 임팩트 정상회의에서 여러 전문가들은 AI로 인한 문제에 대한 강력한 조치를 촉구했습니다."
+      ],
+      "whyImportant": "AI 기술 규제 논의는 기술 발전 방향과 관련된 중요한 결정 사항입니다.",
+      "importanceRationale": "근거: 올트먼 CEO는 국제원자력기구와 유사한 AI 국제조정기구의 필요성을 언급하며 규제에 대한 논의를 촉구했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "그러면서 \"다른 강력한 기술과 마찬가지로 당연히 규제가 시급하게 필요하다\"고 덧붙였습니다."
+        }
+      ],
+      "dedupeKey": "ceo-국제조정기구-규제-기술-기업이나-오픈ai-올트먼-필요성",
+      "clusterKey": "정책/올트먼",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202602191839172902",
+      "publishedAt": "2026-02-19T09:39:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_7",
+      "date": "2026-02-20",
+      "category": "금융",
+      "title": "RFHIC 목표주가 상향 조정, 코스닥 내 실적 우량주로 평가",
+      "summary": [
+        "KB증권은 RFHIC의 목표주가를 5만원에서 7만5000원으로 상향 조정했습니다.",
+        "RFHIC는 레이시온 캐나다와 506억원 규모의 고출력 전력증폭기 공급 계약을 체결했습니다.",
+        "1분기 매출액과 영업이익은 전년 동기 대비 각각 93%, 193% 증가할 것으로 예상됩니다."
+      ],
+      "whyImportant": "RFHIC의 방산 부문 성장과 실적 개선은 향후 기업 가치 상승에 중요한 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: KB증권은 RFHIC의 2026년 방산 부문 매출 비중이 66%에 달할 것으로 전망하며, 1분기 매출액이 615억원으로 예상되어 실적 개선 기대감을 높였습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "KB증권은 1분기 RFHIC의 매출액은 615억원, 영업이익은 110억원으로 각각 전년 동기 대비 93%, 193% 급증할 것으로 예상했다."
+        }
+      ],
+      "dedupeKey": "506억원-5만원-7만5000원-rfhic-목표주-상향-조정-코스닥",
+      "clusterKey": "실적/rfhic",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026022026576",
+      "publishedAt": "2026-02-19T22:42:05+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-02-20_8",
+      "date": "2026-02-20",
+      "category": "정책",
+      "title": "공정위, 쿠팡 영업정지 어렵다고 밝혀",
+      "summary": [
+        "공정거래위원회는 쿠팡의 개인정보 유출과 관련해 영업정지 조치가 어렵다고 더불어민주당에 보고했습니다.",
+        "민주당은 쿠팡 측에 재발 방지 대책을 요구하고, 미국 정치권에 유출 규모에 대한 정보가 제대로 전달되도록 조치할 예정입니다."
+      ],
+      "whyImportant": "이번 결정은 향후 유사한 개인정보 유출 사고 발생 시 정부 제재의 기준을 설정하는 데 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 공정위는 전자상거래법 제11조 2항에 따라 개인정보 도용이 확인되지 않아 영업정지 가능성을 고려하지 않고 있다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "이시은 기자 see@hankyung.com 김남근 민주당 의원은 이날 을지로위원회 쿠팡 개인정보 유출 대책 간담회가 끝난 뒤 기자들을 만나 \"개인정보보호위원회는 과징금, 공정위는 과태료나 시정조치 제재를 진행 중\"이라며 \"영업정지에 대해선 전자상거래법상 개인정보 도용이 확인되지 않아 (정부 측에서) 가능성을 고려하지 않고 있다고 했다\"고 말했다."
+        }
+      ],
+      "dedupeKey": "개인정보-공정거래위원회-공정위-미국-밝혀-어렵다고-영업정지-쿠팡",
+      "clusterKey": "플랫폼규제/쿠팡",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202602191739i",
+      "publishedAt": "2026-02-19T08:45:23+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "date": "2026-03-11",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-03-11T07:58:20.898635+09:00",
+  "items": [
+    {
+      "id": "2026-03-11_1",
+      "date": "2026-03-11",
+      "category": "국제",
+      "title": "멕시코, 미국에 이어 캐나다와 무역 협상 예정",
+      "summary": [
+        "멕시코 정부가 미국에 이어 캐나다와 USMCA 공동 검토를 위한 협상을 5월 초부터 개시할 예정입니다.",
+        "멕시코는 USMCA 협정이 현재 형태로 유지되는 것을 지지하며, 기업 및 주 정부도 같은 입장을 강력히 희망하고 있습니다."
+      ],
+      "whyImportant": "USMCA 재검토는 북미 무역 관계의 미래 방향을 결정하는 중요한 계기가 될 수 있습니다.",
+      "importanceRationale": "근거: 멕시코는 5월 초부터 캐나다와 협정 검토 논의에 들어갈 예정이며, 30개 부문별 단체와 32개 주 정부를 대상으로 의견을 수렴한 결과 80% 가까이가 USMCA 협정 유지를 찬성했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "USMCA는 기존 북미자유무역협정(NAFTA)을 대체해 2018년 9월 30일 타결된 것으로, 일부 수정을 거쳐 2020년 7월 1일 발효됐다."
+        }
+      ],
+      "dedupeKey": "기업-멕시코-무역-미국-이어-정부-캐나다-협상",
+      "clusterKey": "관세/멕시코",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1321275",
+      "publishedAt": "2026-03-09T19:10:49+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_2",
+      "date": "2026-03-11",
+      "category": "정책",
+      "title": "넷플릭스·유튜브, AI 활용 가이드라인 선도",
+      "summary": [
+        "정보통신정책연구원은 영상 빅테크 기업들의 AI 활용 가이드라인을 분석했습니다.",
+        "넷플릭스는 제작 파트너에게 AI 활용 가이드라인을 배포하여 저작권 보호 등 5가지 핵심 원칙을 제시했습니다.",
+        "유튜브는 AI 생성 콘텐츠에 대한 AI 사용 여부 공지를 의무화하고 있습니다."
+      ],
+      "whyImportant": "AI 기술이 영상 제작 환경 전반으로 확산됨에 따라 콘텐츠 산업의 새로운 관리 방식으로 플랫폼 차원의 자율적 기준 마련이 중요해지고 있습니다.",
+      "importanceRationale": "근거: 넷플릭스는 작년 8월 제작 파트너에게 '생성형 AI 활용 가이드라인'을 배포했고, 유튜브는 작년 5월부터 AI 생성 콘텐츠에 AI 사용 여부 공지를 의무화했습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "넷플릭스는 지난해 8월 제작 파트너와 공급사를 대상으로 '생성형 AI 활용 가이드라인'을 배포하며 콘텐츠 제작 단계에서 AI 활용 기준을 제시했다."
+        }
+      ],
+      "dedupeKey": "5가지-가이드라인-넷플릭스-선도-여부-유튜브-정보통신정책연구원-활용",
+      "clusterKey": "정책/넷플릭스",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320890",
+      "publishedAt": "2026-03-09T02:18:07+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_3",
+      "date": "2026-03-11",
+      "category": "국제",
+      "title": "미 전문가들, 이란 전쟁의 연쇄 충격 경고",
+      "summary": [
+        "미국 전문가들은 이란 전쟁이 핵 확산, 한반도 안보, 세계 경제에 연쇄적인 충격을 줄 수 있다고 경고했습니다.",
+        "특히, LNG 수급 차질과 AI 데이터센터 공격으로 인한 반도체 수요 위축 가능성을 지적했습니다."
+      ],
+      "whyImportant": "이란 전쟁은 에너지 수급 및 반도체 산업에 영향을 미쳐 한국 경제에 중장기적인 불확실성을 야기할 수 있습니다.",
+      "importanceRationale": "근거: 전문가들은 LNG가 한국 전력 생산의 25%를 차지하며, AI 데이터센터의 HBM 수요 위축 가능성을 언급했습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이 지역의 인공지능 인프라 구축이 지연되거나 재검토될 경우, 삼성전자와 에스케이하이닉스의 고대역폭메모리(HBM) 수요에 직접적인 타격을 줄 수 있다"
+        }
+      ],
+      "dedupeKey": "데이터센터-미국-연쇄-연쇄적인-이란-전문가들-전쟁-충격",
+      "clusterKey": "전문가들/전쟁/연쇄",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1248512.html",
+      "publishedAt": "2026-03-10T05:47:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_4",
+      "date": "2026-03-11",
+      "category": "기술",
+      "title": "TSMC, 메모리 가격 급등 속 1·2월 매출 증가율 30%에 그쳐",
+      "summary": [
+        "TSMC의 올해 1월과 2월 매출이 30% 증가했지만, 이는 분석가 예상치인 33%에는 미치지 못하는 수치입니다.",
+        "메모리 가격 급등으로 스마트폰과 PC용 칩 수요 성장세가 부진해진 것이 원인으로 분석됩니다.",
+        "TSMC는 하반기 엔비디아, AMD, 구글 등의 최신 칩 판매를 기대하고 있습니다."
+      ],
+      "whyImportant": "TSMC의 매출 부진은 메모리 가격 변동이 IT 수요에 미치는 영향과 AI 칩 외 다른 반도체 시장의 변화를 보여줍니다.",
+      "importanceRationale": "근거: TSMC의 1~2월 매출 증가율이 30%로 분석가 예상치인 33%에 미치지 못했으며, 이는 메모리 가격 급등에 따른 스마트폰, PC 수요 약화 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "이는 AI칩 수요는 여전하지만, 메모리 가격 급등으로 고급 스마트폰과 PC 용 칩수요 성장세가 부진해진 것을 시사하는 것으로 풀이됐다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "10일(현지시간) 블룸버그는 TSMC의 올해 1월과 2월 매출이 30% 증가했다고 발표했다."
+        }
+      ],
+      "dedupeKey": "tsmc-가격-그쳐-급등-매출-메모리-예상치인-증가율",
+      "clusterKey": "실적/반도체/증가율",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202603112313i",
+      "publishedAt": "2026-03-10T15:31:11+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_5",
+      "date": "2026-03-11",
+      "category": "금융",
+      "title": "쿠팡 투자사, USTR 청원 철회…미국 301조 조사 전망",
+      "summary": [
+        "쿠팡의 미국 투자사들이 한국 정부의 쿠팡 대응에 대한 미 무역대표부(USTR) 청원을 철회했습니다.",
+        "이는 트럼프 행정부의 불공정 무역 관행 조사 방침과 중복될 가능성 때문입니다.",
+        "미국은 곧 한국에 대한 무역법 301조 조사를 시작할 것으로 예상됩니다."
+      ],
+      "whyImportant": "미국의 무역법 301조 조사는 한국에 대한 무역 제재로 이어질 수 있어 국내 경제에 영향을 줄 수 있습니다.",
+      "importanceRationale": "근거: 미국 무역법 301조는 외국 정부의 불공정 행위가 미국 무역을 제한할 경우 관세 부과 등 보복 조치를 취할 수 있도록 규정하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "실제로 지난 3일 USTR은 한국 정부가 디지털 서비스 관련 법률과 정책 면에서 미국 기업을 차별하지 않기로 약속했다고 밝혔습니다."
+        }
+      ],
+      "dedupeKey": "301조-ustr-무역대표부-미국-청원-쿠팡-투자사-한국",
+      "clusterKey": "한미_법집행/쿠팡/관세",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0104_202603102257012655",
+      "publishedAt": "2026-03-10T13:57:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_6",
+      "date": "2026-03-11",
+      "category": "정책",
+      "title": "생협 연합회, 주무 부처 중기부 이관 촉구",
+      "summary": [
+        "국내 5대 생협 연합회가 주무 부처를 공정거래위원회에서 중소벤처기업부로 변경하는 법 개정을 촉구하고 있습니다.",
+        "현재 생협법 개정안은 국회 정무위원회에 회부되었으나 소위 심사 일정이 잡히지 않고 있습니다.",
+        "생협 측은 주무부처 변경 시 자금 및 판로 지원 등 경영 개선이 가능할 것으로 기대하고 있습니다."
+      ],
+      "whyImportant": "생협 주무 부처 이관 문제는 향후 관련 정책 방향 및 생협의 경영 환경에 영향을 미칠 수 있는 중요한 사안입니다.",
+      "importanceRationale": "근거: 생협들은 매출 감소와 적자 확대로 어려움을 겪고 있으며, 주무부처 변경 시 기업 육성 정책을 활용하여 경영 개선을 기대하고 있어 중요도 3으로 판단합니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "국내 5대 생협(소비자생활협동조합) 연합회가 생협 주무부처를 공정거래위원회에서 중소벤처기업부로 변경하는 법 개정을 촉구하는 캠페인을 하고 있다."
+        }
+      ],
+      "dedupeKey": "공정거래위원회-부처-생협-연합회-이관-주무-중기부-중소벤처기업부",
+      "clusterKey": "투자/생협",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1248627.html",
+      "publishedAt": "2026-03-10T08:17:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-03-11_7",
+      "date": "2026-03-11",
+      "category": "에너지",
+      "title": "국제 유가 급등, 2분기 전기요금 동결 전망",
+      "summary": [
+        "중동 사태로 국제 유가와 가스 가격이 폭등했지만, 연료비 반영 시차로 2분기 전기요금은 동결될 가능성이 큽니다.",
+        "국제 연료 가격은 발전 연료비에 반영되기까지 시차가 있으며, 정부의 물가 관리 기조도 동결 가능성에 영향을 미칩니다.",
+        "사태가 장기화되면 하반기 전기요금 인상 압박이 커지고 한전 수익성 악화가 우려됩니다."
+      ],
+      "whyImportant": "에너지 가격 변동은 한전의 재정 건전성과 장기적인 전기요금 정책에 영향을 미칠 수 있는 중요한 요인입니다.",
+      "importanceRationale": "근거: 국제 유가가 2022년 7월 이후 처음으로 배럴당 100달러를 돌파했고, LNG 가격도 50%가량 치솟아 국내 전력 생산의 약 26.8%를 차지하는 LNG 발전 비용 상승으로 이어질 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "중동 사태에 국제유가·가스값 폭등에도 연료비 반영 3∼5개월 시차 장기화 땐 전기요금 인상 압력 확대…한전 수익성 악화 우려 (서울=연합뉴스) 신창용 기자 = 미국·이란 전쟁의 여파로 글로벌 에너지 가격이 요동치고 있지만 올해 2분기 전기요금은 동결될 가능성이 크다는 관측이 나온다."
+        },
+        {
+          "label": "earnings",
+          "evidence": "메리츠증권은 유가가 배럴당 1달러 오를 때마다 한전의 연간 영업이익이 약 5천억원 감소할 것으로 추정했다."
+        }
+      ],
+      "dedupeKey": "국제-급등-동결-반영되기-유가-장기화되면-전기요금-정부",
+      "clusterKey": "국제/유가/2분기",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1320869",
+      "publishedAt": "2026-03-09T02:02:25+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

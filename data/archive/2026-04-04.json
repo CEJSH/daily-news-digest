@@ -1,0 +1,208 @@
+{
+  "date": "2026-04-04",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-04-04T08:05:44.077769+09:00",
+  "items": [
+    {
+      "id": "2026-04-04_1",
+      "date": "2026-04-04",
+      "category": "산업",
+      "title": "호주, LNG 수출 통제 추진으로 에너지 공급망 '각자도생' 국면 전환",
+      "summary": [
+        "호주가 국내 가스 부족 문제로 LNG 수출 제한 조치 절차에 돌입했습니다.",
+        "수출 제한 최종 발동 여부는 다음 달 결정될 예정입니다.",
+        "정부는 대체 물량 확보를 통해 단기 수급에는 큰 영향이 없을 것으로 보고 있습니다."
+      ],
+      "whyImportant": "에너지 공급망의 자국 우선주의 심화는 장기적으로 에너지 안보에 불확실성을 높일 수 있습니다.",
+      "importanceRationale": "근거: 호주가 LNG 수출 제한 조치를 추진하는 것은 한국의 LNG 수입액의 32.8%를 호주에 의존하고 있는 상황에서 에너지 공급망의 각자도생 심화 가능성을 보여줍니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "세계 2위 LNG 수출국인 카타르가 '불가항력'을 선언한 데 이어 한국이 LNG를 가장 많이 수입하는 나라인 호주가 내수 가스 부족 문제로 LNG 수출 제한 조치를 추진하면서다."
+        },
+        {
+          "label": "market-demand",
+          "evidence": "한국은 지난해 기준 전체 LNG 수입액의 32.8%를 호주에 의존하고 있기도 하지만 호주에 석유제품을 가장 많이 수출하고 있기도 하다."
+        }
+      ],
+      "dedupeKey": "lng-각자도생-공급망-국면-수출-에너지-통제-호주",
+      "clusterKey": "에너지/호주",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202604024447i",
+      "publishedAt": "2026-04-02T05:40:18+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-04_2",
+      "date": "2026-04-04",
+      "category": "기술",
+      "title": "이란, 아마존 클라우드 시설 공격 주장 및 중동 긴장 고조",
+      "summary": [
+        "이란 혁명수비대는 바레인 소재 아마존 클라우드 컴퓨팅 시설을 공격했다고 주장하며 미국 기업을 겨냥한 첫 조치라고 밝혔습니다.",
+        "미국과 이스라엘은 이란의 민간 기반 시설을 공습했으며, 이란은 이에 대한 보복을 경고하며 중동 전역의 긴장이 고조되고 있습니다."
+      ],
+      "whyImportant": "이번 공격은 미국과 이란 간의 긴장이 고조되는 가운데, 민간 기반 시설을 표적으로 삼는 행위가 사이버 공격으로 확대될 가능성을 보여줍니다.",
+      "importanceRationale": "근거: 이란 혁명수비대가 아마존 클라우드 시설을 공격했다고 밝히며 미국 기업을 표적으로 삼겠다고 선언하여 중동 전역의 긴장이 고조되고 있기 때문입니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "2일 이란 혁명수비대는 보복 차원으로 바레인에 있는 아마존 클라우드 컴퓨팅 시설을 공격했다고 밝히며 “미국과 이스라엘의 간첩 기업들을 겨냥한 첫번째 조치”라고 했다."
+        }
+      ],
+      "dedupeKey": "고조-공격-긴장-시설-아마존-이란-중동-클라우드",
+      "clusterKey": "이스라엘이란/아마존/시설/공격",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/international/arabafrica/1252598.html",
+      "publishedAt": "2026-04-03T11:07:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-04_3",
+      "date": "2026-04-04",
+      "category": "정책",
+      "title": "금융위, 강원도에서 국민성장펀드·지방우대금융 간담회 개최",
+      "summary": [
+        "금융위원회는 강원도 춘천에서 국민성장펀드 및 지방우대금융 지역 간담회를 개최했습니다.",
+        "지방 첨단 산업 생태계 조성 및 투자 활성화 방안을 논의했습니다."
+      ],
+      "whyImportant": "이번 간담회는 지방의 첨단 산업 생태계 조성 및 투자 활성화에 기여할 수 있습니다.",
+      "importanceRationale": "근거: 금융위는 강원도 에너지인프라 및 인공지능(AI) 데이터센터 등 첨단전략산업을 지원하겠다고 밝혔습니다.",
+      "impactSignals": [
+        {
+          "label": "capex",
+          "evidence": "(서울=연합뉴스) ▲ 금융위원회는 3일 강원도 춘천에서 '국민성장펀드·지방우대금융 지역간담회'를 열고 지방 첨단 산업 생태계 조성 및 투자 활성화 방안을 논의했다."
+        }
+      ],
+      "dedupeKey": "간담회-강원-국민성장펀드-금융위-금융위원회-지방우대금융-지역-춘천",
+      "clusterKey": "투자/금융/강원",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1334182",
+      "publishedAt": "2026-04-03T01:34:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-04_4",
+      "date": "2026-04-04",
+      "category": "금융",
+      "title": "디지털 자산 시장 재편 전망",
+      "summary": [
+        "디지털자산 기본법 입법을 기점으로 국내 디지털자산 시장이 제도권 편입을 넘어 산업 전체가 재편될 것으로 예상됩니다.",
+        "글로벌 스테이블코인 선도 기업과 STO, RWA 프로젝트 등을 통해 새로운 질서의 주도권 향방을 가늠할 수 있을 것입니다."
+      ],
+      "whyImportant": "디지털 자산 시장의 제도화 및 재편은 금융, 산업, 기술 전반에 걸쳐 구조적 변화를 가져올 수 있기 때문입니다.",
+      "importanceRationale": "근거: 디지털자산기본법 입법을 통해 국내 디지털자산 시장이 제도권으로 편입되고 산업 전체가 재편될 수 있다는 내용이 언급되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "policy",
+          "evidence": "[양식 다운로드] 글로벌 실물자산(RWA) 토큰화 1위 기업인 플룸네트워크(Plume Network·플룸)가 ‘RWA 토큰화’를 자본시장의 핵심 의제로 꼽으며 규제 개혁을 강조하고 나섰다."
+        }
+      ],
+      "dedupeKey": "기업-디지털-디지털자산-스테이블코인-시장-자산-재편-프로젝트",
+      "clusterKey": "디지털/자산/재편",
+      "matchedTo": null,
+      "sourceName": "이데일리",
+      "sourceUrl": "https://vaf.edaily.co.kr/2026/",
+      "publishedAt": "2026-04-03T09:15:19+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-04_5",
+      "date": "2026-04-04",
+      "category": "기술",
+      "title": "아마존, 이란 전쟁으로 인한 에너지 가격 상승에 따라 판매자에게 3.5% 연료 및 물류 할증료 부과",
+      "summary": [
+        "아마존은 이란 전쟁으로 유가가 상승함에 따라 F t by A (FBA) 서비스를 이용하는 제3자 판매자에게 3.5%의 연료 및 물류 관련 할증료를 부과할 예정입니다.",
+        "이번 할증료는 미국과 캐나다의 판매자에게 4월 17일부터 적용됩니다.",
+        "유가 급등에 따라 USPS, UPS, FedEx 등 주요 운송 업체들도 연료 할증료를 인상했습니다."
+      ],
+      "whyImportant": "이번 할증료 부과는 아마존 마켓플레이스 판매자들의 비용 증가로 이어져, 장기적으로 소비자 가격에 영향을 미칠 수 있습니다.",
+      "importanceRationale": "근거: 아마존은 약 2백만 명의 판매자를 보유하고 있으며, 4월 17일부터 미국과 캐나다 판매자에게 3.5%의 할증료를 부과할 예정입니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "Amazon is adding a 3.5% “fuel and logistics-related surcharge” to fees it collects from third-party sellers who use its fulfillment services, as the war in Iran stretches into its fifth week, driving up oil prices."
+        }
+      ],
+      "dedupeKey": "가격-따라-상승-아마존-에너지-이란-인한-전쟁",
+      "clusterKey": "아마존/전쟁/인한",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/04/02/amazon-add-3point5percent-fuel-and-logistics-surcharge-for-sellers-amid-iran-war.html",
+      "publishedAt": "2026-04-02T17:06:49+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-04-04_6",
+      "date": "2026-04-04",
+      "category": "에너지",
+      "title": "호주 LNG 수급 불안정, 재생에너지 전환 가속화 필요",
+      "summary": [
+        "중동 LNG 공급 차질로 수입선을 다변화하려는 움직임이 있지만, 호주 역시 수급 불안정에 직면했습니다.",
+        "호주 정부는 동부 지역 내수 가스 부족 우려에 수출 제한 조치 절차를 개시했습니다.",
+        "전문가들은 재생에너지 전환을 통해 에너지 안보를 강화해야 한다고 강조합니다."
+      ],
+      "whyImportant": "에너지 공급망 불안정성이 심화되는 상황에서 재생에너지 전환의 중요성이 더욱 부각됩니다.",
+      "importanceRationale": "근거: 호주가 한국 LNG 수입량의 31.4%를 차지하는 최대 수입국인 상황에서 수출 제한 조치 가능성이 제기되어 국내 수급에 영향을 줄 수 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "조시 런시먼 에너지경제재무분석연구소(IEEFA) 호주 가스 수석애널리스트는 한겨레에 “이번 차질은 중동발 엘엔지 공급문제를 더욱 악화시키면서 엘엔지 가격 급등을 부추긴다”며 “이번 호주 사태는 아시아 엘엔지 구매국들이 안고 있는 구조적인 위험을 다시 보여준다”고 말했다."
+        },
+        {
+          "label": "policy",
+          "evidence": "오동재 기후솔루션 가스팀 연구원은 “재생에너지는 빠르게 확대될수록 화석연료의 공급망 리스크를 헷징(위험 상쇄)할 수 있다”며 “재생에너지의 빠른 인허가 및 계통접속 우선권 보장, 변동성 보완을 위한 에너지저장장치(ESS) 설치 등을 병행해야 한다”고 말했다."
+        },
+        {
+          "label": "capex",
+          "evidence": "조시 런시먼 수석애널리스트는 “재생에너지를 뒷받침하기 위해 가스는 필요하지만, 실제 필요한 가스의 양은 줄일 여지가 있다”며 “재생에너지에 과감하게 투자하면 에너지 안보를 강화하고 전기요금 부담을 낮추는 데도 도움이 될 수 있다”고 했다."
+        },
+        {
+          "label": "security",
+          "evidence": "2일 한겨레 취재를 종합하면, 정부와 업계는 세계 에너지 수송의 핵심 길목인 호르무즈해협 봉쇄에 대응하기 위해 수입선 다변화를 꾀하고 있다."
+        }
+      ],
+      "dedupeKey": "lng-가속화-불안정-수급-재생에너지-전환-필요-호주",
+      "clusterKey": "에너지/호주",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1252403.html",
+      "publishedAt": "2026-04-02T10:04:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

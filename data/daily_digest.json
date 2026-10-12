@@ -1,95 +1,34 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-12",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-10-10T10:54:46.080300+09:00",
+  "lastUpdatedAt": "2026-10-12T10:34:38.733752+09:00",
   "items": [
     {
-      "id": "2026-10-10_1",
-      "date": "2026-10-10",
-      "category": "국제",
-      "title": "중국, EU와 하이브리드차 무역 합의 및 희토류 수출 허가 편의 제공",
+      "id": "2026-10-12_1",
+      "date": "2026-10-12",
+      "category": "정책",
+      "title": "가이드라인 첫 마련…'문어발 소속' 정당화 악용 소지도",
       "summary": [
-        "중국과 EU가 베이징 협상에서 하이브리드 자동차 무역 관련 양해에 도달했습니다.",
-        "중국은 EU 대상 희토류 및 영구자석 수출 허가 심사에 편의를 제공하기로 했습니다.",
-        "양측은 일부 상품의 관세 인하 가능성을 지속 검토하고 내년 추가 회의를 개최할 예정입니다."
+        "한국연구재단이 논문 소속 표기 남용을 방지하기 위한 가이드라인 개정안을 마련했습니다.",
+        "실제 연구 미수행 및 지표 개선 목적의 과도한 소속 기재를 삼가라는 권고가 포함되었습니다.",
+        "구속력이 없고 공식 임용 시 병기가 가능해 꼼수를 정당화할 우려가 제기됩니다."
       ],
-      "whyImportant": "글로벌 핵심 원자재인 희토류 공급망의 안정성을 확보하고 역외 자동차 무역 갈등을 완화하는 계기가 될 수 있습니다.",
-      "importanceRationale": "근거: 중국과 EU 간 하이브리드차 무역 합의 및 희토류 수출 허가 절차 편의 제공 등 글로벌 공급망 관련 공식 합의가 발표되었습니다.",
+      "whyImportant": "대학 평가 지표를 부풀리기 위한 학술 소속 표기 관행에 정책적 제동을 걸었으나, 구속력 부족으로 실질적 자정 효과에 대한 한계가 지적됩니다.",
+      "importanceRationale": "근거: 한국연구재단이 올해 안으로 각 학술지와 학교에 가이드라인을 배포한다는 명확한 시점과 대상을 제시하고 있습니다.",
       "impactSignals": [
         {
-          "label": "market-demand",
-          "evidence": "양측은 전기차 반(反)보조금 조사와 관련한 가격약속 및 재심사 절차도 계속 진행할 것이라고 밝혔다."
+          "label": "policy",
+          "evidence": "12일 연합뉴스가 입수한 한국연구재단의 '올바른 저자 표시에 관한 권고사항 개정안'에는 복수 저자 표기 시 주의사항 항목이 추가됐다."
         }
       ],
-      "dedupeKey": "무역-수출-제공-중국-편의-하이브리드차-허가-희토류",
-      "clusterKey": "관세/하이브리드차",
+      "dedupeKey": "가이드라인-마련-문어발-소속-소지-악용-정당화-한국연구재단",
+      "clusterKey": "정책/마련",
       "matchedTo": null,
       "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1422497",
-      "publishedAt": "2026-10-09T12:16:10+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-10_2",
-      "date": "2026-10-10",
-      "category": "기술",
-      "title": "삼성전자 3분기 영업이익 107조 4천억 원 달성 및 코스닥 상장폐지 절차 유예",
-      "summary": [
-        "삼성전자의 3분기 영업이익이 107조 4000억 원을 기록했습니다.",
-        "분기 영업이익이 100조 원을 넘어선 것은 국내 기업 중 처음입니다.",
-        "한국거래소는 시가총액 미달 코스닥 기업의 상장폐지 절차를 유예했습니다."
-      ],
-      "whyImportant": "삼성전자의 사상 최대 분기 실적 달성과 거래소의 상장폐지 절차 유예 결정은 국내 증시 및 반도체 소부장 기업들의 투자 심리에 영향을 미칩니다.",
-      "importanceRationale": "근거: 삼성전자가 3분기 영업이익 107조 4000억 원을 기록하고, 거래소가 7일 시가총액 미달 상장사에 대한 상장폐지 절차 유예를 발표했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "삼성전자의 3분기 연결 기준 영업이익은 107조 4000억 원으로 전년 동기 대비 782.5% 늘어 시장 전망치(106조 원)를 소폭 웃돌았다."
-        }
-      ],
-      "dedupeKey": "107조-4천억-달성-삼성전자-상장폐지-영업이익-절차-코스닥",
-      "clusterKey": "실적/삼성전자",
-      "matchedTo": null,
-      "sourceName": "서울경제",
-      "sourceUrl": "https://www.sedaily.com/market",
-      "publishedAt": "2026-10-08T04:48:49+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-10_3",
-      "date": "2026-10-10",
-      "category": "금융",
-      "title": "크레이머, 델타 항공의 실적 미스가 전부는 아니라고 진단",
-      "summary": [
-        "델타 항공은 항공유 비용 상승으로 주당순이익 1.72달러를 기록해 전망치를 하회했습니다.",
-        "높은 제트유 가격에도 불구하고 프리미엄 좌석 매출이 18% 증가하며 실적 하락을 방어했습니다."
-      ],
-      "whyImportant": "유가 상승 악재 속에서도 프리미엄 수요와 제휴 매출 확대를 통해 수익구조 내구성을 증명한 사례입니다.",
-      "importanceRationale": "근거: 항공유 비용이 60% 급증했으나 프리미엄 좌석 매출이 18% 증가하며 비용 부담을 상쇄했습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "The carrier reported adjusted earnings of $1.72 per share, below the $1.75 expected by analysts, and lowered its full-year profit guidance as jet fuel costs surged 60% from a year earlier due to the Iran war."
-        }
-      ],
-      "dedupeKey": "72달러-델타-미스-실적-아니라고-전부-크레이머-항공",
-      "clusterKey": "실적/크레이머",
-      "matchedTo": null,
-      "sourceName": "CNBC",
-      "sourceUrl": "https://www.cnbc.com/2026/10/09/jim-cramer-delta-earnings-fuel-costs.html",
-      "publishedAt": "2026-10-09T22:39:52+00:00",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1422977",
+      "publishedAt": "2026-10-11T23:00:02+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -98,128 +37,126 @@
       "isBriefing": false
     },
     {
-      "id": "2026-10-10_4",
-      "date": "2026-10-10",
+      "id": "2026-10-12_2",
+      "date": "2026-10-12",
       "category": "기술",
-      "title": "금융위원회, AI 해킹 대응 위해 침해 보고 시간 단축 검토",
+      "title": "AI 해킹 피해 확산, 개인정보 100만 건 이상 유출",
       "summary": [
-        "금융위원회가 AI 해킹 속도에 대응해 전자금융감독규정상 24시간 내 보고 시한 단축을 검토합니다.",
-        "보안 취약점 점검 주기를 연 1회에서 연 2회 이상으로 늘리는 방안도 추진됩니다.",
-        "외부 업무시스템까지 점검 대상을 확대해 신속한 정보 공유와 추가 피해 차단을 도모합니다."
+        "AI 활용 해킹으로 금융권과 공기업 등에서 100만 건 이상의 개인정보가 노출되었습니다.",
+        "주요 은행과 한국전력 등 다양한 기관이 공격을 받아 피해가 확산하고 있습니다.",
+        "정부는 인터넷침해대응센터를 비상체제로 전환하고 보안 점검을 강화했습니다."
       ],
-      "whyImportant": "금융권 전반의 해킹 사고 보고 시한 단축과 보안 점검 주기 강화는 금융회사들의 보안 대응 체계 및 규제 준수 부담에 직접적인 변화를 가져옵니다.",
-      "importanceRationale": "근거: 금융위원회가 금융회사 전체를 대상으로 해킹 보고 시한을 24시간 이내로 단축하고 취약점 점검을 연 2회 이상으로 늘리는 규정 개정을 검토하고 있습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "금융위원회는 해킹 사고 발생 시 금융사가 금융위에 24시간 안에 보고하도록 한 전자금융감독규정을 손질하는 방안을 검토하고 있다."
-        }
-      ],
-      "dedupeKey": "1회-24시간-금융위원회-단축-대응-시간-침해-해킹",
-      "clusterKey": "금융/해킹",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202610081683i",
-      "publishedAt": "2026-10-08T08:12:48+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-10_5",
-      "date": "2026-10-10",
-      "category": "에너지",
-      "title": "원전 공론화위, 추가 건설 최종 결론이나 합의안 내지 않을 수 있다고 밝혀",
-      "summary": [
-        "원전 공론화위원회가 신규 원전 건설에 대한 단일 합의안을 내지 않고 공통 의견과 쟁점을 정리해 제시하기로 했습니다.",
-        "시민참여단 300명을 구성해 2박 3일 숙의 과정을 거친 뒤 다양한 판단 근거와 조건을 도출할 계획입니다."
-      ],
-      "whyImportant": "신규 원전 건설에 대한 단순 찬반 결론 대신 다양한 의견과 조건부 수용 영역을 종합 도출하여 향후 전력수급기본계획 수립에 영향을 줄 수 있습니다.",
-      "importanceRationale": "근거: 시민참여단 300명이 참여하는 숙의 과정을 통해 원전 추가 건설 및 전력수급기본계획 관련 논의를 진행합니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "1차 회의에선 `전력수급기본계획을 위한 원전 공론화위원회 운영규정(안)’, `시민참여형 조사용역 계획(안)’을 심의했고, `공론화 추진방향(안)’을 토론했다."
-        },
-        {
-          "label": "market-demand",
-          "evidence": "특정 결론이나 합의 도달을 전제하지 않고, 공통으로 수용할 수 있는 영역과 조건부로 수용할 수 있는 영역, 숙의 뒤 남는 쟁점 등을 모두 도출하기로 했다."
-        },
-        {
-          "label": "capex",
-          "evidence": "7일 활동을 개시한 원전 공론화위원회가 원전 추가 건설에 대한 결론이나 합의안을 내지 않을 수 있다고 밝혔다."
-        }
-      ],
-      "dedupeKey": "건설-결론이나-공론화위-내지-않을-원전-최종-합의안",
-      "clusterKey": "공론화위/건설/최종",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/environment/1281462.html",
-      "publishedAt": "2026-10-08T02:51:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-10_6",
-      "date": "2026-10-10",
-      "category": "에너지",
-      "title": "배터리 저장 장치, 데이터 센터용 가스 터빈보다 가격 경쟁력 우위 확보",
-      "summary": [
-        "우드맥킨지 조사에 따르면 4시간 용량의 배터리 저장 비용이 모든 조사 대상 시장에서 개방주기 가스 터빈보다 낮아졌습니다.",
-        "인공지능 데이터 센터의 수요 폭증으로 가스 터빈 가격과 대기 시간이 급증하면서 배터리가 경제적 대안으로 떠올랐습니다.",
-        "중동 및 아프리카 지역에서는 2035년까지 배터리가 가스 터빈 대비 33% 더 저렴해져 가스 발전 수요를 대체할 전망입니다."
-      ],
-      "whyImportant": "전력 인프라 구축 과정에서 배터리 저장이 가스 터빈보다 가격 경쟁력을 확보함에 따라 데이터 센터와 발전 인프라의 투자가 배터리로 급격히 이동할 수 있습니다.",
-      "importanceRationale": "근거: 43개 시장 전역에서 4시간 배터리가 가스 터빈보다 저렴해졌으며 중동/아프리카에서는 2035년까지 33% 더 저렴해진다는 구체적 수치가 제시되었습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "There, 168 gigawatts is largely protected from those near-term price shocks thanks to safe-harbor provisions in the One Big Beautiful Bill, which kept tax credits for projects that have begun construction or are completed before the end of 2027."
-        }
-      ],
-      "dedupeKey": "가격-가스-데이터-배터리-센터용-장치-저장-터빈보다",
-      "clusterKey": "법집행/저장",
-      "matchedTo": null,
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/09/batteries-are-now-cheaper-than-natural-gas-turbines-used-at-many-data-centers/",
-      "publishedAt": "2026-10-09T18:57:58+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 4,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-10_7",
-      "date": "2026-10-10",
-      "category": "기술",
-      "title": "우크라이나, '러시아의 구글' 얀덱스 데이터센터 연일 공격",
-      "summary": [
-        "우크라이나가 러시아 테크 기업 얀덱스의 데이터센터를 이틀째 공격하여 가동이 중단되었습니다.",
-        "해당 시설에는 AI 모델 개발용 슈퍼컴퓨터가 설치되어 있어 복구 여부가 불투명합니다."
-      ],
-      "whyImportant": "러시아 주요 IT 기업의 AI 개발 핵심 인프라가 직접적인 타격을 입어 테크 산업 및 주가에 차질이 발생했습니다.",
-      "importanceRationale": "근거: 우크라이나의 공격으로 얀덱스 슈퍼컴퓨터 2대가 있는 데이터센터 가동이 중단되고 주가가 3.75% 급락했습니다.",
+      "whyImportant": "AI를 활용한 보안 위협이 금융, 공기업, 민간 전반으로 확산함에 따라 국가적 차원의 보안 대응체계 재정비가 시급해졌습니다.",
+      "importanceRationale": "근거: 지난달 말부터 금융권 7곳 및 한국전력 등에서 최소 100만 건 이상의 개인정보 유출 피해가 발생했습니다.",
       "impactSignals": [
         {
           "label": "security",
-          "evidence": "러시아 칼루가 지역에서 정보기술(IT) 기업 얀덱스의 데이터센터가 우크라이나의 공격을 받아 가동을 멈췄다."
+          "evidence": "지난달 말부터 시작된 거로 보이는 해킹 공격은 금융권에서 시작해 곳곳으로 확산하고 있습니다."
         }
       ],
-      "dedupeKey": "공격-구글-기업-데이터센터-러시아-얀덱스-연일-우크라이나",
-      "clusterKey": "우크라이나/구글/얀덱스",
+      "dedupeKey": "개인정보-공기업-유출-이상-인터넷침해대응센터-피해-해킹-확산",
+      "clusterKey": "해킹/피해/확산",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1422495",
-      "publishedAt": "2026-10-09T11:38:08+00:00",
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0102_202610111408289155",
+      "publishedAt": "2026-10-11T05:08:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-12_3",
+      "date": "2026-10-12",
+      "category": "기술",
+      "title": "AI 활용 해킹 공격으로 개인정보 100만 건 유출 피해 발생",
+      "summary": [
+        "AI를 활용한 해킹 공격으로 금융권과 공기업 등에서 100만 건 이상의 개인정보가 유출되었습니다.",
+        "해커들은 보안이 취약한 외부 협력업체 및 주변 시스템을 집중 공격하고 있습니다.",
+        "정부는 인터넷침해대응센터를 비상체제로 운영하며 긴급 보안 점검에 나섰습니다."
+      ],
+      "whyImportant": "주요 핵심망뿐만 아니라 주변 시스템까지 AI 기반 해킹 공격에 노출됨에 따라 국가적 보안 체계의 전면적인 재점검이 필요합니다.",
+      "importanceRationale": "근거: 금융권 및 공기업 등 다양한 기관에서 100만 건 이상의 개인정보 유출 피해가 발생하고 정부가 비상 대응에 나섰습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "최신뉴스 'AI 해킹 공격' 피해, 열흘 남짓 간 1백만 건 추산"
+        }
+      ],
+      "dedupeKey": "개인정보-공격-발생-유출-인터넷침해대응센터-피해-해킹-활용",
+      "clusterKey": "활용/해킹/공격",
+      "matchedTo": null,
+      "sourceName": "YTN",
+      "sourceUrl": "https://www.ytn.co.kr/_ln/0102_202610111612155091",
+      "publishedAt": "2026-10-11T07:12:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-12_4",
+      "date": "2026-10-12",
+      "category": "기술",
+      "title": "TSMC, AI 수요 호조로 2028년 설비투자 130조 원 확대 전망",
+      "summary": [
+        "TSMC가 AI 반도체 수요에 힘입어 3분기 매출 460억 달러로 분기 최대 실적을 달성할 전망입니다.",
+        "2나노 공정 생산능력 확대 여파로 매출총이익률은 소폭 하락할 것으로 분석됩니다.",
+        "설비투자는 내년 850억 달러를 거쳐 2028년 980억 달러까지 대폭 확대될 것으로 예상됩니다."
+      ],
+      "whyImportant": "세계 최대 파운드리 기업의 대규모 설비투자 확대 계획은 글로벌 AI 반도체 공급망 및 설비 시장에 지속적인 영향을 미칩니다.",
+      "importanceRationale": "근거: TSMC의 3분기 매출 460억 달러 전망 및 2028년 980억 달러 규모의 설비투자 수치를 명시하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "대만 캐세이유나이티드은행은 시장 전망을 인용해 TSMC의 3분기 매출을 460억달러(약 62조원)로 내다봤다."
+        },
+        {
+          "label": "capex",
+          "evidence": "이에 따라 TSMC의 설비투자도 내년 850억달러, 2028년 980억달러로 확대된다는 관측이 나온다."
+        }
+      ],
+      "dedupeKey": "130조-460억-850억-tsmc-설비투자-수요-호조-확대",
+      "clusterKey": "실적/반도체/호조",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/202610125447g",
+      "publishedAt": "2026-10-12T01:16:12+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-12_5",
+      "date": "2026-10-12",
+      "category": "금융",
+      "title": "원익IPS, 2028년까지 실적 성장 기대감에 목표주가 상향",
+      "summary": [
+        "메리츠증권은 원익IPS의 목표주가를 16만9000원으로 상향 조정했습니다.",
+        "삼성전자와 SK하이닉스의 신규 팹 확대로 장비 반입이 2028년까지 늘어날 전망입니다.",
+        "3분기 매출은 3425억원, 영업이익은 583억원으로 전년 대비 증가할 것으로 예상됩니다."
+      ],
+      "whyImportant": "주요 반도체 제조사의 신규 팹 투자와 장비 공급 연동성을 통해 반도체 장비 업황의 중장기 회복 흐름을 가늠할 수 있습니다.",
+      "importanceRationale": "근거: 2028년까지 삼성전자 및 SK하이닉스 팹 공급 확대로 영업이익이 전년 대비 100% 이상 증가할 것이라는 구체적 전망이 제시되었습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "올 3분기는 매출액 3425억원, 영업이익 583억원으로 추정돼 전년 동기 대비 각각 28%와 112% 증가가 예상된다"
+        }
+      ],
+      "dedupeKey": "16만9000원-3425억원-583억원-기대감-목표주-성장-실적-원익ips",
+      "clusterKey": "실적/원익ips",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026101249366",
+      "publishedAt": "2026-10-11T23:22:27+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -228,32 +165,65 @@
       "isBriefing": false
     },
     {
-      "id": "2026-10-10_8",
-      "date": "2026-10-10",
-      "category": "국제",
-      "title": "중국, EU와 무역협상 개시 속 위안화 저평가론 정면 반박",
+      "id": "2026-10-12_6",
+      "date": "2026-10-12",
+      "category": "에너지",
+      "title": "메가 프로젝트 전력수요 과장 논란…원전 확대용 의문 해소할까",
       "summary": [
-        "중국 인민은행은 EU와의 무역협상 개시 시점에 위안화 저평가 주장을 정면 반박하는 입장문을 발표했습니다.",
-        "인민은행은 수출 경쟁력이 환율이 아닌 산업 경쟁력에서 나오며 의도적인 통화가치 절하는 없다고 강조했습니다.",
-        "시장 투명성을 높이기 위해 내년부터 외환시장 운영 자료를 IMF에 보고할 계획입니다."
+        "정부는 반도체와 데이터센터 증설로 2040년까지 36.5GW의 전력 추가수요가 발생할 것으로 전망하며 원전 2~4기 추가 건설을 검토하고 있습니다.",
+        "그러나 전력수요 추계치가 공식 발표마다 달라지고 불확실한 임대형 데이터센터 수요가 포함되어 과잉 추계 논란이 제기됩니다."
       ],
-      "whyImportant": "EU와의 통상 마찰 속에서 중국이 환율 정책 수호 의지를 명확히 함으로써 향후 무역 협상 및 외환시장 개입 방향에 중요한 변수로 작용할 수 있습니다.",
-      "importanceRationale": "근거: EU와의 무역협상 개시 시점에 내년부터 외환시장 자료를 IMF에 보고하기로 하는 등 구체적 대응 방침을 밝혔습니다.",
+      "whyImportant": "국가 전력수급기본계획의 수요 예측 신뢰성은 신규 원전 건설 및 전력 인프라 투자 규모를 결정짓는 핵심 변수입니다.",
+      "importanceRationale": "근거: 2040년 기준 36.5GW에 달하는 막대한 전력 추가수요 예측에 대해 정부 내에서도 과잉 추계 가능성을 인정했습니다.",
       "impactSignals": [
         {
-          "label": "policy",
-          "evidence": "인민은행이 이번 협상을 직접 언급하지는 않았으나 유럽에서 중국의 환율 정책을 둘러싼 논쟁이 갈수록 격화하는 가운데 발표돼 주목된다."
+          "label": "market-demand",
+          "evidence": "제12차 전기본 총괄위원회는 지난 8월20일 전력수요 재전망 공개토론회에서 메가 프로젝트를 반영한 2040년 기준 전력 추가수요(기준 시나리오의 순증분) 전망치를 반도체 24.6기가와트(GW), AI 데이터센터 11.9GW 등 총 36.5GW로 제시했다."
         }
       ],
-      "dedupeKey": "무역협상-위안화-의도적인-인민은행-저평가론-정면-중국-통화가치",
-      "clusterKey": "무역협상/개시/위안화",
+      "dedupeKey": "과장-논란-메가-원전-전력수요-프로젝트-해소할까-확대용",
+      "clusterKey": "설비투자/에너지/메가",
       "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1422397",
-      "publishedAt": "2026-10-09T01:13:45+00:00",
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1281863.html",
+      "publishedAt": "2026-10-12T01:05:00+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-12_7",
+      "date": "2026-10-12",
+      "category": "기술",
+      "title": "TSMC, 핵심부품 미국서 조달…미국 내 AI 칩 공급망 완성 다가서",
+      "summary": [
+        "TSMC가 글로벌파운드리와 5년간 20억 달러 규모의 실리콘 인터포저 공급 계약을 체결했습니다.",
+        "2028년 상반기부터 뉴욕주 공장에서 생산되어 미국 내 AI 칩 패키징 완성이 추진됩니다."
+      ],
+      "whyImportant": "AI 칩 첨단 패키징 핵심 부품의 미국 내 조달이 가능해짐에 따라 글로벌 반도체 공급망의 미 대륙 재편이 가속화될 수 있습니다.",
+      "importanceRationale": "근거: TSMC와 GF 간 5년간 20억 달러 규모 계약으로 2028년부터 미국 내 생산 및 공급망 개편이 가시화됩니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "양사는 2019년 상대방의 반도체 제조기술 특허 침해를 주장하며 미국과 독일 등에서 소송전을 벌이다 두 달 만에 교차 라이선스 계약으로 합의한 바 있다."
+        },
+        {
+          "label": "capex",
+          "evidence": "SK하이닉스는 인디애나주에 HBM용 첨단 패키징 공장을 지어 2028년 하반기부터 양산할 계획이다."
+        }
+      ],
+      "dedupeKey": "tsmc-공급망-다가서-미국-미국서-완성-조달-핵심부품",
+      "clusterKey": "공급망/핵심부품/반도체",
+      "matchedTo": null,
+      "sourceName": "연합",
+      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1423029",
+      "publishedAt": "2026-10-12T00:05:38+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false

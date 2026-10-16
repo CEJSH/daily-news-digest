@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-16",
+  "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
+  "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
+  "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
+  "lastUpdatedAt": "2026-10-16T09:36:20.106987+09:00",
+  "items": [
+    {
+      "id": "2026-10-16_1",
+      "date": "2026-10-16",
+      "category": "기술",
+      "title": "은행부터 코인거래소까지 ‘금융권 AI 해킹’…최소 10만건 개인정보 유출",
+      "summary": [
+        "AI 에이전트를 활용한 해킹으로 국내 금융사 16곳에서 약 10만건의 개인정보가 유출되었습니다.",
+        "금융당국 점검 결과 130개 금융사에서 최신 보안패치 미적용 등 보안 관리 미흡 사항이 확인되었습니다.",
+        "금융위는 전산시스템 전수 점검 및 공동 AI 보안관제 시스템 구축 등 대응책을 추진하기로 했습니다."
+      ],
+      "whyImportant": "국내 주요 금융권 전반에 걸친 대규모 개인정보 유출 및 보안 관리 부실이 확인됨에 따라 금융권 전반의 보안 규제와 시스템 강화가 불가피해졌습니다.",
+      "importanceRationale": "근거: 국내 금융사 16곳에서 약 10만건의 개인정보 유출이 발생하고 130개 금융사의 보안 미흡이 점검을 통해 확인되었습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "인공지능(AI) 에이전트를 활용한 것으로 추정되는 해킹 공격으로 국내 금융사 16곳에서 정보 유출 사고가 발생한 것으로 나타났다."
+        }
+      ],
+      "dedupeKey": "10만건-개인정보-금융권-유출-은행-최소-코인거래소-해킹",
+      "clusterKey": "코인거래소/금융권/해킹",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1282373.html",
+      "publishedAt": "2026-10-14T11:32:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-16_2",
+      "date": "2026-10-16",
+      "category": "기술",
+      "title": "TSMC, AI 붐에 힘입어 6분기 연속 최고 이익 기록 및 예상치 상회",
+      "summary": [
+        "TSMC의 3분기 순이익이 전년 대비 68.7% 증가하며 6분기 연속 최고치를 달성했습니다.",
+        "4분기 매출은 최대 543억 달러로 전망되며 2026~2028년 설비투자가 대폭 확대될 예정입니다."
+      ],
+      "whyImportant": "글로벌 AI 반도체 수요가 공급을 지속적으로 초과함에 따라 TSMC의 설비투자 확대 및 실적 호조가 전체 반도체 공급망 성장세를 견인하고 있습니다.",
+      "importanceRationale": "근거: TSMC가 3분기 7631억 대만달러의 순이익을 기록하고 2026~2028년 설비투자를 대폭 상향한다고 명시되어 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "TSMC's stronger-than-expected results and upgraded full-year revenue outlook underscore how demand for advanced chips continues to outpace its production capacity, with the company's elevated capital spending reflecting confidence in sustained growth over the coming years, Sravan Kundojjala, an analyst at SemiAnalysis, told CNBC via email."
+        },
+        {
+          "label": "earnings",
+          "evidence": "TSMC forecast fourth-quarter revenue between $52.3 billion and $54.3 billion, representing a 14% sequential increase and a 58% jump from a year earlier at the midpoint of its guidance range, according to the company's earnings call."
+        },
+        {
+          "label": "capex",
+          "evidence": "TSMC also said it had completed construction of its second fab in Arizona and is installing equipment, with mass production expected to begin in the third quarter of 2027, slightly ahead of its previous schedule."
+        }
+      ],
+      "dedupeKey": "tsmc-기록-붐에-연속-예상치-이익-최고-힘입어",
+      "clusterKey": "실적/붐에",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+      "publishedAt": "2026-10-15T05:37:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-16_3",
+      "date": "2026-10-16",
+      "category": "금융",
+      "title": "휴젤, 미국 판매체제 전환으로 3분기 실적 부진 전망에 목표주가 하향",
+      "summary": [
+        "휴젤이 미국 유통망을 판매대행 체제로 전환하는 과정에서 재고 바이백과 일회성 비용이 발생했습니다.",
+        "이에 따라 3분기 영업이익이 전년 동기 대비 41.1% 감소한 279억 원을 기록할 것으로 추정됩니다."
+      ],
+      "whyImportant": "미국 시장 직판 체제 구축을 위한 일시적 재고 환입과 비용 증가는 단기 실적 압박으로 작용하나, 중장기 수익성 개선 여부를 결정짓는 주요 구조적 변화입니다.",
+      "importanceRationale": "근거: 3분기 영업이익이 전년 동기 대비 41.1% 감소한 279억 원으로 추정되며 미국 유통망 개편 수치가 명시되었습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "휴젤은 3분기 매출 1042억원, 영업이익 279억원의 실적을 기록했을 것이라고 현대차증권은 추정했다."
+        }
+      ],
+      "dedupeKey": "목표주-미국-부진-실적-전환-판매체제-하향-휴젤",
+      "clusterKey": "실적/휴젤",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026101653636",
+      "publishedAt": "2026-10-15T23:05:06+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 3,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-16_4",
+      "date": "2026-10-16",
+      "category": "에너지",
+      "title": "전력 수요 급증으로 동남아 원전 시장 확대",
+      "summary": [
+        "아세안 전력 수요는 2030년까지 연평균 5.4% 증가할 전망입니다.",
+        "베트남, 필리핀, 인도네시아 등 동남아 국가들이 원전 도입을 추진합니다.",
+        "한국전력과 한수원 등 글로벌 기업들이 시장 선점에 나서고 있습니다."
+      ],
+      "whyImportant": "산업화와 데이터센터 신설로 인한 동남아의 전력 수요 급증은 글로벌 원전 수주 시장의 새로운 기회가 될 수 있습니다.",
+      "importanceRationale": "근거: IEA가 아세안 전력 수요 연평균 5.4% 증가를 전망하고 베트남이 2035년까지 최대 6.4GW 원전 가동을 추진하고 있습니다.",
+      "impactSignals": [
+        {
+          "label": "market-demand",
+          "evidence": "국제에너지기구(IEA)는 지난 6일 아세안(동남아국가연합) 국가의 전력 수요가 올해부터 2030년까지 연평균 5.4% 커질 것으로 전망했다."
+        }
+      ],
+      "dedupeKey": "동남아-수요-시장-원전-인도네시아-전력-한수원-확대",
+      "clusterKey": "에너지/동남아",
+      "matchedTo": null,
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026101547581",
+      "publishedAt": "2026-10-15T08:31:18+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    }
+  ]
+}

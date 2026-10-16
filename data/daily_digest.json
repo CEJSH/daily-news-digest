@@ -1,227 +1,102 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-16",
   "selectionCriteria": "① 내일도 영향이 남는 이슈 ② 과도한 감정 소모 제외 ③ 어제와 중복되는 뉴스 제외",
   "editorNote": "이 뉴스는 클릭 수가 아니라 오늘 이후에도 남는 정보만 기준으로 편집했습니다.",
   "question": "정보를 덜 보는 것이 오히려 더 똑똑한 소비일까?",
-  "lastUpdatedAt": "2026-10-14T10:25:48.816803+09:00",
+  "lastUpdatedAt": "2026-10-16T09:36:20.106987+09:00",
   "items": [
     {
-      "id": "2026-10-14_1",
-      "date": "2026-10-14",
-      "category": "산업",
-      "title": "레이언스, AI 반도체 검사 수요 확대에 AXI 사업 성장 가속",
+      "id": "2026-10-16_1",
+      "date": "2026-10-16",
+      "category": "기술",
+      "title": "은행부터 코인거래소까지 ‘금융권 AI 해킹’…최소 10만건 개인정보 유출",
       "summary": [
-        "레이언스가 상반기 반도체 AXI 검사용 디텍터 매출 131억 원을 기록했습니다.",
-        "이는 이전 연간 매출을 넘어서며 2024년 연매출 대비 두 배 이상 증가한 수치입니다.",
-        "HBM과 AI 반도체 검사 수요 증가로 산업용 디텍터 공급 확대를 추진하고 있습니다."
+        "AI 에이전트를 활용한 해킹으로 국내 금융사 16곳에서 약 10만건의 개인정보가 유출되었습니다.",
+        "금융당국 점검 결과 130개 금융사에서 최신 보안패치 미적용 등 보안 관리 미흡 사항이 확인되었습니다.",
+        "금융위는 전산시스템 전수 점검 및 공동 AI 보안관제 시스템 구축 등 대응책을 추진하기로 했습니다."
       ],
-      "whyImportant": "AI 반도체 및 첨단 패키징 공정의 정밀 검사 수요 증가가 핵심 이미징 부품 기업의 실적 성장으로 이어지고 있습니다.",
-      "importanceRationale": "근거: 레이언스는 상반기 반도체 AXI 검사용 디텍터 매출 131억 원을 기록하며 2024년 연매출 대비 106% 증가했습니다.",
+      "whyImportant": "국내 주요 금융권 전반에 걸친 대규모 개인정보 유출 및 보안 관리 부실이 확인됨에 따라 금융권 전반의 보안 규제와 시스템 강화가 불가피해졌습니다.",
+      "importanceRationale": "근거: 국내 금융사 16곳에서 약 10만건의 개인정보 유출이 발생하고 130개 금융사의 보안 미흡이 점검을 통해 확인되었습니다.",
+      "impactSignals": [
+        {
+          "label": "security",
+          "evidence": "인공지능(AI) 에이전트를 활용한 것으로 추정되는 해킹 공격으로 국내 금융사 16곳에서 정보 유출 사고가 발생한 것으로 나타났다."
+        }
+      ],
+      "dedupeKey": "10만건-개인정보-금융권-유출-은행-최소-코인거래소-해킹",
+      "clusterKey": "코인거래소/금융권/해킹",
+      "matchedTo": null,
+      "sourceName": "한겨레",
+      "sourceUrl": "https://www.hani.co.kr/arti/economy/finance/1282373.html",
+      "publishedAt": "2026-10-14T11:32:00+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-16_2",
+      "date": "2026-10-16",
+      "category": "기술",
+      "title": "TSMC, AI 붐에 힘입어 6분기 연속 최고 이익 기록 및 예상치 상회",
+      "summary": [
+        "TSMC의 3분기 순이익이 전년 대비 68.7% 증가하며 6분기 연속 최고치를 달성했습니다.",
+        "4분기 매출은 최대 543억 달러로 전망되며 2026~2028년 설비투자가 대폭 확대될 예정입니다."
+      ],
+      "whyImportant": "글로벌 AI 반도체 수요가 공급을 지속적으로 초과함에 따라 TSMC의 설비투자 확대 및 실적 호조가 전체 반도체 공급망 성장세를 견인하고 있습니다.",
+      "importanceRationale": "근거: TSMC가 3분기 7631억 대만달러의 순이익을 기록하고 2026~2028년 설비투자를 대폭 상향한다고 명시되어 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "AI 인프라 투자 확대와 고대역폭메모리(HBM) 수요 급증으로 반도체 검사 공정의 정밀도와 속도에 대한 요구가 높아지는 가운데, 레이언스가 산업용 AXI(Automated X-ray Inspection, 자동 엑스레이 검사, 이하 AXI) 사업의 가파른 매출 성장세를 이어가고 있다."
+          "evidence": "TSMC's stronger-than-expected results and upgraded full-year revenue outlook underscore how demand for advanced chips continues to outpace its production capacity, with the company's elevated capital spending reflecting confidence in sustained growth over the coming years, Sravan Kundojjala, an analyst at SemiAnalysis, told CNBC via email."
         },
         {
           "label": "earnings",
-          "evidence": "레이언스는 2026년 상반기 반도체 AXI 검사용 CMOS 디텍터 매출이 131억 원을 기록하며 최근 3년간 최고 실적을 달성했다고 13일 밝혔다."
-        }
-      ],
-      "dedupeKey": "axi-검사-레이언스-반도체-사업-성장-수요-확대",
-      "clusterKey": "실적/반도체/레이언스",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/202610137903P",
-      "publishedAt": "2026-10-13T00:26:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_2",
-      "date": "2026-10-14",
-      "category": "기술",
-      "title": "구글코리아 사장, 불법촬영 피해자 신상 유출 국감 사과 및 늑장 대응 논란",
-      "summary": [
-        "구글코리아 사장이 국정감사에서 불법촬영 피해자 신상 유출 사고에 대해 사과했습니다.",
-        "구글 측은 24시간 내 차단했다고 주장했으나 실제 삭제까지 사흘 이상 소요되었습니다.",
-        "피해자 통지 및 검색 제외 요구에 구글은 본사와 협의하여 방안을 찾겠다고 답했습니다."
-      ],
-      "whyImportant": "글로벌 IT 플랫폼의 디지털 성범죄 피해자 정보 보호 미흡과 늑장 대응 문제가 국정감사에서 공식 지적되어 향후 관련 규제 및 플랫폼 책임 강화 논의에 영향을 미칠 수 있습니다.",
-      "importanceRationale": "근거: 구글의 불법촬영 피해자 신상 유출 사건에 대해 국정감사에서 사과가 이루어졌으나 8월 25일 인지 후 3일 이상 지연된 대응 방식과 외주 처리 등이 지적되었습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "구글코리아 관계자는 “지난 8월25일 여성인권진흥원 연락이 와서 유알엘 등에 대한 안내를 드렸고 8월27일 최초로 (정부기관으로부터) 리스트를 받았다”고 설명했다."
-        }
-      ],
-      "dedupeKey": "구글코리아-국감-늑장-불법촬영-사장-신상-유출-피해자",
-      "clusterKey": "관세/구글코리아",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/media/1282173.html",
-      "publishedAt": "2026-10-13T15:52:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_3",
-      "date": "2026-10-14",
-      "category": "기술",
-      "title": "국가인권위원회, 공중이용시설 장애인 접근권 증진 권고",
-      "summary": [
-        "국가인권위원회가 관계 부처에 장애인 편의시설 설치 사각지대 해소를 권고했습니다.",
-        "면적 300㎡ 미만 및 1998년 이전 건물의 설치 의무 제외 규정 재검토를 요청했습니다.",
-        "재정 지원과 사용료 감면 등 행정적·재정적 기반 마련도 함께 제시했습니다."
-      ],
-      "whyImportant": "공중이용시설의 장애인 접근권 법적 사각지대를 해소하기 위한 법령 개정 및 재정 지원 논의를 본격화할 수 있습니다.",
-      "importanceRationale": "근거: 인권위가 5개 부처에 300㎡ 미만 시설 및 1998년 이전 건축물 대상 제도 개선을 공식 권고했습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "대법원은 2024년 12월 장애인의 접근권을 ‘장애인이 헌법의 최고 가치인 인간의 존엄을 실질적으로 보장받기 위한 초석이 되는 헌법상 기본권’이라고 확인하고, ‘피고 대한민국이 장애인을 위한 편의시설 설치 의무 대상 시설의 범위를 지나치게 좁게 규정한 것은 (장애인인) 원고들의 권리를 침해한다’고 판결했다."
-        }
-      ],
-      "dedupeKey": "공중이용시설-국가인권위원회-권고-부처-장애인-접근권-증진-지원",
-      "clusterKey": "국가인권위원회/공중이용시설/장애인",
-      "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/society/society_general/1282108.html",
-      "publishedAt": "2026-10-13T03:09:00+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_4",
-      "date": "2026-10-14",
-      "category": "금융",
-      "title": "3분기 영업이익 1조 원 전망에 HMM 주가 강세",
-      "summary": [
-        "HMM이 3분기 영업이익 1조 원 돌파 전망에 강세를 보였습니다.",
-        "운임 상승과 물동량 강세로 실적 개선이 기대됩니다.",
-        "증권사는 목표주가를 2만 6,000원으로 상향했습니다."
-      ],
-      "whyImportant": "해운 운임 상승과 공급 차질로 인한 HMM의 단기 실적 개선 및 주주환원 확대 가능성을 보여줍니다.",
-      "importanceRationale": "근거: HMM의 3분기 영업이익이 1조 42억 원을 기록할 것이라는 증권사의 전망이 제시되었습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "HMM은 3분기 1조42억원의 영업이익을 기록했을 것이라고 신한투자증권은 추정했다."
-        }
-      ],
-      "dedupeKey": "000원-1조-2만-hmm-강세-돌파-영업이익-주가",
-      "clusterKey": "실적/3분기",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026101406096",
-      "publishedAt": "2026-10-14T00:35:20+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_5",
-      "date": "2026-10-14",
-      "category": "금융",
-      "title": "뉴욕 센트럴파크 마차 운행, 2028년부터 전면 금지 추진",
-      "summary": [
-        "뉴욕시 시장과 시의회가 2028년부터 센트럴파크 내 마차 운행을 금지하는 법안에 합의했습니다.",
-        "이번 조치는 관광객 사망 사고 이후 공공 안전과 동물 보호 강화를 위해 추진되었습니다.",
-        "법안 통과 시 기존 말의 도축이나 타 업체 양도가 엄격히 금지됩니다."
-      ],
-      "whyImportant": "150년간 유지된 뉴욕의 대표 관광 자원이 안전 및 동물권 이슈로 폐지되며 관련 업계 종사자에 대한 지원 및 정책 변화가 예상됩니다.",
-      "importanceRationale": "근거: 시의원 51명 중 29명이 발의에 참여하여 2028년 6월 1일부터 마차 운행을 금지하는 법안 통과 가능성이 높습니다.",
-      "impactSignals": [
-        {
-          "label": "policy",
-          "evidence": "조란 맘다니 뉴욕 시장과 줄리 메닌 뉴욕 시의회 의장은 센트럴파크 마차 운행을 전면 금지하는 법안에 합의했다."
-        }
-      ],
-      "dedupeKey": "금지-뉴욕-뉴욕시-도축이나-마차-센트럴파크-시장-운행",
-      "clusterKey": "정책/뉴욕/관세",
-      "matchedTo": null,
-      "sourceName": "연합",
-      "sourceUrl": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1424131",
-      "publishedAt": "2026-10-13T23:07:08+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_6",
-      "date": "2026-10-14",
-      "category": "금융",
-      "title": "신세계 실적 전망치 하향 조정 불가피로 목표주가 하향",
-      "summary": [
-        "흥국증권은 신세계의 백화점 매출 성장률 둔화를 이유로 목표주가를 기존 66만 원에서 47만 원으로 하향했습니다.",
-        "3분기 총매출은 전년 대비 5.1% 증가한 2조 9000억 원, 영업이익은 72.8% 늘어난 1724억 원으로 추정됩니다.",
-        "올해 연간 총매출은 12조 8000억 원, 영업이익은 7892억 원으로 기존 전망치 대비 하향 조정되었습니다."
-      ],
-      "whyImportant": "주력 사업인 백화점 부문의 성장이 둔화함에 따라 단기 실적 눈높이 조정을 보여주는 지표입니다.",
-      "importanceRationale": "근거: 신세계의 올해 연간 영업이익 전망치가 7892억 원으로 하향 조정되고 목표주가가 47만 원으로 내려갔습니다.",
-      "impactSignals": [
-        {
-          "label": "earnings",
-          "evidence": "흥국증권은 13일 신세계에 대해 \"당초 예상과는 달리 백화점 매출 증가율이 빠르게 둔화되고 있다\"며 \"상반기까지 견조하던 성장률이 3분기에 크게 낮아졌고, 4분기에도 지난해 높은 기저효과를 감안하면 성장률 둔화가 불가피할 전망\"이라고 평가했다."
-        }
-      ],
-      "dedupeKey": "목표주-불가피-신세계-실적-전망치-조정-하향-흥국증권",
-      "clusterKey": "실적/신세계",
-      "matchedTo": null,
-      "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026101402436",
-      "publishedAt": "2026-10-13T23:27:34+00:00",
-      "readTimeSec": 10,
-      "status": "kept",
-      "importance": 3,
-      "qualityLabel": "ok",
-      "qualityReason": "정보성 기사",
-      "isBriefing": false
-    },
-    {
-      "id": "2026-10-14_7",
-      "date": "2026-10-14",
-      "category": "금융",
-      "title": "삼성전자·SK하이닉스 폭락에도 \"지금이 저점\"…'W자 반등' 전망 이유",
-      "summary": [
-        "증권가는 외국인 매도로 인한 수급 공백으로 주가가 급락했을 뿐 실적 흐름은 견고하다고 진단했습니다.",
-        "메모리 공급 부족과 가격 상승으로 내년 양사 합산 영업이익이 1000조원을 상회할 것으로 전망했습니다."
-      ],
-      "whyImportant": "반도체 주가 급락에도 불구하고 메모리 수급 불균형에 따른 실적 개선세가 유지되어 향후 반등 가능성이 높음을 제시합니다.",
-      "importanceRationale": "근거: 외국인 순매도로 주가가 급락했으나, 메모리 공급 부족을 바탕으로 내년 양사 합산 영업이익 1000조원 달성 가능성이 제기되었습니다.",
-      "impactSignals": [
-        {
-          "label": "market-demand",
-          "evidence": "이는 내년 메모리 공급 부족이 한층 심화되는 가운데 고대역폭메모리(HBM)와 범용 메모리 가격의 큰 폭 상승이 예상되기 때문"
+          "evidence": "TSMC forecast fourth-quarter revenue between $52.3 billion and $54.3 billion, representing a 14% sequential increase and a 58% jump from a year earlier at the midpoint of its guidance range, according to the company's earnings call."
         },
         {
-          "label": "earnings",
-          "evidence": "KB증권은 내년 양사의 합산 영업이익 1000조원 가능성에 주목하며 'W자 반등'이 본격화할 것으로 내다봤다."
+          "label": "capex",
+          "evidence": "TSMC also said it had completed construction of its second fab in Arizona and is installing equipment, with mass production expected to begin in the third quarter of 2027, slightly ahead of its previous schedule."
         }
       ],
-      "dedupeKey": "1000조원-sk하이닉스-w자-반등-삼성전자-저점-지금-폭락",
-      "clusterKey": "실적/삼성전자",
+      "dedupeKey": "tsmc-기록-붐에-연속-예상치-이익-최고-힘입어",
+      "clusterKey": "실적/붐에",
+      "matchedTo": null,
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+      "publishedAt": "2026-10-15T05:37:31+00:00",
+      "readTimeSec": 10,
+      "status": "kept",
+      "importance": 4,
+      "qualityLabel": "ok",
+      "qualityReason": "정보성 기사",
+      "isBriefing": false
+    },
+    {
+      "id": "2026-10-16_3",
+      "date": "2026-10-16",
+      "category": "금융",
+      "title": "휴젤, 미국 판매체제 전환으로 3분기 실적 부진 전망에 목표주가 하향",
+      "summary": [
+        "휴젤이 미국 유통망을 판매대행 체제로 전환하는 과정에서 재고 바이백과 일회성 비용이 발생했습니다.",
+        "이에 따라 3분기 영업이익이 전년 동기 대비 41.1% 감소한 279억 원을 기록할 것으로 추정됩니다."
+      ],
+      "whyImportant": "미국 시장 직판 체제 구축을 위한 일시적 재고 환입과 비용 증가는 단기 실적 압박으로 작용하나, 중장기 수익성 개선 여부를 결정짓는 주요 구조적 변화입니다.",
+      "importanceRationale": "근거: 3분기 영업이익이 전년 동기 대비 41.1% 감소한 279억 원으로 추정되며 미국 유통망 개편 수치가 명시되었습니다.",
+      "impactSignals": [
+        {
+          "label": "earnings",
+          "evidence": "휴젤은 3분기 매출 1042억원, 영업이익 279억원의 실적을 기록했을 것이라고 현대차증권은 추정했다."
+        }
+      ],
+      "dedupeKey": "목표주-미국-부진-실적-전환-판매체제-하향-휴젤",
+      "clusterKey": "실적/휴젤",
       "matchedTo": null,
       "sourceName": "한국경제",
-      "sourceUrl": "https://www.hankyung.com/article/2026101400976",
-      "publishedAt": "2026-10-13T22:48:08+00:00",
+      "sourceUrl": "https://www.hankyung.com/article/2026101653636",
+      "publishedAt": "2026-10-15T23:05:06+00:00",
       "readTimeSec": 10,
       "status": "kept",
       "importance": 3,
@@ -230,32 +105,32 @@
       "isBriefing": false
     },
     {
-      "id": "2026-10-14_8",
-      "date": "2026-10-14",
+      "id": "2026-10-16_4",
+      "date": "2026-10-16",
       "category": "에너지",
-      "title": "메가 프로젝트 전력수요 과장 논란…원전 확대용 의문 해소할까",
+      "title": "전력 수요 급증으로 동남아 원전 시장 확대",
       "summary": [
-        "정부가 2040년 기준 반도체와 데이터센터의 전력 추가수요를 총 36.5GW로 제시했으나 수치 불일치로 신뢰성 논란이 발생했습니다.",
-        "데이터센터 전력수요 상당수가 임대형 사업으로 실수요자가 확정되지 않아 과잉 추계 및 좌초자산화 우려가 제기됩니다.",
-        "정부는 원전 공론화위원회를 통해 의견을 수렴한 뒤 올해 말 또는 내년 초 전력수급기본계획을 확정할 예정입니다."
+        "아세안 전력 수요는 2030년까지 연평균 5.4% 증가할 전망입니다.",
+        "베트남, 필리핀, 인도네시아 등 동남아 국가들이 원전 도입을 추진합니다.",
+        "한국전력과 한수원 등 글로벌 기업들이 시장 선점에 나서고 있습니다."
       ],
-      "whyImportant": "국가 첨단산업 전력수요 추정의 불확실성과 수치 불일치는 원전 건설 및 전력망 인프라 투자의 과대 추계 및 좌초자산화 위험을 초래할 수 있습니다.",
-      "importanceRationale": "근거: 정부가 2040년 기준 반도체 및 데이터센터 전력 추가수요를 36.5GW로 제시했으나 발표 수치 간 최대 12.2GW의 차이가 발생하여 공론화 검증이 진행 중입니다.",
+      "whyImportant": "산업화와 데이터센터 신설로 인한 동남아의 전력 수요 급증은 글로벌 원전 수주 시장의 새로운 기회가 될 수 있습니다.",
+      "importanceRationale": "근거: IEA가 아세안 전력 수요 연평균 5.4% 증가를 전망하고 베트남이 2035년까지 최대 6.4GW 원전 가동을 추진하고 있습니다.",
       "impactSignals": [
         {
           "label": "market-demand",
-          "evidence": "제12차 전기본 총괄위원회는 지난 8월20일 전력수요 재전망 공개토론회에서 메가 프로젝트를 반영한 2040년 기준 전력 추가수요(기준 시나리오의 순증분) 전망치를 반도체 24.6기가와트(GW), AI 데이터센터 11.9GW 등 총 36.5GW로 제시했다."
+          "evidence": "국제에너지기구(IEA)는 지난 6일 아세안(동남아국가연합) 국가의 전력 수요가 올해부터 2030년까지 연평균 5.4% 커질 것으로 전망했다."
         }
       ],
-      "dedupeKey": "과장-논란-메가-원전-전력수요-프로젝트-해소할까-확대용",
-      "clusterKey": "에너지/메가",
+      "dedupeKey": "동남아-수요-시장-원전-인도네시아-전력-한수원-확대",
+      "clusterKey": "에너지/동남아",
       "matchedTo": null,
-      "sourceName": "한겨레",
-      "sourceUrl": "https://www.hani.co.kr/arti/economy/economy_general/1281863.html",
-      "publishedAt": "2026-10-12T06:51:00+00:00",
+      "sourceName": "한국경제",
+      "sourceUrl": "https://www.hankyung.com/article/2026101547581",
+      "publishedAt": "2026-10-15T08:31:18+00:00",
       "readTimeSec": 10,
       "status": "kept",
-      "importance": 3,
+      "importance": 4,
       "qualityLabel": "ok",
       "qualityReason": "정보성 기사",
       "isBriefing": false
